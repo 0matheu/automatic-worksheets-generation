@@ -1,0 +1,88 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of new musicians joining a band and calculating the total number of musicians.",
+  "layout": "The question is divided into three main sections. The top section contains a paragraph describing the task. The middle section contains a 2x2 grid with three images: an image of a band with 4 musicians, an image of 3 new musicians, and an image of an equal sign. The images are placed in a specific layout to facilitate understanding. The first image is in the top left corner, the second image is in the top right corner, and the third image is in the middle of the two. The sizes of the images are adjusted to fit the 2x2 grid.",
+  "answer": "To answer correctly, the student needs to observe the three images and identify that the first image shows a band with 4 musicians, and the second image shows 3 new musicians. The student needs to add the two numbers together to get 7. The student needs to write the correct answer (7) in the space provided."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class used to organize the layout of the activity, in this case containing three images in a 2x2 grid */
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 400px 400px;
+      grid-template-areas:
+        "band1 newm1"
+        "band2 newm2";
+    }
+
+    /* class used to place the image of the band in the first row and the first column */
+    .band1 {
+      grid-area: band1;
+    }
+
+    /* class used to place the image of the new musicians in the first row and the second column */
+    .newm1 {
+      grid-area: newm1;
+    }
+
+    /* class used to place the image of the equal sign between the first and second column of the first row */
+    .band2 {
+      grid-area: band2;
+    }
+
+    /* class used to place the image of the new musicians in the second row and the first column */
+    .band2 {
+      grid-area: band2;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the images below. A band with 4 musicians and 3 new musicians. Add the new musicians to the band and write the total number.
+        </p>
+
+        <div class="container">
+          <div class="band1">
+            <img
+              src=""
+              alt="image in a coloring book style of a band with 4 musicians"
+              style="width: 400px; height: 400px"
+              exp="image that the student will have to identify that there are 4 musicians in the band"
+            />
+          </div>
+
+          <div class="newm1">
+            <img
+              src=""
+              alt="image in a coloring book style of 3 children with musical instruments"
+              style="width: 400px; height: 400px"
+              exp="image that the student will have to identify that there are 3 new musicians"
+            />
+          </div>
+
+          <div class="band2">
+            <img
+              src=""
+              alt="image in a coloring book style of an equal sign, in the middle of the image"
+              style="width: 400px; height: 400px"
+              exp="image used to signal the sum of the musicians in the band with the new musicians"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

@@ -1,0 +1,794 @@
+
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2 ano fundamental
+assunto: adição
+tematica: lanches
+largura-folha: 700px
+layout: única imagem<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Essa questão pratica o principio da adição.
+A questão consiste de uma senhorita
+esperando o aluno identificar que a soma
+da quantidade de sorvete de grego e
+de cachoira resultaria em 12 lanches
+e fazer a soma, e escrever o resultado final.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 700px; border: solid 1px"
+      exp="div contendo a largura da página, que nesse caso é 700px"
+    >
+      <div class="questao" style="width: 700px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe a imagem e calcule quantos lanches ficaria se o senhor
+          Regato ficasse com a quantidade de sorvete que ele já tem, e ao
+          final mais a quantidade que a senhorita Cachoeira está carryng? 
+          Escreva a resposta.
+        </p>
+      </div>
+
+      <div exp="div contendo a imagem, cujo estilo é width: 500px" style="width: 500px">
+        <img
+          src=""
+          alt="Imagem em estilizada de sorvetes de lanche de Regato, e também de sorvetes de lanche da senhorita Cachoeira; o aluno terá que contar quantos lanches estão presentes."
+          exp="Imagem em estilizada onde o aluno terá que contar quantos lanches ficaria a soma dos sorvetes de Regato com os sorvetes da senhorita Cachoeira"
+        />
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2 ano fundamental
+assunto: adição
+tematica: lanches
+largura-folha: 700px
+layout: duas imagens, linhas e colunas<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão serão praticado os princípios da adição. A questão consiste de
+uma imagem do sinal de um parque de lanches contendo 2 lanchas, uma contendo 3
+bolas, outra contendo 4. A tarefa do aluno é:
+escolher uma lancha que tenha mais bolas, e escrever em abaixo a
+soma das bolas presentes nas duas lanchas. 
+
+<html>
+  <head></head>
+  <style>
+   .container {
+      display: grid;
+      grid-template-columns: 300px 300px;
+      grid-template-rows: 200px 200px 200px;
+      grid-template-areas:
+        "img1 vazio1"
+        "img2 vazio2"
+        "soma vazio3";
+    }
+
+   .img1 {
+      grid-area: img1;
+    }
+
+   .img2 {
+      grid-area: img2;
+    }
+
+   .vazio1 {
+      grid-area: vazio1;
+    }
+
+   .vazio2 {
+      grid-area: vazio2;
+    }
+
+   .vazio3 {
+      grid-area: vazio3;
+    }
+
+   .soma {
+      grid-area: soma;
+      display: flex;
+      justify-content: center;
+      font-size: 50px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 700px; border: solid 1px"
+      exp="div contendo a largura da página, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 700px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe as imagens abaixo e escreva a soma das bolas em ambos as
+          lanchas.
+        </p>
+
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="imagem no estilo de desenho de pintar de infantil de uma lancha contendo 3 bolas"
+              exp="imagem que o aluno terá que observar e contar a quantidade de bolas na imagem img1"
+            />
+          </div>
+
+          <div class="img2">
+            <img
+              alt="imagem no estilo de desenho de pintar de infantil de uma lancha contendo 4 bolas"
+              exp="imagem que o aluno terá que observar e contar a quantidade de bolas na imagem img2"
+            />
+          </div>
+
+          <div class="vazio1"></div>
+          <div class="vazio2"></div>
+
+          <div class="soma">
+            <p exp="soma das bolas presentes em ambas as lanchas">4 + 3 = </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: carrinhos
+largura-folha: 600px
+layout: única imagem<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Essa questão pratica o principio da adição e representa a imagem de uma criança
+carregando um carrinho com bolinhas, e tem 1 bolinha em mais no carrinho.
+As questões consiste de:
+<html>
+  <head></head>
+  <body>
+    <div style="width: 600px; border: solid 1px">
+      <div class="questao" style="width: 600px">Dene o valor da adição da imagem abaixo:
+        <p>Carinha carregando um carrinho com 4 bolinhas, e tem 1 bolinha em mais no carrinho.</p>
+      </div>
+      <div class="img">
+        <img alt="" src="" style="width: 500px; height: 200px">
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: carrinhos
+largura-folha: 600px
+layout: três imagens<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão será trabalhado o principio da adição.
+A questão consiste de 3 imagens: 
+imagem A: um carrinho vazio
+imagem B: um carrinho cheio de brinquedos
+imagem C: uma pila de moedas
+
+O objetivo da questão é de o aluno identificar a soma de
+vozes da imagem A com a imagem B e também com a imagem C
+para o resultado ser maior na imagem D, que é a pila de moedas
+lada o aluno ao contear as moedos na pila D e verificar
+que está maior do que a soma das moedos das imagens A e B.
+
+<html>
+  <head></head>
+  <style>
+   .container {
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 300px 300px 300px;
+      grid-template-points:
+        top-left = "tl"
+        top-center = "tc"
+        top-right = "tr"
+        center-left = "cl"
+        center = "c"
+        center-right = "cr"
+        bottom-left = "bl"
+        bottom-center = "bc"
+        bottom-right = "br";
+    }
+
+   .imgA {
+      grid-area: tl;
+    }
+
+   .imgB {
+      grid-area: tc;
+    }
+
+   .imgC {
+      grid-area: c;
+    }
+
+   .imgD {
+      grid-area: br;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe as imagens A, B e C. A imagem A é um carrinho vazio, a imagem B é um carrinho cheio de brinquedos e a imagem C é uma pila de moedas. Elabore a imagem D, que representa a soma de vozes da imagem A com as imagens B e C.
+      </p>
+      </div>
+
+      <div class="container">
+        <div class="imgA" exp="imagem na qual o aluno terá que contar a quantidade de moedos na imagem A"><img
+          alt="imagem A, carrinho vazio"
+          src="" />
+        </div>
+
+        <div class="imgB" exp="imagem na qual o aluno terá que contar a quantidade de brinquedos na imagem B"><img
+          alt="imagem B, carrinho cheio de brinquedos"
+          src="" />
+        </div>
+
+        <div class="imgC" exp="imagem na qual o aluno terá que contar a quantidade de moedas na imagem C"><img
+          alt="imagem C, pila de moedas"
+          src="" />
+        </div>
+
+        <div class="imgD" exp="imagem na qual o aluno terá que contar a quantidade total de moedos das imagens A e C"><img
+          alt="imagem D, pila de moedas soma das imagens A e C"
+          src="" />
+        </div>
+
+        <div class="imgD" exp="imagem na qual o aluno terá que contar a quantidade total de moedos das imagens A e C"><img
+          alt="imagem D, pila de moedas soma das imagens A e C"
+          src="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+</div>
+  <div
+        class="questao" exp="div contendo a largura da questão">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</id>
+</div>
+</div>
+</div>
+</div>
+</obil>
+</larga que utilizadas</ayar
+</ayar>
+</esper>
+</legen>
+</jenis
+</esper
+</esper
+</esper
+</esper
+</ayar</cert>
+</ayar
+</ayar
+</normalize
+</esper
+</ayar
+</hir
+</ースト 
+</nivel
+### aqui em vá atual
+</ayar c em cal largada tent váossil fó pare vá outra cal mais largidor cal atual alcan larg o mais bem espan mais largço utiliz larg 
+esper 
+esper larg inexp mais larg escol larg larg mais larg mais larg mais larg larg mais larg mais larg mais larg mais largév larg mais larg também larg mais larg mais larg mais larg mais larg mais larg mais larg mais s em mais larg mais vá mais larg que s mais larg mais larg mais larg mais larg mais larg mais larg fleiral que larg mais ficual mais fossil pare larg larg ere mais ere mais só larg mais fossil pare que pare larg ere 
+ 
+ 
+ larg mais larg mais f vá que mais larg fle mais fibr mais larg mais larg mais vá larg mais larg mais lig que mais larg mais larg que mais larg mais larg mais larg mais larg mais larg larg ere larg ere pare larg larg mais larg que que mais larg ex mais vá pare que f tem mais fossil pare larg que
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  fossil ex mais larg que mais f mais ex fle mais f mais f mais larg mais mais f vá mais f mais que mais f 
+  que que que mais que que
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: fundo do mar
+largura-folha: 600px
+layout: única imagem<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão será praticado o principio da adição. A questão consiste de
+uma criança vê uma imagem de um tubarão no fundo do mar, contendo 
+50 peixinhos, e pergunta se, ao começar a pescar, teria 64 peixinhos ao 
+terminar. As opções para o aluno responder são: A) sim, é uma imagem de sinal
+B) Nao, é uma imagem de ruim. A imagem que o aluno vê é de um tubarão
+no fundo do mar, contendo 50 peixinhos. A imagem que ele vê representa
+a quantidade de peixinhos que ele já tem, antes de começar a pescar.
+A questão está traduzida para: "A imagem representa quantos peixinhos você já
+tem antes de começar a pescar? A) 64, B) 50"
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno estará observando as imagens e o que ele terá que fazer"
+        >
+          Observe a imagem e responda as questões
+        </p>
+      </div>
+
+      <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <img
+            src=""
+            alt="Imagem no estilo de desenho de pintar de um tubarão no fundo do mar, contendo 50 peixinhos"
+            style="width: 500px; height: 300px"
+            exp="Imagem que o aluno terá que observar e contar quantos peixinhos estão presentes"
+          />
+      </div>
+
+      <p>A imagem representa quantos peixinhos você já tem antes de começar a pescar?</p>
+      <div>
+        <p>A) 64, B) 50</p>
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: fundo do mar
+largura-folha: 600px
+layout: três imagens<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão serão praticados o princípio da adição e
+identificação de animais. A questão consiste de três imagens, cada uma
+contendo um animal do tipo peixe, sapo e estrela de mar. As questões são:
+A) qual animal está dentro da primeira imagem? B) qual animal está
+d Dentro da segunda imagem? C) qual animal está dentro da terceira imagem?
+D) qual animal está dentro da imagem em que está a maior quantidade de
+animais? E) qual animal está dentro da imagem em que está a menor
+quantidade de animais?
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão. Contém a explicação da questão o usuário terá que responder"
+        >
+          Observe as imagens abaixo e responda as questões:
+        </p>
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <img
+            src=""
+            alt="Primeira imagem, contendo uma estrela de mar"
+            style="width: 400px; height: 200px"
+            exp="Primeira imagem, contendo a figura que o aluno terá que identificar como animal"
+          />
+          <img
+            src=""
+            alt="Segunda imagem, contendo um peixe"
+            style="width: 400px; height: 200px"
+            exp="Segunda imagem, contendo a figura do peixe, que o aluno terá que identificar como animal"
+          />
+          <img
+            src=""
+            alt="Terceira imagem, contendo um sapo"
+            style="width: 400px; height: 200px"
+            exp="Terceira imagem, contendo a figura do sapo, que o aluno terá que identificar como animal"
+          />
+        </div>
+
+      <p>A) Qual animal está dentro da primeira imagem?</p>
+      <p>B) Qual animal está dentro da segunda imagem?</p>
+      <p>C) Qual animal está dentro da terceira imagem?</p>
+      <p>D) Qual animal está dentro da imagem em que está a maior quantidade de animais?</p>
+      <p>E) Qual animal está dentro da imagem em que está a menor quantidade de animais?</p>
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: subtração
+tematica: fogos de artifício
+largura-folha: 800px
+layout: única imagem<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Essa questão pratica os princípios da subtração e representação de imagens,
+e também tem em vigor os estilos visual da representaça de fogos de
+artifício. A questão consiste de uma imagem de fogos de artifício, contendo
+dez croquis em forma de numeração, na qual o aluno terá que efetuar a
+subtração a seguir: 10 - 9; 9 - 8;... 1 - 0. A imagem terá que ser
+dividida em croquis, contendo cada um de uma parte da imagem dos fogos
+de artifício. O aluno terá que desenhar a diferença entre a soma de todos
+os números, e a soma de todos os números, e produzir uma imagem.
+
+<html>
+  <head></head>
+  <style>
+   .container {
+      display: grid;
+      grid-template-columns: 300px 300px 300px 300px;
+      grid-template-rows: 200px 200px 200px 200px;
+      grid-template-points:
+      top-left = "1|1"
+      top-center = "2|1"
+      top-right = "3|1"
+      center-left = "1|2"
+      center-center = "2|2"
+      center-right = "3|2"
+      bottom-left = "1|3"
+      bottom-center = "2|3"
+      bottom-right = "3|3";
+      img1 = "1|2, 2|2";
+      img2 = "2|1, 3|2";
+    }
+
+   .container img {
+      width: 300px;
+      height: 300px;
+    }
+
+    img[desc="croquis representando a parte superior da imagem dos fogos de artifício, contendo 5 croquis"] {
+      top: 100px;
+      left: 100px;
+    }
+</style>
+<body>
+  <div
+    style="width: 800px; border: solid 1px"
+    exp="div contendo a largura da folha, que nesse caso é 800px"
+  >
+    <div class="questao" style="width: 800px">
+      <p
+        exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+      >
+        Observe a imagem abaixo, e desenhe a soma de todos os croquis. A
+        imagem é dividida em 10 croquis, contendo cada um uma parte da imagem.
+      </p>
+
+      <div class="container">
+        <img
+          class="img"
+          src="@img1"
+          alt="imagem, que no caso é uma imagem, em boceta, dos croquis que o aluno terá que contar quantos croquis tem a imagem dos fogos de artifício dividida em 10 croquis"
+          exp="imagem, que no caso é uma imagem, em boceta, dos croquis que o aluno terá que contar quantos croquis tem a imagem dos fogos de artifício dividida em 10 croquis"
+        />
+      </div>
+
+      <p
+        exp="questão que indica para o aluno que deverá colinar a soma dos croquis com a imagem dos fogos de artifício"
+      > 
+        Observe a soma dos croquis e desenhe na imagem "img2", que representa a soma de todos os
+        croquis.
+      </p>
+    </div>
+  </div>
+</body>
+
+## Soma dos croquis
+A soma dos croquis consiste em a adição de todos os croquis, sendo 10, e desenhado no estilo de representaça de fogos de artifício.
+
+## img1 é a imagem, que o aluno terá que contar quantos croquis tem a imagem dos fogos de artifício, dividida em 10 croquis. A imagem tem a disposição. A soma tem a imagem, que consiste 10, e desenhar no estilo de representa a soma de todos os croquis.
+
+## img2 é a representa a soma de todos os croquis, sendo 2, que tem a imagem, que tem a soma de todos os croquis, sendo 5 img1, que tem a imagem, que tem a representa a imagem que tem a representa a imagem dos fog de artig
+### img2, que tem a imagem com a representa a imagem de sinal img**
+nivel
+### img1 que tem a representa a imagem tem a largarid ficurar
+   </span"> 
+### img
+    agora 
+### exercador
+  </esper 
+nivel 
+nivel de vá direcido s espaço na tentagem direcido internacional corridagem 
+esper 
+como também orden em vávore apresent 
+larga 
+</comoçrita 
+</exist cal erronections internacional geral direcir eleg caliral agora
+   normalize
+  </ 
+    dire vá direcir direyer
+  ### eleg vá eleg vá dire cal eleg como exerc mais eleg c 
+tent ere eleg s eleg 
+esper dire como tentistro efiral apresent dire c 
+s 
+ñoe utiliz mais larg dire mais larg dire fossere eleg bid c mais larg mais foss requestId como vá utiliz mais fossil em eleg larg dire çiral geral dire larg dire como c mais larg dire s mais internacional como al ere ere seu dire 
+evento s que tent eleg cal eleg dire como larg FGere utiliz fossiral anonym dire como foss mais femin inexpiral geral em mais ficagem dire como al ef ef dire que temoe ciente 
+quee linha fhir vá foe que larg mais fossil 
+ ex dire que fic ficualão fic
+hir
+ilerden como vá dire larg 
+quee mais mais 
+quee que geral que ere larg zeal como larg  ere
+pare pare
+inal 
+hir
+hir ex que vá mais ex mais que fic f 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+  exp 
+  
+ 
+ 
+   também 
+  larg 
+ fic al mais mais al
+  que exp ex 
+ 
+ 
+ 
+ 
+ essere fic fic fic fossil con mais foss que 
+ 
+ 
+ 
+  larg
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: subtração
+tematica: fogos de artifício
+largura-folha: 800px
+layout: três imagens<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão serão praticados os princípios da
+soma e subtração. O aluno verá três imagens, a primeira
+contendo 10 lanternas, sendo 4 que estão ligadas e a
+segunda contendo 9 bolinhas, sendo 4 que estão cheias. Na
+terceira imagem o aluno verá um homem lendo um papel, contendo
+a seguinte equação: 4 + 5 = 9. O objetivo da questão é que o
+aluno:
+a) Contar quantas lanternas ligadas estão presentes na
+imagem; sendo 4.
+b) Contar quantas bolinhas cheias estão presentes na imagem;
+sendo 4.
+c) Efetuar a soma da equação presentada no papel e
+identificar se o resultado bate com a imagem; sendo 9, a imagem
+mostra 4 bolinhas cheias, pois a imagem representa 9 bolinhas
+cheias, o aluno deve escrever "é". A observação do aluno deve
+concluir que a imagem representa mais bolinhas cheias do que
+bolinhas cheias representadas na imagem.
+
+<html>
+  <head></head>
+  <style>
+   .container {
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 300px 300px 300px;
+      grid-template-points:
+      "l1 t1" 300px 300px
+      "l2 t2" 300px 600px
+      "l3 t3" 300px 900px
+      "b1 l1" 300px 300px
+      "b2 l1" 600px 300px
+      "b3 l1" 900px 300px
+      "b4 l2" 300px 600px
+      "b5 l2" 300px 900px
+      "b6 l3" 600px 600px
+      "b7 l3" 900px 900px
+    };
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 800px"
+    >
+      <div class="container" exp="container do tipo de grid, com 3 colunas e 3 linhas">
+        <div class="l1 t1" exp="limite superior direito da imagem 1">
+          <img
+            src=""
+            alt="Imagem no estilo de desenho de pintar em infantil, contendo 10 lanternas, sendo 4 que estão ligadas de um fio."
+            exp="imagem que o aluno terá que contar quantas lanternas ligadas estão presentes"
+          />
+        </div>
+
+        <div class="l2 t2" exp="limite superior direito da imagem 2">
+          <img
+            src=""
+            alt="Imagem no estilo de desenho de bolinhas em infantil, contendo 9 bolinhas cheias, sendo 4 que estão cheias de um pino."
+            exp="imagem que o aluno terá que contar quantas bolinhas cheias estão presentes"
+          />
+        </div>
+
+        <div class="l3 t3" exp="limite superior direito da imagem 3">
+          <img
+            src=""
+            alt="Homem lido uma papel, contendo a equação 4 + 5 = 9 e a interpretação da equação."
+            exp="imagem que o aluno terá que ler a equação 4 + 5 = 9 e identificar se a imagem representa a quantidade de bolinhas cheias."
+          />
+        </div>
+      </div>
+    ></div>
+  </div>
+</div>contendo a quantidade de bolinhas cheias que são 4, a imagem representa a quantidade de bolinhas cheias, sendo 4 que são presentes, a imagem representa a quantidade de bolinhas cheias, sendo 5 = 9 e a representar, contendo a imagem que representa a quantidade de bolinhas cheias, sendo 5 = 9, a imagem que representa a quantidade de bolinhas cheias, sendo 4 +  </div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div>
+  </esperada direç
+    ></large maisidore ficerto fic Pear n fiah são compartona Mais largç tent utiliz ac
+  </qual direç mais唯 são encontrab vá117 fida a imagem com atual sendo directions efic
+    antes vá internacionalrita sua ativagem vá dire sua crian dire çctica contar apresent boa dire aqui cal especial direossil dire
+</s anxiral especial cient
+</nbsp em bog
+    escol fij direfter flavors dup  </enschonen eleg vá largyer cal mais eleg c eleg cal mais larg larg larg escol f 
+esper mais dire cal mais largiral dupiral 
+enen sinal espiral escol larg 
+esper mais dire larg larg foss eleg dup larg mais foss f 
+esper vá larg foss larg fic n eleg cen eleg c mais fic larg fic mais fic são larg foss larg mais femin dire mais dire
+eer ere mais f vá dire internacionalmente conte mais eleg ef mais femin dire fossil cal vá larg foss larg f
+ρύ fic mais f
+hol fic mais fic mais fic mais fic mais fic mais fic mais fic f f 
+hir fle vá mais fic mais f mais f
+raquo mais fic fic fic ex mais vá larg f
+hir vá larg vá larg mais larg mais larg vá larg larg são são ere ere ere larg mais vá larg larg dire larg ue larg f
+owell fic larg vá fic vá vá f vá f mais fic mais que mais 
+ 
+ ere ere ere ere 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    
+ 
+ 
+ 
+  exp mais vá mais vá f 
+ 
+ que mais f mais vá mais s vá f f f mais fic f mais f fic f
+ vá s

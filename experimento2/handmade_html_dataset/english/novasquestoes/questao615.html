@@ -1,0 +1,50 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme:  Concert Car Entry
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+    "task": "To help students practice addition through a realistic scenario involving vehicle counting at a music concert. The student will calculate the total number of cars that arrived during different periods of the day.",
+    "layout": "The layout includes a descriptive paragraph introducing the scenario of a music concert and a question asking the student to sum the number of cars that arrived in the morning and evening. A centered image shows a concert venue with cars arriving. Below the image, there's a bold instruction ('Write the sum here') and a 100x100px box centered for the student to write the total number of cars.",
+    "answer": "To solve the task correctly, the student needs to add the two quantities: 145 cars in the morning and 178 in the evening. The correct total is 323 cars. The student should write this total inside the centered answer box, demonstrating their understanding of addition in a real-world context."
+  }
+  
+  
+  <html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: solid 1px;"
+         exp="Main wrapper that defines the width of the activity and ensures consistent visual layout.">
+         
+      <p exp="This paragraph presents a real-world problem involving addition. Students are asked to calculate the total number of cars that entered the concert area.">
+        During a music concert, 145 cars arrived in the morning and 178 cars arrived in the evening. How many cars entered the concert area in total?
+      </p>
+
+      <div style="display: flex; justify-content: center;" 
+           exp="This div centers the image, helping to visualize the concert setting.">
+        <img 
+          src="" 
+          alt="Concert venue with parked cars and a big stage in the background." 
+          style="width: 600px; height: 350px;" 
+          exp="This image shows a music concert venue, including a stage setup and many cars parked nearby. It helps students connect the question to a real-life scenario."
+        />
+      </div>
+
+      <p style="text-align: center; font-weight: bold; margin-top: 20px;" 
+         exp="Instruction telling the student what to do below the image. Reinforces that this is an addition task.">
+        Write the sum here
+      </p>
+
+      <div style="display: flex; justify-content: center;" 
+           exp="Centers the answer box in the middle of the activity layout.">
+        <div style="width: 100px; height: 100px; border: 1px solid black;" 
+             exp="Empty box where the student will write the total number of cars. Correct answer: 145 + 178 = 323.">
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

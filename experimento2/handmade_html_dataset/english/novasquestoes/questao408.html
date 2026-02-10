@@ -1,0 +1,76 @@
+level: 2nd year of fundamental  
+learning_goals: counting
+theme:  Stamps Collection  
+width-sheet: 800px  
+task: observe images, write answer
+language: en
+
+
+
+{
+    "task": "To practice counting and addition skills by calculating the total value of a stamp collection.",
+    "layout": "The activity consists of a description at the top, explaining the context of collecting stamps, followed by a set of questions regarding the total value of the collection.",
+    "answer": {
+        "A": "To answer correctly, the student needs to add the value of each stamp (12 + 10 + 15). The correct answer is 37 reais.",
+        "B": "To answer correctly, the student needs to calculate the total value after collecting 25 reais worth of stamps. The correct answer is 62 reais."
+    }
+}
+
+<html>
+    <head>
+        <style>
+            .container {
+                width: 800px;
+                border: solid 1px;
+                padding: 10px;
+                text-align: center;
+            }
+            .question-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+            .answer-box {
+                width: 150px;
+                height: 30px;
+                border: 1px solid black;
+                text-align: center;
+            }
+            img {
+                width: 120px;
+                height: 70px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="activity">
+                <p exp="Activity description explaining the context of collecting stamps.">
+                    Ana has been collecting stamps. She has stamps worth 12 reais, 10 reais, and 15 reais in her collection.
+                </p>
+            </div>
+
+            <div style="display: flex; justify-content: center;">
+                <img src="" alt="Image of a 12 reais stamp" exp="Image of a 12 reais stamp"/>
+                <img src="" alt="Image of a 10 reais stamp" exp="Image of a 10 reais stamp"/>
+                <img src="" alt="Image of a 15 reais stamp" exp="Image of a 15 reais stamp"/>
+            </div>
+
+            <div class="question-container">
+                <p exp="Question asking for the total value of the stamps in the collection.">
+                    <b>A)</b> What is the total value of Ana's stamps?
+                </p>
+                <div class="answer-box" exp="Box where the student writes the total value. The correct answer is 37 reais."></div>
+            </div>
+
+            <div class="question-container">
+                <p exp="Question asking for the total amount after adding 25 reais worth of stamps to the collection.">
+                    <b>B)</b> How much does Ana have after adding 25 reais worth of stamps?
+                </p>
+                <div class="answer-box" exp="Box where the student writes the total value. The correct answer is 62 reais."></div>
+            </div>
+        </div>
+    </body>
+</html>

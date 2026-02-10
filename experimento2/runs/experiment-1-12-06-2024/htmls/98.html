@@ -1,0 +1,65 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of cacti in the initial image, calculating the additional cacti in the second image, and then adding up the total number of cacti.",
+  "layout": "The question is divided into three main sections. The top section contains a paragraph describing the task. The middle section contains a 2x1 grid with two images: the first image of a cactus field with 7 cacti, and the second image of 4 additional cacti. The images are placed in a specific layout to facilitate counting and addition. The third section is currently empty but can be used to provide questions or answer options.",
+  "answer": "To answer correctly, the student needs to: 1) count the number of cacti in the initial image (7), 2) count the additional cacti in the second image (4), and 3) add the two numbers together to find the total. The correct answer is 11 cacti (7 cacti in the initial image + 4 additional cacti)."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three main sections, the first with a paragraph, the second with a 2x1 grid containing two images, and the third currently empty. */
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 400px 400px;
+      grid-template-areas:
+        "img1 img1"
+        "img2 img2";
+    }
+
+    /* class used to place the image of the cactus field in the first row and the first column*/
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the image of the cacti in the second row and the first column*/
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to adjust the size of the cacti images*/
+    img {
+      width: 380px;
+      height: 380px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="container">
+        <div
+          exp="div that will be used to adjust the images of the cacti in the activity, containing two images in a 2x1 grid"
+        >
+          <img
+            class="img1"
+            alt="image in a coloring book style of a cactus field containing 7 cacti"
+            exp="image that the student will have to count the 7 cacti present in it"
+          />
+
+          <img
+            class="img2"
+            alt="image in a coloring book style containing 4 cacti in a desert scenario"
+            exp="image that the student will have to count the 4 cacti and add to the 7 cacti of the other image"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

@@ -1,0 +1,55 @@
+level: 2nd year of fundamental
+learning_goals: addition, counting
+theme: Fabiana’s Block Addition
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+  "task": "To help students understand place value and practice addition by using visual representations of blocks grouped in tens and units.",
+  "layout": "The activity presents a centered image showing 2 groups of 10 blocks, 7 single blocks, and 4 additional blocks. Below the image, three questions (A, B, and C) are aligned side by side with their respective answer boxes to the right. The structure is organized clearly to guide the student from counting, to addition, to number decomposition.",
+  "answer": "The student first observes the image and counts the total from the 2 tens (20) and 7 units to get 27 for question A. For question B, they must add 4 more units to 27, reaching a total of 31. In question C, they decompose 31 into place value: 3 tens and 1 unit. The activity encourages visual understanding and strengthens the relationship between addition and place value."
+}
+  
+
+<html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: solid 1px; padding: 10px;">
+      <div class="activity">
+        <p exp="Fabiana is organizing small blocks to represent numbers. The image shows the groups she made.">
+          Fabiana is working with small blocks. She created groups to show the numbers she is working with. Look at the image below to help you answer the questions.
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;" 
+          exp="Div used to center the image that shows Fabiana’s blocks for addition.">
+        <img 
+          src="" 
+          alt="Image of blocks: two full groups of 10 blocks, 7 single blocks, and 4 extra blocks on the side." 
+          style="width: 600px; height: 300px" 
+          exp="Illustration showing 2 groups of 10 blocks, 7 single blocks, and 4 more blocks added. Used to support addition problems."
+        />
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question asking for the total of 2 tens and 7 units."><b>A)</b> What number do we make with 2 tens and 7 units?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" 
+            exp="Box where the student should write '27'. This is the sum of 2 groups of 10 and 7 single blocks."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question asking for the result of adding 4 more blocks to 27."><b>B)</b> If Fabiana adds 4 more blocks to 27, how many blocks does she have now?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" 
+            exp="Box where the student should write '31'. This is the result of 27 + 4."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question asking to write the number 31 in terms of tens and units."><b>C)</b> How many tens and how many units are there in 31?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" 
+            exp="Box where the student should write '3 tens and 1 unit'. This shows decomposition of 31."></div>
+      </div>
+    </div>
+  </body>
+</html>

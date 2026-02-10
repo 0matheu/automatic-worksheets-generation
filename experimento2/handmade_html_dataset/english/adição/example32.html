@@ -1,0 +1,120 @@
+level: 2nd year of fundamental 
+learning goals: addition, counting 
+theme: animals
+width-sheet: 600px 
+task: observe images, link items
+language: en
+
+{
+  "task": "Perform addition operations and match the results to the corresponding images",
+  "layout": "The activity is divided into a 3-line and 2-column layout. The left column contains three equations, and the right column contains three images. Each equation is placed on a separate row, and each image is placed on a separate row, aligned with the corresponding equation.",
+  "answer": {
+    "equation1": "4 + 7 = 11 (match with the image of 11 kittens)",
+    "equation2": "5 + 2 = 7 (match with the image of 7 toucans)",
+    "equation3": "8 + 4 = 12 (match with the image of 12 kittens)"
+  }
+}
+
+<html>
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three images and three equations in a 3-line and 2-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px;
+      grid-template-rows: 200px 200px 200px;
+      grid-template-areas:
+        "equation1 img1"
+        "equation2 img2"
+        "equation3 img3";
+    }
+
+
+    /* class used to place the first equation on the first row and the first column */
+    .equation1 {
+      grid-area: equation1;
+    }
+
+    /* class used to place the second equation on the second row and the first column */
+    .equation2 {
+      grid-area: equation2;
+    }
+
+    /* class used to place the third equation on the third row and the first column */
+    .equation3 {
+      grid-area: equation3;
+    }
+
+    /* class used to place the first image in the first row and the second column */
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the second image in the second row and the second column */
+    .img2 {
+      grid-area: img2;
+    }
+
+
+    /* class used to place the third image in the third row and the second column */
+    .img3 {
+      grid-area: img3;
+    }
+
+    /* class used to give the size for the images of the activity */
+    img {
+      width: 180px;
+      height: 180px;
+    }
+
+  </style>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 600px"
+    >
+      <div class="activity" style="width: 600px">
+        <p
+          exp="Activity description, containing the explanation of what the student will have to do to answer the activity correctly"
+        >
+          Perform the addition in each equation and match the result to the image with the corresponding number.
+        </p>
+
+        <div class="container">
+          <p class="equation1" exp="p used to place the equation in the first row and the first column">4 + 7</p>
+
+          <p class="equation2" exp="p used to place the equation in the second row and the first column">5 + 2</p>
+
+          <p class="equation3" exp="p used to place the equation in the third row and the first column">8 + 4</p>
+
+          <div class="img1" exp="div used to adjust the image of the kittens on the first row and the second column">
+            <img
+              class="sizelanding"
+              src=""
+              alt="Image in children's drawing style of 12 kittens sleeping on a bed"
+              exp="image that the student will have to look at and identify that there are 12 kittens"
+            />
+          </div>
+
+          <div class="img2" exp="div used to adjust the image of the puppies on the second row and the second column">
+            <img
+              class="sizelanding"
+              src=""
+              alt="image in children's drawing style of 13 puppies playing in a field"
+              exp="image that the student will have to look at and identify that there are 13 puppies"
+            />
+          </div>
+
+          <div class="img3" exp="div used to adjust the image of the toucans on the third row and the second column">
+            <img
+              class="sizelanding"
+              src=""
+              alt="image in children's drawing style of 7 toucans flying in the Amazon"
+              exp="image that the student will have to look at and identify that there are 7 toucans"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

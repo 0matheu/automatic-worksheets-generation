@@ -1,0 +1,69 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of balls each seal is balancing and calculating the total sum.",
+  "layout": "The HTML elements are organized with a div containing the sheet width, followed by a div containing the question description, and a grid container with three rows and one column. The grid container contains three images of seals balancing balls, each in a separate row, and a paragraph explaining the task.",
+  "answer": "To answer correctly, the student needs to: 1) identify the number of balls in the first image (3 balls), 2) identify the number of balls in the second image (2 balls), 3) identify the number of balls in the third image (5 balls), 4) add up the total number of balls (3 + 2 + 5 = 10). The correct answer is 10."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the images of the seals below, count the number of balls each seal is balancing, and write the sum of all the balls.
+        </p>
+
+        <div
+          style="display: grid; grid-template-columns: 800px; grid-template-rows: 250px 250px 250px"
+          exp="div that contains the images, being organized in three rows and one column"
+        >
+          <div
+            style="grid-area: 1 / 1 / 2 / 2"
+            exp="div that will be used to adjust the image of the seal in the first row"
+          >
+            <img
+              src=""
+              alt="children's painting style image of a seal with 3 balls on a ball, being the ball style circus"
+              style="width: 800px; height: 240px"
+              exp="image in which the student will have to count how many balls the seal is balancing, being 3, and the image is 240px in height to be a children's drawing style image"
+            />
+          </div>
+
+          <div
+            style="grid-area: 2 / 1 / 3 / 2"
+            exp="div that will be used to adjust the image of the seal in the second row"
+          >
+            <img
+              src=""
+              alt="children's painting style image of a seal with 2 balls on a ball, being the ball style circus"
+              style="width: 800px; height: 240px"
+              exp="image in which the student will have to count how many balls the seal is balancing, being 2, and the image is 240px in height to be a children's drawing style image"
+            />
+          </div>
+
+          <div
+            style="grid-area: 3 / 1 / 4 / 2"
+            exp="div that will be used to adjust the image of the seal in the third row"
+          >
+            <img
+              src=""
+              alt="children's painting style image of a seal with 5 balls on a ball, being the ball style circus"
+              style="width: 800px; height: 240px"
+              exp="image in which the student will have to count how many balls the seal is balancing, being 5, and the image is 240px in height to be a children's drawing style image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

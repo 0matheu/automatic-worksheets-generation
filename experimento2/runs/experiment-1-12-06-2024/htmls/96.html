@@ -1,0 +1,85 @@
+```json
+{
+  "task": "To practice addition skills by counting the total number of balls Maria and João have and connecting them to the correct image.",
+  "layout": "The activity is divided into two main sections. The top section contains a paragraph that explains the task, and the bottom section contains a 2x2 grid with three images: an image of Maria with balls, an image of João with balls, and an image of a transparent circus. The two balls images are placed in the first and second columns of the first row, and the circus image is placed in the first column of the second row. The layout is organized using a combination of flexbox and grid layout.",
+  "answer": "To answer this question correctly, the student needs to count the number of balls in the Maria and João images (4 and 5) and calculate the total sum (9). Then, the student needs to connect the correct answer (9) to the image of the transparent circus. The student needs to observe the images carefully and perform a simple addition operation to get the correct answer."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to organize the images of the activity, containing a total of three images, being one of the images transparent, in a 2x2 grid layout */
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 400px 400px;
+      grid-template-areas:
+        "img1 img2"
+        "circus circus";
+    }
+
+    /* class used to place the image of Maria in the first row and the first column */
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the image of João in the first row and the second column */
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to place the image of the circus on the second row and in the middle of the first and second column */
+    .circus {
+      margin-top: 50px;
+      margin-left: 150px;
+      grid-area: circus;
+    }
+
+    /* class used to adjust the size of the images in the activity */
+    img {
+      width: 380px;
+      height: 380px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Maria and João were in a circus that had the image below, Maria had 4 balls and João 5, and they were very happy playing and wanted to know how many balls they had together, can you help by connecting the image with the most balls to the circus and writing the sum below?
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="image in children's drawing style of a girl with 4 balls in a transparent background"
+              exp="image in which the student will have to observe that there are 4 balls with the girl, being the image that contains the largest number of balls, and connect it to the image of the circus"
+            />
+          </div>
+
+          <div class="img2">
+            <img
+              alt="image in children's drawing style of a boy with 5 balls in a transparent background"
+              exp="image in which the student will have to observe that there are 5 balls with the boy, and connect the image with the largest number of balls to the image of the circus"
+            />
+          </div>
+
+          <div class="circus">
+            <img
+              alt="image in children's drawing style of a circus with no one in the image, but with 9 balls"
+              exp="image that the student will have to connect with the image that has the largest number of balls, and represents the sum of the balls of the children"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

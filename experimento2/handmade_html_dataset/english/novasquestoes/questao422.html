@@ -1,0 +1,68 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Planting Trees
+width-sheet: 800px
+task: observe images, write answer
+language: en
+
+{ "task": "To practice counting and addition skills by adding up the number of trees planted by each group and answering questions about the total number of trees.", "layout": "The activity consists of a description explaining that the student needs to add up the number of trees planted by each group to calculate the total number of trees planted.", "answer": { "A": "To answer correctly, the student needs to add the number of trees (20 trees by group 1, 30 trees by group 2, and 25 trees by group 3). The correct answer is 75 trees.", "B": "To answer correctly, the student needs to write down the total number of trees. The correct answer is 75 trees." } }
+
+
+<html>
+  <head>
+    <style>
+      .container {
+        width: 800px;
+        border: solid 1px;
+        padding: 10px;
+        text-align: center;
+      }
+      .question-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+      .answer-box {
+        width: 150px;
+        height: 30px;
+        border: 1px solid black;
+        text-align: center;
+      }
+      img {
+        width: 120px;
+        height: 70px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="activity">
+        <p exp="Activity description explaining the number of trees planted by each group.">
+          Three groups planted the following number of trees:
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center;" exp="Div used to center the images of groups planting trees.">
+        <img src="" alt="Image of group 1 planting 20 trees" exp="Image of group 1 planting 20 trees." />
+        <img src="" alt="Image of group 2 planting 30 trees" exp="Image of group 2 planting 30 trees." />
+        <img src="" alt="Image of group 3 planting 25 trees" exp="Image of group 3 planting 25 trees." />
+      </div>
+
+      <div class="question-container" exp="Question asking the student how many trees group 1 planted.">
+        <p exp="Question asking how many trees did group 1 plant.">
+          <b>A)</b> How many trees did group 1 plant?
+        </p>
+        <div class="answer-box" exp="Box for the student to write the number of trees planted by group 1."></div>
+      </div>
+
+      <div class="question-container" exp="Question asking the student the total number of trees planted by all groups.">
+        <p exp="Question asking what is the total number of trees planted by all groups.">
+          <b>B)</b> What is the total number of trees planted by all groups?
+        </p>
+        <div class="answer-box" exp="Box for the student to write the total number of trees planted."></div>
+      </div>
+    </div>
+  </body>
+</html>

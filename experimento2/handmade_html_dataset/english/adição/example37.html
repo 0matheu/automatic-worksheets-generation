@@ -1,0 +1,105 @@
+level: 2nd year of fundamental 
+learning goals: addition, counting 
+theme: weight measurement
+width-sheet: 800px 
+task: observe images, write answer
+language: en
+
+{
+  "task": "To calculate the total weight by adding the girl's weight to the weight of the books and record the answer.",
+  "layout": "The activity consists of a single line layout organized into three columns, with three images placed side by side. The first image depicts a girl on a scale, the second image shows a pile of books on a scale, and the third image features both the girl and the pile of books together on a scale.",
+  "answer": "To correctly answer this activity, the student needs to identify the weight of the girl (21 kilos) in the first image and the weight of the pile of books (6 kilos) in the second image. The student should then calculate the sum of these weights (21 + 6 = 27 kilos) and write the total weight (27 kilos) in the answer box below the instruction: 'Write in the box below the total weight after adding the girl's weight and the books' weight.'"
+}
+
+<html>
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three images in a 1-line and 3-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 250px 250px 250px;
+      grid-template-rows: 300px;
+      grid-template-areas:
+        "scales1 scales2 scales3";
+    }
+
+    /* class that will be used to place the image of the girl in the first row and the first column */
+    .scales1 {
+      grid-area: scales1;
+    }
+
+     /* class that will be used to place the image of the pile of books in the first row and the second column */
+    .scales2 {
+      grid-area: scales2;
+    }
+
+     /* class that will be used to place the image of the girl and the pile of books in the first row and the third column */
+    .scales3 {
+      grid-area: scales3;
+    }
+    
+    /* class that will be used to give a space between the images */
+    .container div {
+      margin-left: 20px;
+    }
+
+    /* class that will be used to give the size of the images in the activity */
+    img {
+      width: 230px;
+      height: 240px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="activity" style="width: 800px">
+        <p
+          exp="Activity description, containing the explanation of what the student will have to do to answer the activity correctly"
+        >
+        Examine the images below. Determine the weight of the girl and the weight of the stack of books. Next, calculate the total weight by adding the girl's weight to the weight of the books and record your answer in the third image.
+        </p>
+
+        <div class="container" exp="div that will the used to place the images in the right place">
+          <div class="scales1" exp="div that will be used to place the image of the girl on the scale on the first row and first column">
+            <img
+              class=""
+              src=""
+              alt="image in children's painting style containing a girl on a scale, on the scale it is showing 21 kilos"
+              exp="image that the student will have to look and identify that the girl weight 21 kilos"
+            />
+          </div>
+  
+          <div class="scales2" exp="div that will be used to place the image of a pile of books on the scale on the first row and second column">
+            <img
+              class=""
+              src=""
+              alt="image in children's painting style containing a pile of books, on the scale it is showing 6 kilos"
+              exp="image that the student will have to look and identify that the pile of books weight 6 kilos"
+            />
+          </div>
+  
+          <div class="scales3" exp="div that will be used to place the image of the girl and the pile of books on the scale on the first row and third column">
+            <img
+              class=""
+              src=""
+              alt="image in children's painting style containing a pile of books and a girl, the scale is not showing the weight"
+              exp="image that the student will have to look and write the sum of the weight of the girl and the books at the scale"
+            />
+          </div>
+        </div>
+
+        <p exp="description of where the student will write the answer" style="text-align: center; margin-top: 20px;">
+          Write in the box below the total weight after adding the girl's weight and the books' weight:
+        </p>
+        <div style="display: flex; justify-content: center;" exp="div used to center the answer box">
+          <div
+            style="width: 100px; height: 100px; border: 1px solid black;"
+            exp="box used by the student to write the answer, in that case 27 kilos"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

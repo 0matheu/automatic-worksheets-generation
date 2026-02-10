@@ -1,0 +1,59 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme:  Birds on a Tree
+width-sheet: 800px
+task: observe images, write answer
+language: en
+
+
+
+{
+  "task": "To practice addition and counting by observing birds on a tree and calculating how many birds there will be after more arrive.",
+  "layout": "The activity begins by showing a tree that already has 6 birds perched on its branches. Then, the student is asked to calculate the total number of birds after 4 more and 7 more birds land on the tree. The layout includes a description of the situation, three images (6 birds, 10 birds, and 13 birds), and two side-by-side questions with answer boxes.",
+  "answer": {
+    "A": "The student needs to add 4 birds to the existing 6 birds on the tree. To do this, they can count on their fingers or visualize the total by looking at the image of 10 birds. The correct answer is 10.",
+    "B": "The student needs to add 7 birds to the existing 6 birds on the tree. They may count by using objects, fingers, or referring to the image of 13 birds. The correct answer is 13."
+  }
+}
+
+<html>
+  <head>
+    <style>
+      .container { width: 800px; border: solid 1px; padding: 10px; text-align: center; font-family: Arial, sans-serif; }
+      .question-container { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+      .answer-box { width: 150px; height: 30px; border: 1px solid black; text-align: center; font-size: 16px; }
+      img { width: 120px; height: 70px; margin: 10px; }
+      .activity p { font-size: 18px; margin-bottom: 20px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="activity">
+        <p exp="This paragraph introduces the mathematical situation involving birds landing on a tree. It helps children imagine a real-life scenario where they need to use addition to solve a problem.">
+          There are already 6 birds on the tree. The observer wants to know how many birds there will be if 4 more birds land on the tree. Additionally, they want to know how many birds there will be if 7 more birds land on the tree.
+        </p>
+      </div>
+  
+      <div style="display: flex; justify-content: center;" exp="This div arranges the three images horizontally to visually represent the number of birds before and after more arrive. It supports students who rely on visual cues for counting and addition.">
+        <img src="" alt="Tree branch with 6 colorful birds sitting on it" exp="Illustration showing exactly 6 birds perched on a tree branch. This is the initial quantity before any new birds land." />
+        <img src="" alt="Tree branch now has 10 birds after 4 more joined" exp="Illustration showing 10 birds in total on the branch. It represents the result of adding 4 birds to the original 6." />
+        <img src="" alt="Tree branch now has 13 birds after 7 more joined" exp="Illustration showing 13 birds in total on the tree. It represents the result of adding 7 birds to the original 6." />
+      </div>
+  
+      <div class="question-container" exp="This section contains Question A, asking students to solve an addition problem using the provided context and visuals.">
+        <p exp="Text of Question A. It clearly asks students to add 4 birds to the existing 6 birds on the tree.">
+          <b>A)</b> How many birds will there be if 4 more land on the tree?
+        </p>
+        <div class="answer-box" exp="Answer box for Question A. The student is expected to write the result of 6 + 4 here, which is 10."></div>
+      </div>
+  
+      <div class="question-container" exp="This section contains Question B, guiding students to solve a second addition problem using the same visual context.">
+        <p exp="Text of Question B. It asks students to add 7 birds to the 6 birds already on the tree.">
+          <b>B)</b> How many birds will there be if 7 more land on the tree?
+        </p>
+        <div class="answer-box" exp="Answer box for Question B. The student should write the result of 6 + 7 here, which is 13."></div>
+      </div>
+    </div>
+  </body>
+  </html>
+  

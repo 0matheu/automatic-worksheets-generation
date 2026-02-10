@@ -1,0 +1,65 @@
+level: 2nd year of fundamental
+learning goals: counting, addition, comparison
+theme: Aquarium
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+    "task": "To practice counting, addition, and comparison skills by analyzing the number of visitors in the aquarium and answering questions about the most attended area and the total number of visitors.",
+    "layout": "The activity consists of a description of the scenario at the top, providing the necessary context. Below the description, a centered image illustrates different areas of the aquarium and their number of visitors. The student will answer questions based on the image, with answer boxes positioned close to each question.",
+    "answer": {
+      "A": "To answer correctly, the student must identify the attraction with the highest attendance. The correct answer is 'Shark Tunnel: 310 visitors'.",
+      "B": "Adding the visitors (310 + 250 + 180), the total is 740."
+    }
+  }
+
+  
+<html>
+<head>
+  <style>
+    .question-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      margin-bottom: 5px;
+    }
+    .answer-box {
+      width: 60px;
+      height: 30px;
+      border: 1px solid black;
+      text-align: center;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div style="width: 800px; border: solid 1px; padding: 10px;" exp="Contêiner principal da atividade">
+
+    <div class="activity">
+      <p exp="Descrição da atividade explicando o que o estudante deve fazer">
+        Isabela e seus colegas visitaram o aquário. Observe o número de visitantes em cada área e responda às perguntas abaixo.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div usada para centralizar a imagem na atividade">
+      <img src=""
+           alt="Ilustração do aquário mostrando o Túnel dos Tubarões (310 visitantes), Área dos Pinguins (250 visitantes), Galeria das Medusas (180 visitantes)."
+           style="width: 600px; height: 300px"
+           exp="Imagem mostrando as diferentes atrações do aquário com o número de visitantes em cada área." />
+    </div>
+
+    <div class="question-container">
+      <p exp="Pergunta sobre qual área teve mais visitantes"><b>A)</b> Qual dessas teve mais visitantes?</p>
+      <div class="answer-box" exp="Caixa onde o estudante escreve a área mais visitada. A resposta correta é 'Túnel dos Tubarões: 310 visitantes'."></div>
+    </div>
+
+    <div class="question-container">
+      <p exp="Pergunta sobre o total de visitantes"><b>B)</b> Qual é o número total de visitantes nas três áreas?</p>
+      <div class="answer-box" exp="Caixa onde o estudante escreve o total de visitantes. A resposta correta é 740."></div>
+    </div>
+
+  </div>
+</body>
+</html>

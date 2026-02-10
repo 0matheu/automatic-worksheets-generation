@@ -1,0 +1,50 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Dogs in the Park
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+  "task": "There were 9 dogs playing in the park in the morning and 6 more came in the afternoon.",
+  "layout": "This activity happens in a sunny park. The image shows dogs running and playing fetch, with trees and grass. The student will count how many dogs were there in total.",
+  "answer": {
+    "Question": "To answer correctly, the student must add 9 dogs playing in the morning and 6 more in the afternoon. The correct answer is 15 dogs."
+  }
+}
+
+  
+<html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: 1px solid black; padding: 10px;" exp="Main container for the dog counting activity in a park.">
+
+      <div class="activity">
+        <p exp="Story about dogs playing in the park at two different times.">
+          There were 9 dogs playing in the park in the morning and 6 more came in the afternoon.
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin: 20px;" exp="Centers the illustration of dogs playing.">
+        <img 
+          src="" 
+          alt="Dogs playing in a sunny park." 
+          style="width: 600px; height: 300px;" 
+          exp="Image shows dogs of different breeds playing fetch, running on the grass, and wagging their tails. Trees, park benches, and a bright sun complete the cheerful outdoor setting."
+        />
+      </div>
+
+      <p style="text-align: center;" exp="Instruction for the student to add and write the result.">
+        How many dogs were in the park in total? Write your answer below:
+      </p>
+
+      <div style="display: flex; justify-content: center;" exp="Answer writing area.">
+        <div style="width: 100px; height: 100px; border: 1px solid black;" 
+            exp="Answer box for the student to write the result of 9 + 6. Correct answer is 15.">
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

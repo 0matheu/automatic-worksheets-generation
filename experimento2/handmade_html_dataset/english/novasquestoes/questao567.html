@@ -1,0 +1,49 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: School Buses in the Parking Lot
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+  "task": "There were 8 school buses parked in the morning and 12 more arrived later.",
+  "layout": "The scene shows a school parking lot with multiple yellow buses. The image includes trees, a school building, and the buses parked neatly. Students must count all the buses.",
+  "answer": {
+    "Question": "To answer correctly, the student must add 8 buses parked in the morning and 12 that arrived later. The correct answer is 20 buses."
+  }
+}
+
+<html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: 1px solid black; padding: 10px;" exp="Main container for the school bus counting activity.">
+
+      <div class="activity">
+        <p exp="Context about school buses parked at different times.">
+          There were 8 school buses parked in the morning and 12 more arrived later.
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin: 20px;" exp="Centers the illustration of school buses.">
+        <img 
+          src="" 
+          alt="Yellow school buses parked in front of a school building." 
+          style="width: 600px; height: 300px;" 
+          exp="Illustration of a school parking lot with bright yellow buses, green trees around, and a school building in the background. Some buses have their doors open."
+        />
+      </div>
+
+      <p style="text-align: center;" exp="Instruction asking the student to count and write the total number of buses.">
+        How many school buses are there in total? Write your answer below:
+      </p>
+
+      <div style="display: flex; justify-content: center;" exp="Answer input section.">
+        <div style="width: 100px; height: 100px; border: 1px solid black;" 
+            exp="Answer box for the total number of school buses. Correct answer is 20.">
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

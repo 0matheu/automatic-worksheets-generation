@@ -1,0 +1,47 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Book Club Memberships
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+  "task": "To practice counting and basic addition skills by calculating the total number of memberships in a book club.",
+  "layout": "The activity consists of a description where Carolina is managing memberships for the book club. Below is an image showing how many members joined each book group. The student will answer questions by adding the memberships.",
+  "answer": {
+    "A": "To answer correctly, the student needs to add the number of members in the first group (15 members) and the second group (25 members). The correct answer is 40 members.",
+    "B": "To answer correctly, the student needs to add the number of members in the second group (25 members) and the third group (35 members). The correct answer is 60 members."
+  }
+}
+
+<html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: solid 1px; padding: 10px;">
+      <div class="activity">
+        <p exp="Carolina is managing the book club memberships. The number of members in each book group is shown in the image.">
+          Carolina is keeping track of the book club memberships. Below is an image showing the number of members in each group.
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image showing the book club memberships.">
+        <img 
+          src="" 
+          alt="Illustration showing Carolina's book club groups, with group 1 having 15 members, group 2 having 25 members, and group 3 having 35 members."
+          style="width: 600px; height: 300px"
+          exp="Image showing the membership counts for each group in the book club."
+        />
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question asking for the total membership count for the first and second groups."><b>A)</b> What is the total membership count for the first and second groups?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total membership count for the first and second groups. Correct: 40."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question asking for the total membership count for the second and third groups."><b>B)</b> What is the total membership count for the second and third groups?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total membership count for the second and third groups. Correct: 60."></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+level: 2nd year of fundamental  
+learning_goals: counting, addition  
+theme: Card Number Addition  
+width-sheet: 800px  
+
+task: observe images, write answer  
+language: en
+
+{
+  "task": "To practice counting and addition skills by adding the numbers on the cards of each child and answering questions about the correct calculations.",
+  "layout": "The activity consists of a description explaining that each child has three cards with numbers to add up to find the result of their group of cards. The student will answer which child calculated correctly and what the other children should have calculated.",
+  "answer": {
+    "A": "To answer correctly, the student needs to identify who calculated correctly. The correct answer is 'Henrique'.",
+    "B": "To answer correctly, the student needs to write the numbers that Gabriela and Bianca should have calculated correctly. The correct answers are 181 for Gabriela and 127 for Bianca."
+  }
+}
+
+
+<html>
+    <head>
+        <style>
+            .container {
+                width: 800px;
+                border: solid 1px;
+                padding: 10px;
+                text-align: center;
+            }
+            .question-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+            .answer-box {
+                width: 150px;
+                height: 30px;
+                border: 1px solid black;
+                text-align: center;
+            }
+            img {
+                width: 120px;
+                height: 70px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container" style="width: 800px; border: solid 1px;">
+            <div class="activity">
+                <p exp="Activity description explaining that each child has three cards with numbers to add up to find the result.">
+                    Each child has 3 numbered cards that need to be added together to find the result of their group of cards.
+                </p>
+            </div>
+
+            <div style="display: flex; justify-content: center;">
+                <img src="" alt="Gabriela with cards 100, 80, 1" exp="Image of Gabriela holding the cards 100, 80, and 1"/>
+                <img src="" alt="Bianca with cards 7, 100, 20" exp="Image of Bianca holding the cards 7, 100, and 20"/>
+                <img src="" alt="Henrique with cards 5, 100, 50" exp="Image of Henrique holding the cards 5, 100, and 50"/>
+            </div>
+
+            <div class="question-container">
+                <p exp="Question asking who calculated the numbers correctly.">
+                    <b>A)</b> Which child calculated correctly?
+                </p>
+                <div class="answer-box" exp="Box where the student writes the correct child's name. The correct answer is Henrique."></div>
+            </div>
+
+            <div class="question-container">
+                <p exp="Question asking to record the numbers the other children should have calculated correctly.">
+                    <b>B)</b> Write the numbers the other children should have calculated correctly.
+                </p>
+                <div class="answer-box" exp="Box where the student writes Gabriela's and Bianca's answers. The correct answers are 181 for Gabriela and 127 for Bianca."></div>
+            </div>
+        </div>
+    </body>
+</html>

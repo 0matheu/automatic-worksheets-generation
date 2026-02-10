@@ -1,0 +1,129 @@
+level: 2nd year of fundamental
+learning goals: counting
+theme: fauna and flora
+width-sheet: 800px
+task: observe images, link items
+language: en
+
+{
+  "task": "To count the number of animals or plants in each image and link them with the correct numeral, learning to count and match quantities with numbers.",
+  "layout": "The activity is organized in a grid layout consisting of three columns and three rows. In the first column, images of animals and plants are displayed, providing visual elements for the task. The second column remains empty, creating a space that separates the images from the numbers. In the third column, corresponding numbers are placed, allowing students to make connections between the images and their respective values.",
+  "answer": "To answer correctly, the student needs to count the number of animals or plants in each image and link them with the correct number. The correct links are: the image of 4 sabiás with the number 4, the image of 5 golden lion tamarins with the number 5, and the image of 3 sunflowers with the number 3."
+}
+
+<html>
+  <head></head>
+
+  <style>
+    /* classe usada para organizar as imagens dos animais e os números para que o estudante possa ligar as respostas corretas */
+    .container {
+      display: grid;
+      grid-template-columns: 300px 400px 100px;
+      grid-template-rows: 200px 200px 200px;
+      grid-template-areas:
+        "img1 empty1 n1"
+        "img2 empty2 n2"
+        "img3 empty3 n3"
+    }
+
+    /* classe usada para posicionar a imagem do mico-leão-dourado na primeira célula da primeira coluna */
+    .img1{
+      grid-area: img1;
+    }
+
+    /* classe usada para posicionar a imagem dos girassóis na segunda célula da primeira coluna */
+    .img2{
+      grid-area: img2;
+    }
+
+    /* classe usada para posicionar a imagem dos sabiás na terceira célula da primeira coluna */
+    .img3{
+      grid-area: img3;
+    }
+
+    /* classe usada para posicionar o número 4 na primeira célula da terceira coluna */
+    .n1 {
+      grid-area: n1;
+      font-size: 30px;
+    }
+
+    /* classe usada para posicionar o número 5 na segunda célula da terceira coluna */
+    .n2 {
+      grid-area: n2;
+      font-size: 30px;
+    }
+
+    /* classe usada para posicionar o número 3 na terceira célula da terceira coluna */
+    .n3 {
+      grid-area: n3;
+      font-size: 30px;
+    }
+
+    /* classe usada para ajustar o tamanho das imagens da atividade */
+    img {
+      width: 300px;
+      height: 190px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div contendo a largura da folha, que neste caso é 800px"
+    >
+      <div class="activity" style="width: 800px">
+        <p
+          exp="Descrição da atividade, contendo a explicação do que o estudante deverá fazer para responder corretamente"
+        > 
+          Observe as imagens abaixo e ligue-as ao número que representa corretamente a quantidade de animais ou plantas presentes.
+        </p>
+        
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="Imagem em estilo de pintura, de 5 micos-leões-dourados pendurados em uma árvore"
+              exp="Imagem que o estudante deverá contar quantos micos-leões-dourados estão presentes e ligar com o número n2"
+            />
+          </div>
+
+          <div class="img2">
+            <img
+              alt="Imagem em estilo de pintura, de 3 girassóis em um campo"
+              exp="Imagem que o estudante deverá contar quantos girassóis estão presentes e ligar com o número n3"
+            />
+          </div>
+
+          <div class="img3">
+            <img
+              alt="Imagem em estilo de pintura, de 4 sabiás voando no céu"
+              exp="Imagem que o estudante deverá contar quantos sabiás estão presentes e ligar com o número n1"
+            />
+          </div>
+
+          <div class="n1">
+            <p
+              exp="Número que representa a contagem da img3, que o estudante deverá ligar"
+            >
+              4
+            </p>
+          </div>
+
+          <div class="n2">
+            <p
+              exp="Número que representa a contagem da img1, que o estudante deverá ligar"
+            >
+              5
+            </p>
+          </div>
+
+          <div class="n3">
+            <p
+              exp="Número que representa a contagem da img2, que o estudante deverá ligar"
+            >
+              3
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

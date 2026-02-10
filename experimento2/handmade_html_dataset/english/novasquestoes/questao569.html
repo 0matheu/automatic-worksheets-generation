@@ -1,0 +1,51 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Dolls
+width-sheet: 800px
+task: observe image, draw answer
+language: en
+
+{
+  "task": "To practice addition and counting by drawing the total number of dolls on the shelf, based on the problem description.",
+  "layout": "The activity is structured with a clear problem description followed by a centered image of a shelf. The student is asked to draw dolls to represent the total amount described in the text.",
+  "answer": "To answer correctly, the student must add the 2 dolls already on the shelf and the 3 new dolls brought to the store. The total is 5. The student must draw 5 dolls on the shelf shown in the image, representing the sum of dolls already present and the new ones."
+}
+
+<html>
+  <head></head>
+  <body>
+    <div 
+      style="width: 800px; border: solid 1px;" 
+      exp="Wrapper div that sets the layout space and structure, maintaining a fixed width for consistency throughout the activity page."
+    >
+      <div 
+        style="width: 800px;" 
+        exp="Main container that holds all the activity content, ensuring consistent width for the layout."
+      >
+        <p 
+          exp="The problem description, clearly outlining the task of counting and drawing dolls."
+        >
+          There are 2 dolls on the shelf. The toy store brings 3 more dolls. How many dolls are there now? Draw all the dolls on the shelf.
+        </p>
+
+        <div 
+          style="display: flex; justify-content: center;" 
+          exp="This div element is used to center the image horizontally, making it visually appealing and aligned for the student."
+        >
+          <img 
+            src="" 
+            alt="Toy shelf in a store with no dolls yet." 
+            style="width: 600px; height: 400px;" 
+            exp="This image shows a shelf with space for dolls but without any dolls. The student must draw 5 dolls, representing the total after adding the 3 new dolls to the 2 already on the shelf."
+          />
+        </div>
+        
+        <p 
+          exp="Additional instructions guiding the student on how to approach drawing the dolls."
+        >
+          You need to draw a total of 5 dolls on the shelf. Start by drawing the 2 dolls already on the shelf, then draw 3 more to represent the new dolls brought to the store.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

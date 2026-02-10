@@ -1,0 +1,135 @@
+level: 2nd year of fundamental
+learning_goals: addition, counting
+theme: Supermarket
+width-sheet: 800px
+task: observe images, write answer
+language: en
+
+{
+  "task": "Look at the shopping cart and the three shelves. Choose the shelf with the most items and add them to the items in the cart. Then write the total number of items.",
+  "exp": "This task helps students practice comparing quantities and performing an addition in a realistic setting. The shopping cart contains 4 items. The shelves have different quantities: Shelf 1 has 2, Shelf 2 has 5, and Shelf 3 has 3. The correct shelf to use is Shelf 2 (5 items), because it has the most. The student must then add 4 + 5 = 9. The total (9) should be written inside the square answer box at the bottom.",
+  "layout": "The layout includes one central image of a shopping cart (top) and three images of shelves (bottom, side by side). Each shelf shows a different number of items. Below all images, there is a centered instruction followed by a large square box where the student writes the result.",
+  "answer": "The student should observe the images, determine which shelf has the most items (Shelf 2 with 5 items), and add that to the 4 items in the cart. The result is 9. The number 9 should be written clearly in the center of the 100x100px answer box at the bottom of the page."
+}
+  
+
+
+<html>
+  <head></head>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 220px 220px 220px;
+      grid-template-rows: 300px 200px;
+      grid-template-areas:
+        "shoppingCart shoppingCart shoppingCart"
+        "shelf1 shelf2 shelf3";
+    }
+
+    .shoppingCart {
+      grid-area: shoppingCart;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .shelf1 {
+      grid-area: shelf1;
+    }
+
+    .shelf2 {
+      grid-area: shelf2;
+    }
+
+    .shelf3 {
+      grid-area: shelf3;
+    }
+
+    .shelf img {
+      width: 200px;
+      height: 150px;
+      border: 1px solid;
+      object-fit: contain;
+    }
+
+    .answer-area {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .answer-box {
+      width: 100px;
+      height: 100px;
+      border: 2px solid black;
+      margin-top: 10px;
+      font-size: 24px;
+      text-align: center;
+      line-height: 100px;
+    }
+  </style>
+
+  <body>
+    <div style="width: 800px; margin: auto; border: 1px solid;">
+      <div class="activity" style="padding: 20px;">
+        <p style="text-align: center;" 
+           exp="A instructional sentence for the student, placed at the top, clearly explaining the task of comparing quantities and performing addition.">
+          Look at the shopping cart and the three shelves. Choose the shelf with the most items and add them to the shopping cart items.
+        </p>
+
+        <div class="container">
+          <div class="shoppingCart" 
+               exp="This area displays a large illustration of a shopping cart containing 4 grocery items. The cart is central and above the three shelves to help the student understand it is the starting point for the addition.">
+            <img
+              src=""
+              alt="Shopping cart with 4 items inside"
+              style="width: 300px; height: 200px; border: 1px solid;"
+              exp="The shopping cart image includes 4 colorful and recognizable grocery items, such as fruits, boxes, or milk, drawn in a child-friendly style."
+            />
+          </div>
+
+          <div class="shelf1 shelf" 
+               exp="The first shelf (on the left) displays 2 items. This image is smaller than the cart and is placed directly below it to allow comparison.">
+            <img
+              src=""
+              alt="Shelf with 2 grocery items"
+              exp="Illustration of a supermarket shelf with 2 clearly visible items, such as a cereal box and a bottle, in bright colors and simple shapes."
+            />
+          </div>
+
+          <div class="shelf2 shelf" 
+               exp="The second shelf (center) shows 5 items, which is the highest quantity. This is the correct shelf to be used in the addition with the cart items.">
+            <img
+              src=""
+              alt="Shelf with 5 grocery items"
+              exp="Colorful drawing of a shelf with 5 food items, such as fruits, cans, and cartons. This shelf has more items than the others and should be used in the calculation."
+            />
+          </div>
+
+          <div class="shelf3 shelf" 
+               exp="The third shelf (right) displays 3 items, less than shelf 2. Students must compare all three and choose the one with the highest number.">
+            <img
+              src=""
+              alt="Shelf with 3 grocery items"
+              exp="Child-style drawing of a shelf with 3 products, such as snacks and drinks, helping the student visually estimate the quantity."
+            />
+          </div>
+        </div>
+
+        <div class="answer-area">
+          <p 
+             exp="Instruction line placed under the images, prompting the student to write the result of the addition based on their observations.">
+            Write the total number of items here:
+          </p>
+          <div class="answer-box" 
+               exp="A large square (100x100px) where the student writes the sum. This visual format helps young learners focus and clearly show their final answer (4 from the cart + 5 from the shelf = 9).">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

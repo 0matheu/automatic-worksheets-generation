@@ -1,0 +1,528 @@
+
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2 ano fundamental
+assunto: adição
+tematica: lanches
+largura-folha: 700px
+layout: única imagem<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão será praticado o principio da soma, sendo fundamental na
+adição de números. A questão consiste de 1 imagem, que contém 3 lanches, sendo:
+lanche A: 5 kg
+lanche B: 8 kg
+lanche C: 4 kg
+
+E também contém a equação: A + B + C =?, em que o aluno terá que 
+escolher a lanche que tem a soma maior com 5 kg, e efetuar a adição das 
+lanches que tem mais peso. Em seu formato de resposta deverá escrever:
+A + B + C = 17
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 700px; border: solid 1px"
+      exp="div contendo a largura da página, que nesse caso é 700px"
+    >
+      <div class="questao" exp="conteiner da questão">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe a imagem e responda a questão:
+        </p>
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <img
+            src=""
+            alt="imagem, em estilo de figura, contendo 3 lanches, sendo um de com 5 kg, outro com 8 kg e o terceiro com 4 kg"
+            style="width: 500px; height: 200px"
+            exp="imagem na qual o aluno terá que identificar a lanche que tem a maior peso e somar: 5 + 8 + 4 = 17"
+          />
+        </div>
+
+        <p exp="resposta que o aluno terá que escrever, sendo 5 + 8 + 4 = 17">A + B + C =?</p>
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2 ano fundamental
+assunto: adição
+tematica: lanches
+largura-folha: 700px
+layout: duas imagens, linhas e colunas<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Essa questão pratica os conceitos da adição, sendo 2 + 4 = 6. A
+questão consiste de duas imagens, uma contendo 2 lanches, e outra contendo 4
+lanches. O aluno deve obsevar as imagens e escrever em uma folha, quantos
+lanches estão presentes, sendo 2 + 4 = 6. Ao final, deve comparar a resposta
+esperada, que é 6, com a resposta do aluno e explicar o motivo da
+diferença, se houver.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 700px; border: solid 1px"
+      exp="div contendo a largura da página, que nesse caso é 700px"
+    >
+      <div class="questao" exp="div contendo o título da questão">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe as imagens abaixo e escreva a soma de lanches.
+        </p>
+
+        <div
+          style="display: flex; justify-content: center; margin-top: 20px"
+          exp="div utilizada para centralizar a imagem no questão"
+        >
+          <img
+            src=""
+            alt="imagem contendo 2 lanches, cada um representando a quantidade de lanches antes de serem consumidos"
+            style="width: 400px; height: 200px"
+            exp="imagem, onde o aluno terá que contar quantos lanches estão presentes, e escrever a resposta. A imagem consiste de 2 lanches"
+          />
+        </div>
+
+        <div
+          style="display: flex; justify-content: center; margin-top: 20px"
+          exp="div utilizada para centralizar a imagem no questão"
+        >
+          <img
+            src=""
+            alt="imagem contendo 4 lanches, cada um representando a quantidade de lanches após serem consumidos"
+            style="width: 400px; height: 200px"
+            exp="imagem, onde o aluno terá que contar quantos lanches estão presentes, e escrever a resposta. A imagem consiste de 4 lanches"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: carrinhos
+largura-folha: 600px
+layout: única imagem<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão será praticado o princípio da adição.
+A questão consiste de uma imagem de um carrinho vazio,
+e de um tabela, contendo o valor de 5 carrinhos, cada coluna
+representando uma das propiedades dos carrinhos: 
+a) A primeira coluna representa a quantidade de bolinhas.
+b) A segunda coluna representa a quantidade de moedas.
+c) A terceira coluna representa a quantidade de euros.
+
+O aluno deverá contar quantas bolinhas estão presentes na imagem,
+e escrever o resultado na primeira casa da tabela. A
+esperado é que o aluno conte corretamente 8 bolinhas e escrever
+o resultado na primeira casa.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a largura da página, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe a imagem de carrinhos e conte quantas bolinhas estão presentes e escreva o resultado na tabela.
+        </p>
+
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <img
+            src=""
+            alt="Imagem, no estilo de desenho de pintar, de 5 carrinhos vazios, cada um representando a quantidade de bolinhas, moedas e euros de um carrinho"
+            style="width: 400px; height: 200px"
+            exp="Imagem que o aluno terá que contar a quantidade de bolinhas presentes e escrever no primeiro campo da tabela"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: carrinhos
+largura-folha: 600px
+layout: três imagens<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão serão praticados o princípio da adição e contagem. A
+questão consiste de três imagens: uma carrinha vazia, uma carrinha cheia de
+bolinhas e uma imagem contendo bolinhas espalhadas pelo fundo. O
+enunciado pede para ao aluno contar quantas bolinhas estão dentro da
+carrinha vazia, e também pintar a carrinha com a quantidade de bolinhas
+resultante. Para responder corretamente o aluno deve contar as bolinhas
+presentes dentro da carrinha vazia com a imagem e efetuar a contagem sendo
+3. Em seguida ele deve pintar a carrinha com 3 bolinhas. A resposta correta
+será o aluno poder contar corretamente a quantidade de bolinhas e também
+pintar a carrinha com a quantidade certa de bolinhas.
+
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a largura da página, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe as imagens abaixo e conte quantas bolinhas estão presentes na
+          carrinha vazia. Em seguida pinte a carrinha com a quantidade de
+          bolinhas que contou.
+        </p>
+
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem no questão"
+        >
+          <img
+            src=""
+            alt="Imagem no estilo de desenho de pintar de carrinha vazia e também de bolinhas espalhadas pelo fundo"
+            style="width: 400px; height: 200px"
+            exp="Imagem na qual o aluno terá que contar a quantidade de bolinhas presentes na carrinha vazia e também pintar a carrinha com a quantidade de bolinhas."
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: fundo do mar
+largura-folha: 600px
+layout: única imagem<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão será praticado o principio da soma de mais é menos. A
+questão consiste de uma imagem em estilo de desenho animado, contendo um
+peixe, que tem em sua bocela dois pedaços de caracol, e em sua mão tem uma
+espada, e em fundo tem um fundo de mar. O aluno terá que soma-se a quantidade
+de caracoles no bocel do peixe com a quantidade presente na mão do peixe,
+e escrever a soma na parte mais vívida do desenho.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a largura da página, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe a imagem e soma a quantidade de caracoles na mão do peixe
+          com a quantidade presentes na bocela do peixe, e escreva a soma na parte
+          mais vívida do desenho.
+        </p>
+      </div>
+
+      <div
+          exp="div contendo a imagem que o aluno terá que observar e decorar a soma que ele terá que fazer"
+        >
+        <img
+          src=""
+          alt="Imagem, em estilo de desenho, de um peixe com duas pedaços de caracol na bocela e uma espada na mão, e em fundo o desert o mar"
+          style="display: none"
+          exp="Imagem que será oculta para que a div com o id 'img_div' seja encontrada"
+        />
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: fundo do mar
+largura-folha: 600px
+layout: três imagens<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão serão praticados o princípio da adição e contagem.
+A questão consiste de três imagens: a primeira contém 5 peixes, 
+a segunda contém 3 garças, e a terceira está vazia, esperando o resultado
+da soma de peixes com garças, que deve ser representado por pequenos estilhaos
+dentre a imagem vazia.
+
+Foram dadas as instruções para desenhar a questão:
+<url do enunciado">https://drive.google.com/file/d/</url do enunciado>>
+
+Efeito pedagógico:
+A questão visa desenvolver a contagem e adição. O aluno deve contar a quantidade
+de peixes e garças, e escrever o resultado na questão. A questão também visa 
+entender a representação de números de pessoas ou coisas a través de
+imagens e estilhaos. Ao contar a quantidade de peixes e garças, e escrever
+o resultado, o aluno estará praticando a contagem e adição. A questão
+também ajuda a identificar a quantidade, sendo importante para o desenvolvimento
+de habilidades matemáticas. A questão é mais desafiadora para alunos com
+dificuldades na contagem e adição. Para eles, a questão pode ser utilizada como
+atividade de recuperação, ajudando a reforçar conceitos que estavem sendo difíceis
+de compreender. A questão também pode ser utilizada para atividades em
+duas etapas, onde o aluno primeiro conta a quantidade de peixes e garças,
+e em seguida escreve a soma na questão. Essa questão ajuda a desenvolver
+a contagem, adição e escrita. A questão é mais desafiadora para alunos
+que têm dificuldade para contar a quantidade de objetos, e escrever o
+resultado. Para eles, a questão pode ser utilizada como atividade de
+recuperação, ajudando a reforçar conceitos que estaviam sendo difíceis
+de compreender. A questão também pode ser utilizada para atividades em
+duas etapas, onde o aluno primeiro conta a quantidade de peixes e garças,
+e em seguida escreve a soma na questão. Essa questão ajuda a desenvolver
+a contagem, adição e escrita. A questão é mais desafiadora para alunos
+que têm dificuldade para contar a quantidade de objetos, e escrever o
+resultado. Para eles, a questão pode ser utilizada como atividade de
+recuperação, ajudando a reforçar conceitos que estaviam sendo difíceis
+de compreender. A questão também pode ser utilizada para atividades em
+duas etapas, onde o aluno primeiro conta a quantidade de peixes e garças,
+e em seguida escreve a soma na questão. Essa questão ajuda a desenvolver
+a contagem, adição e escrita. A questão é mais desafiadora para alunos
+que têm dificuldade para contar a quantidade de objetos, e escrever o
+resultado. Para eles, a questão pode ser utilizada como atividade de
+recuperação, ajudando a reforçar conceitos que estaviam sendo difíceis
+de compreender. A questão também pode ser utilizada para atividades em
+duas etapas, onde o aluno primeiro conta a quantidade de peixes e garças,
+e em seguida escreve a soma na questão. Essa questão ajuda a desenvolver
+a contagem, adição e escrita. A questão é mais desafiadora para alunos que têm dificuldade para contar a quantidade de peixes e garças, e escrever no espaço vazio, que representa a contagem. A questão também pode ser utilizada para representar a quantidade de estilha. A questão é mais desafiadora para alunos que têm dificuldade para contar a quantidade de peixes e garças, e escrever no espaço vazio, que representa a contagem. A questão também pode ser utilizada para represent a questão. A questão é mais desafiadora para representaradas,  
+A questão também
+A questão mais desido
+A que representa a que representa a questão
+A espaço vaziosa com a disposição</ースト</span</essen</ResponseStatus
+A representa a vá sia
+#### largagem tem vá atual, 
+nivel </certe </>
+"> 
+</inform </ayar
+A 
+### </span
+  </۱۳۹rani</chner
+  </ativação vá tentagem vá largo</assistant></qual </ayar </ayar </ kraje</аза atual</como</></layout</></nivel </rita</></largada especial aqui
+</weg 
+"> </hir </ースト </nbspicker </ースト 
+  </raquo</raquo</sian larg é vá entãoboa atual está vá an aqui é mais larg 
+esper largév larg 
+nivel 
+sold além atual vá largév vá utilizév agora 
+    escol larg 
+larg escol larg é vá larg larg larg larg mais vá larg mais vá mais vá vá vá largéviral larg mais vá larg mais vá larg mais larg mais atual aqui larg larg mais vá mais larg mais vá mais vá 
+imagem pareço vá mais vá inicial vá larg mais vá larg vá larg mais vá larg fossil vá larg vá larg mais vá larg mais vá larg mais vá larg mais vá larg mais vá larg ue mais efere 
+rial 
+iral fic mais vá larg vá vá vá vá larg vá mais vá 
+ vá larg larg larg vá larg mais vá larg vá mais larg 
+yer vá larg que vá também larg mais vá larg pare larg mais vá largoe vá larg 
+ierge vá larg vá larg vá larg vá vá vá s vá ex mais vá vá ex vá 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   vá ex f vá f vá f mais mais vá vá vá 
+ 
+ < vá vá vá 
+ 
+ 
+ 
+ 
+ vá vá larg vá também
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: subtração
+tematica: fogos de artifício
+largura-folha: 800px
+layout: única imagem<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão será trabalhado o principio da restrição. A questão consiste de
+uma imagem de uma criança com uma quantia de socos de fogos de
+artifício, e la está sendo questionada, e pedindo para o aluno escrever a
+equação de subtração que representa a quantia de fogos, antes de a criança
+comer a quantidade na imagem estará para o aluno observar e entender
+que fogos de artifício tem uma quantidade, e ao consumir parte da quantidade
+tem menos. E para isso deverá resolver a equação de subtração, sendo:
+6 - 2 =?
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div contendo a largura da página, que nesse caso é 800px, e border para definir o estilo da bordo"
+    >
+      <div class="questao" exp="div contendo a questão e sua respectiva explicação">
+        <p
+          exp="Descrição da questão, onde é explicado o que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe a imagem e escreva a equação de subtração que representa a
+          quantidade de fogos de artifício antes de a criança consumir.
+        </p>
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <img
+            src=""
+            alt="Imagem em estilo de desenho de criança com uma quantia de fogos de artifício, e a criança está a consumir parte da quantidade"
+            style="width: 600px; height: 300px"
+            exp="Imagem na qual o aluno terá que observar e entender que tem uma quantidade de fogos de artifício, e ao consumir parte da quantidade tem menos. E para isso deverá resolver a equação de subtração que representa a quantia de fogos antes de consumir, e também a equação que representa a quantia de fogos consumidos"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: subtração
+tematica: fogos de artifício
+largura-folha: 800px
+layout: três imagens<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão serão praticados o principio da
+ressovação, a contagem e a
+identificação de imagem. A questão consiste de 3 imagens: a
+primeira imagem é de uma criança com 5 pirulitos, a segunda
+imagem consiste de 5 números: 5, 4, 3, 2, 1 e a terceira
+imagem tem a representação de fogos de artifício em um
+céu azul. O aluno terá que contar quantos pirulitos estão
+presentes na imagem, e efetuar a subtração com o resultado being
+de pirulito, e também identificar a imagem dos fogos de
+artifício sendo uma imagem de representação e não sendo uma
+imagem real.<br><br>
+
+<html>
+  <head></head>
+  <style>
+   .imagens {
+      display: flex;
+      justify-content: center;
+    }
+
+   .imagem {
+      width: 500px;
+      margin: 10px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div contendo a largura da página, que nesse caso é 800px"
+    >
+      <div class="questao" exp="contido a descrição da questão">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Conte a quantidade de pirulitos presentes na imagem e efetue a
+          subtração com 5. O resultado deverá ser o número de pirulitos que
+          ficará. A imagem também contém a representação de fogos de artifício
+          e deverá que o aluno identifique se é uma imagem real de fogos de
+          artifício ou apenas uma representação.
+        </p>
+
+        <div class="imagens">
+          <div>
+            <img
+              class="imagem"
+              exp="primeira imagem que o aluno terá que contar quantos pirulitos estão presentes, e efetuar a subtração com o resultado being de pirulito"
+              alt="Imagem no estilo de desenho de criança com 5 pirulitos"
+              src=""
+            />
+          </div>
+
+          <div>
+            <img
+              class="imagem"
+              exp="segunda imagem que o aluno terá que efetuar a subtração com a imagem  A"
+              alt="Imagem contendo os números 5, 4, 3, 2, 1"
+              src=""
+            />
+          </div>
+
+          <div>
+            <img
+              class="imagem"
+              exp="terceira imagem que o aluno terá que identificar se é uma imagem de fogos de artifício ou apenas a representação"
+              alt="Imagem no estilo de desenho de criança de uma criança com uma cena de fogos de artifício"
+              src=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

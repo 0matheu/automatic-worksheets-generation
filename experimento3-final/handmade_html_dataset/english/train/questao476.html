@@ -1,0 +1,73 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Toys
+width-sheet: 800px
+task: observe images, write answer
+language: en
+
+
+{
+  "task": "In this activity, the student should observe the images and identify the toy cars that Gabriel already had and the ones he found under the couch. Then, the student must count and write the total number of toy cars in the box. This promotes skills in counting, addition, and image association.",
+  "layout": "The layout has three images in the first row: one showing Gabriel's original toy cars, one showing the toy cars he found, and a distractor image. The second row shows the final image with the total number of toy cars. The student needs to mentally link the matching images and calculate the sum.",
+  "answer": "To answer correctly, the student must: 1) Identify the images showing Gabriel’s toy cars before and after, 2) Ignore the distractor image, 3) Add the two correct amounts (4 + 11 = 15), and 4) Write the number 15 in the answer box."
+}
+
+  
+<html>
+  <head>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 200px 200px;
+        grid-template-areas:
+          "img1 img2 img3"
+          "result result result";
+      }
+
+      .img1 { grid-area: img1; }
+      .img2 { grid-area: img2; }
+      .img3 { grid-area: img3; }
+      .result { grid-area: result; margin-top: 20px; text-align: center; }
+      .img-size { width: 180px; height: 180px; }
+      .answer-box { width: 100px; height: 50px; border: 1px solid black; text-align: center; margin: 20px auto; }
+    </style>
+  </head>
+  <body>
+    <div style="width: 600px; border: solid 1px; padding: 10px; text-align: left;">
+      <div class="activity">
+        <p exp="instruction text for the student">
+          Gabriel was playing with his toy cars. First, he had some on the table. Later, he found more under the couch! Look at the images below, find the two that show his toy cars, and write the total in the box.
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img class="img-size" src="" alt="Image of 4 toy cars on a table" exp="This image shows 4 toy cars placed on a table. They are all blue and red, facing forward." />
+          </div>
+          <div class="img2">
+            <img class="img-size" src="" alt="Image of 11 toy cars under a couch" exp="This image shows 5 toy cars scattered partly under a couch, suggesting they were just found." />
+          </div>
+          <div class="img3">
+            <img class="img-size" src="" alt="Image of 6 crayons on a notebook" exp="This image is a distractor, showing unrelated school supplies like colored crayons." />
+          </div>
+          <div class="result">
+            <img class="img-size" src="" alt="Image of 11 toy cars lined up on the floor" exp="Final image showing 11 toy cars aligned side-by-side on a carpet, representing the total amount Gabriel now has." />
+          </div>
+        </div>
+
+        <p
+          exp="instruction for writing the total"
+          style="text-align: center; margin-top: 20px;"
+        >
+        Write how many toy cars Gabriel has now:
+        </p>
+        <div style="display: flex; justify-content: center;" exp="answer box area">
+          <div
+            style="width: 100px; height: 100px; border: 1px solid black;"
+            exp="Box where the student should write 15 (4 + 11)"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

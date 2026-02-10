@@ -1,0 +1,70 @@
+level: 2nd year fundamental
+learning_goals: counting
+theme: fruits
+sheet_width: 600px
+task: observe image, write answer
+language: en
+
+
+{
+  "task": "Observe the image, count the number of fruits in each drawing, and answer the questions about the fruit collections.",
+  "layout": "The activity is structured with a description at the top explaining the task. Below the description, an image displays three baskets of fruits labeled as Ana, João, and Sofia. Following the image, there are questions prompting the student to count, compare, and write their answers in the provided boxes.",
+  "answer": "A) To correctly answer this question, the student will count the number of fruits in each drawing and write the correct number in the box. B) The correct answer is 'Sofia's basket' because it has the most fruits (15). C) João's basket has 4 more fruits than Ana's basket, so the correct answer is '4'."
+}
+
+
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px; padding: 10px;"
+      exp="This div acts as the main container for the activity. It sets a fixed width of 600px and uses padding for spacing inside the container."
+    >
+      <div class="activity" style="width: 100%;">
+        <p
+          exp="This paragraph provides a clear and concise description of the task. It explains that the student needs to count the number of fruits in each drawing and answer the questions."
+        >
+          Ana, João, and Sofia collected fruits from their garden and placed them in baskets. Count the fruits in each drawing and answer the questions.
+        </p>
+
+        <div
+          style="display: flex; justify-content: center; margin-bottom: 20px;"
+          exp="This div uses flexbox to horizontally center the image of the activity."
+        >
+          <img
+            src=""
+            alt="Illustration of three baskets filled with different quantities of fruits. 
+                 Ana's basket, on the left, contains 7 fruits including apples and oranges. 
+                 João's basket, in the middle, contains 11 fruits, including bananas and pears. 
+                 Sofia's basket, on the right, contains 15 fruits, including grapes and pineapples. 
+                 Each basket is labeled with the corresponding name."
+            style="width: 400px; height: auto;"
+            exp="This image shows three baskets of fruits labeled as Ana, João, and Sofia. Each basket contains different amounts of fruits, prompting students to count and compare."
+          />
+        </div>
+
+        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+          <p style="margin-right: 10px;">A) Write in the box the total number of fruits in each drawing.</p>
+          <div style="width: 100px; height: 30px; border: 1px solid black; text-align: center;"
+            exp="Box where the student writes the total number of fruits in each basket. The correct answers are: Ana (7), João (11), Sofia (15)."
+          ></div>
+        </div>
+
+        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+          <p style="margin-right: 10px;">B) Which basket has the most fruits?</p>
+          <div style="width: 100px; height: 30px; border: 1px solid black; text-align: center;"
+            exp="Box where the student writes the name of the basket with the most fruits. The correct answer is 'Sofia's basket' (15 fruits)."
+          ></div>
+        </div>
+
+        <div style="display: flex; align-items: center;">
+          <p style="margin-right: 10px;">C) How many more fruits does João's basket have compared to Ana's basket?</p>
+          <div style="width: 100px; height: 30px; border: 1px solid black; text-align: center;"
+            exp="Box where the student writes the difference in the number of fruits between João's and Ana's baskets. The correct answer is '4'."
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

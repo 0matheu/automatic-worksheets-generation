@@ -1,0 +1,74 @@
+level: 2nd year of fundamental
+learning_goals: counting
+theme:  Bus Stop Line
+width-sheet: 800px
+task: observe images, write answer
+language: en
+
+
+
+{
+  "task": "Observe the bus stop in the two pictures. Count how many people are in the line at each moment and write your answers in the boxes.",
+  "layout": "There are two images shown side by side: one labeled 'Moment 1' and another labeled 'Moment 2'. These images display a bus stop with different numbers of people in line. Below the images, there are two questions (A and B), each with a smaller rectangular box (100x40px) aligned to the right side of the question. Students must count the people in the pictures and write the numbers in the boxes. The layout is designed to be clean and logical, helping students easily match each visual with its corresponding question.",
+  "answer": {
+    "A": "The student should carefully count the number of people shown standing in line in the image labeled 'Moment 1'. This number should be written in the box next to Question A.",
+    "B": "The student should remember that '1 ten and 1 unit' means the number 11. After verifying this in the image of 'Moment 2', they should write '11' in the box next to Question B."
+  }
+}
+
+
+<html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: solid 1px; padding: 16px;"
+         exp="Main container with padding and border, organizing all content for a clean and structured educational layout. It ensures consistent visual alignment and separates the activity from the rest of the page.">
+
+      <p exp="Introduces the topic with context about public buses in Brazil. Encourages the student to observe two images of a bus stop to analyze and compare the number of people in line at different times. This helps develop observation and counting skills in a familiar real-world situation.">
+        Public buses are the most commonly used form of public transportation in Brazil. Observe the line at a bus stop at two different moments.
+      </p>
+
+      <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 16px;"
+           exp="Creates a horizontal layout to place the two images side by side with spacing in between. This visual comparison helps the student easily identify the changes in the number of people in each moment.">
+
+        <div>
+          <img 
+            src="" 
+            alt="Bus stop with several people in line – Moment 1" 
+            style="width: 350px; height: 250px;" 
+            exp="Illustration showing Moment 1, with a certain number of people standing in line at a bus stop. The student must count the people in this image to answer Question A. The image includes visual cues such as people of different sizes and clothing, and a city environment.">
+          <p style="text-align: center;" exp="Text label beneath the image indicating that this is Moment 1, helping students identify and refer to each scenario clearly.">Moment 1</p>
+        </div>
+
+        <div>
+          <img 
+            src="" 
+            alt="Bus stop with a different number of people in line – Moment 2" 
+            style="width: 350px; height: 250px;" 
+            exp="Illustration for Moment 2, showing a different number of people in line. It is mentioned in the question that there are exactly eleven people (1 ten and 1 unit), reinforcing place value and helping students check their counting. This supports visual learning through image analysis.">
+          <p style="text-align: center;" exp="Text label beneath the image indicating that this is Moment 2, providing clear organization and helping students visually compare the two scenarios.">Moment 2</p>
+        </div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between; margin-bottom: 12px;"
+           exp="Question A is aligned in a horizontal layout with the answer box on the right. This layout supports clarity and keeps the question-answer pair compact and easy to follow.">
+        <p exp="Question A prompts the student to count how many people are in the image labeled as Moment 1. This task builds number recognition and observation skills, encouraging students to engage with visual information and use it to draw conclusions.">
+          <b>A)</b> How many people are in the line in Moment 1?
+        </p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;"
+             exp="This is the student's answer box for Question A. It is sized to be neat and visible, and bordered to indicate that it is a space where they should write the number of people they counted in the image of Moment 1.">
+        </div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between; margin-bottom: 12px;"
+           exp="Question B follows the same layout pattern as Question A, maintaining consistency. It provides a numerical clue and asks students to confirm that the number of people matches the place value description (1 ten and 1 unit).">
+        <p exp="Question B focuses on the image from Moment 2 and provides a place value clue (1 ten and 1 unit) to guide students toward the answer of 11. This helps reinforce base-10 number understanding in a visual and contextualized way.">
+          <b>B)</b> How many people are in the line in Moment 2? (There is 1 ten and 1 unit.)
+        </p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;"
+             exp="This is the student's answer box for Question B. It should contain the number 11, based on the information that there is 1 ten and 1 unit in the image of Moment 2. The box is clear and distinct, encouraging students to fill in their numeric response.">
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of balls each seal is balancing and calculating the total sum.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph that explains the task, and the bottom section contains a 2x2 grid with images of seals in a circus act, each image containing a different number of balls.",
+  "answer": "To answer correctly, the student needs to identify the number of balls in each image (3 balls in the first image, 4 balls in the second image) and calculate the total sum (3 + 4 = 7). The correct answer is 7."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description. Contains the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the image below of the seals in a circus act, and write the sum of all the balls the two seals are balancing.
+        </p>
+
+        <div
+          style="display: grid; grid-template-columns: 400px 400px; grid-template-rows: 400px 400px"
+          exp="div that contains the images of the seals, being 2 images placed in a 2x2 grid layout"
+        >
+          <div
+            style="grid-column: 1/2; grid-row: 1/3"
+            exp="div that will be used to adjust the image of the seal in the upper left corner. It is 1/3 of the first column and 1/2 of the first row"
+          >
+            <img
+              src=""
+              alt="children's painting style image of a seal in a circus act, with 3 balls being balanced"
+              style="width: 400px; height: 400px"
+              exp="image in which the student will have to identify that there are 3 balls being balanced by the seal"
+            />
+          </div>
+
+          <div
+            style="grid-column: 2/3; grid-row: 1/2"
+            exp="div that will be used to adjust the image of the seal in the upper right corner. It is 1/2 of the first column and 1/2 of the first row"
+          >
+            <img
+              src=""
+              alt="children's painting style image of a seal in a circus act, with 4 balls being balanced"
+              style="width: 400px; height: 400px"
+              exp="image in which the student will have to identify that there are 4 balls being balanced by the seal"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

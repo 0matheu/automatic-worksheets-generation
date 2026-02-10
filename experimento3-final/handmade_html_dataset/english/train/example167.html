@@ -1,0 +1,62 @@
+level: 2nd year fundamental
+learning_goals: counting
+theme: stars in the night sky
+sheet_width: 600px
+task: observe image, write answer
+language: en
+
+
+{
+  "task": "The objective of this activity is for the student to count the stars in the image, interpret their value as units, and group them into sets of five.",
+  "layout": "The activity is organized with a description at the top that explains the task. Below the description, there is a centered image of stars in the night sky. Following the image, there are questions prompting the student to count, group, and write their answers in the provided boxes.",
+  "answer": "A) To correctly answer this question, the student will count the stars (15) and write '15' in the first box. B) To correctly answer this question, the student will calculate the number of groups of five stars (3 groups) and write '3' in the second box."
+}
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px; padding: 10px;"
+      exp="This div acts as the main container for the activity. It sets a fixed width of 600px and uses padding for spacing inside the container."
+    >
+      <div class="activity" style="width: 100%;">
+        <p
+          exp="This paragraph provides a clear and concise description of the task. It explains that the student needs to count the stars and group them into sets of five."
+        >
+          Observe the image below, count the stars, and fill in the answers below.
+          <br><br>
+          <strong>Tip: Count how many full groups of 5 stars you can make.</strong>
+        </p>
+
+        <div
+          style="display: flex; justify-content: center; margin-bottom: 20px;"
+          exp="This div uses flexbox to horizontally center the image of the activity."
+        >
+          <img
+            src=""
+            alt="Illustration of 15 stars scattered in the night sky, some larger and brighter than others."
+            style="width: 400px; height: auto;"
+            exp="This image shows 15 stars of varying sizes and brightness scattered across a dark blue night sky. The student must count the total number of stars and determine how many full groups of 5 stars can be made."
+          />
+        </div>
+
+        <div style="display: flex; align-items: center; margin-top: 10px;">
+          <p style="margin-right: 10px;">A) How many stars are there in total?</p>
+          <div
+            style="width: 100px; height: 30px; border: 1px solid black;"
+            exp="Box where the student writes the total number of stars. The correct answer is '15'."
+          ></div>
+        </div>
+
+        <div style="display: flex; align-items: center; margin-top: 10px;">
+          <p style="margin-right: 10px;">B) How many full groups of 5 stars can you make?</p>
+          <div
+            style="width: 100px; height: 30px; border: 1px solid black;"
+            exp="Box where the student writes the number of groups of five stars. Instead of dividing, the student should count how many full groups of 5 they can form. Since 15 stars make 3 full groups of 5, the correct answer is '3'."
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+      

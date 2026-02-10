@@ -1,0 +1,99 @@
+level: 2nd year fundamental
+learning_goals: addition, counting
+theme: books and bookmarks
+sheet_width: 850px
+task: observe images, write answer
+language: en
+
+
+{
+  "task": "To practice basic addition skills by counting the number of books and bookmarks in two images and calculating their total.",
+  "layout": "The activity is divided into a single section with a grid layout consisting of five cells. The first cell contains an image of books, the second cell contains a plus sign, the third cell contains an image of bookmarks, the fourth cell contains an equal sign, and the fifth cell is a box for the student to write the result.",
+  "answer": "To correctly answer this activity, the student needs to observe the two images and count the number of books (4) and bookmarks (6) present. The student needs to add the two numbers together to get 10. The correct answer is '10'.",
+  
+}
+  
+
+<html>
+  <head></head>
+
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 150px 150px 150px 150px 150px;
+      grid-template-rows: 150px;
+      grid-template-areas: "img1 plus img2 equal result";
+    }
+
+    .img1 {
+      grid-area: img1;
+    }
+
+    .img2 {
+      grid-area: img2;
+    }
+
+    .equal {
+      grid-area: equal;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .plus {
+      grid-area: plus;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .result {
+      grid-area: result;
+      border: solid 1px;
+    }
+
+    img {
+      width: 180px;
+      height: 150px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 850px; border: solid 1px"
+      exp="div containing the activity's layout, maintaining the sheet's width of 850px."
+    >
+      <div class="activity" style="width: 850px">
+        <p
+          exp="This paragraph provides instructions for the student to count the items in the images and calculate their sum."
+        >
+          Count the number of books and bookmarks in the images below and write the total sum:
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="Image of 4 books in a cartoon style."
+              exp="Image showing 4 books for the student to count and include in the addition."
+            />
+          </div>
+
+          <div class="plus" exp="This plus sign indicates that the two quantities should be added together."><p>+</p></div>
+
+          <div class="img2">
+            <img 
+              alt="Image of 6 bookmarks in a cartoon style."
+              exp="Image showing 6 bookmarks for the student to count and include in the addition."
+            />
+          </div>
+
+          <div class="equal" exp="This equal sign indicates the result of the sum."><p>=</p></div>
+
+          <div
+            class="result"
+            exp="This box is where the student will write the result of the sum, which is the total number of books and bookmarks."
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

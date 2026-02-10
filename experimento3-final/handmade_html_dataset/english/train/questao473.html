@@ -1,0 +1,48 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Sports Equipment Shopping
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+    "task": "To practice counting and basic addition skills by calculating the total cost of sports equipment Carla is buying.",
+    "layout": "The activity consists of a description where Carla is buying sports equipment. Below is an image showing the prices of the equipment. The student will answer questions based on the prices.",
+    "answer": {
+      "A": "To answer correctly, the student needs to add the prices of the tennis racket (100 reais) and the soccer ball (80 reais). The correct answer is 180 reais.",
+      "B": "To answer correctly, the student needs to add the price of the tennis racket (100 reais) and the sports shoes (150 reais). The correct answer is 250 reais."
+    }
+  }
+
+
+<html>
+<head></head>
+<body>
+  <div style="width: 800px; border: solid 1px; padding: 10px;">
+    <div class="activity">
+      <p exp="Carla is shopping for sports equipment. The prices of the items are shown in the image.">
+        Carla is buying sports equipment for her training. Below is an image showing the items she is purchasing.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image showing Carla’s sports equipment.">
+      <img 
+        src="" 
+        alt="Illustration showing Carla’s sports equipment, including a tennis racket, soccer ball, and sports shoes."
+        style="width: 600px; height: 300px"
+        exp="Image showing the sports equipment with their prices."
+      />
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question asking for the total cost of the tennis racket and the soccer ball."><b>A)</b> What is the total cost of the tennis racket and the soccer ball?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total cost of tennis racket and soccer ball. Correct: 180."></div>
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question asking for the total cost of the tennis racket and the sports shoes."><b>B)</b> What is the total cost of the tennis racket and the sports shoes?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total cost of tennis racket and sports shoes. Correct: 250."></div>
+    </div>
+  </div>
+</body>
+</html>

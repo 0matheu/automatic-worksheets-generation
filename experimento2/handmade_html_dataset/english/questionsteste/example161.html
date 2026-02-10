@@ -1,0 +1,51 @@
+level: 2nd year fundamental
+learning_goals: addition, logical reasoning, problem-solving
+theme: amusement park
+sheet_width: 600px
+task: observe image, write answer
+language: en
+
+{
+  "task": "The objective of this activity is for the student to calculate the total number of people in the queue by adding the people initially waiting with those who joined later.",
+  "layout": "The activity is organized with a scenario description at the top, followed by an illustration of the amusement park and a crowd. Below the image, a question prompts the student to calculate the total number of people in the queue.",
+  "answer": "To correctly answer this activity, the student will add the initial number of people in the queue (382) and the additional people who joined (35). The correct answer is '417 people.'"
+}
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px; padding: 10px;"
+      exp="This div acts as the main container for the activity. It sets a fixed width of 600px and uses padding for spacing inside the container."
+    >
+      <div class="activity" style="width: 600px;">
+        <p
+          exp="This paragraph provides a clear description of what the student is required to do. In this case, they need to calculate the total number of people in the queue by adding the numbers provided."
+        >
+          There are 382 people waiting in the queue for the amusement park to
+          open. A bus drops off another 35 people who also join the queue.
+        </p>
+
+        <div
+          style="display: flex; justify-content: center; margin-bottom: 20px;"
+          exp="This div contains the main image and ensures it is centered within the activity layout."
+        >
+          <img
+            src=""
+            alt="Illustration of an amusement park with people waiting in the queue."
+            style="width: 400px; height: auto;"
+            exp="This image visually represents the scenario described in the task and helps contextualize the problem."
+          />
+        </div>
+
+        <div style="display: flex; align-items: center; margin-top: 10px;">
+          <p style="margin-right: 10px;">How many people are now in the queue?</p>
+          <div
+            style="width: 100px; height: 30px; border: 1px solid black;"
+            exp="Box where the student writes the total number of people in the queue. The correct answer is '417.'"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

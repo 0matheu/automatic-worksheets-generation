@@ -1,0 +1,74 @@
+```json
+{
+  "task": "To practice basic addition skills by counting the number of musical instruments in two images and calculating the total sum.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph describing the task. The middle section contains a 2x1 grid with two images of a musical instrument band, one image in each row. The bottom section is empty.",
+  "answer": "To answer this question correctly, the student needs to: 1) count the number of violins in the first image (4 violins) and the number of guitars in the second image (3 guitars), 2) add the two numbers together to find the total sum. The correct answer is: 4 + 3 = 7. The student needs to understand the concept of counting and basic addition to get the correct answer."
+}
+```
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing two images in a 2-line and 1-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 400px 400px;
+      grid-template-areas:
+        "img1"
+        "img2";
+    }
+
+    /* class used to place the first image of the musical band in the first row */
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the second image of the musical band in the second row */
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to adjust the size of the images in the activity */
+    img {
+      width: 600px;
+      height: 300px;
+      object-fit: cover;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the image of the musical band and answer the question:
+          how many musical instruments are present in the band, in each image, and what is the sum of all the instruments?
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="Image in a coloring book style of a children's drawing of a band containing 4 violins and 1 cello"
+              exp="Image in which the student will have to count the violins and the cello, being 4 violins and 1 cello"
+            />
+          </div>
+
+          <div class="img2">
+            <img
+              alt="Image in a coloring book style of a children's drawing of a band containing 3 guitars"
+              exp="Image in which the student will have to count the 3 guitars present"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

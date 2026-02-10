@@ -1,0 +1,1 @@
+Nessa questão será exercitada os principios da soma. O aluno terá que identificar dentre os números na questão quais são impares, e soma-los, sendo a resposta 16.

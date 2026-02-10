@@ -1,0 +1,84 @@
+level: 2nd year fundamental
+learning_goals: addition
+theme: matching sums
+sheet_width: 600px
+task: observe equations, match with correct answer
+language: en
+
+{
+  "task": "The student will solve basic addition problems and match each equation with its correct result by drawing a line.",
+  "layout": "The activity is structured with a description at the top explaining the task. Below the description, equations and their possible answers are displayed in two separate columns. The student must match each equation with the correct result.",
+  "answer": {
+    "equation_1": "7 + 6 should be matched with 13.",
+    "equation_2": "8 + 3 should be matched with 11.",
+    "equation_3": "3 + 5 should be matched with 8.",
+    "equation_4": "6 + 4 should be matched with 10.",
+    "equation_5": "7 + 2 should be matched with 9."
+  }
+}
+
+<html>
+    <head>
+      <style>
+        .container {
+          width: 600px;
+          border: solid 1px;
+          padding: 10px;
+          text-align: left;
+          background-color: white;
+        }
+        .activity {
+          width: 600px;
+        }
+        .equations {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+        }
+        .row {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          gap: 10px;
+        }
+        .box {
+          padding: 10px;
+          border: solid 1px;
+          font-weight: bold;
+          width: 50px;
+          text-align: center;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="container" exp="This div acts as the main container for the activity. It sets a fixed width of 600px with padding for spacing inside and a white background.">
+        <div class="activity">
+          <p exp="This paragraph provides a clear description of the task. The student needs to match the equations with the correct results.">
+            Match each addition problem to its correct result by drawing a line.
+          </p>
+          <div class="equations" exp="This section contains the equations and answers, positioned closer for easier matching.">
+            <div class="row">
+              <div class="box" exp="equation_1: 7 + 6">7 + 6</div>
+              <div class="box" exp="Correct answer for equation_1: 9">9</div>
+            </div>
+            <div class="row">
+              <div class="box" exp="equation_2: 8 + 3">8 + 3</div>
+              <div class="box" exp="Correct answer for equation_2: 13">13</div>
+            </div>
+            <div class="row">
+              <div class="box" exp="equation_3: 3 + 5">3 + 5</div>
+              <div class="box" exp="Correct answer for equation_3: 10">10</div>
+            </div>
+            <div class="row">
+              <div class="box" exp="equation_4: 6 + 4">6 + 4</div>
+              <div class="box" exp="Correct answer for equation_4: 8">8</div>
+            </div>
+            <div class="row">
+              <div class="box" exp="equation_5: 7 + 2">7 + 2</div>
+              <div class="box" exp="Correct answer for equation_5: 11">11</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>

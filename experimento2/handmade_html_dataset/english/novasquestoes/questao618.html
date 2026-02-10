@@ -1,0 +1,47 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Train Station Arrivals
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+    "task": "At the train station, 56 trains arrived in the morning and 78 in the afternoon. How many trains arrived in total that day?",
+    "layout": "One image of a train station and a large box below it for the answer. The student must add both numbers and write the total.",
+    "answer": "The student should add 56 and 78 to find the total number of trains. 56 + 78 = 134. The correct answer is 134."
+  },
+
+  <html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: solid 1px;" 
+         exp="Main container defining the layout and keeping all content aligned and readable.">
+
+      <p exp="Context and question: The student must calculate how many trains arrived at the station by adding morning and afternoon arrivals.">
+        At the train station, 56 trains arrived in the morning and 78 in the afternoon. How many trains arrived in total that day?
+      </p>
+
+      <div style="display: flex; justify-content: center;" 
+           exp="Image centered to help the student visualize the train station setting.">
+        <img 
+          src="" 
+          alt="Illustration of a train station platform with passengers and two trains visible." 
+          style="width: 600px; height: 350px;" 
+          exp="Visual shows a busy train station with a platform, tracks, and arriving trains, helping the student understand the real-world scenario."
+        />
+      </div>
+
+      <p style="text-align: center; margin-top: 20px;" 
+         exp="Instruction prompting the student to write their answer below.">
+        Write the sum here:
+      </p>
+
+      <div style="display: flex; justify-content: center;">
+        <div style="width: 100px; height: 100px; border: 1px solid black;" 
+             exp="Answer box where students will write 56 + 78 = 134.">
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

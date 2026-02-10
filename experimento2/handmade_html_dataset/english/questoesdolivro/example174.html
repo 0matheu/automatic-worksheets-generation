@@ -1,0 +1,61 @@
+level: 2nd year fundamental
+learning_goals: addition
+theme: shopping at an ice cream shop
+sheet_width": 600px
+task: observe image, write answer
+language: en
+
+{
+  "task": "Observe the image, calculate how much Julia spent, and determine the new total if she buys an additional scoop.",
+  "layout": "The activity is structured with a description at the top explaining the task. Below the description, an image displays Julia making a purchase. Following the image, there are questions prompting the student to calculate the total spent and an additional cost scenario.",
+  "answer": {
+      "A": "To correctly answer this question, the student will add the prices of the ice cream cone ($15) and the topping ($5) and write the total spent in the box. The correct answer is '20'.",
+      "B": "To correctly answer this question, the student will add 5 to the previous total (20) and write the new total in the box. The correct answer is '25'."
+  }
+}
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px; padding: 10px;"
+      exp="This div acts as the main container for the activity. It sets a fixed width of 600px and uses padding for spacing inside the container."
+    >
+      <div class="activity" style="width: 100%;">
+        <p
+          exp="This paragraph provides a clear and concise description of the task. It explains that the student needs to analyze the purchase scenario and answer the questions."
+        >
+          Julia went to the ice cream shop and bought a cone and a topping. The ice cream cone costs $15, and the topping costs $5. Observe the image and answer the questions below.
+        </p>
+
+        <div
+          style="display: flex; justify-content: center; margin-bottom: 20px;"
+          exp="This div uses flexbox to horizontally center the image of the activity."
+        >
+          <img
+            src=""
+            alt="Illustration of Julia at an ice cream shop counter purchasing an ice cream cone with a topping. 
+                  The ice cream cone has a price tag of $15, and the topping has a price tag of $5."
+            style="width: 400px; height: auto;"
+            exp="This image depicts Julia purchasing an ice cream cone and a topping at an ice cream shop. The price of each item is visible (ice cream cone: $15, topping: $5), helping students perform the addition task."
+          />
+        </div>
+
+        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+          <p style="margin-right: 10px;">A) How much did Julia spend?</p>
+          <div style="width: 100px; height: 30px; border: 1px solid black; text-align: center;"
+            exp="Box where the student writes the total amount Julia spent. The correct answer is '20'."
+          ></div>
+        </div>
+
+        <div style="display: flex; align-items: center;">
+          <p style="margin-right: 10px;">B) If Julia buys an extra scoop for $5, how much will she spend in total?</p>
+          <div style="width: 100px; height: 30px; border: 1px solid black; text-align: center;"
+            exp="Box where the student writes the new total if Julia buys an additional scoop for $5. The correct answer is '25'."
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+    

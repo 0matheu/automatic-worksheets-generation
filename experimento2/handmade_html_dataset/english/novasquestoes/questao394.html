@@ -1,0 +1,68 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition, comparison
+theme: Hospital Pharmacy Medicine Distribution
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+    "task": "To practice counting, addition, and comparison skills by analyzing medicine distribution in a hospital and answering questions about the most distributed medicine and total distributed units.",
+    "layout": "The activity consists of a description of the scenario at the top, providing the necessary context. Below the description, a centered image illustrates a hospital pharmacy inventory list with different medicine distributions. The student will answer questions based on the image, with answer boxes positioned as close as possible to each question.",
+    "answer": {
+        "A": "To answer correctly, the student needs to compare the distribution numbers and identify the most distributed medicine. The correct answer is 'Painkillers: 320 units'.",
+        "B": "To answer correctly, the student needs to add up all distributions (320 + 290 + 180) to get the total. The correct answer is 790 units."
+    }
+}
+
+<html>
+    <head>
+        <style>
+            .question-container {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                width: 100%;
+                margin-bottom: 5px;
+            }
+            .answer-box {
+                width: 80px;
+                height: 25px;
+                border: 1px solid black;
+                text-align: center;
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+    <body>
+      <div style="width: 800px; border: solid 1px; padding: 10px;" exp="Main container for the activity">
+        
+        <div class="activity">
+          <p exp="Activity description explaining what the student must do">
+            A hospital pharmacy distributed different types of medicine last week. Look at the pharmacy's record and answer the questions.
+          </p>
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image in the activity">
+            <img src="" 
+                 alt="Illustration of a hospital pharmacy inventory list displaying: Painkillers (320 units), Antibiotics (290 units), Cough Syrups (180 units)."
+                 style="width: 600px; height: 300px"
+                 exp="Image where students need to compare medicine distributions and calculate the total distributed." />
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking which medicine was the most distributed">
+                <b>A)</b> Which type of medicine was distributed the most?
+                <div class="answer-box" exp="Box where the student writes the most distributed medicine. The correct answer is 'Painkillers: 320 units'."></div>
+            </p>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for the total amount of distributed medicines">
+                <b>B)</b> How many medicines were distributed in total?
+                <div class="answer-box" exp="Box where the student writes the total amount of distributed medicines. The correct answer is 790."></div>
+            </p>
+        </div>
+        
+      </div>
+    </body>
+</html>

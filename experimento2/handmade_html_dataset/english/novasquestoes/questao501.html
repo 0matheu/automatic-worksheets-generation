@@ -1,0 +1,48 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Cooking Ingredients
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+    "task": "To practice counting and basic addition skills by calculating the total cost of the ingredients Amanda is buying for a recipe.",
+    "layout": "The activity consists of a description where Amanda is buying ingredients for a recipe. Below is an image showing the prices of the ingredients. The student will answer questions based on the prices.",
+    "answer": {
+      "A": "To answer correctly, the student needs to add the prices of the sugar (8 reais) and the flour (12 reais). The correct answer is 20 reais.",
+      "B": "To answer correctly, the student needs to add the price of the sugar (8 reais) and the eggs (10 reais). The correct answer is 18 reais."
+    }
+  }
+
+  <!DOCTYPE html>
+<html>
+<head></head>
+<body>
+  <div style="width: 800px; border: solid 1px; padding: 10px;">
+    <div class="activity">
+      <p exp="Amanda is buying ingredients for a recipe. The prices of the ingredients are shown in the image.">
+        Amanda is preparing a recipe and needs to buy some ingredients. Below is an image showing the ingredients and their prices.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image showing Amanda’s ingredients.">
+      <img 
+        src="" 
+        alt="Illustration showing Amanda's ingredients: sugar, flour, and eggs."
+        style="width: 600px; height: 300px"
+        exp="Image showing the ingredients with their prices."
+      />
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question asking for the total cost of the sugar and flour."><b>A)</b> What is the total cost of the sugar and flour?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total cost of the sugar and flour. Correct: 20."></div>
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question asking for the total cost of the sugar and eggs."><b>B)</b> What is the total cost of the sugar and eggs?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total cost of the sugar and eggs. Correct: 18."></div>
+    </div>
+  </div>
+</body>
+</html>

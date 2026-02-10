@@ -1,0 +1,65 @@
+Create the complete structure of an **educational worksheet** designed to support student learning.
+
+The worksheet must include a well-organized **visual layout**, using **HTML** to define structural elements and **CSS** to style and position content such as text, images, tables, and any other components that enhance the learning experience.
+
+### 📌 Layout Requirements:
+
+1. **Alignment with the Learning Task**  
+   All elements must be positioned and formatted in a way that directly supports the question or task proposed.
+   For example: if the student is asked to match images, the images should be arranged separately and spaced appropriately to allow for easy association.
+
+2. **HTML Structure with Descriptive Attributes**  
+   Each HTML element must include two key attributes:
+   - `alt`: For all images, this attribute must contain a clear, descriptive text that explains the image in a way that allows the student to understand it even without visual access. The description should be contextually accurate and relevant to the task.
+   - `exp`: A custom attribute added to each HTML tag that briefly explains the purpose of that element within the worksheet (e.g., `exp="Image illustrating photosynthesis for matching activity"`).
+
+3. **CSS with Explanatory Comments**  
+   All CSS used to style or position elements must include **comments above each class or rule**, explaining how the styling contributes to making the worksheet visually engaging, intuitive, and enjoyable for students.
+
+4. **Image Sizing**  
+   Images should be sized appropriately to fit within the printable area of the worksheet. They should not exceed the dimensions of the page and should be large enough to clearly represent the content they illustrate.
+---
+
+In addition to the HTML and CSS, you must generate a **JSON description** that outlines the worksheet’s structure and purpose. This JSON should contain the following fields:
+
+- `task`: A clear explanation of the learning goal — what the student is expected to learn by completing the worksheet.
+- `layout`: A detailed description of how the HTML elements are arranged and used, explaining where each component is placed and why.
+- `answer`: A description of what the student must do to complete the worksheet successfully, including the correct answer and any necessary supporting information.
+
+---
+
+### ⚠️ Important Guidelines:
+
+- **Do not generate interactive HTML.** The worksheet is meant to be printed and completed with pen and paper.
+- **Ensure image sizes are appropriate** and do not exceed the printable area of the worksheet.
+- Always begin by generating the **JSON description**, followed by the corresponding **HTML layout**.
+- The elements like images, tables, and text must be arranged in a way that is **visually appealing** and **educationally effective**.
+- The elements should be **aligned** and **spaced** to facilitate easy reading and interaction by the student.
+- The worksheet should be **creative, engaging, and educational**, strictly adhering to the parameters provided.
+- The worksheet should support **playful learning**, encouraging students to interact with the content visually and cognitively.
+- Do **not** include unsafe or inappropriate content, such as: violence, adult themes, or any form of discrimination.
+
+### 📌 Rules to Follow:
+
+- Do **not** add any text beyond the JSON and the HTML structure of the worksheet.
+- Make the worksheet **creative, engaging, and educational**, based strictly on the parameters provided.
+- The worksheet should support **playful learning**, encouraging students to interact with the content visually and cognitively.
+
+
+To create a new worksheet, use the following parameters:
+
+level: 2nd year of fundamental  
+learning_goals: counting, addition  
+theme: Science Dinossaurs
+width-sheet: 800px  
+task: observe images, write answer
+language: en
+
+Where:
+
+- `level`: the intended school grade or year for the worksheet.
+- `subject`: the academic subject to which the worksheet belongs.
+- `theme`: the specific topic or concept being addressed.
+- `sheet width`: the desired width of the printed worksheet (in pixels or units appropriate for styling).
+- `task`: a concise instruction describing what the student must do to complete the worksheet.
+- `language`: the language in which the worksheet should be written (e.g., "en" for English, "pt" for Portuguese). This parameter controls all the descriptions, explanations and instructions within the worksheet.

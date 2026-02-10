@@ -1,0 +1,54 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Playground Adventure
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+"task": "Count how many children are playing on different playground equipment.",
+"layout": "This activity shows children playing on various playground equipment. The student will count how many children are playing on each item.",
+"answer": {
+  "A": "To answer correctly, the student needs to add the number of children on the swings (5) and the slides (8). The correct answer is 13.",
+  "B": "To answer correctly, the student needs to add the children on the swings (5) and the seesaw (7). The correct answer is 12.",
+  "C": "To answer correctly, the student needs to add the total number of children on all equipment: 5 + 8 + 7. The correct answer is 20."
+}
+}
+
+<html>
+<head></head>
+<body>
+  <div style="width: 800px; border: solid 1px black; padding: 10px;">
+    <div class="activity">
+      <p exp="The student will count children playing on different playground equipment.">
+        How many children are playing on each piece of playground equipment? Add them to find the total.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+      <img 
+        src=""
+        alt="Illustration of a playground with children playing on swings, slides, and seesaws."
+        style="width: 600px; height: 300px;"
+        exp="The image shows children playing on different playground equipment. There are 5 children on the swings, 8 children on the slides, and 7 children on the seesaw."
+      />
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p><b>A)</b> How many children are playing on the swings and the slides?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total children on swings and slides. Correct answer: 13."></div>
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p><b>B)</b> How many children are playing on the swings and the seesaw?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total children on swings and seesaw. Correct answer: 12."></div>
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p><b>C)</b> How many children are playing on all the equipment in total?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total children on all equipment. Correct answer: 20."></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+```json
+{
+  "task": "The student will learn to add quantities by matching the image with the largest number of flowers with the numeral image, and then calculating the sum.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph describing the task. The middle section contains a 2x2 grid with three images: an image of a flower bed with 7 flowers, an image of a numeral 5, and an image of a plus sign. The images are placed in a specific layout to facilitate the student's understanding. The flower image is placed in the left column of the first row, the numeral 5 image is placed in the right column of the first row, and the plus sign image is placed in the middle of the two columns. The sizes of the images are adjusted to be equal and clearly visible.",
+  "answer": "To answer this question correctly, the student needs to: 1) identify the image with the largest number of flowers (7 flowers), 2) match it with the numeral image, and 3) calculate the sum. The correct answer is: 7 (flowers) + 5 = 12."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the image below, identify the image with the largest quantity of flowers, match it with the numeral, and write the sum of the two.
+        </p>
+
+        <div class="container" style="display: grid; grid-template-columns: 400px 400px; grid-template-rows: 400px 400px">
+          <div class="imgContainer" style="grid-column: 1; grid-row: 1">
+            <img
+              src=""
+              alt="Image in a coloring book style of a flower bed with 7 sunflowers"
+              style="width: 400px; height: 400px"
+              exp="Image that the student will have to identify that has the largest quantity of flowers, being 7 in this case"
+            />
+          </div>
+
+          <div class="numContainer" style="grid-column: 2; grid-row: 1">
+            <img
+              src=""
+              alt="Image in children's painting style of the numeral 5"
+              style="width: 200px; height: 400px"
+              exp="Image in which the student will have to identify that it represents the numeral 5, and try to match with the image that has the largest quantity of flowers"
+            />
+          </div>
+
+          <div class="signContainer" style="grid-column: 1 / 3; grid-row: 2">
+            <img
+              src=""
+              alt="Image in children's painting style of a plus sign"
+              style="width: 400px; height: 200px"
+              exp="Image that is in the middle of the other two images, and serves to signal that the student will have to add the quantity of flowers of the image to the numeral and write the result"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```
+

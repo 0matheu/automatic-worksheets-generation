@@ -1,0 +1,48 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: School Supplies Shopping
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+  "task": "To practice counting and basic addition skills by calculating the total cost of school supplies Laura is buying.",
+  "layout": "The activity consists of a description at the top, where Laura is shopping for school supplies. Below is an image showing the prices of the items. The student will answer questions based on the prices.",
+  "answer": {
+    "A": "To answer correctly, the student needs to add the prices of the pencil case (18 reais) and the backpack (45 reais). The correct answer is 63 reais.",
+    "B": "To answer correctly, the student needs to add the price of the pencil case (18 reais) and the notebook (12 reais). The correct answer is 30 reais."
+  }
+}
+
+  
+<html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: solid 1px; padding: 10px;">
+      <div class="activity">
+        <p exp="Laura is shopping for school supplies. The prices of the items are shown in the image.">
+          Laura is buying school supplies. Below is an image showing the items she wants to buy.
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Centered image showing Laura’s school supplies.">
+        <img 
+          src="" 
+          alt="Illustration showing Laura’s shopping cart with items like a pencil case, backpack, and notebook."
+          style="width: 600px; height: 300px"
+          exp="Image showing the school supplies Laura is buying."
+        />
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question asking for the total cost of the pencil case and the backpack."><b>A)</b> What is the total cost of the pencil case and the backpack?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total cost of pencil case and backpack. Correct: 63."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question asking for the total cost of the pencil case and the notebook."><b>B)</b> What is the total cost of the pencil case and the notebook?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total cost of pencil case and notebook. Correct: 30."></div>
+      </div>
+    </div>
+  </body>
+</html>

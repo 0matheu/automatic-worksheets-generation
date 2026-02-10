@@ -1,0 +1,49 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: School 
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+
+{
+    "task": "To practice counting and basic addition skills by calculating the total cost of school supplies Maria is buying.",
+    "layout": "The activity consists of a description where Maria is buying school supplies. Below is an image showing the prices of the items. The student will answer questions based on the prices.",
+    "answer": {
+      "A": "To answer correctly, the student needs to add the prices of the notebook (15 reais) and the pencil case (20 reais). The correct answer is 35 reais.",
+      "B": "To answer correctly, the student needs to add the price of the notebook (15 reais) and the backpack (50 reais). The correct answer is 65 reais."
+    }
+  }
+
+  <html>
+<head></head>
+<body>
+  <div style="width: 800px; border: solid 1px; padding: 10px;">
+    <div class="activity">
+      <p exp="Maria is buying school supplies. The prices of the items are shown in the image.">
+        Maria is purchasing school supplies for her classes. Below is an image showing the items she wants to buy.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image showing Maria’s school supplies.">
+      <img 
+        src="" 
+        alt="Illustration showing Maria’s school supplies, including a notebook, pencil case, and backpack."
+        style="width: 600px; height: 300px"
+        exp="Image showing the school supplies with their prices."
+      />
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question asking for the total cost of the notebook and the pencil case."><b>A)</b> What is the total cost of the notebook and the pencil case?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total cost of the notebook and pencil case. Correct: 35."></div>
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question asking for the total cost of the notebook and the backpack."><b>B)</b> What is the total cost of the notebook and the backpack?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total cost of the notebook and backpack. Correct: 65."></div>
+    </div>
+  </div>
+</body>
+</html>

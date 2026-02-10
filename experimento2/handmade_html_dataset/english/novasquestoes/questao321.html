@@ -1,0 +1,105 @@
+level: 2nd year of fundamental  
+learning_goals: counting, addition  
+theme: Animal Shelter Adoption  
+width-sheet: 800px  
+task: observe table, write answer  
+language: en
+
+{
+    "task": "To practice counting and addition skills by calculating the total number of animals adopted from an animal shelter over a period of time.",
+    "layout": "The activity consists of a description at the top, where the student will read about the number of animals adopted in the shelter each week. Below that, there is a table showing the number of animals adopted in each week. The student will then answer questions based on the data, performing addition operations.",
+    "answer": {
+        "A": "To answer correctly, the student needs to add the number of cats and dogs adopted in week 1 (3 cats + 4 dogs). The correct answer is 7 animals adopted in week 1.",
+        "B": "To answer correctly, the student needs to add the number of cats and dogs adopted in week 2 (2 cats + 5 dogs). The correct answer is 7 animals adopted in week 2.",
+        "C": "To answer correctly, the student needs to add the total number of animals adopted in both weeks (3 cats + 4 dogs + 2 cats + 5 dogs). The correct answer is 14 animals adopted in total."
+    }
+}
+
+<html>
+    <head>
+        <style>
+            .container {
+                width: 800px;
+                border: solid 1px;
+                padding: 10px;
+                text-align: center;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: center;
+            }
+            th {
+                background-color: #6aa5db;
+                color: white;
+            }
+            .question-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+            .answer-box {
+                width: 100px;
+                height: 30px;
+                border: 1px solid black;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+      <div class="container">
+        
+        <div class="activity">
+          <p exp="Activity description about the adoption of cats and dogs at an animal shelter.">
+            An animal shelter has been adopting animals every week. Below is the table showing the number of cats and dogs adopted in the shelter each week. Answer the questions based on the data.
+          </p>
+        </div>
+
+        <table exp="Table showing the number of animals adopted in each week.">
+            <tr>
+                <th>Week</th>
+                <th>Cats</th>
+                <th>Dogs</th>
+            </tr>
+            <tr>
+                <td>Week 1</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Week 2</td>
+                <td>2</td>
+                <td>5</td>
+            </tr>
+        </table>
+
+        <div class="question-container">
+            <p exp="Question asking for the total number of animals adopted in week 1.">
+                <b>A)</b> How many animals were adopted in week 1?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the total number of animals adopted in week 1. The correct answer is 7."></div>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for the total number of animals adopted in week 2.">
+                <b>B)</b> How many animals were adopted in week 2?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the total number of animals adopted in week 2. The correct answer is 7."></div>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for the total number of animals adopted in both weeks.">
+                <b>C)</b> What is the total number of animals adopted in both weeks?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the total number of animals adopted in both weeks. The correct answer is 14."></div>
+        </div>
+        
+      </div>
+    </body>
+</html>

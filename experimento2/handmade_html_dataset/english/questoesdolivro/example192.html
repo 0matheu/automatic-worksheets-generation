@@ -1,0 +1,65 @@
+level: 2nd year fundamental
+learning_goals: addition, counting
+theme: birthday party decorations
+sheet_width: 600px
+task: observe image, write answer
+language: en
+
+{
+  "task":"The objective of this activity is for the student to count and add the number of decorations Emily is using for her birthday party.",
+  "layout":"The activity is structured with a scenario description at the top, followed by an illustration representing the story context. Below the description and image, there are three questions prompting the student to solve simple addition problems and write the correct answers in the provided boxes.",
+  "answer":{
+    "A": "To correctly answer this question, the student must add 6 balloons tied to the chairs with 5 more on the table (6 + 5 = 11). The correct answer is 11.",
+    "B": "To correctly answer this question, the student must add 4 starfish decorations on one wall with 3 more on another (4 + 3 = 7). The correct answer is 7.",
+    "C": "To correctly answer this question, the student must add the total number of balloons and starfish together (11 + 7 = 18). The correct answer is 18."
+  }
+}
+
+
+
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px; padding: 10px; text-align: left;"
+      exp="This div acts as the main container for the activity. It sets a fixed width of 600px with padding for spacing inside."
+    >
+      <div class="activity" style="width: 600px;">
+        <p
+          exp="This paragraph provides a clear description of the task. The student needs to solve the sums and write the correct answers in the provided boxes."
+        >
+          Emily is decorating for her birthday party! She is placing balloons and starfish decorations around the venue. Count the total number of decorations in each step and write the correct answers in the provided boxes.
+        </p>
+
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+          <img src="" alt="Illustration of Emily decorating with balloons and starfish, representing the addition problems" style="width: 300px; height: auto;"
+            exp="An image showing Emily setting up decorations with balloons and starfish, helping students visualize the counting and addition task." />
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 15px;">
+          <div style="display: flex; align-items: center;">
+            <p style="margin-right: 10px;">A) Emily tied 6 balloons to the chairs and 5 more on the table. Write the total number of balloons:</p>
+            <div style="width: 50px; height: 30px; border: 1px solid black; text-align: center;"
+              exp="Box where the student writes the total number of balloons. The correct answer is 11."
+            ></div>
+          </div>
+
+          <div style="display: flex; align-items: center;">
+            <p style="margin-right: 10px;">B) Emily placed 4 starfish decorations on one wall and 3 more on another. Write the total number of starfish:</p>
+            <div style="width: 50px; height: 30px; border: 1px solid black; text-align: center;"
+              exp="Box where the student writes the total number of starfish. The correct answer is 7."
+            ></div>
+          </div>
+
+          <div style="display: flex; align-items: center;">
+            <p style="margin-right: 10px;">C) Add the total number of balloons and the total number of starfish. Write the total number of decorations:</p>
+            <div style="width: 50px; height: 30px; border: 1px solid black; text-align: center;"
+              exp="Box where the student writes the total number of decorations combining both previous sums. The correct answer is 18."
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

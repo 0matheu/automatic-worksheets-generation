@@ -1,0 +1,118 @@
+nivel: 2 ano fundamental 
+assunto: adição, contagem 
+tematica: piratas
+largura-folha: 600px 
+layout: várias imagens, ligar imagens
+
+Nessa questão serão trabalhados os princípios da adição e
+contagem. Essa questão consiste de uma imagem de um pirata, que já tem 15 moedas
+de ouro, e mais três imagens de moedas, em cada uma contendo 10, 7 e 11 moedas,
+respectivamente. O aluno terá que ligar o pirata com a imagem que tem a maior
+quantidade de moedas, e também escrever a soma das moedas que ele já tem, com a
+quantidade da imagem que tem mais moedas, sendo 15 + 11 = 26 moedas de ouro.
+
+<html>
+  <head></head>
+  <style>
+    /* classe que é utilizada pra organizar a imagem do pirata e das moedas para que o aluno consiga ligar o pirata com as moedas */
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px;
+      grid-template-rows: 200px 200px 200px;
+      grid-template-areas:
+        "vazio1 moedas1"
+        "pirata moedas2"
+        "vazio2 moedas3";
+    }
+
+    /* classe que é utlizada para posicionar o pirata no layout correto da atividade */
+    .pirata {
+      grid-area: pirata;
+      width: 250px;
+      height: 300px;
+      border: 1px solid;
+    }
+
+    /* classe que é utilizada para ajustar as imagens das moedas a esquerda */
+    .moedas {
+      margin-left: 100px;
+    }
+
+    /* classe que é utlizada para posicionar a imagem da primeira moeda na primeira célula da segunda coluna */
+    .moedas1 {
+      grid-area: moedas1;
+      width: 120px;
+      height: 120px;
+      border: 1px solid;
+    }
+
+    /* classe que é utlizada para posicionar a imagem da segunda moeda na segunda célula da segunda coluna */
+    .moedas2 {
+      grid-area: moedas2;
+      width: 120px;
+      height: 120px;
+      border: 1px solid;
+    }
+
+    /* classe que é utlizada para posicionar a imagem da terceira moeda na terceira célula da segunda coluna */
+    .moedas3 {
+      grid-area: moedas3;
+      width: 120px;
+      height: 120px;
+      border: 1px solid;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe as imagens abaixo. O pirata tem 15 moedas de ouro e está a
+          procura de mais moedas, ligue o pirata com a imagem que tem mais
+          moedas de ouro. A seguir escreva a soma das moedas de ouro que o
+          pirata já tinha, com as novas moedas que ele conseguiu.
+        </p>
+
+        <div class="container">
+          <div class="vazio1"></div>
+
+          <div class="pirata" exp="div que será utilizada para ajustar a imagem do pirata para ficar no centro a esquerda">
+            <img
+              src=""
+              alt="Imagem, no estilo de desenho de pintar, de um pirata com 15 moedas de ouro na mão."
+              exp="Imagem na qual o aluno terá que ligar com a imagem com mais moedas de ouro e efeturar a soma"
+            />
+          </div>
+
+          <div class="moedas1 moedas" exp="div que será usada para ajustar a imagem1 das moedas no canto superor direito">
+            <img
+              src=""
+              alt="imagem no estilo de desenho de pintar contendo 10 moedas de ouro"
+              exp="imagem na qual o aluno terá que contar a quantidade de moedas e tentar identificar se tem a maior quantidade de moedas. Essa imagem tem 10 moedas, a que tem a maior quantidade é a terceira, que tem 11"
+            />
+          </div>
+
+          <div class="moedas2 moedas" exp="div que será utilizada para a imagem2 das moedas ficar ajustada no centro a direita">
+            <img
+              src=""
+              alt="imagem no estilo de desenho de pintar contendo 7 moedas de ouro"
+              exp="imagem na qual o aluno terá que contar a quantidade de moedas e tentar identificar se nessa imagem tem a maior quantidade de moedas. Essa imagem tem 7 moedas, a imagem com a maior quantidade de moedas é a terceira, com 11."
+            />
+          </div>
+
+          <div class="moedas3 moedas" exp="div quer será utilizada para a imagem3 ficar ajustada no canto inferior direito da imagem">
+            <img
+              src=""
+              alt="imagem no estilo de desenho de pintar contendo 11 moedas de ouro"
+              exp="imagem na qual o aluno terá que contar a quantidade de moedas e identificar que nessa imagem tem a maior quantidade de moedas, sendo 11 e ligar com a imagem do pirata"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

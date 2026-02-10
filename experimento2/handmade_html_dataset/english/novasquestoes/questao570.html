@@ -1,0 +1,69 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Draw the Books
+width-sheet: 800px
+task: observe image, draw answer
+language: en
+
+
+{
+  "task": "To practice addition by counting and drawing the total number of books John will have in his collection.",
+  "layout": "The task layout includes a paragraph and an image where the student needs to draw the books.",
+  "answer": {
+    "To answer correctly, the student should add the number of books John has (5) and the number of new books he received (6). The correct total is 11 books. The student should then draw all 11 books in the image."
+  }
+}
+
+<html>
+  <head>
+    <style>
+      .container {
+        width: 800px;
+        border: solid 1px;
+        padding: 10px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+      .activity p {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      .answer-area {
+        margin-top: 20px;
+      }
+      img {
+        width: 600px;
+        height: 400px;
+        margin: 10px;
+      }
+      .answer-instruction {
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" exp="Div containing the layout of the activity, with width of 800px.">
+      <div class="activity">
+        <p exp="Description of the task, explaining that John has 5 books and receives 6 more. The student needs to calculate and draw all the books in the image.">
+          John has 5 books, and he receives 6 more. How many books will he have in total? Draw all the books in the image below.
+        </p>
+
+        <div style="display: flex; justify-content: center;" exp="This div centers the image of the shelf where students will draw the books.">
+          <img 
+            src="" 
+            alt="Image of a shelf without any books, for the student to draw the correct number of books." 
+            style="width: 600px; height: 400px;"
+            exp="Image of an empty shelf where the student will draw 5 books and 6 more. The shelf is blank so the student can add all 11 books to it."
+          />
+        </div>
+
+        <div class="answer-area" exp="Area where the student will draw the books, based on the number they calculate.">
+          <p class="answer-instruction" exp="Instruction for the student to draw the total number of books after performing the addition.">
+            Draw all the books you counted on the shelf.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

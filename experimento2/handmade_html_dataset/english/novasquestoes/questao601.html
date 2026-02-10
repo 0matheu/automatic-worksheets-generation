@@ -1,0 +1,49 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Shopping
+width-sheet: 800px
+task: observe image, write answer
+
+{
+    "task": "To help the student practice addition using real-life scenarios by calculating the total number of vehicles that entered a shopping mall parking lot. This reinforces understanding of combining quantities from different time periods (morning and afternoon).",
+    "layout": "The layout includes a clear paragraph explaining the situation with a friendly tone for children. It is followed by a centered image of a parking lot and two signs showing the number of vehicles. Below the image, there's a supportive instruction and a large, square box centered on the screen where the student will write their answer. All visual elements are designed to guide the child through the reasoning process.",
+    "answer": "To solve this problem, the student must add the number of cars from the morning and the afternoon: 124 + 213 = 337. The student should write the final answer (337) inside the large square box in the center of the page. This demonstrates their ability to apply addition in a real-world situation."
+  }
+  
+
+<html>
+<head></head>
+<body>
+  <div style="width: 800px; border: solid 1px;" 
+       exp="Main container that defines the space of the activity. It helps organize all elements like text, image, and answer box in a consistent format.">
+    
+    <p exp="Problem description written in simple language. The student needs to calculate how many vehicles entered the shopping mall throughout the day.">
+      A special machine records the number of cars entering the parking lot of a shopping mall. 
+      On Saturday, the machine recorded 124 cars in the morning and 213 cars in the afternoon. 
+      The parking lot was closed at night.  
+      <strong>How many cars entered the parking lot in total that day?</strong>
+    </p>
+
+    <div style="display: flex; justify-content: center;" 
+         exp="Div used to center the image so that it is visually appealing and aligned with the rest of the layout.">
+      <img 
+        src=""
+        alt="Illustration of a parking lot with a machine recording car entries. One sign shows '124 cars in the morning' and another sign shows '213 cars in the afternoon'."
+        style="width: 600px; height: 400px;" 
+        exp="Image helps visualize the context: a shopping mall parking lot with a machine and two signs showing the number of vehicles that entered in the morning and afternoon. It supports the student in understanding the addition task using a real-world situation."/>
+    </div>
+
+    <p exp="Encourages the student to perform the addition by using the numbers from the image and description. Helps reinforce that no cars entered at night.">
+      Remember: No cars came in at night. Add the number of cars from the morning and afternoon to find the total number of cars that entered on that Saturday.
+    </p>
+
+    <div style="display: flex; justify-content: center; margin-top: 20px;" 
+         exp="Div used to center the answer box. It keeps the student's focus on where to write their response.">
+      <div style="width: 100px; height: 100px; border: 1px solid black;" 
+           exp="Answer box where the student will write the total number of cars. The expected answer is 124 + 213 = 337. The student demonstrates understanding of real-life addition.">
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>

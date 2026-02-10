@@ -1,0 +1,105 @@
+level: 2nd year fundamental
+learning_goals: addition, counting
+theme: gardening
+sheet_width: 600px
+task: observe images, write answer
+language: en
+
+
+{
+  "task": "Count the number of flowers each child has picked, connect the child to the image with the most flowers, and write down the sum of the two linked images.",
+  "layout": "The activity consists of three main sections. The top section includes a description of the task. Below this, the middle section features a 2x2 grid layout where the first column contains an image of a child with flowers, and the second column contains two images of vases filled with flowers.",
+  "answer": "To answer this activity correctly, the student must: 1) count the number of flowers the child picked (4), 2) compare it with the number of flowers in the two vases (3 and 6), 3) connect the child to the image with the most flowers (6), and 4) write down the sum of the two linked images (4 + 6 = 10). The answer (10) should be written in the answer box below the instruction: 'Write in the box below the total number of flowers after linking the images.'"
+}
+
+  
+<html>
+  <head>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 300px 300px;
+        grid-template-areas:
+          "child img1"
+          "child img2";
+      }
+
+      .child {
+        grid-area: child;
+        width: 300px;
+        height: 600px;
+      }
+
+      .child img {
+        margin-top: 180px;
+      }
+
+      img {
+        width: 230px;
+        height: 230px;
+      }
+
+      .img1 {
+        grid-area: img1;
+      }
+
+      .img2 {
+        grid-area: img2;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 600px"
+    >
+      <div class="activity" style="width: 600px">
+        <p
+          exp="Activity description explaining the task of linking the child with the most flowers and calculating the total."
+        >
+          Observe the images below. Count the number of flowers each child has picked, then connect the child to the vase with the most flowers. Finally, write down the sum of the two linked images.
+        </p>
+
+        <div class="container">
+          <div class="child" exp="div containing the image of the child holding 4 flowers.">
+            <img
+              src=""
+              alt="Image of a child holding 4 flowers."
+              exp="The student must count the flowers (4) held by the child."
+            />
+          </div>
+
+          <div class="img1" exp="div containing the first vase with flowers.">
+            <img
+              src=""
+              alt="Image of a vase with 3 flowers."
+              exp="The student must count the flowers (3) in the vase."
+            />
+          </div>
+
+          <div class="img2" exp="div containing the second vase with flowers.">
+            <img
+              src=""
+              alt="Image of a vase with 6 flowers."
+              exp="The student must count the flowers (6) in the vase."
+            />
+          </div>
+        </div>
+
+        <p
+          exp="Instruction for the student to write the total sum of flowers in the answer box."
+          style="text-align: center; margin-top: 20px;"
+        >
+          Write in the box below the total number of flowers after linking the images:
+        </p>
+        <div style="display: flex; justify-content: center;" exp="div for the answer box.">
+          <div
+            style="width: 100px; height: 100px; border: 1px solid black;"
+            exp="Answer box for writing the total number of flowers. Correct answer: 10."
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

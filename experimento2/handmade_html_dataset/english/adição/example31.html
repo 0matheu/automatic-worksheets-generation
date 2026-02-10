@@ -1,0 +1,178 @@
+level: 2nd year of fundamental 
+learning goals: addition, counting 
+theme: airplane
+width-sheet: 800px 
+task: observe images, link items
+language: en
+
+{
+  "task": "The student will learn to count and add packages by matching the airplane image with the runway image having the most packages and then calculating the total count.",
+  "layout": "The layout consists of a grid organized into two rows and three columns. In the first row, there is an image of an airplane that is centered horizontally across the row. The second row features three images of landing strips, with one image placed in each column.",
+  "answer": "To answer correctly, the student must: 1) Count the number of packages on the airplane image (5 packages), 2) Identify the landing strip image with the most packages (5 packages), 3) Add the number of packages on the airplane to the number of packages on the runway with the most packages (5 + 5 = 10). The student must write the final answer (10) in the answer box located below the instructions. The box is provided for the student to clearly write their result after performing the addition."
+}
+
+
+<html>
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing four images, one of a airplane, and three other images of landing strips, in a 2-line and 3-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 220px 220px 220px;
+      grid-template-rows: 300px 200px;
+      grid-template-areas:
+        "airplane airplane airplane"
+        "landing1 landing2 landing3";
+    }
+
+    
+    /* class used to place the image on the airplane on the first row and the second column */
+    .airplane {
+      grid-area: airplane;
+    }
+      
+    /* class used to centralize the image of the plane in the center of the page horizontally */
+    .centralize {
+      width: 800px;
+      display: flex; 
+      justify-content: center
+    }
+  
+    /* class used to give the size of the image of the airplane */
+    .centralize img {
+      width: 300px;
+      height: 200px;
+      border: 1px solid;
+    }
+
+    /* class used to place the image of the first landing page on the second row and the first column */
+    .landing1 {
+      grid-area: landing1;
+    }
+
+    /* class used to place the image of the second landing page on the second row and the second column */
+    .landing2 {
+      grid-area: landing2;
+    }
+
+    /* class used to place the image of the third landing page on the second row and the third column */
+    .landing3 {
+      grid-area: landing3;
+    }
+
+    /* class used to give the size of the sizes of the landing strips images */
+    .sizelanding {
+      width: 200px;
+      height: 150px;
+      border: 1px solid;
+    }
+
+  
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 300px 200px 100px;
+        gap: 10px;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+      }
+
+      .airplane {
+        grid-column: 1 / span 3;
+        text-align: center;
+      }
+
+      .centralize img {
+        width: 300px;
+        height: 200px;
+        border: 1px solid;
+        object-fit: cover;
+      }
+
+      .landing {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        width: 220px;
+        height: 180px;
+        padding: 10px;
+      }
+
+      .landing img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+
+      .answer-container {
+        grid-column: 2 / 3;
+        text-align: center;
+      }
+
+      .answer-box {
+        width: 80px;
+        height: 40px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-left: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="width: 800px; margin: auto; border: 1px solid;">
+      <div class="activity" style="padding: 20px;">
+        <p style="text-align: center;" exp="Activity description that explains what the student needs to do.">
+          Observe the airplane image, count its packages, and match it with the runway image having the most packages. Then, add the airplane's packages to the runway's packages for a total count.
+        </p>
+
+        <div class="container">
+          <div class="airplane" exp="div used to place the image of the airplane in the first row, centered horizontally.">
+            <div class="centralize">
+              <img
+                src=""
+                alt="Children's painting style image of a plane with 5 cargo packages flying in the sky"
+                exp="Image showing the airplane with its packages that the student will need to observe."
+              />
+            </div>
+          </div>
+
+          <div class="landing" exp="Div containing the first landing strip image, where the student needs to identify the number of packages.">
+            <img
+              src=""
+              alt="Image of an airplane landing strip with 3 packages"
+              exp="Image that the student will have to look at and identify that there are 3 packages."
+            />
+          </div>
+
+          <div class="landing" exp="Div containing the second landing strip image, where the student needs to identify the number of packages.">
+            <img
+              src=""
+              alt="Image of an airplane landing strip with 5 packages"
+              exp="Image that the student will have to look at and identify that there are 5 packages."
+            />
+          </div>
+
+          <div class="landing" exp="Div containing the third landing strip image, where the student needs to identify the number of packages.">
+            <img
+              src=""
+              alt="Image of an airplane landing strip with 2 packages"
+              exp="Image that the student will have to look at and identify that there are 2 packages."
+            />
+          </div>
+
+          <div class="answer-container" exp="Div that contains the answer box, aligned with the second image.">
+            <p exp="Instruction text for the student to write the answer in the answer box below.">
+              Write in the box below the total number of packages after adding the airplane packages with the runway packages:
+            </p>
+            <div class="answer-box" exp="Box where the student will write the final answer after performing the sum, which should be 10 packages."></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

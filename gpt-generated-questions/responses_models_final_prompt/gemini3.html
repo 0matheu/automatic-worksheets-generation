@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* Ensures the worksheet fits a standard page width and uses a friendly font for young learners */
+        body {
+            width: 800px;
+            margin: 0 auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #2c3e50;
+            background-color: #ffffff;
+            border: 2px solid #27ae60;
+            padding: 20px;
+        }
+
+        /* Styles the main title to be large and exciting to capture the student's attention */
+        .header-title {
+            text-align: center;
+            color: #e67e22;
+            text-transform: uppercase;
+            border-bottom: 3px dashed #27ae60;
+            padding-bottom: 10px;
+        }
+
+        /* Creates a neat space for students to practice writing their name and the date */
+        .student-info {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        /* Organizes each math problem into a clear, distinct row to prevent visual clutter */
+        .task-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 30px 0;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 15px;
+        }
+
+        /* Controls image size to ensure they are clear for counting but don't overflow the page */
+        .dino-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            max-width: 500px;
+        }
+
+        .dino-img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+
+        /* Creates a large, inviting square box for students to write their numerical answers */
+        .answer-box {
+            width: 80px;
+            height: 80px;
+            border: 3px solid #27ae60;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            background-color: #fff;
+        }
+
+        /* Styles the instructional text to be clear and direct for 2nd grade reading levels */
+        .instruction {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <header exp="Worksheet header with title and student identification fields">
+        <h1 class="header-title" exp="Title of the worksheet">Dino-Math Adventure! 🦖</h1>
+        <div class="student-info" exp="Container for name and date">
+            <p>Name: ____________________________</p>
+            <p>Date: ___/___/202X</p>
+        </div>
+    </header>
+
+    <main>
+        <p class="instruction" exp="Main task instruction">Count the dinosaurs and write the number in the box!</p>
+
+        <section class="task-row" exp="First counting activity section">
+            <div class="dino-group" exp="Group of 5 Triceratops images">
+                <img src="https://cdn-icons-png.flaticon.com/512/2316/2316629.png" class="dino-img" alt="One green triceratops standing" exp="Individual dinosaur icon for counting">
+                <img src="https://cdn-icons-png.flaticon.com/512/2316/2316629.png" class="dino-img" alt="One green triceratops standing" exp="Individual dinosaur icon for counting">
+                <img src="https://cdn-icons-png.flaticon.com/512/2316/2316629.png" class="dino-img" alt="One green triceratops standing" exp="Individual dinosaur icon for counting">
+                <img src="https://cdn-icons-png.flaticon.com/512/2316/2316629.png" class="dino-img" alt="One green triceratops standing" exp="Individual dinosaur icon for counting">
+                <img src="https://cdn-icons-png.flaticon.com/512/2316/2316629.png" class="dino-img" alt="One green triceratops standing" exp="Individual dinosaur icon for counting">
+            </div>
+            <div class="answer-box" exp="Box for the student to write the number 5"></div>
+        </section>
+
+        <section class="task-row" exp="Second counting activity section">
+            <div class="dino-group" exp="Group of 4 T-Rex images">
+                <img src="https://cdn-icons-png.flaticon.com/512/2316/2316657.png" class="dino-img" alt="One orange Tyrannosaurus Rex roaring" exp="Individual dinosaur icon for counting">
+                <img src="https://cdn-icons-png.flaticon.com/512/2316/2316657.png" class="dino-img" alt="One orange Tyrannosaurus Rex roaring" exp="Individual dinosaur icon for counting">
+                <img src="https://cdn-icons-png.flaticon.com/512/2316/2316657.png" class="dino-img" alt="One orange Tyrannosaurus Rex roaring" exp="Individual dinosaur icon for counting">
+                <img src="https://cdn-icons-png.flaticon.com/512/2316/2316657.png" class="dino-img" alt="One orange Tyrannosaurus Rex roaring" exp="Individual dinosaur icon for counting">
+            </div>
+            <div class="answer-box" exp="Box for the student to write the number 4"></div>
+        </section>
+
+        <section exp="Final addition challenge section">
+            <p class="instruction">How many dinosaurs are there in total? (Add them up!)</p>
+            <div class="task-row" style="justify-content: center; gap: 20px;" exp="Addition layout">
+                <span>5</span>
+                <span style="font-size: 30px;">+</span>
+                <span>4</span>
+                <span style="font-size: 30px;">=</span>
+                <div class="answer-box" exp="Box for the student to write the sum (9)"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="margin-top: 40px; text-align: center; font-size: 0.9em; color: #7f8c8d;" exp="Worksheet footer">
+        "Roar-some job! You are a Math Explorer!"
+    </footer>
+
+</body>
+</html>

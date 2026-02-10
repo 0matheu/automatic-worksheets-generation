@@ -1,0 +1,101 @@
+level: 2nd year of fundamental
+learning goals: addition, counting
+theme: school supplies
+width-sheet: 850px
+task: observe images, write answer
+language: en
+
+{
+  "task": "To practice basic addition skills by counting the number of pencils and erasers in two images and writing the sum, learning to count and perform simple arithmetic operations.",
+  "layout": "The activity is divided into two main sections. The top section contains a paragraph that explains the task, and the bottom section contains a grid layout with five cells. The first cell contains an image of 5 pencils, the second cell contains a plus sign, the third cell contains an image of 3 erasers, the fourth cell contains an equal sign, and the fifth cell is a box for the student to write the result.",
+  "answer": "To answer correctly, the student needs to observe the two images and count the number of pencils (5) and erasers (3) present. The student needs to add the two numbers together to get 8. The student needs to write the result (8) in the box provided. The student needs to observe the images carefully and perform a simple addition operation to get the correct answer."
+}
+
+<html>
+  <head></head>
+
+  <style>
+    /* class used to organize the page layout, which consists of two images, a plus sign, an equal sign, and a space for the student to write the result */
+    .container {
+      display: grid;
+      grid-template-columns: 150px 150px 150px 150px 150px;
+      grid-template-rows: 150px;
+      grid-template-areas:
+        "img1 plus img2 equal result"
+    }
+
+    /* class used to position the image of 5 pencils, positioned in the first cell of the first column */
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to position the image of 3 erasers, positioned in the first cell of the third column */
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to position the equal sign, positioned in the first cell of the fourth column */
+    .equal {
+      grid-area: equal;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* class used to position the plus sign, positioned in the first cell of the second column */
+    .plus {
+      grid-area: plus;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* class used to position a box that will serve for the student to write the result of the sum, located in the first cell of the fifth column */
+    .result {
+      grid-area: result;
+      border: solid 1px;
+    }
+
+    /* class used to adjust the size of the images in the activity */
+    img {
+      width: 180px;
+      height: 150px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 850px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 600px"
+    >
+      <div class="activity" style="width: 600px">
+        <p
+          exp="Activity description, containing the explanation of what the student will have to do to answer the activity correctly"
+        >
+          Count the number of pencils and erasers in the images below and write the sum:
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="image in the style of a child's painting of 5 separate pencils"
+              exp="image that the student will have to observe and count how many pencils are present"
+            />
+          </div>
+
+          <div class="plus" exp="plus sign that represents the sum of the quantities"><p>+</p></div>
+
+          <div class="img2">
+            <img 
+              alt="image in the style of a child's painting of 3 separate erasers"
+              exp="image that the student will have to observe and count how many erasers are present"
+            />
+          </div>
+
+          <div class="equal" exp="equal sign that represents the result of the sum"><p>=</p></div>
+
+          <div class="result" exp="box that will serve for the student to write the result of the sum"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

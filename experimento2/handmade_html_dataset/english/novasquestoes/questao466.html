@@ -1,0 +1,66 @@
+level: 2nd year of fundamental
+learning_goals: counting, observation
+theme: Saving for a Bike Helmet
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+    "task": "To develop counting and observation skills by analyzing how much money two people have saved together and how it compares to the cost of an item they want to buy.",
+    "layout": "The activity includes a short scenario followed by an image showing money amounts. The student must calculate the total amount saved, how to complete a total using addition, and what happens if they receive more money.",
+    "answer": {
+      "A": "Hugo has 30 reais and Beatriz has 40 reais. The total is 70 reais.",
+      "B": "To reach 80 reais, they need to add 10 reais. 70 + 10 = 80.",
+      "C": "If they receive 6 more reais, they will have 76 reais."
+    }
+  }
+  
+<html>
+<head>
+  <style>
+    .question-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .answer-box {
+        width: 60px;
+        height: 30px;
+        border: 1px solid black;
+        text-align: center;
+        margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div style="width: 800px; border: solid 1px; padding: 10px;" exp="Main container with scenario and questions.">
+    <div class="activity">
+      <p exp="Context for the activity.">
+        Hugo and Beatriz are saving money to buy a bike helmet, which costs 80 reais. Hugo has 30 reais and Beatriz has 40 reais.
+        Answer the questions below.
+      </p>
+    </div>
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Centered illustrative image.">
+      <img src="" 
+           alt="Illustration showing Hugo with 30 reais and Beatriz with 40 reais. They want to buy a bike helmet that costs 80 reais. The student must analyze if the saved amount is enough, and use addition to determine how much more is needed."
+           style="width: 600px; height: 300px"
+           exp="Illustration with money values labeled above each character. The image shows Hugo and Beatriz standing next to a table with coins and bills, and a drawing of a bike helmet they want to buy. Used to support counting and addition reasoning." />
+    </div>
+    <div class="question-container">
+      <p><b>A)</b> How much money do they have together?</p>
+      <div class="answer-box" exp="Correct answer: 70"></div>
+    </div>
+    <div class="question-container">
+      <p><b>B)</b> What amount should be added to reach 80 reais?</p>
+      <div class="answer-box" exp="Correct answer: 10 reais"></div>
+    </div>
+    <div class="question-container">
+      <p><b>C)</b> If they get 6 more reais, how much will they have?</p>
+      <div class="answer-box" exp="Correct answer: 76 reais"></div>
+    </div>
+  </div>
+</body>
+</html>

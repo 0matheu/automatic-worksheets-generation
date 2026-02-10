@@ -1,0 +1,53 @@
+level: 2nd year fundamental,
+learning_goals: counting, logical reasoning, place value,
+theme: raindrops,
+sheet_width: 600px,
+task: observe image, write answer
+language: en
+
+{
+  "task": "The objective of this activity is for the student to count raindrops, interpret their value as units, and convert them into dozens.",
+  "layout": "The activity is organized with a description at the top that explains the task. Below the description, there is a centered image of raindrops. Following the image, there are questions prompting the student to count, convert, and write their answers in the provided boxes.",
+  "answer": "To correctly answer this activity, the student will count the raindrops (10), and you must write the number 10 in the answer box "
+}
+  
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px; padding: 10px;"
+      exp="This div acts as the main container for the activity. It sets a fixed width of 600px and uses padding for spacing inside the container."
+    >
+      <div class="activity" style="width: 100%;">
+        <p
+          exp="This paragraph provides a clear and concise description of the task. It explains that the student needs to count raindrops and calculate their value in units and dozens."
+        >
+          Observe the image, count the raindrops, and fill in the answers below.
+        </p>
+
+        <div
+          style="display: flex; justify-content: center; margin-bottom: 20px;"
+          exp="This div uses flexbox to horizontally center the image of the activity."
+        >
+          <img
+            src=""
+            alt="Illustration of 10 raindrops falling into puddles. In a coloring book style"
+            style="width: 400px; height: auto;"
+            exp="This image visually presents the raindrops the student will count and interpret."
+          />
+        </div>
+
+        <div style="display: flex; align-items: center; margin-top: 10px;">
+          <p style="margin-right: 10px;">How many raindrops are there?</p>
+          <div
+            style="width: 100px; height: 30px; border: 1px solid black;"
+            exp="Box where the student writes the total number of raindrops. The correct answer is '10'."
+          ></div>
+        </div>
+
+        
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

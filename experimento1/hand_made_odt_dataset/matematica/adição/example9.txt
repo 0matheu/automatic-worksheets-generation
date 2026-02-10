@@ -1,0 +1,1 @@
+Nessa questão será praticado os principios da adição. O aluno terá que contar quantos pirulitos já estão presentes na image, e desenhar até completar 10, sendo necessáio desenhar mais 6 pirulitos

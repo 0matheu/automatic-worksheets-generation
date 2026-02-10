@@ -1,0 +1,61 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme:  School Bus Ride
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+"task": "Count the children getting on the school bus at different stops and answer the questions.",
+"layout": "This activity shows a school bus picking up children at three different stops. The image helps the student visualize and add the number of passengers.",
+"answer": {
+  "A": "The student should add the number of children from stop 1 (12) and stop 2 (8). The correct answer is 20.",
+  "B": "The student should add the children from stop 2 (8) and stop 3 (10). The correct answer is 18.",
+  "C": "The student should add all the children from the three stops: 12 + 8 + 10. The correct answer is 30."
+}
+}
+
+<html>
+<head></head>
+<body>
+  <div style="width: 800px; border: solid 1px black; padding: 10px;" exp="Main container for the School Bus Ride activity.">
+
+    <div class="activity">
+      <p exp="Introduction inviting the student to count how many children are getting on the school bus.">
+        Count how many children are getting on the school bus at each stop and answer the questions below.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the school bus illustration.">
+      <img 
+        src=""
+        alt="Illustration of a yellow school bus stopping at three points. At Stop 1, 12 children are waiting. At Stop 2, there are 8 children. At Stop 3, there are 10 children. Trees and a crossing guard are visible."
+        style="width: 600px; height: 300px;"
+        exp="The image shows a classic yellow school bus moving along a road. At each of the three bus stops, children with backpacks are standing in groups. Stop 1 has 12 children, Stop 2 has 8, and Stop 3 has 10. A crossing guard stands nearby with a stop sign, and a few trees and a sidewalk are part of the environment."
+      />
+    </div>
+
+    <p style="text-align: center;" exp="Instruction for answering the addition questions.">
+      Use the numbers from each stop to answer the following:
+    </p>
+
+    <div style="padding: 10px 30px;">
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question A asking for the total number of children from Stop 1 and Stop 2."><b>A)</b> How many children got on the bus at Stop 1 and Stop 2?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Answer box for question A. Correct answer: 20."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question B asking for the total from Stop 2 and Stop 3."><b>B)</b> How many children got on at Stop 2 and Stop 3?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Answer box for question B. Correct answer: 18."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question C asking for the total number of children from all three stops."><b>C)</b> How many children got on the bus in total from all stops?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Answer box for question C. Correct answer: 30."></div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

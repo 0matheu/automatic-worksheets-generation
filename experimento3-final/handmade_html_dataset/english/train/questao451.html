@@ -1,0 +1,93 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Dance Academy
+width-sheet: 800px
+task: observe table, write answer
+language: en
+
+{
+    "task": "To practice counting and addition skills by calculating the total number of students in dance academy groups.",
+    "layout": "The activity consists of a description at the top about the number of boys and girls in the Ballet and Hip-Hop groups. Below, there is a table showing the enrollments. The student will answer questions by adding values from the table.",
+    "answer": {
+      "A": "To answer correctly, the student must add the number of boys and girls in the Ballet group (13 + 6). Correct answer: 19 students.",
+      "B": "To answer correctly, the student must add the number of boys and girls in the Hip-Hop group (10 + 8). Correct answer: 18 students.",
+      "C": "To answer correctly, the student must add the total number of students in both groups (13 + 6 + 10 + 8). Correct answer: 37 students."
+    }
+  }
+
+  <!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .container {
+      width: 800px;
+      border: solid 1px;
+      padding: 10px;
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #6aa5db;
+      color: white;
+    }
+    .question-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .answer-box {
+      width: 100px;
+      height: 30px;
+      border: 1px solid black;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="activity">
+      <p exp="Marina is participating in the Dance Academy. Observe the table and the image to answer the questions.">
+        Marina is participating in the Dance Academy. The table below shows how many boys and girls are enrolled in the Ballet and Hip-Hop groups.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Centered image showing the dance academy students in Ballet and Hip-Hop.">
+      <img 
+        src="" 
+        alt="Illustration of students participating in Ballet and Hip-Hop activities. Ballet has 13 boys and 6 girls, Hip-Hop has 10 boys and 8 girls."
+        style="width: 600px; height: 300px"
+        exp="Image showing the ballet and hip-hop groups in the dance academy. Helps the student visualize the number of students in each group."
+      />
+    </div>
+
+    <table exp="Table showing the number of boys and girls in each group.">
+        <tr><th>Group</th><th>Boys</th><th>Girls</th></tr>
+        <tr><td>Ballet</td><td>13</td><td>6</td></tr>
+        <tr><td>Hip-Hop</td><td>10</td><td>8</td></tr>
+    </table>
+
+    <div class="question-container">
+        <p><b>A)</b> How many students are there in the Ballet group?</p>
+        <div class="answer-box" exp="Box where the student writes the total for Ballet group. Correct: 19."></div>
+    </div>
+    <div class="question-container">
+        <p><b>B)</b> How many students are there in the Hip-Hop group?</p>
+        <div class="answer-box" exp="Box where the student writes the total for Hip-Hop group. Correct: 18."></div>
+    </div>
+    <div class="question-container">
+        <p><b>C)</b> What is the total number of students in the Dance Academy?</p>
+        <div class="answer-box" exp="Box where the student writes the grand total. Correct: 37."></div>
+    </div>
+  </div>
+</body>
+</html>

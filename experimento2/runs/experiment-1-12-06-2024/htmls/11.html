@@ -1,0 +1,58 @@
+```json
+{
+  "task": "To practice basic addition skills by counting the total number of cacti and camels in the two images and calculating the sum.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph that explains the task, and the bottom section contains a 2x1 grid with two images. The first image is placed in the first row and the second column, and the second image is placed in the second row and the first column. Both images are sized at 350px by 250px.",
+  "answer": "To answer this question correctly, the student needs to count the number of cacti in the first image (7) and the number of camels in the second image (3), and then add them together to get 10. The correct answer is 10."
+}
+```
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Count the total number of cacti and camels in the images below, and
+          write the sum.
+        </p>
+
+        <div
+          style="display: grid; grid-template-columns: 400px 400px; grid-template-rows: 300px 300px; grid-template-areas: 'img1 img2' "
+        >
+          <div
+            style="grid-area: img1"
+            exp="div used to adjust the image of the cacti in the first row and the first column"
+          >
+            <img
+              src=""
+              alt="image in a coloring book style of 7 cacti in the desert"
+              style="width: 350px; height: 250px"
+              exp="image that the student will have to count the number of cacti present"
+            />
+          </div>
+
+          <div
+            style="grid-area: img2"
+            exp="div used to adjust the image of the camels in the second row and the first column"
+          >
+            <img
+              src=""
+              alt="image in a coloring book style of 3 camels in the desert"
+              style="width: 350px; height: 250px"
+              exp="image that the student will have to count the number of camels present"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

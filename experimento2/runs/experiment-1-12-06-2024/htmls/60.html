@@ -1,0 +1,57 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of cacti in the image and connecting it with the image that has the most cacti, then calculating the total sum.",
+  "layout": "The question is divided into a 1-line and 2-column layout. The first column contains a paragraph explaining the task, and the second column contains a 2x1 grid with two images of cacti.",
+  "answer": "To answer correctly, the student needs to: 1) count the number of cacti in the first image (4 cacti), 2) count the number of cacti in the second image (5 cacti), 3) identify the image with the most cacti (the second image), and 4) calculate the sum of the cacti in the first image and the additional cacti (4 + 5 = 9)."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet, which in this case is 800px wide"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the images below and connect the image with the most cacti, then write the sum of all below.
+        </p>
+
+        <div
+          style="display: grid; grid-template-columns: 400px 400px"
+          exp="div that organizes the images in two columns"
+        >
+          <div
+            style="display: grid; grid-template-rows: 200px 200px"
+            exp="div that organizes the images in two rows"
+          >
+            <img
+              src=""
+              alt="image in a coloring book style of a desert with 4 cacti"
+              style="width: 380px; height: 180px"
+              exp="image that the student will have to count the cacti and try to identify if it has the largest quantity, being 4 cacti"
+            />
+          </div>
+
+          <div
+            style="display: grid; grid-template-rows: 200px 200px"
+            exp="div that organizes the images in two rows"
+          >
+            <img
+              src=""
+              alt="image in a coloring book style of a desert with 5 cacti"
+              style="width: 380px; height: 180px"
+              exp="image that the student will have to count the cacti and try to identify if it has the largest quantity, being 5 cacti"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

@@ -1,0 +1,67 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Movie Ticket Purchase
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+
+{
+    "task": "To practice counting and basic addition skills by calculating the total amount spent on movie tickets.",
+    "layout": "The activity consists of a description explaining that the student bought 2 movie tickets, one costing 25 reais and the other 30 reais. The student will calculate the total amount spent on tickets.",
+    "answer": {
+        "A": "To answer correctly, the student needs to add the prices of the two tickets (25 + 30). The correct answer is 55 reais."
+    }
+}
+
+<html>
+    <head>
+        <style>
+            .container {
+                width: 800px;
+                border: solid 1px;
+                padding: 10px;
+                text-align: center;
+            }
+            .question-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+            .answer-box {
+                width: 150px;
+                height: 30px;
+                border: 1px solid black;
+                text-align: center;
+            }
+            img {
+                width: 120px;
+                height: 120px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="activity">
+                <p exp="Activity description explaining the movie ticket purchase scenario.">
+                    The student bought two movie tickets, one costing 25 reais and the other 30 reais. 
+                    How much did the student spend on the tickets?
+                </p>
+            </div>
+
+            <div style="display: flex; justify-content: center;">
+                <img src="" alt="Image of two movie tickets with prices of 25 reais and 30 reais." exp="Images of the movie tickets purchased by the student"/>
+            </div>
+
+            <div class="question-container">
+                <p exp="Question asking the total amount spent on the movie tickets.">
+                    <b>A)</b> What is the total amount spent on the two movie tickets?
+                </p>
+                <div class="answer-box" exp="Box where the student writes the total amount spent. The correct answer is 55 reais."></div>
+            </div>
+        </div>
+    </body>
+</html>

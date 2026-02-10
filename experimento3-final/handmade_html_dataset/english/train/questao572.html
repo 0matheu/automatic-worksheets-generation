@@ -1,0 +1,56 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Renting Medical Clinics
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+    "task": "To help students apply addition skills in real-world scenarios like renting spaces for businesses.",
+    "layout": "This activity shows three medical clinics available for rent. Each clinic has a price tag, and the doctors are choosing their clinics. The image is used as a reference to calculate total rental costs.",
+    "answer": {
+      "A": "To solve this, the student should add the monthly rent of Clinic A (R$2,000) and Clinic B (R$2,500). The correct answer is R$4,500.",
+      "B": "Here, the student must sum the cost of Clinic A (R$2,000) and Clinic C (R$3,000). The total is R$5,000.",
+      "C": "For this one, the student needs to add the rent of Clinic B (R$2,500) and Clinic C (R$3,000). The correct result is R$5,500."
+    }
+  }
+  
+
+
+<html>
+<head></head>
+<body>
+  <div style="width: 800px; border: solid 1px; padding: 10px;">
+
+    <p exp="Context presenting three doctors comparing rental prices for different medical clinics.">
+      Three doctors are looking to rent spaces for their medical clinics. Each clinic has a different monthly rental price. Observe the image and answer the questions.
+    </p>
+
+    <div style="display: flex; justify-content: center; margin: 20px 0;" exp="Div centered with illustration of three medical clinics and prices.">
+      <img 
+        src="" 
+        alt="Illustration showing three medical clinic buildings labeled Clinic A (R$2,000), Clinic B (R$2,500), and Clinic C (R$3,000), with doctors standing in front."
+        style="width: 600px; height: 300px;"
+        exp="The image displays three clearly labeled buildings: Clinic A costs R$2,000, Clinic B costs R$2,500, and Clinic C costs R$3,000. Each doctor stands near a different clinic."
+      />
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question A asking for the total rental cost of Clinic A and Clinic B."><b>A)</b> What is the total monthly rent for Clinic A and Clinic B?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Answer box for A (Correct: 4500)."></div>
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question B asking for the total rental cost of Clinic A and Clinic C."><b>B)</b> What is the total monthly rent if a doctor chooses Clinic A and Clinic C?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Answer box for B (Correct: 5000)."></div>
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question C asking for the combined cost of renting Clinic B and Clinic C."><b>C)</b> How much would it cost in total to rent Clinic B and Clinic C together?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Answer box for C (Correct: 5500)."></div>
+    </div>
+
+  </div>
+</body>
+</html>

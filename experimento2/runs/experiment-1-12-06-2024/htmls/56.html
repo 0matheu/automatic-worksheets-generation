@@ -1,0 +1,130 @@
+```json
+{
+  "task": "To practice basic addition skills by counting the total number of clowns and balloons in each image and linking them to the corresponding sum.",
+  "layout": "The activity consists of a 2-line and 3-column layout, with three images of a circus scene in the first row and one image of a blackboard with three addition operations in the second row. The first row contains the circus images, and the second row contains the blackboard image. The circus images and the blackboard image are placed within div elements, with the circus images in a single div that spans the first row, and the blackboard image in a separate div in the second row. The blackboard image is placed in the center column of the second row.",
+  "answer": "To answer correctly, the student needs to: 1) count the number of clowns in each circus image (3 clowns in the first image, 2 clowns in the second image, and 1 clown in the third image), 2) count the number of balloons in each image (5 balloons in the first image, 3 balloons in the second image, and 4 balloons in the third image), 3) add the number of clowns to the number of balloons in each image to get the sum (3 clowns + 5 balloons = 8, 2 clowns + 3 balloons = 5, and 1 clown + 4 balloons = 5), and 4) link each circus image to the correct sum on the blackboard. The correct links are: the first circus image to the sum 8, the second circus image to the sum 5, and the third circus image to the sum 5."
+}
+```
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three images in a 2-line and 3-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 300px 200px;
+      grid-template-areas:
+        "img1 img2 img3"
+        "soma1 soma2 soma3";
+    }
+
+    /* class used to place the first image of the circus in the first row and the first column */
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the second image of the circus in the first row and the second column */
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to place the third image of the circus in the first row and the third column */
+    .img3 {
+      grid-area: img3;
+    }
+
+    /* class used to place the image of the blackboard on the second row and the first column */
+    .soma1 {
+      grid-area: soma1;
+    }
+
+    /* class used to place the image of the blackboard on the second row and the second column */
+    .soma2 {
+      grid-area: soma2;
+    }
+
+    /* class used to place the image of the blackboard on the second row and the third column */
+    .soma3 {
+      grid-area: soma3;
+    }
+
+    /* class used to give the size for the circus images */
+    .circus {
+      width: 240px;
+      height: 240px;
+    }
+
+    /* class used to give the size for the blackboard image */
+    .blackboard {
+      width: 240px;
+      height: 240px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="container">
+        <div class="img1">
+          <img
+            class="circus"
+            src=""
+            alt="image in a coloring book style of a circus with 3 clowns and 5 balloons"
+            exp="image in which the student will have to count the number of clowns and also the number of balloons, and finally add the two quantities"
+          />
+        </div>
+
+        <div class="img2">
+          <img
+            class="circus"
+            src=""
+            alt="image in a coloring book style of a circus with 2 clowns and 3 balloons"
+            exp="image in which the student will have to count the number of clowns and also the number of balloons, and finally add the two quantities"
+          />
+        </div>
+
+        <div class="img3">
+          <img
+            class="circus"
+            src=""
+            alt="image in a coloring book style of a circus with 1 clown and 4 balloons"
+            exp="image in which the student will have to count the number of clowns and also the number of balloons, and finally add the two quantities"
+          />
+        </div>
+
+        <div class="soma1">
+          <img
+            class="blackboard"
+            src=""
+            alt="image of a blackboard with the sum 3 clowns + 5 balloons = 8"
+            exp="image that the student will have to link with the first image of the circus"
+          />
+        </div>
+
+        <div class="soma2">
+          <img
+            class="blackboard"
+            src=""
+            alt="image of a blackboard with the sum 2 clowns + 3 balloons = 5"
+            exp="image that the student will have to link with the second image of the circus"
+          />
+        </div>
+
+        <div class="soma3">
+          <img
+            class="blackboard"
+            src=""
+            alt="image of a blackboard with the sum 1 clown + 4 balloons = 5"
+            exp="image that the student will have to link with the third image of the circus"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

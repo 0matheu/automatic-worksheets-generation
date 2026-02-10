@@ -1,0 +1,52 @@
+level: 2st year fundamental
+learning_goals: addition, logical reasoning, visual representation
+theme: aquatic life
+sheet_width: 600px
+task: observe image, write answer
+language: en
+
+
+{
+  "task": "The objective of this activity is for the student to visually represent and calculate the total number of fish by adding the given numbers from two fish tanks.",
+  "layout": "The activity is organized with a visual representation of two fish tanks at the top, each labeled with the number of fish inside. Below the image, an addition equation is presented, with an answer box where the student writes the total number of fish.",
+  "answer": "To correctly answer this activity, the student will add the number of fish in the two tanks (3 + 4 = 7). The correct answer is '7 fish'."
+}
+
+  
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px; padding: 10px;"
+      exp="This div acts as the main container for the activity. It sets a fixed width of 600px and uses padding for spacing inside the container."
+    >
+      <div class="activity" style="width: 100%;">
+        <p
+          exp="This paragraph provides a clear description of the task. It explains that the student needs to count and calculate the total number of fish."
+        >
+          Draw the fish in the tanks and calculate the total number of fish:
+        </p>
+
+        <div
+          style="display: flex; justify-content: center; margin-bottom: 20px;"
+          exp="This div contains the visual representation of the two fish tanks for the activity."
+        >
+          <img
+            src=""
+            alt="Two fish tanks, one with 3 fish and the other with 4 fish. In a coloring book style"
+            style="width: 400px; height: auto;"
+            exp="This image visually represents the two fish tanks to help the student contextualize the problem."
+          />
+        </div>
+
+        <div style="text-align: center; margin-bottom: 10px;">
+          <p>3 fish + 4 fish =</p>
+          <div
+            style="width: 100px; height: 50px; border: 1px solid black; margin: 10px auto;"
+            exp="Box where the student writes the total number of fish. The correct answer is '7 fish'."
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

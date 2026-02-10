@@ -1,0 +1,1 @@
+Nessa questão serão exercitados os principios da adição. Ele terá que contar 5 maçãs e pinta-las.

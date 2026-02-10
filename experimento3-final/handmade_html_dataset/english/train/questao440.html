@@ -1,0 +1,64 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Stickers
+width-sheet: 800px
+task: observe images, write answer
+language: en
+
+{
+  "task": "To practice counting and addition skills by calculating the total number of stickers Mateus has now.",
+  "layout": "The activity explains that Mateus had 14 stickers and received 11 more. The student needs to calculate the total.",
+  "answer": {
+    "To answer correctly, the student needs to add 14 stickers to 11 stickers. The correct answer is 25."
+  }
+}
+
+<html>
+  <head>
+    <style>
+      .container {
+        width: 800px;
+        border: solid 1px;
+        padding: 10px;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      img {
+        width: 120px;
+        height: 70px;
+        margin: 10px;
+      }
+      .activity p {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" exp="Main container for the activity">
+      
+      <div class="activity">
+        <p exp="Activity description explaining the scenario where Mateus is collecting stickers.">
+          Mateus is collecting stickers for his album. He already had 14 stickers when he received 11 more from his friends. How many stickers does Mateus have now?
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the images of stickers.">
+        <img src="" alt="14 stickers" exp="Image showing 14 stickers, which is the number of stickers Mateus already had." />
+        <img src="" alt="11 stickers" exp="Image showing 11 stickers, which represents the stickers he received from his friends." />
+        <img src="" alt="25 stickers" exp="Image showing 25 stickers, which represents the total number of stickers after adding." />
+      </div>
+
+      <p style="text-align: center;" exp="Instruction for the student to write their answer">
+        Write the total number of stickers in the box below:
+      </p>
+
+      <div style="display: flex; justify-content: center;" exp="Div used to center the answer box">
+        <div style="width: 100px; height: 100px; border: 1px solid black;"
+             exp="Box where the student writes the result of adding 14 and 11 stickers. The correct answer is 25.">
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

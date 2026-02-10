@@ -1,0 +1,96 @@
+```json
+{
+  "task": "The student will learn to add two-digit numbers by identifying the images that contain circus acts with unicycles, linking them, and then calculating the total sum of unicycles in both linked images.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph that explains the task, and the bottom section contains a 2x3 grid with three images in the first row and one image in the second row. The images are placed in a specific layout to facilitate comparison and linking.",
+  "question": "In the circus, Júlia is riding a unicycle and there are 4 more unicycles in the image with her, how many unicycles are present in the circus image with Júlia? Can you find another image with unicycles and link the two? What is the sum of all the unicycles in the two linked images?",
+  "answer": "To answer correctly, the student needs to: 1) identify the image with Júlia and the unicycle (image 2), 2) identify the other image with unicycles (image 3), 3) link the two images, and 4) add up the number of unicycles in both images (5 + 3 = 8). The correct answer is 8."
+}
+```
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three images in a 2-line and 3-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 300px 300px;
+      grid-template-areas:
+        "img1 img2 img3"
+        "empty img4 img4";
+    }
+
+    /* class used to place the first image of the circus in the first row and the first column*/
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the second image of the circus in the first row and the second column*/
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to place the third image of the circus in the first row and the third column*/
+    .img3 {
+      grid-area: img3;
+    }
+
+    /* class used to place the fourth image of the circus in the second row and the second column*/
+    .img4 {
+      grid-area: img4;
+    }
+
+    /* class used to give the size for the images of the activity */
+    img {
+      width: 280px;
+      height: 280px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          In the circus, Júlia is riding a unicycle and there are 4 more unicycles in the image with her, how many unicycles are present in the circus image with Júlia? Can you find another image with unicycles and link the two? What is the sum of all the unicycles in the two linked images?
+        </p>
+      </div>
+      <div class="container">
+        <div class="img1">
+          <img
+            alt="Image in the style of a child's painting of a circus with a girl in the center riding a unicycle, and 4 more unicycles beside her"
+            exp="Image that the student will have to identify that there are 5 unicycles, being the one with the girl, and the 4 beside"
+          />
+        </div>
+
+        <div class="img2">
+          <img
+            alt="Image in the style of a child's painting of a circus with 7 unicycles being ridden"
+            exp="Image that the student will have to identify that there are 7 unicycles being ridden, and try to identify if any of the unicycles is the one that is with the girl"
+          />
+        </div>
+
+        <div class="img3">
+          <img
+            alt="Image in the style of a child's painting of 10 unicycles at the circus"
+            exp="Image that the student will have to identify that there are 10 unicycles, and try to identify if any is the unicycle of the girl"
+          />
+        </div>
+
+        <div class="img4">
+          <img
+            alt="Image in the style of a child's painting of a pile of 10 unicycles"
+            exp="Image that the student will have to identify that there are 10 unicycles, and try to link the image with the first image"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

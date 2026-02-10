@@ -1,0 +1,76 @@
+level: 2nd year of fundamental  
+learning_goals: counting
+theme: Card Collection  
+width-sheet: 800px  
+task: observe images, write answer
+language: en
+
+
+{
+    "task": "To practice counting and addition skills by calculating the total value of cards in a collection.",
+    "layout": "The activity consists of a description at the top, explaining the context of collecting cards, followed by a set of questions regarding the total value of the cards in the collection.",
+    "answer": {
+        "A": "To answer correctly, the student needs to add up the value of the collected cards (10 + 5 + 20). The correct answer is 35 reais.",
+        "B": "To answer correctly, the student needs to calculate the total value by adding the cards already collected (30 reais) to the newly collected cards (35 reais). The correct answer is 65 reais."
+    }
+}
+
+
+<html>
+    <head>
+        <style>
+            .container {
+                width: 800px;
+                border: solid 1px;
+                padding: 10px;
+                text-align: center;
+            }
+            .question-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+            .answer-box {
+                width: 150px;
+                height: 30px;
+                border: 1px solid black;
+                text-align: center;
+            }
+            img {
+                width: 120px;
+                height: 70px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="activity">
+                <p exp="Activity description explaining the context of collecting cards.">
+                    João collected some cards. He had a 10 reais card, a 5 reais card, and a 20 reais card.
+                </p>
+            </div>
+
+            <div style="display: flex; justify-content: center;">
+                <img src="" alt="Image of a 10 reais card" exp="Image of a 10 reais card"/>
+                <img src="" alt="Image of a 5 reais card" exp="Image of a 5 reais card"/>
+                <img src="" alt="Image of a 20 reais card" exp="Image of a 20 reais card"/>
+            </div>
+
+            <div class="question-container">
+                <p exp="Question asking how much João received from his cards.">
+                    <b>A)</b> How much value does João have in his collection?
+                </p>
+                <div class="answer-box" exp="Box where the student writes the total value of the cards. The correct answer is 35 reais."></div>
+            </div>
+
+            <div class="question-container">
+                <p exp="Question asking for the total amount João will have after receiving more cards.">
+                    <b>B)</b> How much value will João have after receiving 30 reais worth of cards?
+                </p>
+                <div class="answer-box" exp="Box where the student writes the total value after adding the new cards. The correct answer is 65 reais."></div>
+            </div>
+        </div>
+    </body>
+</html>

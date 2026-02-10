@@ -1,0 +1,41 @@
+level: 2nd year of fundamental  
+learning_goals: counting, addition  
+theme: Online Shopping  
+width-sheet: 800px  
+task: observe image, write answer  
+language: en
+
+{
+  "task": "To practice counting and basic addition skills by calculating the total cost of an online shopping order, reinforcing students' ability to count and perform simple arithmetic operations.",
+  "layout": "The activity consists of a description of the scenario at the top, providing the necessary context. Below the description, a centered image illustrates an online shopping receipt with different items and a shipping fee. The student will answer a question based on the values provided, with the answer box positioned as close as possible to the question.",
+  "answer": "To answer correctly, the student needs to add the prices of the items (90 + 85 reais), plus the shipping fee (25 reais). The correct answer is 200 reais."
+}
+
+
+<html>
+<head></head>
+<body>
+  <div style="width: 800px; border: solid 1px; padding: 10px;" exp="Main container for the activity">
+    <div class="activity" exp="Container with scenario and instructions.">
+      <p exp="Activity description explaining what the student must do">
+        Carlos bought items online. They paid 90 reais for a soccer ball and 85 reais for a sports shirt. The shipping fee was 25 reais.
+        In total, how much did Carlos pay?
+      </p>
+    </div>
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image in the activity">
+      <img src="" 
+           alt="Online order receipt with soccer ball, sports shirt and shipping fee of 25 reais."
+           style="width: 600px; height: 300px"
+           exp="Image showing online shopping receipt with item names and prices." />
+    </div>
+    <p style="text-align: center;" exp="Instruction for the student to write their answer">
+      Write the total amount Carlos paid in the box below:
+    </p>
+    <div style="display: flex; justify-content: center;" exp="Div used to center the answer box">
+      <div style="width: 100px; height: 100px; border: 1px solid black;"
+           exp="Box where the student writes the total cost of the order. The correct answer is 200 reais.">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of flowers in the initial image and the number of flowers Maria picked, and then calculating the total sum.",
+  "layout": "The HTML elements are organized with a div containing the sheet width, followed by a div containing the question description, an image of a garden with 10 flowers, and a paragraph explaining the task. The image is centered within the div using flexbox.",
+  "answer": "To answer correctly, the student needs to identify that there are 10 flowers in the garden from the image, and also that Maria picked 7 more flowers. The student needs to add the two numbers together to get 17. The student needs to understand that the image shows 10 flowers, and that the additional 7 flowers were also picked from the garden."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the image and write how many flowers are in the garden and
+          how many Maria picked, finally, write how many flowers Maria took in
++          total.
+        </p>
+        <div style="display: flex; justify-content: center">
+          <img
+            src=""
+            alt="Image in a coloring book style of a garden with 10 sunflowers"
+            style="width: 600px; height: 400px"
+            exp="Image that the student will have to identify that there are 10 flowers in the garden, and also the flowers are sunflowers"
+          />
+        </div>
+        <p>
+          In the image, Maria is in a garden with 10 sunflowers, and she picked
+          7 more.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+```

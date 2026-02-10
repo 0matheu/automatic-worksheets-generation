@@ -1,0 +1,105 @@
+level: 2nd year of fundamental  
+learning_goals: counting, addition  
+theme: School Club Enrollment  
+width-sheet: 800px  
+task: observe table, write answer  
+language: en
+
+{
+    "task": "To practice counting and addition skills by calculating the total number of students enrolled in different school clubs.",
+    "layout": "The activity consists of a description at the top, where the student will read about the number of boys and girls enrolled in different school clubs. Below that, there is a table showing the number of boys and girls in each club. The student will then answer questions based on the data, performing addition operations.",
+    "answer": {
+        "A": "To answer correctly, the student needs to add the number of boys and girls in the Drama Club (5 boys + 8 girls). The correct answer is 13 students in the Drama Club.",
+        "B": "To answer correctly, the student needs to add the number of boys and girls in the Art Club (7 boys + 6 girls). The correct answer is 13 students in the Art Club.",
+        "C": "To answer correctly, the student needs to add the total number of boys and girls in all clubs (5 + 7 boys + 8 + 6 girls). The correct answer is 26 students in total."
+    }
+}
+
+<html>
+    <head>
+        <style>
+            .container {
+                width: 800px;
+                border: solid 1px;
+                padding: 10px;
+                text-align: center;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: center;
+            }
+            th {
+                background-color: #6aa5db;
+                color: white;
+            }
+            .question-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+            .answer-box {
+                width: 100px;
+                height: 30px;
+                border: 1px solid black;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+      <div class="container">
+        
+        <div class="activity">
+          <p exp="Activity description about the enrollment of boys and girls in two school clubs. The student will answer based on the table below.">
+            In a school, there are two clubs: Drama and Art. Below is the table showing the number of boys and girls in each club. Answer the questions based on the data.
+          </p>
+        </div>
+
+        <table exp="Table showing the number of boys and girls in each club.">
+            <tr>
+                <th>Club</th>
+                <th>Boys</th>
+                <th>Girls</th>
+            </tr>
+            <tr>
+                <td>Drama Club</td>
+                <td>5</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Art Club</td>
+                <td>7</td>
+                <td>6</td>
+            </tr>
+        </table>
+
+        <div class="question-container">
+            <p exp="Question asking for the total number of students in the Drama Club.">
+                <b>A)</b> How many students are there in total in the Drama Club?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the total number of students in the Drama Club. The correct answer is 13."></div>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for the total number of students in the Art Club.">
+                <b>B)</b> How many students are there in total in the Art Club?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the total number of students in the Art Club. The correct answer is 13."></div>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for the total number of students in both clubs.">
+                <b>C)</b> What is the total number of students in both clubs?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the total number of students in both clubs. The correct answer is 26."></div>
+        </div>
+        
+      </div>
+    </body>
+</html>

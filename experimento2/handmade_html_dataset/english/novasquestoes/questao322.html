@@ -1,0 +1,110 @@
+level: 2nd year of fundamental  
+learning_goals: counting, addition  
+theme: Store Inventory - Toy Store  
+width-sheet: 800px  
+task: observe table, write answer  
+language: en
+
+{
+    "task": "To practice counting and addition skills by calculating the total number of toys sold in a toy store.",
+    "layout": "The activity consists of a description at the top, where the student will read about the number of toys sold in the store. Below that, there is a table showing the number of toys sold for each type. The student will then answer questions based on the data, performing addition operations.",
+    "answer": {
+        "A": "To answer correctly, the student needs to add the number of dolls and action figures sold in the store (12 dolls + 8 action figures). The correct answer is 20 toys sold.",
+        "B": "To answer correctly, the student needs to add the number of stuffed animals and puzzles sold (15 stuffed animals + 10 puzzles). The correct answer is 25 toys sold.",
+        "C": "To answer correctly, the student needs to add the total number of toys sold in the store (12 dolls + 8 action figures + 15 stuffed animals + 10 puzzles). The correct answer is 45 toys sold."
+    }
+}
+
+<html>
+    <head>
+        <style>
+            .container {
+                width: 800px;
+                border: solid 1px;
+                padding: 10px;
+                text-align: center;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: center;
+            }
+            th {
+                background-color: #6aa5db;
+                color: white;
+            }
+            .question-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+            .answer-box {
+                width: 100px;
+                height: 30px;
+                border: 1px solid black;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+      <div class="container">
+        
+        <div class="activity">
+          <p exp="Activity description about the number of toys sold in a toy store.">
+            A toy store has sold different types of toys. Below is the table showing the number of dolls, action figures, stuffed animals, and puzzles sold in the store. Answer the questions based on the data.
+          </p>
+        </div>
+
+        <table exp="Table showing the number of toys sold in the store.">
+            <tr>
+                <th>Toy Type</th>
+                <th>Sold</th>
+            </tr>
+            <tr>
+                <td>Dolls</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Action Figures</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Stuffed Animals</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Puzzles</td>
+                <td>10</td>
+            </tr>
+        </table>
+
+        <div class="question-container">
+            <p exp="Question asking for the total number of dolls and action figures sold.">
+                <b>A)</b> How many toys were sold in total from dolls and action figures?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the total number of dolls and action figures sold. The correct answer is 20."></div>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for the total number of stuffed animals and puzzles sold.">
+                <b>B)</b> How many toys were sold in total from stuffed animals and puzzles?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the total number of stuffed animals and puzzles sold. The correct answer is 25."></div>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for the total number of toys sold in the store.">
+                <b>C)</b> What is the total number of toys sold in the store?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the total number of toys sold. The correct answer is 45."></div>
+        </div>
+        
+      </div>
+    </body>
+</html>

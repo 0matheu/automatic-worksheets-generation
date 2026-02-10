@@ -1,0 +1,75 @@
+
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: carnival parade
+sheet_width: 600px
+task: observe image, write answer
+language: en
+
+
+{
+  "task": "Count the number of masks and hats in the image, and calculate the total.",
+  "layout": "The activity is divided into three sections: a description at the top that explains the task, a centered image of a carnival parade featuring masks and hats, and three questions below the image, each with an answer box positioned next to the question for clarity.",
+  "answer": {
+    "A": "The student needs to count the masks (7) and write this number in the answer box.",
+    "B": "The student needs to count the hats (5) and write this number in the answer box.",
+    "C": "The student needs to calculate the total number of masks and hats (7 + 5 = 12) and write this number in the answer box."
+  }
+}
+
+  
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px; padding: 10px;"
+      exp="This container organizes the layout of the activity for the 'carnival parade' theme."
+    >
+      <p exp="Instructions for the student to observe and count the masks and hats.">
+        Observe the carnival parade and answer the following questions:
+      </p>
+
+      <div
+        style="display: flex; justify-content: center; margin-bottom: 20px;"
+        exp="This section centers the carnival-themed image within the activity."
+      >
+        <img
+          src=""
+          alt="A carnival parade with 7 masks and 5 hats, in a cartoon style"
+          style="width: 500px; height: 300px;"
+          exp="Illustration showing 7 masks and 5 hats for the student to count."
+        />
+      </div>
+
+      <div style="display: flex; align-items: center; margin-top: 10px;">
+        <p style="margin-right: 10px;" exp="Question prompting the student to count masks.">
+          A) How many masks are visible in the image?
+        </p>
+        <div
+          style="width: 100px; height: 30px; border: 1px solid black;"
+          exp="Box where the student writes the number of masks (7)."
+        ></div>
+      </div>
+
+      <div style="display: flex; align-items: center; margin-top: 10px;">
+        <p style="margin-right: 10px;" exp="Question prompting the student to count hats.">
+          B) How many hats are visible in the image?
+        </p>
+        <div
+          style="width: 100px; height: 30px; border: 1px solid black;"
+          exp="Box where the student writes the number of hats (5)."
+        ></div>
+      </div>
+
+      <div style="display: flex; align-items: center; margin-top: 10px;">
+        <p style="margin-right: 10px;" exp="Question prompting the student to calculate the total number of items.">
+          C) What is the total number of items?
+        </p>
+        <div
+          style="width: 100px; height: 30px; border: 1px solid black;"
+          exp="Box where the student writes the total (12)."
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>

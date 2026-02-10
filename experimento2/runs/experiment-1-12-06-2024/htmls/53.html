@@ -1,0 +1,85 @@
+```json
+{
+  "task": "To practice basic addition skills by counting the total number of clowns from two circus acts and calculating the sum.",
+  "layout": "The question is divided into three main sections. The top section contains a paragraph that explains the task. The middle section contains a 2x2 grid with three images: an image of 5 clowns in a circus act, another image of 3 clowns in a circus act, and an empty image. The images are placed in a specific layout to facilitate addition. The bottom section contains a paragraph that asks the question.",
+  "answer": "To answer this question correctly, the student needs to: 1) count the number of clowns in the first image (5), 2) count the number of clowns in the second image (3), 3) add the two numbers together to find the total. The correct answer is: 8 clowns. The student also needs to show their work by identifying the two addends and the sum."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the image layout of the activity, in this case, containing three images in a specific layout to facilitate the student's learning */
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 400px 400px;
+      grid-template-areas:
+        "img1 img2"
+        "img1 empty"
+    }
+
+    /* class used to place the first image of the clowns in the first row and the first column*/
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the second image of the clowns in the first row and the second column*/
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to place the third image of the clowns in the second row and the first column*/
+    .empty {
+      grid-area: empty;
+    }
+    
+    /* class used to adjust the size of the images in the activity */
+    img {
+      width: 390px;
+      height: 390px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the images below and write how many clowns are present in all and perform the sum.
+        </p>
+
+        <div
+          class="container"
+          exp="div that contains the images of the clowns and that is organized in a way to have three images, the first two in the first row, and the third in the second row"
+        >
+          <div class="img1">
+            <img
+              alt="image in the style of a child's painting of 5 clowns in a circus performance"
+              exp="image that the student will have to observe and count how many clowns are present, being 5 clowns, the image is also used to contain a sum in the question"
+            />
+          </div>
+
+          <div class="img2">
+            <img
+              alt="image in the style of a child's painting of 3 clowns in a circus performance"
+              exp="image that the student will have to observe and count how many clowns are present, being 3 clowns, the image is also used to contain a sum in the question"
+            />
+          </div>
+
+          <div class="empty">
+            <img
+              exp="image added to adjust the clowns' paintings in the layout, being in the second row and not influencing the question itself"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

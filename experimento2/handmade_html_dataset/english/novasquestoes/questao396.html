@@ -1,0 +1,44 @@
+level: 2nd year of fundamental  
+learning_goals: counting, addition  
+theme: Apple Picking  
+width-sheet: 800px  
+task: observe text, write answer
+language: en
+
+{
+    "task": "To practice counting and basic addition skills by determining how many apples were picked by the students and calculating the total amount.",
+    "layout": "The activity consists of a description at the top, where the student will read and calculate how many apples the boys and girls picked, based on the given numbers. The questions will include simple addition operations.",
+    "answer": {
+        "A": "To answer correctly, the student needs to add 6 to 15, the number of apples the boys picked, to determine how many apples the girls picked. The correct answer is 21 apples.",
+        "B": "To answer correctly, the student needs to add the number of apples the boys picked (15) to the number of apples the girls picked (21) to find the total number of apples picked by the class. The correct answer is 36 apples."
+    }
+}
+
+<html>
+    <head></head>
+    <body>
+      <div style="width: 800px; border: solid 1px; padding: 10px;">
+        <div class="activity">
+          <p exp="Activity description, containing the context of how many apples were picked by the boys and girls.">
+            The students went apple picking on a field trip. The boys picked a total of 15 apples. 
+            The girls picked 6 more apples than the boys.
+          </p>
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image in the activity">
+            <img src="" alt="Illustration of a field trip where boys and girls are picking apples." style="width: 600px; height: 300px" exp="Image showing students picking apples, helping the student visualize the scenario.">
+        </div>
+
+        <div class="question-container" style="display: flex; justify-content: space-between;">
+            <p exp="Question asking for the number of apples the girls picked."><b>A)</b> How many apples did the girls pick?</p>
+            <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box where the student writes the number of apples the girls picked. The correct answer is 21."></div>
+        </div>
+
+        <div class="question-container" style="display: flex; justify-content: space-between;">
+            <p exp="Question asking for the total number of apples picked by the boys and girls."><b>B)</b> How many apples, in total, did the students pick?</p>
+            <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box where the student writes the total number of apples picked. The correct answer is 36."></div>
+        </div>
+        
+      </div>
+    </body>
+</html>

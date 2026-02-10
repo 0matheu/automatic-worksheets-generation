@@ -1,0 +1,87 @@
+```json
+{
+  "task": "To practice counting and basic addition skills by counting the number of clowns and balls in the image and performing the requested calculations.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph that explains the task, and the bottom section contains a centered 3x2 grid with the following elements: a clown image in the first row, first column; a ball image in the first row, second column; and a plus sign in the second row, first column. The clown image is positioned to the left, the ball image is positioned in the middle, and the plus sign is positioned below the ball image. All elements are contained in a 3x2 grid layout with appropriate column and row placements.",
+  "answer": "To answer this question, the student needs to: 1) count the number of clowns in the image (5 clowns), 2) count the number of balls in the image (3 balls), 3) add the two numbers together to get the total sum. The correct answer is: 5 clowns + 3 balls = 8."
+}
+```
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three images in a 2-line and 3-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 300px 300px;
+      grid-template-areas:
+        "clown1 ball1 empty1"
+        "empty2 empty3 empty4";
+    }
+
+    /* class used to place the clown image in the first row and the first column*/
+    .clown1 {
+      grid-area: clown1;
+    }
+
+    /* class used to place the ball image in the first row and the second column*/
+    .ball1 {
+      grid-area: ball1;
+    }
+
+    /* class used to place the plus sign in the second row and the first column*/
+    .plus {
+      margin-top: 100px;
+      margin-left: 240px;
+      font-size: 100px;
+      grid-area: plus;
+    }
+
+    /* class used to adjust the size of the images in the activity*/
+    img {
+      width: 280px;
+      height: 280px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Count the quantity of clowns and also the quantity of balls in the image below, perform the sum and write the result.
+        </p>
+
+        <div class="container">
+          <div class="clown1">
+            <img
+              alt="Image in a children's painting style of 5 clowns in a small car"
+              exp="Image in which the student will have to count the quantity of clowns present"
+            />
+          </div>
+
+          <div class="ball1">
+            <img
+              alt="Image in a children's painting style containing 3 balls"
+              exp="Image in which the student will have to count the quantity of balls present"
+            />
+          </div>
+
+          <div
+            class="plus"
+            exp="Sign that will be responsible for indicating the sum of clowns and balls"
+          >
+            +
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

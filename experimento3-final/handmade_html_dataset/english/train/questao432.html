@@ -1,0 +1,89 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Flowers in a Garden
+width-sheet: 800px
+task: observe images, write answer
+language: en
+
+
+
+{
+  "task": "To practice counting and addition skills by calculating the total number of flowers after adding more to a garden.",
+  "layout": "The activity begins with a description about the garden, where there are already 12 flowers. Students are asked to calculate the new total if 3 and 5 more flowers are added. There are visual aids with flower images and side-by-side questions with answer boxes.",
+  "answer": {
+    "A": "To answer correctly, the student should add 3 to 12 (12 + 3), resulting in 15. The correct answer is 15.",
+    "B": "To answer correctly, the student should add 5 to 12 (12 + 5), resulting in 17. The correct answer is 17."
+  }
+}
+<html>
+<head>
+  <style>
+    .container { 
+      width: 800px; 
+      border: solid 1px; 
+      padding: 10px; 
+      text-align: center; 
+      font-family: Arial, sans-serif; 
+    }
+    .question-container { 
+      display: flex; 
+      align-items: center; 
+      justify-content: space-between; 
+      margin-bottom: 10px; 
+    }
+    .answer-box { 
+      width: 150px; 
+      height: 30px; 
+      border: 1px solid black; 
+      text-align: center; 
+      font-size: 16px; 
+    }
+    img { 
+      width: 120px; 
+      height: 70px; 
+      margin: 10px; 
+    }
+    .activity p { 
+      font-size: 18px; 
+      margin-bottom: 20px; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="activity">
+      <p exp="Description of the task: it presents a garden that already has 12 flowers and asks students to find how many there will be if more are added.">
+        There are already 12 flowers in the garden. The gardener wants to know how many flowers there will be if 3 more flowers are added. Additionally, they want to know how many flowers there will be if 5 more flowers are added.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center;" exp="Row with three images representing different quantities of flowers.">
+      <img src="" 
+           alt="Illustration of a garden area with exactly 12 colorful flowers, including tulips and daisies, spread out evenly in the soil." 
+           exp="Image of 12 flowers already in the garden, possibly arranged in neat rows." />
+
+      <img src="" 
+           alt="Illustration of the same garden now showing 15 flowers in total—12 original flowers plus 3 new ones clearly visible with brighter petals." 
+           exp="Image of 15 flowers, showing the original 12 flowers plus 3 new ones, clearly distinguishable." />
+
+      <img src="" 
+           alt="Illustration of the garden with a total of 17 flowers—12 initial flowers and 5 additional ones, filling the garden space with a mix of red, yellow, and pink flowers." 
+           exp="Image of 17 flowers, showing the original 12 flowers plus 5 new ones, visually representing the sum." />
+    </div>
+
+    <div class="question-container" exp="First question where students calculate the total after adding 3 flowers to 12.">
+      <p exp="Question that reinforces the idea of addition with flowers already in the garden.">
+        <b>A)</b> How many flowers will there be if 3 more are added to 12 flowers?
+      </p>
+      <div class="answer-box" exp="Answer box where the student should write 15. It represents 12 + 3 = 15."></div>
+    </div>
+
+    <div class="question-container" exp="Second question asking how many flowers there will be after adding 5 more to the 12.">
+      <p exp="Question continuing the logic of the activity with a different number to add.">
+        <b>B)</b> How many flowers will there be if 5 more are added to 12 flowers?
+      </p>
+      <div class="answer-box" exp="Answer box where the student should write 17. It represents 12 + 5 = 17."></div>
+    </div>
+  </div>
+</body>
+</html>

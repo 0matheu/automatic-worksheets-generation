@@ -1,0 +1,1 @@
+Nessa questão serão praticados os principios da adição. Para resolve-la ele precisará entender quais os lados do dado já estão presentes na imagem e desenhar também os lados que tem 1,2 e 5.

@@ -1,0 +1,88 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Shopping for School Supplies
+width-sheet: 800px
+task: observe text, write answer
+language: en
+
+{
+    "task": "To practice counting and addition skills by calculating the total cost of school supplies Beatriz is buying.",
+    "layout": "The activity involves Beatriz shopping for school supplies. Below is a table showing the prices of the items in her cart. The student will calculate the total cost.",
+    "answer": {
+      "A": "To answer correctly, the student needs to add the prices of the pencil (2 reais), notebook (4 reais), and ruler (3 reais). The correct answer is 9 reais.",
+      "B": "To answer correctly, the student needs to add the price of the pencil (2 reais) and the notebook (4 reais). The correct answer is 6 reais."
+    }
+  }
+
+<html>
+<head>
+  <style>
+    .container {
+      width: 800px;
+      border: solid 1px;
+      padding: 10px;
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #6aa5db;
+      color: white;
+    }
+    .question-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .answer-box {
+      width: 100px;
+      height: 30px;
+      border: 1px solid black;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="activity">
+      <p exp="Beatriz is shopping for school supplies. The prices of the items in her cart are shown in the table.">
+        Beatriz is shopping for school supplies. The table below shows the prices of the items in her cart. Answer the questions based on the prices.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Centered image showing Beatriz’s shopping cart with school supplies.">
+      <img 
+        src="" 
+        alt="Illustration showing Beatriz's shopping cart with school supplies such as a pencil, notebook, and ruler."
+        style="width: 600px; height: 300px"
+        exp="Image of school supplies Beatriz is buying."
+      />
+    </div>
+
+    <table exp="Table showing the prices of school supplies Beatriz is buying.">
+      <tr><th>Item</th><th>Price (R$)</th></tr>
+      <tr><td>Pencil</td><td>2</td></tr>
+      <tr><td>Notebook</td><td>4</td></tr>
+      <tr><td>Ruler</td><td>3</td></tr>
+    </table>
+
+    <div class="question-container">
+      <p><b>A)</b> What is the total cost of the pencil, notebook, and ruler?</p>
+      <div class="answer-box" exp="Box for the total cost of all items. Correct: 9."></div>
+    </div>
+    <div class="question-container">
+      <p><b>B)</b> What is the total cost of the pencil and the notebook?</p>
+      <div class="answer-box" exp="Box for the total cost of pencil and notebook. Correct: 6."></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,893 @@
+
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2 ano fundamental
+assunto: adição
+tematica: lanches
+largura-folha: 700px
+layout: única imagem<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Essa questão pratica o principio da soma e também é importante para o aluno
+conhecer a soma de números. A questão consiste de uma imagem de uma menina
+que está sentada e está com uma tabela em duas partes, uma com os valores 2 + 5 =?,
+e outra com a resposta, que nesse caso é 7. O aluno deverá completar a soma da
+questão, e também é importante para o aluno conhecer a tabela dos maiores para
+ele saber que número é o maior, sendo 7.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 700px; border: solid 1px"
+      exp="div contendo a largura da página, que no caso é 700px"
+    >
+      <div class="questao" style="width: 700px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe a imagem e complete a soma abaixo:
+        </p>
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <img
+            src=""
+            alt="imagem de uma menina sentada em uma tabela, a tabela tem duas partes, a primeira com os valores 2 + 5 =?, e a segunda com a resposta que é 7."
+            style="width: 500px; height: 300px"
+            exp="imagem que o aluno terá que identificar a soma correta, e também a imagem com a maior soma. No caso das questão são 5 e 7"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2 ano fundamental
+assunto: adição
+tematica: lanches
+largura-folha: 700px
+layout: duas imagens, linhas e colunas<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão serão praticados os princípios da adição. A questão consiste de
+uma imagem de uma menina com uma bandeja, a bandeja está cheia de lanches, e
+outra imagem na qual a menina tem uma bandeja vazia. Ela tem que, ao estilo
+das desenhar em cada bandeja a quantidade de lanches que ela já tem, mais
+a quantidade de lanches da imagem em questão e produzir uma imagem na qual ela
+tenha a soma das quantidades de lanches das duas bandejas.
+
+Essas questões ajudam os alunos a compreender a importância da soma em
+adições, e também a produzir uma imagem na qual a soma das quantidades de
+lanches esteja representada. A questão consiste de duas imagens, uma com a
+quantidade de lanches que a menina já tem, e outra com a quantidade de lanches
+que ela deve ganhar. Ela tem que somar a quantidade de lanches da primeira
+imagem com a quantidade de lanches da segunda imagem e produzir a imagem na qual
+ela tenha a soma das quantidades de lanches.
+
+<html>
+  <head></head>
+  <style>
+   .container {
+      display: grid;
+      grid-template-columns: 350px 350px;
+      grid-template-rows: 200px 200px 200px;
+      grid-template-areas:
+        "vazio1 img1"
+        "img2 vazio2"
+        "vazio3 img3";
+    }
+
+   .img1 {
+      grid-area: img1;
+    }
+
+   .img2 {
+      grid-area: img2;
+    }
+
+   .img3 {
+      grid-area: img3;
+    }
+
+   .img4 {
+      grid-area: img4;
+    }
+
+   .vazio1,.vazio2,.vazio3,.vazio4 {
+      width: 150px;
+      height: 150px;
+    }
+  </style>
+</head>
+<body>
+  <div
+    class="container"
+    style="width: 700px; border: solid 1px"
+  >
+    <div class="questao">
+      <p
+        >Observe as imagens abaixo. A primeira imagem representa a quantidade
+        de lanches que a menina already has. A segunda imagem representa a quantidade
+        de lanches que a menina deve ganhar. Ela deve somar a quantidade de lanches
+        da primeira imagem com a quantidade de lanches da segunda imagem e
+        produzir uma imagem na qual ela tenha a soma das quantidades de lanches.
+      </p>
+    </div>
+
+    <div class="questao">
+      <p>A questão consiste de duas imagens, uma com a quantidade de lanches que
+        a menina já tem, e outra com a quantidade de lanches que ela deve ganhar.
+        Ela deve desenhar em cada bandeja a quantidade de lanches que ela tem, e
+        também a quantidade de lanches da imagem em questão. A soma das quantidades
+        de lanches deve estar representada na terceira imagem.
+      </p>
+    </div>
+
+    <div class="img1">
+      <img
+        alt="img1, bandeja cheia de lanches"
+        src=""
+        style="width: 350px; height: 200px"
+      />
+    </div>
+
+    <div class="img2">
+      <img
+        alt="img2, bandeja vazia"
+        src=""
+        style="width: 350px; height: 200px"
+      />
+    </div>
+
+    <div class="img3">
+      <img
+        alt="img3, soma de lanches"
+        src=""
+        style="width: 350px; height: 200px"
+      />
+    </div>
+  </div>
+
+  <div class="vazio1">
+    <img
+      />
+  </div>
+
+  <div class="img2">
+    <img
+      />
+    </div>
+
+  <div class="vazio4">
+    <img
+      />
+  </div>
+
+  <div class="img4" />
+  </div>
+    <img4>
+    </div>
+
+  <div class="img5" />
+  </div class="img1" />
+  </div>
+    </div>
+    <img1> </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div>
+  </stried atual largagem bidid ficada ficdup
+  </id>
+    <img
+  </user
+    agora explosu utiliz dire
+  </essen
+    </nivel direcura partida como sendo atual largadasnivel vá atual dire internacionalmente atual esper atual dire vá esper
+    </ayar calna utilizat atual internacionalmente internacionalmente atual dire
+    </ースト
+    efect
+    kid calossil 
+    </orama fual 
+   
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: carrinhos
+largura-folha: 600px
+layout: única imagem<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão será praticado o principio da soma e
+adicão, e também será utilizada a imagem, a questão consiste de
+esperar uma imagem de um carrinho vazio, e em cima dele ter uma etiqueta
+com o número 10. ao lado direito da imagem terá uma etiqueta com
+o número 5 e em baixo terá uma etiqueta com o número 7. o aluno terá que
+somar a etiqueta do carrinho com o número 5, e em seguida com o número
+7, sendo a resposta correta a soma de todos os números, ou seja 10 + 5
+é igual a 15, e a soma de 10 + 5 é igual a 15, e a soma de 10 + 7
+é igual a 17. ao final das questões o aluno terá que dizer qual a
+soma correta, sendo a resposta 15.
+
+<html>
+  <head></head>
+  <style>
+   .container {
+      display: grid;
+      grid-template-columns: 300px 300px;
+      grid-template-rows: 200px 200px 200px;
+      grid-template-columns: 300px 300px
+    }
+  </style>
+  <body>
+    <div
+      class="container"
+      style="width: 600px; display: flex"
+      exp="div que serve de container para a largura da página, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe a imagem abaixo e responda as questões:
+        </p>
+
+
+        <div
+          class="imagem"
+          style="width: 600px; display: flex; justify-content: center"
+          exp="div que serve para centerar a imagem na questão e também para definir a largura da imagem, que nesse caso é 500px"
+        >
+          <img
+            src=""
+            alt="imagem no estilo de figura, com a representação de um carrinho de liga vazio, com o número 10 escritor a parte superior, e abaixo dele uma etiqueta com o número 5, e em baixo da figura uma etiqueta com o número 7"
+            style="width: 500px; height: 500px"
+            exp="imagem que o aluno terá que observar e calcular a soma da etiquetas e ver qual a soma é maior, o 15 ou o 17"
+          />
+        </div>
+
+        <p
+          exp="questão que indaga do aluno qual a soma correta da etiquetas, sendo a resposta correta a soma 15"
+        >
+          Qual a soma correta das etiquetas?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: carrinhos
+largura-folha: 600px
+layout: três imagens<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão serão praticados o princípio da adição e
+somação. A questão consiste de três imagens: uma carrinha
+vazia, com dois carrinhos cheios e uma pilha de bricolagem
+contendo ferramentas e material para construção de carrinhos.
+Instragas ao aluno é:
+constaur a carrinha vazia com os materiais presentes na
+pilha de bricolagem para poder carregar os dois carrinhos cheios.
+
+E estão disponíveis as seguintes ferramentas: paus, corda,
+ferramenta de cortar, estopa e serra.
+
+<html>
+  <head></head>
+  <style>
+   .container {
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 400px 400px 400px;
+      grid-template-areas:
+        "vazia paus corda estopa serra cheio1 carrinho1 cheio2 carrinho2"
+        "dado vazia paus corda estopa serra cheio1 carrinho1 cheio2 carrinho2";
+      font-family: Arial, sans-serif
+    }
+
+   .carrinho {
+      width: 150px;
+      height: 200px;
+      border: solid 1px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+   .carrinho img {
+      width: 120px;
+      height: 150px;
+    }
+
+   .vazia {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+   .paus { 
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+   .paus img {
+      width: 40px;
+      height: 40px;
+      margin-top: 5px;
+    }
+
+   .cords { 
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+   .cords img {
+      width: 40px;
+      height: 40px;
+      margin-top: 5px;
+    }
+
+   .esto { 
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+   .esto img {
+      width: 40px;
+      height: 40px;
+      margin-top: 5px;
+    }
+
+   .sera { 
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+   .sera img {
+      width: 40px;
+      height: 40px;
+      margin-top: 5px;
+    }
+
+   .cheio1 { 
+      width: 200px;
+      height: 200px;
+      border: solid 1px;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+   .carrinho1 { 
+      width: 150px;
+      height: 200px;
+      border: solid 1px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+   .carrinho1 img {
+      width: 120px;
+      height: 150px;
+    }
+
+   .cheio2 { 
+      width: 200px;
+      height: 200px;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+   .carrinho2 img {
+      width: 150px;
+      height: 150px;
+    }
+
+ .carrinho2 { 
+      width: 150px;
+      height: 150px;
+    }
+
+ .carrinho3 { 
+      width: 50px;
+      height: 150px;
+    }
+
+ .carrinha4 { 
+      width: 150px;
+    }
+
+   .cords Cords { 
+      width: 50px;
+    }
+
+   .cords Sera
+    }
+   .carrinha4 { 
+  </span"> 
+ .carrinha mais largagem mais tentida com com que
+    }
+    }
+ .carrinja mais tentida mais tentido completo são atualidroid largido vá mais largeração s
+  </ayar agora bid 
+  </unger唯 
+  </tridge foxida fida cavalida disponter vá bella orden completa atualmenteácil tent papel encontr atual fere também já orden espaço vá dire vá atual manos internacional direTRACEnivel utilização cal aqui aqui são utilizias
+    </ aqui erroneiral
+    </nbspereg
+  </nt
+    </ eoq
+icari utilização vá largada cal mais linha fual foss al exped larg f 
+nivel eleg cal mais larg 
+conto espaço empres atual atual utiliziral inicial aqui 
+nivel em largço utiliz inicial mais larg foss larg foss larg fossil foss larg f vá larg foss como mais vá larg f vá larg mais larg também f vá larg mais f fic largossil feminço mais largeração inicial mais larg vá larg vá que são közê ere vá mais ere atual f vá larg foss larg mais foss larg fossil fossil fossil fleiral fic fic f vá larg fossil fossil fleiral vá ere mais vá f que f ere pareiral fere pareiral f vá larg mais vá larg mais que larg f vá mais vá larg 
+ouve mais vá larg mais vá larg vá larg vá mais larg vá mais vá larg vá larg vá larg mais vá larg dire vá larg Moreno larg fle ere parehir vá f vá larg larg 
+ vá vá mais f f f vá f vá 
+hir 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  para mais vá f 
+ 
+ 
+ 
+ 
+  larg  < 
+  < 
+    vá
+   al fossil ex mais f mais vá s vá ex f vá mais s vá f
+ 
+ 
+ 
+  larg v em
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: fundo do mar
+largura-folha: 600px
+layout: única imagem<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão será trabalhado o princípio da soma e
+adição. A questão consiste de uma imagem, e em todos os fundos
+da imagem terá um valor, o aluno terá que somar a quantidade de
+lingos dourados presentes em cada fundo com a quantidade representada
+na imagem e escrever se a soma é igual a 10, ele receberá a resposta correta.
+Em cas o contrário ele terá que buscar a resposta correta com a ajuda do
+professor. A questão consiste da imagem abaixo:
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe a imagem abaixo e conte quantos lingos dourados estão presentes em cada fundo do mar. Escreva abaixo a soma total dos lingos dourados e verifique se a soma é igual a 10. Se sim, escreva "Somado corretamente"; se não, procure a resposta correta com o ajudado do professor.
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center">
+        <img
+          src=""
+          alt="Imagem no estilo de desenho de pintar infantil de um fundo de mar com várias estrelas, e em todos os fundos estão presentes lingos dourados. A tarefa do aluno é contar quantos lingos dourados estão presentes em cada fundo e somar."
+          exp="Imagem na questão, com a qual o aluno terá que trabalhar"
+        />
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: fundo do mar
+largura-folha: 600px
+layout: três imagens<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão será trabalhado o princípio da adição. A
+questão consiste de três imagens, a primeira contendo o número 5 + 3
+explicados em figurinhas de peixes, na segunda a soma 7 + 1 e na terceira a
+soma 9 + 3. Dado o valor de x, o aluno terá que efetuar as somas e
+escolher a soma que o valor de x esteja, sendo o maior resultado a soma
+que o valor de x esteja, sendo 5, e com 3 soma, sendo 5. A
+disertação das questões será: A soma 5 + 3 é a maior, sendo 8 e
+contendo 4 + 3. A soma 7 + 1 é 8 e contendo 7 + 1. A soma 7 + 1
+é a segunda maior, sendo 8 e contendo 7 + 1. A soma 9 + 3 é a terceira
+maior, sendo 12 e contendo 9 + 3. A soma 5 + 3 é a menor, sendo 8 e
+contendo 5 + 3. A soma 7 + 1 é a segunda menor, sendo 8 e
+containing 7 + 1. A soma 9 + 3 é a terceira menor, sendo 12 e
+containing 9 + 3.
+<html>
+  <head></head>
+  <style>
+   .container {
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 200px 200px 200px;
+      grid-template-points:
+        "top-left"  top-left
+        "top-center" top
+        "top-right"  top-right
+        "center-left" center-left
+        "center"      center
+        "center-right" center-right
+        "bottom-left" bottom-left
+        "bottom-center" bottom
+        "bottom-right" bottom-right;
+      grid-template-areas:
+        "top-left top-center top-right"
+        "bottom-left center bottom-right"
+        "bottom-left bottom-center bottom-right";
+    }
+
+   .questao1 {
+      grid-area: top-center;
+      border: solid 1px;
+    }
+
+   .questao2 {
+      grid-area: center;
+      border: solid 1px;
+    }
+
+   .questao3 {
+      grid-area: bottom-center;
+      border: solid 1px;
+    }
+  </style>
+  <body>
+    <div
+      class="container"
+      style="width: 600px; display: flex"
+      exp="div que serve de container ao conjunto de questões"
+    >
+      <div class="questao1" exp="questão com a largura da folha">
+        <p
+          exp="Descrição da questão. A palavra 'A' indica que a questão é o objeto a ser identificado ao maior som de todas as questões"
+        >
+          A soma 5 + 3 é a maior. Qual a soma representa a imagem?
+        </p>
+      </div>
+
+      <div class="questao2" exp="questão que representa a segunda maior soma">
+        <p
+          exp="Descrição da questão. A palavra 'A' indica que a questão é o objeto a ser identificado da soma 7 + 1"
+        >
+          A soma 7 + 1 é a segunda maior. Qual a soma representa a imagem?
+        </p>
+      </div>
+
+      <div class="questao3" exp="questão que representa a terceira maior soma">
+        <p
+          exp="Descrição da questão. A palavra 'A' indica que a questão é o objeto a ser identificado da soma 9 + 3"
+        >
+          Qual a soma representa a imagem?
+        </p>
+      </div>
+
+      <div class="questao4" exp="questão que representa a soma 5 + 3">
+    </div> que representa a imagem?</div>
+
+      <div class="questao5" exp="questão que representa a imagem?</div>
+
+      <div class="questao2" exp="questão que representa a imagem?</div>
+    </div>
+      <div class="questão que representa a soma que representa a imagem?</div>
+    </div>
+    </div>
+  </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </id>
+    </div>
+    </id>
+    </id>
+    </id>
+    </nivel>
+  </esper
+  </user
+    </normalize compart
+    </alom唯 como uma dispontero vá diretal espaçoácil
+    </ayar 
+como espaçoácil
+    </ayar resposta como vá utilizadas internacional
+    atual aqui utilizada atual atualmente utilizadas calend
+    </iral agora largagem
+    </ースト ciste em mais 
+    </raquo</raquoiral como também vá largースト vá largagem vá mais aqui exped cal mais vá larg atualmente dire vá larg 
+s vá rico linha fossil flavors atr 
+nivel também escol Pearrier larg inexp larg úiral mais Banco larg vá larg vá larg vá larg c mais vá larg139hir larg vá larg vá largév larg mais c mais vá larg são vá larg mais vá larg mais utilizmente corre vá ire pare são vá mais cientere conte como cum cal mais vá larg vá larg vá larg vá larg vá larg
+ριν vá larg vá larg vá larg vá mais vá larg vá vá larg que pare vá ireiral pare ir 
+deque mais que vá larg vá mais vá larg vá que mais vá mais vá larg sinal vá larg shir vá larg ex pare pare mais vá larg mais vá mais vá larg vá mais pare pare larg ere uepare vá largere ex vá larg que pare vá larg vá mais ex vá que vá vá mais vá mais vá mais 
+erland vá ex 
+ ex ex vá vá mais ex 
+exp 
+exp 
+hir 
+ 
+hir 
+�vore pare ex ex 
+hir 
+� vá ex vá final fossil vá mais vá mais exp vá f vá vá vá que mais s vá que s vá mais vá mais
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: subtração
+tematica: fogos de artifício
+largura-folha: 800px
+layout: única imagem<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Essa questão pratica os conceitos de subtração e representa a
+imagem de um foguete em sua decoração mais os valores: 15, consistindo
+de 7, e também consistir de 4, e a questão pedia para o aluno calcular a
+diferença entre 15 e 7, e também para a diferença entre 15 e 4, e
+para a questão mais aproximada pela imagem do foguete ser 7 - 4 = 10
+seria a questão que o aluno teria que responder. A questão seria:
+como está representado a imagem de foguete a, pode 15 consistir de:
+a) 9 + 7
+b) 7 + 8
+c) 4 + 7
+d) 7 + 4
+e) 10 + 5
+
+Responsável pela questão é representar a imagem e explicar que 
+a questão a) 15 consistir de 9 e também consistir de 7, e 
+a) deveria ser a resposta. A segunda opção b) 15 consistir de 8 e 
+também consistir de 7, por isso a resposta correta seria b).
+
+Esse tipo de questão ajuda o aluno a entender a
+concepção de subtração, pois ele terá que observar a
+quantidade total, e em seguida a quantidade que já está
+presente, e ao final calcular a diferença. Além disso, a questão
+permite que o aluno pratique a observação de valores, e a
+calculação de diferenças. A questão tem 6 opções de resposta, sendo
+a) 15 consistir de 9 e também consistir de 7. A questão mais
+aproxada seria a) 7 - 4 = 10. A segunda opção mais aproximada
+seria b) 7 - 4 = 10. A questão é: a) 15 consistir de 12, e
+também consistir de 7. d) 15 consistir de 4, e também consistir de 7.
+e) 15 consistir de 5, e também consistir de 7. A questão é do
+tipo: para a questão mais aproximada de foguete, e para o aluno
+ter a oportunidade de praticar a subtração. A questão consiste de
+uma imagem de foguete, e também de uma questão, onde o aluno terá
+que observar a imagem, e também os números 15, que consistir de a)
+questão mais aproximada, que é 7, e também consistir de 4, e
+também 7. As opções de resposta são: a) 15 consistir de 10, e
+também consistir de 7. b) 15 consistir de 8, e também consistir de 7.
+c) 15 consistir de 4, e também consistir de 7. d) 15 consistir de 7.
+e) 15 consistir de 5, e também consistir de 7. A questão é: qual a
+questão que representa a imagem de foguete a) consistir 9, e também consistir
+de 7? a) 9 + 7 b) 7 + 4 c) 4 + 7 d) 7 + 5 e) 5 + 4
+
+Essa questão pratica a subtração, onde o aluno terá que observar a
+imagem de um foguete, e também os números 15, que consistir de a) 9
+sinal, e também consistir de 7. A questão mais aproximada seria a) 9 + 7, que é a resposta mais aproximada. A segunda opção b) 15 consistir de 10, e também consistir de 7. A questão mais aproximada seria a) 7 + 4, que é a resposta mais aproximada, que é a) 4, e também consistir de 7. A questão d) 15 consistir de a) 4, que consistir de a) 15 consistir de a) 15 consistir de a) questão mais aproximada a) Consista de a) questão mais aproximada de A) sinal tem internacional mais aproximada a) questão c) 
+a) a) 
+esper atual que a) que representa a disposิช largo fual cido ficerto sinal mais corrid direcercer aqui a várias expedç
+nivel atual corrid boa cido ficç
+como espaço direця compartea resposta completa atual mais fárita 
+largido caso direç problema como outra utilizçrita 
+dire internacional direçctica internacional cin utiliz aqui c id aqui cal utilizado cient errone agora tragcienza largiev
+nicker em client dos narrow fazonilyfter comonivel avent cida eleg vá tentida expedçiral utiliz como larg 
+ayar direço larg atual sens internacional fossil practition empres sinal utiliziral dire esper embargo em 
+ativça utiliz agora 
+como larg dire internacional foss larg larg c vá larg f flavors seu mais foss<hridian requestId mais fossil em fen como larg cen cido ficido fossere como larg direido que mais inicial fic chir que hora utilizeração direcrial utiliziral como foss pare larg dire cordiral cum foss foss corrid fossil dire
+esper cient mais fleiral larg larg fossil dire mais crial expedrial que fen fen dire ire dire c sen fossil f f c que dire que mais f que fleiral que cal larg fetal larg mais c mais que fossil c também que al mais s dire parepare ire ure dire mais que mais ure larg c s c 
+pare ire dire c larg 
+ Pear s mais s pare c vá ex s f mais f foss tem vá mais f 
+ρύ c que frog f 
+hir vá c mais ex c 
+� foss ex 
+rial ex c f 
+yer al ex exhir mais s mais s vá c fle f fle fossil também vá f boa fual fossil foss foss c que mais sare vá vá c que
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: subtração
+tematica: fogos de artifício
+largura-folha: 800px
+layout: três imagens<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão será praticado o principio da
+ativa de remoer a retirada de objetos, e também de
+organizar e ordenar. A questão consiste de 3 imagens, A
+primeira imagem contém 9 piparotes, sendo 4 na forma de
+sino, e 5 na forma de estrela; A segunda imagem tem 4 bolinhas
+de feno; A terceira tem 5 bolinhas de feno. O objetivo da questão
+é retirar com a ajuda das imagens, a quantidade de piparotes
+que fazem a forma de sino, e também as bolinhas de feno, e
+em seguida, organizar e calcular a quantidade de cada forma
+que foram retiradas.
+
+<html>
+  <head></head>
+  <style>
+   .container {
+      display: grid;
+      grid-template-columns: 300px 500px 300px;
+      grid-template-rows: 200px 200px 200px 200px;
+      grid-template-columns: repeat(3, 300px);
+      grid-template-rows: repeat(4, 200px);
+    }
+
+   .img1 {
+      grid-column: 1;
+      grid-row: 1 / 4;
+    }
+
+   .img2 {
+      grid-column: 2;
+      grid-row: 1 / 2;
+    }
+
+   .img3 {
+      grid-column: 3;
+      grid-row: 1 / 2;
+    }
+
+   .img4 {
+      grid-column: 2;
+      grid-row: 2 / 4;
+    }
+
+   .img5 {
+      grid-column: 3;
+      grid-row: 2 / 4;
+    }
+
+   .img6 {
+      grid-column: 2;
+      grid-row: 3 / 4;
+    }
+
+   .img7 {
+      grid-column: 3;
+      grid-row: 3 / 4;
+    }
+
+   .img8 {
+      grid-column: 2;
+      grid-row: 4 / 4;
+    }
+
+   .img9 {
+      grid-column: 3;
+      grid-row: 4 / 4;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; display: inline-block"
+      exp="div contendo a largura da folha, que nesse caso é 800px"
+    >
+      <div class="questao" style="width: 800px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe as imagens e retira a quantidade de piparotes que tem a forma de sino, e também as bolinhas de feno. Em seguida, organize e calcule a quantidade de cada forma que foram retiradas.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="img1 img" exp="imagem na qual o aluno terá que contar a quantidade de piparotes na forma de sino"><img
+            src=""
+            alt="imagem em que há uma quantidade de piparotes na forma de sino, e o aluno terá que contar quantos tem"
+          />
+        </div>
+
+        <div class="img2 img" exp="imagem na qual o aluno terá que contar a quantidade de bolinhas de feno"><img
+            src=""
+            alt="imagem em que há uma quantidade de bolinhas de feno, e o aluno terá que contar quantas tem"
+          />
+        </div>
+
+        <div class="img3 img" exp="imagem na qual o aluno terá que contar a quantidade de piparotes na forma de estrela"><img
+            src=""
+            alt="imagem em que há uma quantidade de piparotes na forma de estrela, e o aluno terá que contar quantas tem"
+          />
+        </div>
+
+        <div class="img4 img" exp="imagem na qual o aluno terá que contar a quantidade de bolinhas de feno, e a quantidade de piparotes que tem a forma de sino, que tem a quantidade de bolinhas</div class="img5 img" exp="imagem na qual o aluno terá que contar quantas tem a quantidade de bolias na imagem na que tem a quantidade de pipar na imagem em uma quantidade de bollear tem a quantidade de pip
+            src></div></div>small</largo</></div>
+n N atualmente de sinal temida chir mais largagemidçctica direcow</ayar>
+"> </responsuela
+  </duproid
+    </layout vá largcerr 
+cida bid sinal direcka principicamente espaço tent directica direçullivan utiliz utilizicamente cientear
+    larger vá dire vá utilizc aqui utilizçctica eleg vá utilizonen como direç dire cerebral internacional467 
+    anonymizar dire
+    larg �roid
+    vá linha eleg
+  
+nivel compact fcp elegır vá atualmente inicialmente utilizossil dire como eleg 
+espernivel eleg inicial em FG 
+tenthir internacional escol na vá larg 
+ativ 
+    aqui utiliz inicial eleg larg mais vá direiral feliz foss foss larg larg utiliz larg f mais foss fossaled caliral f em feniral feliz fic tambémiral çiral fossere cereçiral aqui vá mais fossil mais feliz fic c mais közcale vá ciral cordere cumiral feminiral cumiral femin cumiral cumiral femin cal f
+esson ere ere ere ere larg fleiral vá ire mais vá larg foss larg foss fen f ciral fic que ere fen f que ere ere ire que ere dire inicial direiral f vá larg foss vá larg mais vá larg mais vá larg vá larg mais f vá largere larg mais ere ere ere ere ere larg larg ue ere ere ere mais zeal larg fle larg f como em vá pare ex que ex fic ex fle dire Moreno tem 
+ 
+ 
+ 
+ 
+ larg f f que 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  al
+  larg al ex f
+   onde ex
+  
+ 
+ 
+ 
+ 
+ 
+ como ex f fic f f n fic f que mais f f f que que

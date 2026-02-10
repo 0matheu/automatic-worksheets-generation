@@ -1,0 +1,39 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of new band members in the image and calculating the total number of band members.",
+  "layout": "The HTML elements are organized with a div containing the sheet width, followed by a div containing the question description, an image of a band, and three paragraphs containing the questions. The image is centered in the div using flexbox, and the questions are listed below the image.",
+  "answer": "To answer correctly, the student needs to: 1) count the number of band members in the original image (4), 2) count the number of new band members in the second image (3), and 3) add the two numbers together to find the total. The correct answers are: A) 4, B) 3, and C) 7."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description. Contains the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the image below of a band with 4 members, and answer the questions:
+        </p>
+        <div style="display: flex; justify-content: center">
+          <img
+            src=""
+            alt="Image in a coloring book style of a child's drawing of a band with 4 members, containing a guitarist, a bassist, a drummer, and a singer"
+            style="width: 600px; height: 400px"
+            exp="Image that the student will have to count the number of band members and also identify that there are 4 old members and 3 new ones"
+          />
+        </div>
+        <p>A) How many band members are there in total? Add the old and new members.</p>
+        <p>B) How many new members joined the band?</p>
+        <p>C) What is the sum of old and new members?</p>
+      </div>
+    </div>
+  </body>
+</html>
+```

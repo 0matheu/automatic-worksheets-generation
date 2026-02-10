@@ -1,0 +1,135 @@
+level: 2nd year fundamental
+learning_goals: addition, counting, problem-solving
+theme: school office
+sheet_width: 900px
+task: observe images, write answer
+language: en
+
+
+
+{
+  "task": "To connect different office supplies to the correct desk, then count and write the total number of supplies.",
+  "layout": "The activity is divided into two sections. The top section contains a description explaining the task. Below, the middle section consists of a grid layout with three images of supplies (pencils, notebooks, erasers) in the first row and an image of a desk in the second row. An answer box is provided below for the student to write the total number of supplies.",
+  "answer": "To answer this activity correctly, the student needs to: 1) count the number of supplies in each image (5 pencils, 4 notebooks, 6 erasers), 2) connect each image of supplies to the desk by drawing lines, and 3) calculate the total number of supplies (5 + 4 + 6 = 15). The answer (15) must be written in the answer box located below the instruction text."
+}
+
+  
+<html>
+  <head>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 300px 300px;
+        grid-template-areas:
+          "supplies1 supplies2 supplies3"
+          "desk desk desk";
+      }
+
+      .suppliesize {
+        width: 240px;
+        height: 240px;
+      }
+
+      .desk {
+        width: 400px;
+        height: 240px;
+      }
+
+      .supplies1 {
+        grid-area: supplies1;
+      }
+
+      .supplies2 {
+        grid-area: supplies2;
+      }
+
+      .supplies3 {
+        grid-area: supplies3;
+      }
+
+      .desk-area {
+        margin-top: 50px;
+        margin-left: 250px;
+        grid-area: desk;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="width: 900px; border: solid 1px; padding: 10px;"
+      exp="div containing the sheet width, which in this case is 900px"
+    >
+      <div class="activity" style="width: 900px">
+        <p
+          exp="Activity description explaining that the student needs to calculate the total number of supplies and connect them to the desk."
+        >
+          A school office has several supplies. Connect each group of supplies to the desk, count the total, and write your answer.
+        </p>
+
+        <div class="container">
+          <div
+            class="supplies1"
+            exp="div containing the first image of pencils with a quantity of 5."
+          >
+            <img
+              class="suppliesize"
+              src=""
+              alt="Image of 5 pencils in a cup"
+              exp="Image showing a group of 5 pencils that the student must connect to the desk."
+            />
+          </div>
+
+          <div
+            class="supplies2"
+            exp="div containing the second image of notebooks with a quantity of 4."
+          >
+            <img
+              class="suppliesize"
+              src=""
+              alt="Image of 4 notebooks stacked together"
+              exp="Image showing a group of 4 notebooks that the student must connect to the desk."
+            />
+          </div>
+
+          <div
+            class="supplies3"
+            exp="div containing the third image of erasers with a quantity of 6."
+          >
+            <img
+              class="suppliesize"
+              src=""
+              alt="Image of 6 erasers scattered on a surface"
+              exp="Image showing a group of 6 erasers that the student must connect to the desk."
+            />
+          </div>
+
+          <div
+            class="desk-area"
+            exp="div containing the image of a desk where all supplies should be connected."
+          >
+            <img
+              class="desk"
+              src=""
+              alt="Image of an empty school desk"
+              exp="Image showing a desk that the student will connect all supplies to by drawing lines."
+            />
+          </div>
+        </div>
+
+        <p
+          exp="Description of where the student will write the answer."
+          style="text-align: center; margin-top: 20px;"
+        >
+          Write in the box below the total number of supplies after connecting them to the desk:
+        </p>
+        <div style="display: flex; justify-content: center;" exp="div to center the answer box.">
+          <div
+            style="width: 100px; height: 100px; border: 1px solid black;"
+            exp="Box for the student to write the total number of supplies, in this case, 15."
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

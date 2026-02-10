@@ -1,0 +1,55 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Cafeteria
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+    "task": "To practice adding prices of items used to furnish a cafeteria, helping students apply addition in real-life situations.",
+    "layout": "The scenario involves Lucas setting up a cafeteria. The image shows three labeled items: table (R$300), chair (R$100), and coffee machine (R$800). Students must use this visual to answer questions by adding two items at a time.",
+    "answer": {
+      "A": "The student should add the price of the table (R$300) and the chair (R$100). The correct answer is R$400.",
+      "B": "To answer correctly, the student adds the chair (R$100) and the coffee machine (R$800), which totals R$900.",
+      "C": "This question requires adding the table (R$300) and the coffee machine (R$800), with the total being R$1,100."
+    }
+  }
+  
+
+<html>
+<head></head>
+<body>
+  <div style="width: 800px; border: solid 1px; padding: 10px;">
+
+    <p exp="Introduction text describing the context of a cafeteria being set up and the costs involved.">
+      Lucas is opening a small cafeteria and is buying items to furnish it. He is checking prices for tables, chairs, and a coffee machine. Use the image to help him calculate the total costs.
+    </p>
+
+    <div style="display: flex; justify-content: center; margin: 20px 0;" exp="Container holding the centered image of the cafeteria items with price tags.">
+      <img 
+        src="" 
+        alt="Illustration showing cafeteria furniture and equipment: table (R$300), chair (R$100), coffee machine (R$800)."
+        style="width: 600px; height: 300px;"
+        exp="Image shows a modern cafeteria setup with three items labeled clearly: a table costing R$300, a chair costing R$100, and a coffee machine costing R$800. These items are neatly displayed in a store."
+      />
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question A asking the total cost of a table and a chair."><b>A)</b> What is the total cost of one table and one chair?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Answer box for A (Correct: 400)."></div>
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question B asking the total cost of one chair and one coffee machine."><b>B)</b> What is the total cost of one chair and the coffee machine?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Answer box for B (Correct: 900)."></div>
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question C asking the total cost of a table and the coffee machine."><b>C)</b> What is the total cost of the table and the coffee machine?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Answer box for C (Correct: 1100)."></div>
+    </div>
+
+  </div>
+</body>
+</html>

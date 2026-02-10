@@ -1,0 +1,46 @@
+level: 2nd year of fundamental  
+learning_goals: counting, addition  
+theme: School Supplies Collection  
+width-sheet: 800px  
+task: observe text, write answer
+language: en
+
+{
+    "task": "To practice counting and basic addition by determining the total number of school supplies collected by two students.",
+    "layout": "The activity consists of a description at the top, where the student will add the number of notebooks and pens collected by the students and answer the question.",
+    "answer": {
+        "A": "To answer correctly, the student needs to add the number of notebooks (10) and pens (15) collected. The correct answer is 25 school supplies.",
+        "B": "To answer correctly, the student needs to calculate how many supplies each student collected. The correct answer is 10 notebooks and 15 pens."
+    }
+}
+
+<html>
+    <head></head>
+    <body>
+      <div style="width: 800px; border: solid 1px; padding: 10px;">
+        <div class="activity">
+          <p exp="Activity description about the number of school supplies collected. The student collects 10 notebooks and 15 pens.">
+            The students collected 10 notebooks and 15 pens for their project. How many school supplies were collected in total?
+          </p>
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Image showing a pile of notebooks and pens collected by the students.">
+            <img src="" 
+                 alt="Illustration showing 10 notebooks and 15 pens collected for a school project."
+                 style="width: 600px; height: 300px"
+                 exp="Image where students can count the school supplies collected and add them together to get the total." />
+        </div>
+
+        <div class="question-container" style="display: flex; justify-content: space-between;">
+            <p exp="Question asking for the total number of school supplies."><b>A)</b> How many school supplies were collected in total?</p>
+            <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box where the student writes the total number of supplies. The correct answer is 25."></div>
+        </div>
+
+        <div class="question-container" style="display: flex; justify-content: space-between;">
+            <p exp="Question asking for the number of notebooks and pens collected."><b>B)</b> How many notebooks and pens were collected in total?</p>
+            <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box where the student writes the number of notebooks and pens. The correct answer is 10 notebooks and 15 pens."></div>
+        </div>
+        
+      </div>
+    </body>
+</html>

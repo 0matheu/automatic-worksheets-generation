@@ -1,0 +1,102 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of musical instruments each child has and calculating the total sum.",
+  "layout": "The HTML elements are organized with a div containing the sheet width, followed by a div containing the question description, and then a grid container with three rows and two columns. The grid container contains an image of three children with musical instruments in the second column of the first row, and three paragraphs with questions about the image in the first column of the second and third rows.",
+  "answer": "To answer correctly, the student needs to: 1) identify the number of violins the first child has (2), 2) identify the number of flutes the second child has (3), and 3) identify the number of guitars the third child has (1). The correct answers are: A) 2, B) 3, and C) 1. To find the total sum, the student needs to add the number of violins, flutes, and guitars together. The correct sum is 6. The student needs to identify the correct answers to A, B, and C, and the correct sum to get the right answer."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three rows and two columns, with an image in the center of the first row, and three paragraphs with questions in the second and third rows */
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px;
+      grid-template-rows: 200px 200px;
+      grid-template-areas:
+        "empty img1"
+        "question1 img1"
+        "question2 img1";
+    }
+
+    /* class used to place the image of the children with the instruments in the center of the first column */
+    .img1 {
+      grid-area: img1;
+      margin: 0px 0px 0px 150px;
+    }
+
+    /* class used to adjust the image size */
+    .img1 img {
+      width: 300px;
+      height: 300px;
+    }
+
+    /* class used to place the questions about the image in the second and third rows of the first column */
+    p {
+      margin: 20px 0px 0px 0px;
+    }
+
+    /* classes used to place each question in a specific cell of the grid layout */
+    p.q1 {
+      grid-area: question1;
+    }
+
+    p.q2 {
+      grid-area: question2;
+    }
+
+    /* class used to adjust the general layout of the activity, containing a sheet width of 800px */
+    .sheet {
+      width: 800px;
+      border: solid 1px;
+    }
+
+    /* class used to adjust the image of the activity to the center */
+    .center {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the image and answer the questions:
+        </p>
+
+        <div class="container">
+          <div class="empty"></div>
+
+          <div class="img1" exp="div used to adjust the image of the children with the instruments to the center left">
+            <img
+              src=""
+              alt="Image in a coloring book style of 3 children, one with 2 violins, another with 3 flutes, and another with 1 guitar"
+              exp="image that the student will have to count the number of instruments of each child and add them up"
+            />
+          </div>
+
+          <p class="q1" exp="First question that the student will have to answer by identifying that the child has 2 violins">
+            A) How many violins is the child with the most, playing?
+          </p>
+
+          <p class="q2" exp="Second question that the student will have to answer by identifying that the child is playing 3 flutes">
+            B) How many flutes is the child with the most, playing?
+          </p>
+
+          <p class="q3" exp="Third question that the student will have to answer by identifying that the image has 3 children, and adding up the total of instruments">
+            C) And in total, how many instruments are being played? Add up all the instruments.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

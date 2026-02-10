@@ -1,0 +1,286 @@
+```json
+{
+  "task": "Students will practice basic counting and addition skills (up to 10) in a fun, thematic context. By observing groups of dinosaur illustrations, they will write the number of dinosaurs they see in each group, then add two groups together to find a total. This reinforces number recognition, one-to-one correspondence, and early addition concepts.",
+  "layout": "The worksheet uses a vertical, single-column layout for clear, step-by-step progression. At the top, a clear title and instructions are provided with thematic fonts and colors. Below, three distinct activity sections are visually separated by borders and background colors. Section 1 (Counting) places dinosaur images in evenly spaced, labeled boxes for isolated counting. Section 2 (Addition) pairs two boxes of dinosaur images side-by-side with a plus and equals sign between them to model the addition equation. Section 3 (Challenge) presents a slightly more complex grouping without pre-drawn boxes, requiring the student to identify and sum two groups independently. All images are consistently sized and have descriptive alt text. Ample writing space (dotted lines) is provided next to each task for numerical answers.",
+  "answer": "To complete the worksheet successfully, the student must: 1) Count the dinosaurs in each individually boxed group and write the correct number on the dotted line. Correct counts: Box A: 3, Box B: 5, Box C: 4, Box D: 6. 2) For the addition problems, count the dinosaurs in the left group and the right group, then write the sum on the dotted line after the equals sign. Correct sums: Problem 1: 2 + 4 = 6, Problem 2: 5 + 3 = 8. 3) For the challenge, identify the two separate groups (the three Triceratops and the four Pteranodons), count each, and write the total sum on the final dotted line. Correct sum: 3 + 4 = 7."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dino Math: Counting and Addition</title>
+    <style>
+        /* Overall page styling for a playful, thematic, and clear printable sheet */
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', cursive, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #333;
+            max-width: 800px; /* Constrains width for printability */
+            margin: 0 auto; /* Centers the worksheet */
+            box-sizing: border-box;
+        }
+
+        /* Main container provides padding and a subtle border for definition */
+        .worksheet-container {
+            background-color: white;
+            border: 3px dashed #4CAF50;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        /* Thematic header to capture interest and clearly state the topic */
+        .worksheet-header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 4px solid #FF9800;
+            padding-bottom: 15px;
+        }
+
+        .worksheet-title {
+            color: #D84315; /* Warm, dino-themed color */
+            font-size: 2.8em;
+            margin: 5px 0;
+            text-shadow: 2px 2px 0 #FFE082;
+        }
+
+        .worksheet-subtitle {
+            color: #388E3C; /* Green for the 'science' connection */
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .instructions {
+            background-color: #E8F5E9; /* Light green background for importance */
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0 30px 0;
+            border-left: 5px solid #4CAF50;
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+        /* Section styling creates distinct visual blocks for each activity type */
+        .activity-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        /* Section 1: Simple counting with isolated boxes to prevent visual confusion */
+        .counting-section {
+            background-color: #F3E5F5; /* Light purple background */
+            border: 2px solid #7B1FA2;
+        }
+
+        /* Section 2: Addition with paired boxes to visually represent the equation */
+        .addition-section {
+            background-color: #E3F2FD; /* Light blue background */
+            border: 2px solid #1976D2;
+        }
+
+        /* Section 3: Challenge with less structure to promote independent grouping */
+        .challenge-section {
+            background-color: #FFF8E1; /* Light amber background */
+            border: 2px solid #FF8F00;
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            color: inherit; /* Color will be inherited from parent's border */
+            border-bottom: 2px solid currentColor;
+            padding-bottom: 8px;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        /* Flexbox layout for counting boxes ensures even, responsive spacing */
+        .counting-boxes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 25px;
+            margin-bottom: 15px;
+        }
+
+        /* Individual boxes provide a clear boundary for each counting task */
+        .dino-box {
+            text-align: center;
+            flex: 1;
+            min-width: 160px; /* Prevents boxes from becoming too narrow */
+            max-width: 180px;
+            border: 3px solid #9C27B0;
+            border-radius: 10px;
+            padding: 15px 10px;
+            background-color: white;
+        }
+
+        /* Consistent image sizing ensures clarity and fits printable area */
+        .dino-image {
+            width: 100%;
+            height: auto;
+            max-height: 100px; /* Controls vertical space */
+            object-fit: contain; /* Ensures whole dinosaur is visible */
+            display: block;
+            margin: 0 auto 10px auto;
+        }
+
+        /* Spacing and alignment for addition problems to visually represent the equation */
+        .addition-problem {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .addend-box {
+            border: 3px solid #0D47A1;
+            border-radius: 10px;
+            padding: 15px;
+            background-color: white;
+            min-width: 140px;
+            text-align: center;
+        }
+
+        /* Large, clear operator symbols for easy understanding */
+        .operator {
+            font-size: 3em;
+            font-weight: bold;
+            color: #1976D2;
+            min-width: 40px;
+            text-align: center;
+        }
+
+        /* Dotted lines provide a clear, inviting space for writing answers */
+        .answer-line {
+            border: none;
+            border-bottom: 3px dotted #555;
+            width: 80px;
+            text-align: center;
+            font-size: 1.8em;
+            font-family: inherit;
+            margin: 0 10px;
+            background: transparent;
+            color: #D84315;
+            font-weight: bold;
+        }
+
+        /* Groups images for the challenge without boxes, requiring student analysis */
+        .challenge-group {
+            text-align: center;
+            margin: 25px 0;
+        }
+
+        .challenge-image {
+            width: 120px;
+            height: auto;
+            margin: 0 15px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        /* Footer for final answer space and thematic closure */
+        .worksheet-footer {
+            text-align: center;
+            margin-top: 30px;
+            font-style: italic;
+            color: #5D4037;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="worksheet-container" exp="Main container for the entire printable worksheet, providing structured padding and a thematic border">
+
+        <header class="worksheet-header" exp="Header section containing the title and subtitle to set the theme and subject">
+            <h1 class="worksheet-title" exp="Main title: Large and playful to engage young students">Dino Math Adventure</h1>
+            <p class="worksheet-subtitle" exp="Subtitle clarifying the academic skills and theme">Counting & Addition with Dinosaurs</p>
+        </header>
+
+        <div class="instructions" exp="Instruction box with highlighted background to ensure students read the task before starting">
+            <strong>🦕 Your Mission:</strong> Look at each group of dinosaurs carefully. Count them and write the number on the dotted line. For the addition problems, add the two groups together to find the total!
+        </div>
+
+        <section class="activity-section counting-section" exp="First activity section focused on simple counting, visually distinct with a purple border">
+            <h2 class="section-title" exp="Section title for clarity">Part 1: Count the Dinosaurs!</h2>
+            <p>How many dinosaurs are in each box? Write the number.</p>
+
+            <div class="counting-boxes" exp="Flex container to arrange counting boxes in a responsive, evenly spaced row">
+                <div class="dino-box" exp="Individual counting task box containing a specific dinosaur group">
+                    <img src="https://example.com/dino_stegosaurus_group.png" alt="A group of three Stegosaurus dinosaurs with bony plates on their backs" class="dino-image" exp="Image of a dinosaur group for counting. Alt text describes quantity and type">
+                    <p>Box A: <input type="text" class="answer-line" exp="Dotted line for student to write the numerical answer for this box"></p>
+                </div>
+                <div class="dino-box" exp="Individual counting task box containing a specific dinosaur group">
+                    <img src="https://example.com/dino_trex_group.png" alt="A group of five Tyrannosaurus Rex dinosaurs with large heads and tiny arms" class="dino-image" exp="Image of a dinosaur group for counting. Alt text describes quantity and type">
+                    <p>Box B: <input type="text" class="answer-line" exp="Dotted line for student to write the numerical answer for this box"></p>
+                </div>
+                <div class="dino-box" exp="Individual counting task box containing a specific dinosaur group">
+                    <img src="https://example.com/dino_triceratops_group.png" alt="A group of four Triceratops dinosaurs with three horns on their faces" class="dino-image" exp="Image of a dinosaur group for counting. Alt text describes quantity and type">
+                    <p>Box C: <input type="text" class="answer-line" exp="Dotted line for student to write the numerical answer for this box"></p>
+                </div>
+                <div class="dino-box" exp="Individual counting task box containing a specific dinosaur group">
+                    <img src="https://example.com/dino_sauropod_group.png" alt="A group of six long-necked Brachiosaurus dinosaurs eating leaves from tall trees" class="dino-image" exp="Image of a dinosaur group for counting. Alt text describes quantity and type">
+                    <p>Box D: <input type="text" class="answer-line" exp="Dotted line for student to write the numerical answer for this box"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="activity-section addition-section" exp="Second activity section focused on addition, visually distinct with a blue border">
+            <h2 class="section-title" exp="Section title for clarity">Part 2: Dino Addition!</h2>
+            <p>Add the two groups together. Write the numbers and the total.</p>
+
+            <div class="addition-problem" exp="Container for a single addition problem, arranging elements in a logical left-to-right equation">
+                <div class="addend-box" exp="Box containing the first group (addend) in the addition problem">
+                    <img src="https://example.com/dino_raptor_pair.png" alt="Two Velociraptor dinosaurs standing together" class="dino-image" exp="Image of the first dinosaur group to be added. Alt text describes quantity and type">
+                </div>
+                <span class="operator" exp="Plus sign visually representing the addition operation">+</span>
+                <div class="addend-box" exp="Box containing the second group (addend) in the addition problem">
+                    <img src="https://example.com/dino_pteranodon_group.png" alt="Four Pteranodon flying reptiles with large wingspans" class="dino-image" exp="Image of the second dinosaur group to be added. Alt text describes quantity and type">
+                </div>
+                <span class="operator" exp="Equals sign showing the result of the addition is next">=</span>
+                <input type="text" class="answer-line" exp="Dotted line for student to write the total sum for this addition problem">
+            </div>
+
+            <div class="addition-problem" exp="Container for the second addition problem">
+                <div class="addend-box" exp="Box containing the first group (addend) in the addition problem">
+                    <img src="https://example.com/dino_ankylosaurus_group.png" alt="Five Ankylosaurus dinosaurs with armored bodies and club tails" class="dino-image" exp="Image of the first dinosaur group to be added. Alt text describes quantity and type">
+                </div>
+                <span class="operator" exp="Plus sign visually representing the addition operation">+</span>
+                <div class="addend-box" exp="Box containing the second group (addend) in the addition problem">
+                    <img src="https://example.com/dino_triceratops_trio.png" alt="Three Triceratops dinosaurs" class="dino-image" exp="Image of the second dinosaur group to be added. Alt text describes quantity and type">
+                </div>
+                <span class="operator" exp="Equals sign showing the result of the addition is next">=</span>
+                <input type="text" class="answer-line" exp="Dotted line for student to write the total sum for this addition problem">
+            </div>
+        </section>
+
+        <section class="activity-section challenge-section" exp="Third activity section as a challenge, visually distinct with an amber border and less structure">
+            <h2 class="section-title" exp="Section title to motivate students for the final challenge">Part 3: Fossil Challenge!</h2>
+            <p>Can you find the TWO groups of dinosaurs hiding here? Count each group and add them together to find the TOTAL number of dinosaurs.</p>
+
+            <div class="challenge-group" exp="Container for the challenge images, presented without separating boxes to increase difficulty">
+                <img src="https://example.com/dino_triceratops_three.png" alt="Three Triceratops dinosaurs" class="challenge-image" exp="First group of dinosaurs in the challenge scene. Alt text describes quantity and type">
+                <img src="https://example.com/dino_pteranodon_four.png" alt="Four Pteranodon flying reptiles" class="challenge-image" exp="Second group of dinosaurs in the challenge scene. Alt text describes quantity and type">
+                <img src="https://example.com/dino_plant.png" alt="A large prehistoric fern" class="challenge-image" exp="Decorative plant image to make the scene more engaging and realistic. Alt text describes the object">
+            </div>
+            <p style="text-align: center; font-size: 1.3em;">
+                Total Dinosaurs = <input type="text" class="answer-line" exp="Final dotted line for the answer to the challenge problem">
+            </p>
+        </section>
+
+        <footer class="worksheet-footer" exp="Footer providing a fun closure to the worksheet">
+            <p>Great job, Paleontologist! You've uncovered the answers! 🦖</p>
+        </footer>
+
+    </div>
+</body>
+</html>
+```

@@ -1,0 +1,62 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Park Picnic
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+  "task": "Observe the items brought to the picnic and answer the questions based on their quantities.",
+  "layout": "The activity presents a sunny picnic scene with baskets containing different food items. The image helps students visually count and combine the quantities.",
+  "answer": {
+    "A": "The student should add the number of sandwiches (12) and juice boxes (8). The correct answer is 20.",
+    "B": "The student should add the number of apples (10) and cupcakes (6). The correct answer is 16.",
+    "C": "The student should add all the picnic items: sandwiches (12), juice boxes (8), apples (10), and cupcakes (6). The correct answer is 36."
+  }
+}
+
+<html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: solid 1px black; padding: 10px;" exp="Main container for the Park Picnic activity.">
+
+      <div class="activity">
+        <p exp="Description inviting students to observe the picnic and answer based on the food quantities.">
+          Look at the items brought to the picnic and answer the questions below.
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div to center the image showing the picnic scene.">
+        <img 
+          src=""
+          alt="Illustration of a sunny park with a picnic blanket. On the blanket are 12 sandwiches, 8 juice boxes, 10 apples, and 6 cupcakes. Trees, a pond, and kids playing are visible in the background."
+          style="width: 600px; height: 300px;"
+          exp="Colorful scene of a picnic on a green park lawn. On the red-checkered blanket are clear depictions of food items: a plate with 12 sandwiches, 8 small colorful juice boxes stacked neatly, 10 shiny red apples in a basket, and 6 cupcakes on a tray. The scene also shows children playing near a pond and birds in the trees."
+        />
+      </div>
+
+      <p style="text-align: center;" exp="Instruction for the student to answer based on counting items in the image.">
+        Use the image above to help you answer the questions below:
+      </p>
+
+      <div style="padding: 10px 30px;">
+        <div class="question-container" style="display: flex; justify-content: space-between;">
+          <p exp="Question A asking the total of sandwiches and juice boxes."><b>A)</b> How many items are there if we add sandwiches and juice boxes?</p>
+          <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Answer box for question A. Correct answer: 20."></div>
+        </div>
+
+        <div class="question-container" style="display: flex; justify-content: space-between;">
+          <p exp="Question B asking the total of apples and cupcakes."><b>B)</b> How many items are there if we add apples and cupcakes?</p>
+          <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Answer box for question B. Correct answer: 16."></div>
+        </div>
+
+        <div class="question-container" style="display: flex; justify-content: space-between;">
+          <p exp="Question C asking the total number of all food items combined."><b>C)</b> How many food items are there in total?</p>
+          <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Answer box for question C. Correct answer: 36."></div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

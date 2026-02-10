@@ -1,0 +1,92 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by matching the number of guitars each child has with the corresponding musical note, and then calculating the total number of guitars the two children have and drawing the correct number of guitars.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph that explains the task, and the bottom section contains a 2x2 grid with three cells. The first row of the grid contains an empty cell and an image of a child with 3 guitars. The second row of the grid contains an image of a child with 2 guitars. The two images of children are placed in the second column of their respective rows. There is also an image of a pile of guitars in the first column of the second row. The three images are placed in a specific layout to facilitate comparison and counting.",
+  "answer": "To answer this question correctly, the student needs to: 1) count the number of guitars in the first image (3 guitars) and match it with the corresponding musical note (image 1), 2) count the number of guitars in the second image (2 guitars) and match it with the corresponding musical note (image 2), 3) add the number of guitars in the two images together (3 + 2 = 5), and 4) draw 5 guitars in the image of the pile of guitars. The correct answers are: the first image of the child with 3 guitars, the second image of the child with 2 guitars, and the drawing of 5 guitars."
+}
+```
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three images in a 2-line and 3-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px;
+      grid-template-rows: 300px 300px;
+      grid-template-areas:
+        "empty n1"
+        "pile n2";
+    }
+
+    /* class used to place the image of the pile of guitars in the first row and the first column */
+    .pile {
+      grid-area: pile;
+    }
+
+    /* class used to place the image in the first row and the second column */
+    .n1 {
+      grid-area: n1;
+    }
+
+    /* class used to place the image in the second row and the second column */
+    .n2 {
+      grid-area: n2;
+    }
+
+    /* class used to adjust the size of the images in the activity, being 300px in width and 300px in height */
+    img {
+      width: 300px;
+      height: 300px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the images below. Match the image of each child with the
+          musical note that has the quantity of guitars represented, then, add
+          up the total number of guitars the two children have and draw the
+          quantity of guitars you found in the image of the pile.
+        </p>
+
+        <div class="container">
+          <div class="empty"></div>
+
+          <div class="n1">
+            <img
+              src=""
+              alt="image in a coloring book style of a child with 3 guitars"
+              exp="image that the student will have to count the number of guitars, being 3, and match with the image n1"
+            />
+          </div>
+
+          <div class="n2">
+            <img
+              src=""
+              alt="image in a coloring book style of a child with 2 guitars"
+              exp="image that the student will have to count the number of guitars, being 2, and match with the image n2"
+            />
+          </div>
+
+          <div class="pile">
+            <img
+              src=""
+              alt="image in a coloring book style of a pile of 10 guitars"
+              exp="image that the student will have to look at and draw the quantity of guitars that represents the sum of the guitars of the n1 and n2 images"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

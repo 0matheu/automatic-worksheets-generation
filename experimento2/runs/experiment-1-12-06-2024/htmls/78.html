@@ -1,0 +1,73 @@
+```json
+{
+  "task": "To practice basic addition skills by counting the total number of cacti and lizards in the two images and calculating the sum.",
+  "layout": "The question is divided into three main sections. The top section contains a paragraph describing the task. The middle section contains a 2x1 grid with two columns and one row. The left column contains an image of a desert with 4 lizards, and the right column contains an image of a desert with 7 cacti. The bottom section is empty.",
+  "answer": "To answer correctly, the student needs to observe the two images, count the number of lizards in the first image (4), count the number of cacti in the second image (7), and then add the two numbers together to get 11. The student needs to write the result (11) as the answer."
+}
+```
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to organize the images of the lizards and the cacti in the activity, containing two columns and one row */
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 400px;
+      grid-template-areas:
+        "lizards cacti";
+    }
+
+    /* class used to place the image of the lizards in the first row and the first column*/
+    .lizards {
+      grid-area: lizards;
+    }
+
+    /* class used to place the image of the cacti in the first row and the second column*/
+    .cacti {
+      grid-area: cacti;
+    }
+
+    /* class used to adjust the size of the images in the activity */
+    img {
+      width: 380px;
+      height: 380px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the images below, count the total number of lizards and cacti, and write the sum.
+        </p>
+
+        <div class="container">
+          <div class="lizards">
+            <img
+              alt="Image in a coloring book style of a desert containing 4 lizards"
+              class="lizards"
+              exp="image that the student will have to observe and count the lizards"
+            />
+          </div>
+
+          <div class="cacti">
+            <img
+              alt="Image in a coloring book style of a desert containing 7 cacti"
+              class="cacti"
+              exp="image that the student will have to observe and count the cacti"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

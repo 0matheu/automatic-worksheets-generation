@@ -1,0 +1,56 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Beach
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+    "task": "To help students practice addition by interpreting a real-life scenario involving collecting seashells. Sofia initially collected 7 seashells and then 9 more in the afternoon. The task asks the student to add these numbers and calculate new totals with additional finds.",
+    "layout": "The activity presents a centered image showing two separate groups of seashells: 7 collected in the morning and 9 collected in the afternoon. Below the image, two questions (A and B) ask the student to calculate the total number of seashells and predict the total if more seashells are found. The structure is organized clearly to guide the student through the addition process.",
+    "answer": {
+      "A": {
+        "The student should add 7 seashells from the morning to 9 seashells from the afternoon. The result is 7 + 9 = 16.",
+      },
+      "B": {
+         "After calculating 16 seashells, the student should add 5 more seashells to the total. The result is 16 + 5 = 21.",
+      }
+    }
+  }
+
+  <html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: solid 1px; padding: 10px;">
+      <div class="activity">
+        <p exp="Sofia is collecting seashells. She found some seashells in the morning and collected more in the afternoon.">
+          Sofia is collecting seashells on the beach. In the morning, she found 7 seashells. In the afternoon, she found 9 more seashells. Below is a visual representation showing the seashells she collected.
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Centered image showing the seashells collected by Sofia in two separate groups.">
+        <img 
+          src="" 
+          alt="Illustration showing 7 seashells found in the morning and 9 more found in the afternoon."
+          style="width: 600px; height: 300px"
+          exp="Image representing the seashells Sofia collected: 7 from the morning and 9 from the afternoon."
+        />
+      </div>
+
+      <p exp="Instruction for the student to add the number of seashells found in the morning and afternoon.">
+        Now, look at the seashells and complete the information below:
+      </p>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question asking for the total number of seashells collected."><b>A)</b> How many seashells did Sofia find in total?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box where the student should write '16'."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question asking for the total number of seashells if she finds 5 more."><b>B)</b> How many seashells would Sofia have if she found 5 more in the evening?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box where the student should write '21'."></div>
+      </div>
+    </div>
+  </body>
+</html>

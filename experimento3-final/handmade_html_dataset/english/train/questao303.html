@@ -1,0 +1,85 @@
+level: 2nd year of fundamental
+learning_goals: counting, observation
+theme: Counting Animals in a Zoo
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+    "task": "To develop counting and observation skills by analyzing the number of animals in a zoo exhibit and identifying different characteristics related to them.",
+    "layout": "The activity consists of a description of the scenario at the top, providing the necessary context. Below the description, a centered image illustrates different animals in a zoo exhibit. The student will answer different counting-related questions based on the image, with answer boxes positioned as close as possible to each question.",
+    "answer": {
+        "A": "To answer correctly, the student needs to count the total number of animals in the exhibit. The correct answer is 8.",
+        "B": "To answer correctly, the student needs to count how many animals have stripes. The correct answer is 3.",
+        "C": "To answer correctly, the student needs to identify the largest animal. The correct answer is the elephant."
+    }
+}
+
+<html>
+    <head></head>
+    <style>
+        .question-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        .answer-box {
+            width: 60px;
+            height: 30px;
+            border: 1px solid black;
+            text-align: center;
+            margin-left: 10px;
+        }
+    </style>
+    </head>
+    <body>
+      <div
+        style="width: 800px; border: solid 1px; padding: 10px;"
+        exp="div containing the sheet width, which in this case is 800px"
+      >
+        <div class="activity">
+          <p
+            exp="Activity description, containing the explanation of what the student will have to do to answer the activity correctly"
+          >
+            A group of students visited the zoo and saw different animals in an exhibit. Observe the image below and answer the counting questions.
+          </p>
+        </div>
+
+        <div
+            style="display: flex; justify-content: center; margin-bottom: 20px;"
+            exp="div used to center the image in the activity"
+        >
+            <img
+              src=""
+              alt="Illustration of a zoo exhibit with 2 lions, 3 zebras, 2 giraffes, and 1 elephant."
+              style="width: 600px; height: 300px"
+              exp="Image where students need to observe and count the following animals: 2 lions, 3 zebras, 2 giraffes, and 1 elephant."
+            />
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking students to count all animals in the zoo exhibit.">
+                <b>A)</b> How many animals are in the zoo exhibit?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the total number of animals. The correct answer is 8."></div>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking students to count how many animals have stripes.">
+                <b>B)</b> How many animals in the exhibit have stripes?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the number of striped animals. The correct answer is 3 zebras."></div>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking students to identify the largest animal in the exhibit.">
+                <b>C)</b> What is the largest animal in the exhibit?
+            </p>
+            <div class="answer-box" style="width: 120px;" exp="Box where the student writes the name of the largest animal. The correct answer is the elephant."></div>
+        </div>
+
+      </div>
+    </body>
+</html>

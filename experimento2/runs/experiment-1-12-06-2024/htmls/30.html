@@ -1,0 +1,83 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of flowers in each image and calculating the total sum.",
+  "layout": "The HTML elements are organized with a div containing the sheet width, followed by a div containing the question description, and three divs containing the images of the flower beds. The question description is centered at the top, and the images are placed in a grid layout with three columns and one row.",
+  "answer": "To answer correctly, the student needs to count the number of flowers in each image (5, 7, and 4) and calculate the sum (5 + 7 + 4 = 16). The correct answer is 16."
+}
+```
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three images in a single row, and with a specific size */
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 200px;
+      grid-template-areas:
+        "img1 img2 img3";
+    }
+
+    /* class used to place the first image of the activity in the first row and the first column */
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the second image of the activity in the first row and the second column */
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to place the third image of the activity in the first row and the third column */
+    .img3 {
+      grid-area: img3;
+    }
+
+    /* class used to give the images the correct size */
+    img {
+      width: 280px;
+      height: 180px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description. Contains the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the images below and write the sum of all the flowers.
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="image in a children's painting style of a flower bed containing 5 sunflowers"
+              exp="image in which the student will have to count the sunflowers to answer how many are present in the image"
+            />
+          </div>
+
+          <div class="img2">
+            <img
+              alt="image in a children's painting style of a flower bed containing 7 sunflowers"
+              exp="image in which the student will have to count the sunflowers to answer how many are present in the image"
+            />
+          </div>
+
+          <div class="img3">
+            <img
+              alt="image in a children's painting style of a flower bed containing 4 sunflowers"
+              exp="image in which the student will have to count the sunflowers to answer how many are present in the image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

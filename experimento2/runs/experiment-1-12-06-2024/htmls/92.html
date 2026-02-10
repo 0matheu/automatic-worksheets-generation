@@ -1,0 +1,83 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of flowers Maria had initially and the number of flowers she received, and then connecting the two related images to calculate the total sum.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph that explains the task, and the bottom section contains a 2x2 grid with three images: Maria's initial flowers, the additional flowers she received, and an empty image for the result. The three images are placed in a specific layout to facilitate connection and counting.",
+  "answer": "To answer correctly, the student needs to: 1) count the number of flowers in Maria's garden in the first image (5), 2) count the additional flowers Maria received in the second image (3), 3) add the two numbers together to find the total sum (5 + 3 = 8), and 4) connect the correct images to show the calculation. The correct connection is between the first and third images. The student needs to connect the two images and write the correct result (8) in the third image."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three images in a specific arrangement */
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 200px 200px;
+      grid-template-areas:
+        "img1 img2"
+        "result img2";
+    }
+
+    /* class used to place the first image of the activity in the first cell of the first column */
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the second image of the activity in the second cell of the first column */
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to place the third image of the activity in the first cell of the second column */
+    .result {
+      grid-area: result;
+    }
+    
+    /* class used to adjust the size of the images in the activity */
+    img {
+      width: 380px;
+      height: 180px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Maria has a garden with 5 flowers and received more 3, draw in the image below the flowers Maria received and then connect the two images and write the sum in the image of the flowers.
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="image in a children's painting style of a garden with 5 sunflowers"
+              exp="image that the student will have to count the number of sunflowers present in the image, being 5"
+            />
+          </div>
+
+          <div class="img2">
+            <img
+              alt="image in a children's painting style of 3 sunflowers being delivered by a florist to a girl"
+              exp="image that the student will have to count the number of sunflowers being delivered, being 3"
+            />
+          </div>
+
+          <div class="result">
+            <img
+              alt="image in a children's panting style of 1 sunflower"
+              exp="image that the student will have to connect with the other two images, and write the sum of the sunflowers present in the image1 and image2. The correct answer is 8 sunflowers"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

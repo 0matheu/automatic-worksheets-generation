@@ -1,0 +1,1 @@
+Nessa questão serão praticados os princípios da adição. O aluno terá que contar a quantidade de pirulitos já presentes na imagem e soma-los com 5, resultando em 9, como resposta.

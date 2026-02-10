@@ -1,0 +1,51 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition, comparison
+theme: Movie Theater Ticket Sales
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+    "task": "To practice counting, addition, and comparison skills by analyzing ticket sales and answering questions about the highest-selling category and total tickets sold.",
+    "layout": "The activity consists of a description of the scenario at the top, providing the necessary context. Below the description, a centered image illustrates a ticket counter with recorded sales. The student will answer questions based on the image, with answer boxes positioned as close as possible to each question.",
+    "answer": {
+        "A": "To answer correctly, the student needs to compare the ticket sales and identify the highest-selling category. The correct answer is 'Adult Tickets: 50'.",
+        "B": "To answer correctly, the student needs to add up all ticket sales (50 + 32 + 18) to get the total. The correct answer is 100 tickets."
+    }
+}
+
+<html>
+    <head></head>
+    <body>
+      <div style="width: 800px; border: solid 1px; padding: 10px;" exp="Main container for the activity">
+        
+        <div class="activity">
+          <p exp="Activity description explaining what the student must do">
+            A cinema recorded ticket sales for a day. Look at the ticket sales report and answer the questions.
+          </p>
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image in the activity">
+            <img src="" 
+                 alt="Illustration of a ticket counter listing three categories: Adult Tickets (50), Child Tickets (32), and Senior Tickets (18)."
+                 style="width: 600px; height: 300px"
+                 exp="Image where students need to compare ticket sales and calculate the total sold." />
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking which ticket category sold the most">
+                <b>A)</b> Which type of ticket was sold the most?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the highest-selling ticket type. The correct answer is 'Adult Tickets: 50'."></div>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for the total number of tickets sold">
+                <b>B)</b> How many tickets were sold in total?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the total number of tickets. The correct answer is 100."></div>
+        </div>
+        
+      </div>
+    </body>
+</html>

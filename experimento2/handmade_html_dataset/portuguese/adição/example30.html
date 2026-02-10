@@ -1,0 +1,120 @@
+nivel: 2 ano fundamental 
+assunto: adição, contagem 
+tematica: brinquedos
+largura-folha: 600px 
+layout: várias imagens, ligar imagens
+
+Nessa questão serão trabalhados os princípios da adição e
+contagem. Essa questão consiste de 4 imagens, a primeira consiste dee uma criança
+no estilo de desenho de pintar infantil com 3 bolinhas de gude
+na mão; também estão presentes 3 imagens de bolinhas de gude contendo 
+3 bolinhas na primera, 4 na segunda e 2 na terceira. 
+O objetivo da questão é o aluno ligar a imagem da criança
+com a imagem que tem mais bolinhas de gude, e em seguida efetuar
+a soma das bolinhas que ele já tem com as bolinhas da segunda imagem,
+sendo a resposta correta 3 + 4 = 7.
+
+<html>
+  <head></head>
+  <style>
+    /* classe que será utilizada para descrever o layout da atividade, nesse caso contém quatro imagens, uma de uma criança com bolinhas, e outras 3 imagens de bolinhas, no layout de 3 linhas e 2 colunas */
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px;
+      grid-template-rows: 200px 200px 200px;
+      grid-template-areas:
+        "vazio1 bolinhas1"
+        "crianca bolinhas2"
+        "vazio2 bolinhas3";
+    }
+
+    /* classe utilizada para ajustar o tamanho da imagem e a posição da imagem no layout da atividade, sendo na segunda célula da primeira coluna */
+    .crianca {
+      grid-area: crianca;
+      width: 250px;
+      height: 300px;
+      border: 1px solid;
+    }
+
+    /* classe utilizada para ajustar a imagem das bolinhas mais a esquerda */
+    .bolinhas {
+      margin-left: 100px;
+    }
+
+    /* classe utilizada para ajustar o tamanho da imagem das bolinhas e a posição, sendo na primeira célula da segunda coluna */
+    .bolinhas1 {
+      grid-area: bolinhas1;
+      width: 120px;
+      height: 120px;
+      border: 1px solid;
+    }
+
+    /* classe utilizada para ajustar o tamanho da imagem das bolinhas e a posição, sendo na segunda célula da segunda coluna */
+    .bolinhas2 {
+      grid-area: bolinhas2;
+      width: 120px;
+      height: 120px;
+      border: 1px solid;
+    }
+
+    /* classe utilizada para ajustar o tamanho da imagem das bolinhas e a posição, sendo na terceira célula da segunda coluna */
+    .bolinhas3 {
+      grid-area: bolinhas3;
+      width: 120px;
+      height: 120px;
+      border: 1px solid;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe as imagens abaixo. Manoel tem 3 bolinhas de gude e está a procura de mais.
+          Ligue Manoel com a imagem que tem mais bolinhas de gude, em seguida escreva a soma 
+          das bolinhas que Manoel já tem com as bolinhas que ele conseguiu.
+        </p>
+
+        <div class="container">
+          <div class="vazio1"></div>
+
+          <div class="crianca" exp="div que será utilizada para ajustar a imagem do crianca para ficar no centro a esquerda">
+            <img
+              src=""
+              alt="Imagem, no estilo de desenho de pintar, de uma criança com 3 bolinhas de gude na mão"
+              exp="Imagem na qual o aluno terá que ligar com a imagem com mais bolinhas de gude e efetuar a soma"
+            />
+          </div>
+
+          <div class="bolinhas1 bolinhas" exp="div que será usada para ajustar a imagem1 das bolinhas no canto superor direito">
+            <img
+              src=""
+              alt="imagem no estilo de desenho de pintar contendo 3 bolinhas de gude"
+              exp="imagem na qual o aluno terá que contar a quantidade de bolinhas e tentar identificar se tem a maior quantidade de bolinhas. Essa imagem tem 3 bolinhas, a que tem a maior quantidade é a segunda, que tem 4 bolinhas"
+            />
+          </div>
+
+          <div class="bolinhas2 bolinhas" exp="div que será utilizada para a imagem2 das bolinhas ficar ajustada no centro a direita">
+            <img
+              src=""
+              alt="imagem no estilo de desenho de pintar contendo 4 bolinhas de gude"
+              exp="imagem na qual o aluno terá que contar a quantidade de bolinhas e tentar identificar se nessa imagem tem a maior quantidade de bolinhas. Essa é a imagem com mais bolinhas"
+            />
+          </div>
+
+          <div class="bolinhas3 bolinhas" exp="div quer será utilizada para a imagem3 ficar ajustada no canto inferior direito da imagem">
+            <img
+              src=""
+              alt="imagem no estilo de desenho de pintar contendo 2 bolinhas de gude"
+              exp="imagem na qual o aluno terá que contar a quantidade de bolinhas e tentar identificar se tem a maior quantidade de bolinhas. Essa imagem tem 2 bolinhas, a que tem a maior quantidade é a segunda, que tem 4 bolinhas"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

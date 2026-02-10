@@ -1,0 +1,51 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Cars in the National Park
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+    "task": "To practice addition using real-world contexts, students calculate the total number of vehicles entering the National Park.",
+    "layout": "Includes a descriptive paragraph and a centered blank answer box. The layout is simple and helps students focus on the calculation.",
+    "answer": "The student adds the two numbers: 132 + 189 = 321. They write 321 in the answer box to show how many vehicles entered that day."
+  }
+  <html>
+<head></head>
+<body>
+  <div style="width: 800px; border: solid 1px;" 
+       exp="Main container that defines the structure and keeps the elements aligned for a clear activity layout.">
+
+    <p exp="Description of the situation and question. Students are asked to calculate the total number of cars that entered the park by adding morning and afternoon data.">
+      On Sunday, 132 cars entered the National Park in the morning and 189 cars entered in the afternoon. How many cars entered the park that day?
+    </p>
+
+    <div style="display: flex; justify-content: center;" 
+         exp="Centers the image horizontally for better visual understanding.">
+      <img 
+        src="" 
+        alt="Illustration of a National Park entrance gate with a few cars entering during daytime." 
+        style="width: 600px; height: 350px;" 
+        exp="Image shows the entrance to a park with trees and cars driving in, representing the scenario of car entries during a weekend visit."
+      />
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-top: 30px;" 
+         exp="Text instruction placed above the answer box to guide the student on what to do.">
+      <p style="font-size: 18px;" 
+         exp='Instruction for the student saying "Write the sum here", indicating what should be written in the box below.'>
+        Write the sum here:
+      </p>
+    </div>
+
+    <!-- Answer Box -->
+    <div style="display: flex; justify-content: center; margin-top: 10px;" 
+         exp="Centers the student's answer area on the page.">
+      <div style="width: 100px; height: 100px; border: 1px solid black;" 
+           exp="Box where the student writes the total number of cars. Correct answer: 132 + 189 = 321.">
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+```json
+{
+  "task": "To practice basic addition skills by counting the total number of cakes and apples, and then connecting each child to the tray with the most items.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph that explains the task, and the bottom section contains a 2x3 grid with five images. The first row of the grid contains two images of children, and the second row contains three images of trays with cakes and apples. The images are placed in a specific layout to facilitate comparison and counting.",
+  "answer": "To answer this question correctly, the student needs to: 1) count the number of cakes and apples in each tray (3 cakes and 2 apples in the first tray, and 2 cakes and 3 apples in the second tray), 2) calculate the total number of items in each tray (5 items in the first tray, and 5 items in the second tray), and 3) identify the tray with the most items (the second tray). Finally, the student needs to connect each child to the tray with the most items. The correct answer is: the second tray in the bottom row."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing two images in a 2-line and 1-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 300px 300px;
+      grid-template-areas:
+        "img1 img2"
+        "tray1 img3"
+        "tray2 img4"
+        "tray3 img5";
+    }
+
+    /* class used to place the image of the children in the first row and the first column */
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the image of the children in the second row and the first column */
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to place the image of the tray1 in the second row and the first column */
+    .tray1 {
+      grid-area: tray1;
+    }
+
+    /* class used to place the image of the tray2 in the second row and the second column */
+    .tray2 {
+      grid-area: tray2;
+    }
+
+    /* class used to place the image of the tray3 in the second row and the third column */
+    .tray3 {
+      grid-area: tray3;
+    }
+
+    /* class used to adjust the size of the images in the activity */
+    img {
+      width: 300px;
+      height: 200px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the images below. Maria and João have just had lunch and are
+          looking for the tray with the most food, connect Maria and João to
+          the tray with the most items, then, count the total number of cakes
+          and also the total number of apples from the tray they chose.
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="image in a children's drawing style, of a child looking at 3 trays, with cakes and apples on a table"
+              exp="image that the student will have to look at and identify in which tray there are more items, being also the image that will have to be linked to the tray with the most items"
+            />
+          </div>
+
+          <div class="img2">
+            <img
+              alt="image in a children's drawing style, of a child looking at 3 trays, with cakes and apples on a table"
+              exp="image that the student will have to look at and identify in which tray there are more items, being also the image that will have to be linked to the tray with the most items"
+            />
+          </div>
+
+          <div class="tray1">
+            <img
+              alt="image in a children's drawing style of a transparent tray containing 3 cakes"
+              exp="image that the student will have to look at and identify that there are 3 cakes in the tray, being the tray with the most cakes"
+            />
+          </div>
+
+          <div class="tray2">
+            <img
+              alt="image in a children's drawing style of a transparent tray containing 2 cakes and 3 apples"
+              exp="image that the student will have to look at and identify that there are 2 cakes and 3 apples in the tray, being the tray with the most items"
+            />
+          </div>
+
+          <div class="tray3">
+            <img
+              alt="image in a children's drawing style of a transparent tray containing 3 apples"
+              exp="image that the student will have to look at and identify that there are 3 apples in the tray, being the tray with the least items"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

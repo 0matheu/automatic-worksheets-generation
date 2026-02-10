@@ -1,0 +1,110 @@
+level: 2nd year of fundamental  
+learning_goals: counting, addition  
+theme: Office Supplies Sales  
+width-sheet: 800px  
+task: observe table, write answer  
+language: en
+
+{
+    "task": "To practice counting and addition skills by calculating the total number of office supplies sold in a store.",
+    "layout": "The activity consists of a description at the top, where the student will read about the number of office supplies sold each day in a store. Below that, there is a table showing the number of pens, notebooks, and erasers sold. The student will then answer questions based on the data, performing addition operations.",
+    "answer": {
+        "A": "To answer correctly, the student needs to add the number of pens and notebooks sold on Monday (50 pens + 40 notebooks). The correct answer is 90 items sold on Monday.",
+        "B": "To answer correctly, the student needs to add the number of pens and erasers sold on Tuesday (30 pens + 25 erasers). The correct answer is 55 items sold on Tuesday.",
+        "C": "To answer correctly, the student needs to add the total number of office supplies sold over the two days (90 + 55 items). The correct answer is 145 items sold."
+    }
+}
+
+<html>
+    <head>
+        <style>
+            .container {
+                width: 800px;
+                border: solid 1px;
+                padding: 10px;
+                text-align: center;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: center;
+            }
+            th {
+                background-color: #6aa5db;
+                color: white;
+            }
+            .question-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+            .answer-box {
+                width: 100px;
+                height: 30px;
+                border: 1px solid black;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+      <div class="container">
+        
+        <div class="activity">
+          <p exp="Activity description about the sales of office supplies in a store.">
+            A store sells office supplies every week. Below is the table showing the number of pens, notebooks, and erasers sold each day. Answer the questions based on the data.
+          </p>
+        </div>
+
+        <table exp="Table showing the number of office supplies sold each day.">
+            <tr>
+                <th>Item</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+            </tr>
+            <tr>
+                <td>Pens</td>
+                <td>50</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Notebooks</td>
+                <td>40</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Erasers</td>
+                <td>0</td>
+                <td>25</td>
+            </tr>
+        </table>
+
+        <div class="question-container">
+            <p exp="Question asking for the total number of pens and notebooks sold on Monday.">
+                <b>A)</b> How many items were sold in total on Monday?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the total number of items sold on Monday. The correct answer is 90."></div>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for the total number of pens and erasers sold on Tuesday.">
+                <b>B)</b> How many items were sold in total on Tuesday?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the total number of items sold on Tuesday. The correct answer is 55."></div>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for the total number of items sold over the two days.">
+                <b>C)</b> What is the total number of items sold over the two days?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the total number of items sold over the two days. The correct answer is 145."></div>
+        </div>
+        
+      </div>
+    </body>
+</html>

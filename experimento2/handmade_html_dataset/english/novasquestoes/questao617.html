@@ -1,0 +1,56 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: clothes
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+    "task": "To help students practice addition by interpreting a real-life scenario involving clothes drying on a clothesline. Marcos initially had 14 clothes hanging, and the task asks the student to add back clothes to the line and calculate the total.",
+    "layout": "The activity presents a centered image showing the clothesline with 14 clothes initially. After that, 5 clothes are added and then 3 more. Below the image, two questions (A and B) are aligned side by side with their respective answer boxes to the right. The structure is organized clearly to guide the student through the addition process.",
+    "answer": {
+      "A": { "The student should add 5 pieces of clothing to the initial total of 14. The result is 14 + 5 = 19.",
+      },
+      "B": {"After adding 5 pieces, the student should add 3 more pieces to the total. The result is 19 + 3 = 22.",
+      
+      }
+    }
+  }
+  
+
+
+<html>
+<head></head>
+<body>
+  <div style="width: 800px; border: solid 1px; padding: 10px;">
+    <div class="activity">
+      <p exp="This activity helps students practice addition by interpreting a real-life scenario involving clothes drying on a clothesline. Marcos initially had 14 clothes hanging, and the task asks the student to add back clothes to the line and calculate the total.">
+        Marcos had 14 pieces of clothing on the clothesline. He decided to add 5 more pieces of clothing to the line. Later, he added 3 more pieces. Let's calculate the total number of clothes on the line after these changes.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Centered image showing clothes on a clothesline.">
+      <img 
+        src="" 
+        alt="Illustration showing 14 clothes on a clothesline with 5 pieces added and 3 pieces added again."
+        style="width: 600px; height: 300px"
+        exp="The image shows the clothesline with 14 clothes initially, 5 pieces added, and 3 more added."
+      />
+    </div>
+
+    <p exp="Instruction for the student to perform addition and find the total number of clothes after adding the 5 and then the 3 pieces.">
+      Now, look at the clothes and complete the information below:
+    </p>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question asking to find the total number of clothes after adding the 5 pieces."><b>A)</b> What is the total number of clothes after adding 5 pieces to the clothesline?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box where the student should write '19'."></div>
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question asking to calculate the total number of clothes after adding 3 more pieces to the clothesline."><b>B)</b> What is the total number of clothes after adding 3 more pieces to the clothesline?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box where the student should write '22'."></div>
+    </div>
+  </div>
+</body>
+</html>

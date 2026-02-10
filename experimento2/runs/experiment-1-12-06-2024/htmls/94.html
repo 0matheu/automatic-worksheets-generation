@@ -1,0 +1,100 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of balls the clown had at the beginning and the number of balls he received, and then adding them up.",
+  "layout": "The question is divided into a 2-line and 3-column grid. The first row contains an empty cell, an image of a clown with 3 juggling balls in the center, and another empty cell. The second row contains an image of 2 juggling balls in the left-center cell, and an image of 1 juggling ball in the right-center cell. The two rows are aligned horizontally.",
+  "answer": "To answer this question correctly, the student needs to observe the two images of juggling balls and count the total number of balls present: 3 balls in the first image, and 2 balls in the second image. The student needs to understand that the clown initially had 3 juggling balls and received 2 more. The student needs to add the two numbers together to get 5. The student needs to write the correct answer: 5."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class used to organize the layout of the activity, in this case containing three images in a 2-line and 3-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 300px 300px;
+      grid-template-areas:
+        "empty1 clown empty2"
+        "img1 clown img2";
+    }
+
+    /* class used to place the image of the clown in the center left of the first and second rows */
+    .clown {
+      grid-area: clown;
+      width: 300px;
+      height: 600px;
+    }
+
+    /* class used to place the image of the balls in the center left of the first row */
+    .balls1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the image of the balls in the center right of the second row */
+    .balls2 {
+      grid-area: img2;
+    }
+
+    /* class used to place the image of the balls in the center right of the first row */
+    .img1 {
+      margin-left: 100px;
+    }
+
+    /* class used to place the image of the balls in the center left of the second row */
+    .img2 {
+      margin-right: 100px;
+    }
+
+    /* class used to adjust the size of the images in the activity */
+    img {
+      width: 180px;
+      height: 180px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          A clown is juggling with 3 balls and in the other image there are 2 balls, how many balls in total are being juggled? The clown is also happy because he received more balls, and now wants to know how many balls he has in total, can you help him?
+        </p>
+
+        <div class="container">
+          <div class="empty1"></div>
+
+          <div class="clown" exp="div used to adjust the image of the clown to the center left of the first and second rows">
+            <img
+              src=""
+              alt="image in a coloring book style of a clown juggling 3 balls"
+              exp="image that the student will have to count the number of balls in the clown's hand, being 3"
+            />
+          </div>
+
+          <div class="balls1 img1" exp="div used to adjust the image of the balls to the center left of the first row">
+            <img
+              src=""
+              alt="image in a coloring book style of 3 juggling balls"
+              exp="image that the student will have to count the number of balls, being 3"
+            />
+          </div>
+
+          <div class="balls2 img2" exp="div used to adjust the image of the balls to the center right of the second row">
+            <img
+              src=""
+              alt="image in a coloring book style of 2 juggling balls"
+              exp="image that the student will have to count the number of balls, being 2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

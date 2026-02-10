@@ -1,0 +1,57 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of flowers in each image and calculating the total sum.",
+  "layout": "The HTML elements are organized with a div containing the sheet width, followed by a div containing the question description, and three divs containing the images of the flower beds. The images are placed in a specific layout to facilitate comparison and counting.",
+  "answer": "To correctly answer this activity, the student needs to: 1) count the number of flowers in the first image (5), 2) count the number of flowers in the second image (7), 3) count the number of flowers in the third image (4), 4) add the three numbers together to find the total sum. The correct answer is: 5 + 7 + 4 = 16. The student needs to observe the images, count the flowers, and perform a simple addition operation to get the correct answer."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description. Contains the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the images below and add up all the flowers from the three flower beds.
+        </p>
+        <div
+          style="display: flex; justify-content: space-around"
+          exp="div used to organize the images of the flower beds. It contains three images, each in a separate div, organized with a space between them"
+        >
+          <div>
+            <img
+              src=""
+              alt="Image in a coloring book style of a flower bed with 5 sunflowers"
+              style="width: 300px; height: 200px"
+              exp="Image that the student will have to observe and count how many sunflowers are present, being 5"
+            />
+          </div>
+          <div>
+            <img
+              src=""
+              alt="Image in a coloring book style of a flower bed with 7 sunflowers"
+              style="width: 300px; height: 200px"
+              exp="Image that the student will have to observe and count how many sunflowers are present, being 7"
+            />
+          </div>
+          <div>
+            <img
+              src=""
+              alt="Image in a coloring book style of a flower bed with 4 sunflowers"
+              style="width: 300px; height: 200px"
+              exp="Image that the student will have to observe and count how many sunflowers are present, being 4"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

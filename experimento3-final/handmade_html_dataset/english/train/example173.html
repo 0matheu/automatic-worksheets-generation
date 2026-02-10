@@ -1,0 +1,61 @@
+level: 2nd year fundamental
+learning_goals: addition
+theme: shopping 
+sheet_width: 600px
+task: observe image, write answer
+language: en
+
+
+{
+  task: "Observe the image, calculate how much Raul spent, and determine the new total if he buys an additional item.",
+  "layout": "The activity is structured with a description at the top explaining the task. Below the description, an image displays Raul making a purchase. Following the image, there are questions prompting the student to calculate the total spent and an additional cost scenario.",
+  "answer": "A) To correctly answer this question, the student will add the prices of the t-shirt and the book and write the total spent in the box (30). B) To correctly answer this question, the student will add 10 to the previous total (30) and write the new total in the box (40)."
+}
+
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px; padding: 10px;"
+      exp="This div acts as the main container for the activity. It sets a fixed width of 600px and uses padding for spacing inside the container."
+    >
+      <div class="activity" style="width: 100%;">
+        <p
+          exp="This paragraph provides a clear and concise description of the task. It explains that the student needs to analyze the purchase scenario and answer the questions."
+        >
+          Raul bought a t-shirt and a book. The t-shirt costs $20, and the book costs $10. Observe the image and answer the questions below.
+        </p>
+
+        <div
+          style="display: flex; justify-content: center; margin-bottom: 20px;"
+          exp="This div uses flexbox to horizontally center the image of the activity."
+        >
+          <img
+            src=""
+            alt="Illustration of Raul at a store counter, purchasing a t-shirt and a book. 
+                 The t-shirt is labeled with a price of $20, and the book is labeled with a price of $10. 
+                 Raul is seen handing money to a cashier while a shopping receipt is visible."
+            style="width: 400px; height: auto;"
+            exp="This image shows Raul purchasing a t-shirt and a book, handing a bill to the cashier. The price of each item is visible (t-shirt: $20, book: $10), allowing students to calculate the total spent and perform an addition-related counting task."
+          />
+        </div>
+
+        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+          <p style="margin-right: 10px;">A) How much did Raul spend?</p>
+          <div style="width: 100px; height: 30px; border: 1px solid black; text-align: center;"
+            exp="Box where the student writes the total amount Raul spent. The correct answer is '30'."
+          ></div>
+        </div>
+
+        <div style="display: flex; align-items: center;">
+          <p style="margin-right: 10px;">B) If Raul buys another item costing $10, how much will he spend in total?</p>
+          <div style="width: 100px; height: 30px; border: 1px solid black; text-align: center;"
+            exp="Box where the student writes the new total if Raul buys an additional item costing $10. The correct answer is '40'."
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+          

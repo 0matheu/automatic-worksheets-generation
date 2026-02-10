@@ -1,0 +1,73 @@
+level: 2nd year fundamental,
+learning_goals: counting
+theme: toys
+sheet_width: 600px
+task: observe image, write answer
+language: en
+
+
+{
+"task": "Observe the image, count the number of toys in each drawing, and answer the questions about the toy collections.",
+"layout": "The activity is structured with a description at the top explaining the task. Below the description, an image displays three toy collections labeled as Lucas, Maria, and Tom. Following the image, there are questions prompting the student to count, compare, and write their answers in the provided boxes.",
+"answer": {
+    "A": "To correctly answer this question, the student will count the number of toys in each drawing and write the correct number in the box: Lucas (5), Maria (8), Tom (10).",
+    "B": "The correct answer is 'Tom's collection' because it has the most toys (10).",
+    "C": "Maria's collection has 3 more toys than Lucas' collection, so the correct answer is '3'."
+}
+}
+
+    <html>
+      <head></head>
+      <body>
+        <div
+          style="width: 600px; border: solid 1px; padding: 10px;"
+          exp="This div acts as the main container for the activity. It sets a fixed width of 600px and uses padding for spacing inside the container."
+        >
+          <div class="activity" style="width: 100%;">
+            <p
+              exp="This paragraph provides a clear and concise description of the task. It explains that the student needs to count the number of toys in each drawing and answer the questions."
+            >
+              Lucas, Maria, and Tom represented in a drawing all the toys they have at home. Count the toys in each drawing and answer the questions.
+            </p>
+    
+            <div
+              style="display: flex; justify-content: center; margin-bottom: 20px;"
+              exp="This div uses flexbox to horizontally center the image of the activity."
+            >
+              <img
+                src=""
+                alt="Illustration of three groups of toys representing the collections of Lucas, Maria, and Tom.
+                     Lucas' collection, on the left, contains 5 toys, including a toy car and a teddy bear.
+                     Maria's collection, in the center, contains 8 toys, including a doll, a ball, and building blocks.
+                     Tom's collection, on the right, contains 10 toys, including a robot, a toy truck, and a puzzle.
+                     Each collection is neatly arranged and labeled with the respective names of the children."
+                style="width: 400px; height: auto;"
+                exp="This image shows three toy collections labeled as Lucas, Maria, and Tom. Each collection has a different number of toys, prompting students to count, compare, and answer questions."
+              />
+            </div>
+    
+            <div style="display: flex; align-items: center; margin-bottom: 10px;">
+              <p style="margin-right: 10px;">A) Write in the box the total number of toys in each drawing.</p>
+              <div style="width: 100px; height: 30px; border: 1px solid black; text-align: center;"
+                exp="Box where the student writes the total number of toys in each collection. Correct answers: Lucas (5), Maria (8), Tom (10)."
+              ></div>
+            </div>
+    
+            <div style="display: flex; align-items: center; margin-bottom: 10px;">
+              <p style="margin-right: 10px;">B) Which collection has the most toys?</p>
+              <div style="width: 100px; height: 30px; border: 1px solid black; text-align: center;"
+                exp="Box where the student writes the name of the collection with the most toys. The correct answer is 'Tom's collection'."
+              ></div>
+            </div>
+    
+            <div style="display: flex; align-items: center;">
+              <p style="margin-right: 10px;">C) How many more toys does Maria's collection have compared to Lucas' collection?</p>
+              <div style="width: 100px; height: 30px; border: 1px solid black; text-align: center;"
+                exp="Box where the student writes the difference in the number of toys between Maria's and Lucas' collections. The correct answer is '3'."
+              ></div>
+            </div>
+          </div>
+        </div>
+      </body>
+    </html>
+    

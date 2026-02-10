@@ -1,0 +1,102 @@
+```json
+{
+  "task": "To practice basic addition skills by counting and adding the number of cakes and glasses of juice in two images and writing the results.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph that explains the task, and the bottom section contains a 2x2 grid with four cells. The first row of the grid contains two cells, with an image of a tray of 5 cakes in the first cell, and an empty cell in the second cell. The second row of the grid also contains two cells, with an image of 3 glasses of juice on a tray in the first cell, and an empty cell in the second cell. The images are placed in the cells of the grid, and the grid is styled with borders to separate the cells.",
+  "answer": "To answer this question correctly, the student needs to observe the two images and count the number of cakes in the first image (5), and the number of glasses of juice in the second image (3). The student needs to add the two numbers together to get 8. The student needs to write the result (8) in the empty third cell of the first row."
+}
+```
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing two images in a 2x2 grid */
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 400px 400px;
+      grid-template-areas:
+        "img1 img2"
+        "img3 img4";
+    }
+
+    /* class used to place the image of the tray with 5 cakes in the first cell of the first column */
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the image of the tray with 3 glasses of juice in the second cell of the first column */
+    .img2 {
+      grid-area: img3;
+    }
+
+    /* class used to place the image in the second cell of the first column */
+    .img3 {
+      grid-area: img2;
+    }
+
+    /* class used to place the image in the second cell of the second column */
+    .img4 {
+      grid-area: img4;
+    }
+
+    /* class used to give the size for the images in the activity */
+    img {
+      width: 390px;
+      height: 390px;
+    }
+
+    /* class used to draw the image layout, with two images in a 2x2 grid */
+    .img1 {
+      border-right: 1px solid;
+      border-bottom: 1px solid;
+    }
+
+    /* class used to draw the image layout, with two images in a 2x2 grid */
+    .img2 {
+      border-bottom: 1px solid;
+    }
+
+    /* class used to draw the image layout, with two images in a 2x2 grid */
+    .img3 {
+      border-right: 1px solid;
+      border-bottom: 1px solid;
+    }
+
+    /* class used to draw the image layout, with two images in a 2x2 grid */
+    .img4 {
+      border-bottom: 1px solid;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the images below. In the first image, count the number of cakes and write. In the second image, count the number of glasses of juice and write. Then, add the two quantities.
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="image in a coloring book style of a tray containing 5 cakes"
+              exp="image that the student will have to observe and count the number of cakes present"
+            />
+          </div>
+
+          <div class="img3">
+            <img
+              alt="image in a coloring book style of a tray containing 3 glasses of juice"
+              exp="image that the student will have to observe and count the number of glasses of juice present"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

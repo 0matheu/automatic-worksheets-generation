@@ -1,0 +1,127 @@
+level: 2nd year of fundamental 
+learning goals: addition, counting 
+theme: toys
+width-sheet: 600px 
+task: observe images, link items
+language: en
+
+{
+  "task": "To practice counting and basic addition skills by observing images and linking a child with an image that has more balls, learning to count and perform simple arithmetic operations.",
+  "layout": "The layout is divided into two main sections. The top section contains a paragraph that explains the task, providing clear instructions for the students. Below this, the bottom section consists of a grid layout organized into three rows and two columns. In the first row, there is an empty cell in the left column and an image of 3 balls in the right column. The second row features an image of a child with 3 balls in the left column alongside another image of 4 balls in the right column. In the third row, there is again an empty cell in the left column and an image of 2 balls in the right column. ",
+  "answer": "To answer correctly, the student needs to observe the images and count the number of balls in each image. The student needs to identify the image with the largest number of balls (4 balls) and link it with the image of the child. Then, the student needs to add the number of balls the child already has (3) with the number of balls in the linked image (4) to get 7. The student must write the result (7) in the answer box provided. It is important that the student writes the answer only in the designated answer box located below the images."
+}
+
+<html>
+  <head></head>
+  <style>
+    /* classe que descreve o layout da atividade, contendo quatro imagens: uma do menino com bolas e três outras imagens de bolas, em um layout de 3 linhas e 2 colunas */
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px;
+      grid-template-rows: 200px 200px 200px;
+      grid-template-areas:
+        "empty1 balls1"
+        "child balls2"
+        "empty2 balls3";
+    }
+
+    /* classe usada para ajustar a posição da imagem do menino na atividade */
+    .child {
+      grid-area: child;
+    }
+
+    /* classe usada para ajustar o tamanho da imagem do menino */
+    .child img {
+      width: 250px;
+      height: 300px;
+    }
+
+    /* classe usada para ajustar a posição das imagens das bolas à direita */
+    .balls {
+      margin-left: 100px;
+    }
+
+    /* classe usada para ajustar a posição da primeira imagem de bolas (topo direito) */
+    .balls1 {
+      grid-area: balls1;
+    }
+
+    /* classe usada para ajustar a posição da segunda imagem de bolas (centro direito) */
+    .balls2 {
+      grid-area: balls2;
+    }
+
+    /* classe usada para ajustar a posição da terceira imagem de bolas (inferior direito) */
+    .balls3 {
+      grid-area: balls3;
+    }
+
+    /* classe usada para ajustar o tamanho das imagens de bolas */
+    .balls img {
+      width: 160px;
+      height: 160px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div que contém a largura da atividade, neste caso 600px"
+    >
+      <div class="activity" style="width: 600px">
+        <p
+          exp="Descrição da atividade, explicando o que o aluno deverá fazer para resolver corretamente"
+        >
+          Observe as imagens abaixo. Manuel tem 3 bolas e está procurando mais.
+          Relacione Manuel com a imagem que contém mais bolas e depois escreva a soma 
+          das bolas que Manuel já tem com as que ele encontrou.
+        </p>
+
+        <div class="container">
+          <div class="empty1"></div>
+
+          <div class="child" exp="div usada para posicionar a imagem do menino à esquerda, centralizada verticalmente">
+            <img
+              src=""
+              alt="Imagem, em estilo desenho infantil, de um menino segurando 3 bolas"
+              exp="Imagem que o aluno deve relacionar com a imagem com mais bolas e realizar a soma"
+            />
+          </div>
+
+          <div class="balls1 balls" exp="div usada para posicionar a primeira imagem de bolas no canto superior direito">
+            <img
+              src=""
+              alt="Imagem em estilo infantil contendo 3 bolas"
+              exp="Imagem em que o aluno deve contar as bolas e verificar se é a maior quantidade. Esta imagem possui 3 bolas, a maior quantidade está na segunda imagem, que tem 4 bolas"
+            />
+          </div>
+
+          <div class="balls2 balls" exp="div usada para posicionar a segunda imagem de bolas no centro direito">
+            <img
+              src=""
+              alt="Imagem em estilo infantil contendo 4 bolas"
+              exp="Imagem em que o aluno deve contar as bolas e identificar a maior quantidade. Esta é a imagem com mais bolas"
+            />
+          </div>
+
+          <div class="balls3 balls" exp="div usada para posicionar a terceira imagem de bolas no canto inferior direito">
+            <img
+              src=""
+              alt="Imagem em estilo infantil contendo 2 bolas"
+              exp="Imagem em que o aluno deve contar as bolas e verificar se é a maior quantidade. Esta imagem possui 2 bolas, a maior quantidade está na segunda imagem, que tem 4 bolas"
+            />
+          </div>
+        </div>
+
+        <p exp="Descrição de onde o aluno escreverá a resposta" style="text-align: center;">
+          Escreva na caixa abaixo a soma total após relacionar Manuel com a imagem correta:
+        </p>
+        <div style="display: flex; justify-content: center;" exp="div usada para centralizar a caixa de resposta">
+          <div
+            style="width: 100px; height: 100px; border: 1px solid black;"
+            exp="Caixa onde o aluno escreverá a resposta, neste caso 7"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

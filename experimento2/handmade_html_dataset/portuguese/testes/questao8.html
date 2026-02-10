@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head></head>
+  <style>
+    /* Classe que será usada para descrever o layout da atividade, contendo três imagens de pérolas: uma de um mergulhador, uma com 5 pérolas e outra com 4 pérolas, além de um espaço para o aluno conectar e escrever o resultado da soma */
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px;
+      grid-template-rows: 300px 300px;
+      grid-template-areas:
+        "diver pearls1"
+        "num1 pearls2";
+    }
+
+    /* Classe que será usada para posicionar a imagem do mergulhador na primeira linha e primeira coluna */
+    .diver {
+      grid-area: diver;
+    }
+
+    /* Classe que será usada para posicionar a imagem das pérolas na primeira linha e segunda coluna */
+    .pearls1 {
+      grid-area: pearls1;
+    }
+
+    /* Classe que será usada para posicionar a imagem das pérolas na segunda linha e primeira coluna */
+    .pearls2 {
+      grid-area: pearls2;
+    }
+
+    /* Classe usada para dar espaço entre as imagens */
+    .space {
+      margin-left: 100px;
+    }
+
+    /* Classe usada para definir o tamanho das imagens */
+    img {
+      width: 240px;
+      height: 240px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="Div contendo a largura da folha, que neste caso é de 600px."
+    >
+      <div class="activity" style="width: 600px">
+        <p
+          exp="Descrição da atividade, contendo a explicação do que o aluno precisará fazer para responder corretamente."
+        >
+          Observe a imagem abaixo do mergulhador de pérolas, conecte-a com a imagem que contém 4 pérolas e escreva a soma das duas imagens de pérolas.
+        </p>
+
+        <div class="container">
+          <div class="diver" exp="Div que será usada para posicionar a imagem do mergulhador na primeira linha e primeira coluna">
+            <img
+              class=""
+              src=""
+              alt="Imagem no estilo de um livro para colorir de uma pessoa mergulhando para coletar pérolas, com 4 pérolas já presentes na imagem."
+              exp="Imagem que o aluno deve observar e conectar com a imagem das pérolas."
+            />
+          </div>
+
+          <div class="pearls1 space" exp="Div que será usada para posicionar a imagem das pérolas na primeira linha e segunda coluna">
+            <img
+              class=""
+              src=""
+              alt="Imagem no estilo de pintura infantil contendo 5 pérolas."
+              exp="Imagem que o aluno deve observar, contar a quantidade de pérolas e somar às 4 pérolas da outra imagem."
+            />
+          </div>
+
+          <div class="pearls2 space" exp="Div que será usada para posicionar a imagem das pérolas na segunda linha e primeira coluna">
+            <img
+              class=""
+              src=""
+              alt="Imagem no estilo de pintura infantil contendo 4 pérolas."
+              exp="Imagem que o aluno deve observar e apenas contar a quantidade de pérolas."
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

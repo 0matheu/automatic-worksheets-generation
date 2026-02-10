@@ -1,0 +1,59 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Steps Climbed
+width-sheet: 800px
+task: observe images, write answer
+language: en
+
+
+
+{
+  "task": "To help students practice counting and basic addition by analyzing a real-life context: the number of steps Maria climbs. Students must calculate how many total steps Maria will have climbed after adding more steps to her current total.",
+  "layout": "The activity presents a situation where Maria has already climbed 10 steps. Two subquestions ask students to add more steps (3 and 5) to find out the total climbed. Visual step markers accompany the questions to support comprehension and visual learning.",
+  "answer": {
+    "A": "To solve this, the student must start with 10 steps and add 3 more. 10 + 3 = 13. The correct answer is 13.",
+    "B": "To solve this, the student must start with 10 steps and add 5 more. 10 + 5 = 15. The correct answer is 15."
+  }
+}
+
+<html>
+<head>
+  <style>
+    .container { width: 800px; border: solid 2px #555; padding: 20px; font-family: Arial, sans-serif; background-color: #f9f9f9; }
+    .activity { margin-bottom: 20px; }
+    .question-container { display: flex; align-items: center; justify-content: space-between; margin: 15px 0; }
+    .answer-box { width: 150px; height: 30px; border: 2px solid #333; text-align: center; background-color: #fff; }
+    img { width: 140px; height: auto; margin: 10px; border: 1px solid #ccc; background-color: #eee; padding: 5px; }
+    .image-row { display: flex; justify-content: center; align-items: center; gap: 15px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="activity">
+      <p exp="This paragraph introduces a real-life situation where Maria is climbing stairs and helps children apply addition to a relatable context.">
+        Maria is climbing a staircase. She has already climbed <b>10 steps</b>. She now plans to climb <b>3 more steps</b>, and then <b>5 more steps</b>. Let’s help her find out how many steps she will have climbed in total after each part.
+      </p>
+    </div>
+
+    <div class="image-row" exp="This row of images visually represents the number of steps Maria has climbed: starting with 10, then adding 3 (making 13), and then adding 5 (making 15). This helps children connect addition with concrete quantities.">
+      <img src="" alt="Illustration of 10 staircase steps climbed by Maria" exp="Image of a stair with 10 highlighted steps to show Maria’s initial progress." />
+      <img src="" alt="Illustration of 13 staircase steps showing 3 more added to the 10" exp="Visual showing 13 steps in total, combining the 10 steps Maria had already climbed with 3 more steps." />
+      <img src="" alt="Illustration of 15 staircase steps showing 5 more added to the 10" exp="Visual showing 15 steps in total, combining the 10 steps already climbed with 5 additional steps." />
+    </div>
+
+    <div class="question-container" exp="This is the first subquestion, prompting students to perform the addition 10 + 3. The layout encourages active problem solving.">
+      <p exp="This question encourages students to calculate how many steps Maria will have climbed after adding 3 steps to her initial 10 steps.">
+        <b>A)</b> How many steps will Maria have climbed if she adds <b>3</b> more steps to the 10 steps she already climbed?
+      </p>
+      <div class="answer-box" exp="The answer box where students should write the result of 10 + 3. The expected answer is 13."></div>
+    </div>
+
+    <div class="question-container" exp="This is the second subquestion, prompting students to perform the addition 10 + 5. Again, students use visual and numerical reasoning to solve.">
+      <p exp="This question asks how many steps Maria will have climbed in total if she adds <b>5</b> more steps to her previous 10 steps.">
+        <b>B)</b> How many steps will Maria have climbed if she adds <b>5</b> more steps to the 10 steps she already climbed?
+      </p>
+      <div class="answer-box" exp="The answer box where students should write the result of 10 + 5. The expected answer is 15."></div>
+    </div>
+  </div>
+</body>
+</html>

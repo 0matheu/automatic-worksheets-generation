@@ -1,0 +1,68 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition, comparison
+theme: Cooking Festival Attendance
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+    "task": "To practice counting, addition, and comparison skills by analyzing the number of people attending different cooking workshops and answering questions about the most attended session and total participants.",
+    "layout": "The activity consists of a description of the scenario at the top, providing the necessary context. Below the description, a centered image illustrates a list of cooking workshops with their attendance numbers. The student will answer questions based on the image, with answer boxes positioned as close as possible to each question.",
+    "answer": {
+        "A": "To answer correctly, the student needs to compare the attendance numbers and identify the most attended workshop. The correct answer is 'Baking Workshop: 220 participants'.",
+        "B": "To answer correctly, the student needs to add up all the attendees (220 + 140 + 95) to get the total. The correct answer is 455 participants."
+    }
+}
+
+<html>
+    <head>
+        <style>
+            .question-container {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                width: 100%;
+                margin-bottom: 5px;
+            }
+            .answer-box {
+                width: 80px;
+                height: 25px;
+                border: 1px solid black;
+                text-align: center;
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+    <body>
+      <div style="width: 800px; border: solid 1px; padding: 10px;" exp="Main container for the activity">
+        
+        <div class="activity">
+          <p exp="Activity description explaining what the student must do">
+            A cooking festival was held in the city, featuring different workshops. Look at the participation numbers and answer the questions.
+          </p>
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image in the activity">
+            <img src="" 
+                 alt="Illustration of a cooking festival participation list showing the number of attendees in different workshops: Baking Workshop (220 participants), Pasta Making (140 participants), and Dessert Decoration (95 participants)."
+                 style="width: 600px; height: 300px"
+                 exp="Image where students need to compare the number of attendees and calculate the total." />
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking which workshop had the most participants">
+                <b>A)</b> Which workshop had the highest number of participants?
+                <div class="answer-box" exp="Box where the student writes the most attended workshop. The correct answer is 'Baking Workshop: 220 participants'."></div>
+            </p>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for the total number of participants in all workshops">
+                <b>B)</b> How many people attended the cooking festival in total?
+                <div class="answer-box" exp="Box where the student writes the total number of attendees. The correct answer is 455."></div>
+            </p>
+        </div>
+        
+      </div>
+    </body>
+</html>

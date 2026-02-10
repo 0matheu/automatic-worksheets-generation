@@ -1,0 +1,48 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Science Fair
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+    "task": "To practice addition with real-life context by calculating how many bicycles were parked during the science fair. This helps students understand how to apply math in everyday situations.",
+    "layout": "The layout contains a clear story problem, an image showing a schoolyard with a bike rack during a science fair, and a central answer box under the instruction 'Write the sum here'. This supports comprehension and engagement.",
+    "answer": "To solve this, the student needs to add the number of bicycles parked in the morning (58) and in the afternoon (76). So, 58 + 76 = 134. The student should write 134 in the answer box."
+  }
+  
+<html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: solid 1px;"
+         exp="Main container that holds the entire activity content, ensuring alignment and clear structure.">
+      
+      <p exp="Contextual question asking the student to calculate the total number of bicycles parked during a science fair. Helps students practice addition in a real-world setting.">
+        During the science fair, 58 bicycles were parked in the morning and 76 more were parked in the afternoon. How many bicycles were parked in total that day?
+      </p>
+
+      <div style="display: flex; justify-content: center;" 
+           exp="Centers the image to support the visual context of the problem.">
+        <img 
+          src="" 
+          alt="Illustration of a schoolyard during a science fair with a bike rack partly filled with bicycles." 
+          style="width: 600px; height: 350px;" 
+          exp="Visual shows a science fair scene with colorful stands, students, and a bicycle rack with some parked bikes. Reinforces the real-life scenario of the math problem."
+        />
+      </div>
+
+      <p style="text-align: center; font-weight: bold; margin-top: 20px;" 
+         exp="Instruction placed before the answer box to guide the student on what to do.">
+        Write the sum here:
+      </p>
+
+      <div style="display: flex; justify-content: center;" 
+           exp="Centers the answer box on the page for clarity and focus.">
+        <div style="width: 100px; height: 100px; border: 1px solid black;" 
+             exp="Answer box where the student will write the total number of bicycles parked. The correct answer is 134, from 58 + 76.">
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

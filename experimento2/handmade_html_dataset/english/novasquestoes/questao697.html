@@ -1,0 +1,128 @@
+level: 2nd year of fundamental
+learning_goals: addition, counting
+theme: Game
+width-sheet: 800px
+task: observe images, write answer
+language: en
+
+{
+  "task": "Look at the game board. Count the number of green pieces on it. Then, match it with the pieces in the baskets. Add both amounts and write the total number in the box below.",
+  "layout": "One question followed by images of the game board and baskets. The student should count and match the green pieces to the baskets. A central box is provided for the answer.",
+  "answer": {
+    "The student must add 4 green pieces from the game board and 7 green pieces from Basket B: 4 + 7 = 11. But since we want a different result, we will change the values to 5 from the game board and 8 from Basket A: 5 + 8 = 13. So, the correct answer is 13."
+  }
+}
+  
+  
+
+
+<html>
+  <head></head>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 280px 200px 150px;
+      gap: 10px;
+      justify-items: center;
+      align-items: center;
+      width: 800px;
+      margin: auto;
+    }
+
+    .board {
+      grid-column: 1 / span 3;
+      text-align: center;
+    }
+
+    .board img {
+      width: 250px;
+      height: 180px;
+      border: 1px solid;
+      object-fit: contain;
+    }
+
+    .pieces {
+      width: 200px;
+      height: 150px;
+      border: 1px solid black;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .pieces img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .answer-container {
+      grid-column: 2 / 3;
+      text-align: center;
+    }
+
+    .answer-box {
+      width: 100px;
+      height: 100px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 24px;
+    }
+  </style>
+
+  <body>
+    <div style="width: 800px; margin: auto; border: 1px solid black; padding: 20px;">
+      <p style="text-align: center;" exp="Instruction explaining the task of counting the pieces on the board.">
+        Look at the game board. Count the number of red and blue pieces on it. Then, match it with the pieces in the other images. Add both amounts and write the total number in the box below.
+      </p>
+
+      <div class="container">
+        <div class="board" exp="This div contains the image of the game board. It is centered on the top row.">
+          <img
+            src=""
+            alt="Game board with 3 red pieces and 2 blue pieces"
+            exp="This image shows the game board with 3 red pieces and 2 blue pieces visible. The student should count these pieces."
+          />
+        </div>
+
+        <div class="pieces" exp="Basket A image, which contains 4 red pieces. Student must observe and compare.">
+          <img
+            src=""
+            alt="Basket with 4 red pieces"
+            exp="Image representing Basket A, which contains 4 red pieces."
+          />
+        </div>
+
+        <div class="pieces" exp="Basket B image, which contains 5 blue pieces. This is the correct one to match.">
+          <img
+            src=""
+            alt="Basket with 5 blue pieces"
+            exp="Image representing Basket B. Contains 5 blue pieces and should be matched with the game board."
+          />
+        </div>
+
+        <div class="pieces" exp="Basket C image, with 6 red pieces.">
+          <img
+            src=""
+            alt="Basket with 6 red pieces"
+            exp="Image representing Basket C. Contains 6 red pieces, but this is not the correct one to match."
+          />
+        </div>
+
+        <div class="answer-container" exp="This section contains the instructions and answer box.">
+          <p exp="Student is reminded to perform the addition and write the total in the box.">
+            Write the total number of pieces (game board + fullest basket):
+          </p>
+          <div class="answer-box" exp="Box where the student will write the answer (should be 9)."></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

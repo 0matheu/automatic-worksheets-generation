@@ -1,0 +1,72 @@
+```json
+{
+  "task": "To practice basic addition skills by counting the number of musical instruments in two images and drawing the result.",
+  "layout": "The question is divided into three main sections. The top section contains a paragraph describing the task. The middle section contains a 2x1 grid with two images of musical instruments. The bottom section is empty, reserved for the student to draw the result of the addition.",
+  "answer": "To answer correctly, the student needs to count the number of violins in the first image (3) and the number of guitars in the second image (2), and then add them together to get 5. The student needs to write the result (5) in the space provided."
+}
+```
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing two images in a 2-line and 1-column layout*/
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 300px 300px;
+      grid-template-areas:
+        "img1"
+        "img2";
+    }
+
+    /* class used to place the first image of the violins in the first row and the first column*/
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the second image of the guitars in the second row and the first column*/
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to adjust the size of the images in the activity */
+    img {
+      width: 400px;
+      height: 250px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Count the total number of musical instruments in the images below and write the result.
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="children's painting style image with 3 violins hanging on a support in a music classroom"
+              exp="image in which the student will have to count the number of violins present, being 3"
+            />
+          </div>
+
+          <div class="img2">
+            <img
+              alt="children's painting style image with 2 guitars leaning against a wall in a music classroom"
+              exp="image in which the student will have to count the number of guitars present, being 2"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

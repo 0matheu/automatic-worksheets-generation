@@ -1,0 +1,52 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Toy Store Addition
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+    "task": "To practice addition, calculate the total number of toys in the toy store.",
+    "layout": "This task involves adding up the number of toys in the toy store, including dolls, cars, and balls.",
+    "answer": {
+      "A": "To answer correctly, the student must add the number of dolls (10), cars (8), and balls (5). The correct answer is 23.",
+      "B": "To answer correctly, the student must add the number of dolls (10) and cars (8). The correct answer is 18.",
+      "C": "To answer correctly, the student must add the number of cars (8) and balls (5). The correct answer is 13."
+    }
+  }
+
+  
+  <html>
+<head></head>
+<body>
+  <div style="width: 800px; border: solid 1px black; padding: 10px;">
+    <p exp="Setting up the context of the toy store with different toys.">
+      In the toy store, there are different toys: dolls, cars, and balls. Let's calculate how many toys there are in total.
+    </p>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div to center the image showing the toys.">
+      <img 
+        src="" 
+        alt="Dolls (10), cars (8), and balls (5) in the toy store."
+        style="width: 600px; height: 300px;"
+        exp="Image showing dolls, cars, and balls in the toy store, with numbers clearly labeled next to each toy."
+      />
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question A asking for the total number of all toys."><b>A)</b> What is the total number of dolls, cars, and balls?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total number of toys. Correct: 23."></div>
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question B asking for the total number of dolls and cars."><b>B)</b> What is the total number of dolls and cars?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total number of dolls and cars. Correct: 18."></div>
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question C asking for the total number of cars and balls."><b>C)</b> What is the total number of cars and balls?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total number of cars and balls. Correct: 13."></div>
+    </div>
+  </div>
+</body>
+</html>

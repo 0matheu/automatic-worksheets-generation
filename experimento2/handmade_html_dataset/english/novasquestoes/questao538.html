@@ -1,0 +1,52 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Zoo Adventure
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+  "task": "To practice addition, calculate the total number of animals in the zoo.",
+  "layout": "This task involves adding up the number of different animals in the zoo, including lions, giraffes, and elephants.",
+  "answer": {
+    "A": "To answer correctly, the student must add the number of lions (5), giraffes (7), and elephants (3). The correct answer is 15.",
+    "B": "To answer correctly, the student must add the number of lions (5) and giraffes (7). The correct answer is 12.",
+    "C": "To answer correctly, the student must add the number of giraffes (7) and elephants (3). The correct answer is 10."
+  }
+}
+
+<html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: solid 1px black; padding: 10px;">
+      <p exp="Setting up the zoo adventure context with different animals.">
+        In the zoo, there are various animals like lions, giraffes, and elephants. Let’s calculate how many animals there are in total.
+      </p>
+
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div to center the image showing the zoo animals.">
+        <img 
+          src="" 
+          alt="Lions (5), giraffes (7), and elephants (3) in the zoo."
+          style="width: 600px; height: 300px;"
+          exp="Image showing lions, giraffes, and elephants with numbers labeled next to each animal."
+        />
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question A asking for the total number of animals."><b>A)</b> What is the total number of lions, giraffes, and elephants?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total number of animals. Correct: 15."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question B asking for the total number of lions and giraffes."><b>B)</b> What is the total number of lions and giraffes?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total number of lions and giraffes. Correct: 12."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question C asking for the total number of giraffes and elephants."><b>C)</b> What is the total number of giraffes and elephants?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total number of giraffes and elephants. Correct: 10."></div>
+      </div>
+    </div>
+  </body>
+</html>

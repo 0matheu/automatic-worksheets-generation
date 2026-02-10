@@ -1,0 +1,47 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Summer Camp Enrollment
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+    "task": "To practice counting and basic addition skills by calculating the total number of campers in different groups for the summer camp.",
+    "layout": "The activity consists of a description where Tiago is managing the summer camp enrollments. Below is an image showing how many campers are in each group. The student will answer questions by adding the groups together.",
+    "answer": {
+      "A": "To answer correctly, the student needs to add the number of campers in the swimming group (30 campers) and the hiking group (25 campers). The correct answer is 55 campers.",
+      "B": "To answer correctly, the student needs to add the number of campers in the hiking group (25 campers) and the arts group (40 campers). The correct answer is 65 campers."
+    }
+  }
+
+<html>
+<head></head>
+<body>
+  <div style="width: 800px; border: solid 1px; padding: 10px;">
+    <div class="activity">
+      <p exp="Tiago is managing the summer camp enrollments. The number of campers in each activity group is shown in the image.">
+        Tiago is managing the enrollments for the summer camp. Below is an image showing the number of campers in each activity group.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image showing the summer camp groups.">
+      <img 
+        src="" 
+        alt="Illustration showing Tiago's summer camp with groups: swimming (30 campers), hiking (25 campers), and arts (40 campers)."
+        style="width: 600px; height: 300px"
+        exp="Image showing the summer camp groups with the number of campers in each activity."
+      />
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question asking for the total number of campers in the swimming and hiking groups."><b>A)</b> What is the total number of campers in the swimming and hiking groups?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total number of campers in swimming and hiking. Correct: 55."></div>
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question asking for the total number of campers in the hiking and arts groups."><b>B)</b> What is the total number of campers in the hiking and arts groups?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total number of campers in hiking and arts. Correct: 65."></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+```json
+{
+  "task": "To practice and develop the ability to count and perform basic addition by connecting the correct number of juice boxes and sandwiches to the corresponding trays, learning to count and perform simple math operations.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph describing the task, and the bottom section contains a 2x2 grid with four images: an image of a tray with juice boxes, an image of a pile of juice boxes, an image of a tray with sandwiches, and an image of a pile of sandwiches. The images are placed in a specific layout to facilitate comparison and counting.",
+  "answer": "To answer this question correctly, the student needs to: 1) count the number of juice boxes in the tray (4), 2) count the number of juice boxes in the pile (2), 3) add the two numbers together to get the total number of juice boxes (6), 4) find the image of the tray with 6 juice boxes, 5) repeat the process for the sandwiches: count the number of sandwiches in the tray (3), count the number of sandwiches in the pile (2), add the two numbers together to get the total number of sandwiches (5), and find the image of the tray with 5 sandwiches. Finally, the student needs to connect each set of images (juice boxes and tray, sandwiches and tray) to indicate the correct answers. The correct answers are: the image of the tray with 6 juice boxes, and the image of the tray with 5 sandwiches."
+}
+```
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing two trays, and two sets of images (juice boxes and tray, and sandwiches and tray) in a 2x2 grid */
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 400px 400px;
+      grid-template-areas:
+        "jbox1 tray1"
+        "jbox2 tray2";
+    }
+
+    /* class used to place the image of the juice boxes in the first row and the first column, being on the left side of the page */
+    .jbox1 {
+      grid-area: jbox1;
+    }
+
+    /* class used to place the image of the sandwiches in the second row and the first column, being on the left side of the page */
+    .jbox2 {
+      grid-area: jbox2;
+    }
+
+    /* class used to place the image of the tray of juice boxes on the first row and the second column, being on the right side of the page */
+    .tray1 {
+      grid-area: tray1;
+    }
+
+    /* class used to place the image of the tray of sandwiches on the second row and the second column, being on the right side of the page */
+    .tray2 {
+      grid-area: tray2;
+    }
+
+    /* class used to adjust the size of the images in the activity */
+    img {
+      width: 360px;
+      height: 360px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the images below. Manuel has a tray with 4 juice boxes, and also has a pile with 2 more juice boxes, and he is looking for the tray that has the largest number of juice boxes and also has the image of the pile linked. In addition, Manuel has a tray with 3 sandwiches, and also has a pile with 2 more sandwiches, and he is looking for the tray that has the largest number of sandwiches and also has the image of the pile linked.
+        </p>
+
+        <div class="container">
+          <div class="jbox1">
+            <img
+              alt="image in a children's painting style of a transparent plastic tray with 4 juice boxes resting on a table"
+              exp="image that the student will have to count the number of juice boxes in the tray, being 4"
+            />
+          </div>
+
+          <div class="jbox2">
+            <img
+              alt="image in a children's painting style of a transparent plastic tray with 3 sandwiches resting on a table"
+              exp="image that the student will have to count the number of sandwiches in the tray, being 3"
+            />
+          </div>
+
+          <div class="tray1">
+            <img
+              alt="image in a children's painting style of a transparent plastic tray without any juice boxes, but with an image of a pile of 5 juice boxes linked"
+              exp="image that the student will have to identify that has 5 juice boxes in the pile and link with the image"
+            />
+          </div>
+
+          <div class="tray2">
+            <img
+              alt="image in a children's painting style of a transparent plastic tray without any sandwiches, but with an image of a pile of 2 sandwiches linked"
+              exp="image that the student will have to identify that has 2 sandwiches in the pile and link with the image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

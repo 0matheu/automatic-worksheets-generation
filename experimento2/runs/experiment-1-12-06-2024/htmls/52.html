@@ -1,0 +1,100 @@
+```json
+{
+  "task": "To practice basic addition skills by counting the quantity of flowers and bees in two images and connecting them with the result.",
+  "layout": "The question is divided into a 2-line and 3-column grid. The first row contains an image of 5 flowers in a garden, and the second row contains an image of 3 bees flying. The first column is empty, the second column contains a plus sign, and the third column has a box for the student to write the result. The images and the plus sign are aligned within the grid.",
+  "answer": "To answer correctly, the student needs to count the number of flowers in the garden image (5) and the number of bees in the bee image (3), add them together to get 8, and write the result in the box. The correct answer is 8."
+}
+```
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three main elements: the image of the flowers, the image of the bees, and the space for the student to write the result, distributed in a 2-line and 3-column grid */
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 300px 300px;
+      grid-template-areas:
+        "img1 plus img2"
+        "img1 plus img2";
+    }
+
+    /* class used to place the image of the flowers in the first row and the first column */
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the image of the bees in the second row and the third column */
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to place the plus sign in the first row and the second column */
+    .plus {
+      grid-area: plus;
+      font-size: 100px;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* class used to adjust the size of the plus sign */
+    .plus::before {
+      content: "+";
+    }
+
+    /* class used to draw a box where the student will write the result of the sum, being in the first row and the third column */
+    .box {
+      grid-area: box;
+      margin-left: 200px;
+      width: 100px;
+      height: 100px;
+      border: solid 1px;
+    }
+
+    /* class used to adjust the size of the images in the activity */
+    img {
+      width: 290px;
+      height: 290px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the images below, count the total number of flowers and bees, and connect the image with the result of the sum.
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="image in a coloring book style of 5 sunflowers in a garden"
+              exp="image that the student will have to count the quantity of flowers, being 5"
+            />
+          </div>
+
+          <div class="plus" exp="plus sign that the student will have to connect the image with the bees and write the sum">
+          </div>
+
+          <div class="img2">
+            <img
+              alt="image in a coloring book style of 3 bees flying over a field"
+              exp="image that the student will have to count the quantity of bees, being 3"
+            />
+          </div>
+        </div>
+
+        <div
+          class="box"
+          exp="div that will serve to draw a box, where the student will have to write the result of the sum"
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>
+```

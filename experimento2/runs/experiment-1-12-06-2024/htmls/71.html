@@ -1,0 +1,115 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of new flowers that Maria planted and calculating the total number of flowers.",
+  "layout": "The HTML elements are organized with a div containing the sheet width, followed by a div containing the question description, and then a grid container with three rows and two columns. The grid container contains an image of Maria's flower bed, two paragraph elements, and three images of flower patches. The elements are styled with CSS to create the layout of the activity.",
+  "answer": "To answer correctly, the student needs to: 1) count the number of flowers in Maria's original patch (7 flowers), 2) count the number of new flowers Maria planted (5), and 3) add the two numbers together to find the total. The correct answer is: 7 original flowers + 5 new flowers = 12 flowers. The student needs to identify the flower patch with 5 new flowers and perform a simple addition operation to get the correct answer."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing a sheet with three images in a 2-line and 3-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 300px 300px;
+      grid-template-areas:
+        "maria_img1 maria_img1 maria_img2"
+        "patch1_img patch2_img patch3_img";
+    }
+
+    /* class used to place the image of Maria in the first row and the first column*/
+    .maria_img1 {
+      grid-area: maria_img1;
+    }
+
+    /* class used to place the second image of Maria in the first row and the third column*/
+    .maria_img2 {
+      grid-area: maria_img2;
+    }
+
+    /* class used to place the image of the first flower patch in the second row and the first column*/
+    .patch1_img {
+      grid-area: patch1_img;
+    }
+
+    /* class used to place the image of the second flower patch in the second row and the second column*/
+    .patch2_img {
+      grid-area: patch2_img;
+    }
+
+    /* class used to place the image of the third flower patch in the second row and the third column*/
+    .patch3_img {
+      grid-area: patch3_img;
+    }
+
+    /* class used to adjust the size of the images in the activity */
+    img {
+      width: 260px;
+      height: 260px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Maria has a flower bed with 7 little flowers, and she just received a
+          new flower patch with 5 flowers. Maria wants to know the total number
+          of flowers she has. Can you help Maria by drawing her two flower
+          patches and counting the total number of flowers?
+        </p>
+
+        <div class="container">
+          <div class="maria_img1">
+            <img
+              src=""
+              alt="image in a coloring book style of a flower bed with 7 flowers, being an image with thick black lines, in a children's drawing style"
+              exp="image that the student will have to count the 7 flowers in the flower bed"
+            />
+          </div>
+
+          <div class="maria_img2">
+            <img
+              src=""
+              alt="image in a coloring book style of a new flower patch with 5 flowers, being an image with thick black lines, in a children's drawing style"
+              exp="image that the student will have to count the 5 flowers of the new patch"
+            />
+          </div>
+
+          <div class="patch1_img">
+            <img
+              src=""
+              alt="image in a coloring book style of a flower patch with 7 flowers, being an image with thick black lines, in a children's drawing style"
+              exp="image that the student will have to count the 7 flowers of the patch"
+            />
+          </div>
+
+          <div class="patch2_img">
+            <img
+              src=""
+              alt="image in a coloring book style of a flower patch with 5 flowers, being an image with thick black lines, in a children's drawing style"
+              exp="image that the student will have to count the 5 flowers of the patch, and identify that this is the patch with 5 flowers, and finally, add 5 to 7 to get 12"
+            />
+          </div>
+
+          <div class="patch3_img">
+            <img
+              src=""
+              alt="image in a coloring book style of a flower patch with 3 flowers, being an image with thick black lines, in a children's drawing style"
+              exp="image that the student will have to count the 3 flowers of the patch"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

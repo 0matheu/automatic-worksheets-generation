@@ -1,0 +1,61 @@
+level: 2nd year fundamental
+learning_goals: counting, logical reasoning
+theme: Halloween Costumes
+sheet_width: 600px
+task: observe image, write answer
+language: en
+
+{
+  "task": "The objective of this activity is for the student to count the different Halloween costumes in the image and calculate the total number of costumes present.",
+  "layout": "The activity is organized with a description at the top introducing the Halloween theme. Below this, a centered image shows children wearing different Halloween costumes. Following the image, there are three questions asking the student to count specific costumes and calculate the total, with blank boxes for answers next to each question.",
+  "answer": "To correctly answer this activity, the student needs to: 1) observe the image and count the number of witches (4), 2) count the number of vampires (3), 3) perform the sum of both (4 + 3 = 7), and 4) write the answers next to each respective question: A) 4 witches, B) 3 vampires, C) total sum of 7."
+}
+
+  
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px; padding: 10px;"
+      exp="This container sets the layout for the activity with a fixed width and centered content."
+    >
+      <div class="activity" style="width: 600px">
+        <p exp="Initial description of the activity">
+          Observe the image below and answer the following questions about the Halloween costumes:
+        </p>
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+          <img
+            src=""
+            alt="Image showing children wearing Halloween costumes: witches and vampires."
+            style="width: 400px; height: auto;"
+            exp="Image showing 4 children dressed as witches and 3 children dressed as vampires for the student to count and calculate the total."
+          />
+        </div>
+
+        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+          <p style="margin-right: 10px;">A) How many children are dressed as witches?</p>
+          <div
+            style="width: 50px; height: 30px; border: 1px solid black;"
+            exp="Box for the student to write the number of witches (4)."
+          ></div>
+        </div>
+
+        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+          <p style="margin-right: 10px;">B) How many children are dressed as vampires?</p>
+          <div
+            style="width: 50px; height: 30px; border: 1px solid black;"
+            exp="Box for the student to write the number of vampires (3)."
+          ></div>
+        </div>
+
+        <div style="display: flex; align-items: center;">
+          <p style="margin-right: 10px;">C) What is the total number of children dressed as witches and vampires?</p>
+          <div
+            style="width: 50px; height: 30px; border: 1px solid black;"
+            exp="Box for the student to write the total number of costumes (7)."
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

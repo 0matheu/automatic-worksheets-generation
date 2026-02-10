@@ -1,0 +1,66 @@
+level: 2nd year fundamental
+learning_goals": "addition
+theme: counting crayon boxes
+sheet_width: 600px
+task: observe image, write answer
+language: en
+
+{
+  "task": "The objective of this activity is for the student to calculate the total number of crayon boxes by adding the ones on the table and the ones Sophia is holding.",
+  "layout": "The activity is structured with a scenario description at the top, followed by an illustration representing the problem. Below the image, there is a section for writing the final answer.",
+  "answer": "To correctly answer this activity, the student must add the crayon boxes on the table (3) and the additional ones Sophia is holding (2), resulting in a total of 5 boxes. The student should write '5' in the answer box."
+}
+
+
+<html>
+  <head>
+    <style>
+      .container {
+        width: 600px;
+        border: solid 1px;
+        padding: 10px;
+        text-align: left;
+        background-color: white;
+      }
+      .activity {
+        width: 600px;
+      }
+      .question {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 20px;
+      }
+      .answer-box {
+        width: 80px;
+        height: 80px;
+        border: 1px solid black;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" exp="This div acts as the main container for the activity. It sets a fixed width of 600px with padding for spacing inside.">
+      <div class="activity">
+        <p exp="This paragraph provides a clear description of the task. The student needs to calculate the total number of crayon boxes Sophia has.">
+          Sophia is organizing her crayons. She has 3 boxes of crayons on the table and is holding 2 more boxes in her hands. How many crayon boxes does she have in total?
+        </p>
+
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+          <img
+            src=""
+            alt="Illustration of Sophia standing by a table with three crayon boxes and holding two additional boxes."
+            style="width: 400px; height: auto;"
+            exp="This image visually represents the scenario where Sophia has three boxes of crayons on the table and two additional boxes in her hands."
+          />
+        </div>
+
+        <div class="question">
+          <p>Write in the box below the total number of crayon boxes Sophia has:</p>
+          <div class="answer-box" exp="Box where the student writes the total number of crayon boxes. The correct answer is '5'."></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

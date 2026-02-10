@@ -1,0 +1,124 @@
+level: 2nd year of fundamental 
+learning goals: addition, counting 
+theme: weights
+width-sheet: 900px 
+task: observe images, draw answer, write answer
+language: en
+
+
+{
+  "task": "The student will learn to count and add up the total number of fish from three aquariums and draw the correct number of fish in a new, larger aquarium.",
+  "layout": "The activity is divided into two main sections. The top section features a paragraph that describes the task, providing clear instructions for the students. Below this, the middle section consists of a 2x3 grid layout, where the first row contains three images of small aquariums, while the second row includes one image of a larger aquarium.",
+  "answer": "To answer this activity correctly, the student needs to: 1) count the number of fish in each small aquarium (2, 3, and 1), 2) add up the total number of fish (2 + 3 + 1 = 6), and 3) draw 6 fish in the larger aquarium image located in the second row. The final answer (6) should be written in the answer box below the instruction: 'Write in the box below the total number of fish after drawing them in the larger aquarium."
+}
+
+
+<html>
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three images in a 2-line and 3-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 300px 300px;
+      grid-template-areas:
+        "img1 img2 img3"
+        "aquarium aquarium aquarium";
+    }
+
+    /* class used to place the first image of the aquarium in the first row and first column*/
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the second image of the aquarium in the first row and second column*/
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to place the third image of the aquarium in the first row and third column*/
+    .img3 {
+      grid-area: img3;
+    }
+
+    /* class used to place the image of the bigger aquarium on the second row and in the middle of all columns*/
+    .aquarium {
+      margin-top: 50px;
+      margin-left: 250px;
+      grid-area: aquarium;
+    }
+
+    /* class used to adjust the size of the little aquarium images */
+    .litteaquariumsizes{
+      width: 240px;
+      height: 240px;
+    }
+
+    /* class used to adjust the size of the bigger aquarium image*/
+    .aquariumsize {
+      width: 400px;
+      height: 240px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 900px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 900px"
+    >
+      <div class="activity" style="width: 900px">
+        <p
+          exp="Activity description, containing the explanation of what the student will have to do to answer the activity correctly"
+        >
+        Maria has three aquariums containing fish, and she has just received a larger one. Can you help Maria by drawing all her fish in the new aquarium? Then, count the total number of fish from all three aquariums and write the answer.
+        </p>
+
+        <div class="container">
+          <div class="img1" exp="div used to adjust the image of the aquarium on the first row and the first column">
+            <img
+              class="litteaquariumsizes"
+              src=""
+              alt="Image in children's drawing style of a transparent aquarium containing 2 fish"
+              exp="image in which the student will have to observe that there are 2 fishes"
+            />
+          </div>
+
+          <div class="img2" exp="div used to adjust the image of the aquarium on the first row and the second column">
+            <img
+              class="litteaquariumsizes"
+              src=""
+              alt="Image in children's drawing style of a transparent aquarium containing 3 fish"
+              exp="image in which the student will have to observe that there are 3 fishes"
+            />
+          </div>
+
+          <div class="img3" exp="div used to adjust the image of the aquarium on the first row and the third column">
+            <img
+              class="litteaquariumsizes"
+              src=""
+              alt="Image in children's drawing style of a transparent aquarium containing 1 fish"
+              exp="image in which the student will have to observe that there are 1 fish"
+            />
+          </div>
+
+          <div class="aquarium" exp="div used to adjust the image of the bigger aquarium on the second row and the middle of first, second and third column">
+            <img
+              class="aquariumsize"
+              src=""
+              alt="Image in children's drawing style of an transparent aquarium without any fish but filled with water"
+              exp="image that the student will have to draw the amount of fishes that are in the 3 aquariums"
+            />
+          </div>
+        </div>
+        <p exp="description of where the student will write the answer" style="text-align: center; margin-top: 20px;">
+          Write in the box below the total number of fish after drawing them in the larger aquarium:
+        </p>
+        <div style="display: flex; justify-content: center;" exp="div used to center the answer box">
+          <div
+            style="width: 100px; height: 100px; border: 1px solid black;"
+            exp="box used by the student to write the answer, in that case 6"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

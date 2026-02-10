@@ -1,0 +1,52 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Study hours
+width-sheet: 800px
+task: observe image, draw answer
+language: en
+
+
+{
+  "task": "To reinforce addition and counting by drawing notebooks on a school desk.",
+  "layout": "Includes a written problem and a centered image of a classroom table without notebooks.",
+  "answer": "The student needs to sum 2 notebooks already on the table and 5 more added later. The total is 7 notebooks. The student must draw 7 notebooks on the image."
+}
+
+<html>
+  <head></head>
+  <body>
+    <div 
+      style="width: 800px; border: solid 1px;" 
+      exp="Wrapper div that sets the layout space and structure, maintaining the width consistent for the activity page."
+    >
+      <div 
+        style="width: 800px;" 
+        exp="Main container that holds all the activity content, with a clear width for consistency."
+      >
+        <p 
+          exp="Instruction paragraph providing the student with the problem scenario and explaining the task."
+        >
+          There are already 2 notebooks on the desk. The teacher gives 5 more. How many notebooks are there now? Draw all the notebooks on the desk.
+        </p>
+
+        <div 
+          style="display: flex; justify-content: center;" 
+          exp="This div element is used to horizontally center the image within the page, making it more visually aligned for the student."
+        >
+          <img 
+            src="" 
+            alt="School desk with pencil and eraser but no notebooks yet." 
+            style="width: 600px; height: 400px;" 
+            exp="This is an empty classroom desk image where the student is expected to draw the total number of notebooks after adding the 2 already present and the 5 more notebooks given by the teacher."
+          />
+        </div>
+        
+        <p 
+          exp="Additional guidance for the student to understand the task clearly."
+        >
+          You must draw a total of 7 notebooks on the desk. Start by drawing 2 notebooks that are already on the desk, then draw 5 more to represent the notebooks the teacher gave.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

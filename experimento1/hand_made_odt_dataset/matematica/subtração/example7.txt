@@ -1,0 +1,1 @@
+Nessa questão o aluno vai praticar os principios da soma e da subtração. Ele terá que identificar todos os números primos, soma-los, tendo como resposta 15, e subtratir de 7, tendo como resultado 8.

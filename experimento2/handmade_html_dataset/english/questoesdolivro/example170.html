@@ -1,0 +1,72 @@
+level: 2nd year fundamental
+learning_goals: counting
+theme: family members
+sheet_width: 600px
+task: observe image, write answer
+language: en
+
+
+{
+  "task": "Observe the image, count the number of people in each drawing, and answer the questions about the families.",
+  "layout": "The activity is structured with a description at the top explaining the task. Below the description, an image displays three family drawings labeled as Felipe, Eduardo, and Patricia. Following the image, there are questions prompting the student to count, compare, and write their answers in the provided boxes.",
+  "answer":
+    "A) To correctly answer this question, the student will count the number of people in each drawing and write the correct number in the box. B) The correct answer is 'Patricia's family' because it has the most people (7) C) Eduardo's family has 2 more people than Felipe's family, so the correct answer is 2"
+}
+
+
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px; padding: 10px;"
+      exp="This div acts as the main container for the activity. It sets a fixed width of 600px and uses padding for spacing inside the container."
+    >
+      <div class="activity" style="width: 100%;">
+        <p
+          exp="This paragraph provides a clear and concise description of the task. It explains that the student needs to count the number of people in each drawing and answer the questions."
+        >
+          Felipe, Eduardo, and Patricia represented in a drawing all the people who live with them.
+          Count the number of family members in each drawing and answer the questions.
+        </p>
+
+        <div
+          style="display: flex; justify-content: center; margin-bottom: 20px;"
+          exp="This div uses flexbox to horizontally center the image of the activity."
+        >
+          <img
+            src=""
+            alt="Illustration of three families drawn side by side. 
+                 Felipe's family, on the left, consists of 4 members: a father, a mother, Felipe, and his younger sister.
+                 Eduardo's family, in the center, has 6 members: a grandfather, a grandmother, a father, a mother, Eduardo, and his little brother.
+                 Patricia's family, on the right, has 7 members: a father, a mother, Patricia, her older sister, her baby brother, and two grandparents.
+                 Each family is depicted standing together, smiling, in a warm family setting."
+            style="width: 400px; height: auto;"
+            exp="This image shows three family drawings labeled as Felipe, Eduardo, and Patricia. Each drawing represents the number of people living with them, prompting students to count and compare."
+          />
+        </div>
+
+        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+          <p style="margin-right: 10px;">A) Write in the box the total number of people in each drawing.</p>
+          <div style="width: 100px; height: 30px; border: 1px solid black; text-align: center;"
+            exp="Box where the student writes the total number of people in each family. Correct answers: Felipe (4), Eduardo (6), Patricia (7)."
+          ></div>
+        </div>
+
+        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+          <p style="margin-right: 10px;">B) Which family has the most members?</p>
+          <div style="width: 100px; height: 30px; border: 1px solid black; text-align: center;"
+            exp="Box where the student writes the name of the family with the most members. The correct answer is 'Patricia's family'."
+          ></div>
+        </div>
+
+        <div style="display: flex; align-items: center;">
+          <p style="margin-right: 10px;">C) How many more people does Eduardo's family have compared to Felipe's family?</p>
+          <div style="width: 100px; height: 30px; border: 1px solid black; text-align: center;"
+            exp="Box where the student writes the difference in the number of family members. The correct answer is '2'."
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

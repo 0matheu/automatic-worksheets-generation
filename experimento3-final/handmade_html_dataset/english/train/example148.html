@@ -1,0 +1,66 @@
+level: 2nd year fundamental
+learning_goals: addition, counting
+theme: school supplies
+sheet_width: 850px
+task: observe images, write answer
+language: en
+
+{
+  "task": "To practice basic addition skills by counting the number of notebooks and pens in two images and writing the sum, learning to count and perform simple arithmetic operations.",
+  "layout": "The activity is divided into a grid layout with five cells. The first cell contains an image of notebooks, the second cell contains a plus sign, the third cell contains an image of pens, the fourth cell contains an equal sign, and the fifth cell is a box for the student to write the result.",
+  "answer": "To answer correctly, the student needs to observe the two images and count the number of notebooks (4) and pens (7) present. The student needs to add the two numbers together to get 11. The student needs to write the result (11) in the box provided."
+}
+
+  
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 850px; border: solid 1px; padding: 10px; text-align: center;"
+      exp="This container organizes the activity layout, including the theme of school supplies."
+    >
+      <div class="activity" exp="This div contains the main activity content.">
+        <p
+          exp="This paragraph provides instructions for the student to calculate the total number of school supplies by adding notebooks and pens."
+        >
+          Count the notebooks and pens in the images below and write the total:
+        </p>
+
+        <div class="container" style="display: grid; grid-template-columns: repeat(5, 150px);">
+          <div class="img1" exp="Image of notebooks that the student must count.">
+            <img
+              src=""
+              alt="Image of 4 notebooks, in a cartoon style."
+              style="width: 150px; height: auto;"
+              exp="Illustration showing 4 notebooks."
+            />
+          </div>
+
+          <div class="plus" exp="Plus sign representing the addition operation.">
+            <p style="font-size: 50px;">+</p>
+          </div>
+
+          <div class="img2" exp="Image of pens that the student must count.">
+            <img
+              src=""
+              alt="Image of 7 pens, in a cartoon style."
+              style="width: 150px; height: auto;"
+              exp="Illustration showing 7 pens."
+            />
+          </div>
+
+          <div class="equal" exp="Equal sign representing the result of the addition.">
+            <p style="font-size: 50px;">=</p>
+          </div>
+
+          <div class="result" exp="Box where the student will write the total number of school supplies.">
+            <div
+              style="width: 150px; height: 150px; border: 1px solid black; display: flex; justify-content: center; align-items: center;"
+              exp="Box adjusted to have the same size as other elements for consistency."
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

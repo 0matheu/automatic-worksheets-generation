@@ -1,0 +1,88 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Furniture Shopping
+width-sheet: 800px
+task: observe text, write answer
+language: en
+
+{
+    "task": "To practice counting and addition skills by calculating the total cost of furniture Gabriela is buying.",
+    "layout": "The activity involves Gabriela shopping for furniture. Below is a table showing the prices of the items. The student will calculate the total cost.",
+    "answer": {
+      "A": "To answer correctly, the student needs to add the prices of the chair (50 reais), table (80 reais), and lamp (30 reais). The correct answer is 160 reais.",
+      "B": "To answer correctly, the student needs to add the price of the chair (50 reais) and the table (80 reais). The correct answer is 130 reais."
+    }
+  }
+
+<html>
+<head>
+  <style>
+    .container {
+      width: 800px;
+      border: solid 1px;
+      padding: 10px;
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #6aa5db;
+      color: white;
+    }
+    .question-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .answer-box {
+      width: 100px;
+      height: 30px;
+      border: 1px solid black;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="activity">
+      <p exp="Gabriela is shopping for furniture. The prices of the items are shown in the table.">
+        Gabriela is shopping for furniture. The table below shows the prices of the items she is buying. Answer the questions based on the prices.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Centered image showing Gabriela’s shopping cart with furniture items like a chair, table, and lamp.">
+      <img 
+        src="" 
+        alt="Illustration showing Gabriela's shopping cart with furniture like a chair, table, and lamp."
+        style="width: 600px; height: 300px"
+        exp="Image showing the furniture items Gabriela is buying."
+      />
+    </div>
+
+    <table exp="Table showing the prices of the furniture items Gabriela is buying.">
+      <tr><th>Item</th><th>Price (R$)</th></tr>
+      <tr><td>Chair</td><td>50</td></tr>
+      <tr><td>Table</td><td>80</td></tr>
+      <tr><td>Lamp</td><td>30</td></tr>
+    </table>
+
+    <div class="question-container">
+      <p><b>A)</b> What is the total cost of the chair, table, and lamp?</p>
+      <div class="answer-box" exp="Box for the total cost of all items. Correct: 160."></div>
+    </div>
+    <div class="question-container">
+      <p><b>B)</b> What is the total cost of the chair and the table?</p>
+      <div class="answer-box" exp="Box for the total cost of chair and table. Correct: 130."></div>
+    </div>
+  </div>
+</body>
+</html>

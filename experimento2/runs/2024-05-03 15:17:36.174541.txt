@@ -1,0 +1,504 @@
+
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2 ano fundamental
+assunto: adição
+tematica: lanches
+largura-folha: 700px
+layout: única imagem<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão será trabalhado o conceito de soma e adição. A questão
+consiste de uma imagem de um menino que está esperando por uma lanche
+de sorvete, e tem a expectativa que, quando ele a receber, ele terá 5 lanches
+de sorvete. Mas na imagem ele tem 3 lanches de sorvete, então o aluno terá que
+efetuar a adição de 3 + 5 = 8, sendo 8 a quantidade de lanches de sorvete
+que ele terá quando a dele a receber.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 700px; border: solid 1px"
+      exp="div contendo a largura da página, que nesse caso é 700px"
+    >
+      <div class="questao" style="width: 700px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          José espera receber mais lanches de sorvete e tem atualmente 3 e receberá
+          mais 5, quantas lanches de sorvete José terá ao receber a sua esperada?
+        </p>
+        <div style="display: flex; justify-content: center">
+          <img
+            src=""
+            alt="Imagem de um menino esperando por uma lanche de sorvete, e tem na mão 3 lanches de sorvete"
+            style="width: 500px; height: 300px"
+            exp="Imagem na qual o aluno terá que identificar o menino está esperando por mais lanches de sorvete e tem atualmente 3 na mão"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2 ano fundamental
+assunto: adição
+tematica: lanches
+largura-folha: 700px
+layout: duas imagens, linhas e colunas<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Essa questão exercita os princípios da adição, sendo fundamental para a 2ª
+ano do fundamental.
+</head>
+<body>
+  <div
+    style="width: 700px; display: flex; justify-content: center"
+    exp="div contendo a largura da página, que nesse caso é 700px"
+  >
+    <div class="questao" exp="div contendo a questão">
+      <p
+        exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+      >
+        Observe as imagens abaixo. A primeira imagem representa o estoque de
+        sorvetes de hortelã, e a segunda representa a quantidade que um cliente terá
+        após comprar de todos. De qual quantidade o cliente terá após comprar de
+        todos?
+      </p>
+    </div>
+
+    <div exp="div contendo as imagens do aluno onde ele terá que desenhar as imagens do estoque e quantidade resultante da compra">
+      <img
+        src=""
+        alt="Imagem no estilo de desenho de pintar em aquarela de uma embalagem de sorvetes de hortelã com 5 embalagens"
+        style="width: 300px; height: 200px"
+        exp="Imagem que o aluno terá que desenhar representando o estoque de sorvetes de hortelã"
+      />
+      <img
+        src=""
+        alt="Imagem no estilo de desenho de pintar em aquarela de 5 embalagens de sorvetes de hortelã, mas agora com 2 embalamentos de sorvetes, sendo uma com 0 sorvetes e outra com 5 sorvetes"
+        style="width: 300px; height: 200px"
+        exp="Imagem que o aluno terá que desenhar representando a quantidade de sorvetes de hortelã que ele ficou após comprar de todos"
+      />
+    </div>
+  </div>
+</body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: carrinhos
+largura-folha: 600px
+layout: única imagem<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Essa questão prática será utilizada para o aluno desenvolver habilidades em
+adição, contagem. A questão consiste de uma imagem de uma menina com uma carrinha
+contendo 5 carrinhos, e mais 3 carrinhos em sua mão. O objetivo da questão é o aluno
+efetuar a soma de 5 + 3, sendo 8, e pintar 8 carrinhos na imagem, sendo
+4 no interior da carrinha, e 4 em sua mão.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a largura da página, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe a imagem abaixo de uma menina com uma carrinha, e faça a soma
+          de 5 carrinhos com 3 carrinhos, e pintei 8 carrinhos na imagem, sendo 
+          4 no interior da carrinha, e 4 na mão da menina.
+        </p>
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <img
+            src=""
+            alt="Imagem no estilo de desenho de pintar, de uma menina com uma carrinha, contendo 5 carrinhos, e também 3 carrinhos na mão da menina"
+            style="width: 500px; height: 300px"
+            exp="Imagem na qual o aluno terá que observar e contar quantos carrinhos estão presentes, e também em que posição, e pintar 8 carrinhos na imagem, sendo 4 no interior da carrinha, e 4 na mão da menina"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: carrinhos
+largura-folha: 600px
+layout: três imagens<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão serão trabalhados os conceitos de soma e adição. A
+questão consiste de três imagens: duas imagens de carrinhos, e uma imagem de
+elefante, nas quais o aluno terá que contar quantos carrinhos estão presentes
+em cada imagem, e também efetuar a soma dos carrinhos presentes em cada
+imagem, sendo 4 em cada imagem, terá que escrever a soma total. A
+prática consiste de:
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a largura da página, que nesse caso é 600px"
+    >
+      <div class="questao" exp="contém a descrição da questão">
+        <p
+          exp="Descrição da questão, informando ao aluno que questão ele terá que responder as perguntas"
+        >
+          Observe as imagens abaixo e responda as perguntas:
+        </p>
+      </div>
+
+      <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <img
+            src=""
+            alt="Imagem no estilo de desenho de pintar de 2 carrinhos, em uma delas sendo guarnido por uma pessoa"
+            style="width: 400px; height: 200px"
+            exp="Imagem na qual o aluno terá que contar quantos carrinhos estão presentes, e também desenhar na imagem d below a pessoa guarnindo o carrinho em a imagem A"
+          />
+          <img
+            src=""
+            alt="Imagem no estilo de desenho de pintar de 2 carrinhos, sendo o segundo em uma imagem sendo guarnido por uma pessoa"
+            style="width: 400px; height: 200px"
+            exp="Imagem na qual o aluno terá que contar quantos carrinhos estão presentes, e também desenhar na imagem d below a pessoa guarnindo o carrinho na imagem B"
+          />
+        </div>
+
+      <div class="questoes" exp="contém as questões que o aluno terá que responder">
+        <div>
+          <p exp="questão que pede para o aluno contar quantos carrinhos estão presentes na imagem A">Observe a imagem A e escreva quantos carrinhos estão presentes.</p>
+        </div>
+
+        <div>
+          <p exp="questão que pede para o aluno contar quantos carrinhos estão presentes na imagem B">Observe a imagem B e escreva quantos carrinhos estão presentes.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>">A) Observe a imagem A e desenhe uma imagem de d below de uma pessoa guarnindo o carrinho.
+B) Observe a imagem B e desenhe uma imagem de d below de uma pessoa guarnindo o carrinho.</p>
+      </div>
+    </div>
+  </html>"></p>
+</div> </body> </html>">Observe as imagens e responda as questões:</p>
+  <p exp="descrição das imagens que o aluno terá que observar para responder as questões">A imagem no estilo de desenho de pintar contém 4 carrinhos, escreva abaixo quantos carrinhos estão presentes.</p>
+  <p exp="descrição da imagem no estilo de desenho de pintar em que a pessoa está guarnindo um carrinho, escreva abaixo quantos carrinhos estão presentes.</p>
+  <p exp="descrição da imagem no estilo de desenho de pintar em que a pessoa está guarnindo um carrinho, escreva abaixo a pessoa guarnindo um carrinho é a soma total dos carrinhos, escreva abaixo a soma total é a soma de carrinhos, escreva abaixo quantos carrinhos são presentes.</p>
+</div>></div>
+  <p exp>Observe a imagem A contém no estilo de desenho de carrigoarnido um carrinho é a soma d mais</div>
+</div>
+  <p>
+  <user>
+  <A) Observe a imagem no estilo de desid</p>
+  <user>
+  <p>
+  <n maisid</user>
+</dis mais id</tido atualidade são apresentadas
+</layout>
+</user>
+  <A>
+  <n exercias</user>
+  </esper>
+  </esper um carridor mais atual atual apare uma largar
+    larga especial atualmente internacionalmente internacional escol internacional dire como utilização internacional dire internacional largat elegyte internacional grandes atual mais eleg  </nbsparem atual atual largadas largadas vá mais largagem fundamental largースト larg Moreno largadas vá larg ionic ficual tem vá mais fido largido eleg larg 
+s é atual largagem tema atual escoliral atual tem como bem s largagem larg largagem larg larg larg larg larg mais larg larg larg larg larg larg fle mais larg 
+   larg ionic ficual tem mais são utiliz mais largual largual larg mais s larg mais s mais ir  expedereños são s larg larg largolen mais larg são larg larg largoes larg larg fido fle larg fido foden fascerefhir mais fle mais al larg mais larg mais f em ere ire ire ire f then larg então s larg larg s mais f em f fic f 
+   larg então larg 
+   larg ex largagem larg são s mais s mais s larg mais largoe larg larg larg mais QE largere ue s fare then s 
+  larg s então larg s ex s ex mais ex fond mais ex ex 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ex 
+ 
+ 
+ 
+ 
+ ex 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+  larg
+   ex
+ant
+   larg s f 
+ exp fund mais s ex ex fle fle f f larg s mais s mais n f que mais e f
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: fundo do mar
+largura-folha: 600px
+layout: única imagem<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão será trabalhado o conceito de adição. A questão consiste de
+uma imagem, onde será mostrada uma imagem de um tubarão, passar por um
+banco de areia, onde estão presentes obeliskos e conchas. A tarefa dos alunos
+será contar quantas conchas estão presentes na imagem, e efetur a adição
+delas com 12. E escrever o resultado na forma de um texto, dizendo que
+o resultado da adição é a soma dos itens, e que na imagem estão presentes
+12 conchas, sendo elas o resultado da adição.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a largura da página, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe a imagem abaixo e conte quantas conchas estão presentes. 
+          Depois some a quantidade de conchas com 12 e escreva:
+        </p>
+      </div>
+
+      <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <img
+            src=""
+            alt="Imagem de um tubarão passando por um banco de areia, onde estão presentes obeliskos e conchas."
+            style="width: 500px; height: 300px"
+            exp="Imagem onde o aluno terá que contar as conchas e somá-las com 12, sendo 12 a resposta correta"
+          />
+        </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: fundo do mar
+largura-folha: 600px
+layout: três imagens<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão serão trabalhados os conceitos de adição e
+identificação de objetos. Essa questão consiste de três imagens, sendo elas:
+uma imagem de um peixe, outra de uma estrela de mar e outra de uma concha,
+todas com design colorido e em fundo do mar. O aluno deverá:
+identificar quantas conchas estão presentes nas imagens, e
+efetuar a adição de quantas conchas ele vê nas imagens, com a imagem
+de uma concha que está na mão dele, sendo 4 + 3 = 7 conchas.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo 600px de largura, sendo usada para limitar a largura das imagens"
+    >
+      <div class="questao">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe as imagens abaixo e responda as questões:
+        </p>
+      </div>
+
+      <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem no layout"
+        >
+        <img
+            src=""
+            alt="Imagem de um peixe no fundo do mar"
+            style="width: 400px"
+            exp="Imagem de um peixe, onde o aluno terá que contar quantas conchas estão presentes, sendo uma concha"
+          />
+        <img
+          src=""
+          alt="Imagem de uma estrela de mar no fundo do mar"
+          style="width: 400px"
+          exp="Imagem de uma estrela de mar, sendo uma imagem"
+        />
+        <img
+          src=""
+          alt="Imagem de uma concha no fundo do mar, sendo segurada por uma mão de criança"
+          style="width: 400px"
+          exp="Imagem de uma concha, sendo a concha que o aluno terá que adicionar as conchas que estão nas imagens acima"
+        />
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: subtração
+tematica: fogos de artifício
+largura-folha: 800px
+layout: única imagem<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão será trabalhado com a conceito de subtração. A questão
+consiste de uma imagem, e em seguida de uma série de equações, onde o aluno
+terá que resolver as equações, e em seguida deverá selecionar a imagem que
+tem o maior valor, sendo este correto, é a imagem dos fogos d'artifício
+e sendo incorreto, é a imagem do robo.
+
+ Estrutura da questão:
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div contendo a largura da página, que nesse caso é 800px"
+    >
+      <div class="questao" exp="contém o número da questão">
+        1.
+      </div>
+
+      <div
+          style="display: flex; justify-content: space-between"
+          exp="div utilizada para distribuir a largura da imagem, e para centralizar"
+      >
+        <img
+          alt="imagem no estilo de desenho de pintar de uma roupa, mas com uma diferença, nesse caso sendo uma roupa com fios, e com uma criança tentando desenhar uma pessoa com fogos de artifício "
+          src=""
+          style="width: 600px; height: 400px"
+          exp="imagem no estilo de desenho de pintar na qual o aluno terá que identificar a imagem com a maior área, e selecionar a imagem dos fogos de artifício"
+        />
+
+        <p exp="Descrição da imagem, onde é explicado o que a imagem representa">A imagem figura o desenho de uma criança tentando criar uma imagem de uma pessoa com fogos de artifício, e ao lado disso uma imagem de um robo.</p>
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: subtração
+tematica: fogos de artifício
+largura-folha: 800px
+layout: três imagens<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão será trabalhado com a conceito de subtração. A
+questão consiste de três imagens, sendo duas delas contendo fogos de
+artifício e a terceira contendo um número. O objetivo da questão é o aluno
+identificar qual a imagem que tem a menor quantidade de fogos, e
+efetuar a subtração dela com a imagem que tem a maior quantidade de
+fogos, resultando em uma imagem com uma quantidade média de fogos.
+
+<html>
+  <head></head>
+  <style>
+   .container {
+      display: grid;
+      grid-template-columns: 300px 500px;
+      grid-template-rows: 300px 500px;
+      grid-template-areas:
+        "img1 vazio1"
+        "img1 vazio2"
+        "img2 vazio3"
+        "img2 vazio4";
+    }
+
+   .img1 {
+      grid-area: img1;
+    }
+
+   .img2 {
+      grid-area: img2;
+    }
+
+   .img3 {
+      grid-area: img3;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div contendo a largura da página, que nesse caso é 800px"
+    >
+      <div class="questao" style="width: 800px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe as imagens abaixo. A imagem em que tem a menor quantidade de
+          fogos, efetue a subtração. A imagem em que tem a maior quantidade de
+          fogos, multiplique. O resultado esteja em A imagem abaixo.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="img1">
+          <img
+            alt="imagem no estilo de uma ilha, com uma quantidade média de fogos de artifício"
+            exp="imagem no estilo de uma ilha, em que tem uma quantidade média de fogos de artifício. Essa imagem será utilizada como imagem de comparação para o aluno identificar qual delas tem a menor quantidade de fogos."
+          />
+        </div>
+
+        <div class="img2">
+          <img
+            alt="imagem no estilo de uma ilha, com uma quantidade grande de fogos de artifício"
+            exp="imagem no estilo de uma ilha, em que tem uma quantidade grande de fogos de artifício. Essa imagem será utilizada como imagem em que o aluno terá que multipliar."
+          />
+        </div>
+
+        <div class="img3">
+          <img
+            alt="imagem no estilo de uma ilha, com uma quantidade média de fogos de artifício"
+            exp="imagem no estilo de uma ilha, em que tem uma quantidade média de fogos de artifício. Essa imagem será utilizada como imagem em que o aluno terá que efetuar a subtração."
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

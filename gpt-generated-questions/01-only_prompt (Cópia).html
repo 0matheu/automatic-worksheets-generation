@@ -1,0 +1,285 @@
+Generate the structure of a school activity to help students learn.
+The activity should contain a layout structure where texts, images, tables or any other element that can help students' learning are positioned. 
+These elements should be arranged in such a way that they are consistent with the proposed question. For example: if the question asks the student to link images, the images should be separated in such a way that it is possible for the student to link them.
+The structure of the activity should be specified using the HTML language, and the CSS language to position text, images, tables, or any element present in the activity.
+If the activity contains images, add a description of the image in the “alt” attribute. This description should be consistent with the activity specification and provide all the information necessary for the student to be able to answer the activity.
+Also add an explanation for the elements used in the activity, in a new “exp” attribute. This attribute should be specified within the HTML tags and will explain the purpose of that structure in the activity. 
+When it is necessary to use CSS, add an explanation in the form of comments above the class. This CSS is used to organize the layout of the activity so that it is creative and fun for the student.
+Generate a textual description of the activity, then generate the HTML structure containing the layout. This description should contain an explanation of the structure, i.e. how the elements are organized. As well as a detailed description of the activity, and the student's expected response.
+
+Use the following parameters:
+
+level: 2nd year fundamental
+subject: addition, logical reasoning 
+theme: market
+sheet width: 600px
+layout: single image 
+
+Stick to the following rules:
+
+Don't add anything outside the textual description and the HTML of the activity.
+Generate an activity that is creative and helps the student learn in a playful way, using the parameters specified above.
+
+-----------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Addition Activity</title>
+    <style>
+        /* Container for the whole activity to limit the width */
+        .activity-container {
+            width: 600px; /* Width of the activity sheet */
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+        }
+        /* Styling for the image and its container */
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .market-image {
+            max-width: 100%;
+            height: auto;
+        }
+        /* Styling for the questions section */
+        .questions-container {
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        /* Question styling */
+        .question {
+            margin: 10px 0;
+        }<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toy Car Addition Activity</title>
+<style>
+  /* CSS to position elements */
+  .container {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .cars {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .car {
+    margin: 0 10px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Addition with Toy Cars</h2>
+  <p exp="Explanation: In this activity, you will practice addition using toy cars. Your task is to arrange the cars in such a way that their numbers add up to the given sum.">
+    Drag and arrange the toy cars to find the correct sum.
+  </p>
+  <div class="cars">
+    <img src="toy_car_1.png" alt="Toy car with number 5" class="car" draggable="true">
+    <img src="toy_car_2.png" alt="Toy car with number 3" class="car" draggable="true">
+    <img src="toy_car_3.png" alt="Toy car with number 4" class="car" draggable="true">
+    <img src="toy_car_4.png" alt="Toy car with number 2" class="car" draggable="true">
+  </div>
+  <p exp="Explanation: Here are four toy cars with different numbers on them. Drag them into the parking lot to create a combination that adds up to the specified sum.">
+    Drag the cars into the parking lot to create the sum: 10
+  </p>
+  <div class="parking-lot">
+    <!-- Empty parking lot where cars will be dropped -->
+  </div>
+</div>
+</body>
+</html>
+
+    </style>
+</head>
+<body>
+    <div class="activity-container" exp="This container holds the entire activity within a specified width for consistent formatting.">
+        <h2 exp="Title of the activity to indicate the subject and theme.">Market Addition Activity</h2>
+        <p exp="Brief instructions to guide the student on what to do in the activity.">Look at the market image below and solve the addition problems based on the prices of the items.</p>
+        <div class="image-container" exp="Container for centering and formatting the image.">
+            <img src="market-scene.jpg" alt="Image of a market scene with various items and their prices" class="market-image" exp="Image showing a market scene with different items labeled with prices. This is used for students to observe and use in solving the addition problems.">
+        </div>
+        <div class="questions-container" exp="Container for holding the questions, styled to make it visually separated from the image and other content.">
+            <div class="question" exp="Individual question asking the student to calculate the total cost of specified items.">
+                <p>1. What is the total cost of 2 apples (3 units each) and 1 banana (5 units)?</p>
+                <input type="text" exp="Input field for the student to write their answer.">
+            </div>
+            <div class="question" exp="Individual question asking the student to calculate the total cost of specified items.">
+                <p>2. What is the total cost of 1 bread (10 units) and 2 oranges (4 units each)?</p>
+                <input type="text" exp="Input field for the student to write their answer.">
+            </div>
+            <div class="question" exp="Individual question asking the student to calculate the total cost of specified items.">
+                <p>3. What is the total cost of 3 carrots (2 units each) and 1 milk (8 units)?</p>
+                <input type="text" exp="Input field for the student to write their answer.">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+----------------------------------------------
+
+Generate the structure of a school activity to help students learn.
+The activity should contain a layout structure where texts, images, tables or any other element that can help students' learning are positioned. 
+These elements should be arranged in such a way that they are consistent with the proposed question. For example: if the question asks the student to link images, the images should be separated in such a way that it is possible for the student to link them.
+The structure of the activity should be specified using the HTML language, and the CSS language to position text, images, tables, or any element present in the activity.
+If the activity contains images, add a description of the image in the “alt” attribute. This description should be consistent with the activity specification and provide all the information necessary for the student to be able to answer the activity.
+Also add an explanation for the elements used in the activity, in a new “exp” attribute. This attribute should be specified within the HTML tags and will explain the purpose of that structure in the activity. 
+When it is necessary to use CSS, add an explanation in the form of comments above the class. This CSS is used to organize the layout of the activity so that it is creative and fun for the student.
+Generate a textual description of the activity, then generate the HTML structure containing the layout. This description should contain an explanation of the structure, i.e. how the elements are organized. As well as a detailed description of the activity, and the student's expected response.
+Do not generate iteractive HTML, this activity is intended to be resolved with a pen and paper.
+Be careful that the size of the images does not exceed the size of the activity
+
+
+
+To generate a new activity use the following parameters:
+
+level: 2nd year fundamental
+subject: addition, logical reasoning 
+theme: toy cars
+sheet width: 600px
+layout: multiple images, drawing
+
+
+
+Don't add anything outside the textual description and the HMTL of the activity.
+Generate an activity that is creative and helps the student learn in a playful way, using the parameters specified above.
+
+
+-----------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toy Car Addition Activity</title>
+<style>
+    /* CSS for organizing layout */
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .row {
+        margin: 20px 0;
+    }
+    .car {
+        width: 100px;
+        margin: 5px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <!-- First Row -->
+    <div class="row">
+        <img src="car1.png" alt="Toy Car" class="car" exp="This image represents the number 3.">
+        <img src="car2.png" alt="Toy Car" class="car" exp="This image represents the number 4.">
+        <img src="car3.png" alt="Toy Car" class="car" exp="This image represents the number 2.">
+        <img src="car4.png" alt="Toy Car" class="car" exp="This image represents the number 1.">
+    </div>
+    <!-- Second Row -->
+    <div class="row">
+        <img src="car5.png" alt="Toy Car" class="car" exp="This image represents the number 2.">
+        <img src="car6.png" alt="Toy Car" class="car" exp="This image represents the number 3.">
+        <img src="missing.png" alt="Missing Toy Car" class="car" exp="A toy car is missing.">
+        <img src="car7.png" alt="Toy Car" class="car" exp="This image represents the number 5.">
+    </div>
+    <!-- Third Row -->
+    <div class="row">
+        <img src="car8.png" alt="Toy Car" class="car" exp="This image represents the number 1.">
+        <img src="car9.png" alt="Toy Car" class="car" exp="This image represents the number 4.">
+        <img src="missing.png" alt="Missing Toy Car" class="car" exp="A toy car is missing.">
+        <img src="missing.png" alt="Missing Toy Car" class="car" exp="A toy car is missing.">
+    </div>
+</div>
+</body>
+</html>
+
+------------------------------
+
+Generate the structure of a school activity to help students learn.
+The activity should contain a layout structure where texts, images, tables or any other element that can help students' learning are positioned. 
+These elements should be arranged in such a way that they are consistent with the proposed question. For example: if the question asks the student to link images, the images should be separated in such a way that it is possible for the student to link them.
+Also add text explaining the question, within the html.
+The structure of the activity should be specified using the HTML language, and the CSS language to position text, images, tables, or any element present in the activity.
+If the activity contains images, add a description of the image in the “alt” attribute. This description should be consistent with the activity specification and provide all the information necessary for the student to be able to answer the activity.
+Also add an explanation for the elements used in the activity, in a new “exp” attribute. This attribute should be specified within the HTML tags and will explain the purpose of that structure in the activity. 
+When it is necessary to use CSS, add an explanation in the form of comments above the class. This CSS is used to organize the layout of the activity so that it is creative and fun for the student.
+Generate a textual description of the activity, then generate the HTML structure containing the layout. This description should contain an explanation of the structure, i.e. how the elements are organized. As well as a detailed description of the activity, and the student's expected response.
+Do not generate iteractive HTML, this activity is intended to be resolved with a pen and paper.
+Be careful that the size of the images does not exceed the size of the activity
+
+
+
+To generate a new activity use the following parameters:
+
+level: 2nd year fundamental
+subject: addition, logical reasoning 
+theme: toy cars
+sheet width: 600px
+layout: multiple images, drawing
+
+
+
+Don't add anything outside the textual description and the HMTL of the activity.
+Generate an activity that is creative and helps the student learn in a playful way, using the parameters specified above.
+
+
+------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toy Car Addition Activity</title>
+<style>
+  /* CSS to position elements */
+  .container {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .cars {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .car {
+    margin: 0 10px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Addition with Toy Cars</h2>
+  <p exp="Explanation: In this activity, you will practice addition using toy cars. Your task is to arrange the cars in such a way that their numbers add up to the given sum.">
+    Drag and arrange the toy cars to find the correct sum.
+  </p>
+  <div class="cars">
+    <img src="toy_car_1.png" alt="Toy car with number 5" class="car" draggable="true">
+    <img src="toy_car_2.png" alt="Toy car with number 3" class="car" draggable="true">
+    <img src="toy_car_3.png" alt="Toy car with number 4" class="car" draggable="true">
+    <img src="toy_car_4.png" alt="Toy car with number 2" class="car" draggable="true">
+  </div>
+  <p exp="Explanation: Here are four toy cars with different numbers on them. Drag them into the parking lot to create a combination that adds up to the specified sum.">
+    Drag the cars into the parking lot to create the sum: 10
+  </p>
+  <div class="parking-lot">
+    <!-- Empty parking lot where cars will be dropped -->
+  </div>
+</div>
+</body>
+</html>

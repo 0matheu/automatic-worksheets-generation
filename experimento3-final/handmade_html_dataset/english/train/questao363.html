@@ -1,0 +1,46 @@
+level: 2nd year of fundamental  
+learning_goals: counting, addition  
+theme: School Band Practice  
+width-sheet: 800px  
+task: observe text, write answer
+language: en
+
+{
+    "task": "To practice counting and addition skills by calculating the total number of hours the school band practiced based on their weekly schedule.",
+    "layout": "The activity consists of a description at the top, where the student will calculate how many hours the school band practiced in total over three days.",
+    "answer": {
+        "A": "To answer correctly, the student needs to add the practice hours for Monday (2 hours), Wednesday (3 hours), and Friday (1 hour). The correct answer is 6 hours.",
+        "B": "To answer correctly, the student needs to calculate how many days the band practiced in total. The correct answer is 3 days."
+    }
+}
+
+<html>
+    <head></head>
+    <body>
+      <div style="width: 800px; border: solid 1px; padding: 10px;">
+        <div class="activity">
+          <p exp="Activity description about the school band's practice schedule. The band practiced for 2 hours on Monday, 3 hours on Wednesday, and 1 hour on Friday.">
+            The school band practiced for 2 hours on Monday, 3 hours on Wednesday, and 1 hour on Friday. 
+          </p>
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Image showing the practice schedule of the school band with the number of hours listed for each day.">
+            <img src="band_practice_schedule.jpg" 
+                 alt="Illustration of a schedule showing 2 hours of practice on Monday, 3 on Wednesday, and 1 on Friday."
+                 style="width: 600px; height: 300px"
+                 exp="Image showing the band’s weekly practice schedule and the total practice time for the week." />
+        </div>
+
+        <div class="question-container" style="display: flex; justify-content: space-between;">
+            <p exp="Question asking for the total number of hours the band practiced."><b>A)</b> How many hours did the band practice in total?</p>
+            <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box where the student writes the total practice hours. The correct answer is 6."></div>
+        </div>
+
+        <div class="question-container" style="display: flex; justify-content: space-between;">
+            <p exp="Question asking how many days the band practiced."><b>B)</b> How many days did the band practice?</p>
+            <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box where the student writes the number of practice days. The correct answer is 3."></div>
+        </div>
+        
+      </div>
+    </body>
+</html>

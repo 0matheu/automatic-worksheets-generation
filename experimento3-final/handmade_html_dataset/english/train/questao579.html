@@ -1,0 +1,45 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Art Shopping
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+  "task": "To practice addition through a realistic scenario where museum staff are buying paintings during a renovation project.",
+  "layout": "The layout includes a clear instructional paragraph, a centered image of a museum wall with price labels on paintings, and a large central box for the student to write the total cost. This real-world context helps children apply math skills in meaningful situations.",
+  "answer": "To answer correctly, the student must add the price of both paintings. One painting costs 18 reais, and the other costs 9 reais. The total cost is 27 reais. The student should write '27' inside the large box provided below the image."
+}
+
+  
+<html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: solid 1px;" exp="Main container that holds the full activity layout and defines the maximum width for visual consistency.">
+      
+      <p exp="Instruction paragraph that describes the real-world context and gives the task of summing the cost of paintings.">
+        The museum is being renovated, and the staff is buying new artwork to decorate the gallery. One painting costs 18 reais, and another painting costs 9 reais. How much do the two paintings cost in total?
+      </p>
+      
+      <div style="display: flex; justify-content: center;" exp="Centers the image of the gallery wall with price labels for visual reference.">
+        <img 
+          src="" 
+          alt="A museum wall with two framed paintings, each with price tags: one says 18 reais and the other 9 reais."
+          style="width: 600px; height: 400px;" 
+          exp="This image shows a section of a museum gallery wall under renovation. There are two empty spots for new paintings with price tags beneath them: one marked 18 reais and the other marked 9 reais. Students must calculate the total cost of both paintings."
+        />
+      </div>
+
+      <p exp="Instruction reminding the student to use the image and calculate the total.">
+        Use the image to help you. Add the price of the two paintings and write the total cost below.
+      </p>
+
+      <div style="display: flex; justify-content: center;" exp="Div used to center the answer box. The student will enter their answer here.">
+        <div style="width: 100px; height: 100px; border: 1px solid black;" 
+             exp="Box where the student writes the total cost of the two paintings. The correct answer is 27.">
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

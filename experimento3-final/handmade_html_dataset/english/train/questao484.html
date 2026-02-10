@@ -1,0 +1,47 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Ice Cream Shop
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+  "task": "To practice counting and basic addition skills by calculating the total cost of ice creams Luiza is buying.",
+  "layout": "The activity consists of a description where Luiza is buying ice creams. Below is an image showing the prices of the ice cream cones she is buying.",
+  "answer": {
+    "A": "To answer correctly, the student needs to add the prices of the chocolate ice cream (12 reais) and the vanilla ice cream (8 reais). The correct answer is 20 reais.",
+    "B": "To answer correctly, the student needs to add the price of the chocolate ice cream (12 reais) and the strawberry ice cream (10 reais). The correct answer is 22 reais."
+  }
+}
+
+<html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: solid 1px; padding: 10px;">
+      <div class="activity">
+        <p exp="Luiza is buying ice creams. The prices of the ice creams are shown in the image.">
+          Luiza is enjoying an ice cream day. Below is an image showing the prices of the ice creams she is purchasing.
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image showing Luiza’s ice creams.">
+        <img 
+          src="" 
+          alt="Illustration showing Luiza's ice cream cones, including chocolate, vanilla, and strawberry flavors."
+          style="width: 600px; height: 300px"
+          exp="Image showing the ice cream cones with their prices."
+        />
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question asking for the total cost of the chocolate and vanilla ice creams."><b>A)</b> What is the total cost of the chocolate and vanilla ice creams?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total cost of chocolate and vanilla ice creams. Correct: 20."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question asking for the total cost of the chocolate and strawberry ice creams."><b>B)</b> What is the total cost of the chocolate and strawberry ice creams?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total cost of chocolate and strawberry ice creams. Correct: 22."></div>
+      </div>
+    </div>
+  </body>
+</html>

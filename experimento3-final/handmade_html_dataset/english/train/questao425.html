@@ -1,0 +1,55 @@
+level: 2nd year of elementary school
+learning_goals: Counting, addition
+theme: Distance calculation
+sheet_width: 800px
+task: Observe the image, write the answer
+language: en
+
+{
+  "task": "To practice counting and addition skills by calculating the total distance João has traveled on his trip.",
+  "layout": "The activity consists of a description explaining that João has already traveled 15 km and wants to know what the total distance will be if he adds 5 km and 10 km to his journey.",
+  "answer": {
+    "A": "To answer correctly, the student needs to add 5 km to 15 km. The correct answer is 20.",
+    "B": "To answer correctly, the student needs to add 10 km to 15 km. The correct answer is 25."
+  }
+}
+
+<html>
+  <head>
+    <style>
+      .container { width: 800px; border: solid 1px; padding: 10px; text-align: center; }
+      .question-container { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+      .answer-box { width: 150px; height: 30px; border: 1px solid black; text-align: center; }
+      img { width: 120px; height: 70px; margin: 10px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="activity">
+        <p exp="Activity description explaining the scenario where João is calculating the distance traveled on his trip.">
+          João is on a car trip and has already traveled 15 km. He wants to know what the total distance will be if he adds 5 km to his journey. Additionally, he wants to know what the total distance will be if he adds 10 km to his journey.
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center;" exp="Div used to center the images of distance markers.">
+        <img src="" alt="Distance marker with the number 15" exp="Distance marker showing 15 km, which is the distance João has already traveled." />
+        <img src="" alt="Distance marker with the number 20" exp="Distance marker showing 20 km, which represents adding 5 km." />
+        <img src="" alt="Distance marker with the number 25" exp="Distance marker showing 25 km, which represents adding 10 km." />
+      </div>
+
+      <div class="question-container" exp="Question asking the student to calculate the total distance if João adds 5 km.">
+        <p exp="Question asking what the total distance will be if João adds 5 km to 15 km.">
+          <b>A)</b> What will the total distance be if João adds 5 km to 15 km?
+        </p>
+        <div class="answer-box" exp="Box where the student writes the result of adding 5 to 15. The correct answer is 20."></div>
+      </div>
+
+      <div class="question-container" exp="Question asking the student to calculate the total distance if João adds 10 km.">
+        <p exp="Question asking what the total distance will be if João adds 10 km to 15 km.">
+          <b>B)</b> What will the total distance be if João adds 10 km to 15 km?
+        </p>
+        <div class="answer-box" exp="Box where the student writes the result of adding 10 to 15. The correct answer is 25."></div>
+      </div>
+    </div>
+  </body>
+</html>

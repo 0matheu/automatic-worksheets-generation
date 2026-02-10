@@ -1,0 +1,1 @@
+Nessa questão o aluno terá que contar a quantidade de abacaxis e efetuar a soma, com o resultado terá que ligar com o numeral que representa a soma correta.

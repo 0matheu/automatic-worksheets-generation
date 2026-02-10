@@ -1,0 +1,833 @@
+
+---------------------------------------------------------------------------------------------------------------
+
+Generate the structure of a school activity to help students learn.
+The activity must contain a layout structure where texts, images, tables or any other element that can help students' learning are positioned. 
+These elements must be arranged in such a way that they are consistent with the proposed question. For example: if the question asks the student to link images, the images must be separated in such a way that it is possible for the student to link them.
+The structure of the activity must be specified using the HTML language, and the CSS language to position text, images, tables, or any element present in the activity.
+If the activity contains images, add a description of the image in the “alt” attribute. This description must be consistent with the activity specification and provide all the information necessary for the student to be able to answer the activity.
+Also add an explanation for the elements used in the activity, in a new “exp” attribute. This attribute must be specified within the HTML tags and will explain the purpose of that structure in the activity. 
+When it is necessary to use CSS, add an explanation in the form of comments above the class. This CSS is used to organize the layout of the activity so that it is creative and fun for the student.
+Generate a textual description of the activity. This description must be specified in JSON format and must contain the following attributes:
+
+task: the objective of the question, what the student will learn by answering.
+layout: a detailed description of how each html elements are organized in the layout of the question, explain where the elements are placed.
+answer: what the student will have to do to correctly answer that activity, add the answer and all the infos needed to answer the question
+
+Generate the JSON description, and then generate the HTML structure containing the layout.
+Do not generate iteractive HTML, this activitie is intended to be resolved with a pen and paper.
+Be careful that the size of the images does not exceed the size of the activity
+
+To generate a new activity use the following parameters:
+
+
+
+level: 2nd year of fundamental
+subject: addition
+theme: snacks
+sheet width: 700px
+layout: observe image, write answer
+
+
+
+Where:
+
+level: is the school year is that activity intended for.
+subject: is the school subject that activity is designed for.
+theme: is the topic that activity wants to work on.
+sheet width: is the desired width of the activity sheet.
+task: is what the student must do to answer the activity.
+
+Stick to the following rules:
+
+Don't add anything outside the textual description and the HMTL of the activity.
+Generate an activity that is creative and helps the student learn in a playful way, using the parameters specified above.
+
+
+```json
+{
+  "task": "To practice basic addition skills by counting the number of snacks in two images and writing the sum, learning to count and perform simple arithmetic operations.",
+  "layout": "The activity shows two images: one of a child with snacks and another of a table with snacks. The student must count how many snacks are in each image and write the sum of the two quantities in the box provided.",
+  "answer": "To answer correctly, the student needs to count 3 snacks in the child's image and 5 snacks on the table. The sum is 3 + 5 = 8. The student must write the number 8 in the box."
+}
+```
+
+  
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body>
+    <div style="width: 700px; border: 1px solid black; padding: 16px;" exp="Main container for the activity">
+
+      <p exp="Instruction for the student to observe the images and perform an addition.">
+        Look at the images below. Count how many snacks are in each image. Then write the total sum in the box.
+      </p>
+
+      <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 16px;" exp="Div used to display the two images side by side for comparison.">
+        <div>
+          <img src="" alt="Child holding 3 snacks" style="width: 300px; height: 200px;" exp="Image of a child holding 3 snacks.">
+          <p style="text-align: center;" exp="Caption indicating the first image">Image 1</p>
+        </div>
+        <div>
+          <img src="" alt="Table with 5 snacks" style="width: 300px; height: 200px;" exp="Image of a table with 5 snacks.">
+          <p style="text-align: center;" exp="Caption indicating the second image">Image 2</p>
+        </div>
+      </div>
+
+      <p style="text-align: center; margin-top: 16px;" exp="Instruction for the student to write the sum.">
+        Write in the box below the total number of snacks after adding the quantities from both images:
+      </p>
+      <div style="display: flex; justify-content: center; margin-top: 16px;" exp="Div used to center the answer box.">
+        <div style="width: 100px; height: 100px; border: 1px solid black;"
+             exp="Box where the student writes the result of 3 + 5. The correct answer is 8.">
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
+```
+---------------------------------------------------------------------------------------------------------------
+
+Generate the structure of a school activity to help students learn.
+The activity must contain a layout structure where texts, images, tables or any other element that can help students' learning are positioned. 
+These elements must be arranged in such a way that they are consistent with the proposed question. For example: if the question asks the student to link images, the images must be separated in such a way that it is possible for the student to link them.
+The structure of the activity must be specified using the HTML language, and the CSS language to position text, images, tables, or any element present in the activity.
+If the activity contains images, add a description of the image in the “alt” attribute. This description must be consistent with the activity specification and provide all the information necessary for the student to be able to answer the activity.
+Also add an explanation for the elements used in the activity, in a new “exp” attribute. This attribute must be specified within the HTML tags and will explain the purpose of that structure in the activity. 
+When it is necessary to use CSS, add an explanation in the form of comments above the class. This CSS is used to organize the layout of the activity so that it is creative and fun for the student.
+Generate a textual description of the activity. This description must be specified in JSON format and must contain the following attributes:
+
+task: the objective of the question, what the student will learn by answering.
+layout: a detailed description of how each html elements are organized in the layout of the question, explain where the elements are placed.
+answer: what the student will have to do to correctly answer that activity, add the answer and all the infos needed to answer the question
+
+Generate the JSON description, and then generate the HTML structure containing the layout.
+Do not generate iteractive HTML, this activitie is intended to be resolved with a pen and paper.
+Be careful that the size of the images does not exceed the size of the activity
+
+To generate a new activity use the following parameters:
+
+
+
+level: 2nd year of fundamental
+subject: addition
+theme: snacks
+sheet width: 700px
+layout: observe images, draw answer
+
+
+
+Where:
+
+level: is the school year is that activity intended for.
+subject: is the school subject that activity is designed for.
+theme: is the topic that activity wants to work on.
+sheet width: is the desired width of the activity sheet.
+task: is what the student must do to answer the activity.
+
+Stick to the following rules:
+
+Don't add anything outside the textual description and the HMTL of the activity.
+Generate an activity that is creative and helps the student learn in a playful way, using the parameters specified above.
+
+
+```json
+{
+    "task": "To practice solving addition problems by calculating the total number of snacks Ana has, reinforcing students' ability to count and perform simple arithmetic operations.",
+    "layout": "The activity consists of a description at the top, explaining the scenario where Ana is organizing snacks for a party. Below the description, a set of three images shows the number of snacks in different containers. The student will calculate the total snacks by adding the given values and draw the correct number of snacks in Ana's final container.",
+    "answer": "To answer correctly, the student needs to add the number of snacks in the first container (12) and the second container (8). The sum is 20. The student should draw 20 snacks in Ana's final container. This exercise helps students visualize addition in a real-world context."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            .activity {
+                width: 700px;
+                border: solid 1px;
+                padding: 10px;
+                text-align: center;
+            }
+            .question-container {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            .answer-box {
+                width: 100px;
+                height: 30px;
+                border: 1px solid black;
+                text-align: center;
+            }
+            .image-container {
+                width: 200px;
+                height: 150px;
+                border: 1px solid black;
+                overflow: hidden;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        </style>
+    </head>
+    <body>
+      <div style="display: flex; justify-content: center;">
+        <div class="activity">
+          <p exp="Activity description, explaining the scenario where Ana is organizing snacks for a party.">
+            Ana is preparing snacks for a party. She has already filled one container with 12 snacks and another container with 8 snacks. 
+            She wants to know how many snacks she has in total before transferring them to the main serving platter.
+          </p>
+
+          <div class="container">
+            <div class="image-container" exp="Container showing 12 snacks.">
+              <img src="" alt="Container with 12 snacks" exp="Image showing 12 snacks in a container.">
+            </div>
+            <div class="image-container" exp="Container showing 8 snacks.">
+              <img src="" alt="Container with 8 snacks" exp="Image showing 8 snacks in a container.">
+            </div>
+            <div class="image-container" exp="Container where the student will draw the total number of snacks.">
+              <img src="" alt="Final container without snacks" exp="Image of an empty container where the student will draw the total number of snacks.">
+            </div>
+          </div>
+
+          <p exp="Instruction for the student to draw the total number of snacks after calculating the sum.">
+            Calculate the total number of snacks Ana has. Then, draw all the snacks in the last container below.
+          </p>
+
+          <div style="display: flex; justify-content: center;" exp="Example showing the expected answer of 20.">
+            <p>Example of correct answer:</p>
+            <div style="width: 50px; height: 50px; border: 1px solid black;" exp="Box showing the expected answer of 20."></div>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>
+```
+---------------------------------------------------------------------------------------------------------------
+
+Generate the structure of a school activity to help students learn.
+The activity must contain a layout structure where texts, images, tables or any other element that can help students' learning are positioned. 
+These elements must be arranged in such a way that they are consistent with the proposed question. For example: if the question asks the student to link images, the images must be separated in such a way that it is possible for the student to link them.
+The structure of the activity must be specified using the HTML language, and the CSS language to position text, images, tables, or any element present in the activity.
+If the activity contains images, add a description of the image in the “alt” attribute. This description must be consistent with the activity specification and provide all the information necessary for the student to be able to answer the activity.
+Also add an explanation for the elements used in the activity, in a new “exp” attribute. This attribute must be specified within the HTML tags and will explain the purpose of that structure in the activity. 
+When it is necessary to use CSS, add an explanation in the form of comments above the class. This CSS is used to organize the layout of the activity so that it is creative and fun for the student.
+Generate a textual description of the activity. This description must be specified in JSON format and must contain the following attributes:
+
+task: the objective of the question, what the student will learn by answering.
+layout: a detailed description of how each html elements are organized in the layout of the question, explain where the elements are placed.
+answer: what the student will have to do to correctly answer that activity, add the answer and all the infos needed to answer the question
+
+Generate the JSON description, and then generate the HTML structure containing the layout.
+Do not generate iteractive HTML, this activitie is intended to be resolved with a pen and paper.
+Be careful that the size of the images does not exceed the size of the activity
+
+To generate a new activity use the following parameters:
+
+
+
+level: 2nd year of fundamental
+subject: addition
+theme: snacks
+sheet width: 700px
+layout: observe images, link images
+
+
+
+Where:
+
+level: is the school year is that activity intended for.
+subject: is the school subject that activity is designed for.
+theme: is the topic that activity wants to work on.
+sheet width: is the desired width of the activity sheet.
+task: is what the student must do to answer the activity.
+
+Stick to the following rules:
+
+Don't add anything outside the textual description and the HMTL of the activity.
+Generate an activity that is creative and helps the student learn in a playful way, using the parameters specified above.
+
+
+```json
+{
+  "task": "To practice addition by counting the number of snacks in two images and linking them to the image with the correct total.",
+  "layout": "The activity is divided into a 2x2 grid layout. The first row contains an image of 3 snacks on a plate (left) and an image of 2 snacks in a bowl (right). The second row features an image of 1 snack in a cup (left) and an empty space for the result (right). Below the images, there are three answer choices (4, 5, 6) positioned in a 1x3 grid layout.",
+  "answer": "To answer correctly, the student needs to: 1) Count the number of snacks in the two images on the left (3 + 2 = 5), 2) Identify the image that represents the sum, and 3) Link the correct result (5) by drawing a line from the image to the corresponding answer box in the first row, second column."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three images in a 2-line and 2-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 350px 350px;
+      grid-template-rows: 250px 250px;
+      grid-template-areas:
+        "img1 img2"
+        "img3 result";
+    }
+
+    /* class used to place the first image of the plate of snacks in the first row and first column */
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the second image of the bowl of snacks in the first row and second column */
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to place the image of the cup of snacks on the second row and first column */
+    .img3 {
+      grid-area: img3;
+    }
+
+    /* class used to place the image of the result on the second row and second column */
+    .result {
+      grid-area: result;
+    }
+
+    /* class used to give the size for the images of the snacks */
+    .img-size {
+      width: 300px;
+      height: 200px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 700px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 700px"
+    >
+      <div class="activity" style="width: 700px">
+        <p
+          exp="Activity description, containing the explanation of what the student will have to do to answer the activity correctly"
+        >
+          Observe the images below. Count how many snacks are in the first and second images, and then link the images with snacks to the one with the correct total. 
+        </p>
+
+        <div class="container">
+          <div class="img1" exp="div used to adjust the image of the plate of snacks on the first row and first column">
+            <img
+              class="img-size"
+              src=""
+              alt="Image in children's painting style of a plate with 3 snacks"
+              exp="Image in which the student will have to count that there are 3 snacks"
+            />
+          </div>
+
+          <div class="img2" exp="div used to adjust the image of the bowl of snacks on the first row and second column">
+            <img
+              class="img-size"
+              src=""
+              alt="Image in children's painting style of a bowl with 2 snacks"
+              exp="Image in which the student will have to count that there are 2 snacks"
+            />
+          </div>
+
+          <div class="img3" exp="div used to adjust the image of the cup of snacks on the second row and first column">
+            <img
+              class="img-size"
+              src=""
+              alt="Image in children's painting style of a cup with 1 snack"
+              exp="Image in which the student will have to count that there is 1 snack"
+            />
+          </div>
+
+          <div class="result" exp="div used to adjust the image of the result on the second row and second column">
+            <img
+              class="img-size"
+              src=""
+              alt="Image in children's painting style of an empty plate"
+              exp="Image in which the student will have to identify that it is the image without snacks"
+            />
+          </div>
+        </div>
+
+        <div
+          style="display: flex; justify-content: center;"
+          exp="div used to center the answer options"
+        >
+          <p exp="Answer options" style="margin-right: 10px;">
+            a) 4
+          </p>
+          <p exp="Answer options" style="margin-right: 10px;">
+            b) 5
+          </p>
+          <p exp="Answer options" style="margin-right: 10px;">
+            c) 6
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```
+---------------------------------------------------------------------------------------------------------------
+
+Generate the structure of a school activity to help students learn.
+The activity must contain a layout structure where texts, images, tables or any other element that can help students' learning are positioned. 
+These elements must be arranged in such a way that they are consistent with the proposed question. For example: if the question asks the student to link images, the images must be separated in such a way that it is possible for the student to link them.
+The structure of the activity must be specified using the HTML language, and the CSS language to position text, images, tables, or any element present in the activity.
+If the activity contains images, add a description of the image in the “alt” attribute. This description must be consistent with the activity specification and provide all the information necessary for the student to be able to answer the activity.
+Also add an explanation for the elements used in the activity, in a new “exp” attribute. This attribute must be specified within the HTML tags and will explain the purpose of that structure in the activity. 
+When it is necessary to use CSS, add an explanation in the form of comments above the class. This CSS is used to organize the layout of the activity so that it is creative and fun for the student.
+Generate a textual description of the activity. This description must be specified in JSON format and must contain the following attributes:
+
+task: the objective of the question, what the student will learn by answering.
+layout: a detailed description of how each html elements are organized in the layout of the question, explain where the elements are placed.
+answer: what the student will have to do to correctly answer that activity, add the answer and all the infos needed to answer the question
+
+Generate the JSON description, and then generate the HTML structure containing the layout.
+Do not generate iteractive HTML, this activitie is intended to be resolved with a pen and paper.
+Be careful that the size of the images does not exceed the size of the activity
+
+To generate a new activity use the following parameters:
+
+
+
+level: 2nd year of fundamental
+subject: addition
+theme: underwater
+sheet width: 600px
+layout: observe image, write answer
+
+
+
+Where:
+
+level: is the school year is that activity intended for.
+subject: is the school subject that activity is designed for.
+theme: is the topic that activity wants to work on.
+sheet width: is the desired width of the activity sheet.
+task: is what the student must do to answer the activity.
+
+Stick to the following rules:
+
+Don't add anything outside the textual description and the HMTL of the activity.
+Generate an activity that is creative and helps the student learn in a playful way, using the parameters specified above.
+
+
+```json
+{
+  "task": "To practice addition by counting the total number of fish in the image and writing the sum, learning to count and perform basic arithmetic operations.",
+  "layout": "The activity is structured with a two-column layout. In the left column, there is an image of an underwater scene with fish. In the right column, there are three questions with answer boxes, aligned vertically. Each question asks the student to add the number of fish from a specific group and write the sum.",
+  "answer": "To answer correctly, the student needs to count the number of blue fish (12), the number of yellow fish (7), and the number of red fish (5), and then add them together to get the total number of fish. The correct answers are: Q1) 12 + 7 = 19, so the student should write '19' in the first box. Q2) 7 + 5 = 12, so the student should write '12' in the second box. Q3) 12 + 5 = 17, so the student should write '17' in the third box."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px;
+      grid-template-rows: 150px 100px 100px;
+      grid-template-areas:
+        "img1 img2"
+        "q1 a1"
+        "q2 a2"
+        "q3 a3";
+    }
+
+    .img1 {
+      grid-area: img1;
+    }
+
+    .img2 {
+      grid-area: img2;
+    }
+
+    .q1 {
+      grid-area: q1;
+      font-size: larger;
+    }
+
+    .q2 {
+      grid-area: q2;
+      font-size: larger;
+    }
+
+    .q3 {
+      grid-area: q3;
+      font-size: larger;
+    }
+
+    .a1 {
+      grid-area: a1;
+      border: 1px solid;
+    }
+
+    .a2 {
+      grid-area: a2;
+      border: 1px solid;
+    }
+
+    .a3 {
+      grid-area: a3;
+      border: 1px solid;
+    }
+
+    .answer-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .answer-box {
+      width: 80px;
+      height: 30px;
+      border: 1px solid black;
+      text-align: center;
+    }
+  </style>
+
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div containing the page width, which in this case is 600px"
+    >
+      <div class="activity" style="width: 600px">
+        <p
+          exp="Activity description, explaining the task of adding fish in an underwater scene."
+        >
+          Observe the underwater scene with colorful fish. Count the number of fish in each group and write the total sum in the boxes.
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              src=""
+              alt="Underwater scene with 12 blue fish"
+              exp="Image showing an underwater scene with 12 blue fish."
+              style="width: 280px; height: 200px"
+            />
+          </div>
+
+          <div class="img2">
+            <img
+              src=""
+              alt="Underwater scene with 7 yellow fish"
+              exp="Image showing an underwater scene with 7 yellow fish."
+              style="width: 280px; height: 200px"
+            />
+          </div>
+
+          <p class="q1" exp="Question asking to add the number of blue and yellow fish."><b>Q1)</b> How many fish are there in total after adding the blue and yellow fish?</p>
+          <div class="a1 answer-container" exp="Box where the student writes the total number of fish from Q1."></div>
+
+          <p class="q2" exp="Question asking to add the number of yellow and red fish."><b>Q2)</b> How many fish are there in total after adding the yellow and red fish?</p>
+          <div class="a2 answer-container" exp="Box where the student writes the total number of fish from Q2."></div>
+
+          <p class="q3" exp="Question asking to add the number of blue and red fish."><b>Q3)</b> How many fish are there in total after adding the blue and red fish?</p>
+          <div class="a3 answer-container" exp="Box where the student writes the total number of fish from Q3."></div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```
+---------------------------------------------------------------------------------------------------------------
+
+Generate the structure of a school activity to help students learn.
+The activity must contain a layout structure where texts, images, tables or any other element that can help students' learning are positioned. 
+These elements must be arranged in such a way that they are consistent with the proposed question. For example: if the question asks the student to link images, the images must be separated in such a way that it is possible for the student to link them.
+The structure of the activity must be specified using the HTML language, and the CSS language to position text, images, tables, or any element present in the activity.
+If the activity contains images, add a description of the image in the “alt” attribute. This description must be consistent with the activity specification and provide all the information necessary for the student to be able to answer the activity.
+Also add an explanation for the elements used in the activity, in a new “exp” attribute. This attribute must be specified within the HTML tags and will explain the purpose of that structure in the activity. 
+When it is necessary to use CSS, add an explanation in the form of comments above the class. This CSS is used to organize the layout of the activity so that it is creative and fun for the student.
+Generate a textual description of the activity. This description must be specified in JSON format and must contain the following attributes:
+
+task: the objective of the question, what the student will learn by answering.
+layout: a detailed description of how each html elements are organized in the layout of the question, explain where the elements are placed.
+answer: what the student will have to do to correctly answer that activity, add the answer and all the infos needed to answer the question
+
+Generate the JSON description, and then generate the HTML structure containing the layout.
+Do not generate iteractive HTML, this activitie is intended to be resolved with a pen and paper.
+Be careful that the size of the images does not exceed the size of the activity
+
+To generate a new activity use the following parameters:
+
+
+
+level: 2nd year of fundamental
+subject: addition
+theme: underwater
+sheet width: 600px
+layout: observe images, draw answer
+
+
+
+Where:
+
+level: is the school year is that activity intended for.
+subject: is the school subject that activity is designed for.
+theme: is the topic that activity wants to work on.
+sheet width: is the desired width of the activity sheet.
+task: is what the student must do to answer the activity.
+
+Stick to the following rules:
+
+Don't add anything outside the textual description and the HMTL of the activity.
+Generate an activity that is creative and helps the student learn in a playful way, using the parameters specified above.
+
+
+```json
+{
+  "task": "The student will learn to solve a basic addition problem and match the result to the correct numeral, reinforcing counting and calculation skills.",
+  "layout": "The activity is organized with a description at the top that explains the task. Below the description, there is an underwater-themed illustration with three fish tanks. The student will solve the addition problem (3 + 2) and match it to the correct numeral by drawing a line from the problem to the answer box.",
+  "answer": "To correctly answer this activity, the student needs to solve the addition problem (3 + 2) and match it to the correct numeral. The sum is 5, so the student should draw a line from the problem to the answer box with the numeral 5."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    .container {
+      width: 600px;
+      border: solid 1px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .activity p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .question-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 20px 0;
+    }
+
+    .answer-box {
+      width: 100px;
+      height: 40px;
+      border: 1px solid black;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    img {
+      width: 150px;
+      height: 100px;
+      margin: 10px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="activity">
+        <p exp="Activity description explaining the task. The student must solve the addition problem and match it to the correct answer.">
+          Look at the underwater scene with three fish tanks. Solve the addition problem and match it to the correct result.
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center;" exp="Div used to center the image illustratio.">
+        <img
+          src=""
+          alt="Illustration of an underwater scene with three fish tanks. The first tank has 3 fish, the second has 2, and the third has 5. There are seaweed decorations and bubbles in the water."
+          exp="Image where students will see an underwater scene with three fish tanks. The first tank has 3 fish, the second has 2, and the third has 5. This helps them visualize the addition problem."
+        />
+      </div>
+
+      <div class="question-container" exp="Question row asking students to solve the addition problem.">
+        <p exp="Question asking students to solve 3 + 2.">
+          <img src="" alt="3 fish" exp="Image of 3 fish in a tank, representing the number 3." />
+          + 
+          <img src="" alt="2 fish" exp="Image of 2 fish in a tank, representing the number 2." />
+          = 
+        </p>
+        <div class="answer-box" exp="Box where the student writes the result of 3 + 2. The correct answer is 5."></div>
+      </div>
+
+      <div class="question-container" exp="Question row with answer options for students to match.">
+        <p exp="Answer options for the addition problem.">
+          <img src="" alt="4" exp="Image representing the number 4." />
+        </p>
+        <p exp="Answer options for the addition problem.">
+          <img src="" alt="5" exp="Image representing the number 5." />
+        </p>
+        <p exp="Answer options for the addition problem.">
+          <img src="" alt="6" exp="Image representing the number 6." />
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+```
+---------------------------------------------------------------------------------------------------------------
+
+Generate the structure of a school activity to help students learn.
+The activity must contain a layout structure where texts, images, tables or any other element that can help students' learning are positioned. 
+These elements must be arranged in such a way that they are consistent with the proposed question. For example: if the question asks the student to link images, the images must be separated in such a way that it is possible for the student to link them.
+The structure of the activity must be specified using the HTML language, and the CSS language to position text, images, tables, or any element present in the activity.
+If the activity contains images, add a description of the image in the “alt” attribute. This description must be consistent with the activity specification and provide all the information necessary for the student to be able to answer the activity.
+Also add an explanation for the elements used in the activity, in a new “exp” attribute. This attribute must be specified within the HTML tags and will explain the purpose of that structure in the activity. 
+When it is necessary to use CSS, add an explanation in the form of comments above the class. This CSS is used to organize the layout of the activity so that it is creative and fun for the student.
+Generate a textual description of the activity. This description must be specified in JSON format and must contain the following attributes:
+
+task: the objective of the question, what the student will learn by answering.
+layout: a detailed description of how each html elements are organized in the layout of the question, explain where the elements are placed.
+answer: what the student will have to do to correctly answer that activity, add the answer and all the infos needed to answer the question
+
+Generate the JSON description, and then generate the HTML structure containing the layout.
+Do not generate iteractive HTML, this activitie is intended to be resolved with a pen and paper.
+Be careful that the size of the images does not exceed the size of the activity
+
+To generate a new activity use the following parameters:
+
+
+
+level: 2nd year of fundamental
+subject: addition
+theme: underwater
+sheet width: 600px
+layout: observe images, link images
+
+
+
+Where:
+
+level: is the school year is that activity intended for.
+subject: is the school subject that activity is designed for.
+theme: is the topic that activity wants to work on.
+sheet width: is the desired width of the activity sheet.
+task: is what the student must do to answer the activity.
+
+Stick to the following rules:
+
+Don't add anything outside the textual description and the HMTL of the activity.
+Generate an activity that is creative and helps the student learn in a playful way, using the parameters specified above.
+
+
+```json
+{
+  "task": "The objective of this activity is for the student to observe the given images and connect those that represent the sum of the two initial images. This exercise helps students develop visual reasoning and basic addition skills by identifying the correct result of an arithmetic operation.",
+  "layout": "The activity is organized with a 2x2 grid layout. The first row contains an image of a fish swimming near a coral reef (A) and another fish near a treasure chest (B). The second row features three additional images: a fish near a coral reef and a treasure chest (C), a fish near two treasure chests (D), and a final distractor image of a fish near a rock (E). The student must analyze the two initial images (A and B) and identify the correct result, then connect the matching images using the provided answer boxes.",
+  "answer": "To correctly answer this activity, the student needs to: 1) Observe the two initial images (A and B), 2) mentally sum the number of treasure chests in each image (1 + 1 = 2), 3) identify the image that represents the sum (D), and 4) connect the image B with image D using the answer box. The student should not connect the distractor images."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing five images in a 2-line and 3-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 200px 200px 200px;
+      grid-template-rows: 200px 200px;
+      /* the columns' size, which will be used to adjust the images in the activity */
+      grid-template-areas:
+        "img1 img2 img3"
+        "result result result";
+    }
+
+    /* class that will be used to place the first image of the fish in the coral reef in the first row and first column */
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class that will be used to place the second image of the fish near the treasure chest in the first row and second column */
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class that will be used to place the third image of the fish in the coral reef and a treasure chest in the second row and first column */
+    .img3 {
+      grid-area: img3;
+    }
+
+    /* class that will be used to place the fourth image of the fish near the two treasure chests in the second row and second column */
+    .result {
+      grid-area: result;
+      margin-top: 20px;
+    }
+
+    /* class that will be used to adjust the size of the images in the activity */
+    img {
+      width: 180px;
+      height: 180px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 600px"
+    >
+      <div class="activity" style="width: 600px">
+        <p
+          exp="Activity description, containing the explanation of what the student will have to do to answer the activity correctly"
+        >
+        </p>
+
+        <div class="container">
+          <div class="img1" exp="div that will be used to adjust the image of the fish in the coral reef to the first row and the first column">
+            <img
+              alt="Image in children's drawing style of a fish next to a coral reef"
+              exp="Image that the student will have to observe and identify that there is 1 coral reef in the image"
+            />
+          </div>
+
+          <div class="img2" exp="div that will be used to adjust the image of the fish near a treasure chest to the first row and the second column">
+            <img
+              alt="Image in children's drawing style of a fish near a treasure chest"
+              exp="Image that the student will have to observe and identify that there is 1 treasure chest in the image"
+            />
+          </div>
+
+          <div class="img3" exp="div that will be used to adjust the image of the fish in the coral reef and a treasure chest to the second row and the first column">
+            <img
+              alt="Image in children's drawing style of a fish next to a coral reef and a treasure chest"
+              exp="Image that the student will have to observe and identify that there is 1 coral reef and 1 treasure chest in the image"
+            />
+          </div>
+
+          <div class="result" exp="div that will be used to adjust the image of the fish near the two treasure chests to the second row and the second column">
+            <img
+              alt="Image in children's drawing style of a fish near two treasure chests"
+              exp="Image that the student will have to observe and identify that there are 2 treasure chests in the image"
+            />
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: center;" 
+          exp="div used to center the answer boxes for the student to connect the correct images"
+        >
+          <div
+            style="width: 100px; height: 100px; border: 1px solid black;"
+            exp="Answer box for the student to connect the image that represents the sum of img1 and img3"
+          ></div>
+          <div
+            style="margin-left: 20px; width: 100px; height: 100px; border: 1px solid black;"
+            exp="Answer box for the student to connect the image that represents the sum of img2 and img3"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

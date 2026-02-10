@@ -1,0 +1,61 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Park
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+  "task": "To practice addition and counting by calculating how much Tommy will spend at the Dino Park gift shop.",
+  "layout": "Tommy is visiting the Dino Park and wants to buy some souvenirs. An image shows the prices of a plush dinosaur, a fossil digging kit, and a dino backpack. The student will use the prices to solve simple addition problems.",
+  "answer": {
+    "A": "To answer correctly, the student adds the price of the plush dinosaur (25 reais) and the fossil digging kit (30 reais). The correct answer is 55 reais.",
+    "B": "To answer correctly, the student adds the price of the plush dinosaur (25 reais) and the dino backpack (45 reais). The correct answer is 70 reais.",
+    "C": "To answer correctly, the student adds the price of the fossil digging kit (30 reais) and the dino backpack (45 reais). The correct answer is 75 reais.",
+    "D": "To answer correctly, the student adds all three items: plush dinosaur (25 reais), fossil kit (30 reais), and dino backpack (45 reais). The correct answer is 100 reais."
+  }
+}
+  
+
+<html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: solid 1px; padding: 10px;" exp="Main container with fixed width for the Dino Park activity.">
+      <div class="activity">
+        <p exp="Tommy is visiting the Dino Park and wants to buy some souvenirs. The prices of the items are shown in the image.">
+          Tommy is exploring the Dino Park and stops at the gift shop. Below is an image showing the items he wants to buy and their prices.
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Centered image displaying Dino Park souvenirs with prices.">
+        <img 
+          src="" 
+          alt="Illustration showing a plush dinosaur, fossil digging kit, and dino backpack with prices."
+          style="width: 600px; height: 300px"
+          exp="Image of Dino Park items with prices."
+        />
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question about total cost of plush dinosaur and fossil kit."><b>A)</b> What is the total cost of the plush dinosaur and the fossil digging kit?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Answer box for question A. Correct: 55."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question about total cost of plush dinosaur and backpack."><b>B)</b> What is the total cost of the plush dinosaur and the dino backpack?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Answer box for question B. Correct: 70."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question about total cost of fossil kit and backpack."><b>C)</b> What is the total cost of the fossil digging kit and the dino backpack?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Answer box for question C. Correct: 75."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question about total cost of all three items."><b>D)</b> What is the total cost of all three items?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Answer box for question D. Correct: 100."></div>
+      </div>
+    </div>
+  </body>
+</html>

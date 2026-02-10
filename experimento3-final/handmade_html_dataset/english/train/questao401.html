@@ -1,0 +1,118 @@
+level: 2nd year of fundamental  
+learning_goals: counting, comparison  
+theme: Animal Preferences Voting  
+width-sheet: 800px  
+task: observe table, write answer  
+language: en
+
+{
+    "task": "To practice counting, comparison, and addition by analyzing votes for animals and answering questions about the most voted animal and total votes.",
+    "layout": "The activity consists of a description at the top, where the student will read the table about the votes for different animals and then answer the related questions.",
+    "answer": {
+        "A": "To answer correctly, the student needs to identify the animals listed in the table. The correct answer is 'Rabbit, Fish, Cat, and Dog'.",
+        "B": "To answer correctly, the student needs to count how many students voted for the cat. The correct answer is 5 students.",
+        "C": "To answer correctly, the student needs to count how many students voted for the dog. The correct answer is 6 students.",
+        "D": "To answer correctly, the student needs to add the total number of students who voted. The correct answer is 22 students."
+    }
+}
+
+<html>
+    <head>
+        <style>
+            .container {
+                width: 800px;
+                border: solid 1px;
+                padding: 10px;
+                text-align: center;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: center;
+            }
+            th {
+                background-color: #6aa5db;
+                color: white;
+            }
+            .question-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+            .answer-box {
+                width: 100px;
+                height: 30px;
+                border: 1px solid black;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+      <div class="container">
+        
+        <div class="activity">
+          <p exp="Activity description explaining the voting scenario for animals.">
+            A group of students voted for their favorite animals. The votes were recorded as follows:
+          </p>
+        </div>
+
+        <table exp="Table displaying the animal votes.">
+            <tr>
+                <th>Animal</th>
+                <th>Votes</th>
+            </tr>
+            <tr>
+                <td>Rabbit</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Fish</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Cat</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Dog</td>
+                <td>6</td>
+            </tr>
+        </table>
+
+        <div class="question-container">
+            <p exp="Question asking for the list of animals in the table.">
+                <b>A)</b> What animals are listed in the table?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the animals listed. The correct answer is 'Rabbit, Fish, Cat, Dog'."></div>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for how many students voted for the cat.">
+                <b>B)</b> How many students voted for the cat?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the number of students who voted for the cat. The correct answer is 5."></div>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for how many students voted for the dog.">
+                <b>C)</b> How many students voted for the dog?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the number of students who voted for the dog. The correct answer is 6."></div>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for the total number of students who voted.">
+                <b>D)</b> How many students voted in total?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the total number of students who voted. The correct answer is 22 students."></div>
+        </div>
+        
+      </div>
+    </body>
+</html>

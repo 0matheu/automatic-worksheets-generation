@@ -1,0 +1,103 @@
+level: 2nd year of fundamental
+learning goals: addition, counting
+theme: fruits
+width-sheet: 850px
+task: observe images, write answer
+language: en
+
+
+{
+  "task": "To practice basic addition skills by counting the quantity of bananas and apples in two images and performing the sum, learning to count and perform simple arithmetic operations.",
+  "layout": "The layout is divided into two main sections. The top section features a paragraph that explains the task, providing clear instructions for the students. Below this, the bottom section consists of a grid layout with five cells. In the first cell, there is an image of 6 bananas, followed by a plus sign in the second cell. The third cell contains an image of 4 apples, while the fourth cell displays an equal sign. Finally, the fifth cell includes a box for the student to write the result.",
+  "answer": "To answer correctly, the student needs to observe the two images and count the number of bananas (6) and apples (4) present. The student needs to add the two numbers together to get 10. The student needs to write the result (10) in the box provided. The student needs to observe the images carefully and perform a simple addition operation to get the correct answer."
+}
+
+<html>
+  <head></head>
+
+  <style>
+    /* class that will be used to organize the activity layout, it consists of two images, a plus sign, an equal sign, and a space for the result*/
+    .container {
+      display: grid;
+      grid-template-columns: 150px 150px 150px 150px 150px;
+      grid-template-rows: 150px;
+      grid-template-areas:
+        "img1 plus img2 equal result"
+    }
+
+    /* class that will be used to position image 1 in the first cell of the first column */
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class that will be used to position image 2 in the first cell of the third column */
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class that will be used to position the equal sign in the first cell of the fourth column */
+    .equal {
+      grid-area: equal;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* class that will be used to position the plus sign in the first cell of the second column */
+    .plus {
+      grid-area: plus;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* class that will be used to position and draw a box for the student to write the answer */
+    .result {
+      grid-area: result;
+      border: solid 1px;
+    }
+
+    /* class used to ajust the size of the images in the activity */
+    img {
+      width: 180px;
+      height: 150px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 850px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 600px"
+    >
+      <div class="activity" style="width: 600px">
+        <p
+          exp="Activity description, containing the explanation of what the student will have to do to answer the activity correctly"
+        >
+          Count the quantity of bananas and also the quantity of apples in the image below, perform the sum and write the result.
+        </p>
+
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="Image in the style of a child's drawing with a bunch of bananas containing 6 bananas."
+              exp="Image that the student will have to observe and count how many bananas are present"
+            />
+          </div>
+
+          <div class="plus" exp="plus sign that represents the sum of the quantities"><p>+</p></div>
+
+          <div class="img2">
+            <img 
+              alt="Image in the style of a child's drawing containing 4 apples in a basket"
+              exp="Image that the student will have to observe and count how many apples are present in the basket."
+            />
+          </div>
+
+          <div class="equal" exp="equal sign that represents the result of the sum"><p>=</p></div>
+
+          <div class="result" exp="box that will serve for the student to write the result of the sum"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

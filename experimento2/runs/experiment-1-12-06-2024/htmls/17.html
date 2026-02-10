@@ -1,0 +1,48 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of triceratops and brachiosaurus in the image and calculating the total sum.",
+  "layout": "The HTML elements are organized with a div containing the sheet width, followed by a div containing the question description, an image of triceratops, an image of brachiosaurus, and three paragraphs containing the questions. The images and paragraphs are styled with specific widths and placements to fit the content.",
+  "answer": "To answer correctly, the student needs to: 1) count the number of triceratops (5), 2) count the number of brachiosaurus (7), and 3) add the two numbers together to get the total sum. The correct answers are: A) 5, B) 7, and C) 12."
+}
+```
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the page width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of the question the student will have to answer"
+        >
+          Observe the image below and answer the questions:
+        </p>
+
+        <div style="display: flex">
+          <img
+            src=""
+            alt="image in a coloring book style of 5 triceratops in a savannah scenario"
+            style="width: 400px; height: 300px"
+            exp="image that the student will have to observe and identify how many triceratops are present, being 5"
+          />
+          <img
+            src=""
+            alt="image in a coloring book style of 7 brachiosaurus in a savannah scenario"
+            style="width: 400px; height: 300px"
+            exp="image that the student will have to observe and identify how many brachiosaurus are present, being 7"
+          />
+        </div>
+
+        <p exp="question that asks the student to identify how many triceratops are present">A) How many triceratops are present?</p>
+        <p exp="question that asks the student to identify how many brachiosaurus are present">B) How many brachiosaurus are present?</p>
+        <p exp="question that asks for the sum of triceratops and brachiosaurus">C) What is the sum of triceratops and brachiosaurus?</p>
+      </div>
+    </div>
+  </body>
+</html>
+```

@@ -1,0 +1,50 @@
+level: 2nd year of fundamental
+learning_goals: counting
+theme: School Desks
+width-sheet: 800px
+task: observe images, write answer
+language: en
+
+
+
+{
+  "task": "To help students practice counting by observing the number of desks in two different classrooms, reinforcing attention to detail and comparative analysis.",
+  "layout": "Two labeled images of classrooms are presented side by side. Each classroom contains a different number of desks. Below the images, the student answers two questions—one for each classroom—using the rectangular boxes aligned to the right.",
+  "answer": "Students should observe each image and count the number of desks visible. For question A, they write the total number of desks in Classroom A; for question B, the number of desks in Classroom B. This task supports visual counting and comparison in a school-related context."
+}
+  
+
+
+<html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: 1px solid black; padding: 16px;" exp="Main container that organizes the content in a clean, structured format.">
+
+      <p exp="Instructions for the student to count the desks in two different classrooms.">
+        Look at the two classrooms. Count how many desks are in Classroom A and Classroom B.
+      </p>
+
+      <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 16px;" exp="Side-by-side image display showing the two classrooms for comparison.">
+        <div>
+          <img src="" alt="Classroom A with desks arranged in rows." style="width: 350px; height: 250px;" exp="Image showing several desks in Classroom A for students to count.">
+          <p style="text-align: center;" exp="Label identifying the first image.">Classroom A</p>
+        </div>
+        <div>
+          <img src="" alt="Classroom B with more desks than Classroom A." style="width: 350px; height: 250px;" exp="Image showing desks in Classroom B for counting practice.">
+          <p style="text-align: center;" exp="Label identifying the second image.">Classroom B</p>
+        </div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question prompting the student to count the number of desks in Classroom A."><b>A)</b> How many desks are there in Classroom A?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Answer box where the student writes the number of desks counted in Classroom A."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question prompting the student to count the number of desks in Classroom B."><b>B)</b> How many desks are there in Classroom B?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Answer box where the student writes the number of desks counted in Classroom B."></div>
+      </div>
+
+    </div>
+  </body>
+</html>

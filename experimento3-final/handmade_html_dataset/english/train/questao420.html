@@ -1,0 +1,68 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Toy Collection
+width-sheet: 800px
+
+task: observe images, write answer
+language: en
+
+{ "task": "To practice counting and addition skills by adding up the number of toys collected by the child in a collection.", "layout": "The activity consists of a description explaining that the student needs to add the number of toys collected by the child and answer questions about the correct total.", "answer": { "A": "To answer correctly, the student needs to add the number of toys (7 cars, 3 dolls, and 5 action figures). The correct answer is 15 toys.", "B": "To answer correctly, the student needs to write down the total number of toys. The correct answer is 15 toys." } }
+
+<html>
+  <head>
+    <style>
+      .container {
+        width: 800px;
+        border: solid 1px;
+        padding: 10px;
+        text-align: center;
+      }
+      .question-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+      .answer-box {
+        width: 150px;
+        height: 30px;
+        border: 1px solid black;
+        text-align: center;
+      }
+      img {
+        width: 120px;
+        height: 70px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="activity">
+        <p exp="Activity description explaining the context of the child's toy collection.">
+          A child collected toys for their collection. The toys include:
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center;" exp="Div used to center the images of toys.">
+        <img src="" alt="Image of cars" exp="Image of cars collected by the child." />
+        <img src="" alt="Image of dolls" exp="Image of dolls collected by the child." />
+        <img src="" alt="Image of action figures" exp="Image of action figures collected by the child." />
+      </div>
+
+      <div class="question-container" exp="Question asking the student to calculate the total number of toys.">
+        <p exp="Question asking how many toys the child has in total.">
+          <b>A)</b> How many toys does the child have in total?
+        </p>
+        <div class="answer-box" exp="Box for the student to write the total number of toys."></div>
+      </div>
+
+      <div class="question-container" exp="Question asking how many cars the child has.">
+        <p exp="Question asking how many cars the child has.">
+          <b>B)</b> How many cars does the child have?
+        </p>
+        <div class="answer-box" exp="Box for the student to write the number of cars the child has."></div>
+      </div>
+    </div>
+  </body>
+</html>

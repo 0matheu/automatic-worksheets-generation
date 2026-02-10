@@ -1,0 +1,42 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of cacti in the image and calculating the total sum.",
+  "layout": "The HTML elements are organized with a div containing the sheet width, followed by a div containing the question description, an image of a cactus, and three paragraphs containing the questions. The image is centered in the div using flexbox, and the questions are listed below the image.",
+  "answer": "To answer correctly, the student needs to: 1) count the number of cacti in the image (7 cacti arriving), 2) identify the initial number of cacti (5), and 3) calculate the total sum by adding the two numbers together (5 + 7 = 12). The correct answers are: A) 7 cacti arriving, B) 5 initial cacti, and C) 12 total cacti."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of the question the student will have to answer"
+        >
+          Observe the image below and answer the questions:
+        </p>
+        <div
+          style="display: flex; justify-content: center"
+          exp="div used to center the image in the question"
+        >
+          <img
+            src=""
+            alt="Image in a coloring book style of 5 cacti in a desert, with a road coming towards the cacti, and in the next image, 7 cacti are on the road, approaching the first 5 cacti."
+            style="width: 600px; height: 300px"
+            exp="Image that the student will have to count how many cacti are present, being 12 in total (5 in the first image, and 7 in the second image)"
+          />
+        </div>
+        <p>A) How many cacti are present in the image?</p>
+        <p>B) How many cacti are initially present?</p>
+        <p>C) What is the sum of all the cacti present?</p>
+      </div>
+    </div>
+  </body>
+</html>
+```

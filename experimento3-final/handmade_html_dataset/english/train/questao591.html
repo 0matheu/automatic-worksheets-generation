@@ -1,0 +1,55 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Train Station 
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{"task": "Count the passengers getting on the train at different platforms and answer the questions.",
+"layout": "This activity shows passengers getting on the train at three different platforms. The student will count the passengers at each platform.",
+"answer": {
+  "A": "The student should add the number of passengers from Platform 1 (10) and Platform 2 (15). The correct answer is 25.",
+  "B": "The student should add the passengers from Platform 2 (15) and Platform 3 (5). The correct answer is 20.",
+  "C": "The student should add the total number of passengers from all three platforms: 10 + 15 + 5. The correct answer is 30."
+}
+}
+
+<html>
+<head></head>
+<body>
+  <div style="width: 800px; border: solid 1px black; padding: 10px;">
+    <div class="activity">
+      <p exp="Passengers are getting on the train at three platforms. Count the passengers and answer the questions.">
+        Count how many passengers are getting on the train at each platform and answer the questions below.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+      <img 
+        src=""
+        alt="Illustration of a train at a station with passengers waiting at three platforms."
+        style="width: 600px; height: 300px;"
+        exp="The image shows a busy train station with three platforms. Platform 1 has 10 passengers, Platform 2 has 15 passengers, and Platform 3 has 5 passengers. The train is ready to depart."
+      />
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p><b>A)</b> How many passengers got on the train at Platform 1 and Platform 2?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total passengers at Platform 1 and 2. Correct answer: 25."></div>
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p><b>B)</b> How many passengers got on the train at Platform 2 and Platform 3?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total passengers at Platform 2 and 3. Correct answer: 20."></div>
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p><b>C)</b> How many passengers got on the train in total from all platforms?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total passengers from all platforms. Correct answer: 30."></div>
+    </div>
+  </div>
+</body>
+</html>
+
+

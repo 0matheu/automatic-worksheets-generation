@@ -1,0 +1,74 @@
+level: 2nd year of fundamental  
+learning_goals: counting
+theme: Book Collection
+width-sheet: 800px  
+task: observe images, write answer
+language: en
+
+{
+    "task": "To practice counting and addition skills by calculating the total value of books in a collection.",
+    "layout": "The activity consists of a description at the top, explaining the context of a book collection, followed by a set of questions regarding the total value of the books.",
+    "answer": {
+        "A": "To answer correctly, the student needs to add up the value of the books (10 + 30 + 50). The correct answer is 90 reais.",
+        "B": "To answer correctly, the student needs to calculate the total amount after adding 40 reais worth of books. The correct answer is 130 reais."
+    }
+}
+
+<html>
+    <head>
+        <style>
+            .container {
+                width: 800px;
+                border: solid 1px;
+                padding: 10px;
+                text-align: center;
+            }
+            .question-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+            .answer-box {
+                width: 150px;
+                height: 30px;
+                border: 1px solid black;
+                text-align: center;
+            }
+            img {
+                width: 120px;
+                height: 70px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="activity">
+                <p exp="Activity description explaining the context of a book collection.">
+                    Mariana has a book collection. She has books worth 10 reais, 30 reais, and 50 reais in her collection.
+                </p>
+            </div>
+
+            <div style="display: flex; justify-content: center;">
+                <img src="" alt="Image of a 10 reais book" exp="Image of a 10 reais book"/>
+                <img src="" alt="Image of a 30 reais book" exp="Image of a 30 reais book"/>
+                <img src="" alt="Image of a 50 reais book" exp="Image of a 50 reais book"/>
+            </div>
+
+            <div class="question-container">
+                <p exp="Question asking for the total value of the books in the collection.">
+                    <b>A)</b> What is the total value of Mariana's books?
+                </p>
+                <div class="answer-box" exp="Box where the student writes the total value. The correct answer is 90 reais."></div>
+            </div>
+
+            <div class="question-container">
+                <p exp="Question asking for the total amount after adding 40 reais worth of books.">
+                    <b>B)</b> How much does Mariana have after adding 40 reais worth of books?
+                </p>
+                <div class="answer-box" exp="Box where the student writes the total value. The correct answer is 130 reais."></div>
+            </div>
+        </div>
+    </body>
+</html>

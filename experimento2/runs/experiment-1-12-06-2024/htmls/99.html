@@ -1,0 +1,39 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of cacti in the initial image, drawing a given number of additional cacti, and then calculating the total number of cacti.",
+  "layout": "The HTML elements are organized with a div containing the sheet width, followed by a div containing the question description, an initial paragraph, and an image of cacti. The image is centered in the div using flexbox. Then, there are three paragraphs containing the questions about the number of cacti.",
+  "answer": "To answer correctly, the student needs to: 1) count the 7 cacti in the initial image, 2) draw 5 more cacti to get a total of 12 cacti, 3) add the number of cacti in the image (7) to the number of cacti they drew (5) to get 12. The correct answers are: A) 7, B) 12, and C) 5."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description. Contains the explanation of the question the student will have to answer"
+        >
+          Observe the image below and answer the questions:
+        </p>
+        <div style="display: flex; justify-content: center">
+          <img
+            src=""
+            alt="Image in a coloring book style of 7 cacti in a desert landscape"
+            style="width: 600px; height: 400px"
+            exp="Image that the student will have to count the 7 cacti"
+          />
+        </div>
+        <p exp="question that asks the student to count the cacti in the image">A) How many cacti are present in the image?</p>
+        <p exp="question that asks for the sum of the cacti in the image with the cacti the student will draw">B) Can you draw 5 more cacti and tell me how many cacti are present in total?</p>
+        <p exp="question that asks for the quantity of cacti the student will draw">C) How many cacti do you want to draw in addition to the 7 present in the image?</p>
+      </div>
+    </div>
+  </body>
+</html>
+```

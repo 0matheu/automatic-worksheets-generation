@@ -1,0 +1,86 @@
+level: 2nd year of fundamental
+learning_goals: addition, counting
+theme: balloons
+width-sheet: 600px
+task: observe images, write answer
+language: en
+
+
+{
+  "task": "The objective of this activity is for the student to observe the given images and connect those that represent the number of balloons Sofia initially had and received. Then, they must count and write the total number of balloons in the provided answer box. This exercise helps students practice identification, counting, and basic addition skills.",
+  "layout": "The activity is structured with a two-row layout. The first row contains three images: Sofia’s initial balloons, the balloons she received, and a distractor image. The second row features a final image representing the total balloons Sofia has. The student must connect matching balloon images and count their total.",
+  "answer": "To correctly answer this activity, the student needs to: 1) Identify the correct images representing Sofia’s balloons before and after receiving more, 2) Connect those images with the final image representing the total balloons, 3) Count the total number of balloons (7 + 5 = 12), and 4) Write the final count in the answer box."
+}
+  
+<html>
+  <head>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 200px 200px;
+        grid-template-areas:
+          "img1 img2 img3"
+          "result result result";
+      }
+
+      .img1 { grid-area: img1; }
+      .img2 { grid-area: img2; }
+      .img3 { grid-area: img3; }
+      .result { grid-area: result; margin-top: 20px; text-align: center; }
+      .img-size { width: 180px; height: 180px; }
+      .answer-box {
+        width: 100px;
+        height: 50px;
+        border: 1px solid black;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .answer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+      }
+      .answer-line {
+        width: 100px;
+        height: 2px;
+        background-color: black;
+        position: absolute;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="width: 600px; border: solid 1px; padding: 10px; text-align: left;">
+      <div class="activity">
+        <p>Look at the images below, connect the two images that show Sofia’s balloons before and after receiving more, and write the total number in the box below.</p>
+
+        <div class="container">
+          <div class="img1">
+            <img class="img-size" src="" alt="Image of 7 balloons Sofia initially had" />
+          </div>
+          <div class="img2">
+            <img class="img-size" src="" alt="Image of 5 balloons Sofia received" />
+          </div>
+          <div class="img3">
+            <img class="img-size" src="" alt="Image of a different type of object " />
+          </div>
+          <div class="result">
+            <img class="img-size" src="" alt="Image of the total 12 balloons Sofia has now" />
+          </div>
+        </div>
+        
+        <div class="answer-container">
+          <p style="text-align: center;">Write the total number of balloons Sofia has now in the box below</p>
+          <div class="answer-box"></div>
+          <div class="answer-line"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+  

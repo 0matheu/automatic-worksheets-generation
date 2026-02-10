@@ -1,0 +1,49 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Summer Camp Activities
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+    "task": "To practice counting and basic addition skills by calculating the total number of activities Pedro will do at summer camp.",
+    "layout": "The activity consists of a description where Pedro is choosing activities at summer camp. Below is an image showing the activities and their durations. The student will answer questions based on the total number of activities.",
+    "answer": {
+      "A": "To answer correctly, the student needs to add the duration of swimming (2 hours) and hiking (3 hours). The correct answer is 5 hours.",
+      "B": "To answer correctly, the student needs to add the duration of hiking (3 hours) and archery (1 hour). The correct answer is 4 hours."
+    }
+  }
+
+  
+<html>
+<head></head>
+<body>
+  <div style="width: 800px; border: solid 1px; padding: 10px;">
+    <div class="activity">
+      <p exp="Pedro is choosing activities for his summer camp. The duration of the activities is shown in the image.">
+        Pedro is planning his activities for summer camp. Below is an image showing the activities and their durations.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image showing Pedro’s summer camp activities.">
+      <img 
+        src="" 
+        alt="Illustration showing Pedro’s summer camp activities: swimming, hiking, and archery."
+        style="width: 600px; height: 300px"
+        exp="Image showing the activities and their durations."
+      />
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question asking for the total duration of swimming and hiking."><b>A)</b> What is the total duration of swimming and hiking?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total duration of swimming and hiking. Correct: 5."></div>
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question asking for the total duration of hiking and archery."><b>B)</b> What is the total duration of hiking and archery?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total duration of hiking and archery. Correct: 4."></div>
+    </div>
+  </div>
+</body>
+</html>

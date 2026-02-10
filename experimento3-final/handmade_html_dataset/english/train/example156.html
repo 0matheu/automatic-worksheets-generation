@@ -1,0 +1,67 @@
+level: 2nd year fundamental
+learning_goals: addition, subtraction, comparison
+theme: toy collections
+sheet_width: 600px
+task: observe image, write answer
+language: en
+
+
+
+{
+  "task": "The objective of this activity is for the student to calculate the total number of toys each child has, compare the totals, and determine who has more toys and by how many.",
+  "layout": "The activity is organized with a description at the top, followed by an illustration showing Julia and Anna with their toys. Below the image, two questions prompt the student to analyze and compare the number of toys they each have. Answer boxes are aligned beside the questions for clarity.",
+  "answer": "To answer correctly, the student needs to calculate the total toys for Julia (35) and Anna (38). For question A, the student should write 'Anna' in the answer box as she has more toys. For question B, the student should calculate the difference and write '3' in the second answer box to indicate Anna has 3 more toys than Julia."
+}
+
+  
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px; padding: 10px;"
+      exp="This div acts as the main container for the activity. It sets a fixed width of 600px with padding for spacing inside the container."
+    >
+      <div class="activity" style="width: 100%;">
+        <p
+          exp="This paragraph provides a clear description of the task. The student needs to calculate the number of toys for Julia and Anna and answer the questions below."
+        >
+          Julia had 30 toys and received 5 new toys as a gift. Anna had 40 toys but gave away 2 toys to her cousin.
+        </p>
+
+        <div
+          style="display: flex; justify-content: center; margin-bottom: 20px;"
+          exp="This section contains an illustrative image that represents the toys scenario."
+        >
+          <img
+            src=""
+            alt="Illustration of Julia and Anna with their toy collections."
+            style="width: 300px; height: auto;"
+            exp="This image visually represents the scenario where Julia and Anna have toy collections."
+          />
+        </div>
+
+        <div
+          style="display: flex; justify-content: flex-start; align-items: center; margin-bottom: 10px; gap: 10px;"
+          exp="This section contains the first question (A) with an answer box closely aligned beside it."
+        >
+          <p style="margin: 0;">A) Now, who has more toys: Julia or Anna?</p>
+          <div
+            style="width: 100px; height: 30px; border: 1px solid black;"
+            exp="Box where the student writes who has more toys (Julia or Anna)."
+          ></div>
+        </div>
+
+        <div
+          style="display: flex; justify-content: flex-start; align-items: center; margin-bottom: 10px; gap: 10px;"
+          exp="This section contains the second question (B) with an answer box closely aligned beside it."
+        >
+          <p style="margin: 0;">B) How many more toys?</p>
+          <div
+            style="width: 100px; height: 30px; border: 1px solid black;"
+            exp="Box where the student writes how many more toys one has compared to the other."
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

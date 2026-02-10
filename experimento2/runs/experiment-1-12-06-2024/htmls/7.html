@@ -1,0 +1,129 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of musical notes in each image and calculating the total sum.",
+  "layout": "The HTML elements are organized with a div containing the sheet width, followed by a div containing the question description, and then a grid container with three rows and two columns. The grid container contains an image of a music sheet in the first column of the first row, and three images of musical notes in the second column of each row. The images are placed within grid areas to facilitate alignment and calculation.",
+  "answer": "To answer correctly, the student needs to identify the number of musical notes in each image and calculate the total sum. The first image has 5 notes, the second image has 3 notes, and the third image has 4 notes. The student needs to add up the number of notes in all three images to get 12. The correct answer is 12."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three images in a specific layout */
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 200px 200px;
+      grid-template-areas:
+        "music1 img1"
+        "music2 img2"
+        "music3 img3";
+    }
+
+    /* class used to place the image of the music sheet in the first row and the first column */
+    .music1 {
+      grid-area: music1;
+    }
+
+    /* class used to place the image in the second row and the first column */
+    .music2 {
+      grid-area: music2;
+    }
+
+    /* class used to place the image in the third row and the first column */
+    .music3 {
+      grid-area: music3;
+    }
+
+    /* class used to place the image in the first row of the second column */
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the image in the second row of the second column */
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to place the image in the third row of the second column */
+    .img3 {
+      grid-area: img3;
+    }
+
+    /* class used to adjust the size of the images in the activity */
+    img {
+      width: 180px;
+      height: 180px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the images, count the total number of musical notes, and write below.
+        </p>
+
+        <div
+          class="container"
+          exp="div that contains the images of the musical notes and the music sheet, being organized in a grid layout"
+        >
+          <div class="music1">
+            <img
+              src=""
+              alt="Image in the style of a children's drawing of a music sheet, containing 5 musical notes"
+              exp="Image that the student will have to identify that there are 5 musical notes"
+            />
+          </div>
+
+          <div class="music2">
+            <img
+              src=""
+              alt="Image in the style of a children's drawing of a music sheet, containing 3 musical notes"
+              exp="Image that the student will have to identify that there are 3 musical notes"
+            />
+          </div>
+
+          <div class="music3">
+            <img
+              src=""
+              alt="Image in the style of a children's drawing of a music sheet, containing 4 musical notes"
+              exp="Image that the student will have to identify that there are 4 musical notes"
+            />
+          </div>
+
+          <div class="img1">
+            <img
+              src=""
+              alt="Image in the style of a children's drawing containing 5 musical notes in a page of a music sheet book"
+              exp="Image that the student will have to identify that there are 5 musical notes and add with the other images"
+            />
+          </div>
+
+          <div class="img2">
+            <img
+              src=""
+              alt="Image in the style of a children's drawing containing 3 musical notes in a page of a music sheet book"
+              exp="Image that the student will have to identify that there are 3 musical notes and add with the other images"
+            />
+          </div>
+
+          <div class="img3">
+            <img
+              src=""
+              alt="Image in the style of a children's drawing containing 4 musical notes in a page of a music sheet book"
+              exp="Image that the student will have to identify that there are 4 musical notes and add with the other images"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

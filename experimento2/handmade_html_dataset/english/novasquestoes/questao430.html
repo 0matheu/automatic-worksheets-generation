@@ -1,0 +1,81 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme:  Candies in a Jar
+width-sheet: 800px
+task: observe images, write answer
+language: en
+
+
+{
+  "task": "To practice counting and addition skills by helping Maria calculate the total number of candies in her jar after adding more.",
+  "layout": "The activity starts by explaining that Maria already has 10 candies in her jar. The student will observe images that represent adding 4 and then 7 candies. The student must write the correct total in the answer box next to each question.",
+  "answer": {
+    "A": "To answer question A, the student must add 4 candies to the 10 candies already in the jar. This is a basic addition: 10 + 4 = 14. The correct answer is 14.",
+    "B": "To answer question B, the student must add 7 candies to the 10 candies already in the jar. This is a basic addition: 10 + 7 = 17. The correct answer is 17."
+  }
+}
+
+<html>
+  <head>
+    <style>
+      .container { 
+        width: 800px; 
+        border: solid 1px; 
+        padding: 10px; 
+        text-align: center; 
+        font-family: Arial, sans-serif; 
+      }
+      .question-container { 
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between; 
+        margin-bottom: 10px; 
+      }
+      .answer-box { 
+        width: 150px; 
+        height: 30px; 
+        border: 1px solid black; 
+        text-align: center; 
+        font-size: 16px; 
+      }
+      img { 
+        width: 120px; 
+        height: 70px; 
+        margin: 10px; 
+      }
+      .activity p { 
+        font-size: 18px; 
+        margin-bottom: 20px; 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="activity">
+        <p exp="Introductory text describing the problem scenario where Maria wants to find out the total number of candies after adding more to her jar.">
+          Maria has already placed 10 candies in her jar. She wants to know how many candies she will have if she adds 4 candies to the jar. Additionally, she wants to know how many candies she will have if she adds 7 candies to the jar.
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center;" exp="Row of illustrative images that help the student visualize the quantity of candies.">
+        <img src="" alt="Jar with 10 candies" exp="Illustration of a jar containing 10 colorful candies. This represents the starting amount of candies Maria has already placed in the jar." />
+        <img src="" alt="Jar with 14 candies" exp="Illustration of a jar now containing 14 candies. This represents Maria's jar after adding 4 more candies to the original 10." />
+        <img src="" alt="Jar with 17 candies" exp="Illustration of a jar now containing 17 candies. This represents Maria's jar after adding 7 more candies to the original 10." />
+      </div>
+
+      <div class="question-container" exp="First question prompting the student to calculate the result of adding 4 candies to Maria’s 10.">
+        <p exp="Question A: Student must compute 10 + 4 and write the result.">
+          <b>A)</b> How many candies will Maria have if she adds 4 candies to 10 candies?
+        </p>
+        <div class="answer-box" exp="Empty box where the student should write the sum of 10 and 4. Correct answer: 14."></div>
+      </div>
+
+      <div class="question-container" exp="Second question prompting the student to calculate the result of adding 7 candies to Maria’s 10.">
+        <p exp="Question B: Student must compute 10 + 7 and write the result.">
+          <b>B)</b> How many candies will Maria have if she adds 7 candies to 10 candies?
+        </p>
+        <div class="answer-box" exp="Empty box where the student should write the sum of 10 and 7. Correct answer: 17."></div>
+      </div>
+    </div>
+  </body>
+</html>

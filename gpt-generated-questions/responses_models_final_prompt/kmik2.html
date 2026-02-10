@@ -1,0 +1,226 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dinosaur Counting Adventure Worksheet</title>
+<style>
+/* Main container: At 800px width, this ensures the worksheet fits standard US Letter and A4 paper margins when printed, preventing content cutoff */
+.worksheet-container {
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #faf8f3;
+  border: 3px solid #2c5530;
+}
+
+/* Header styling: Bright green background with playful font captures attention and creates excitement for the dinosaur theme */
+.header {
+  background-color: #4a7c59;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Instruction box: Yellow highlight acts as a visual cue for important information, helping students identify where to read directions first */
+.instructions {
+  background-color: #fffacd;
+  border: 2px dashed #daa520;
+  padding: 12px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Counting zone: Light background separates this section from others, making it clear where the counting activity occurs */
+.counting-zone {
+  background-color: #f5f5dc;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+/* Image grid: Flexbox creates even spacing between dinosaurs, preventing visual crowding that could confuse counting for young learners */
+.dino-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Individual dinosaur container: Consistent sizing ensures fairness—no dinosaur looks more important, and all are equally countable */
+.dino-item {
+  width: 120px;
+  height: 120px;
+  text-align: center;
+}
+
+/* Dinosaur images: Limited to 80px height to fit multiple images on one printable page while remaining large enough for clear identification */
+.dino-image {
+  height: 80px;
+  width: auto;
+  margin-bottom: 5px;
+}
+
+/* Answer boxes: Dashed borders clearly indicate where students should write, and sufficient height accommodates large, developing handwriting */
+.answer-box {
+  width: 60px;
+  height: 40px;
+  border: 2px dashed #333;
+  margin: 0 auto;
+  background-color: white;
+}
+
+/* Label styling: Bold text helps students associate numbers with specific dinosaur types, reinforcing categorization skills */
+.dino-label {
+  font-weight: bold;
+  font-size: 18px;
+  color: #2c5530;
+  margin-top: 10px;
+}
+
+/* Addition section: Blue background provides a clear visual transition, signaling a new type of thinking (combining numbers) */
+.addition-zone {
+  background-color: #e6f3ff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Equation container: Flex layout with centered alignment helps students see the mathematical relationships between numbers and symbols */
+.equation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+  font-size: 24px;
+  gap: 10px;
+}
+
+/* Number boxes in equations: Individual boxes for each digit prevent confusion about where to write, especially for two-digit answers */
+.equation-box {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #333;
+  display: inline-block;
+  background-color: white;
+}
+
+/* Operator symbols: Larger size makes mathematical symbols prominent, helping students recognize and understand their function in addition */
+.operator {
+  font-size: 30px;
+  font-weight: bold;
+  color: #2c5530;
+}
+
+/* Fun fact footer: Green bar at bottom creates a satisfying conclusion and offers an engaging reward for completing the math task */
+.fun-fact {
+  background-color: #4a7c59;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+  <div class="worksheet-container">
+    <!-- Header section establishes the worksheet theme and provides a visual anchor -->
+    <div class="header" exp="Header area introducing the dinosaur counting activity theme">
+      <h1 alt="Main title reading Dinosaur Counting Adventure" exp="Worksheet title that is both descriptive and exciting for young learners">Dinosaur Counting Adventure!</h1>
+    </div>
+
+    <!-- Instructions provide clear, step-by-step guidance for completing the task -->
+    <div class="instructions" exp="Step-by-step directions explaining how to count dinosaurs and complete addition problems">
+      <p alt="Instructions: First count how many of each dinosaur you see. Then use your numbers to solve the addition problems below.">
+        <strong>How to be a Dinosaur Math Explorer:</strong><br>
+        1. Count how many of each dinosaur you see in the pictures.<br>
+        2. Write your answers in the yellow boxes.<br>
+        3. Use your numbers to solve the addition problems!
+      </p>
+    </div>
+
+    <!-- Main counting activity section where students observe and count dinosaur images -->
+    <div class="counting-zone" exp="Primary activity area containing dinosaur images to be counted">
+      <h2 alt="Section title Count the Dinosaurs" style="text-align: center; color: #2c5530;" exp="Subsection heading">Count the Dinosaurs!</h2>
+      
+      <div class="dino-grid" exp="Grid layout displaying all dinosaur images for counting">
+        <!-- T-Rex images - Total count: 5 -->
+        <img class="dino-image" alt="Tyrannosaurus Rex dinosaur with large head and tiny arms, colored brownish-red" exp="Image of T-Rex dinosaur for counting activity">
+        <img class="dino-image" alt="Tyrannosaurus Rex dinosaur with large head and tiny arms, colored brownish-red" exp="Image of T-Rex dinosaur for counting activity">
+        <img class="dino-image" alt="Tyrannosaurus Rex dinosaur with large head and tiny arms, colored brownish-red" exp="Image of T-Rex dinosaur for counting activity">
+        <img class="dino-image" alt="Tyrannosaurus Rex dinosaur with large head and tiny arms, colored brownish-red" exp="Image of T-Rex dinosaur for counting activity">
+        <img class="dino-image" alt="Tyrannosaurus Rex dinosaur with large head and tiny arms, colored brownish-red" exp="Image of T-Rex dinosaur for counting activity">
+        
+        <!-- Triceratops images - Total count: 7 -->
+        <img class="dino-image" alt="Triceratops dinosaur with three horns on its face and a large frill around its neck, colored green" exp="Image of Triceratops dinosaur for counting activity">
+        <img class="dino-image" alt="Triceratops dinosaur with three horns on its face and a large frill around its neck, colored green" exp="Image of Triceratops dinosaur for counting activity">
+        <img class="dino-image" alt="Triceratops dinosaur with three horns on its face and a large frill around its neck, colored green" exp="Image of Triceratops dinosaur for counting activity">
+        <img class="dino-image" alt="Triceratops dinosaur with three horns on its face and a large frill around its neck, colored green" exp="Image of Triceratops dinosaur for counting activity">
+        <img class="dino-image" alt="Triceratops dinosaur with three horns on its face and a large frill around its neck, colored green" exp="Image of Triceratops dinosaur for counting activity">
+        <img class="dino-image" alt="Triceratops dinosaur with three horns on its face and a large frill around its neck, colored green" exp="Image of Triceratops dinosaur for counting activity">
+        <img class="dino-image" alt="Triceratops dinosaur with three horns on its face and a large frill around its neck, colored green" exp="Image of Triceratops dinosaur for counting activity">
+        
+        <!-- Velociraptor images - Total count: 4 -->
+        <img class="dino-image" alt="Velociraptor dinosaur with a long tail and curved claws, colored orange and smaller than the other dinosaurs" exp="Image of Velociraptor dinosaur for counting activity">
+        <img class="dino-image" alt="Velociraptor dinosaur with a long tail and curved claws, colored orange and smaller than the other dinosaurs" exp="Image of Velociraptor dinosaur for counting activity">
+        <img class="dino-image" alt="Velociraptor dinosaur with a long tail and curved claws, colored orange and smaller than the other dinosaurs" exp="Image of Velociraptor dinosaur for counting activity">
+        <img class="dino-image" alt="Velociraptor dinosaur with a long tail and curved claws, colored orange and smaller than the other dinosaurs" exp="Image of Velociraptor dinosaur for counting activity">
+      </div>
+
+      <!-- Answer boxes for each dinosaur type -->
+      <div style="display: flex; justify-content: space-around; margin-top: 20px;" exp="Container for answer boxes where students write their counts">
+        <div class="dino-label" exp="Label identifying T-Rex answer box">
+          T-Rex: 
+          <div class="answer-box" alt="Empty box to write the count of T-Rex dinosaurs" exp="Answer box for T-Rex count"></div>
+        </div>
+        <div class="dino-label" exp="Label identifying Triceratops answer box">
+          Triceratops: 
+          <div class="answer-box" alt="Empty box to write the count of Triceratops dinosaurs" exp="Answer box for Triceratops count"></div>
+        </div>
+        <div class="dino-label" exp="Label identifying Velociraptor answer box">
+          Velociraptor: 
+          <div class="answer-box" alt="Empty box to write the count of Velociraptor dinosaurs" exp="Answer box for Velociraptor count"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Addition problems section where students apply their counted numbers -->
+    <div class="addition-zone" exp="Secondary activity area where students solve addition problems using their counted numbers">
+      <h2 alt="Section title Addition Challenge" style="text-align: center; color: #2c5530;" exp="Subsection heading">Addition Challenge!</h2>
+      <p alt="Use your dinosaur numbers to solve these problems" style="text-align: center;" exp="Instruction for addition section">Use your dinosaur numbers to solve these problems:</p>
+      
+      <div class="equation" exp="First addition equation combining T-Rex and Triceratops counts">
+        <span class="equation-box" alt="Empty box to write the T-Rex count number" exp="Box for first addend"></span>
+        <span class="operator" alt="Plus sign symbol" exp="Addition operator">+</span>
+        <span class="equation-box" alt="Empty box to write the Triceratops count number" exp="Box for second addend"></span>
+        <span class="operator" alt="Equals sign symbol" exp="Equals operator">=</span>
+        <span class="equation-box" alt="Empty box to write the sum answer" exp="Box for sum"></span>
+      </div>
+      
+      <div class="equation" exp="Second addition equation combining Triceratops and Velociraptor counts">
+        <span class="equation-box" alt="Empty box to write the Triceratops count number" exp="Box for first addend"></span>
+        <span class="operator" alt="Plus sign symbol" exp="Addition operator">+</span>
+        <span class="equation-box" alt="Empty box to write the Velociraptor count number" exp="Box for second addend"></span>
+        <span class="operator" alt="Equals sign symbol" exp="Equals operator">=</span>
+        <span class="equation-box" alt="Empty box to write the sum answer" exp="Box for sum"></span>
+      </div>
+    </div>
+
+    <!-- Fun fact provides engaging context and rewards completion -->
+    <div class="fun-fact" exp="Educational fun fact about dinosaurs to conclude worksheet">
+      <p alt="Fun fact: Did you know? The Tyrannosaurus Rex could eat up to 500 pounds of meat in one bite!" exp="Interesting dinosaur fact to reinforce science learning">
+        <strong>Did you know?</strong> The Tyrannosaurus Rex could eat up to 500 pounds of meat in one bite!
+      </p>
+    </div>
+  </div>
+</body>
+</html>
+```

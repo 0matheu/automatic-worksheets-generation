@@ -1,0 +1,661 @@
+
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+Gere o esqueleto de uma atividade para auxiliar o aluno no aprendizado.
+O esqueleto da atividade deverá conter a estrutura em HTML.
+Se a questão contiver imagens, adicione uma descrição no atributo de alt.
+Adicione também uma explicação para a estrutura HTML em um novo atributo exp quando necessário.
+Quando for necessário utilizar CSS, adicione uma explicação na forma de comentários, acima da classe. 
+
+Utilize os seguintes parâmetros:
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2 ano fundamental
+assunto: adição
+tematica: lanches
+largura-folha: 700px
+layout: única imagem
+
+Siga as seguintes regras:
+
+Gere uma descrição textual da atividade e em seguida o html contendo a questão.
+Não adicione nada fora a descrição textual e o html da questão.
+Gere uma atividade que seja criativa e que ajude o aluno a aprender de maneira lúdica.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão será praticado o princípio da adição, e
+também da identificação de objetos, e contagem em geral. A questão consiste
+de uma imagem de um estoque de lanches, contendo 6 hambúrgueres, 4 cachorros
+e 3 gelados. O aluno terá que responder a questão de qual a quantidade de
+hambúrgueres, cachorros e gelados juntos, representada pela imagem, é 
+parada a soma de 6 + 4 + 3, que é igual a 13.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 700px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 700px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe a imagem do estoque de lanches e responda as questões:
+        </p>
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <img
+            src=""
+            alt="Imagem do estoque de lanches, contendo 6 hambúrgueres, 4 cachorros e 3 gelados"
+            style="width: 500px; height: 300px"
+            exp="Imagem que o aluno terá que identificar o número de hambúrgueres, cachorros e gelados, e somar. A imagem contém 6 hambúrgueres, 4 cachorros e 3 gelados"
+          />
+        </div>
+        <p exp="questão que o aluno terá que responder, sendo: qual a soma de 6 + 4 + 3?" >Qual a soma de todos os objetos? </p>
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+Gere o esqueleto de uma atividade para auxiliar o aluno no aprendizado.
+O esqueleto da atividade deverá conter a estrutura em HTML.
+Se a questão contiver imagens, adicione uma descrição no atributo de alt.
+Adicione também uma explicação para a estrutura HTML em um novo atributo exp quando necessário.
+Quando for necessário utilizar CSS, adicione uma explicação na forma de comentários, acima da classe. 
+
+Utilize os seguintes parâmetros:
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2 ano fundamental
+assunto: adição
+tematica: lanches
+largura-folha: 700px
+layout: duas imagens, linhas e colunas
+
+Siga as seguintes regras:
+
+Gere uma descrição textual da atividade e em seguida o html contendo a questão.
+Não adicione nada fora a descrição textual e o html da questão.
+Gere uma atividade que seja criativa e que ajude o aluno a aprender de maneira lúdica.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão será praticado o principio da adição, e
+também da contiguidade e posicão, pois o aluno terá que posicionar
+as imagens no local correto, nas colunas e linhas, para que o preço
+do lanche mais barato seja o resultado da soma, entende-se que a
+soma dos preços terá que ser 10, então o aluno terá que colocar a
+imagem do lanche mais barato na primeira coluna, e a imagem do lanche
+mais caro na última coluna, e a imagem do lanche de preço 5 na segunda
+coluna, porque a soma de suas imagens será 5 + 4 + 1 = 10.
+
+<html>
+  <head></head>
+
+  <style>
+    /* container para a tabela, esse container terá 600px de largura, para ajustar as imagens dos lanches */
+   .container {
+      width: 600px;
+      border: solid 1px;
+    }
+
+    /* classe que será usada para posicionar as imagens dos lanches, em uma coluna e na posição certa para que a soma dos preços seja 10 */
+   .coluna1 {
+      width: 100px;
+      display: inline-block;
+      margin: 10px;
+    }
+
+   .coluna2 {
+      width: 100px;
+      display: inline-block;
+      margin: 10px;
+    }
+
+   .coluna3 {
+      width: 100px;
+      display: inline-block;
+      margin: 10px;
+    }
+
+    /* classe que será usada para posicionar a imagem do preço do lanche mais barato na primeira coluna, por mais barato é */
+   .imagem1 {
+      width: 90px;
+      height: 120px;
+      border: solid 1px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    /* classe que será usada para posicionar a imagem do preço do lanche mais caro na última coluna, pois é o mais caro é */
+   .imagem3 {
+      width: 90px;
+      height: 120px;
+      border: solid 1px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    /* classe que será usada para posicionar a imagem do preço do lanche de preço 5 na segunda coluna, pois é o preço do lanche que mais se aproxima da soma, entende-se que a imagem deverá estar na segunda coluna */
+   .imagem2 {
+      width: 90px;
+      height: 120px;
+      border: solid 1px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+  </style>
+
+  <body>
+    <div
+      style="width: 700px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 700px"
+    >
+      <div class="questao">
+        <p>Adicione as imagens abaixo, o preço de cada lanche está representado. 
+        Observe as seguinte questão:
+          Observe as imagens, o preço de cada lanche está representado. 
+        A) 
+        </p>
+
+        <div class="container" exp="div que o aluno terá que irá que ele irá que ele irá que ele irá que ele obterio.
+        </p>
+        </p>
+        </p>
+        A) 
+        </div>
+        <div class="div" experto e respostigal e respostao e as seguinto e a resposta da resposta da resposta da resposta emho seguinto e emalmente deverio deverásla estalizarão abaixo.
+    
+Ciente ao estilo ao estilo ao buscar ganjaqiasasão ao compromal.
+  
+  
+ 
+Obselho e sua frequente ao seguintaíraíraíraíra e também em o estralão demana expigalão expaily
+Cole
+Cole
+ 
+Cole
+ 
+ 
+ 
+ 
+ 
+"
+  Eertoando
+  
+  Joaté
+  e fantale
+ 
+
+  Eertojo
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+emannho ejo eioéalsoeatoho ealadaíraího es também emho e também comereíhoé ao em aoéalealalalé questivalé deveastereíhoéio em eínaínaínaereínaínaína e em emiga também em eastalinhoinhoasto e em em emastaliente emastalinhoasto eínaere Santoーストinhoasto eínaínaigo e jovido jovertoinhoerto e joé Morenoiroaligo eínaho eméinho Moreno joíhoí e Moreno Moreno Moreno joví eletal e joastal eastal e emalato e também em eínaereando e rio e rio e rio e e e johoho ao eínaéereiroalereiraléiralereando e e e exigo eína e e eínaere e comína comastiro e al e alasté ele expal eースト Moreno Moreno Moreno e exigo e Morenoertoiroínaidéereiroalere Moreno compromienemeneiro
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+Gere o esqueleto de uma atividade para auxiliar o aluno no aprendizado.
+O esqueleto da atividade deverá conter a estrutura em HTML.
+Se a questão contiver imagens, adicione uma descrição no atributo de alt.
+Adicione também uma explicação para a estrutura HTML em um novo atributo exp quando necessário.
+Quando for necessário utilizar CSS, adicione uma explicação na forma de comentários, acima da classe. 
+
+Utilize os seguintes parâmetros:
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: carrinhos
+largura-folha: 600px
+layout: única imagem
+
+Siga as seguintes regras:
+
+Gere uma descrição textual da atividade e em seguida o html contendo a questão.
+Não adicione nada fora a descrição textual e o html da questão.
+Gere uma atividade que seja criativa e que ajude o aluno a aprender de maneira lúdica.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão será praticado o principio da adição, e
+também da identificação, o aluno terá que observar a imagem
+e contar quantos carrinhos estão presentes, e em seguida efetuar
+a soma, sendo 8 carrinhos, e responder com o número 8, que é o
+resultado da soma.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe a imagem e responda com o número de carrinhos que estão pintados de azul:
+        </p>
+
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <img
+            src=""
+            alt="Imagem em estilo de desenho de pintar de azul um carrinho, e de preto a quantidade de carrinhos, sendo 8 carrinhos", 
+            style="width: 500px; height: 200px"
+            exp="imagem que o aluno terá que observar e contar a quantidade de carrinhos que estão pintados de azul, e também a quantidade de carrinhos que estão sendo pintados, sendo 8 carrinhos"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+Gere o esqueleto de uma atividade para auxiliar o aluno no aprendizado.
+O esqueleto da atividade deverá conter a estrutura em HTML.
+Se a questão contiver imagens, adicione uma descrição no atributo de alt.
+Adicione também uma explicação para a estrutura HTML em um novo atributo exp quando necessário.
+Quando for necessário utilizar CSS, adicione uma explicação na forma de comentários, acima da classe. 
+
+Utilize os seguintes parâmetros:
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: carrinhos
+largura-folha: 600px
+layout: três imagens
+
+Siga as seguintes regras:
+
+Gere uma descrição textual da atividade e em seguida o html contendo a questão.
+Não adicione nada fora a descrição textual e o html da questão.
+Gere uma atividade que seja criativa e que ajude o aluno a aprender de maneira lúdica.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão será praticado o principio da adição, e
+também da identificação de objetos, sendo três carrinhos e cinco bricolagens, o
+aluno terá que responder qual a soma de carrinhos e bricolagens, sendo 3 + 5 = 8.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe as imagens abaixo e responda qual a soma de carrinhos e
+          bricolagens?
+        </p>
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <img
+            src=""
+            alt="imagem de 3 carrinhos, cada um differente dos outros dois"
+            style="width: 400px; height: 150px"
+            exp="imagem onde o aluno terá que contar quantos carrinhos e bricolagens tem, sendo 3 carrinhos e 5 bricolagens"
+          />
+          <p
+            exp="imagem de 5 bricolagens, sendo 3 em estado de repouso e 2 em estado de movimento"
+          >
+            <img
+              src=""
+              alt="imagem de 5 bricolagens, sendo 3 em estado de repouso e 2 em estado de movimento"
+              style="width: 400px; height: 150px"
+            />
+          </div>
+          <p>qual a soma de carrinhos e bricolagens?</p>
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+Gere o esqueleto de uma atividade para auxiliar o aluno no aprendizado.
+O esqueleto da atividade deverá conter a estrutura em HTML.
+Se a questão contiver imagens, adicione uma descrição no atributo de alt.
+Adicione também uma explicação para a estrutura HTML em um novo atributo exp quando necessário.
+Quando for necessário utilizar CSS, adicione uma explicação na forma de comentários, acima da classe. 
+
+Utilize os seguintes parâmetros:
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: fundo do mar
+largura-folha: 600px
+layout: única imagem
+
+Siga as seguintes regras:
+
+Gere uma descrição textual da atividade e em seguida o html contendo a questão.
+Não adicione nada fora a descrição textual e o html da questão.
+Gere uma atividade que seja criativa e que ajude o aluno a aprender de maneira lúdica.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão será praticado o princípio da adição, e
+também da identificação de objetos, sendo eles numurais e marítimos, respectivamente.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contém a largura da página, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe a imagem e responda as questões:
+        </p>
+
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <img
+            src=""
+            alt="Imagem no estilo de pintar infantil de um caralho, uma garra de arranchar e um sino, todos no fundo do mar"
+            style="width: 450px; height: 200px"
+            exp="Imagem que o aluno terá que identificar o que estão, e contabilizar. A imagem representa 2 caralhos, 2 garras e 1 sino, todos em estado novo e sem qualquer sinal de uso"
+          />
+        </div>
+
+        <p>Qual a soma de todos os objetos?</p>
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+Gere o esqueleto de uma atividade para auxiliar o aluno no aprendizado.
+O esqueleto da atividade deverá conter a estrutura em HTML.
+Se a questão contiver imagens, adicione uma descrição no atributo de alt.
+Adicione também uma explicação para a estrutura HTML em um novo atributo exp quando necessário.
+Quando for necessário utilizar CSS, adicione uma explicação na forma de comentários, acima da classe. 
+
+Utilize os seguintes parâmetros:
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: fundo do mar
+largura-folha: 600px
+layout: três imagens
+
+Siga as seguintes regras:
+
+Gere uma descrição textual da atividade e em seguida o html contendo a questão.
+Não adicione nada fora a descrição textual e o html da questão.
+Gere uma atividade que seja criativa e que ajude o aluno a aprender de maneira lúdica.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão será praticado o princípio da adição, com
+o aluno sendo desafiado a resolver equações aritméticas. Para responder
+corretamente ele terá que fazer a soma da quantidade de peixes que estão
+no fundo do mar, sendo 15 peixes, com a quantidade de peixes que
+ele já tem, sendo 12 peixes, resultando em 15 + 12 = 27 peixes.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe a imagem do fundo do mar e faça a soma da quantidade
+          de peixes que estão lá, com a quantidade que você já tem, e escreva o resultado.
+        </p>
+        <div
+          style="display: flex; justify-content: space-between"
+          exp="div utilizada para centralizar as imagens no layout, sendo uma em todos os peixes estando juntos, e outra dos peixes que o aluno já tem"
+        >
+          <img
+            src=""
+            alt="Imagem dos 15 peixes no fundo do mar, todos juntos"
+            style="width: 300px; height: 200px"
+            exp="Imagem que o aluno terá que observar e contar a quantidade de peixes que estão juntos, sendo 15 peixes"
+          />
+          <img
+            src=""
+            alt="Imagem dos 12 peixes que o aluno já tem"
+            style="width: 300px; height: 200px"
+            exp="Imagem que o aluno terá que observar e contar a quantidade de peixes que ele já tem, sendo 12 peixes"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+Gere o esqueleto de uma atividade para auxiliar o aluno no aprendizado.
+O esqueleto da atividade deverá conter a estrutura em HTML.
+Se a questão contiver imagens, adicione uma descrição no atributo de alt.
+Adicione também uma explicação para a estrutura HTML em um novo atributo exp quando necessário.
+Quando for necessário utilizar CSS, adicione uma explicação na forma de comentários, acima da classe. 
+
+Utilize os seguintes parâmetros:
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: subtração
+tematica: fogos de artifício
+largura-folha: 800px
+layout: única imagem
+
+Siga as seguintes regras:
+
+Gere uma descrição textual da atividade e em seguida o html contendo a questão.
+Não adicione nada fora a descrição textual e o html da questão.
+Gere uma atividade que seja criativa e que ajude o aluno a aprender de maneira lúdica.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão será praticado o princípio da subtração. A
+questão consiste de uma imagem, contendo vários estilhaços de pétalos
+de fogos de artifório, sendo 15 estilhaços e pedacos. O aluno terá que
+efetuar a soma de todos estes estilhaços e pedacos, sendo 9, que estão
+escondidos e não visíveis. A solução será a lista de todos os estilhaços
+e pedacos, incluindo os que estão escondidos, sendo 9, e também a imagem, com
+todos os estilhaços e pedacos representados.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 800px"
+    >
+      <div class="questao" style="width: 800px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe a imagem dos fogos de artifício e conte quantos
+          estilhaços você encontra, sendo 15, e também quantos estão
+          escondidos, sendo 9. Escreva todos os estilhaços, incluindo os
+          escondidos.
+        </p>
+      </div>
+
+      <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+        <img
+          src=""
+          alt="Imagem de um pétalo de fogos de artifício, com 15 estilhaços visíveis e 9 estilhaços escondidos"
+          style="width: 600px; height: 300px"
+          exp="Imagem na qual o aluno terá que contar quantos estilhaços estão visíveis e quantos estão escondidos"
+        />
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+Gere o esqueleto de uma atividade para auxiliar o aluno no aprendizado.
+O esqueleto da atividade deverá conter a estrutura em HTML.
+Se a questão contiver imagens, adicione uma descrição no atributo de alt.
+Adicione também uma explicação para a estrutura HTML em um novo atributo exp quando necessário.
+Quando for necessário utilizar CSS, adicione uma explicação na forma de comentários, acima da classe. 
+
+Utilize os seguintes parâmetros:
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: subtração
+tematica: fogos de artifício
+largura-folha: 800px
+layout: três imagens
+
+Siga as seguintes regras:
+
+Gere uma descrição textual da atividade e em seguida o html contendo a questão.
+Não adicione nada fora a descrição textual e o html da questão.
+Gere uma atividade que seja criativa e que ajude o aluno a aprender de maneira lúdica.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão serão praticados os princípios da subtração. A questão
+consiste de três imagens, a primeira contém 8 estrelas, a segunda contém 5 estrelas e a terceira contém 4 estrelas. O aluno terá que observar as imagens, identificar qual a imagem que tem mais estrelas, e em seguida efetuar a subtração entre as estrelas da primeira imagem com as estrelas da segunda imagem, sendo 8 - 5 = 3, e em seguida escrever que a resposta é a terceira imagem, pois lá estão 4 estrelas, sendo a quantidade de estrelas que remainder da subtração.
+
+<html>
+  <head></head>
+  <style>
+    /* classe que será utilizada para organizar o layout da atividade, nesse caso uma tabela */
+   .container {
+      display: grid;
+      grid-template-columns: 300px 600px 300px;
+      grid-template-rows: 300px 300px 300px;
+      grid-template-areas:
+        "vazio vazio vazio"
+        "vazio  esto  mais  menos"
+        "resposta vazio vazio";
+    }
+
+    /* classe que será utilizada para posicionar a imagem da primeira estrela, sendo na primeira célula da segunda coluna */
+   .esto {
+      grid-area: esto;
+      width: 150px;
+      height: 200px;
+      border: 1px solid;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      font-weight: bold;
+      color: gold;
+    }
+
+    /* classe que será utilizada para posicionar a imagem da segunda estrela, sendo na segunda célula da segunda coluna */
+   .mais {
+      grid-area: mais;
+      width: 150px;
+      height: 200px;
+      border: 1px solid;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      font-weight: bold;
+      color: gold;
+    }
+
+    /* classe que será utilizada para posicionar a imagem da terceira estrela, sendo na terceira célula da segunda coluna */
+   .menos {
+      grid-area: menor;
+      width: 150px;
+      height: 200px;
+      border: 1px solid;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    /* classe que será utilizada para descrever a atividade, a classe terá uma explicação sobre a razão da questão*/
+   .exp {
+      font: italic;
+      display: flex;
+      justify-content: center;
+      border: 1px solid;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: 1px solid"
+      exp="questão para o aluno responder e explique como o aluno deverá responder corretamente."
+    >
+      <div
+        style="width: 600px; display: flex; flex-wrap: justify;
+        border: 1px solid"
+      >
+        <div class="questao">
+          <p
+            exp="A questão, explique o aluno deverá como o aluno deverá que ele receberá que ele receber."
+          <p>
+            >
+          <p>
+            </aterto>
+            </div>
+            >
+          <img altamentar e respostasasão e respon
+          com as seguinto
+          <img>
+          
+          <img
+          
+          
+          
+          
+          <img> 
+          <img altaria ao estilo.
+          <spanalhoastao que o aluno ao compromal deixa que eleuáslaíraíao seguintalizaíraíraíraíraíao de ao escolaíslaíraíao
+         
+          compromalmente
+          expastao
+          
+         
+          <alho
+         
+          <e
+          experto
+         
+         
+          
+         
+         
+          e
+          exp
+         ex
+ erto
+          exp
+  
+        
+ho expigo eiroertoioastalereando emastalilého esido e tambémho eínaho esereertoíao em ao emaléleal e maiserejoé o emaliente Morenoiroerto em alíslaastastastal eína em emastastalereando emastoinho em eína em emastalere internacionalastalinho emal eína emestoendo emal e Morenojoelinho em joastalido e joé eigoerealíalele Morenojo e Moreno joíatoinho eiro e Moreno easto e internacional em expigoast eastal e maisãoalto e rioaerealé eiro e rio e Santo e e e Moreno johoto eínaereleatoereando expigo eína e e expigo eína e rio e eínaé e e comína emastiroeiro e alastere ele expigo e Moreno comyienexerealhoertoirouhoidereiroeiroeína em em eeneiro

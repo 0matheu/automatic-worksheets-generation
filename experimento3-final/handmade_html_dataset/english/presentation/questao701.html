@@ -1,0 +1,112 @@
+level: 2nd year of fundamental
+learning_goals: addition, counting
+theme: Fruits
+width-sheet: 800px
+task: observe images, link items
+language: en
+
+{
+  "task": "Lara brought fruit baskets for a picnic on different days. Match each basket to the correct day based on the number of fruits. Then, add the fruits from Monday and Wednesday to find the total.",
+  "layout": "There are two columns: the left one shows baskets with different quantities of fruits, and the right one shows days of the week. The student should mentally match the baskets to the days, then add the fruits from Monday and Wednesday. A central answer box is used to write the total.",
+  "answer": {
+    "The student must match: Monday has Basket A with 5 bananas, and Wednesday has Basket B with 6 apples. Then, add 5 + 6 = 11. So, the correct answer is 11."
+  }
+}
+  
+
+
+<html>
+  <head></head>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      width: 800px;
+      margin: auto;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .item img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      border: 1px solid #000;
+    }
+
+    .answer-section {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .answer-box {
+      width: 100px;
+      height: 100px;
+      border: 2px solid black;
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px auto 0 auto;
+    }
+  </style>
+
+  <body>
+    <div style="width: 800px; margin: auto; border: 1px solid black; padding: 20px;">
+      <p style="text-align: center;" exp="Instruction to the student explaining how to solve the problem.">
+        Lara brought fruits for a picnic on different days. Match the fruit baskets to the correct days based on the number of fruits. Then, add the fruits from Monday and Wednesday and write the total below.
+      </p>
+
+      <div class="container">
+        <div class="column" exp="Left column showing the fruit baskets with quantities.">
+          <div class="item" exp="Basket with 5 fruits.">
+            <img src="" alt="Basket with 5 bananas" exp="A picnic basket filled with exactly 5 bananas." />
+            <span>Basket A</span>
+          </div>
+          <div class="item" exp="Basket with 6 fruits.">
+            <img src="" alt="Basket with 6 apples" exp="A basket containing 6 shiny red apples." />
+            <span>Basket B</span>
+          </div>
+          <div class="item" exp="Basket with 4 fruits.">
+            <img src="" alt="Basket with 4 pears" exp="A small basket filled with 4 green pears." />
+            <span>Basket C</span>
+          </div>
+        </div>
+
+        <div class="column" exp="Right column with the days of the week.">
+          <div class="item" exp="Monday, which corresponds to Basket A with 5 fruits.">
+            <span>Monday</span>
+            <img src="" alt="Sun and cloud icon for Monday" exp="Symbol representing Monday." />
+          </div>
+          <div class="item" exp="Wednesday, which corresponds to Basket B with 6 fruits.">
+            <span>Wednesday</span>
+            <img src="" alt="Cloudy weather icon for Wednesday" exp="Symbol representing Wednesday." />
+          </div>
+          <div class="item" exp="Friday, which corresponds to Basket C with 4 fruits.">
+            <span>Friday</span>
+            <img src="" alt="Sunny icon for Friday" exp="Symbol representing Friday." />
+          </div>
+        </div>
+      </div>
+
+      <div class="answer-section" exp="Answer section where the student will write the result of the addition.">
+        <p exp="Instruction reminding the student which values to add.">
+          Add the fruits from Monday and Wednesday. Write the total number of fruits here:
+        </p>
+        <div class="answer-box" exp="Answer box where the student should write 5 + 6 = 11."></div>
+      </div>
+    </div>
+  </body>
+</html>

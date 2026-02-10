@@ -1,0 +1,42 @@
+level: 2nd year of fundamental
+learning_goals: addition, counting
+theme: Lunch Time
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+  "task": "Max had breakfast at 8:00 a.m. He usually eats lunch 4 hours later. What time does Max eat lunch?",
+  "layout": "The question is centered above the image, which shows Max having breakfast at 8:00 a.m. Below the image, there is a second centered question and a square answer box (100x100px) right beneath it. The whole activity is placed inside a centered container with a black border and padding.",
+  "answer": "The student should add 4 hours to 8:00 a.m. That gives 12:00 p.m. So the correct answer is '12:00 p.m.' The student must write '12:00 p.m.' inside the answer box."
+}
+  
+
+<html>
+  <head></head>
+  <body>
+    <div style="width: 750px; border: solid 1px; padding: 10px">
+
+      <p style="text-align: center;"
+        exp="This activity practices time addition. The student needs to find the time of lunch by adding 4 hours to the breakfast time.">
+        Max had breakfast at 8:00 a.m.  
+        He usually eats lunch 4 hours later.  
+        What time does Max have lunch?
+      </p>
+
+      <img src=""
+          style="display: block; margin: 10px auto; width: 250px;"
+          alt="A boy eating breakfast at 8:00 a.m. with a clock showing the time."
+          exp="The clock in the image shows 8:00 a.m. The student should add 4 hours to 8:00 a.m. to find the lunch time: 8:00 + 4 = 12:00 p.m." />
+
+      <div style="text-align: center; margin-top: 20px;">
+        <p exp="The correct answer is 12:00 p.m. The student should write this in the box.">
+          What time does Max eat lunch?
+        </p>
+        <div style="width: 100px; height: 100px; border: 1px solid black; margin: 0 auto;"></div>
+      </div>
+
+    </div>
+  </body>
+</html>

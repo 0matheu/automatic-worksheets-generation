@@ -1,0 +1,95 @@
+```json
+{
+  "task": "To practice basic addition skills by counting the number of musical instruments in two images and calculating the total sum.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph that explains the task, and the bottom section contains a 2x2 grid with four cells. The first row of the grid contains two cells, the left cell containing an image of 3 guitars, and the right cell containing an image of 2 pianos. The second row of the grid also contains two cells, the left cell containing an image of 4 violins, and the right cell containing an image of 1 piano. The images are placed in a specific layout to facilitate counting and addition.",
+  "answer": "To answer this question correctly, the student needs to count the number of musical instruments in each image and calculate the total sum. The correct answer is: 3 guitars + 2 pianos + 4 violins + 1 piano = 10 musical instruments."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing four images in a 2x2 grid */
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 300px 300px;
+      grid-template-areas:
+        "img1 img2"
+        "img3 img4";
+    }
+
+    /* class used to place the first image of the guitars in the first row and the first column*/
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the second image of the pianos in the first row and the second column*/
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to place the third image of the violins in the second row and the first column*/
+    .img3 {
+      grid-area: img3;
+    }
+
+    /* class used to place the fourth image of the pianos in the second row and the second column*/
+    .img4 {
+      grid-area: img4;
+    }
+
+    /* class used to adjust the size of the images in the activity*/
+    img {
+      width: 390px;
+      height: 290px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Count the total number of musical instruments in the images below and write the answer.
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="image in a coloring book style of 3 guitars hanging on a wall"
+              exp="image that the student will have to look at and identify how many guitars are present, being 3"
+            />
+          </div>
+
+          <div class="img2">
+            <img
+              alt="image in a coloring book style of 2 pianos in a room"
+              exp="image that the student will have to look at and identify how many pianos are present, being 2"
+            />
+          </div>
+
+          <div class="img3">
+            <img
+              alt="image in a coloring book style of 4 violins in a violin case"
+              exp="image that the student will have to look at and identify how many violins are present, being 4"
+            />
+          </div>
+
+          <div class="img4">
+            <img
+              alt="image in a coloring book style of 1 piano in a room"
+              exp="image that the student will have to look at and identify how many pianos are present, being 1"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

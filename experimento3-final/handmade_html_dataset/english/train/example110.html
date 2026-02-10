@@ -1,0 +1,79 @@
+level: 2st year fundamental
+learning_goals: addition, visual representation, problem-solving
+theme: flowers and counting
+sheet_width: 600px
+task: observe images, write answer
+language: en
+
+{
+  "task": "The objective of this activity is for the student to visually represent and calculate the total number of flowers Mango has by drawing and adding. Mango started with 2 flowers in her garden and later picked 3 more flowers. The student will draw and add to determine the total number of flowers.",
+  "layout": "The activity is organized with a scenario description at the top, followed by two large image placeholders where the student is instructed to draw the number of flowers Mango initially has and the number she picks. Below the drawing area, three smaller boxes are provided for the student to write the respective numbers and perform the addition. Symbols (+ and =) are clearly placed between the boxes to aid in the calculation.",
+  "answer": "To correctly answer this activity, the student will draw 2 flowers in the first image placeholder and 3 flowers in the second image placeholder. They will then write the numbers '2' and '3' in the respective smaller boxes, and calculate the sum (2 + 3 = 5). The correct answer is '5 flowers.'"
+}
+
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px; padding: 10px; text-align: center;"
+      exp="This div acts as the main container for the activity. It sets a fixed width of 600px with padding for spacing inside and centers the content."
+    >
+      <div class="activity" style="width: 100%;">
+        <p
+          exp="This paragraph provides a clear description of the task. The student needs to calculate the total number of flowers Mango has by drawing and adding the numbers provided."
+        >
+          Draw the number of flowers Mango already had in the first image below, and in the second image, draw the number of flowers that Mango picked.
+        </p>
+
+        <div
+          style="display: flex; justify-content: center; margin-bottom: 20px;"
+          exp="This section contains spaces for the student to draw the flowers Mango initially has and the ones she picks."
+        >
+          <img
+            src=""
+            alt="Space to draw the flowers that Mango already had"
+            style="width: 150px; height: 150px; border: 1px solid black; margin-right: 10px;"
+            exp="Image placeholder for the student to draw the initial 2 flowers."
+          />
+          <img
+            src=""
+            alt="Space to draw picked flowers"
+            style="width: 150px; height: 150px; border: 1px solid black;"
+            exp="Image placeholder for the student to draw the 3 flowers Mango picked."
+          />
+        </div>
+
+        <div
+          style="text-align: left; margin-bottom: 20px;"
+          exp="This section provides instructions for writing the numbers and calculating the total."
+        >
+          <p>Write the numbers of flowers Mango already had and the ones she picked in the boxes below, then add them to find the total:</p>
+        </div>
+
+        <div
+          style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;"
+          exp="This section provides boxes for the student to write the numbers and calculate the total."
+        >
+          <div
+            style="width: 50px; height: 50px; border: 1px solid black; margin-right: 10px; display: flex; justify-content: center; align-items: center;"
+            exp="Box where the student writes the number of initial flowers (2)."
+          >
+          </div>
+          <p style="margin-right: 10px;">+</p>
+          <div
+            style="width: 50px; height: 50px; border: 1px solid black; margin-right: 10px; display: flex; justify-content: center; align-items: center;"
+            exp="Box where the student writes the number of picked flowers (3)."
+          >
+          </div>
+          <p style="margin-right: 10px;">=</p>
+          <div
+            style="width: 50px; height: 50px; border: 1px solid black; display: flex; justify-content: center; align-items: center;"
+            exp="Box where the student writes the total number of flowers (5)."
+          >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

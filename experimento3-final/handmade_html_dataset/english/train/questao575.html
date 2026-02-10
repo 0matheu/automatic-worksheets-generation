@@ -1,0 +1,49 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: House
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+    "task": "To reinforce addition and financial reasoning by calculating the total cost of curtain sets for a house. This activity links basic math skills to practical home improvement situations.",
+    "layout": "The structure includes a paragraph that explains the story of buying curtains, followed by a centered image showing two windows without curtains. The student will calculate the total cost of both sets and write the result in a square answer box below.",
+    "answer": "To answer correctly, the student must add the price of the two curtain sets: one set costs 18 reais and the other costs 22 reais. The correct sum is 40. The student should write '40' in the square box provided, showing understanding of addition with real-world spending."
+  }
+  
+  <html>
+    <head></head>
+    <body>
+      <div style="width: 800px; border: solid 1px;"
+           exp="Main container for the layout, setting a consistent width of 800px for the activity.">
+        
+        <p exp="Description of the math problem involving addition. The task is contextualized in a real-life home renovation scenario.">
+          Helena is renovating her house. She buys one set of curtains for 18 reais and another set for 22 reais. How much did she spend in total on curtains? 
+          (Hint: Add the cost of both curtain sets to find out the total.)
+        </p>
+  
+        <div style="display: flex; justify-content: center;"
+             exp="Div used to horizontally center the image showing windows without curtains.">
+          <img 
+            src="" 
+            alt="Two windows in a living room with no curtains yet. Each window will have a curtain set that costs money." 
+            style="width: 600px; height: 400px;" 
+            exp="The image shows two uncovered windows in a living room. The student must imagine Helena bought curtain sets for both and calculate the total cost. One set costs 18 reais, the other 22 reais."
+          />
+        </div>
+  
+        <p exp="Final instruction reminding the student to perform the addition and write the result in the space below.">
+          Think carefully: how much do the two curtain sets cost together? Add and write the answer in the space below.
+        </p>
+  
+        <div style="display: flex; justify-content: center; margin-top: 20px;"
+             exp="Div used to center the answer box. The student will enter their answer here.">
+          <div style="width: 100px; height: 100px; border: 1px solid black;" 
+               exp="Box where the student writes the total cost of the curtains. The correct answer is 40, as the student adds 18 and 22.">
+          </div>
+        </div>
+      </div>
+    </body>
+  </html>
+  

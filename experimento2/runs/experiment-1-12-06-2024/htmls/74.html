@@ -1,0 +1,104 @@
+```json
+{
+  "task": "The student will learn to add two- and three-digit numbers by identifying the numbers in the images and performing the calculations.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph that explains the task, and the bottom section contains a 2x3 grid with five cells. The first row of the grid contains two cells with images of a clown and a trapeze artist, and the second row contains three cells with images of numbers 125, 33, and 98. The images are placed in a specific layout to facilitate the student's understanding of the task.",
+  "answer": "To answer this question correctly, the student needs to: 1) identify the two images that contain numbers, 2) add the two numbers in each image, and 3) write the results in the corresponding cells. For the clown image, the student should add 33 to 125 and write 158. For the trapeze artist image, the student should add 125 to 98 and write 223."
+}
+```
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three images in a 2-line and 3-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 250px 250px 250px;
+      grid-template-rows: 250px 250px;
+      grid-template-areas:
+        "clown clown trapeze"
+        "n1 n2 n3";
+    }
+
+    /* class used to place the clown image in the first row and the first column*/
+    .clown {
+      grid-area: clown;
+    }
+
+    /* class used to place the trapeze image in the first row and the third column*/
+    .trapeze {
+      grid-area: trapeze;
+    }
+
+    /* class used to place the image of the trapeze artist in the second row and the first column*/
+    .n1 {
+      grid-area: n1;
+    }
+
+    /* class used to place the image of the number 2 in the second row and the second column*/
+    .n2 {
+      grid-area: n2;
+    }
+
+    /* class used to place the image of the number 3 in the second row and the third column*/
+    .n3 {
+      grid-area: n3;
+    }
+
+    /* class used to adjust the size of the images in the activity */
+    img {
+      width: 240px;
+      height: 240px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p exp="Question description, containing the explanation of what the student will have to do to answer the question correctly">
+        Look at the images below, add the numbers, and write the result in the image.
+        </p>
+
+        <div class="container">
+          <div class="clown">
+            <img
+              alt="children's painting style image of a clown with a plate with the number 125"
+              exp="image in which the student will have to identify the number in the plate and add 98 to it"
+            />
+          </div>
+
+          <div class="trapeze">
+            <img
+              alt="children's painting style image of a trapeze artist with a plate with the number 98"
+              exp="image in which the student will have to identify the number in the plate and add 125 to it"
+            />
+          </div>
+
+          <div class="n1">
+            <img
+              alt="children's painting style image of the number 125"
+              exp="image in which the student will have to identify the number and realize that it is a 3-digit number"
+            />
+          </div>
+
+          <div class="n2">
+            <img
+              alt="children's painting style image of the number 33"
+              exp="image in which the student will have to identify the number and realize that it is a 2-digit number"
+            />
+          </div>
+
+          <div class="n3">
+            <img
+              alt="children's painting style image of the number 98"
+              exp="image in which the student will have to identify the number and realize that it is a 2-digit number"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

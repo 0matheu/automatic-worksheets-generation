@@ -1,0 +1,10 @@
+{
+    "level": "2\u00ba ano do ensino fundamental",
+    "learning goals": "divis\u00e3o",
+    "theme": "Circo",
+    "width-sheet": "800px",
+    "task": "observe image, draw answer",
+    "language": "pt",
+    "temperature": 0.5,
+    "model": "ft:gpt-4.1-mini-2025-04-14:ufcg::C0UvUMGP"
+}

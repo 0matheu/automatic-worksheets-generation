@@ -1,0 +1,49 @@
+level: 2nd year of fundamental
+learning_goals: Counting
+theme: Toy Store Shelves
+width-sheet: 800px
+task: observe images, write answer
+language: en
+
+
+{
+  "task": "To help students count objects by observing the number of toy cars on different shelves in a toy store.",
+  "layout": "Two images show Shelf A and Shelf B with toy cars. Below, two questions prompt the student to count how many cars are on each shelf and write the number in boxes to the right.",
+  "answer": "The student needs to count the toy cars in each shelf image. For Shelf A (question A), they count and write the total. For Shelf B (question B), they do the same. This activity builds counting and comparison skills with familiar objects."
+}
+
+  
+<html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: 1px solid black; padding: 16px;" exp="Main container that organizes the full layout of the activity, keeping it centered and visually clear for the student.">
+
+      <p exp="Instructional sentence that introduces the task: the student should observe two toy store shelves and count toy cars.">
+        Look at the toy store shelves. Count how many toy cars are on Shelf A and Shelf B.
+      </p>
+
+      <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 16px;" exp="Flex container to show Shelf A and Shelf B side by side, allowing for easy visual comparison.">
+        <div>
+          <img src="" alt="Shelf A in a toy store with a few toy cars lined up." style="width: 350px; height: 250px;" exp="Image showing Shelf A with several toy cars visible. The student will count how many are there.">
+          <p style="text-align: center;" exp="Label underneath the first image to identify it as Shelf A.">Shelf A</p>
+        </div>
+        <div>
+          <img src="" alt="Shelf B in a toy store with several toy cars." style="width: 350px; height: 250px;" exp="Image showing Shelf B with toy cars. The quantity may differ from Shelf A to promote comparison.">
+          <p style="text-align: center;" exp="Label underneath the second image to identify it as Shelf B.">Shelf B</p>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between;" exp="First question row asking how many toy cars are in Shelf A. Includes a text and an answer box.">
+        <p exp="Question A prompts the student to count the number of toy cars in the first image (Shelf A)."><b>A)</b> How many toy cars are on Shelf A?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box where the student writes the number of toy cars counted in Shelf A. Sized to accommodate young handwriting."></div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between;" exp="Second question row for Shelf B, identical structure to promote consistency.">
+        <p exp="Question B asks the student to count the toy cars in Shelf B."><b>B)</b> How many toy cars are on Shelf B?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for writing the number of toy cars in Shelf B. Matches the size and layout of the first."></div>
+      </div>
+
+    </div>
+  </body>
+</html>
+  

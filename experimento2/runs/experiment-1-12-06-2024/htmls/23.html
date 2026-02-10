@@ -1,0 +1,100 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of glasses of milk and buns in the image and calculating the total sum.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph that explains the task, and the bottom section contains a 2x2 grid with four images: an empty tray, a tray with 3 glasses of milk, a tray with 2 buns, and a tray with 4 buns. The images are placed in a specific layout to facilitate counting and addition.",
+  "answer": "To answer correctly, the student needs to: 1) count the number of glasses of milk in the second image (3), 2) count the number of buns in the third image (2), 3) add the two numbers together to get 5. The correct answer is 5."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing four images in a 2x2 grid*/
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 300px 300px;
+      grid-template-areas:
+        "img1 img2"
+        "img1 img3";
+    }
+
+    /* class used to place the first image of the milk tray in the first row and the first column*/
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the image of the tray in the form of a 2 in the second row and the first column*/
+    .img2 {
+      margin-left: 80px;
+      grid-area: img2;
+    }
+
+    /* class used to place the image of the tray in the form of a 3 in the second row and the second column*/
+    .img3 {
+      margin-left: 80px;
+      grid-area: img3;
+    }
+
+    /* class used to place the image of the tray in the form of a 4 in the third row and the first column*/
+    .img4 {
+      margin-top: 80px;
+      grid-area: img4;
+    }
+
+    /* class used to adjust the size of the images in the activity */
+    img {
+      width: 350px;
+      height: 250px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the images below. In the image containing the tray, count the
+          number of glasses of milk and also the number of buns, then add
+          them up.
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="empty tray image in a coloring book style"
+              exp="image in which the student will have to count the glasses of milk and also the buns"
+            />
+          </div>
+
+          <div class="img2">
+            <img
+              alt="image of a tray with 3 glasses of milk in a children's painting style"
+              exp="image in which the student will have to identify that there are 3 glasses of milk"
+            />
+          </div>
+
+          <div class="img3">
+            <img
+              alt="image of a tray with 2 buns in a children's drawing style"
+              exp="image in which the student will have to identify that there are 2 buns"
+            />
+          </div>
+
+          <div class="img4">
+            <img
+              alt="image of a tray with 4 buns in a children's drawing style"
+              exp="image in which the student will have to identify that there are 4 buns"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

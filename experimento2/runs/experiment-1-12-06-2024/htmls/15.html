@@ -1,0 +1,98 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of balls the clown initially had and the number of balls he received, and calculating the total number of balls.",
+  "layout": "The HTML elements are organized with a div containing the sheet width, followed by a div containing the question description, and then a grid container with three rows and two columns. The grid container contains an image of a clown juggling balls, two paragraph elements, and two image elements. The image of the clown is placed in the center left cell of the grid, the first paragraph is placed in the top right cell, the second paragraph is placed in the middle right cell, and the two additional images are placed in the bottom right cell and the bottom left cell.",
+  "answer": "To answer correctly, the student needs to: 1) observe the image of the clown juggling 3 balls, 2) read the first paragraph that states the clown initially had 3 balls, and 3) observe the second image that shows 2 more balls being thrown to the clown. The student needs to add the 2 new balls to the 3 balls the clown already had to get 5 balls. The student needs to observe, count, and perform a simple addition operation to get the correct answer."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class used to describe the layout of the activity, in this case containing three images and two paragraphs in a 3-line and 2-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 200px 200px 200px;
+      grid-template-areas:
+        "empty clown"
+        "p1 clown"
+        "p2 empty";
+    }
+
+    /* class used to position the image of the clown in the activity layout, being in the second cell of the first column */
+    .clown {
+      grid-area: clown;
+      margin: 0px 0px 0px 100px;
+    }
+
+    /* class used to adjust the size of the image of the clown in the activity */
+    .clown img {
+      width: 300px;
+      height: 300px;
+    }
+
+    /* class used to position the first paragraph of the activity on the second cell of the second column */
+    .p1 {
+      grid-area: p1;
+    }
+
+    /* class used to position the second paragraph of the activity on the third cell of the second column */
+    .p2 {
+      grid-area: p2;
+    }
+
+    /* class used to position the image in the first cell of the first column */
+    .empty1 {
+      grid-area: empty;
+    }
+
+    /* class used to position the image of the balls in the first cell of the second column */
+    .empty1 img {
+      margin-left: 100px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of the question the student will have to answer"
+        >
+          Observe the image, and draw how many balls the clown has in total.
+        </p>
+
+        <div class="container">
+          <div class="empty1">
+            <img
+              src=""
+              alt="image in a coloring book style of 3 balls resting on a table"
+              exp="image that the student will have to draw the balls being juggled by the clown, being in a childish painting style, containing 3 balls, and being on a table, in an image the student will have to count how many balls are present"
+            />
+          </div>
+
+          <div class="clown">
+            <img
+              src=""
+              alt="image in a coloring book style of a clown juggling 3 balls"
+              exp="image that the student will have to observe and count how many balls the clown is juggling"
+            />
+          </div>
+
+          <p class="p1">
+            The clown is juggling <b>3 balls</b>!
+          </p>
+
+          <p class="p2">
+            And how many balls did the clown have initially and received <b>2 more</b>?
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

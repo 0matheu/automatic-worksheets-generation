@@ -1,0 +1,93 @@
+```json
+{
+  "task": "The student will learn to count, add, and represent quantities by observing images and performing simple arithmetic operations.",
+  "layout": "The question is divided into three main sections. The top section contains a paragraph describing the task. The middle section contains a 2x3 grid with images of trays of food and drinks. The bottom section contains three equations. The images and equations are placed in a specific layout to facilitate counting and addition.",
+  "answer": "To answer correctly, the student needs to: 1) count the number of sandwiches on the tray (4 sandwiches), 2) count the number of glasses of juice on the tray (3 glasses), and 3) add the two quantities together. The correct answers are: A) 4 sandwiches, B) 3 glasses of juice, and C) 7 units. The images are placed in a specific layout to facilitate counting and addition."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three images in a 2-line and 3-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 300px 300px;
+      grid-template-areas:
+        "img1 img2 img3"
+        "img1 img2 img3";
+    }
+
+    /* class used to place the image on the activity, being in the first row and the first column*/
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the image on the activity, being in the second row and the first column*/
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to place the image on the activity, being in the third row and the first column*/
+    .img3 {
+      grid-area: img3;
+    }
+
+    /* class used to adjust the size of the images in the activity */
+    img {
+      width: 290px;
+      height: 290px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p exp="Question description, containing the explanation of what the student will have to do to answer the question correctly">
+          Observe the image and answer the questions:
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="image in a coloring book style containing a tray with 4 sandwiches"
+              exp="image that the student will have to count the number of sandwiches and answer the first question of the activity"
+            />
+          </div>
+
+          <div class="img2">
+            <img
+              alt="image in a coloring book style containing a tray with 3 glasses of juice"
+              exp="image that the student will have to count the number of glasses of juice and answer the second question of the activity"
+            />
+          </div>
+
+          <div class="img3">
+            <img
+              alt="image in a coloring book style containing a tray with 4 sandwiches and 3 glasses of juice"
+              exp="image that the student will have to count the number of glasses of juice and sandwiches, and answer how many in total. This image serves to associate the quantity with the sum of the elements."
+            />
+          </div>
+        </div>
+
+        <p exp="equations that the student will have to observe the images and answer if they are true or false">
+          A) 2 + 2 = 4
+        </p>
+
+        <p exp="equations that the student will have to observe the images and answer if they are true or false">
+          B) 2 + 3 = 5
+        </p>
+
+        <p exp="equations that the student will have to observe the images and answer if they are true or false">
+          C) 2 + 5 = 7
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+```

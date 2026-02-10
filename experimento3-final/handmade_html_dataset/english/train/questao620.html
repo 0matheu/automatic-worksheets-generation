@@ -1,0 +1,47 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme:  Kids’ Sports Day Bicycle Count
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+  "task": "To develop addition skills by calculating the total number of bicycles that entered the park during a children's sports event. This connects math with real-life situations involving counting and event organization.",
+  "layout": "The layout includes a paragraph describing the event and the number of bicycles arriving in two different time periods. An image shows children riding bicycles into the park. A label above the answer box clearly tells the student to write the total sum in the 100x100px answer box centered on the page.",
+  "answer": "The student must add the two quantities: 78 bicycles in the morning and 106 in the afternoon. The correct answer is 184. The student should write this total in the centered answer box, applying addition in a meaningful context."
+}
+
+<html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: solid 1px;"
+         exp="Main container that structures the page content and keeps everything aligned for clear student visualization.">
+      
+      <p exp="Introduction to the situation and math challenge. The student is asked to calculate how many bicycles entered the park during a sports event.">
+        During Kids’ Sports Day at Central Park, 78 bicycles were recorded arriving in the morning, and 106 more arrived in the afternoon. How many bicycles came to the park in total?
+      </p>
+
+      <div style="display: flex; justify-content: center;"
+           exp="Centers the illustrative image horizontally to help contextualize the problem visually.">
+        <img 
+          src=""
+          alt="Illustration of a sunny park with children arriving on bikes, some wearing helmets, trees in the background."
+          style="width: 600px; height: 350px;"
+          exp="This image shows a children's sports event at a park, with kids on bicycles arriving at the entrance. The background includes a gate, trees, and colorful decorations to reflect the event atmosphere."
+        />
+      </div>
+
+      <p style="text-align: center; font-weight: bold; margin-top: 20px;" 
+         exp="Instruction placed above the answer box to clearly guide the student on where to write their answer.">
+        Write the sum here
+      </p>
+
+      <div style="display: flex; justify-content: center; margin-top: 10px;" 
+           exp="Center-aligned container for the student's answer.">
+        <div style="width: 100px; height: 100px; border: 1px solid black;"
+             exp="Answer box where the student should write the total number of bicycles. Correct answer: 78 + 106 = 184.">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

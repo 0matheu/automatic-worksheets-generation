@@ -1,0 +1,125 @@
+level: 2nd year of fundamental
+learning_goals: addition, counting
+theme: school backpack
+width-sheet: 800px
+task: observe images, link items
+language: en
+
+{
+  "task": "Look at the backpack image and match it with the locker that has the most items. Then, add the items together and write the total.",
+  "exp": "The backpack has 3 notebooks. There are three locker images: Locker A has 4, Locker B has 6, and Locker C has 2. The student must pick Locker B (6 notebooks) and add 3 + 6 = 9. They should write the number 9 in the box.",
+  "layout": "The layout shows a backpack at the top, and three lockers side by side below it. Each locker has a different number of notebooks. The large answer box is centered below all the images.",
+  "answer": "The correct response is 9. The student must count the notebooks in the backpack and add them to the locker with the most (3 + 6)."
+}
+  
+
+<html>
+  <head></head>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 280px 200px 150px;
+      gap: 10px;
+      justify-items: center;
+      align-items: center;
+      width: 800px;
+      margin: auto;
+    }
+
+    .backpack {
+      grid-column: 1 / span 3;
+      text-align: center;
+    }
+
+    .backpack img {
+      width: 250px;
+      height: 180px;
+      border: 1px solid;
+      object-fit: contain;
+    }
+
+    .locker {
+      width: 200px;
+      height: 150px;
+      border: 1px solid black;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .locker img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .answer-container {
+      grid-column: 2 / 3;
+      text-align: center;
+    }
+
+    .answer-box {
+      width: 100px;
+      height: 100px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 24px;
+    }
+  </style>
+
+  <body>
+    <div style="width: 800px; margin: auto; border: 1px solid black; padding: 20px;">
+      <p style="text-align: center;" exp="Instruction that explains to the student what to observe and do.">
+        Look at the backpack image. Count the number of notebooks inside. Then, match it with the locker that has the most notebooks. Add both amounts and write the total number in the box below.
+      </p>
+
+      <div class="container">
+        <div class="backpack" exp="This div contains the image of the backpack. It is centered on the top row.">
+          <img
+            src=""
+            alt="Cartoon-style backpack with 3 colorful notebooks sticking out"
+            exp="This image shows a student backpack with 3 notebooks visible. The student should count these notebooks."
+          />
+        </div>
+
+        <div class="locker" exp="Locker A image, which contains 4 notebooks. Student must observe and compare.">
+          <img
+            src=""
+            alt="Locker with 4 notebooks on a shelf"
+            exp="Image representing Locker A. Contains 4 stacked notebooks."
+          />
+        </div>
+
+        <div class="locker" exp="Locker B image, which contains 6 notebooks. This is the correct one to match.">
+          <img
+            src=""
+            alt="Locker with 6 notebooks"
+            exp="Image representing Locker B. Contains 6 notebooks and should be matched with the backpack."
+          />
+        </div>
+
+        <div class="locker" exp="Locker C image, with 2 notebooks.">
+          <img
+            src=""
+            alt="Locker with 2 notebooks"
+            exp="Image representing Locker C. Has the smallest quantity of notebooks."
+          />
+        </div>
+
+        <div class="answer-container" exp="This section contains the instructions and answer box.">
+          <p exp="Student is reminded to perform the addition and write the total in the box.">
+            Write the total number of notebooks (backpack + fullest locker):
+          </p>
+          <div class="answer-box" exp="Box where the student will write the answer (should be 9)."></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

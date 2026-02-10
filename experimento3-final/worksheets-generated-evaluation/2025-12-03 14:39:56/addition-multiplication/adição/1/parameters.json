@@ -1,0 +1,10 @@
+{
+    "s\u00e9rie": "2\u00ba ano do ensino fundamental",
+    "objetivos de aprendizagem": "adi\u00e7\u00e3o",
+    "tema": "Est\u00fadio de Arte",
+    "largura da folha": "800px",
+    "tarefa": "observe image, write answer",
+    "idioma": "pt",
+    "temperature": 0.5,
+    "model": "ft:gpt-4.1-mini-2025-04-14:ufcg::C0UvUMGP"
+}

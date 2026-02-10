@@ -1,0 +1,75 @@
+nivel: 2º ano fundamental
+assunto: adição
+tematica: parque de diversões
+largura-folha: 600px
+layout: tabela, linhas e colunas
+
+Nessa questão será praticado o principio da adição.
+A questão consiste de uma tabela contendo os preços
+dos brinquedos de um parque de diversões, sendo:
+roda gigante: 10 reais
+carrinho bate-bate: 13 reais
+carrossel: 7 reais
+gangorra: 5 reais
+Será pedido para que o aluno efetue adições para calcular
+o gasto se ele utilizar determinados brinquedos, sendo:
+A) roda gigante + carrinho bate-bate = 10 + 13 = 23
+B) gangorra + carrossel = 5 + 7
+C) roda gigante + carrinho bate-bate + carrossel + gangorra = 10 + 13 + 7 + 5 = 35
+
+
+<html>
+  <head></head>
+
+  <style>
+    table, th, td {
+      border: 1px solid black;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Felipe foi a o parque e viu a tabela de preços dos brinquedos, que está abaixo. Observe a tabela e responda as questões
+      </p>
+      </div>
+
+      <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+        <table exp="Tabela que contém o preço de cada atração do parque de diversões">
+          <tr exp="Preço da roda gigante">
+            <th>Roda gigante</th>
+            <th>10 reais</th>
+          </tr>
+
+          <tr exp="Preço do carrinho bate-bate"> 
+            <th>Carrinho bate-bate</th>
+            <th>13 reais</th>
+          </tr>
+
+          <tr exp="Preço do carrossel">
+            <th>Carrossel</th>
+            <th>7 reais</th>
+          </tr>
+
+          <tr exp="Preço da gangorra">
+            <th>Gangorra</th>
+            <th>5 reais</th>
+          </tr>
+        </table>
+      </div>
+      
+      <p exp="Questão que o aluno terá que somar o preço da roda gigante e do carrinho bate-bate">A) Quanto Felipe gastaria brincando na Roda gigante e no Carrinho bate-bate?</p>
+      <p exp="Questão que o aluno terá que somar o preço da gangorra e do carrossel">B) Quanto Felipe gastaria brincando na Gangorra e no Carrossel?</p>
+      <p exp="Questão que o aluno terá que somar o preço de todos os brinquedos">C) Quanto Felipe gastaria brincando em todos os brinquedos?</p>
+    </div>
+
+  </body>
+</html>

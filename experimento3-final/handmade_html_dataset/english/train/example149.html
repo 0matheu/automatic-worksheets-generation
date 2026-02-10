@@ -1,0 +1,74 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: forest animals
+sheet_width: 600px
+task: observe image, write answer
+language: en
+
+{
+  "task": "Count the number of squirrels and birds in the forest image, and calculate the total.",
+  "layout": "The activity is organized into three main sections: (1) a description at the top that explains the task, (2) a centered image of a forest scene with squirrels and birds, and (3) three questions placed below the image, with answer boxes aligned next to each question for clarity and neatness.",
+  "answer": {
+    "A": "The student must count the squirrels (9) and write this number in the answer box.",
+    "B": "The student must count the birds (6) and write this number in the answer box.",
+    "C": "The student must calculate the total number of squirrels and birds (9 + 6 = 15) and write this number in the answer box."
+  }
+}
+  
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px; padding: 10px;"
+      exp="This container organizes the layout of the activity for the 'forest animals' theme."
+    >
+      <p exp="Instructions for the student to observe and count the squirrels and birds.">
+        Observe the forest scene and answer the following questions:
+      </p>
+
+      <div
+        style="display: flex; justify-content: center; margin-bottom: 20px;"
+        exp="This section centers the forest-themed image within the activity."
+      >
+        <img
+          src=""
+          alt="A forest with 9 squirrels and 6 birds. In a cartoon style."
+          style="width: 500px; height: 300px;"
+          exp="Illustration showing 9 squirrels and 6 birds for the student to count."
+        />
+      </div>
+
+      <div style="margin-top: 10px; display: flex; align-items: center;">
+        <p style="margin-right: 10px;" exp="Question prompting the student to count squirrels.">
+          A) How many squirrels are visible in the image?
+        </p>
+        <div
+          style="width: 100px; height: 30px; border: 1px solid black;"
+          exp="Box where the student writes the number of squirrels (9)."
+        ></div>
+      </div>
+
+      <div style="margin-top: 10px; display: flex; align-items: center;">
+        <p style="margin-right: 10px;" exp="Question prompting the student to count birds.">
+          B) How many birds are visible in the image?
+        </p>
+        <div
+          style="width: 100px; height: 30px; border: 1px solid black;"
+          exp="Box where the student writes the number of birds (6)."
+        ></div>
+      </div>
+
+      <div style="margin-top: 10px; display: flex; align-items: center;">
+        <p style="margin-right: 10px;" exp="Question prompting the student to calculate the total number of animals.">
+          C) What is the total number of animals?
+        </p>
+        <div
+          style="width: 100px; height: 30px; border: 1px solid black;"
+          exp="Box where the student writes the total (15)."
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>
+  

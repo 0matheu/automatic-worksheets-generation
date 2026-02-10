@@ -1,0 +1,46 @@
+level: 2nd year of fundamental  
+learning_goals: counting, addition  
+theme: Science Fair Projects  
+width-sheet: 800px  
+task: observe text, write answer
+language: en
+
+{
+    "task": "To practice counting and addition skills by calculating the total number of projects in a science fair based on the number of projects in two categories.",
+    "layout": "The activity consists of a description at the top, where the student will read about the number of projects in two categories and then add the numbers together.",
+    "answer": {
+        "A": "To answer correctly, the student needs to add the number of biology projects (15) and chemistry projects (20). The correct answer is 35 projects.",
+        "B": "To answer correctly, the student needs to identify the category with the most projects. The correct answer is Chemistry with 20 projects."
+    }
+}
+
+<html>
+    <head></head>
+    <body>
+      <div style="width: 800px; border: solid 1px; padding: 10px;">
+        <div class="activity">
+          <p exp="Activity description about the number of science fair projects. There are 15 biology projects and 20 chemistry projects.">
+            In a science fair, there are 15 biology projects and 20 chemistry projects. How many projects are there in total?
+          </p>
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Image showing both categories of projects at the science fair with labels.">
+            <img src="" 
+                 alt="Illustration of the science fair with biology and chemistry projects displayed."
+                 style="width: 600px; height: 300px"
+                 exp="Image where students can count the number of projects in each category and perform the addition to get the total." />
+        </div>
+
+        <div class="question-container" style="display: flex; justify-content: space-between;">
+            <p exp="Question asking for the total number of projects."><b>A)</b> How many projects are there in total in both categories?</p>
+            <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box where the student writes the total number of projects. The correct answer is 35."></div>
+        </div>
+
+        <div class="question-container" style="display: flex; justify-content: space-between;">
+            <p exp="Question asking which category has more projects."><b>B)</b> Which category has more projects: Biology or Chemistry?</p>
+            <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box where the student writes the category with more projects. The correct answer is Chemistry with 20 projects."></div>
+        </div>
+        
+      </div>
+    </body>
+</html>

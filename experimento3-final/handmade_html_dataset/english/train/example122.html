@@ -1,0 +1,88 @@
+level: 2nd year fundamental
+learning_goals: addition, counting
+theme: numbers
+sheet_width: 600px
+task: observe image, write answer
+language: en
+
+
+
+{
+  "task": "The student will learn to solve a basic addition problem and match the result with the correct numeral.",
+  "layout": "The activity is organized with a description at the top, followed by a grid layout with an equation and three possible answers.",
+  "answer": "To correctly answer this activity, the student will solve the equation 45 + 12, match it with the correct numeral in the options, and find the result. The correct answer is: 57."
+}
+
+  
+<html>
+  <head></head>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 200px 200px;
+      grid-template-rows: 150px 150px 150px;
+      grid-template-areas:
+        "empty1 n1"
+        "sum n2"
+        "empty2 n3";
+    }
+
+    .container p {
+      font-size: larger;
+      font-weight: bolder;
+    }
+
+    .sum {
+      grid-area: sum;
+    }
+
+    .n1 {
+      grid-area: n1;
+    }
+
+    .n2 {
+      grid-area: n2;
+    }
+
+    .n3 {
+      grid-area: n3;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="This container sets the layout for the activity, maintaining a fixed width and borders for clear demarcation."
+    >
+      <div class="activity" style="width: 600px;">
+        <p
+          exp="This paragraph provides instructions to the student on how to solve the activity."
+        >
+          Solve the sum below and match it with the correct result:
+        </p>
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="This div centers the grid layout containing the equation and options."
+        >
+          <div class="container">
+            <div class="sum" exp="This cell contains the equation for the student to solve.">
+              <p>45 + 12</p>
+            </div>
+
+            <div class="n1" exp="This cell contains the first answer option, which is incorrect.">
+              <p>56</p>
+            </div>
+
+            <div class="n2" exp="This cell contains the second answer option, which is correct.">
+              <p>57</p>
+            </div>
+
+            <div class="n3" exp="This cell contains the third answer option, which is incorrect.">
+              <p>58</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

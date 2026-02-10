@@ -1,0 +1,70 @@
+level: 2nd year fundamental
+learning_goals: addition, logical reasoning
+theme: art and drawing
+sheet_width: 600px
+task: observe image, write answer
+language: en
+
+{
+  "task": The objective of this activity is for the student to calculate the total number of drawings in an exhibition by adding the given values together
+  "layout": The activity is structured with a scenario description at the top, followed by an illustration representing the story context. Below the description and image, there are sections for writing the final answers
+  "answer": { 
+    A: To correctly answer this question, the student must calculate the total number of drawings Sofia and Miguel created together (125 + 68 = 193). The student should write '193' in the answer box.
+    B: To correctly answer this question, the student must find how many drawings are in the gallery after adding Sofia and Miguel’s contribution (193 + 45 = 238). The student should write '238' in the answer box.
+    C: To correctly answer this question, the student must determine the total number of drawings after receiving additional submissions (238 + 182 = 420). The student should write '420' in the answer box."
+  } 
+}
+
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px; padding: 10px; text-align: left;"
+      exp="This div acts as the main container for the activity. It sets a fixed width of 600px with padding for spacing inside."
+    >
+      <div class="activity" style="width: 600px;">
+        <p
+          exp="This paragraph provides a clear description of the task. The student needs to determine the total number of drawings completed after multiple additions."
+        >
+        </p>
+
+        <div
+          style="display: flex; justify-content: center; margin-bottom: 20px;"
+          exp="This section contains an illustration related to the problem to make the activity more engaging for the student."
+        >
+          <img
+            src=""
+            alt="Illustration of Sofia and Miguel displaying their drawings in an art exhibition. The gallery walls are filled with sketches, and there are labels indicating the number of drawings contributed."
+            style="width: 300px; height: auto;"
+            exp="This image visually represents the scenario where Sofia and Miguel are adding their drawings to an exhibition, prompting the student to calculate the total number."
+          />
+        </div>
+
+        <div style="display: flex; align-items: center; margin-bottom: 15px;">
+          <p>A) Sofia drew 125 pictures in her sketchbook. Her friend Miguel drew 68 more pictures. How many pictures have they drawn together?</p>
+          <div
+            style="width: 100px; height: 30px; border: 1px solid black; text-align: center; margin-left: 10px;"
+            exp="Box where the student writes the correct number. The correct answer is '193'."
+          ></div>
+        </div>
+
+        <div style="display: flex; align-items: center; margin-bottom: 15px;">
+          <p>B) Sofia and Miguel decide to display all their drawings in an art exhibition. The gallery already had 45 drawings. How many drawings are in the gallery now?</p>
+          <div
+            style="width: 100px; height: 30px; border: 1px solid black; text-align: center; margin-left: 10px;"
+            exp="Box where the student writes the correct number. The correct answer is '238'."
+          ></div>
+        </div>
+
+        <div style="display: flex; align-items: center; margin-bottom: 15px;">
+          <p>C) After receiving additional submissions from other artists, the exhibition added 182 more drawings. How many drawings are in the gallery now?</p>
+          <div
+            style="width: 100px; height: 30px; border: 1px solid black; text-align: center; margin-left: 10px;"
+            exp="Box where the student writes the correct number. The correct answer is '420'."
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

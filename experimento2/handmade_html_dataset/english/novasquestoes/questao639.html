@@ -1,0 +1,56 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Piggy banks
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+  "task": "Paula has 8 coins in her piggy bank. Then, she finds 6 more coins and adds them. Flávio has 10 coins. The student must use addition to solve the problem.",
+  "layout": "The layout includes a drawing of two piggy banks, one labeled Paula (initially with 8 coins and 6 more shown nearby being added), and another labeled Flávio (with 10 coins). Students must determine how many coins Paula has in total and compare with Flávio’s to find who has more.",
+  "answer": {
+    "A": "The student should add Paula's coins: 8 + 6 = 14. Paula now has 14 coins.",
+    "B": "Paula has more coins because she has 14 and Flávio has 10.",
+    "C": "The student should add 14 (Paula's coins) and 10 (Flávio's coins) to find the total number of coins. The correct total is 24."
+  }
+}
+
+
+<html>
+  <head></head>
+  <body>
+    <div style="width: 750px; border: solid 1px; padding: 10px;">
+      <p exp="This scenario involves Paula adding 6 coins to the 8 coins already in her piggy bank. The student needs to use addition to find Paula's total and then compare with Flávio's amount.">
+        Paula has 8 coins in her piggy bank. Then, she finds 6 more coins under the couch and adds them to her piggy bank. Flávio has 10 coins in his piggy bank.
+      </p>
+
+      <img src="" style="display: block; margin: 10px auto; width: 300px;" 
+          exp="The image shows two piggy banks. Paula's piggy bank contains 8 coins, with 6 additional coins near a couch being added to it. Flávio's piggy bank contains 10 coins. The visual helps students understand how many coins each character has and supports addition." />
+
+      <div class="question-container" style="display: flex; justify-content: space-between; margin-top: 20px;">
+        <p exp="This question focuses on the addition of Paula's coins: 8 already in the piggy bank plus 6 more found. The student needs to perform 8 + 6.">
+          <b>A)</b> How many coins does Paula have now?
+        </p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" 
+            exp="Expected answer: 14. The student adds 8 + 6 to determine the new total of coins Paula has after adding more."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between; margin-top: 10px;">
+        <p exp="This question encourages the student to compare the total number of coins between Paula and Flávio.">
+          <b>B)</b> Who has more coins?
+        </p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" 
+            exp="Expected answer: Paula. Paula has 14 coins and Flávio has 10, so Paula has more. This reinforces understanding of comparing quantities."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between; margin-top: 10px;">
+        <p exp="This question asks for the total number of coins by adding Paula's coins and Flávio's coins.">
+          <b>C)</b> How many coins do Paula and Flávio have together?
+        </p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" 
+            exp="Expected answer: 24. The student adds 14 (Paula’s coins) and 10 (Flávio’s coins) to find the total number of coins."></div>
+      </div>
+    </div>
+  </body>
+</html>

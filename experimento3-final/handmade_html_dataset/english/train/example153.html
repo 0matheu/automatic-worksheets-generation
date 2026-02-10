@@ -1,0 +1,105 @@
+
+level: 2nd year fundamental
+learning_goals: addition, counting
+theme: ice cream shop
+sheet_width: 600px
+task: observe images, write answer
+language: en
+
+{
+  "task": "Count the number of ice creams each child is holding, connect the child to the tray with the most ice creams, and write down the sum of the two linked images.",
+  "layout": "The activity consists of three main sections. The top section includes a description of the task. Below this, the middle section features a 2x2 grid layout where the first column contains an image of a child holding ice creams, and the second column contains two images of trays with different numbers of ice creams.",
+  "answer": "To answer this activity correctly, the student must: 1) count the number of ice creams the child is holding (2), 2) compare it with the number of ice creams in the two trays (3 and 5), 3) connect the child to the image with the most ice creams (5), and 4) write down the sum of the two linked images (2 + 5 = 7). The answer (7) should be written in the answer box below the instruction text: 'Write in the box below the total number of ice creams after linking the images.'"
+}
+  
+
+<html>
+  <head>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 300px 300px;
+        grid-template-areas:
+          "child img1"
+          "child img2";
+      }
+
+      .child {
+        grid-area: child;
+        width: 300px;
+        height: 600px;
+      }
+
+      .child img {
+        margin-top: 180px;
+      }
+
+      img {
+        width: 230px;
+        height: 230px;
+      }
+
+      .img1 {
+        grid-area: img1;
+      }
+
+      .img2 {
+        grid-area: img2;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 600px"
+    >
+      <div class="activity" style="width: 600px">
+        <p
+          exp="Activity description explaining the task of linking the child with the tray that has the most ice creams and calculating the total."
+        >
+          Observe the images below. Count the number of ice creams each child is holding, then connect the child to the tray with the most ice creams. Finally, write down the sum of the two linked images.
+        </p>
+
+        <div class="container">
+          <div class="child" exp="div containing the image of the child holding 2 ice creams.">
+            <img
+              src=""
+              alt="Image of a child holding 2 ice creams, in a coloring book style"
+              exp="The student must count the ice creams (2) in the child's hands."
+            />
+          </div>
+
+          <div class="img1" exp="div containing the first tray of ice creams.">
+            <img
+              src=""
+              alt="Image of a tray with 3 ice creams, in a coloring book style"
+              exp="The student must count the ice creams (3) in the first tray."
+            />
+          </div>
+
+          <div class="img2" exp="div containing the second tray of ice creams.">
+            <img
+              src=""
+              alt="Image of a tray with 5 ice creams, in a coloring book style"
+              exp="The student must count the ice creams (5) in the second tray."
+            />
+          </div>
+        </div>
+
+        <p
+          exp="Instruction for the student to write the total sum of ice creams in the answer box."
+          style="text-align: center; margin-top: 20px;"
+        >
+          Write in the box below the total number of ice creams after linking the images:
+        </p>
+        <div style="display: flex; justify-content: center;" exp="div for the answer box.">
+          <div
+            style="width: 100px; height: 100px; border: 1px solid black;"
+            exp="Answer box for writing the total number of ice creams. Correct answer: 7."
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

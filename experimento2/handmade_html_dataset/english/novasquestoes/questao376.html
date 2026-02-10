@@ -1,0 +1,46 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Counting Passengers on a Bus
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+    "task": "To practice counting and basic addition skills by calculating the total number of passengers on a bus, reinforcing students' ability to count and perform simple arithmetic operations.",
+    "layout": "The activity consists of a description of the scenario at the top, providing the necessary context. Below the description, a centered image illustrates a bus with passengers boarding. The student will answer a question by adding the given values together.",
+    "answer": "To answer correctly, the student needs to count the number of passengers already on the bus (18), the number of passengers who boarded at stop 1 (20), and the number who boarded at stop 2 (12), then add them together to get the total number of passengers. The correct answer is 50."
+}
+
+<html>
+    <head></head>
+    <body>
+      <div style="width: 800px; border: solid 1px; padding: 10px;" exp="Main container for the activity">
+        
+        <div class="activity">
+          <p exp="Activity description explaining what the student must do">
+            A city bus had 18 passengers on board. At the first stop, 20 new passengers got on. 
+            At the second stop, 12 more people got on. 
+            How many passengers are on the bus now?
+          </p>
+        </div>
+  
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image in the activity">
+            <img src="" 
+                 alt="Illustration of a bus with a sign displaying the number of passengers, and people boarding at different stops. The first stop added 20 passengers, and the second stop added 12."
+                 style="width: 600px; height: 300px"
+                 exp="Image where students need to observe and count the number of passengers boarding at each stop." />
+        </div>
+
+        <p style="text-align: center;" exp="Instruction for the student to write their answer">
+            Write the total number of passengers in the box below:
+        </p>
+
+        <div style="display: flex; justify-content: center;" exp="Div used to center the answer box">
+            <div style="width: 100px; height: 100px; border: 1px solid black;"
+                 exp="Box where the student writes the total number of passengers. The correct answer is 50.">
+            </div>
+        </div>
+        
+      </div>
+    </body>
+</html>

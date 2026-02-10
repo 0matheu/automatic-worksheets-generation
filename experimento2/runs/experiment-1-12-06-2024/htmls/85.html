@@ -1,0 +1,111 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of new musical instruments a band needs and calculating the total sum.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph that explains the task, and the bottom section contains a centered grid with five columns and one row. The grid contains six images: an initial image of a band with 4 musicians and 3 instruments, and five more images of single instruments. The images are placed in the grid layout to facilitate counting and addition.",
+  "answer": "To answer correctly, the student needs to: 1) count the number of musicians in the initial image (4), 2) count the number of instruments in the initial image (3), 3) add the two numbers together to find the total. The correct answer is: 4 musicians + 3 instruments = 7 units. The student needs to identify the correct sum (7) and write it as the answer."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will describe the layout of the activity, containing three musicians and three instruments, in a 1-line and 2-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 200px 200px 200px 200px 200px;
+      grid-template-rows: 200px;
+      grid-template-areas:
+        "s1 i1 i2 i3 i4"
+    }
+
+    /* class that will be used to place the image of the musicians in the first row and the first column */
+    .s1 {
+      grid-area: s1;
+    }
+
+    /* class that will be used to place the image in the first row and the second column */
+    .i1 {
+      grid-area: i1;
+    }
+
+    /* class that will be used to place the image in the first row and the third column */
+    .i2 {
+      grid-area: i2;
+    }
+
+    /* class that will be used to place the image in the first row and the fourth column */
+    .i3 {
+      grid-area: i3;
+    }
+
+    /* class that will be used to place the image in the first row and the fifth column */
+    .i4 {
+      grid-area: i4;
+    }
+
+    /* class that will be used to give the size for the images of the activity */
+    img {
+      width: 180px;
+      height: 180px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          The image below shows a band with 4 musicians and 3 instruments. How many new instruments does the band need to have an instrument for each musician? Write the sum.
+        </p>
+
+        <div class="container">
+          <div class="s1">
+            <img
+              src=""
+              alt="Image in a coloring book style of a band with 4 musicians and 3 instruments"
+              exp="Image that the student will have to count the number of musicians, being 4, and also the number of instruments, being 3, and finally add the two quantities"
+            />
+          </div>
+
+          <div class="i1">
+            <img
+              src=""
+              alt="Image in a coloring book style of a pile of instruments, being 1"
+              exp="Image that the student will have to observe that there is 1 instrument in the pile and add to the image of the band"
+            />
+          </div>
+
+          <div class="i2">
+            <img
+              src=""
+              alt="Image in a coloring book style of a pile of instruments, being 2"
+              exp="Image that the student will have to observe that there are 2 instruments in the pile and add to the image of the band"
+            />
+          </div>
+
+          <div class="i3">
+            <img
+              src=""
+              alt="Image in a coloring book style of a pile of instruments, being 3"
+              exp="Image that the student will have to observe that there are 3 instruments in the pile and add to the image of the band"
+            />
+          </div>
+
+          <div class="i4">
+            <img
+              src=""
+              alt="Image in a coloring book style of a pile of instruments, being 4"
+              exp="Image that the student will have to observe that there are 4 instruments in the pile and add to the image of the band"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

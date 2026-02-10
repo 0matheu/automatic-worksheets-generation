@@ -1,0 +1,58 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of cacti in the initial image and calculating the total number of cacti after a new cactus is added.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph that explains the task, and the bottom section contains a 2-column and 2-row grid. The first column of the grid contains an image of 4 cacti, and the second column of the grid contains an image of 1 cactus. The two images are placed in the first and second rows of the grid. The grid layout is achieved using a container div with a width of 800px and a display grid, containing two image divs and placed in the question description div.",
+  "answer": "To answer this question correctly, the student needs to: 1) count the number of cacti in the initial image (4 cacti), 2) count the additional cactus in the second image (1 cactus), and 3) add the two numbers together to find the total. The correct answer is: 5 cacti (4 cacti from the initial image, and 1 additional cactus)."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the image below and answer the question:
+          <br />
+          Image 1: Draw a desert with 4 cacti.
+        </p>
+
+        <div
+          style="display: grid; grid-template-columns: 400px 400px; grid-template-rows: 400px 400px"
+        >
+          <div
+            style="grid-column: 1 / 2; grid-row: 1 / 2"
+            exp="div that will contain the image of the cacti, being placed in the first row and the first column"
+          >
+            <img
+              src=""
+              alt="Image in a coloring book style of a desert containing 4 cacti"
+              style="width: 400px; height: 400px"
+              exp="image that the student will have to count the 4 cacti"
+            />
+          </div>
+
+          <div
+            style="grid-column: 2 / 3; grid-row: 1 / 2"
+            exp="div that will contain the image of the cactus, being placed in the first row and the second column"
+          >
+            <img
+              src=""
+              alt="Image in a coloring book style of a cactus in the desert"
+              style="width: 400px; height: 400px"
+              exp="image that the student will have to count how many cacti are present and draw"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

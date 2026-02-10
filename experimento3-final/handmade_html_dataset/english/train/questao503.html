@@ -1,0 +1,48 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Art Supplies
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+  "task": "To practice counting and basic addition skills by calculating the total cost of art supplies Luiza is buying.",
+  "layout": "The activity consists of a description where Luiza is buying supplies for her art project. Below is an image showing the prices of the supplies. The student will answer questions based on the prices.",
+  "answer": {
+    "A": "To answer correctly, the student needs to add the prices of the paint set (30 reais) and the canvas (20 reais). The correct answer is 50 reais.",
+    "B": "To answer correctly, the student needs to add the price of the paint set (30 reais) and the brushes (15 reais). The correct answer is 45 reais."
+  }
+}
+
+  
+<html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: solid 1px; padding: 10px;">
+      <div class="activity">
+        <p exp="Luiza is buying art supplies for her project. The prices of the items are shown in the image.">
+          Luiza is purchasing supplies for her art project. Below is an image showing the items she plans to buy.
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image showing Luiza’s art supplies.">
+        <img 
+          src="" 
+          alt="Illustration showing Luiza’s art supplies, including a paint set, canvas, and brushes."
+          style="width: 600px; height: 300px"
+          exp="Image showing the art supplies with their prices."
+        />
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question asking for the total cost of the paint set and the canvas."><b>A)</b> What is the total cost of the paint set and the canvas?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total cost of the paint set and canvas. Correct: 50."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question asking for the total cost of the paint set and the brushes."><b>B)</b> What is the total cost of the paint set and the brushes?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total cost of the paint set and brushes. Correct: 45."></div>
+      </div>
+    </div>
+  </body>
+</html>

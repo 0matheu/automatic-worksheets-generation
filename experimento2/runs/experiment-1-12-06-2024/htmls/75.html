@@ -1,0 +1,59 @@
+```json
+{
+  "task": "The student will learn to count and add animals by observing images and performing a simple arithmetic operation.",
+  "layout": "The HTML elements are organized with a div containing the page width, followed by a div containing the question description, and three divs in a row containing an image, a plus sign, and another image. The images are placed in divs with specific classes to adjust their sizes.",
+  "answer": "To answer correctly, the student needs to observe the first image and count the number of dogs (4) and the second image to count the number of lions (3), then add them together to get 7. The correct answer is 7."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the page width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the images below and perform the addition:
+        </p>
+
+        <div
+          class="container"
+          exp="div that will contain the images that the student will have to add"
+          style="display: flex; justify-content: center"
+        >
+          <div class="img1" style="margin-right: 200px">
+            <img
+              src=""
+              alt="image in a children's drawing style of 4 dogs in a circus corral"
+              style="width: 300px; height: 300px"
+              exp="image that the student will have to observe and count how many dogs are present, being 4"
+            />
+          </div>
+
+          <div
+            style="font-size: 100px"
+            exp="plus sign that represents the sum of the dogs in the image above with the lions in the image below"
+          >
+            +
+          </div>
+
+          <div class="img2" style="margin-left: 200px">
+            <img
+              src=""
+              alt="image in a children's drawing style of 3 lions in a circus corral"
+              style="width: 300px; height: 300px"
+              exp="image that the student will have to observe and count how many lions are present, being 3"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

@@ -1,0 +1,96 @@
+```json
+{
+  "task": "To practice basic addition skills by counting and adding the number of drinks and snacks in two images and writing the results.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph describing the task, and the bottom section contains a 2x2 grid with four images. The first row of the grid contains two images of a cafeteria tray with drinks, and the second row contains two images of a cafeteria tray with snacks. The images are placed in a specific layout to facilitate counting and addition.",
+  "answer": "To answer this question correctly, the student needs to observe the four images and count the number of drinks in the first image (3), the number of drinks in the second image (2), the number of snacks in the third image (4), and the number of snacks in the fourth image (2). Then, the student needs to add the number of drinks to the number of snacks in each pair of images to get the results. The correct answers are: 3 drinks + 4 snacks = 7 items, and 2 drinks + 2 snacks = 4 items."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class used to organize the layout of the activity, in this case containing two images in two rows and two columns */
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 400px 400px;
+      grid-template-areas:
+        "img1 img2"
+        "img3 img4";
+      margin: 10px;
+    }
+
+    /* class used to place the image in the first row and first column */
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the image in the second row and first column */
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to place the image in the first row and second column */
+    .img3 {
+      grid-area: img3;
+    }
+
+    /* class used to place the image in the second row and second column */
+    .img4 {
+      grid-area: img4;
+    }
+
+    /* class used to give the size for the images of the activity */
+    img {
+      width: 390px;
+      height: 390px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+        Observe the images below of a tray in a school cafeteria, count the quantity of drinks and snacks in each image, and finally, add the quantity of drinks with the quantity of snacks.
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="image in a drawing style of a transparent tray containing 3 glasses of juice and no snacks"
+              exp="image that the student will have to observe and identify that there are 3 glasses of juice in the tray, being an image that the student will have to count the glasses of juice"
+            />
+          </div>
+
+          <div class="img2">
+            <img
+              alt="image in a drawing style of a transparent tray containing 2 glasses of juice and no snacks"
+              exp="image that the student will have to observe and identify that there are 2 glasses of juice in the tray, being an image that the student will have to count the glasses of juice"
+            />
+          </div>
+
+          <div class="img3">
+            <img
+              alt="image in a drawing style of a transparent tray containing 4 glasses of juice and also 4 trays of snacks"
+              exp="image that the student will have to observe and identify that there are 4 glasses of juice and 4 trays of snacks. The student will have to count the glasses of juice and also the trays of snacks"
+            />
+          </div>
+
+          <div class="img4">
+            <img
+              alt="image in a drawing style of a transparent tray containing 2 glasses of juice and 2 trays of snacks"
+              exp="image that the student will have to observe and identify that there are 2 glasses of juice and 2 trays of snacks. The student will have to count the glasses of juice and also the trays of snacks"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

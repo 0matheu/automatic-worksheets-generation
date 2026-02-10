@@ -1,0 +1,44 @@
+level: 2nd year of fundamental  
+learning_goals: counting, addition  
+theme: Park Cleanup  
+width-sheet: 800px  
+task: observe text, write answer
+language: en
+
+{
+    "task": "To practice counting and basic addition skills by determining how many items the students collected during a park cleanup activity, based on the given numbers.",
+    "layout": "The activity consists of a description at the top, where the student will read and calculate how many items the students collected, based on the given numbers.",
+    "answer": {
+        "A": "To answer correctly, the student needs to add 50 to 30, the number of items collected by the boys, to determine how many items the girls collected. The correct answer is 80 items.",
+        "B": "To answer correctly, the student needs to add the number of items collected by the boys (30) to the number of items collected by the girls (80) to find the total number of items collected. The correct answer is 110 items."
+    }
+}
+
+<html>
+    <head></head>
+    <body>
+      <div style="width: 800px; border: solid 1px; padding: 10px;">
+        <div class="activity">
+          <p exp="Activity description, explaining how many items the boys and girls collected during a cleanup event.">
+            The students participated in a park cleanup activity. The boys collected a total of 30 items. 
+            The girls collected 50 more items than the boys.
+          </p>
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image in the activity">
+            <img src="park_cleanup_image.png" alt="Illustration of students cleaning a park and collecting items." style="width: 600px; height: 300px" exp="Image showing students collecting items during a park cleanup event.">
+        </div>
+
+        <div class="question-container" style="display: flex; justify-content: space-between;">
+            <p exp="Question asking for the number of items collected by the girls."><b>A)</b> How many items did the girls collect?</p>
+            <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box where the student writes the number of items collected by the girls. The correct answer is 80."></div>
+        </div>
+
+        <div class="question-container" style="display: flex; justify-content: space-between;">
+            <p exp="Question asking for the total number of items collected."><b>B)</b> How many items, in total, did the students collect?</p>
+            <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box where the student writes the total number of items collected. The correct answer is 110."></div>
+        </div>
+        
+      </div>
+    </body>
+</html>

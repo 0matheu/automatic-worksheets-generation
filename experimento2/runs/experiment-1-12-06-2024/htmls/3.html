@@ -1,0 +1,52 @@
+```json
+{
+  "task": "The student will learn to count and add quantities by interpreting images in a context, learning to extract numerical information from visual content and perform basic arithmetic operations.",
+  "layout": "The HTML elements are organized with a div containing the page width, followed by a div containing the question description, and a grid container with three columns and one row. The grid container contains three images of the cafeteria, snacks, and the sum, placed in the first, second, and third columns respectively.",
+  "answer": "To answer correctly, the student needs to: 1) count the number of children in the cafeteria from the image (5), 2) count the number of snacks the children have (3), 3) add the two quantities together to find the total number of items, and 4) write the result in the third image. The correct answer is: 8."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the page width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          In a cafeteria, 5 children are having a snack, and in the figure below you can see how many snacks each child has. Count how many snacks the children have in total and write the sum.
+        </p>
+
+        <div
+          style="display: grid; grid-template-columns: 300px 300px 300px; grid-template-rows: 300px"
+          exp="div that contains the images, organizing them in three columns and one row"
+        >
+          <img
+            src=""
+            alt="Image of a cafeteria with 5 children"
+            style="width: 300px; height: 300px"
+            exp="image that the student will have to observe and count the number of children present. The image is 300px by 300px to be a square image"
+          />
+          <img
+            src=""
+            alt="Image of 5 piles of snacks, with 1, 2, and 3 snacks in each pile"
+            style="width: 300px; height: 300px"
+            exp="image that the student will have to observe and count how many snacks are present in all the piles. The image is 300px by 300px to be a square image"
+          />
+          <img
+            src=""
+            alt="Image of a sum being performed, with the result of 5 + 3 = 8"
+            style="width: 300px; height: 300px"
+            exp="image that the student will have to observe and write the result of the sum. The image is 300px by 300px to be a square image"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

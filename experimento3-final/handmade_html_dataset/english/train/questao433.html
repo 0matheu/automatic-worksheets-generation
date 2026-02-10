@@ -1,0 +1,65 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Cookies on a Tray
+width-sheet: 800px
+task: observe images, write answer
+language: en
+
+{
+"task": "To develop addition and counting skills by analyzing the tray of cookies and solving two addition problems based on the image.",
+"layout": "The activity shows three images of a cookie tray. First, the tray with 8 cookies. Then, another tray with 10 cookies (8 original + 2 added), and finally a tray with 14 cookies (8 original + 6 added). Below the images, there are two questions with answer boxes asking students to calculate the total number of cookies.",
+"answer": {
+  "A": "The student must count 8 cookies and add 2 more. The total is 10. The student should write 10 in the box.",
+  "B": "The student must count 8 cookies and add 6 more. The total is 14. The student should write 14 in the box."
+}
+}
+
+  <html>
+    <head>
+      <style>
+        .container { width: 800px; border: solid 1px; padding: 10px; text-align: center; font-family: Arial, sans-serif; }
+        .question-container { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+        .answer-box { width: 150px; height: 30px; border: 1px solid black; text-align: center; font-size: 16px; }
+        img { width: 120px; height: 70px; margin: 10px; }
+        .activity p { font-size: 18px; margin-bottom: 20px; }
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <div class="activity">
+          <p exp="Description of the task: it presents a tray that already has 8 cookies and asks students to find how many cookies there will be if more are added.">
+            There are already 8 cookies on the tray. The baker wants to know how many cookies there will be if they add 2 more cookies. Additionally, they want to know how many cookies there will be if they add 6 more cookies.
+          </p>
+        </div>
+    
+        <div style="display: flex; justify-content: center;" exp="Row with three images representing different quantities of cookies.">
+          <img src="" 
+               alt="Illustration of a rectangular baking tray with exactly 8 round cookies spaced out evenly. The cookies have chocolate chips and are arranged in two rows of four." 
+               exp="Image showing 8 cookies, which is the number already on the tray before adding more." />
+    
+          <img src="" 
+               alt="Illustration of the same tray now showing 10 cookies—8 original plus 2 extra ones clearly placed on the side, forming an incomplete third row." 
+               exp="Image showing 10 cookies on the tray, which represents 8 original cookies plus 2 added ones." />
+    
+          <img src="" 
+               alt="Illustration of a full tray with 14 cookies—8 initial cookies and 6 more added in additional rows, filling up most of the tray. The cookies are evenly spaced and some are slightly overlapping due to lack of space." 
+               exp="Image showing 14 cookies on the tray, representing 8 original plus 6 added." />
+        </div>
+    
+        <div class="question-container" exp="First question where students calculate the total after adding 2 cookies to 8.">
+          <p exp="Question that reinforces the idea of addition with cookies on a tray.">
+            <b>A)</b> How many cookies will there be if 2 more are added to 8 cookies?
+          </p>
+          <div class="answer-box" exp="Answer box where the student should write 10. It represents 8 + 2 = 10."></div>
+        </div>
+    
+        <div class="question-container" exp="Second question asking how many cookies there will be after adding 6 more to the 8.">
+          <p exp="Question continuing the logic of the activity with a different number to add.">
+            <b>B)</b> How many cookies will there be if 6 more are added to 8 cookies?
+          </p>
+          <div class="answer-box" exp="Answer box where the student should write 14. It represents 8 + 6 = 14."></div>
+        </div>
+      </div>
+    </body>
+    </html>
+    

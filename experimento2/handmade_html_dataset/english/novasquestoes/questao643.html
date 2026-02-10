@@ -1,0 +1,45 @@
+level: 2nd year of fundamental
+learning_goals: addition, counting
+theme: Kids
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+  "task": "To help students practice addition by determining the total number of apples in the basket after adding more apples.",
+  "layout": "The problem uses a fruit basket context where 8 apples are added to an initial amount of 24 apples. The student needs to apply addition to find the new total.",
+  "answer": {
+    "A": "The student should solve 24 + ? = 32. The missing number is 8, found by subtracting 24 from 32.",
+    "B": "There are 32 apples in the basket after 8 apples are added to the original 24."
+  }
+}
+
+  
+<html>
+  <head></head>
+  <body>
+    <div style="width: 750px; border: solid 1px; padding: 10px;">
+      <p exp="This problem uses a fruit basket context to apply addition to find how many apples are in the basket after adding more apples to an initial amount.">
+        There are 24 apples in the basket. 8 more apples are added. How many apples are there now?
+      </p>
+
+      <img src="" style="display: block; margin: 10px auto; width: 300px;"
+          exp="The image shows a basket with 24 apples inside. After 8 more apples are added, the basket shows a total of 32 apples. This visual helps students understand the addition of quantities.">
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p><b>A)</b> What number added to 24 gives the new total?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" 
+            exp="Correct answer: 8. The student needs to solve the equation 24 + ? = 32. The missing number is 8, which can be found by subtracting 24 from 32.">
+        </div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p><b>B)</b> How many apples are in the basket now?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" 
+            exp="Correct answer: 32. This is the result of adding 8 apples to the initial 24 apples in the basket.">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

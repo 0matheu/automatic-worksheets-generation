@@ -1,0 +1,123 @@
+```json
+{
+  "task": "The student will learn to add quantities by matching the images of the flower beds with the images of the seed packets containing the largest quantity, and then calculating the total sum of each flower bed.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph that explains the task, and the bottom section contains a 2x3 grid with images. The first row of the grid contains two images of flower beds, and the second row contains three images of seed packets. The images are placed in a specific layout to facilitate comparison and calculation.",
+  "answer": "To answer correctly, the student needs to: 1) identify the image of the flower bed with the most flowers (5 flowers in the first image), 2) identify the corresponding seed packet with the largest quantity (4 in the third packet), 3) add the number of flowers in the bed to the quantity of the seed packet (5 + 4 = 9), and 4) repeat the process for the second flower bed and seed packets (add 3 to the seed packet with 2, and 5 to the seed packet with 1). The correct answers are 9 and 10."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing two main sections, one with a paragraph that explains the task, and the other with a 2x3 grid with specific images */
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 300px 200px;
+      grid-template-areas:
+        "img1 img2"
+        "seeds1 seeds2"
+        "seeds3 seeds4";
+    }
+
+    /* class used to place the image of the first flower bed in the first row and the first column*/
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the image of the second flower bed in the first row and the second column*/
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to place the image of the first seed packet in the second row and the first column*/
+    .seeds1 {
+      grid-area: seeds1;
+    }
+
+    /* class used to place the image of the second seed packet in the second row and the second column*/
+    .seeds2 {
+      grid-area: seeds2;
+    }
+
+    /* class used to place the image of the third seed packet in the second row and the third column*/
+    .seeds3 {
+      grid-area: seeds3;
+    }
+
+    /* class used to place the image of the fourth seed packet in the second row and the fourth column*/
+    .seeds4 {
+      grid-area: seeds4;
+    }
+
+    /* class used to adjust the size of the images in the question*/
+    img {
+      width: 190px;
+      height: 190px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question">
+        <p
+          exp="Question description. Contains the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the images below. Match the image of the flower bed with the
+          largest quantity of flowers with the seed packet with the largest
+          quantity, and then write the sum of the initial quantity of the flower
+          bed with the quantity of the matched seed packet.
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="image in a children's painting style of a flower bed with 5 sunflowers"
+              exp="image that the student will have to identify that there are 5 sunflowers in the flower bed and that it is the image with the largest quantity of flowers"
+            />
+          </div>
+
+          <div class="img2">
+            <img
+              alt="image in a children's painting style of a flower bed with 3 sunflowers"
+              exp="image that the student will have to identify that there are 3 sunflowers in the flower bed"
+            />
+          </div>
+
+          <div class="seeds1">
+            <img
+              alt="image of a seed packet in a children's painting style containing 2 sunflower seeds"
+              exp="image that the student will have to identify that there are 2 sunflower seeds in the packet and that it is the one with the largest quantity of seeds"
+            />
+          </div>
+
+          <div class="seeds2">
+            <img
+              alt="image of a seed packet in a children's painting style containing 4 sunflower seeds"
+              exp="image that the student will have to identify that there are 4 sunflower seeds in the packet and that it is the one with the largest quantity of seeds"
+            />
+          </div>
+
+          <div class="seeds3">
+            <img
+              alt="image of a seed packet in a children's painting style containing 3 sunflower seeds"
+              exp="image that the student will have to identify that there are 3 sunflower seeds in the packet and that it is the one with the largest quantity of seeds"
+            />
+          </div>
+
+          <div class="seeds4">
+            <img
+              alt="image of a seed packet in a children's painting style containing 1 sunflower seed"
+              exp="image that the student will have to identify that there is 1 sunflower seed in the packet and that it is the one with the largest quantity of seeds"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

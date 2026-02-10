@@ -1,0 +1,101 @@
+```json
+{
+  "task": "The student will learn to count, add, and match quantities with numbers by observing an image and answering questions about it.",
+  "layout": "The question is divided into four main sections. The top section contains a paragraph describing the task. The middle section contains a 2x2 grid with three images: a garden with 7 sunflowers, a pile of 5 sunflowers, and a pile of 4 sunflowers. The images are placed in a specific layout to facilitate comparison and counting. The bottom section contains three questions about the images.",
+  "questions": [
+    {
+      "question": "How many sunflowers are there in the garden?",
+      "answer": "7"
+    },
+    {
+      "question": "What is the total number of sunflowers in the two piles?",
+      "answer": "9"
+    },
+    {
+      "question": "Which pile has the most sunflowers? How many?",
+      "answer": "The first pile (5 sunflowers)"
+    }
+  ]
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three images in a 2x2 grid */
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 400px 400px;
+      grid-template-areas:
+        "garden1 pile1"
+        "garden2 pile2";
+    }
+
+    /* class used to place the image of the garden in the first row and the first column*/
+    .garden1 {
+      grid-area: garden1;
+    }
+
+    /* class used to place the image of the pile1 in the first row and the second column*/
+    .pile1 {
+      grid-area: pile1;
+    }
+
+    /* class used to place the image of the pile2 in the second row and the first column*/
+    .pile2 {
+      grid-area: pile2;
+    }
+
+    /* class used to place the image of the pile2 in the second row and the second column*/
+    .garden2 {
+      grid-area: garden2;
+    }
+
+    /* class used to adjust the size of the images in the activity */
+    img {
+      width: 380px;
+      height: 380px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description. Contains the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the images below and answer the questions:
+        </p>
+
+        <div class="container">
+          <div class="garden1">
+            <img
+              alt="image in a coloring book style of a garden with 7 sunflowers"
+              exp=""
+            />
+          </div>
+
+          <div class="pile1">
+            <img
+              alt="image in a coloring book style of a pile with 5 sunflowers"
+              exp=""
+            />
+          </div>
+
+          <div class="pile2">
+            <img
+              alt="image in a coloring book style of a pile with 4 sunflowers"
+              exp=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

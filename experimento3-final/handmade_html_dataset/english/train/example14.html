@@ -1,0 +1,115 @@
+level: 2nd year fundamental 
+learning goals: addition, counting 
+theme: hands
+width-sheet: 800px 
+task: observe images, write answer
+language: en
+
+{
+  "task": "The student will learn to count and perform a basic addition operation by observing images of hands with raised fingers.",
+  "layout": "The activity is organized with a description at the top that establishes the context for the task. Below this description, there is a grid layout consisting of one row and five columns. In this layout, the first column contains an image of a hand, followed by a plus sign in the second column, then another image of a hand in the third column, and finally, an equal sign in the fourth column, with a box for the student to write their answer in the fifth column.",
+  "answer": "To correctly answer this activity, the student will have to: 1) count the number of raised fingers in the first hand image (3), 2) count the number of raised fingers in the second hand image (4), 3) add the two quantities together, and 4) write the result in the box. The correct answer is: 3 + 4 = 7."
+}
+
+<html>
+  <head></head>
+  <style>
+    /* class used to organize the hand images, equal sign, and box that the student will have to complete */
+    .container {
+      display: grid;
+      grid-template-columns: 150px 150px 150px 150px 150px;
+      grid-template-rows: 150px;
+      grid-template-areas: "hand1 plusSign hand2 equalSign box";
+    }
+
+    /* class used to position the first hand image, being in the first cell of the first column */
+    .hand1 {
+      grid-area: hand1;
+      border: solid 1px;
+    }
+
+    /* class used to position the second hand image, being in the first cell of the third column */
+    .hand2 {
+      grid-area: hand2;
+      border: solid 1px;
+    }
+
+    /* class used to position the plus sign between the hand images, being in the first cell of the second column */
+    .plusSign {
+      grid-area: plusSign;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* class used to position the equal sign, after the second hand image, in the first cell of the fourth column */
+    .equalSign {
+      grid-area: equalSign;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* class used to position the box where the student will have to write the result of the sum */
+    .box {
+      grid-area: box;
+      border: solid 1px;
+    }
+
+    /* class used to adjust the size of the images in the activity */
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="activity" style="width: 800px">
+        <p
+          exp="Activity description, containing the explanation of what the student will have to do to answer the activity correctly"
+        >
+          Observe the images below and write the sum of the quantities of raised fingers in both hands.
+        </p>
+
+        <div class="container">
+          <div class="hand1">
+            <img
+              alt="Image of a hand, in the style of a child's drawing, with 3 raised fingers"
+              exp="Image that the student will have to count how many fingers are raised, being 3"
+            />
+          </div>
+
+          <div class="plusSign">
+            <p
+              exp="Sign that represents the sum of the fingers of the hand1 and hand2 images"
+            >
+              +
+            </p>
+          </div>
+
+          <div class="hand2">
+            <img
+              alt="Image of a hand, in the style of a child's drawing, with 4 raised fingers"
+              exp="Image that the student will have to count how many fingers are raised, being 4"
+            />
+          </div>
+
+          <div class="equalSign">
+            <p
+              exp="Sign that represents the result of the sum of the hand1 and hand2 images"
+            >
+              =
+            </p>
+          </div>
+
+          <div
+            class="box"
+            exp="Box where the student will have to write the sum of raised fingers of the hand1 and hand2 images"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

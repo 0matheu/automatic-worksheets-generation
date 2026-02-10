@@ -1,0 +1,100 @@
+```json
+{
+  "task": "The objective of the question is for the student to practice basic addition skills by counting the total number of dinosaurs two children have and drawing the correct number of dinosaurs to add to the group.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph that explains the task, and the bottom section contains a grid layout with five cells. The first cell contains an image of 5 dinosaurs, the second cell is empty, the third cell contains an image of 2 children, the fourth cell is empty, and the fifth cell contains an image of 3 dinosaurs. The images of children and dinosaurs are placed in the grid layout to facilitate counting and drawing.",
+  "answer": "To answer this question correctly, the student needs to observe the images and count the total number of dinosaurs the children have (5 dinosaurs from the first image + 3 dinosaurs from the second image = 8 dinosaurs in total). The student should then draw 8 dinosaurs in the second cell of the grid. The purpose of this question is to practice counting and basic addition skills."
+}
+```
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class used to describe the layout of the activity, in this case containing three images in a 2-line and 3-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 300px 300px;
+      grid-template-areas:
+        "dino1 empty1 dino2"
+        "dino1 empty2 dino2";
+    }
+
+    /* class used to place the image of the first children in the first row and the second column */
+    .children {
+      grid-area: dino2;
+      width: 300px;
+      height: 300px;
+    }
+
+    /* class used to place the image of the children in the first row and the second column */
+    .dino {
+      width: 300px;
+      height: 300px;
+    }
+
+    /* class used to place the image of the first children in the first row and the first column */
+    .dino1 {
+      grid-area: dino1;
+    }
+
+    /* class used to place the image of the second children in the first row and the third column */
+    .dino2 {
+      grid-area: dino2;
+    }
+
+    /* class used to place the image of the second children in the first row and the first column */
+    .empty1 {
+      grid-area: empty1;
+    }
+
+    /* class used to place the image of the second children in the first row and the third column */
+    .empty2 {
+      grid-area: empty2;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+        Observe the images below, count the total number of dinosaurs the two children have, and draw the correct number of dinosaurs to add to the group.
+        </p>
+
+        <div class="container">
+          <div class="dino1">
+            <img
+              src=""
+              alt="Image in a coloring book style of 5 happy dinosaurs in a field"
+              class="dino1"
+              exp="Image that the student will have to count how many dinosaurs are present and dino1 is a class that will be used to adjust the image in the first row and the first column"
+            />
+          </div>
+
+          <div class="children">
+            <img
+              src=""
+              alt="Image of 2 happy children in a painting style"
+              class="children"
+              exp="Image that the student will have to observe and identify that there are 2 children and also try to identify how many dinosaurs are with them"
+            />
+          </div>
+
+          <div class="dino2">
+            <img
+              src=""
+              alt="Image in a coloring book style of 3 happy dinosaurs in a field"
+              class="dino2"
+              exp="Image that the student will have to count how many dinosaurs are present and dino2 is a class that will be used to adjust the image in the first row and the third column"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

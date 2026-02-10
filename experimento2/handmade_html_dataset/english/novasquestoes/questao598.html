@@ -1,0 +1,51 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Pet Store
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+    "task": "To practice counting and addition by adding up the number of animals in a pet store.",
+    "layout": "This activity describes a pet store with different animals in cages and aquariums. The image shows colorful cages with pets inside. The student must add the quantities of different animals.",
+    "answer": {
+      "A": "To answer correctly, the student should add the number of cats (6) and dogs (4). The correct answer is 10.",
+      "B": "To answer correctly, the student should add the number of rabbits (3) and hamsters (5). The correct answer is 8.",
+      "C": "To answer correctly, the student should add the number of parrots (2) and turtles (7). The correct answer is 9."
+    }
+  }
+
+  
+  <body>
+    <div style="width: 800px; border: solid 1px; padding: 10px;" exp="Main container for the pet store counting activity.">
+      <p exp="Introductory text describing the setting of the pet store.">
+        At the pet store, there are many animals in cages and tanks. Count how many animals there are in total in each group below.
+      </p>
+  
+      <div style="display: flex; justify-content: center; margin: 20px 0;" exp="Div to center the image of the pet store.">
+        <img 
+          src="" 
+          alt="Illustration of a pet store with animals in cages and tanks." 
+          style="width: 600px; height: 300px;"
+          exp="Detailed image showing cats and dogs in cages, rabbits in pens, hamsters in a wheel, parrots in perches, and turtles in a glass tank, all labeled with numbers."
+        />
+      </div>
+  
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Addition of cats and dogs."><b>A)</b> How many cats and dogs are there together?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for student to write the sum of cats and dogs (Correct: 10)."></div>
+      </div>
+  
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Addition of rabbits and hamsters."><b>B)</b> How many rabbits and hamsters are there together?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for student to write the sum of rabbits and hamsters (Correct: 8)."></div>
+      </div>
+  
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Addition of parrots and turtles."><b>C)</b> How many parrots and turtles are there together?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for student to write the sum of parrots and turtles (Correct: 9)."></div>
+      </div>
+    </div>
+  </body>
+  

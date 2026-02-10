@@ -1,0 +1,70 @@
+level: 2nd year fundamental
+learning_goals: word recognition, letter counting, logical reasoning
+theme: Easter
+sheet_width: 600px
+task: observe image, write answer
+language: en
+
+
+{
+  "task": "The objective of this activity is for the student to observe Easter-related words and count the number of letters in each word, filling in the correct number in the boxes below.",
+  "layout": "The activity is organized with a description at the top explaining the task. Below the description, there is an illustration of an Easter bunny and eggs to set the theme. Following the image, there are three labeled boxes containing Easter-related words ('Coelho', 'Chocolate', 'Ovo'), each with a corresponding blank box below for the student to write the number of letters in the word.",
+  "answer": "To answer correctly, the student will count the letters in each word and fill in the boxes as follows: 'Coelho' (6 letters), 'Chocolate' (9 letters), and 'Ovo' (3 letters)."
+}
+
+  
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px; padding: 10px; text-align: center;"
+      exp="This container sets the main layout for the Easter-themed activity with a fixed width and centered content."
+    >
+      <div class="activity">
+        <p
+          exp="This paragraph provides instructions for the student to observe the words, count the letters, and fill in the boxes below each word."
+        >
+          Observe the words below and write the number of letters in each word in the boxes below.
+        </p>
+
+        <div
+          style="display: flex; justify-content: center; margin-bottom: 20px;"
+          exp="This section displays the Easter illustration to give context to the activity."
+        >
+          <img
+            src=""
+            alt="Illustration of an Easter bunny with eggs."
+            style="width: 300px; height: auto;"
+            exp="This image visually represents the Easter theme of the activity."
+          />
+        </div>
+
+        <div style="display: flex; justify-content: space-around;">
+          <div style="text-align: center;">
+            <p>Coelho</p>
+            <div
+              style="width: 50px; height: 30px; border: 1px solid black; margin: 0 auto;"
+              exp="Box for the student to write the number of letters in the word 'Coelho' (6)."
+            ></div>
+          </div>
+
+          <div style="text-align: center;">
+            <p>Chocolate</p>
+            <div
+              style="width: 50px; height: 30px; border: 1px solid black; margin: 0 auto;"
+              exp="Box for the student to write the number of letters in the word 'Chocolate' (9)."
+            ></div>
+          </div>
+
+          <div style="text-align: center;">
+            <p>Ovo</p>
+            <div
+              style="width: 50px; height: 30px; border: 1px solid black; margin: 0 auto;"
+              exp="Box for the student to write the number of letters in the word 'Ovo' (3)."
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

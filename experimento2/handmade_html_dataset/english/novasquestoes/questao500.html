@@ -1,0 +1,71 @@
+level: 2nd year of fundamental  
+learning_goals: counting, observation  
+theme: Saving for a Toy Car  
+width-sheet: 800px  
+task: observe image, write answer  
+language: en
+
+
+{
+    "task": "To develop counting and observation skills by analyzing how much money two people have saved together and how it compares to the cost of an item they want to buy.",
+    "layout": "The activity includes a short scenario followed by an image showing money amounts. The student must calculate the total amount saved, how much is still needed to reach the goal, and what happens if they receive more money.",
+    "answer": {
+      "A": "Lucas has 28 reais and Tiago has 36 reais. The total is 64 reais.",
+      "B": "The item costs 65 reais. They need 1 more reais to reach it.",
+      "C": "If they receive 3 more reais, they will have 67 reais."
+    }
+  }
+
+  
+  <html>
+<head>
+  <style>
+    .question-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .answer-box {
+        width: 60px;
+        height: 30px;
+        border: 1px solid black;
+        text-align: center;
+        margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div style="width: 800px; border: solid 1px; padding: 10px;" exp="Main container with scenario and questions.">
+    <div class="activity">
+      <p exp="Context for the activity.">
+        Lucas and Tiago are saving money to buy a toy car, which costs 65 reais. Lucas has 28 reais and Tiago has 36 reais.
+        Answer the questions below.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Centered illustrative image.">
+      <img src="" 
+           alt="Illustration showing money saved by Lucas and Tiago."
+           style="width: 600px; height: 300px"
+           exp="Image showing how much each person saved." />
+    </div>
+
+    <div class="question-container">
+      <p><b>A)</b> How much money do they have together?</p>
+      <div class="answer-box" exp="Correct answer: 64"></div>
+    </div>
+
+    <div class="question-container">
+      <p><b>B)</b> How much more do they need to buy a toy car?</p>
+      <div class="answer-box" exp="Correct answer: 1 reais"></div>
+    </div>
+
+    <div class="question-container">
+      <p><b>C)</b> If they get 3 more reais, how much will they have?</p>
+      <div class="answer-box" exp="Correct answer: 67 reais"></div>
+    </div>
+  </div>
+</body>
+</html>

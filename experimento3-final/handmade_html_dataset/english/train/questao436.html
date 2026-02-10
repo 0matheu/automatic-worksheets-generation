@@ -1,0 +1,80 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Pencils in a Box
+width-sheet: 800px
+task: observe images, write answer
+language: en
+
+{
+  "task": "To practice counting and addition skills by calculating the total number of pencils in a box after adding more pencils.",
+  "layout": "The activity begins with a description that explains to the student that there are already 9 pencils in the box. Two different questions follow, asking the student to calculate how many pencils there will be if 3 or 6 more pencils are added. Illustrations accompany the questions to visually represent the initial and resulting quantities. Each question is paired with a box for the student to write their answer.",
+  "answer": {
+    "A": "The student must perform the addition 9 + 3. They should start with the 9 pencils already in the box and count 3 more. The correct answer is 12.",
+    "B": "The student must perform the addition 9 + 6. They should start with the 9 pencils already in the box and count 6 more. The correct answer is 15."
+  }
+}
+
+<html>
+<head>
+  <style>
+    .container {
+      width: 800px;
+      border: solid 1px;
+      padding: 10px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    .question-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .answer-box {
+      width: 150px;
+      height: 30px;
+      border: 1px solid black;
+      text-align: center;
+      font-size: 16px;
+    }
+    img {
+      width: 120px;
+      height: 70px;
+      margin: 10px;
+    }
+    .activity p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="activity">
+      <p exp="Text that explains the task to the student. It sets the context by stating there are already 9 pencils in the box and asks what happens if more are added.">
+        There are already 9 pencils in the box. The student wants to know how many pencils there will be if they add 3 more pencils. Additionally, they want to know how many pencils there will be if they add 6 more pencils.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center;" exp="Row of images that visually represent the pencil quantities: 9 pencils (initial), 12 pencils (after adding 3), and 15 pencils (after adding 6).">
+      <img src="" alt="Box with 9 pencils inside" exp="Image of a pencil box containing exactly 9 pencils. This represents the starting quantity in both questions." />
+      <img src="" alt="Box with 12 pencils inside" exp="Image of a pencil box now containing 12 pencils. This shows what it looks like after adding 3 more pencils to the original 9." />
+      <img src="" alt="Box with 15 pencils inside" exp="Image of a pencil box containing 15 pencils. This represents the result of adding 6 more pencils to the original 9." />
+    </div>
+
+    <div class="question-container" exp="Line with question A and answer box. It asks how many pencils there are after adding 3 more.">
+      <p exp="Question that requires the student to calculate the total number of pencils after adding 3 more to 9.">
+        <b>A)</b> How many pencils will there be if 3 more are added to 9 pencils?
+      </p>
+      <div class="answer-box" exp="Empty box for the student to write the result of 9 + 3. The expected answer is 12."></div>
+    </div>
+
+    <div class="question-container" exp="Line with question B and answer box. It asks how many pencils there are after adding 6 more.">
+      <p exp="Question that requires the student to calculate the total number of pencils after adding 6 more to 9.">
+        <b>B)</b> How many pencils will there be if 6 more are added to 9 pencils?
+      </p>
+      <div class="answer-box" exp="Empty box for the student to write the result of 9 + 6. The expected answer is 15."></div>
+    </div>
+  </div>
+</body>
+</html>

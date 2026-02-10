@@ -1,0 +1,67 @@
+level: 2nd year of fundamental
+learning_goals: addition, counting
+theme: kids
+width-sheet: 600px
+task: observe image, write answer
+language: en
+
+{
+  "task": "The objective of this activity is for the student to observe the given image and count the number of boys and girls present. After counting, they must write their answers in the provided answer boxes. This exercise helps students practice basic counting and addition skills by analyzing a visual representation of a group of children.",
+  "layout": "The activity is structured with a scenario description at the top, followed by an illustration representing the scene. Below the description and image, there are three questions prompting the student to solve simple addition problems and write the correct answers in the provided boxes.",
+  "answer": {
+    "A": "To correctly answer this question, the student must count the number of boys in the image (3). The correct answer is 3.",
+    "B": "To correctly answer this question, the student must count the number of girls in the image (2). The correct answer is 2.",
+    "C": "To correctly answer this question, the student must add the number of boys (3) and girls (2) together (3 + 2 = 5). The correct answer is 5."
+  }
+}
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px; padding: 10px; text-align: left;"
+      exp="This div acts as the main container for the activity. It sets a fixed width of 600px with padding for spacing inside."
+    >
+      <div class="activity" style="width: 600px;">
+        <p
+          exp="This paragraph provides a clear description of the task. The student needs to count and add the number of boys and girls in the image."
+        >
+          Some students gathered to do an activity proposed by the teacher. The student must count the boys and girls in the image and fill in the boxes below.
+        </p>
+
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+          <img
+            src=""
+            alt="Illustration of children working together"
+            style="width: 400px; height: auto;"
+            exp="An image showing children in a group activity, helping students visualize the counting and addition task."
+          />
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 15px;">
+          <div style="display: flex; align-items: center;">
+            <p style="margin-right: 10px;"><b>a.</b> How many boys appear in the scene?</p>
+            <div style="width: 50px; height: 30px; border: 1px solid black; text-align: center;"
+              exp="Box where the student writes the total number of boys. The correct answer is 3."
+            ></div>
+          </div>
+
+          <div style="display: flex; align-items: center;">
+            <p style="margin-right: 10px;"><b>b.</b> How many girls appear in the scene?</p>
+            <div style="width: 50px; height: 30px; border: 1px solid black; text-align: center;"
+              exp="Box where the student writes the total number of girls. The correct answer is 2."
+            ></div>
+          </div>
+
+          <div style="display: flex; align-items: center;">
+            <p style="margin-right: 10px;"><b>c.</b> In total, how many children appear in the scene?</p>
+            <div style="width: 50px; height: 30px; border: 1px solid black; text-align: center;"
+              exp="Box where the student writes the total number of children. The correct answer is 5."
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+  

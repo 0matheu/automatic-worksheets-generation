@@ -1,0 +1,71 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Grocery Store Purchases
+width-sheet: 800px
+task: observe images, write answer
+language: en
+
+{ 
+  "task": "To practice counting and addition skills by adding the prices of grocery items and answering questions about the total cost.", 
+  "layout": "The activity consists of a description explaining that the student needs to add up the price of the items purchased in a grocery store to find the total cost.", 
+  "answer": { "A": "To answer correctly, the student needs to add the price of the apples (10 reais), bananas (5 reais), and oranges (8 reais). The correct answer is 23 reais.", "B": "To answer correctly, the student needs to write down the total cost of the items. The correct answer is 23 reais." } 
+}
+
+<html>
+  <head>
+    <style>
+      .container {
+        width: 800px;
+        border: solid 1px;
+        padding: 10px;
+        text-align: center;
+      }
+      .question-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+      .answer-box {
+        width: 150px;
+        height: 30px;
+        border: 1px solid black;
+        text-align: center;
+      }
+      img {
+        width: 120px;
+        height: 70px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="activity">
+        <p exp="Activity description explaining the context of Raquel's purchase.">
+          Raquel went to the grocery store and bought the following items:
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center;" exp="Div used to center the images of items Raquel bought.">
+        <img src="" alt="Image of apples (10 reais)" exp="Image of apples with a price of 10 reais." />
+        <img src="" alt="Image of bananas (5 reais)" exp="Image of bananas with a price of 5 reais." />
+        <img src="" alt="Image of oranges (8 reais)" exp="Image of oranges with a price of 8 reais." />
+      </div>
+
+      <div class="question-container" exp="Question asking the student to calculate the cost of the items.">
+        <p exp="Question asking how much Raquel paid for each item.">
+          <b>A)</b> How much did Raquel pay for each item?
+        </p>
+        <div class="answer-box" exp="Box for the student to write the price for each item."></div>
+      </div>
+
+      <div class="question-container" exp="Question asking for the total amount of money Raquel spent.">
+        <p exp="Question asking what the total cost of the items was.">
+          <b>B)</b> What was the total cost of the items Raquel bought?
+        </p>
+        <div class="answer-box" exp="Box for the student to write the total cost."></div>
+      </div>
+    </div>
+  </body>
+</html>

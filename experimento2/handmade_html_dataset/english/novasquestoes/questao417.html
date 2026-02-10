@@ -1,0 +1,75 @@
+learning_goals: counting, addition
+theme:  children  
+width-sheet: 800px  
+task: observe image, write answer
+language: en
+
+
+
+{
+    "task": "To practice counting and basic addition skills by calculating the height of Adriano and Juliana based on Clarice's height and the differences given.",
+    "layout": "The activity consists of a description at the top where the student will calculate the heights of Adriano and Juliana by adding the given differences to Clarice's height.",
+    "answer": {
+      "A": "To answer correctly, the student needs to add 8 cm to Clarice's height (76 cm), which gives Juliana's height as 84 cm.",
+      "B": "To answer correctly, the student needs to add 12 cm to Juliana's height (84 cm), which gives Adriano's height as 96 cm."
+    }
+}
+  
+
+
+<html>
+    <head>
+        <style>
+            .container {
+                width: 800px;
+                border: solid 1px;
+                padding: 10px;
+                text-align: center;
+            }
+            .question-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+            .answer-box {
+                width: 150px;
+                height: 30px;
+                border: 1px solid black;
+                text-align: center;
+            }
+            img {
+                width: 150px;
+                height: 150px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="activity">
+                <p exp="Activity description explaining the family relationship and the heights of the siblings.">
+                    Juliana, Adriano, and Clarice are siblings. Adriano is 12 centimeters taller than Juliana, who is 8 centimeters taller than Clarice. Knowing that Clarice is 76 cm tall, write the height of the two other siblings.
+                </p>
+            </div>
+
+            <div style="display: flex; justify-content: center;">
+                <img src="" alt="Illustration of the three siblings" exp="Image representing the three siblings." />
+            </div>
+
+            <div class="question-container">
+                <p exp="Question asking for Juliana's height.">
+                    <b>A)</b> What is Juliana's height?
+                </p>
+                <div class="answer-box" exp="Box where the student writes Juliana's height. The correct answer is 84 cm."></div>
+            </div>
+
+            <div class="question-container">
+                <p exp="Question asking for Adriano's height.">
+                    <b>B)</b> What is Adriano's height?
+                </p>
+                <div class="answer-box" exp="Box where the student writes Adriano's height. The correct answer is 96 cm."></div>
+            </div>
+        </div>
+    </body>
+</html>

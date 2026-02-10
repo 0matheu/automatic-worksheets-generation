@@ -1,0 +1,56 @@
+level: 2nd year of fundamental
+learning_goals: addition, counting
+theme: Floors Above and Below
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+  "task": "André, Daniela, Felipe, and Luíza live in a building with 11 floors. Felipe lives on the top floor (11th). Luíza lives on the 7th floor. Daniela lives on the 9th floor. André lives on the 3rd floor. For each of them, add the number of floors above and the number of floors below. What is the total for each person?",
+  "layout": "The student will see a building with labeled floors. Each character lives on a specific floor. The task is to calculate how many floors are above and below each person, and then add them to find the total. The answer should be written in a centered 100x100px square box.",
+  "answer": {
+    "exp": "To solve the task, the student needs to count how many floors are below and above each person and then add those two values. For example:\n- André is on the 3rd floor → 2 floors below (1st and 2nd), 8 floors above (4th to 11th) → 2 + 8 = 10.\n- Luíza is on the 7th floor → 6 below + 4 above → 6 + 4 = 10.\n- Daniela is on the 9th floor → 8 below + 2 above → 8 + 2 = 10.\n- Felipe is on the 11th floor → 10 below + 0 above → 10 + 0 = 10.\nThe answer in all cases is 10. The student should write the number 10 in the answer box."
+  }
+}
+
+
+<html>
+  <head></head>
+  <body>
+    <div style="width: 750px; border: solid 1px; padding: 10px;">
+
+      <p style="text-align: center;" 
+          exp="This activity helps students practice addition in a real-life context. Each person lives on a different floor in an 11-floor building. The student must calculate the total number of floors above and below each person by adding the two quantities.">
+        André, Daniela, Felipe, and Luíza live in a building with 11 floors.  
+        Felipe lives on the top floor (11th).  
+        Luíza lives on the 7th floor.  
+        Daniela lives on the 9th floor.  
+        André lives on the 3rd floor.  
+        For each of them, add the number of floors above and the number of floors below.  
+        What is the total for each person?
+      </p>
+
+      <img src="" 
+            style="display: block; margin: 10px auto; width: 300px;"
+            alt="A building with 11 floors. André lives on the 3rd floor, which means there are 2 floors below and 8 above him. Luíza lives on the 7th floor, so there are 6 floors below and 4 above. Daniela lives on the 9th floor, with 8 floors below and 2 above. Felipe lives on the 11th floor, with 10 floors below and none above."
+            exp="Use this floor data to calculate the total for each person:  
+            - André: 2 floors below + 8 above = 10  
+            - Luíza: 6 below + 4 above = 10  
+            - Daniela: 8 below + 2 above = 10  
+            - Felipe: 10 below + 0 above = 10  
+            All totals are 10. The student should understand how to count the number of floors above and below to practice addition." />
+
+      <div style="text-align: center; margin-top: 20px;">
+        <p exp="The student should calculate the total floors above and below for each person and write the correct sum in the box. Each person has a total of 10 floors when combining those above and below.">
+          Add the number of floors above and below for each person. What is the total? Write it here:
+        </p>
+
+        <div style="width: 100px; height: 100px; border: 1px solid black; margin: 0 auto;"
+              exp="Expected result: 10. Each person in the building has a total of 10 floors when adding the number of floors above and below their apartment. The student should write 10 inside the box.">
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
+    

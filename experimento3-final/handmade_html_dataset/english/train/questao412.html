@@ -1,0 +1,76 @@
+level: 2nd year of fundamental  
+learning_goals: counting, addition
+theme:  Clothing Store Purchase  
+width-sheet: 800px  
+task: observe images, write answer
+language: en
+
+
+{
+    "task": "To practice counting and basic addition skills by calculating the total cost of clothing items purchased by Fernanda.",
+    "layout": "The activity consists of a description explaining that Fernanda bought a t-shirt and shorts, along with the prices of each item. The student will calculate how much Fernanda spent for each item and the total amount spent.",
+    "answer": {
+        "A": "To answer correctly, the student needs to identify the price of each item: the t-shirt (24 reais) and the shorts (32 reais).",
+        "B": "To answer correctly, the student needs to add the prices of the t-shirt and the shorts (24 + 32) to get the total. The correct answer is 56 reais."
+    }
+}
+
+<html>
+    <head>
+        <style>
+            .container {
+                width: 800px;
+                border: solid 1px;
+                padding: 10px;
+                text-align: center;
+            }
+            .question-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+            .answer-box {
+                width: 150px;
+                height: 30px;
+                border: 1px solid black;
+                text-align: center;
+            }
+            img {
+                width: 120px;
+                height: 120px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="activity">
+                <p exp="Activity description explaining the clothing purchase scenario for Fernanda.">
+                    Fernanda bought a t-shirt and a pair of shorts from a store promotion. The t-shirt costs 24 reais, and the shorts cost 32 reais. 
+                    Answer the questions based on the purchase.
+                </p>
+            </div>
+
+            <div style="display: flex; justify-content: center;">
+                <img src="" alt="Image of a red t-shirt costing 24 reais" exp="Image of the red t-shirt purchased by Fernanda"/>
+                <img src="" alt="Image of black shorts costing 32 reais" exp="Image of the black shorts purchased by Fernanda"/>
+            </div>
+
+            <div class="question-container">
+                <p exp="Question asking how much Fernanda paid for the t-shirt.">
+                    <b>A)</b> How much did Fernanda pay for each item?
+                </p>
+                <div class="answer-box" exp="Box where the student writes the amount paid for the t-shirt and shorts. The correct answers are 24 reais for the t-shirt and 32 reais for the shorts."></div>
+            </div>
+
+            <div class="question-container">
+                <p exp="Question asking for the total amount Fernanda spent on her purchase.">
+                    <b>B)</b> What was the total amount Fernanda spent on this purchase?
+                </p>
+                <div class="answer-box" exp="Box where the student writes the total amount spent. The correct answer is 56 reais."></div>
+            </div>
+        </div>
+    </body>
+</html>
+

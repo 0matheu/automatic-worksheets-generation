@@ -1,0 +1,54 @@
+```json
+{
+  "task": "To practice counting and basic addition skills by counting the number of children and the number of cakes in the image and performing the arithmetic operation.",
+  "layout": "The question is divided into three main sections. The top section contains a paragraph describing the task. The middle section contains a centered image of a playground with 7 children. The image is placed in a div that is centered horizontally. The bottom section contains two equations: one for counting the number of children in the image, and another for counting the number of cakes. The equations are also centered in the div.",
+  "answer": "To find the total number of cakes needed, the student needs to count the number of children in the image (7) and the number of cakes each child wants (2), and add them together. The correct answer is 7 children * 2 cakes/child = 14 cakes."
+}
+```
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          In a school cafeteria, 7 children are playing and each child wants 2
+          cakes. How many cakes are needed in total for the children?
+        </p>
+
+        <div style="display: flex; justify-content: center">
+          <img
+            src=""
+            alt="Image in a coloring book style of a playground, containing 7 children but without cakes"
+            style="width: 600px; height: 300px"
+            exp="Image that the student will have to count the number of children and also the presence of cakes in the image"
+          />
+        </div>
+
+        <p style="display: flex; justify-content: center">
+          <span
+            exp="equation where the student will have to identify the number of children in the image and perform the multiplication"
+          >
+            7 children
+          </span>{" "}
+          *{" "}
+          <span
+            exp="value that the student will have to identify that represents the quantity of cakes that each child wants"
+          >
+            2 cakes/child
+          </span>{" "}
+          = 14 cakes
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+```

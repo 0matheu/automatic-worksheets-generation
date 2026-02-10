@@ -1,0 +1,90 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: cafeteria
+width-sheet: 800px
+task: observe text, write answer
+language: en
+
+
+{
+    "task": "To practice counting and addition skills by calculating the total cost of snacks that Lucas wants to buy at the cafeteria.",
+    "layout": "The activity presents a short text about Lucas visiting the cafeteria. A table shows the prices of different snacks. The student is asked to calculate the total cost of combinations of snacks.",
+    "answer": {
+      "A": "To answer correctly, the student needs to add the price of the sandwich (15 reais) and the juice (7 reais). The correct answer is 22 reais.",
+      "B": "To answer correctly, the student needs to add the prices of all three items: sandwich (15 reais), juice (7 reais), and cookie (4 reais). The correct answer is 26 reais."
+    }
+  }
+
+  
+  <html>
+<head>
+  <style>
+    .container {
+      width: 800px;
+      border: solid 1px;
+      padding: 10px;
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #6aa5db;
+      color: white;
+    }
+    .question-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .answer-box {
+      width: 100px;
+      height: 30px;
+      border: 1px solid black;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="activity">
+      <p exp="Introductory text explaining that Lucas is at the cafeteria and wants to buy snacks.">
+        Lucas is at the school cafeteria. He is choosing some snacks to buy. The table below shows the prices of the items. Answer the questions based on the prices.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Image showing cafeteria snacks like sandwich, juice, and cookie.">
+      <img 
+        src="" 
+        alt="Illustration showing cafeteria snacks: a sandwich, a glass of juice, and a cookie."
+        style="width: 600px; height: 300px"
+        exp="Image illustrating the snacks that Lucas is buying: a sandwich, juice, and cookie placed on a tray in the cafeteria."
+      />
+    </div>
+
+    <table exp="Table showing the prices of cafeteria items.">
+      <tr><th>Item</th><th>Price (R$)</th></tr>
+      <tr><td>Sandwich</td><td>15</td></tr>
+      <tr><td>Juice</td><td>7</td></tr>
+      <tr><td>Cookie</td><td>4</td></tr>
+    </table>
+
+    <div class="question-container">
+      <p><b>A)</b> What is the total cost of the sandwich and the juice?</p>
+      <div class="answer-box" exp="Box for the total cost of sandwich and juice. Correct: 22."></div>
+    </div>
+    <div class="question-container">
+      <p><b>B)</b> What is the total cost of all the snacks?</p>
+      <div class="answer-box" exp="Box for the total cost of sandwich, juice, and cookie. Correct: 26."></div>
+    </div>
+  </div>
+</body>
+</html>

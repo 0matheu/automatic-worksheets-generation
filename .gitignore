@@ -1,0 +1,7 @@
+experimento2/llama-2-13b-generate-questions/
+experimento2/results/
+.ipynb_checkpoints
+dataset/
+llama-3-8b-generate-questions/
+.env
+tmp/

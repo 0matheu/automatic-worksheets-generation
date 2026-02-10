@@ -1,0 +1,71 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: school supplies
+sheet_width: 800px
+task: observe image, write answer
+language: en
+
+{
+  "task": "To practice counting and basic addition by observing the number of pencils and erasers in the image and calculating the total.",
+  "layout": "The activity is organized with a description at the top, followed by an image showing pencils and erasers. Below the image, three elaborated questions prompt the student to count and calculate the total, with answer boxes placed next to each question.",
+  "answer": {
+    "A": "The student should count the pencils and answer '11'.",
+    "B": "The student should count the erasers and answer '4'.",
+    "C": "The student should calculate the total number of pencils and erasers and answer '15'."
+  }
+}
+  
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px; padding: 10px;"
+      exp="This container organizes the activity layout, themed around school supplies."
+    >
+      <div class="activity">
+        <p
+          exp="This paragraph provides instructions for the student to count pencils and erasers and calculate their total."
+        >
+          Observe the image below and answer the following questions:
+        </p>
+
+        <div
+          style="display: flex; justify-content: center; margin-bottom: 20px;"
+          exp="This section contains the image of pencils and erasers for counting."
+        >
+          <img
+            src=""
+            alt="Image showing 11 pencils and 4 erasers in a desk, in a cartoon style."
+            style="width: 400px; height: auto;"
+            exp="Image showing 11 pencils and 4 erasers. Students must count and add them."
+          />
+        </div>
+
+        <div style="text-align: left; margin-top: 20px;">
+          <p style="display: flex; align-items: center; margin-bottom: 10px;">
+            A) How many pencils are there? 
+            <span
+              style="display: inline-block; border: 1px solid black; width: 50px; height: 20px; margin-left: 10px;"
+              exp="Box for the student to write the number of pencils. The correct answer is '11'."
+            ></span>
+          </p>
+          <p style="display: flex; align-items: center; margin-bottom: 10px;">
+            B) How many erasers are there? 
+            <span
+              style="display: inline-block; border: 1px solid black; width: 50px; height: 20px; margin-left: 10px;"
+              exp="Box for the student to write the number of erasers. The correct answer is '4'."
+            ></span>
+          </p>
+          <p style="display: flex; align-items: center; margin-bottom: 10px;">
+            C) What is the total number of pencils and erasers? 
+            <span
+              style="display: inline-block; border: 1px solid black; width: 50px; height: 20px; margin-left: 10px;"
+              exp="Box for the student to write the total number of supplies. The correct answer is '15'."
+            ></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

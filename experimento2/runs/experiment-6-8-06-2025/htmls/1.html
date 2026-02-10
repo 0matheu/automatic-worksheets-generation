@@ -1,0 +1,77 @@
+```json
+{
+  "task": "To practice counting and basic addition skills by counting the number of glasses of milk and cookies in the image and calculating the total sum.",
+  "layout": "The question is divided into three main sections. The top section contains a paragraph describing the task. The middle section contains a 2x2 grid with images of a tray of glasses and a tray of cookies. The images are placed in a specific layout to facilitate counting and addition. The bottom section contains a paragraph with the question.",
+  "answer": "To answer this question correctly, the student needs to: 1) count the number of glasses of milk in the first image (4 glasses), 2) count the number of trays of cookies in the second image (2 trays), 3) add the two numbers together to find the total sum. The correct answer is 6 glasses of milk and cookies."
+}
+```
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three main sections: top section with a paragraph, middle section with a 2x1 grid containing two images, and a bottom section with a paragraph. */
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 400px 200px;
+      grid-template-areas:
+        "milk cookies"
+        "question question";
+    }
+
+    /* class used to place the image of the cookies in the first row and the second column */
+    .cookies {
+      grid-area: cookies;
+    }
+
+    /* class used to place the image of the milk in the first row and the first column */
+    .milk {
+      grid-area: milk;
+    }
+
+    /* class used to place the question at the bottom of the page, in the second row and the first column */
+    .question {
+      grid-area: question;
+    }
+
+    /* class used to format the images of the cookies and milk, adjusting their size */
+    img {
+      width: 370px;
+      height: 370px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="container">
+        <div class="milk">
+          <img
+            alt="image containing 4 glasses of milk on a tray in a cafeteria style"
+            exp="image that the student will have to count the number of glasses of milk and add to the number of glasses of milk represented in the other image"
+          />
+        </div>
+
+        <div class="cookies">
+          <img
+            alt="image containing 2 trays of cookies on a tray in a cafeteria style"
+            exp="image that the student will have to count the number of trays of cookies and add to the number of glasses of milk represented in the other image"
+          />
+        </div>
+
+        <div class="question">
+          <p
+            exp="question that asks what the student will have to do to answer the activity correctly"
+          >
+            Add the number of glasses of milk with the number of trays of cookies.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

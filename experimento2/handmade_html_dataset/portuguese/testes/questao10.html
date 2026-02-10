@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head></head>
+  <style>
+    /* Classe que será usada para descrever o layout da atividade, contendo três imagens em um layout de 2 linhas e 2 colunas */
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px;
+      grid-template-rows: 300px 300px;
+      grid-template-areas:
+        "fish1 empty"
+        "empty octopus1";
+    }
+
+    /* Classe usada para posicionar a imagem do primeiro grupo de peixes na primeira linha e primeira coluna */
+    .fish1 {
+      grid-area: fish1;
+    }
+
+    /* Classe usada para posicionar a imagem do polvo na segunda linha e primeira coluna */
+    .octopus1 {
+      grid-area: octopus1;
+    }
+
+    /* Classe usada para ajustar o tamanho das imagens */
+    .sizemedium{
+      width: 240px;
+      height: 240px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="Div contendo a largura da folha, que neste caso é 600px"
+    >
+      <div class="activity" style="width: 600px">
+        <p
+          exp="Descrição da atividade, contendo a explicação do que o aluno precisará fazer para responder corretamente."
+        >
+          Conecte a imagem do grupo de peixes com a imagem do peixe e, em seguida, conecte a imagem do polvo com a outra imagem de um polvo. Por fim, escreva a soma das quantidades na caixa.
+        </p>
+
+        <div class="container">
+          <div class="fish1" exp="Div usada para ajustar a imagem dos peixes para ficar na primeira linha e primeira coluna">
+            <img
+              class="sizemedium"
+              src=""
+              alt="Imagem no estilo de pintura infantil de 3 peixes em um aquário"
+              exp="Imagem que o aluno deverá observar e identificar que há 3 peixes"
+            />
+          </div>
+
+          <div class="octopus1" exp="Div usada para ajustar a imagem do polvo para ficar na segunda linha e primeira coluna">
+            <img
+              class="sizemedium"
+              src=""
+              alt="Imagem no estilo de pintura infantil de um polvo"
+              exp="Imagem que o aluno deverá observar e identificar que há um polvo"
+            />
+          </div>
+        </div>
+
+        <p
+          exp="Descrição de onde o aluno escreverá a resposta"
+          style="text-align: center; margin-top: 20px;"
+        >
+          Escreva na caixa abaixo a soma dos peixes e do grupo de peixes, observando e realizando a soma das quantidades:
+        </p>
+        <div style="display: flex; justify-content: center;" exp="Div usada para centralizar a caixa de resposta">
+          <div
+            style="width: 100px; height: 100px; border: 1px solid black;"
+            exp="Caixa usada pelo aluno para escrever a resposta, que neste caso é 7"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Animal Rescue Mission
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+    "task": "To practice counting and basic addition skills by calculating how many animals Lucas and his team rescued.",
+    "layout": "The activity consists of a description where Lucas and his team rescued animals. Below is an image showing the number of animals rescued. The student will answer questions based on these numbers.",
+    "answer": {
+      "A": "To answer correctly, the student needs to add the number of dogs rescued (5) and the number of cats rescued (3). The correct answer is 8 animals.",
+      "B": "To answer correctly, the student needs to add the total number of rescued animals (5 dogs + 3 cats + 2 birds). The correct answer is 10 animals."
+    }
+  }
+
+<html>
+<head></head>
+<body>
+  <div style="width: 800px; border: solid 1px; padding: 10px;">
+    <div class="activity">
+      <p exp="Lucas and his team are rescuing animals. The numbers of rescued animals are shown in the image.">
+        Lucas and his team are rescuing animals in the neighborhood. Below is an image showing the animals they rescued.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image showing the rescued animals.">
+      <img 
+        src="" 
+        alt="Illustration of Lucas and his team rescuing dogs, cats, and birds."
+        style="width: 600px; height: 300px"
+        exp="Image showing the animals rescued by Lucas and his team."
+      />
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question asking for the total number of dogs and cats rescued."><b>A)</b> How many animals did Lucas and his team rescue (dogs and cats)?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total number of dogs and cats rescued. Correct: 8."></div>
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question asking for the total number of animals rescued."><b>B)</b> What is the total number of animals rescued by Lucas and his team?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total number of animals rescued. Correct: 10."></div>
+    </div>
+  </div>
+</body>
+</html>

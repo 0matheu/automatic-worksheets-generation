@@ -1,0 +1,54 @@
+level: 2nd year fundamental,
+learning_goals: addition
+theme: cards 
+sheet_width: 600px
+task: observe image, write answer
+language: en
+
+
+{
+  "task": "Observe the image carefully. The image shows two children holding cards, each stating the number of cards they have. One child has 53 cards, while the other has 40 cards. Your task is to determine the total number of cards by adding both numbers together and writing your answer in the provided box.",
+  "layout": "The activity presents an image of two children holding cards, with their respective numbers clearly displayed. The student must calculate the sum of the two numbers and write the correct answer in the provided box.",
+  "answer": "To answer correctly, the student must compute 53 + 40 and write the total in the answer box, the correct answer is 93"
+}
+
+<html>
+<head></head>
+<body>
+  <div
+    style="width: 600px; border: solid 1px"
+    exp="Div containing the activity layout with a fixed width of 600px"
+  >
+    <div class="activity" style="width: 600px">
+      <p
+        exp="Activity description, explaining the student's task"
+      >
+        Observe the image below and find the total number of cards by adding both numbers together. Write your answer in the provided box.
+      </p>
+
+      <div
+        style="display: flex; justify-content: center"
+        exp="Div used to center the image in the activity"
+      >
+        <img
+          src=""
+          alt="Two children holding cards. One child states they have 53 cards, while the other states they have 40 cards."
+          style="width: 400px; height: 200px"
+          exp="This image illustrates a math problem where two children are holding cards. The left child has a speech bubble with 'I have 53 cards', and the right child has 'I have 40 cards'. The student must add the numbers together to determine the total."
+        />
+      </div>
+
+      <p exp="Instruction for the student to write the answer" style="text-align: center;">
+        Write the total number of cards in the box below:
+      </p>
+
+      <div style="display: flex; justify-content: center;" exp="Div used to center the answer box">
+        <div
+          style="width: 100px; height: 100px; border: 1px solid black;"
+          exp="Box where the student should write the total number of cards. The correct answer is 93."
+        ></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

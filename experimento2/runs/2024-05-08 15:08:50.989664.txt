@@ -1,0 +1,720 @@
+
+---------------------------------------------------------------------------------------------------------------
+<s>
+[INST]
+Gere o esqueleto de uma atividade para auxiliar o aluno no aprendizado.
+O esqueleto da atividade deverá conter a estrutura em HTML.
+Se a questão contiver imagens, adicione uma descrição no atributo de alt.
+Adicione também uma explicação para a estrutura HTML em um novo atributo exp quando necessário.
+Quando for necessário utilizar CSS, adicione uma explicação na forma de comentários, acima da classe. 
+
+Utilize os seguintes parâmetros:
+
+nivel: 2 ano fundamental
+assunto: adição
+tematica: lanches
+largura-folha: 700px
+layout: única imagem
+
+
+Siga as seguintes regras:
+
+Gere uma descrição textual da atividade e em seguida o html contendo a questão.
+Não adicione nada fora a descrição textual e o html da questão.
+Gere uma atividade que seja criativa e que ajude o aluno a aprender de maneira lúdica.
+[/INST]
+
+Nessa questão será praticado o principio da adição, e
+também da identificação, sendo a quantidade de lêgoes contidos em uma imagem.
+A questão consiste de uma imagem com vários lêgoes, contendo 3 lêgoes,
+e também contendo 4 lêgoes. A tarefa do aluno é desenhar em desenho
+de colorir, após ser preguntado os seguintes princípios:
+A) Quantos lêgoes tem ao todo?
+B) Quantas cebolas tem ao todo?
+Simao, o aluno terá que desenhar um lêgo em cada one dos grupos abaixo:
+Grupo 1: 3 lêgoes
+Grupo 2: 4 lêgoes
+
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 700px; border: solid 1px"
+      exp="div contendo a imagem, que o aluno terá que colorir"
+    >
+      <div class="questao" style="width: 700px">
+        <p
+          exp="Descrição da questão, que inclui a explicação do que o aluno terá que responder a questão, após visualizar a imagem"
+        >
+          Observe a imagem e responda as seguintes questões:
+        </p>
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <img
+            alt="imagem do lêgo"
+            style="width: 300px; height: 100px"
+            exp="imagem que o aluno terá que desenhar, após responder a questão"
+          />
+        </div>
+
+        <p>A) Quantos lêgoes tem ao todo?</p>
+        <p>B) Quantas cebolas tem ao todo?</p>
+        <p>Simao, desenhe lêgo em cada grupo:</p>
+        <p class="correct">
+          <span
+            style="display: flex; justify-content: center"
+            exp="div utilizada para centralizar a imagem na questão, mas com uma correção"
+          >
+            Group 1: 3 lêgoes
+            Group 2: 4 lêgoes
+          </span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+
+Nessa questão o aluno terá que observar a imagem, e desenhar lêgoes em cada grupo, sendo 3 lêgoes, e 4 lêgoes. A tarefa não tem nada a ver com a soma, mas sim ao principio da identidade, sendo que o aluno terá que identificar quantos lêgoes estão presentes na imagem.
+Gere uma imagem, após a descrição, que consiga o aluno para desenhar, após responder corretamenta a questão.
+
+---------------------------------------------------------------------------------------------------------------
+<s>
+[INST]
+Gere o esqueleto de uma atividade para auxiliar o aluno no aprendizado.
+O esqueleto da atividade deverá conter a estrutura em HTML.
+Se a questão contiver imagens, adicione uma descrição no atributo de alt.
+Adicione também uma explicação para a estrutura HTML em um novo atributo exp quando necessário.
+Quando for necessário utilizar CSS, adicione uma explicação na forma de comentários, acima da classe. 
+
+Utilize os seguintes parâmetros:
+
+nivel: 2 ano fundamental
+assunto: adição
+tematica: lanches
+largura-folha: 700px
+layout: duas imagens, linhas e colunas
+
+
+Siga as seguintes regras:
+
+Gere uma descrição textual da atividade e em seguida o html contendo a questão.
+Não adicione nada fora a descrição textual e o html da questão.
+Gere uma atividade que seja criativa e que ajude o aluno a aprender de maneira lúdica.
+[/INST]
+
+Nessa questão serão praticado os princípios da adição. A questão consiste de
+duas imagens, uma contendo 4 bolinhas e outra contendo 3 bolinhas. A tarefa do aluno é
+elevar o resultado da soma de bolinhas em imagem uma com a quantidade de bolinhas
+contida na outra imagem. A questão consiste de duas imagens, uma contendo 4 bolinhas,
+e outra contendo 3 bolinhas. Para responder corretamente o aluno terá que somar
+os valores das bolinhas, e escriver a resposta, que é 4 + 3 = 7.
+
+<html>
+  <head></head>
+  <style>
+    /* classe que é utilizada para organizar as imagens dos lanches no layout da atividade */
+   .container {
+      display: grid;
+      grid-template-columns: 150px 150px 150px 150px 150px;
+      grid-template-rows: 200px 200px;
+      grid-template-areas:
+       1em 150px 1em 150px 1em 150px;
+      margin: 5px;
+    }
+
+    /* classe que é utilizada para posicionar a imagem 1, na primeira célula da segunda coluna */
+   .img1 {
+      grid-area: 1;
+    }
+
+    /* classe que é utilizada para posicionar a imagem 2, na primeira célula da terceira coluna */
+   .img2 {
+      grid-area: 2;
+    }
+
+    /* classe que é utilizada para posicionar a imagem 3, na primeira célula da quarta coluna */
+   .img3 {
+      grid-area: 3;
+    }
+
+    /* classe que é utilizada para posicionar a imagem 4, na primeira célula da quinta coluna */
+   .img4 {
+      grid-area: 4;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 700px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 700px"
+    >
+      <div class="questao" style="width: 700px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que somar os valores das imagens"
+        >
+          Observe as imagens abaixo e escreva o resultado da soma.
+        </p>
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem no layout da atividade"
+        >
+          <div class="container">
+            <div
+              style="display: grid"
+              exp="div utilizada para organizar as imagens dos lanches no layout da atividade"
+            >
+              <div
+                class="img1"
+                style="width: 150px; height: 150px"
+                exp="imagem na qual o aluno terá que contar quantas bolinhas estão, e escrever o resultado"
+              >
+                <img
+                  src=""
+                  alt="imagem 1, que consiste de 4 bolinhas"
+                  style="width: 150px; height: 150px"
+                >
+              </div>
+              <div
+                class="img2"
+                style="width: 150px; height: 150px"
+                exp="imagem na qual o aluno terá que contar quantas bolinhas, e escrever o resultado"
+              >
+                <img
+                  src=""
+                  alt="imagem 2, que consiste de 3 bolinhas"
+                  style="width: 150px; height: 150px"
+                >
+              </div>
+              <div
+                class="img3"
+                style="width: 150px; height: 150px"
+                exp="imagem na qual o aluno terá que contar quantas bolinhas, e escrever o resultado"
+              >
+                <img
+                  src=""
+                  alt="imagem 3, que consiste de 4 bolinhas"
+                  style="width: 150px; height: 150px"
+                >
+              </div>
+              <div
+                class="img4"
+                style="width
+---------------------------------------------------------------------------------------------------------------
+<s>
+[INST]
+Gere o esqueleto de uma atividade para auxiliar o aluno no aprendizado.
+O esqueleto da atividade deverá conter a estrutura em HTML.
+Se a questão contiver imagens, adicione uma descrição no atributo de alt.
+Adicione também uma explicação para a estrutura HTML em um novo atributo exp quando necessário.
+Quando for necessário utilizar CSS, adicione uma explicação na forma de comentários, acima da classe. 
+
+Utilize os seguintes parâmetros:
+
+nivel: 2º ano fundamental
+assunto: adição
+tematica: carrinhos
+largura-folha: 600px
+layout: única imagem
+
+
+Siga as seguintes regras:
+
+Gere uma descrição textual da atividade e em seguida o html contendo a questão.
+Não adicione nada fora a descrição textual e o html da questão.
+Gere uma atividade que seja criativa e que ajude o aluno a aprender de maneira lúdica.
+[/INST]
+
+Nessa questão será praticado o principio da soma. A questão consiste de
+uma imagem, contendo 8 carros, e o aluno terá que declarar a soma
+de carros que estão presentes na imagem. A questão consiste da imagem,
+que é:
+Essa imagem contém a seguinte quantidade: 3 carros, e em cima de 6, e
+em cima de mais 4.
+Para responder a questão o aluno terá que declarar a soma de carros,
+sendo: 3 + 6 + 4 = 13.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p exp="Descrição da questão, contendo a explicação do que o aluno terá que para responder corretamente a questão, deve identificar a soma de carros, no caso 3 + 6 + 4 = 13">
+          Observe a imagem e responda a questão:
+        </p>
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <img
+            src=""
+            alt="Imagem, no estilo de desenho de pintar, com 8 carrinhos"
+            style="width: 400px; height: 300px"
+            exp="Imagem, que tem de 8 carrinhos, contendo a quantidade de carros, sendo 3, e também tem uma estaca, sendo 6, e também tem uma maçã, sendo 4"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+Nessa questão o aluno terá que observar a imagem, e declarar a soma de carrinhos, sendo 3 + 6 + 4 = 13. A imagem consiste de 8 carrinhos, sendo 3 estacas, 6 carrinhos simples, e também 4 maçãs.
+---------------------------------------------------------------------------------------------------------------
+<s>
+[INST]
+Gere o esqueleto de uma atividade para auxiliar o aluno no aprendizado.
+O esqueleto da atividade deverá conter a estrutura em HTML.
+Se a questão contiver imagens, adicione uma descrição no atributo de alt.
+Adicione também uma explicação para a estrutura HTML em um novo atributo exp quando necessário.
+Quando for necessário utilizar CSS, adicione uma explicação na forma de comentários, acima da classe. 
+
+Utilize os seguintes parâmetros:
+
+nivel: 2º ano fundamental
+assunto: adição
+tematica: carrinhos
+largura-folha: 600px
+layout: três imagens
+
+
+Siga as seguintes regras:
+
+Gere uma descrição textual da atividade e em seguida o html contendo a questão.
+Não adicione nada fora a descrição textual e o html da questão.
+Gere uma atividade que seja criativa e que ajude o aluno a aprender de maneira lúdica.
+[/INST]
+
+Nessa questão será praticado o principio da adição, e
+também da identificação, sendo a identidade dos principais, sendo:
+A) Carro em movimento
+B) Carro estacionado
+C) Criança caminhando
+D) Criança corredor
+O aluno terá que identificar qual imagem estará em movimento, e qual estará
+estacionada, e também qual não terá nada a ser representada como uma criança.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a imagem, que consiste de 600px de largura"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que responder uma questão, que será composta por três imagens, e que ele terá que identificar qual imagem estará em movimento, e qual estacionada, e também qual não terá nada a ser representada como uma criança"
+        >
+          Observe as imagens abaixo e escreva a soma, sendo:
+        </p>
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem no resultado, sendo o corpo da atividade"
+        >
+          <div
+            class="img"
+            style="width: 300px; height: 300px"
+            exp="Imagem, que para responder corretamente a questão, o aluno terá que identificar qual imagem estará em movimento, e qual estacionada, e também qual não terá nada a ser representada como uma criança, sendo a imagem mais renhida"
+          >
+            <img
+              src=""
+              alt="Imagem no estilo de pintar giras"
+              style="width: 300px; height: 300px"
+            />
+
+            <div
+              style="width: 300px; height: 300px"
+              exp="Imagem, sendo a segunda imagem, que também será em estilo de pintar giras"
+            >
+              <img
+                src=""
+                alt="Imagem no estilo de pintar giras"
+                style="width: 300px; height: 300px"
+              />
+
+              <div
+                style="width: 300px; height: 300px"
+                exp="Imagem, sendo a terceira imagem, que também será em estilo de pintar giras"
+              >
+                <img
+                  src=""
+                  alt="Imagem no estilo de pintar giras"
+                  style="width: 300px; height: 300px"
+                />
+              </div>
+            </div>
+          </div>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+
+Nessa questão o aluno terá que identificar qual imagem estará em movimento, e qual estacionada, e também qual não terá nada a ser representada como uma criança, e depois somar as imagens. A questão consiste de três imagens, uma criança com um carrinho, outra sendo um carrinho estacionado, e outra sendo uma criança caminhando. O aluno terá que identificar qual imagem estará em movimento, e qual estacionada, e também qual não terá nada a ser representada como uma criança, e depois somar as imagens.
+
+Nessa questão será praticado o principio da adição, e também da identificação, sendo a identidade dos principais, sendo:
+A) Carro em movimento
+B) Carro estacionado
+C) Criança caminhando
+D) Criança corredor
+O aluno terá que identificar qual imagem estará em movimento, e qual estacionada, e também qual não terá nada a ser representada como uma criança, e depois somar as imagens.
+
+E efeto em html contendo a explicação da questão, ao seguir os seguintes princípios:
+
+Nessa questão, o aluno terá que observar as imagens, e escrever a soma, sendo:
+A) 3
+B) 5
+C) 7
+D) 2
+
+
+Nessa questão, o aluno terá que identificar qual imagem estará em movimento, e qual estacionada, e também qual não
+---------------------------------------------------------------------------------------------------------------
+<s>
+[INST]
+Gere o esqueleto de uma atividade para auxiliar o aluno no aprendizado.
+O esqueleto da atividade deverá conter a estrutura em HTML.
+Se a questão contiver imagens, adicione uma descrição no atributo de alt.
+Adicione também uma explicação para a estrutura HTML em um novo atributo exp quando necessário.
+Quando for necessário utilizar CSS, adicione uma explicação na forma de comentários, acima da classe. 
+
+Utilize os seguintes parâmetros:
+
+nivel: 2º ano fundamental
+assunto: adição
+tematica: fundo do mar
+largura-folha: 600px
+layout: única imagem
+
+
+Siga as seguintes regras:
+
+Gere uma descrição textual da atividade e em seguida o html contendo a questão.
+Não adicione nada fora a descrição textual e o html da questão.
+Gere uma atividade que seja criativa e que ajude o aluno a aprender de maneira lúdica.
+[/INST]
+
+Nessa questão será praticado o principio da adição, e
+também da identificação, sendo a identificação de animais que vivem no fundo do
+mar. A questão consiste de uma imagem, contendo um cachorro esticando um peixe,
+e ao final dele tinir sendo em 600px por 400px. Para responder a questão o aluno
+terá que fazer a soma de 3 em 4, sendo 3 + 4 = 7. A questão foi criada de maneira
+lúdica, sendo uma imagem, que o aluno terá que observar e responder a questão,
+mais praticamente ele terá que desenhar um cachorro esticando um peixe, e ao final
+tinir sendo em 600px por 400px.
+
+<p class="exp">Siga as seguintes regras:</p>
+
+Gere uma descrição textual da atividade e em seguida o html contendo a questão.
+Não adicione nada fora a descrição textual e o html da questão.
+
+Gere uma questão, que after observing a imagem, o aluno terá que escrever a soma de 3 e 4.
+
+<div style="width: 600px; height: 400px" exp="div contendo a largura da folha, que foi 600px; 400px">
+  <div class="questao" style="width: 600px; height: 400px" exp="div que contém a largura da folha, que foi 600px; 400px">
+    <p class="exp">Nessa questão será praticado o principio da adição, e também da identificação, sendo a identificação de animais que vivem no fundo do mar. A questão consiste de uma imagem, contendo um cachorro esticando um peixe, e ao final dele tinir sendo em 600px por 400px. Para responder a questão o aluno terá que fazer a soma de 3 em 4, sendo 3 + 4 = 7.</p>
+    <div style="display: flex; justify-content: center" exp="div utilizada para centralizar a imagem na questão">
+      <img
+        src=""
+        alt="Imagem no estilo de desenho de pintar que o aluno terá que desenhar um cachorro esticando um peixe, e ao final tinir sendo em 600px por 400px"
+        style="width: 400px; height: 200px"
+        exp="Imagem que o aluno terá que desenhar um cachorro esticando um peixe, e ao final tinir sendo em 600px por 400px"
+      />
+    </div>
+  </div>
+</div>
+
+
+Não adicione nada fora a descrição textual e o html da questão.
+Gere uma questão, que after observing a imagem, o aluno terá que escrever a soma de 3 e 4.
+---------------------------------------------------------------------------------------------------------------
+<s>
+[INST]
+Gere o esqueleto de uma atividade para auxiliar o aluno no aprendizado.
+O esqueleto da atividade deverá conter a estrutura em HTML.
+Se a questão contiver imagens, adicione uma descrição no atributo de alt.
+Adicione também uma explicação para a estrutura HTML em um novo atributo exp quando necessário.
+Quando for necessário utilizar CSS, adicione uma explicação na forma de comentários, acima da classe. 
+
+Utilize os seguintes parâmetros:
+
+nivel: 2º ano fundamental
+assunto: adição
+tematica: fundo do mar
+largura-folha: 600px
+layout: três imagens
+
+
+Siga as seguintes regras:
+
+Gere uma descrição textual da atividade e em seguida o html contendo a questão.
+Não adicione nada fora a descrição textual e o html da questão.
+Gere uma atividade que seja criativa e que ajude o aluno a aprender de maneira lúdica.
+[/INST]
+
+Nessa questão serão praticado os seguintes princípios:
+Ao superar a questão foi feito o seguinte:
+Essa questão pratica os principios da adição, obrigando o aluno a efetuar uma operação mental que é a soma de um valor com outro valor, e também a primas, contendo a questão as seguintes opções:
+A) e e C, para a questão o aluno terá que somar 3 e 4, sendo 7
+B) e e D, para a questão o aluno terá que somar 2 e 5, sendo 7
+Sinalizando que o aluno terá que somar os valores primos, sendo 3 + 4 = 7 e também 2 + 5 = 7
+
+Essa questão consiste de 3 imagens, sendo uma imagem do fundo do mar, outra imagem de um pescador e outra de um barco.
+A questão pede que o aluno efetue a soma dos valores que estão presentes nas imagens, sendo 3 + 4 = 7 e também 2 + 5 = 7.
+
+Nessa questão o aluno terá que somar os valores primos, sendo 3 + 4 = 7 e também 2 + 5 = 7.
+
+Nessa questão o aluno terá que realizar a soma de 3 com 4, sendo 7, e também 2 com 5, sendo também 7.
+
+Essa questão é uma atividade que consiste de 3 imagens, sendo uma imagem do fundo do mar, outra imagem de um piscador e outra de um barco. A questão pede que o aluno efetue a soma dos valores que estão presentes nas imagens, sendo 3 + 4 = 7 e também 2 + 5 = 7.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="prega do aluno, que a questão consiste de uma imagem do fundo do mar, uma imagem de um piscador e uma imagem de um barco, e que ele terá que somar os valores primos, sendo 3 + 4 = 7 e também 2 + 5 = 7"
+        >
+          Observe as imagens abaixo e escriba a soma:
+        </p>
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem do fundo do mar, do piscador e do barco"
+        >
+          <img
+            alt="fundo do mar"
+            style="width: 300px; height: 200px"
+            exp="imagem do fundo do mar, que tem a forma de um squale em vermelho"
+          />
+
+          <img
+            alt="pescador"
+            style="width: 300px; height: 200px"
+            exp="imagem de um piscador, que tem a figura de um homem sentado na praia, com a cabeça coberta"
+          />
+
+          <img
+            alt="barco"
+            style="width: 300px; height: 200px"
+            exp="imagem de um barco, que tem a figura de um barco"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+Nessa questão foram utilizadas as seguintes classes em HTML:
+
+<div class="questao">
+
+</div>
+
+Utilizei a descrição textual da questão e html para explicar a construção da questão.
+Nessa questão o aluno terá que somar os valores primos, sendo 3 + 4 = 7 e também 2 + 5 = 7, sinalizando que o aluno terá que efetuar uma soma mental de 3 com 4, sendo 7, e também 2 com 5, sendo também 7.
+Nessa questão o aluno terá que realizar a soma de 3 com 4, sendo 7, e também 2 com 5, sendo também 7.
+Nessa questão o aluno terá que somar os valores primos, sendo 3 + 4 = 7 e também 2
+---------------------------------------------------------------------------------------------------------------
+<s>
+[INST]
+Gere o esqueleto de uma atividade para auxiliar o aluno no aprendizado.
+O esqueleto da atividade deverá conter a estrutura em HTML.
+Se a questão contiver imagens, adicione uma descrição no atributo de alt.
+Adicione também uma explicação para a estrutura HTML em um novo atributo exp quando necessário.
+Quando for necessário utilizar CSS, adicione uma explicação na forma de comentários, acima da classe. 
+
+Utilize os seguintes parâmetros:
+
+nivel: 2º ano fundamental
+assunto: subtração
+tematica: fogos de artifício
+largura-folha: 800px
+layout: única imagem
+
+
+Siga as seguintes regras:
+
+Gere uma descrição textual da atividade e em seguida o html contendo a questão.
+Não adicione nada fora a descrição textual e o html da questão.
+Gere uma atividade que seja criativa e que ajude o aluno a aprender de maneira lúdica.
+[/INST]
+
+Nessa questão será praticado o principio da contagem e
+do subtração. A questão consiste de uma centopéia com 10 patas, no
+style de um fogoso. No layout é sendo utilizada uma imagem, que
+representa uma centopéia com 10 patas.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div contendo a imagem, que é o layout do resultado"
+    >
+      <div class="flourish" style="width: 800px">
+        <p
+          exp="Descrição da questão, que tem a explicação do que o aluno terá que responder uma centopéia com 10 patas"
+        >
+          Observe a centopéia, que está representada abaixo e responda as questões.
+        </p>
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <div
+            style="width: 300px; height: 300px"
+            exp="div utilizada para colocar a imagem na questão, mas não pode ser alterada"
+          >
+            <img
+              src=""
+              alt="Imagem, que é a centopéia com 10 patas"
+              style="width: 200px; height: 200px"
+              exp="Imagem, que é a centopéia com 10 patas, que o aluno terá que desenhar"
+            />
+          </div>
+        </div>
+        <p>Designa abaixo a centopéia, que está representada na imagem, com 10 patas.</p>
+        <p>Também responda as seguintes questões:</p>
+        <p>
+          A) Quantas patas tem a centopéia?
+          B) Quantas pernas tem um homem?
+          C) Qual a quantidade de patas que um homem tem?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+
+Nessa questão o aluno terá que observar a imagem, e desenhar uma centopéia com 10 patas. A centopéia deve ser descrita com 10 patas.
+A imagem deve ser centralizada com a centopéia.
+A questão não utiliza nada de css.
+
+Nessa questão o aluno terá que contar quantas patas tem a centopéia. A resposta correta é 10.
+Ele não terá que desenhar um homem, mas sim uma centopéia com 10 patas.
+Geralmente o aluno terá que desenhar uma centopéia com 10 patas.
+---------------------------------------------------------------------------------------------------------------
+<s>
+[INST]
+Gere o esqueleto de uma atividade para auxiliar o aluno no aprendizado.
+O esqueleto da atividade deverá conter a estrutura em HTML.
+Se a questão contiver imagens, adicione uma descrição no atributo de alt.
+Adicione também uma explicação para a estrutura HTML em um novo atributo exp quando necessário.
+Quando for necessário utilizar CSS, adicione uma explicação na forma de comentários, acima da classe. 
+
+Utilize os seguintes parâmetros:
+
+nivel: 2º ano fundamental
+assunto: subtração
+tematica: fogos de artifício
+largura-folha: 800px
+layout: três imagens
+
+
+Siga as seguintes regras:
+
+Gere uma descrição textual da atividade e em seguida o html contendo a questão.
+Não adicione nada fora a descrição textual e o html da questão.
+Gere uma atividade que seja criativa e que ajude o aluno a aprender de maneira lúdica.
+[/INST]
+
+Nessa questão será praticado o principio da contagem e
+do subtração. A questão consiste de 3 imagens: A imagem de um carro
+com 10 ligas, e em seguida uma imagem de uma menina com 9 balões,
+e por fim uma imagem de uma menina sentada com 8 balões.
+O aluno terá que contar quantas ligas estão presentes no carro, e
+também quantas balões estão presentes na menina, e também quantas
+balões estão presentes na menina, após o aluno terá que efetuar
+a contagem, e após ele terá que efetuar a subtração, sendo 10 - 9 + 8 = 3.
+
+<html>
+  <head></head>
+  <style>
+    /* classe que é utilizada para organizar as imagens dos grupos de questões, no este caso, as imagens estão sendo posicionadas no layout da questão, que são: grupo 1na, grupo 2na, grupo 3na*/
+   .group {
+      display: flex;
+      justify-content: center;
+      margin: 10px;
+    }
+
+    /* classe que é utilizada para posicionar a imagem do grupo 1 na questão, e também para posicionar as imagens dos grupos*/
+   .group1 {
+      width: 120px;
+      height: 120px;
+      border: 1px solid;
+    }
+
+    /* classe que é utilizada para posicionar a imagem do grupo 2 na questão*/
+   .group2 {
+      width: 120px;
+      height: 120px;
+      border: 1px solid;
+    }
+
+    /* classe que é utilizada para posicionar a imagem do grupo 3 na questão*/
+   .group3 {
+      width: 120px;
+      height: 120px;
+      border: 1px solid;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 800px"
+    >
+      <div class="questao" style="width: 800px">
+        <p
+          exp="Descrição da questão, que contém a explicação do que o aluno terá que responder uma questão que consiste de um texto que contém 10 linhas, na qual ele terá que ler e responder"
+        >
+          Observe as imagens abaixo e responda com a quantidade pedida.
+        </p>
+
+        <div
+          class="group"
+          exp="div utilizada para posicionar a imagem do grupo 1 na questão"
+        >
+          <div
+            style="width: 120px; height: 120px"
+            exp="div utilizada para posicionar a imagem do grupo 1 na questão, imagem contendo um carro com 10 ligas"
+          >
+            Gruppe 1: 10 ligas
+          </div>
+
+          <div
+            style="width: 120px; height: 120px"
+            exp="div utilizada para posicionar a imagem do grupo 2 na questão, imagem contendo uma menina com 9 balões"
+          >
+            Gruppe 2: 9 balões
+          </div>
+
+          <div
+            style="width: 120px; height: 120px"
+            exp="div utilizada para posicionar a imagem do grupo 3 na questão, imagem contendo uma menina com 8 balões"
+          >
+            Gruppe 3: 8 balões
+          </div>
+        </div>
+      </div>
+    </body>
+</html>
+
+Nessa questão será praticado o principio da contagem e
+do subtração. A questão consiste de 3 imagens: A imagem de um carro
+com 10 ligas, e em seguida uma imagem de uma menina com 9 balões,
+e por fim uma imagem de uma menina sentada com 8 balões. O aluno terá que
+contar quantas ligas estão presentes no carro, e também quantas balões estão
+presentes na menina, e também quantas balões estão presentes na menina,
+e após o aluno terá que efetuar a contagem, e após ele terá que efetuar

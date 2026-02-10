@@ -1,0 +1,84 @@
+```json
+{
+  "task": "The student will learn to count, add, and match quantities by drawing the correct number of musical notes in the image that has the fewest notes and then calculating the total sum of all the notes.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph that explains the task, and the bottom section contains a 2x3 grid of images. The first row of the grid contains two images of musical notes, and the second row of the grid contains one image of a musical staff. The images are placed in a specific layout to facilitate comparison and counting.",
+  "answer": "To answer this question correctly, the student needs to: 1) identify the image with the fewest notes (the first image), 2) count the number of notes in that image (3), 3) draw 3 additional notes on the staff image, and 4) calculate the total sum of notes in all three images (3 + 5 + 4 = 12). The correct answer is 12."
+}
+```
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three images in a 2-line and 3-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 300px 300px;
+      grid-template-areas:
+        "img1 img2 img3"
+        "img1 img2 img3";
+    }
+
+    /* class used to place the image of the musical notes on the first row and the first column*/
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the image of the musical notes on the first row and the second column*/
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to place the image of the musical notes on the second row and the first column*/
+    .img3 {
+      grid-area: img3;
+    }
+    
+    /* class used to adjust the size of the images in the activity */
+    img {
+      width: 300px;
+      height: 300px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+        Look at the images below, draw musical notes on the image that has the fewest notes, then, count all the musical notes in the 3 images.
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="image in a coloring book style containing 5 musical notes"
+              exp="image in which the student will have to count the number of musical notes and identify that it has 5 notes, being the image with the largest number of notes"
+            />
+          </div>
+
+          <div class="img2">
+            <img
+              alt="image in a coloring book style containing 4 musical notes"
+              exp="image in which the student will have to count the number of musical notes and identify that it has 4 notes, being the image with the smallest number of notes"
+            />
+          </div>
+
+          <div class="img3">
+            <img
+              alt="image in a coloring book style of a musical staff without any notes"
+              exp="image that the student will have to draw an amount of musical notes equal to the image with the least quantity, being 3"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

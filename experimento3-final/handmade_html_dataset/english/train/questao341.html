@@ -1,0 +1,45 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Online Furniture Purchase
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+    "task": "To practice counting and basic addition skills by calculating the total cost of an online furniture purchase, reinforcing students' ability to count and perform simple arithmetic operations.",
+    "layout": "The activity consists of a description of the scenario at the top, providing the necessary context. Below the description, a centered image illustrates an online shopping receipt with different furniture items and a shipping fee. The student will answer a question based on the values provided, with the answer box positioned as close as possible to the question.",
+    "answer": "To answer correctly, the student needs to add the price of the chair (150 reais) and the price of the table (350 reais), plus the shipping fee (50 reais). The correct answer is 550 reais."
+}
+
+<html>
+    <head></head>
+    <body>
+      <div style="width: 800px; border: solid 1px; padding: 10px;" exp="Main container for the activity">
+        
+        <div class="activity">
+          <p exp="Activity description explaining what the student must do">
+            Sofia bought furniture online. She paid 150 reais for a chair and 350 reais for a table. The shipping fee was 50 reais. 
+            In total, how much did Sofia pay for her order?
+          </p>
+        </div>
+  
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image in the activity">
+            <img src="" 
+                 alt="Illustration of an online furniture purchase receipt showing: Chair (150 reais), Table (350 reais), and Shipping Fee (50 reais)."
+                 style="width: 600px; height: 300px"
+                 exp="Image where students need to analyze the order receipt and sum the total cost." />
+        </div>
+
+        <p style="text-align: center;" exp="Instruction for the student to write their answer">
+            Write the total amount Sofia paid in the box below:
+        </p>
+
+        <div style="display: flex; justify-content: center;" exp="Div used to center the answer box">
+            <div style="width: 100px; height: 100px; border: 1px solid black;"
+                 exp="Box where the student writes the total cost of the furniture order. The correct answer is 550 reais.">
+            </div>
+        </div>
+        
+      </div>
+    </body>
+</html>

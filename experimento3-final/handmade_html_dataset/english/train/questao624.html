@@ -1,0 +1,47 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Truck Deliveries at the Store
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+    "task": "On Friday, a supermarket received 27 truck deliveries in the morning and 45 more in the afternoon. How many trucks made deliveries that day?",
+    "layout": "A delivery scene with trucks is shown. Below it, there is a square box where the student writes the total.",
+    "answer": "The student needs to add 27 and 45 to find the total truck deliveries. 27 + 45 = 72. Correct answer: 72."
+  }
+
+<html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: solid 1px;" 
+         exp="Defines the visual structure of the task and aligns all content.">
+
+      <p exp="Task presenting a real-life scenario of truck deliveries. The student calculates how many deliveries happened in total.">
+        On Friday, a supermarket received 27 truck deliveries in the morning and 45 more in the afternoon. How many trucks made deliveries that day?
+      </p>
+
+      <div style="display: flex; justify-content: center;" 
+           exp="Keeps the truck delivery image centered for better engagement.">
+        <img 
+          src="" 
+          alt="Supermarket loading dock with delivery trucks and crates." 
+          style="width: 600px; height: 350px;" 
+          exp="This image depicts a delivery zone at a store, including cargo trucks and boxes, creating a meaningful link to the addition problem."
+        />
+      </div>
+
+      <p style="text-align: center; margin-top: 20px;" 
+         exp="Instruction encouraging students to perform the addition and write their answer.">
+        Write the sum here:
+      </p>
+
+      <div style="display: flex; justify-content: center;">
+        <div style="width: 100px; height: 100px; border: 1px solid black;" 
+             exp="Answer area for students to write: 27 + 45 = 72.">
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

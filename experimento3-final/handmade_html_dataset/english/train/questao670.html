@@ -1,0 +1,54 @@
+level: 2nd year of fundamental
+learning_goals: addition, counting
+theme: Tambourines in Music Class
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+  "task": "Use addition to find out how many tambourines Bruno and Luiza arranged in the music class. Look at the grouped tambourines and count using tens and units.",
+  "layout": "The image shows Bruno with 3 neat groups of 10 tambourines and 2 extra tambourines next to them. Luiza has 2 groups of 10 tambourines and 7 individual tambourines beside them. Each group of 10 tambourines is visually separated and clearly labeled to help the student recognize base-10 grouping. There are labels with each student's name to identify their tambourines.",
+  "answer": {
+    "A": {
+      "text": "To find how many tambourines Bruno has, the student should count the 3 groups of 10 (which equals 30) and then add the 2 individual tambourines. The correct addition is: 10 + 10 + 10 + 2 = 32. So Bruno has 32 tambourines.",
+      "numeric": 32
+    },
+    "B": {
+      "text": "For Luiza, the student should count her 2 full groups of 10 tambourines (which equals 20) and then add the 7 individual tambourines. The correct addition is: 10 + 10 + 7 = 27. So Luiza has 27 tambourines.",
+      "numeric": 27
+    }
+  }
+}
+
+<html>  
+  <head></head>
+  <body>
+
+    <div style="width: 800px; border: 1px solid black; padding: 10px;">
+      <p exp="This question reinforces the concept of base-10 grouping. Students observe tambourines grouped in tens and single units, and use addition to count totals for each child.">
+        In music class, Bruno and Luiza organized tambourines. Count how many each one arranged.
+      </p>
+
+      <img src=""
+          style="display: block; margin: 10px auto; width: 320px;" 
+          alt="Bruno has 3 sets of 10 tambourines and 2 singles. Luiza has 2 sets of 10 tambourines and 7 singles."
+          exp="The image shows Bruno with 3 neat groups of 10 tambourines and 2 extra tambourines next to them. Luiza has 2 groups of 10 tambourines and 7 individual tambourines beside them. Each group of 10 tambourines is visually separated and clearly labeled to help the student recognize base-10 grouping. There are labels with each student's name to identify their tambourines." />
+
+      <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+        <p><b>A)</b> How many tambourines did Bruno organize?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" 
+            exp="The student should count 3 groups of 10 (which equals 30) and add 2 individual tambourines. Expected answer: 10 + 10 + 10 + 2 = 32. Write 32.">
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; margin-top: 10px;">
+        <p><b>B)</b> How many tambourines did Luiza organize?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" 
+            exp="The student should count 2 groups of 10 (which equals 20) and add 7 individual tambourines. Expected answer: 10 + 10 + 7 = 27. Write 27.">
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

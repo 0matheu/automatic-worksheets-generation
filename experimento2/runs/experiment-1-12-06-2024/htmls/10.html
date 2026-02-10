@@ -1,0 +1,41 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of cacti in the initial image and calculating how many cacti will be added, and then writing the result.",
+  "layout": "The HTML elements are organized with a div containing the sheet width, followed by a div containing the question description, an initial paragraph, and an image of a desert landscape with 8 cacti. Then, there are three paragraphs containing the questions and a final paragraph. The image is placed in the center of the div using flexbox, and the questions are listed below the image.",
+  "answer": "To answer correctly, the student needs to observe the initial image of the desert landscape with 8 cacti, count the 6 additional cacti, and then add the two numbers together to get 14. The student needs to write the result, 14, to get the correct answer."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the page width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of the question the student will have to answer"
+        >
+          In the image below, there are 8 cacti, how many cacti are present in the image, and how many are being added? Add the total.
+        </p>
+
+        <div style="display: flex; justify-content: center">
+          <img
+            src=""
+            alt="Image in a coloring book style of a desert, containing 8 cacti"
+            style="width: 600px; height: 300px"
+            exp="Image that the student will have to observe, count the 8 cacti present, and color an additional 6 cacti, being 14 in total"
+          />
+        </div>
+
+        <p> a) How many cacti are present in the image? </p>
+        <p> b) How many cacti are being added? </p>
+        <p> c) What is the total sum of cacti? </p>
+      </div>
+    </div>
+  </body>
+</html>
+```

@@ -1,0 +1,62 @@
+level: 2nd year fundamental
+learning_goals: addition, counting
+theme: forest and egg collection
+sheet_width: 600px
+task: observe image, write answer
+language: en
+
+{
+  "task":"The objective of this activity is for the student to count the number of eggs Ruby finds in different baskets and sum them up.",
+  "layout":"The activity is structured with a scenario description at the top, followed by an illustration representing the story context. Below the description and image, there are three questions prompting the student to count eggs in different baskets and determine the total number in each case.",
+  "answer":{
+    "A": "To correctly answer this question, the student must add 8 eggs from one basket with 2 eggs from another (8 + 2 = 10). The correct answer is 10.",
+    "B": "To correctly answer this question, the student must add 4 eggs from one basket with 4 eggs from another (4 + 4 = 8). The correct answer is 8.",
+    "C": "To correctly answer this question, the student must add 3 eggs from one basket with 6 eggs from another (3 + 6 = 9). The correct answer is 9."
+  }
+}
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px; padding: 10px; text-align: left;"
+      exp="This div acts as the main container for the activity. It sets a fixed width of 600px with padding for spacing inside."
+    >
+      <div class="activity" style="width: 600px;">
+        <p
+          exp="This paragraph provides a clear description of the task. The student needs to count the eggs Ruby finds in different baskets and sum them up."
+        >
+          Ruby the raccoon is exploring the forest and finding baskets filled with eggs. She needs to count the eggs in each basket and find the total number of eggs she has collected. Count and write the correct answers in the provided boxes.
+        </p>
+
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+          <img src="" alt="Illustration of Ruby the raccoon finding baskets with eggs in the forest" style="width: 300px; height: auto;"
+            exp="An image showing Ruby the raccoon discovering baskets with different numbers of eggs, helping students visualize the counting and addition task." />
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 15px;">
+          <div style="display: flex; align-items: center;">
+            <p style="margin-right: 10px;">A) Ruby found one basket with 8 eggs and another with 2 eggs. How many eggs does she have in total from these baskets?</p>
+            <div style="width: 50px; height: 30px; border: 1px solid black; text-align: center;"
+              exp="Box where the student writes the total number of eggs found in the first two baskets. The correct answer is 10."
+            ></div>
+          </div>
+
+          <div style="display: flex; align-items: center;">
+            <p style="margin-right: 10px;">B) Later, Ruby found a basket with 4 eggs and another with 4 more eggs. How many eggs are in these new baskets?</p>
+            <div style="width: 50px; height: 30px; border: 1px solid black; text-align: center;"
+              exp="Box where the student writes the total number of eggs found in these baskets. The correct answer is 8."
+            ></div>
+          </div>
+
+          <div style="display: flex; align-items: center;">
+            <p style="margin-right: 10px;">C) Finally, Ruby found a basket with 3 eggs and another with 6 eggs. How many eggs does she have now?</p>
+            <div style="width: 50px; height: 30px; border: 1px solid black; text-align: center;"
+              exp="Box where the student writes the total number of eggs found in the last two baskets. The correct answer is 9."
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

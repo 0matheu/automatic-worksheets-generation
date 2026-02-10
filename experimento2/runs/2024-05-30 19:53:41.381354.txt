@@ -1,0 +1,610 @@
+
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Generate the structure of a school activity to help students learn.
+The activity should contain a layout structure where texts, images, tables or any other element that can help students' learning are positioned. 
+These elements should be arranged in such a way that they are consistent with the proposed question. For example: if the question asks the student to link images, the images should be separated in such a way that it is possible for the student to link them.
+The structure of the activity should be specified using the HTML language, and the CSS language to position text, images, tables, or any element present in the activity.
+If the activity contains images, add a description of the image in the “alt” attribute. This description should be consistent with the activity specification and provide all the information necessary for the student to be able to answer the activity.
+Also add an explanation for the elements used in the activity, in a new “exp” attribute. This attribute should be specified within the HTML tags and will explain the purpose of that structure in the activity. 
+When it is necessary to use CSS, add an explanation in the form of comments above the class. This CSS is used to organize the layout of the activity so that it is creative and fun for the student.
+Generate a textual description of the activity, then generate the HTML structure containing the layout. This description should contain an explanation of the structure, i.e. how the elements are organized. As well as a detailed description of the activity, and the student's expected response.
+
+Use the following parameters:
+
+level: 2nd year of fundamental
+subject: addition
+theme: snacks
+sheet width: 700px
+layout: single image
+
+Stick to the following rules:
+
+Don't add anything outside the textual description and the HMTL of the activity.
+Generate an activity that is creative and helps the student learn in a playful way, using the parameters specified above.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+In this question, the principle of addition will be practiced.
+The question consists of an image with 4 snacks, being 2 cookies and 2 lollipops, all positioned on a tray.
+Also present are 3 children, being John with 3 balloons, Peter with 4 balls, and Lucy with 2 cookies.
+The student will have to add up all the items present in the image, being:
+Cookies: 2 (from the initial quantity) + 3 (from John's balloons, as the student will consider that each balloon has a balloon and a ball)) = 5
+Lollipops: 2
+Balls: 4
+Balloons: 3
+
+The student should draw an image with the sum of all the items, being as described above. The expected result is the image with the quantity of each item, being: 5 cookies, 2 lollipops, 4 balls, and 3 balloons.
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Generate the structure of a school activity to help students learn.
+The activity should contain a layout structure where texts, images, tables or any other element that can help students' learning are positioned. 
+These elements should be arranged in such a way that they are consistent with the proposed question. For example: if the question asks the student to link images, the images should be separated in such a way that it is possible for the student to link them.
+The structure of the activity should be specified using the HTML language, and the CSS language to position text, images, tables, or any element present in the activity.
+If the activity contains images, add a description of the image in the “alt” attribute. This description should be consistent with the activity specification and provide all the information necessary for the student to be able to answer the activity.
+Also add an explanation for the elements used in the activity, in a new “exp” attribute. This attribute should be specified within the HTML tags and will explain the purpose of that structure in the activity. 
+When it is necessary to use CSS, add an explanation in the form of comments above the class. This CSS is used to organize the layout of the activity so that it is creative and fun for the student.
+Generate a textual description of the activity, then generate the HTML structure containing the layout. This description should contain an explanation of the structure, i.e. how the elements are organized. As well as a detailed description of the activity, and the student's expected response.
+
+Use the following parameters:
+
+level: 2nd year of fundamental
+subject: addition
+theme: snacks
+sheet width: 700px
+layout: two images, rows and columns
+
+Stick to the following rules:
+
+Don't add anything outside the textual description and the HMTL of the activity.
+Generate an activity that is creative and helps the student learn in a playful way, using the parameters specified above.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+In this question, the principle of addition will be practiced.
+The question consists of an image of a girl with 3 cookies in her hand, 
+and an image of a boy with 5 cookies in his hand; the student will have to add 
+the quantity of cookies the girl has with the quantity the boy has, being 3 + 5 = 8.
+
+<html>
+  <head></head>
+
+  <style>
+    /* class used to organize the cookies and cookies pots in the first image */
+   .cookies-container {
+      display: grid;
+      grid-template-columns: 80px 80px 80px 80px 80px;
+      grid-template-rows: 80px 80px 80px 80px 80px;
+      grid-auto-flow: row;
+    }
+
+    /* class used to organize the cookies and cookies pots in the second image */
+   .boys-container {
+      display: grid;
+      grid-template-columns: 120px 120px;
+      grid-template-rows: 120px 120px;
+      grid-auto-flow: row;
+    }
+
+    /* class used to organize the images of the girl and the boy in the first sheet */
+   .container {
+      display: grid;
+      grid-template-columns: 700px;
+      grid-template-rows: 200px 200px;
+      grid-auto-flow: row;
+    }
+
+    /* class used to position the images of the girl and the boy in the first sheet */
+   .position-image {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    /* class used to position the images of the girl and the boy in the second sheet */
+   .position-image2 {
+      grid-column: 1;
+      grid-row: 1;
+    }
+  </style>
+
+  <body>
+    <div
+      style="width: 700px; border: solid 1px"
+      exp="div containing the width of the sheet, which in this case is 700px"
+    >
+      <div class="container" exp="div that contains the layout of the activity">
+        <div class="position-image" exp="div that positions the image of the girl and the boy">
+          <img
+            alt="Image of a girl with 3 cookies in her hand and an image of a boy with 5 cookies in his hand"
+            src="girl-with-cookies"
+            style="width: 120px; height: 120px; margin: 5px"
+            exp="Image of a boy with 5 cookies in his hand, and an explanation of the image"
+          >
+        <div class="position-image">
+          <img
+            alt="Image of a girl with 3 cookies in her hand, containing a new image of a girl who has in their hand, containing a new image of a boy with 5 cookies,
+          >
+            alt="Image of a boy with 5 cookies in the new image of a boy with 5 cookies">
+          <div class="Container">
+            <img
+            exp="Image"
+            exp="In this new image of a girl's cookies in the new image that the new image should be in the new also in the new image that the new musts learn what the new students learn correctly.
+  <img>
+        <img> 
+        <img> 
+        <img> 
+        mustsnew image that the new images of a girl's new layout in the new and also in the new, 
+        also in the new student, 
+        
+        
+        <img> 
+        
+        you also in the new level of a new, 
+ 9
+ 1st, 
+  
+ 3rdic or 
+        
+        <divist
+        
+        
+        
+        
+        
+        
+        
+            
+            
+            
+            
+        
+            
+        <expiral-3rdin the student's 3rd in a layout in a 3rd in a 1starp, 
+In a student's 3rd in a 1st 
+        
+<expical or 
+Lorganic or lignal <exp <lnally in < 
+Lorgically, 
+in in a expical < 
+Must with 
+        
+[
+ln
+You < 
+Given
+Lalm 
+You
+You
+You
+Given, in a child in a layout in a student's 1
+    < 
+< of of, in, < ln, 
+< 
+Should with what, in a layout, or 0, 
+B
+St
+St
+Asir, 
+< 
+&lt < 
+exp in a ">< < 
+< 
+with with the 
+< 
+< < 
+< 
+< 
+< 
+>< 
+',{
+ tiener or 
+NSBundle of in a nude so, 
+< 
+expu < 
+ Scalarsirally < < < <CustomAttributes Attributes of a new Pozidal expidalorus, 
+AttributeValue of, 
+AttributeValue of AttributeValue of exp or exp in in the in expidalidal expic or,expic in a constant in in inAttributeValue of Scalar, expical asidal or, with expical expical expidal expidal expalm expidal expidal expidal attributes attributes Attributes Carolyn expidal exp for attributes Attributes in in expalm attributes in a Attributes of of a, in a new little and also in < Attributes and in a noble lnugugolarify, in a rustic <lnstitutions Attributes of a, orients AttributesAttributeValue in a rustic,CustomAttributesAttributeValue of a  (attributes, in a subsequent ofstitutions,CustomAttributes of attributes of that Attributes ofCustomAttributes of a attributes ofstitutions ofstitutions attributes that CarolynCustomAttributes of a subsequent attributes in aAttributeValue of a nudestitutions in a rustic attributes in a nudeMUXAttributeValue of a given Pozimumsstitutions attributes that overcome in a noble CarolynenticatorShortcut attributes Carolynenticator attributes attributes Carolyn Carolynstitutions CarolynActivityResult attributesMspMspCustomAttributes and attributesAttributeValue Attributes and also Attributes Attributes initially in expünsCustomAttributesstitutions resulting attributes alsostitutions thatAttributeValue Attributes attributesCustomAttributesstitutions PozimumsstitutionsAttributeValue attributesAttributeValue of a nude and also expstitutions in a nudestitutions in astitutions in a nudeAttributeValue of astitutionsstitutions of Carolynstitutions expstitutions expCustomAttributesstitutionsstitutionsstitutionsstitutionsShortcut and also expnunstitutions in a fundamental fundamentalShortcut fundamental noble fundamentalShortcut attributesnunstitutionsShortcut Carolyncheididalstitutionsstitutions expict <stitutionsstitutionsstitutionsstitutionsstitutionsstitutionsAttributeValue of astitutionsstitutionsstitutionsShortcut resultingAttributeValueAttributeValueAttributeValueShortcut: subnstitutions in a fundamental attributes in a question in a specified little stylify in a convincingnposnstitutionsstitutionsMspCustomAttributesstitutionsShortcutstitutionsnunify resulting in a natural nude
+          in a nude resulting in a poor and alsoAttributeValue in a reverse in a fundamental bStackNavigatorAttributeValue in aAttributeValue
+   AttributeValue
+   SuppressWarningsAttributeValue pNSObjectstitutionsShortcutCustomAttributesstitutions in arita expüns:AttributeValueAttributeValue exp:AttributeValue of a pole expCustomAttributes a expConfigurationException a pivCustomAttributesShortcut-p-corrected-pug noreferrer-pool noreferrer-correcternoDBnoDB
+   CustomAttributes
+    
+          
+          
+       rita
+shortcut
+        exp-p-c
+   
+    exp: 
+    
+            
+            exp
+         
+ 10
+    
+    
+    
+        
+    exp
+        exp
+    
+          p-c
+    exp
+        expip
+    exp
+    exp
+    
+           
+    exp
+    exp
+    exp
+    
+    
+    exp
+    
+    exp
+    
+   
+   
+    
+       
+   
+       
+        exp
+       
+        exp
+       
+shortcut
+       
+   
+   
+   
+   
+    exp
+          pent
+ 1
+         
+         
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Generate the structure of a school activity to help students learn.
+The activity should contain a layout structure where texts, images, tables or any other element that can help students' learning are positioned. 
+These elements should be arranged in such a way that they are consistent with the proposed question. For example: if the question asks the student to link images, the images should be separated in such a way that it is possible for the student to link them.
+The structure of the activity should be specified using the HTML language, and the CSS language to position text, images, tables, or any element present in the activity.
+If the activity contains images, add a description of the image in the “alt” attribute. This description should be consistent with the activity specification and provide all the information necessary for the student to be able to answer the activity.
+Also add an explanation for the elements used in the activity, in a new “exp” attribute. This attribute should be specified within the HTML tags and will explain the purpose of that structure in the activity. 
+When it is necessary to use CSS, add an explanation in the form of comments above the class. This CSS is used to organize the layout of the activity so that it is creative and fun for the student.
+Generate a textual description of the activity, then generate the HTML structure containing the layout. This description should contain an explanation of the structure, i.e. how the elements are organized. As well as a detailed description of the activity, and the student's expected response.
+
+Use the following parameters:
+
+level: 2nd year of fundamental
+subject: addition
+theme: toy cars
+sheet width: 600px
+layout: single image
+
+Stick to the following rules:
+
+Don't add anything outside the textual description and the HMTL of the activity.
+Generate an activity that is creative and helps the student learn in a playful way, using the parameters specified above.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+In this question, the principle of addition will be practiced. The
+question consists of an image with 5 toy cars to the left and 4 toy cars
+to the right, and asks the student to add how many toy cars are to the left
+to how many are to the right. The correct answer is 5 + 4 = 9.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div containing the page width, which in this case is 600px"
+    >
+      <div class="question" style="width: 600px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the image below and write in the spaces provided:
+        </p>
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div used to center the image in the question"
+        >
+          <img
+            src=""
+            alt="Image in a drawing style of 5 toy cars to the left and 4 to the right, with the road drawn in a coloring book style"
+            style="width: 400px; height: 200px"
+            exp="Image that the student will have to observe and add how many toy cars are to the left to how many are to the right"
+          />
+        </div>
+
+        <table
+          style="display: flex; justify-content: center"
+          exp="Table that will be used for the student to write the sum of the toy cars"
+        >
+          <tr>
+            <th>Imagem</th>
+            <th[colSpan="2"]>Insira a imagem abaixo e, ao lado da imagem, o número de carros ao lado esquerdo e ao lado direito:</th>
+          </tr>
+
+          <tr>
+            <th></th>
+            <th></th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Generate the structure of a school activity to help students learn.
+The activity should contain a layout structure where texts, images, tables or any other element that can help students' learning are positioned. 
+These elements should be arranged in such a way that they are consistent with the proposed question. For example: if the question asks the student to link images, the images should be separated in such a way that it is possible for the student to link them.
+The structure of the activity should be specified using the HTML language, and the CSS language to position text, images, tables, or any element present in the activity.
+If the activity contains images, add a description of the image in the “alt” attribute. This description should be consistent with the activity specification and provide all the information necessary for the student to be able to answer the activity.
+Also add an explanation for the elements used in the activity, in a new “exp” attribute. This attribute should be specified within the HTML tags and will explain the purpose of that structure in the activity. 
+When it is necessary to use CSS, add an explanation in the form of comments above the class. This CSS is used to organize the layout of the activity so that it is creative and fun for the student.
+Generate a textual description of the activity, then generate the HTML structure containing the layout. This description should contain an explanation of the structure, i.e. how the elements are organized. As well as a detailed description of the activity, and the student's expected response.
+
+Use the following parameters:
+
+level: 2nd year of fundamental
+subject: addition
+theme: toy cars
+sheet width: 600px
+layout: three images
+
+Stick to the following rules:
+
+Don't add anything outside the textual description and the HMTL of the activity.
+Generate an activity that is creative and helps the student learn in a playful way, using the parameters specified above.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+In this question, the principle of addition will be practiced. The question consists of an
+image with 3 toy cars, and 3 other images with toy cars, and the student will have to add
+in a logical way, how many toy cars are present in the image. To solve the question, the
+student will have to count how many toy cars are present in the image, and write the
+result in the correct box.
+
+<html>
+  <head></head>
+  <style>
+    /* class used to organize the page layout, which consists of three images of toy cars, and three boxes to write the sum of the toy cars*/
+   .container {
+      display: grid;
+      grid-template-columns: 120px 120px 120px 400px;
+      grid-template-rows: 120px 120px 120px 400px;
+      grid-template-areas:
+        "empty1 empty1 empty1 sum1"
+        "car1 empty2 empty3 sum2"
+        "car2 car3 empty4 sum3"
+        "empty5 empty6 empty7 sum4";
+    }
+
+    /* class used to style the image of toy cars, which will be in the center of the container in the first activity sheet*/
+   .image {
+      grid-area: car1;
+      width: 80px;
+      height: 80px;
+      border: 1px solid;
+    }
+
+    /* class used to style the image of toy cars, which will be in the center of the container in the second activity sheet*/
+   .image2 {
+      grid-area: car2;
+      width: 80px;
+      height: 80px;
+      border: 1px solid;
+    }
+
+    /* class used to style the image of toy cars, which will be in the center of the container in the third activity sheet*/
+   .image3 {
+      grid-area: car3;
+      width: 80px;
+      height: 80px;
+      border: 1px solid;
+    }
+
+    /* class used to style the box that the student will have to write the sum of the toy cars in the first image, is in the third activity sheet, and is labeled as sum1*/
+   .box1 {
+      grid-area: sum1;
+      width: 80px;
+      height: 80px;
+      border: 1px solid;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* class used to style the box that the student will have to write the sum of the toy cars in the second image, is in the second activity sheet*/
+   .box2 {
+      grid-area: sum2;
+      width: 80px;
+      height: 80px;
+      border: solid;
+    }
+
+    /* class used to style the box that the student will have to write the sum in the box that the student will have to draw in the image, in this case the is in the first activity, it is in the image, in the first activity, the main image in the first activity, in this case, in the main image, 
+  <img>
+        <main> 
+  <main> 
+  <nix > it is in the main image, in a main image, in aix, 
+  <ix>
+        <ix> 
+  <main> 
+  <ix> 
+  <ix> 
+  <ix> 
+  +
+  <nix> 
+  <ix> 
+  <main>
+  <level level, 
+  <ix 
+ 3 students' <ix> 
+  You also activities, in a main 4px, 
+ 3rdic <solaric, 
+ 3rdic
+<level in a main 4px
+Given in a main 
+1
+5thorg 
+3rdin a student 3rdic <positic <orgsolaritysolarist
+In a student'sn <lnsolaric or 
+3rdic <organical 1stoor layout, 
+3rdic with < 
+ 
+ 
+ 
+ 
+lnsolar 
+ 
+ 
+Given in a student expic <lnsolaric < 
+L
+Also
+L 
+<ln in a layout of < 
+exp
+<ln
+L
+You < 
+< 
+You
+You 
+You
+You
+You, in the 3rd in a layout, lignsln << 
+< 
+< of of, 
+< < 
+< 
+< 
+B 
+ln with, that with a layout, 
+or
+B
+B
+Stir, 
+Stir, 
+< 
+<<><Larry in a constant of < 
+< with a 
+< 
+< < < 
+< 
+< 
+< to of
+><nbsp of either 
+[
+<spann < 
+[
+[
+< 
+AttributeValue of 
+AttributeValue of  
+965 < < CustomAttributes also Pozidal < < 
+><, 
+AttributeValue ofidal223, 
+/ of oleans, 
+NSBundle of in in the expidal <n, sofy and also uther in lar in in, in inelier of expical in expical exp and expidal expidal expelier attributes expidalidal nude expidal expidal expidal Attributes attributes exporian expelier exp for attributes attributes in in expidal exp in a exp of exp of a question in a new642 Attributes ofLarry in a creativeAttributeValue of the attributes that of aMsp in a creativeAttributeValue of astitutionsidalln, orAttributeValue of a noble in a CarolynsCustomAttributes, and also attributes, and a noble of a rusticidal attributes of attributes of Attributes Attributes ofnalm of a attributes of a, that of aAttributeValue of a noble Attributes in a given attributes in a generally in a rustic in expidal attributes initially upside also in a receiving in astitutions in a subsequently initially in a, and also attributes attributes Attributes, and attributes initially Carolynenticator Attributes containing attributes of a nude and also attributes attributes attributes also belownstitutions in attributes attributes in a constant attributes in a question containing attributes consisting resulting in a constant attributes attributes naturally expicidal <nstitutions attributes in a nude attributescheidstitutions in a noble in astitutionsnobsn expenticatorstitutions in a nude in of recessesñosidal consistent in a nobleWarenünsnidal nude fundamental attributes in acheid in a nude in a fundamentalstitutionsShortcutelliteAttributeValue of <AttributeValue in astitutions in aAttributeValue in a layoutenticatorstitutions in a fundamental constantShortcut naturally in a question in a constant in a question in a fundamental in a in a consistent in a fundamentalShortcut resulting constant principles in a principle in a nun in a receiving in a fundamental in a nude in a fundamental and a little attributes in a in a in a fundamental in a subsequent in a in a subsequent in a subsequentAttributeValuestitutionsMspMspobsultstitutions in expuglns1 pnuño in a primp in a pShortcut in a pCustomAttributes in a pShortcut in a in a pnuobsult in a in a subsequent in a receiving noreferrerAttributeValue of a spontaneous a pivnuCustomAttributes for inCustomAttributes in a spontaneous expalcify in a in a[hrefCustomAttributes inCustomAttributes inAttributeValue in Attributes in expCustomAttributes in a
+/* 
+expanded in astitutions attributes forCustomAttributes
+AttributeValue
+AttributeValue
+         
+ 1
+ MspMspAttributeValue in a in a
+ 2
+ 10
+ 3
+    
+       
+    
+    exp
+    
+    
+           
+           
+   _OVERRIDE in a poor inCustomAttributes in
+        in a
+    
+        in acheid in
+    in 3
+  andCustomAttributes in a for in
+    
+shortcut
+   
+    span  stick stick stick in
+Stick
+  stick in
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Generate the structure of a school activity to help students learn.
+The activity should contain a layout structure where texts, images, tables or any other element that can help students' learning are positioned. 
+These elements should be arranged in such a way that they are consistent with the proposed question. For example: if the question asks the student to link images, the images should be separated in such a way that it is possible for the student to link them.
+The structure of the activity should be specified using the HTML language, and the CSS language to position text, images, tables, or any element present in the activity.
+If the activity contains images, add a description of the image in the “alt” attribute. This description should be consistent with the activity specification and provide all the information necessary for the student to be able to answer the activity.
+Also add an explanation for the elements used in the activity, in a new “exp” attribute. This attribute should be specified within the HTML tags and will explain the purpose of that structure in the activity. 
+When it is necessary to use CSS, add an explanation in the form of comments above the class. This CSS is used to organize the layout of the activity so that it is creative and fun for the student.
+Generate a textual description of the activity, then generate the HTML structure containing the layout. This description should contain an explanation of the structure, i.e. how the elements are organized. As well as a detailed description of the activity, and the student's expected response.
+
+Use the following parameters:
+
+level: 2nd year of fundamental
+subject: addition
+theme: underwater
+sheet width: 600px
+layout: single image
+
+Stick to the following rules:
+
+Don't add anything outside the textual description and the HMTL of the activity.
+Generate an activity that is creative and helps the student learn in a playful way, using the parameters specified above.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+In this question, the principle of addition will be practiced.
+The question consists of an image, which is the key to the question.
+The student's task is to identify the name of the fish, and write the name in the correct order, being 3 + 2 = 5.
+They will have to add the names of the fish, and the result will be 5, which is represented in the image.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div containing the page width, which in this case is 600px"
+    >
+      <div class="question" style="width: 600px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the image below and write the name of the fish in the correct order.
+        </p>
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div used to center the image in the question"
+        >
+          <img
+            src=""
+            alt="Image in a drawing style of three fish, in the first fish the number 3 is written, in the second fish the number 2 is also written, and in the third fish the sum of 3 and 2, which is 5, was written"
+            style="width: 400px; height: 200px"
+            exp="Image that the student will have to identify the name of the fish and write in the correct order"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

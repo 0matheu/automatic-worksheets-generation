@@ -1,0 +1,80 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Aluminum Can Tabs
+width-sheet: 800px
+task: observe images, write answer
+language: en
+
+{
+  "task": "To practice counting and addition skills by calculating the total number of aluminum can tabs Beatriz has collected.",
+  "layout": "The activity shows Beatriz collecting aluminum can tabs. She already had 32 and received 43 more. The student should observe the image and calculate the total number of tabs she has now.",
+  "answer": {
+    "To answer correctly, the student must add 32 (the tabs Beatriz already had) and 43 (the tabs she received). 32 + 43 equals 75. The student should write the number 75 inside the answer box."
+  }
+}
+
+<html>
+<head>
+  <style>
+    .container {
+      width: 800px;
+      border: solid 1px;
+      padding: 10px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .activity p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 200px;
+      height: auto;
+      margin: 10px;
+    }
+
+    .answer-area {
+      margin-top: 30px;
+    }
+
+    .answer-box {
+      width: 100px;
+      height: 100px;
+      border: 2px solid black;
+      margin: 10px auto;
+      font-size: 28px;
+      text-align: center;
+      line-height: 100px;
+    }
+
+    .answer-instruction {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="activity">
+      <p exp="Activity description explaining the situation where Beatriz is collecting aluminum can tabs.">
+        Beatriz is collecting aluminum can tabs to help an institution. She already had 32 tabs when she received 43 more tabs from a friend. How many tabs does Beatriz have now?
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center;" exp="Visual representation of the amounts mentioned in the problem.">
+      <img src="" alt="32 aluminum tabs" exp="Image showing 32 aluminum can tabs Beatriz already had." />
+      <img src="" alt="43 aluminum tabs" exp="Image showing 43 tabs received from her friend." />
+      <img src="" alt="75 aluminum tabs" exp="Image showing 75 tabs, the total after adding 32 and 43." />
+    </div>
+
+    <div class="answer-area" exp="Area containing the question and answer box.">
+      <p class="answer-instruction" exp="Instruction telling the student what to do.">
+        Write the sum here:
+      </p>
+      <div class="answer-box" exp="Box where the student should write the result of 32 + 43. The correct answer is 75."></div>
+    </div>
+  </div>
+</body>
+</html>

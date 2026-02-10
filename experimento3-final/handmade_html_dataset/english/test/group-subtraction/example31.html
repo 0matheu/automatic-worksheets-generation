@@ -1,0 +1,176 @@
+level: 2nd year of fundamental 
+learning goals: addition, counting 
+theme: airplane
+width-sheet: 800px 
+task: observe images, link items
+language: en
+
+{
+  "task": "The student will learn to count and add packages by matching the airplane image with the runway image having the most packages and then calculating the total count.",
+  "layout": "The layout consists of a grid organized into two rows and three columns. In the first row, there is an image of an airplane that is centered horizontally across the row. The second row features three images of landing strips, with one image placed in each column.",
+  "answer": "To answer correctly, the student must: 1) Count the number of packages on the airplane image (5 packages), 2) Identify the landing strip image with the most packages (5 packages), 3) Add the number of packages on the airplane to the number of packages on the runway with the most packages (5 + 5 = 10). The student must write the final answer (10) in the answer box located below the instructions. The box is provided for the student to clearly write their result after performing the addition."
+}
+
+
+<html>
+  <head></head>
+  <style>
+    /* classe que será usada para descrever o layout da atividade, neste caso contendo quatro imagens, uma de um avião e três outras de pistas de pouso, em um layout de 2 linhas e 3 colunas */
+    .container {
+      display: grid;
+      grid-template-columns: 220px 220px 220px;
+      grid-template-rows: 300px 200px;
+      grid-template-areas:
+        "aviao aviao aviao"
+        "pista1 pista2 pista3";
+    }
+
+    /* classe usada para posicionar a imagem do avião na primeira linha e na segunda coluna */
+    .airplane {
+      grid-area: aviao;
+    }
+      
+    /* classe usada para centralizar a imagem do avião horizontalmente na página */
+    .centralize {
+      width: 800px;
+      display: flex; 
+      justify-content: center;
+    }
+  
+    /* classe usada para definir o tamanho da imagem do avião */
+    .centralize img {
+      width: 300px;
+      height: 200px;
+      border: 1px solid;
+    }
+
+    /* classe usada para posicionar a imagem da primeira pista na segunda linha e primeira coluna */
+    .landing1 {
+      grid-area: pista1;
+    }
+
+    /* classe usada para posicionar a imagem da segunda pista na segunda linha e segunda coluna */
+    .landing2 {
+      grid-area: pista2;
+    }
+
+    /* classe usada para posicionar a imagem da terceira pista na segunda linha e terceira coluna */
+    .landing3 {
+      grid-area: pista3;
+    }
+
+    /* classe usada para definir o tamanho das imagens das pistas */
+    .sizelanding {
+      width: 200px;
+      height: 150px;
+      border: 1px solid;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 300px 200px 100px;
+      gap: 10px;
+      justify-items: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .airplane {
+      grid-column: 1 / span 3;
+      text-align: center;
+    }
+
+    .centralize img {
+      width: 300px;
+      height: 200px;
+      border: 1px solid;
+      object-fit: cover;
+    }
+
+    .landing {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid black;
+      width: 220px;
+      height: 180px;
+      padding: 10px;
+    }
+
+    .landing img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .answer-container {
+      grid-column: 2 / 3;
+      text-align: center;
+    }
+
+    .answer-box {
+      width: 80px;
+      height: 40px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+      margin-left: 60px;
+    }
+  </style>
+</head>
+<body>
+  <div style="width: 800px; margin: auto; border: 1px solid;">
+    <div class="activity" style="padding: 20px;">
+      <p style="text-align: center;" exp="Descrição da atividade que explica o que o estudante precisa fazer.">
+        Observe a imagem do avião, conte suas caixas e combine com a imagem da pista que tiver mais caixas. Em seguida, some as caixas do avião com as caixas da pista para obter o total.
+      </p>
+
+      <div class="container">
+        <div class="airplane" exp="div usada para posicionar a imagem do avião na primeira linha, centralizada horizontalmente.">
+          <div class="centralize">
+            <img
+              src=""
+              alt="Imagem em estilo pintura infantil de um avião com 5 caixas de carga voando no céu"
+              exp="Imagem mostrando o avião com suas caixas que o estudante precisará observar."
+            />
+          </div>
+        </div>
+
+        <div class="landing" exp="Div contendo a imagem da primeira pista, onde o estudante precisa identificar o número de caixas.">
+          <img
+            src=""
+            alt="Imagem de uma pista de avião com 3 caixas"
+            exp="Imagem que o estudante precisará observar e identificar que há 3 caixas."
+          />
+        </div>
+
+        <div class="landing" exp="Div contendo a imagem da segunda pista, onde o estudante precisa identificar o número de caixas.">
+          <img
+            src=""
+            alt="Imagem de uma pista de avião com 5 caixas"
+            exp="Imagem que o estudante precisará observar e identificar que há 5 caixas."
+          />
+        </div>
+
+        <div class="landing" exp="Div contendo a imagem da terceira pista, onde o estudante precisa identificar o número de caixas.">
+          <img
+            src=""
+            alt="Imagem de uma pista de avião com 2 caixas"
+            exp="Imagem que o estudante precisará observar e identificar que há 2 caixas."
+          />
+        </div>
+
+        <div class="answer-container" exp="Div que contém a caixa de resposta, alinhada com a segunda imagem.">
+          <p exp="Texto de instrução para o estudante escrever a resposta na caixa abaixo.">
+            Escreva na caixa abaixo o número total de caixas após somar as caixas do avião com as caixas da pista:
+          </p>
+          <div class="answer-box" exp="Caixa onde o estudante escreverá a resposta final após realizar a soma, que deve ser 10 caixas."></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

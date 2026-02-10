@@ -1,0 +1,110 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of cakes and juice boxes in the image and calculating the total sum.",
+  "layout": "The HTML elements are organized with a div containing the sheet width, followed by a div containing the question description, and then a grid container with three rows and two columns. The grid container contains an image of a tray with 5 cakes in the first row and first column, an image of 3 juice boxes in the second row and first column, and an equation in the third row and second column. The equation is styled with a larger font size.",
+  "answer": "To answer correctly, the student needs to observe the two images and identify that there are 5 cakes and 3 juice boxes present. The student needs to add the two numbers together to get 8. The student needs to write the correct equation and result: 5 + 3 = 8."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three images in a 2-line and 3-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 300px 300px 300px;
+      grid-template-areas:
+        "img1 img2"
+        "img1 img2"
+        "empty eq";
+    }
+
+    /* class used to place the first image of the tray with cakes in the first row and the first column */
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the image of the tray with cakes in the second row and the first column */
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to adjust the size of the images of the trays to 300px by 300px */
+    img {
+      width: 300px;
+      height: 300px;
+    }
+
+    /* class used to increase the size of the equation that represents the sum of the trays */
+    .eq {
+      font-size: 30px;
+    }
+
+    /* class used to place the equation in the third row and the second column */
+    .eq {
+      grid-area: eq;
+    }
+
+    /* class used to adjust the equation to the right */
+    .right {
+      margin-left: 150px;
+    }
+
+    /* class used to adjust the equation to the left */
+    .left {
+      margin-left: -150px;
+    }
+
+    /* class used to adjust the equation to the top */
+    .top {
+      margin-top: -150px;
+    }
+
+    /* class used to adjust the equation to the bottom */
+    .bottom {
+      margin-top: 150px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the images below. Manuel has a tray with 5 cakes and also a
+          tray with juice boxes, and count how many cakes and juice boxes are
+          present. Then, write an equation to represent the sum of the two
+          quantities.
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="image in a coloring book style of a transparent tray containing 5 peach cakes"
+              exp="image that the student will have to observe and identify that there are 5 cakes in the tray"
+            />
+          </div>
+
+          <div class="img2">
+            <img
+              alt="image in a coloring book style of a transparent tray containing 3 juice boxes"
+              exp="image that the student will have to observe and identify that there are 3 juice boxes in the tray"
+            />
+          </div>
+
+          <p class="eq" exp="p that will contain the equation that the student will have to write to answer the question correctly">
+            Manuel has 5 cakes and also 3 juice boxes. What is the sum of the
+            quantity of cakes with the quantity of juice boxes?
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

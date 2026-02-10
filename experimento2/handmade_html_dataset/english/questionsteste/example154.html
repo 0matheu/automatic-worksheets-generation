@@ -1,0 +1,120 @@
+level: 2nd year fundamental
+learning_goals: addition, counting, problem-solving
+theme: weights
+sheet_width: 900px
+task: observe images, write answer
+language: en
+
+
+{
+  "task": "To count the total weight of three different boxes and draw the combined total in a larger box.",
+  "layout": "The activity contains a description at the top explaining the task. Below, a grid layout with three images of boxes with weights in the first row and a larger box in the second row for the student to draw the total weight. An answer box is provided below for the student to write the total weight.",
+  "answer": "To answer correctly, the student needs to observe the weights (3 kg, 2 kg, and 5 kg), calculate the total (3 + 2 + 5 = 10), draw 10 small weight symbols (e.g., bags or boxes) in the larger box, and write '10 kg' in the answer box below."
+}
+  
+
+  
+<html>
+  <head>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 300px 300px;
+        grid-template-areas:
+          "box1 box2 box3"
+          "largebox largebox largebox";
+      }
+
+      .boxsize {
+        width: 240px;
+        height: 240px;
+      }
+
+      .largeboxsize {
+        width: 400px;
+        height: 240px;
+      }
+
+      .box1 {
+        grid-area: box1;
+      }
+
+      .box2 {
+        grid-area: box2;
+      }
+
+      .box3 {
+        grid-area: box3;
+      }
+
+      .largebox {
+        margin-top: 50px;
+        margin-left: 250px;
+        grid-area: largebox;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="width: 900px; border: solid 1px; padding: 10px;"
+      exp="div containing the sheet width, which in this case is 900px"
+    >
+      <div class="activity" style="width: 900px">
+        <p
+          exp="Activity description explaining that the student needs to calculate the total weight and draw it in the larger box."
+        >
+          Maria has three boxes with different weights. Can you calculate the total weight and draw the combined weight in the larger box? Write the total weight in the box below.
+        </p>
+
+        <div class="container">
+          <div class="box1" exp="div containing the first box image with weight 3 kg">
+            <img
+              class="boxsize"
+              src=""
+              alt="Image in a children's style of a box labeled with '3 kg'"
+              exp="Image showing a box with a weight of 3 kg."
+            />
+          </div>
+
+          <div class="box2" exp="div containing the second box image with weight 2 kg">
+            <img
+              class="boxsize"
+              src=""
+              alt="Image in a children's style of a box labeled with '2 kg'"
+              exp="Image showing a box with a weight of 2 kg."
+            />
+          </div>
+
+          <div class="box3" exp="div containing the third box image with weight 5 kg">
+            <img
+              class="boxsize"
+              src=""
+              alt="Image in a children's style of a box labeled with '5 kg'"
+              exp="Image showing a box with a weight of 5 kg."
+            />
+          </div>
+
+          <div class="largebox" exp="div containing the larger box where the student draws the combined weight">
+            <img
+              class="largeboxsize"
+              src=""
+              alt="Image in a children's style of a larger box without any weight label"
+              exp="Image showing a large box where the student will draw 10 small weight symbols inside, each symbolizing 1 kg."
+            />
+          </div>
+        </div>
+        <p exp="Description of where the student will write the answer." style="text-align: center; margin-top: 20px;">
+          Write in the box below the total weight after drawing it in the larger box:
+        </p>
+        <div style="display: flex; justify-content: center;" exp="div to center the answer box.">
+          <div
+            style="width: 100px; height: 100px; border: 1px solid black;"
+            exp="Box for the student to write the total weight, in this case, 10 kg."
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+  

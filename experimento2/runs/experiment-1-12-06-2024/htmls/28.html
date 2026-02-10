@@ -1,0 +1,87 @@
+```json
+{
+  "task": "The student will learn to add quantities by identifying the numeral that represents the image and connecting it to the image.",
+  "layout": "The HTML elements are organized with a div containing the sheet width, followed by a div containing the question description, and then a grid container with four columns and one row. The grid container contains five items: an empty space, an image of a music sheet, and three images of numerals. The items are positioned using CSS grid template areas.",
+  "answer": "To answer correctly, the student needs to: 1) identify the image that represents a music sheet with 4 notes (image2), 2) identify the numeral that represents the image (4), and 3) connect the two by drawing a line. The correct image is image2, and the correct numeral is 4."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three images in a 1-line and 4-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 200px 200px 200px 200px;
+      grid-template-rows: 200px;
+      grid-template-areas:
+        "space1 image1 image2 image3"
+    }
+
+    /* class used to place the image of the music sheet in the second cell of the first column */
+    .music {
+      grid-area: image1;
+    }
+
+    /* class used to place image2 in the second cell of the second column */
+    .num1 {
+      grid-area: image2;
+    }
+
+    /* class used to place image3 in the second cell of the third column */
+    .num2 {
+      grid-area: image3;
+    }
+
+    /* class used to adjust the size of the images in the activity, being 180px the ideal size for the images to be linked */
+    img {
+      width: 180px;
+      height: 180px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the images below. Connect the image that contains a children's song with 4 notes to the numeral that represents the sum of the notes of the song with the notes the child already has.
+        </p>
+
+        <div class="container">
+          <div class="space1"></div>
+
+          <div class="music" exp="div used to adjust the image of the music sheet to the left">
+            <img
+              src=""
+              alt="image in a coloring book style of a music sheet with 4 notes"
+              exp="image that the student will have to identify that it has 4 notes and link it to the numeral n2"
+            />
+          </div>
+
+          <div class="num1" exp="div used to adjust the image of the numeral n1 to the center left">
+            <img
+              src=""
+              alt="image in numeral format of a child drawing on a music sheet containing 3 notes"
+              exp="image that the student will have to identify that it has 3 notes and not link it to the image in the music sheet style"
+            />
+          </div>
+
+          <div class="num2" exp="div used to adjust the image of the numeral n2 to the center right">
+            <img
+              src=""
+              alt="image in numeral format of a music sheet containing 4 notes"
+              exp="image that the student will have to identify as being the one that has 4 notes and link it to the image in the music sheet style"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

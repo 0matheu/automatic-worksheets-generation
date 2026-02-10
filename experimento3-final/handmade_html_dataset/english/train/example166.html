@@ -1,0 +1,61 @@
+level: 2nd year fundamental
+learning_goals: counting 
+theme: blinking lights
+sheet_width: 600px
+task: observe image, write answer
+language: en
+
+{
+  "task": "The objective of this activity is for the student to count the blinking lights in the image, interpret their value as units, and convert them into dozens.",
+  "layout": "The activity is organized with a description at the top that explains the task. Below the description, there is a centered image of blinking lights. Following the image, there are questions prompting the student to count, convert, and write their answers in the provided boxes.",
+  "answer": "A) To correctly answer this question, the student will count the blinking lights (20) and write '20' in the first box. B) To correctly answer this question, the student will convert the total number of lights into dozens (2 dozen) and write '2' in the second box."
+}
+
+
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px; padding: 10px;"
+      exp="This div acts as the main container for the activity. It sets a fixed width of 600px and uses padding for spacing inside the container."
+    >
+      <div class="activity" style="width: 100%;">
+        <p
+          exp="This paragraph provides a clear and concise description of the task. It explains that the student needs to count the blinking lights and interpret their value."
+        >
+          Observe the image below, count the blinking lights, and fill in the answers below.
+        </p>
+
+        <div
+          style="display: flex; justify-content: center; margin-bottom: 20px;"
+          exp="This div uses flexbox to horizontally center the image of the activity."
+        >
+          <img
+            src=""
+            alt="Illustration of 20 blinking lights in various colors, forming a festive garland. The lights include red, blue, green, and yellow, evenly distributed across a string."
+            style="width: 400px; height: auto;"
+            exp="This image shows 20 blinking lights of different colors (red, blue, green, and yellow) arranged in a festive garland. The purpose is to visually engage the student and prompt them to count the total number of lights and interpret their value as dozens."
+          />
+        </div>
+
+        <div style="display: flex; align-items: center; margin-top: 10px;">
+          <p style="margin-right: 10px;">A) How many blinking lights are there?</p>
+          <div
+            style="width: 100px; height: 30px; border: 1px solid black;"
+            exp="Box where the student writes the total number of blinking lights. The correct answer is '20'."
+          ></div>
+        </div>
+
+        <div style="display: flex; align-items: center; margin-top: 10px;">
+          <p style="margin-right: 10px;">B) How many dozens do they make?</p>
+          <div
+            style="width: 100px; height: 30px; border: 1px solid black;"
+            exp="Box where the student writes the total dozens of blinking lights. The correct answer is '2'."
+          ></div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

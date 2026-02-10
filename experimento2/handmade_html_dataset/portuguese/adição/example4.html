@@ -1,0 +1,64 @@
+nivel: 2º ano fundamental 
+assunto: adição 
+tematica: tabela 
+largura-folha: 600px
+layout: tabela
+
+
+Nessa questão serão praticados os princípios da adição. A questão consiste de
+uma tabela, na qual estão presentes várias equações de soma, sendo 4 + 5, 15 + 8
+e 8 + 23. Para resolver o aluno terá que efeturar as somas pedidas e escrever o
+resultado depois do sinal de igual. Os resultados esperados são 4 + 5 = 9. 15 +
+8 = 23 e 8 + 23 = 31.
+
+<html>
+  <head></head>
+  <body>
+    <div style="width: 600px; border: solid 1px">
+      <div
+        class="questao"
+        style="width: 600px"
+        exp="div contendo a largura da folha, que nesse caso é 600px"
+      >
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamente a questão"
+        >
+          Observe a tabela abaixo e faça a soma dos números e escreva o
+          resultado
+        </p>
+        <table
+          style="display: flex; justify-content: center"
+          exp="tabela que vai conter as somas a serem efetuadas"
+        >
+          <tr
+            exp="Cabeçalho tabela, que contém duas colunas, uma sinalizando a coluna com as equações e outra sinaliando a coluna dos resultados"
+          >
+            <th>Soma</th>
+            <th>Resultado</th>
+          </tr>
+          <tr>
+            <th
+              exp="Soma que terá que ser efetuada pelo aluno, e deverá escrever o resultado depois do sinal de  ="
+            >
+              4 + 5 =
+            </th>
+          </tr>
+          <tr>
+            <th
+              exp="Soma que terá que ser efetuada pelo aluno, e deverá escrever o resultado depois do sinal de  ="
+            >
+              15 + 8 =
+            </th>
+          </tr>
+          <tr>
+            <th
+              exp="Soma que terá que ser efetuada pelo aluno, e deverá escrever o resultado depois do sinal de  ="
+            >
+              8 + 23 =
+            </th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

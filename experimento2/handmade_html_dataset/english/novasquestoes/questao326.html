@@ -1,0 +1,110 @@
+level: 2nd year of fundamental  
+learning_goals: counting, addition  
+theme: Fruit Sales  
+width-sheet: 800px  
+task: observe table, write answer  
+language: en
+
+{
+    "task": "To practice counting and addition skills by calculating the total number of fruits sold at a market.",
+    "layout": "The activity consists of a description at the top, where the student will read about the number of fruits sold at a market each day. Below that, there is a table showing the number of apples, oranges, and bananas sold on each day. The student will then answer questions based on the data, performing addition operations.",
+    "answer": {
+        "A": "To answer correctly, the student needs to add the number of apples and oranges sold on Monday (20 apples + 30 oranges). The correct answer is 50 fruits sold on Monday.",
+        "B": "To answer correctly, the student needs to add the number of apples and bananas sold on Tuesday (15 apples + 25 bananas). The correct answer is 40 fruits sold on Tuesday.",
+        "C": "To answer correctly, the student needs to add the total number of fruits sold in the market over both days (50 + 40 fruits). The correct answer is 90 fruits sold."
+    }
+}
+
+<html>
+    <head>
+        <style>
+            .container {
+                width: 800px;
+                border: solid 1px;
+                padding: 10px;
+                text-align: center;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: center;
+            }
+            th {
+                background-color: #6aa5db;
+                color: white;
+            }
+            .question-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+            .answer-box {
+                width: 100px;
+                height: 30px;
+                border: 1px solid black;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+      <div class="container">
+        
+        <div class="activity">
+          <p exp="Activity description about the sales of fruits at a market.">
+            A market sold fruits on Monday and Tuesday. Below is the table showing the number of apples, oranges, and bananas sold each day. Answer the questions based on the data.
+          </p>
+        </div>
+
+        <table exp="Table showing the number of apples, oranges, and bananas sold each day.">
+            <tr>
+                <th>Fruit</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+            </tr>
+            <tr>
+                <td>Apples</td>
+                <td>20</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Oranges</td>
+                <td>30</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Bananas</td>
+                <td>0</td>
+                <td>25</td>
+            </tr>
+        </table>
+
+        <div class="question-container">
+            <p exp="Question asking for the total number of apples and oranges sold on Monday.">
+                <b>A)</b> How many fruits were sold in total on Monday?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the total number of fruits sold on Monday. The correct answer is 50."></div>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for the total number of apples and bananas sold on Tuesday.">
+                <b>B)</b> How many fruits were sold in total on Tuesday?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the total number of fruits sold on Tuesday. The correct answer is 40."></div>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for the total number of fruits sold over the two days.">
+                <b>C)</b> What is the total number of fruits sold over the two days?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the total number of fruits sold over the two days. The correct answer is 90."></div>
+        </div>
+        
+      </div>
+    </body>
+</html>

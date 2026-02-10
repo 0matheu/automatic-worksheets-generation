@@ -1,0 +1,88 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Bookstore Shopping
+width-sheet: 800px
+task: observe text, write answer
+language: en
+
+{
+    "task": "To practice counting and addition skills by calculating the total cost of books Sofia is buying.",
+    "layout": "The activity consists of a description about Sofia's bookstore shopping. The table below shows the prices of the books in her cart. The student will calculate the total cost.",
+    "answer": {
+      "A": "To answer correctly, the student needs to add the prices of the novel (18 reais), dictionary (35 reais), and notebook (12 reais). The correct answer is 65 reais.",
+      "B": "To answer correctly, the student needs to add the price of the novel (18 reais) and the dictionary (35 reais). The correct answer is 53 reais."
+    }
+  }
+
+<html>
+<head>
+  <style>
+    .container {
+      width: 800px;
+      border: solid 1px;
+      padding: 10px;
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #6aa5db;
+      color: white;
+    }
+    .question-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .answer-box {
+      width: 100px;
+      height: 30px;
+      border: 1px solid black;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="activity">
+      <p exp="Sofia is shopping for books. The prices of the books are shown in the table.">
+        Sofia is shopping for books. The table below shows the prices of the books in her cart. Answer the questions based on the prices.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Centered image showing Sofia’s bookstore shopping items.">
+      <img 
+        src="" 
+        alt="Illustration showing Sofia's shopping cart with books like a novel, dictionary, and notebook."
+        style="width: 600px; height: 300px"
+        exp="Image showing the books Sofia is buying at the bookstore."
+      />
+    </div>
+
+    <table exp="Table showing the prices of the books Sofia is buying.">
+      <tr><th>Item</th><th>Price (R$)</th></tr>
+      <tr><td>Novel</td><td>18</td></tr>
+      <tr><td>Dictionary</td><td>35</td></tr>
+      <tr><td>Notebook</td><td>12</td></tr>
+    </table>
+
+    <div class="question-container">
+      <p><b>A)</b> What is the total cost of the novel, dictionary, and notebook?</p>
+      <div class="answer-box" exp="Box for the total cost of all items. Correct: 65."></div>
+    </div>
+    <div class="question-container">
+      <p><b>B)</b> What is the total cost of the novel and the dictionary?</p>
+      <div class="answer-box" exp="Box for the total cost of novel and dictionary. Correct: 53."></div>
+    </div>
+  </div>
+</body>
+</html>

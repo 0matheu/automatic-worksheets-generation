@@ -1,0 +1,104 @@
+level: 2nd year fundamental
+learning_goals: addition, counting
+theme: fruit baskets
+sheet_width: 600px
+task: observe images, write answer
+language: en
+
+
+{
+  "task": "Count the number of fruits in each basket, connect the child to the basket with the most fruits, and write down the sum of the two linked images.",
+  "layout": "The activity is organized into three main sections. The top section contains a description of the task. Below this, the middle section features a 2x2 grid layout where the first column contains an image of a child with a fruit basket, and the second column contains two images of fruit baskets filled with different quantities of fruits.",
+  "answer": "To answer this activity correctly, the student must: 1) count the number of fruits in the child's basket (2), 2) compare it with the number of fruits in the two baskets (5 and 7), 3) connect the child to the image with the most fruits (7), and 4) write down the sum of the two linked images (2 + 7 = 9). The answer (9) should be written in the answer box below the instruction: 'Write in the box below the total number of fruits after linking the images.'"
+}
+
+<html>
+  <head>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 300px 300px;
+        grid-template-areas:
+          "child img1"
+          "child img2";
+      }
+
+      .child {
+        grid-area: child;
+        width: 300px;
+        height: 600px;
+      }
+
+      .child img {
+        margin-top: 180px;
+      }
+
+      img {
+        width: 230px;
+        height: 230px;
+      }
+
+      .img1 {
+        grid-area: img1;
+      }
+
+      .img2 {
+        grid-area: img2;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 600px"
+    >
+      <div class="activity" style="width: 600px">
+        <p
+          exp="Activity description explaining the task of linking the child with the basket that has the most fruits and calculating the total."
+        >
+          Observe the images below. Count the number of fruits in each basket, connect the child to the basket with the most fruits, and write down the total number of fruits.
+        </p>
+
+        <div class="container">
+          <div class="child" exp="div containing the image of the child holding 2 fruits.">
+            <img
+              src=""
+              alt="Image of a child holding a basket with 2 fruits. In a cartoon style."
+              exp="The student must count the fruits (2) in the child's basket."
+            />
+          </div>
+
+          <div class="img1" exp="div containing the first basket with fruits.">
+            <img
+              src=""
+              alt="Image of a basket with 5 fruits. In a cartoon style."
+              exp="The student must count the fruits (5) in the basket."
+            />
+          </div>
+
+          <div class="img2" exp="div containing the second basket with fruits.">
+            <img
+              src=""
+              alt="Image of a basket with 7 fruits. In a cartoon style."
+              exp="The student must count the fruits (7) in the basket."
+            />
+          </div>
+        </div>
+
+        <p
+          exp="Instruction for the student to write the total sum of fruits in the answer box."
+          style="text-align: center; margin-top: 20px;"
+        >
+          Write in the box below the total number of fruits after linking the images:
+        </p>
+        <div style="display: flex; justify-content: center;" exp="div for the answer box.">
+          <div
+            style="width: 100px; height: 100px; border: 1px solid black;"
+            exp="Answer box for writing the total number of fruits. Correct answer: 9."
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

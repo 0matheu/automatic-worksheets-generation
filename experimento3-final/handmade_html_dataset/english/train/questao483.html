@@ -1,0 +1,47 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Movie Ticket Sales
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+  "task": "To practice counting and basic addition skills by calculating the total number of movie tickets sold for different showtimes.",
+  "layout": "The activity consists of a description where Carla is calculating the ticket sales for different movie showtimes. Below is an image showing how many tickets were sold for each show. The student will answer questions by adding the ticket sales.",
+  "answer": {
+    "A": "To answer correctly, the student needs to add the number of tickets sold for the morning show (100 tickets) and the afternoon show (150 tickets). The correct answer is 250 tickets.",
+    "B": "To answer correctly, the student needs to add the number of tickets sold for the afternoon show (150 tickets) and the evening show (200 tickets). The correct answer is 350 tickets."
+  }
+}
+
+<html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: solid 1px; padding: 10px;">
+      <div class="activity">
+        <p exp="Carla is managing the movie ticket sales. The number of tickets sold for each show is shown in the image.">
+          Carla is selling tickets for different movie showtimes. Below is an image showing the ticket sales for each showtime.
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image showing the movie ticket sales.">
+        <img 
+          src="" 
+          alt="Illustration showing the movie ticket sales: morning show (100 tickets), afternoon show (150 tickets), and evening show (200 tickets)."
+          style="width: 600px; height: 300px"
+          exp="Image showing the ticket sales for the different movie showtimes."
+        />
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question asking for the total number of tickets sold for the morning and afternoon shows."><b>A)</b> What is the total number of tickets sold for the morning and afternoon shows?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total number of tickets for the morning and afternoon shows. Correct: 250."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question asking for the total number of tickets sold for the afternoon and evening shows."><b>B)</b> What is the total number of tickets sold for the afternoon and evening shows?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total number of tickets for the afternoon and evening shows. Correct: 350."></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Family Grocery List
+width-sheet: 800px
+task: observe text, write answer
+language: en
+
+{
+    "task": "To practice counting and addition skills by calculating the total cost of groceries purchased for the family.",
+    "layout": "The activity involves a family grocery list. Below, there is a table showing the costs of the items. The student will add up the costs and answer questions.",
+    "answer": {
+      "A": "To answer correctly, the student needs to add the prices of the apples (4 reais), bananas (3 reais), and tomatoes (5 reais). The correct answer is 12 reais.",
+      "B": "To answer correctly, the student needs to add the price of the apples (4 reais) and the tomatoes (5 reais). The correct answer is 9 reais."
+    }
+  }
+
+<html>
+<head>
+  <style>
+    .container {
+      width: 800px;
+      border: solid 1px;
+      padding: 10px;
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #6aa5db;
+      color: white;
+    }
+    .question-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .answer-box {
+      width: 100px;
+      height: 30px;
+      border: 1px solid black;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="activity">
+      <p exp="Ana is buying groceries for her family. The costs of the items are shown in the table.">
+        Ana is buying groceries for her family. The table below shows the prices of the items she is purchasing. Answer the questions based on the costs.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Centered image showing a family grocery list with items like apples, bananas, and tomatoes.">
+      <img 
+        src="" 
+        alt="Illustration showing groceries like apples, bananas, and tomatoes in the family's shopping cart."
+        style="width: 600px; height: 300px"
+        exp="Image of groceries being purchased for a family."
+      />
+    </div>
+
+    <table exp="Table showing the costs of groceries.">
+      <tr><th>Item</th><th>Price (R$)</th></tr>
+      <tr><td>Apples</td><td>4</td></tr>
+      <tr><td>Bananas</td><td>3</td></tr>
+      <tr><td>Tomatoes</td><td>5</td></tr>
+    </table>
+
+    <div class="question-container">
+      <p><b>A)</b> What is the total cost of the apples, bananas, and tomatoes?</p>
+      <div class="answer-box" exp="Box for the total cost of all items. Correct: 12."></div>
+    </div>
+    <div class="question-container">
+      <p><b>B)</b> What is the total cost of the apples and the tomatoes?</p>
+      <div class="answer-box" exp="Box for the total cost of apples and tomatoes. Correct: 9."></div>
+    </div>
+  </div>
+</body>
+</html>

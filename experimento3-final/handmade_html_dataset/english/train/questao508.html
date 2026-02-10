@@ -1,0 +1,68 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Art Supplies
+width-sheet: 800px
+task: Observe images, write answer
+language: en
+
+{
+  "task": "To practice counting and basic addition skills by calculating the total cost of art supplies João is buying.",
+  "layout": "The activity shows João buying supplies for his art class. An image displays the prices of the items. Students answer questions based on the prices.",
+  "answer": {
+    "A": "To answer correctly, add the prices of the watercolor set (25 reais) and the sketchbook (15 reais). The correct answer is 40 reais.",
+    "B": "To answer correctly, add the price of the watercolor set (25 reais) and the markers (18 reais). The correct answer is 43 reais."
+  }
+}
+  
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Art Supplies Math Activity</title>
+    <style>
+      .activity {
+        width: 800px;
+        border: 1px solid #000;
+        padding: 15px;
+        font-family: Arial, sans-serif;
+      }
+      .question {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+      }
+      .answer-box {
+        width: 100px;
+        height: 40px;
+        border: 1px solid #000;
+      }
+      .image-container {
+        text-align: center;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="activity">
+      <h2 exp="Title of the activity: Art Supplies Shopping">Art Supplies Shopping</h2>
+      <p exp="Description of the activity context">João is buying supplies for his art class. The prices are shown in the image below.</p>
+      
+      <div class="image-container" exp="Container for the art supplies price illustration">
+        <img 
+          src="" 
+          alt="Illustration showing art supplies with prices: watercolor set (25 reais), sketchbook (15 reais), markers (18 reais)"
+          exp="Image displaying the three art supplies with their prices for the counting exercise"
+          style="width: 600px; height: 300px; border: 1px dashed #ccc;"
+        >
+      </div>
+
+      <div class="question" exp="Question A about watercolor set and sketchbook total">
+        <p><b>A)</b> What is the total cost of the watercolor set and the sketchbook?</p>
+        <div class="answer-box" exp="Box for student to write the answer (40 reais)"></div>
+      </div>
+      <div class="question" exp="Question B about watercolor set and markers total">
+        <p><b>B)</b> What is the total cost of the watercolor set and the markers?</p>
+        <div class="answer-box" exp="Box for student to write the answer (43 reais)"></div>
+      </div>
+    </div>
+  </body>
+</html>

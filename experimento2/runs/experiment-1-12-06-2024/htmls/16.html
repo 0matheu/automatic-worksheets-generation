@@ -1,0 +1,113 @@
+```json
+{
+  "task": "The student will learn to add two numbers and match the result to the correct number.",
+  "layout": "The HTML elements are organized with a div containing the page width, followed by a div containing the question description, and then a grid container with three columns and two rows. The grid container contains an equation, three number images, and three result images, all placed in a specific layout. The equation and number images are connected by arrows, and the goal is to match each equation with the correct result.",
+  "answer": "To answer correctly, the student needs to calculate the sum of each equation and match it with the correct result. For the equation 7 + 5, the correct result is 12. For the equation 3 + 9, the correct result is 12. And for the equation 6 + 4, the correct result is 10."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to organize the images and equations of the activity, containing three columns and two rows */
+    .container {
+      display: grid;
+      grid-template-columns: 120px 120px 120px;
+      grid-template-rows: 120px 120px;
+      grid-template-areas:
+        "n1 img1 n2"
+        "sum img2 n3";
+    }
+
+    /* class used to position the image of the clown in the first row and the first column */
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to position the image of the trapeze artist in the second row and the first column */
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to position the image of the sum in the first row and the third column */
+    .sum {
+      grid-area: sum;
+      font-size: 20px;
+    }
+
+    /* class used to position the image of the number 7 in the first row and the second column */
+    .n1 {
+      grid-area: n1;
+    }
+
+    /* class used to position the image of the number 9 in the second row and the first column */
+    .n2 {
+      grid-area: n2;
+    }
+
+    /* class used to position the image of the number 4 in the second row and the third column */
+    .n3 {
+      grid-area: n3;
+    }
+
+    /* class used to increase the images on the page */
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the images below. Add the numbers of each image and match the result with the image that represents the sum of the two numbers.
+        </p>
+
+        <div class="container">
+          <div class="sum">
+            <p
+              exp="Equation that the student will have to solve and find the result in one of the images below"
+            >
+              7 + 5 =
+            </p>
+          </div>
+
+          <div class="n1">
+            <img
+              src=""
+              alt="image in a children's drawing style of the number 7 inside a circus clown"
+              class="img-fluid img1"
+              exp="image that the student will have to identify that it represents the number 7"
+            />
+          </div>
+
+          <div class="n2">
+            <img
+              src=""
+              alt="image in a children's drawing style of the number 9 being performed by a trapeze artist in a circus"
+              class="img-fluid img2"
+              exp="image that the student will have to identify that it represents the number 9"
+            />
+          </div>
+
+          <div class="n3">
+            <img
+              src=""
+              alt="image in a children's drawing style of the number 4 in a circus themed image"
+              class="img-fluid img3"
+              exp="image that the student will have to identify that it represents the number 4"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

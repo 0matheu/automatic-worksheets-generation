@@ -1,0 +1,53 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Animal Farm
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+  "task": "To practice addition, calculate the total number of animals on the farm.",
+  "layout": "This task involves adding up the number of different animals on the farm, including cows, chickens, and sheep.",
+  "answer": {
+    "A": "To answer correctly, the student must add the number of cows (7), chickens (12), and sheep (5). The correct answer is 24.",
+    "B": "To answer correctly, the student must add the number of cows (7) and chickens (12). The correct answer is 19.",
+    "C": "To answer correctly, the student must add the number of chickens (12) and sheep (5). The correct answer is 17."
+  }
+}
+
+  
+<html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: solid 1px black; padding: 10px;">
+      <p exp="Setting up the context of the farm with different animals.">
+        On the farm, there are different animals: cows, chickens, and sheep. Let's add them up!
+      </p>
+
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div to center the image showing the animals.">
+        <img 
+          src="" 
+          alt="Cows (7), chickens (12), and sheep (5) on the farm."
+          style="width: 600px; height: 300px;"
+          exp="Image showing cows, chickens, and sheep, with numbers clearly labeled next to each animal."
+        />
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question A asking for the total number of all animals."><b>A)</b> What is the total number of cows, chickens, and sheep?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total number of animals. Correct: 24."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question B asking for the total number of cows and chickens."><b>B)</b> What is the total number of cows and chickens?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total number of cows and chickens. Correct: 19."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question C asking for the total number of chickens and sheep."><b>C)</b> What is the total number of chickens and sheep?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total number of chickens and sheep. Correct: 17."></div>
+      </div>
+    </div>
+  </body>
+</html>

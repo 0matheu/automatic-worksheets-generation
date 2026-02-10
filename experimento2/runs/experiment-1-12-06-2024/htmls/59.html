@@ -1,0 +1,70 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of cacti in the initial image, drawing a certain number of cacti, and then calculating the total sum of cacti in both the original image and the drawing.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph describing the task. The middle section contains a 2x1 grid with two images placed side by side. The first image is a colored drawing of 5 cacti in the desert, and the second image is a black and white outline drawing of 3 cacti in the desert. The images are placed in a specific layout to facilitate comparison and counting.",
+  "answer": "To answer correctly, the student needs to: 1) count the number of cacti in the initial image (5), 2) draw 3 more cacti in the second image to make it 8 cacti, and 3) add the number of cacti in the initial image to the number of cacti in the drawing (5 + 8 = 13). The correct answer is 13 cacti."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing two images in a 2-line and 1-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 400px 400px;
+      grid-template-areas:
+        "img1 img2"
+    }
+
+    /* class used to place the image of the cacti in the desert in the first row and the first column */
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the image of the cacti in the desert in the second row and the first column */
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to give the size for the images of the activity */
+    img {
+      width: 390px;
+      height: 390px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the image and draw enough cacti to have a total of 13 cacti, then count them all.
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="Colored drawing of 5 cacti in the desert"
+              exp="image that the student will have to count the cacti to answer the question"
+            />
+          </div>
+
+          <div class="img2">
+            <img
+              alt="Black and white drawing of 3 cacti in the desert"
+              exp="image that the student will have to count how many cacti are present and draw enough to add to the first image so that there are 13 cacti in total"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

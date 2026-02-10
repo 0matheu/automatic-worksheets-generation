@@ -1,0 +1,109 @@
+level: 2nd year fundamental
+learning_goals: addition, counting, problem-solving
+theme: groceries and scales
+sheet_width: 800px
+task: observe images, write answer
+language: en
+
+{
+  "task": "To calculate the total weight of a bag of apples and a watermelon by adding their weights and writing the total.",
+  "layout": "The activity consists of a single line layout organized into three columns, with three images placed side by side. The first image shows a bag of apples on a scale, the second image features a watermelon on a scale, and the third image displays both the bag of apples and the watermelon together on a scale.",
+  "answer": "To answer correctly, the student needs to identify the weight of the bag of apples (15 kilos) in the first image and the weight of the watermelon (8 kilos) in the second image. The student should then calculate the sum of these weights (15 + 8 = 23 kilos) and write the total weight (23 kilos) in the answer box below the instruction: 'Write in the box below the total weight after adding the weights of the apples and the watermelon.'"
+}
+
+<html>
+  <head>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 250px 250px 250px;
+        grid-template-rows: 300px;
+        grid-template-areas:
+          "scales1 scales2 scales3";
+      }
+
+      .scales1 {
+        grid-area: scales1;
+      }
+
+      .scales2 {
+        grid-area: scales2;
+      }
+
+      .scales3 {
+        grid-area: scales3;
+      }
+
+      .container div {
+        margin-left: 20px;
+      }
+
+      img {
+        width: 230px;
+        height: 240px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px; padding: 10px;"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="activity" style="width: 800px">
+        <p
+          exp="Activity description, explaining the task of adding weights and calculating the total."
+        >
+          Observe the images below. Determine the weight of the bag of apples and the watermelon. Next, calculate the total weight by adding the weights and record your answer in the third image.
+        </p>
+
+        <div class="container" exp="div that arranges the images in a row layout for clear comparison.">
+          <div
+            class="scales1"
+            exp="div containing the image of a bag of apples on a scale."
+          >
+            <img
+              src=""
+              alt="Image showing a bag of apples on a scale with a reading of 15 kilos."
+              exp="This image depicts a bag of apples on a scale, where the weight is labeled as 15 kilos."
+            />
+          </div>
+
+          <div
+            class="scales2"
+            exp="div containing the image of a watermelon on a scale."
+          >
+            <img
+              src=""
+              alt="Image showing a watermelon on a scale with a reading of 8 kilos."
+              exp="This image depicts a watermelon on a scale, where the weight is labeled as 8 kilos."
+            />
+          </div>
+
+          <div
+            class="scales3"
+            exp="div containing the image of the bag of apples and the watermelon on a scale together."
+          >
+            <img
+              src=""
+              alt="Image showing both the bag of apples and the watermelon on a scale without a weight reading."
+              exp="This image shows both the bag of apples and the watermelon on a scale. The student must write the calculated total weight in this section."
+            />
+          </div>
+        </div>
+
+        <p
+          exp="Instruction for the student to write the calculated total weight."
+          style="text-align: center; margin-top: 20px;"
+        >
+          Write in the box below the total weight after adding the weights of the apples and the watermelon:
+        </p>
+        <div style="display: flex; justify-content: center;" exp="div used to center the answer box.">
+          <div
+            style="width: 100px; height: 100px; border: 1px solid black;"
+            exp="This box is used for the student to write the calculated total weight. The correct answer is 23 kilos."
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

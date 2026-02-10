@@ -1,0 +1,806 @@
+
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2 ano fundamental
+assunto: adição
+tematica: lanches
+largura-folha: 700px
+layout: única imagem<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão será praticado o principio da adição.
+A questão consiste de uma imagem contendo uma criança com um
+sanduíche na mão, e mais 4 sanduíches em uma pilha.
+O aluno terá que desenhar um desenho dele também com sanduíches
+contendo 4 pães, e também escrever a soma dos pães com o sanduíche
+que já tem, sendo 5 + 4 = 9.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 700px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 700px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe a imagem abaixo e responda as questões:
+        </p>
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <img
+            src=""
+            alt="Imagem colorida no estilo de desenho infantil de uma criança com um sanduíche na mão, e também em pilha mais 4 sanduíches"
+            style="width: 600px; height: 300px"
+            exp="Imagem que o aluno terá que desenhar o same que a imagem tem, e também escrever a soma dos pães com o sanduíche que já tem, sendo 5 + 4 = 9"
+          />
+        </div>
+
+        <p exp="questão que pede que o aluno dê o número de pães que estão na imagem">A) Quantos pães tem na imagem?</p>
+        <p exp="questão que dê o número de pães que o aluno terá que desenhar">B) Quantos pães deve desenhar para representar a pilha?</p>
+        <p exp="questão que pede a soma dos pães com o sanduíche que já tem">C) Quantos pães é ao todo os pães da pilha plus o sanduíche que já tem?</p>
+      </div>
+    </div>
+  </body>
+</html><|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Nessa questão o aluno terá que observar a imagem abaixo e desenhar
+o mesmo em uma pilha, e também escrever a soma dos pães com o
+sanduíche que já tem. Para responder corretamente o aluno terá que
+conhecer a regra da adição, sendo 5 + 4 = 9.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2 ano fundamental
+assunto: adição
+tematica: lanches
+largura-folha: 700px
+layout: duas imagens, linhas e colunas<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão serão praticados os princípios da adição. A questão consiste de
+duas imagens de lanches, uma com 3 pão de queijo, e outra com 5 carrinhos. Para
+resolu-la, o aluno terá que somar a quantidade de pão de queijo com a quantidade
+de carrinhos, sendo 3 + 5 = 8.
+
+<html>
+  <head></head>
+
+
+  <style>
+    /* classe que é utilizada para organizar o layout da pagina, para que ele consiga uma residência de 600px */
+   .container {
+      display: grid;
+      grid-template-columns: 150px 150px 150px 150px 150px;
+      grid-template-rows: 150px;
+      grid-template-areas:
+        "vazio1 pai nt"
+        "imagem1 pão de queijo"
+        "imagem2 carrinhos"
+        "vazio2 s"
+    }
+
+    /* classe que é utilizada para posicionar a imagem 1 na primeira célula da primeira coluna */
+   .imagem1 {
+      grid-area: imagem1;
+    }
+
+    /* classe que é utilizada para posicionar a imagem 2 na primeira célula da terceira coluna */
+   .imagem2 {
+      grid-area: imagem2;
+    }
+
+    /* classe que é utilizada para posicionar o s na segunda célula da quarta coluna */
+   .s {
+      grid-area: s;
+      border: solid 1px;
+      platform: "html";
+    }
+
+    /* classe que é utilizada para posicionar o pão de queijo na primeira célula da segunda coluna, e o carrinhos na primeira célula da quarta coluna */
+   .pão_de_queijo {
+      grid-area: pão_de_queijo;
+      border: solid 1px;
+      platform: "html";
+    }
+
+    /* classe que é utilizada para posicionar os carrinhos na segunda célula da terceira coluna */
+   .carrinhos {
+      grid-area: carrinhos;
+      border: solid 1px;
+      platform: "html";
+    }
+  </style>
+  <body>
+    <div
+      style="width: 700px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 700px"
+    >
+      <div class="questao" style="width: 700px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe as imagens abaixo e soma a quantidade de pão de queijo com a quantidade de carrinhos.
+        </p>
+
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar as imagens na questão"
+        >
+          <div class="imagem1" style="width: 150px; height: 150px">
+            <p
+              exp="Imagem no estilo de desenho de pintar, de 3 pão de queijo, sendo 2 em forma de bolha e 1 em forma de pão"
+            >
+              <font face="Arial" size="30px">3</font>
+              pão de queijo
+            </p>
+          </div>
+
+          <div
+            class="imagem2"
+            style="width: 150px; height: 150px"
+            exp="Imagem no estilo de desenho de pintar, de 5 carrinhos"
+          >
+            <p
+              exp="Imagem no estilo de desenho de pintar, de 5 carrinhos"
+            >
+              <font face="Arial" size="30px">5</font>
+              carrinhos
+            </p>
+          </div>
+
+          <div
+            class="vazio1"
+            style="width: 150px; height: 150px"
+            exp="div utilizada para centralizar a imagem 2 com a imagem 1"
+          />
+
+          <div
+            class="vazio2"
+            style="width: 150px; height: 150px"
+            exp="div utilizada para posicionar o s na segunda célula da quarta coluna"
+          />
+
+          <div
+            class="s"
+            style="width: 150px; height: 150px"
+            exp="div utilizada para posicionar o s na segunda célula da quarta coluna"
+          />
+
+          <div
+            class="pão_de_queijo"
+            style="width: 150px; height: 150px"
+            exp="div utilizada para posicionar o pão de queijo na primeira célula da segunda coluna"
+          />
+
+          <div
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: carrinhos
+largura-folha: 600px
+layout: única imagem<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão serão praticados os princípios da adição. A questão consiste de
+uma imagem com 4 carrinhos, e ao final da imagem estão presentes as somas de 2,4 e
+5. O aluno terá que somar as quantidades presentes nas somas e escrever o resultado
+na caixa correta.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe a imagem abaixo e some as quantidades presentes nas caixas.
+        </p>
+
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <img
+            src=""
+            alt="imagem do livro contendo os númerais 2,4 e 5 com os númerais sendo representados por carrinhos"
+            style="width: 500px; height: 200px"
+            exp="imagem contendo a quantidade de carrinhos que o aluno terá que somar para responder corretamenta a questão"
+          />
+        </div>
+
+        <div class="questao" style="width: 500px">
+          <p exp="caixa que o aluno terá que escrever a soma de 2 e 4, sendo 6"></p>
+          <p exp="caixa que o aluno terá que escrever a soma de 4 e 5, sendo 9"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html><|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Nessa questão o aluno terá que observar a imagem abaixo e somar as quantidades
+presentes nas caixas. A imagem contém 4 carrinhos na caixa A, 2 carrinhos na caixa
+B, 4 carrinhos na caixa C e 5 carrinhos na caixa D. O aluno terá que somar as
+quantidades e escrever na caixa corretamente a soma de 6, sendo 2 e 4, e também a
+soma de 9, sendo 4 e 5.
+
+As questões em desenho são uma forma mais prática e visual de ensinar conceitos
+scientíficos. Nessa questão o aluno terá que observar a imagem abaixo e somar as
+quantidades presentes nas caixas.
+
+Para responder corretamenta a questão o aluno terá que efetuar a soma dos
+números. A soma de 2 e 4 dá 6. A soma de 4 e 5 dá 9.
+
+Note que na imagem abaixo a quantidade de carrinhos que estão presentes nas
+soma A é 4. A quantidade de carrinhos que estão presentes na soma B é 2. A
+quantidade de carrinhos que estão presentes na soma C é 4 e na soma D é 5.
+
+Para responder corretamenta a questão o aluno terá que somar as quantidades
+presentes nas somas e escrever o resultado na caixa correspondente.
+
+Essa atividade também permite que o professor observe se o aluno domina a
+conceito da adição. Para responder corretamenta a questão o aluno terá que
+saber que 2 + 4 = 6, e também que 4 + 5 = 9.
+
+Para resolver a questão o aluno terá que somar as quantidades presentes nas
+caixas e escrever o resultado na caixa correspondente.
+
+Nessa questão o aluno terá que observar a imagem abaixo e somar as
+quantidades presentes nas caixas. A imagem contém 4 carrinhos na caixa A, 2
+carrinhos na caixa B, 4 carrinhos na caixa C e 5 carrinhos na caixa D. O aluno
+terá que somar as quantidades e escrever na caixa corretamente a soma de 6, sendo
+2 e 4, e também a soma de 9, sendo 4 e 5.
+
+<html>
+  <head></head>
+  <body>
+   ...
+  </body>
+</html>
+
+Observe que a imagem da questão contém a explicação da questão, sendo a
+descrição de que o aluno deverá somar as quantidades presentes nas caixas. A
+imagem contém 4 carrinhos na caixa A, 2 carrinhos na caixa B,

@@ -1,0 +1,49 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Lighting Up the Museum
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+    "task": "To practice addition and money calculation in a realistic scenario by determining the total cost of items purchased for a museum renovation.",
+    "layout": "The activity presents a detailed paragraph describing the museum renovation and the purchase of two types of light bulbs. It includes a centered image showing a museum hallway and light bulb packaging with price tags. A large, centered answer box is provided where the student should write the total cost.",
+    "answer": "To answer correctly, the student needs to add the cost of both light bulb packs. One pack costs 18 reais and the other costs 7 reais. The correct answer is 25 reais. The student should write this number inside the square answer box to show they understand basic addition in a real-world context."
+  }
+
+  
+  <html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: solid 1px;" 
+         exp="Main container that defines the maximum width of the activity and keeps all visual elements aligned for clarity and ease of use.">
+         
+      <p exp="Contextualized word problem: describes a realistic scenario in which workers are buying items for a museum renovation, integrating mathematics with a real-life situation.">
+        The staff at the museum are renovating the building. They bought a pack of LED bulbs for 18 reais and a pack of spotlights for 7 reais to light up the new exhibition room. 
+        How much did they spend in total? 
+        (Hint: Add the price of both types of bulbs.)
+      </p>
+
+      <div style="display: flex; justify-content: center;" 
+           exp="Flexbox container used to center the image horizontally within the activity block, making the layout more visually balanced.">
+        <img 
+          src="" 
+          alt="Museum corridor with light fixtures. Two boxes of light bulbs are shown with price tags: one for 18 reais and another for 7 reais." 
+          style="width: 600px; height: 400px;" 
+          exp="Illustration depicting a museum hallway being renovated, with two visible packages of light bulbs. One is labeled 18 reais, and the other 7 reais. This supports comprehension of the math problem by connecting visuals to the described prices." />
+      </div>
+
+      <p exp="Second instructional paragraph reminding the student to use the image and perform addition to solve the task. Reinforces the problem-solving process.">
+        Look at the prices on the image and add the two amounts together. Then, write the total amount the museum spent on lighting in the box below.
+      </p>
+
+      <div style="display: flex; justify-content: center; margin-top: 20px;" 
+           exp="Div used to center the response area. Ensures the student focuses on the task and clearly sees where to write their answer.">
+        <div style="width: 100px; height: 100px; border: 1px solid black;" 
+             exp="Square box (100x100 pixels) meant for the student to write the total cost. The correct response is 25 reais, resulting from 18 + 7. This space simulates a worksheet-like environment and encourages written response.">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Vacation Trip
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+    "task": "To practice counting and basic addition skills by calculating the total amount Mateus spent on his vacation trip.",
+    "layout": "The activity consists of a description where Mateus is on a vacation trip, spending money on various activities. Below is an image showing the costs of different activities. The student will answer questions based on the prices.",
+    "answer": {
+      "A": "To answer correctly, the student needs to add the cost of the museum ticket (25 reais) and the zoo entry (40 reais). The correct answer is 65 reais.",
+      "B": "To answer correctly, the student needs to add the cost of the museum ticket (25 reais) and the amusement park ticket (50 reais). The correct answer is 75 reais."
+    }
+  }
+
+<html>
+<head></head>
+<body>
+  <div style="width: 800px; border: solid 1px; padding: 10px;">
+    <div class="activity">
+      <p exp="Mateus is on a vacation trip. The prices of different activities are shown in the image.">
+        Mateus is on vacation and he wants to know how much he has spent on different activities. Below is an image showing the costs of each activity.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image showing Mateus’s vacation activities.">
+      <img 
+        src="" 
+        alt="Illustration showing Mateus’s vacation activities, including a museum visit, zoo entry, and amusement park ticket."
+        style="width: 600px; height: 300px"
+        exp="Image showing the vacation activities with their prices."
+      />
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question asking for the total cost of the museum and zoo visits."><b>A)</b> What is the total cost of the museum and zoo visits?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total cost of the museum and zoo visits. Correct: 65."></div>
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question asking for the total cost of the museum and amusement park visits."><b>B)</b> What is the total cost of the museum and amusement park visits?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total cost of the museum and amusement park visits. Correct: 75."></div>
+    </div>
+  </div>
+</body>
+</html>

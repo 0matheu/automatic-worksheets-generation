@@ -1,0 +1,12 @@
+{
+    "level": "2nd year of fundamental",
+    "learning goals": "addition",
+    "theme": {
+        "en": "Art studio",
+        "pt": "Est\u00fadio de Arte"
+    },
+    "width-sheet": "800px",
+    "task": "observe images, link objects",
+    "temperature": 0.7,
+    "model": "ft:gpt-4.1-mini-2025-04-14:ufcg::C0Df7nCh"
+}

@@ -1,0 +1,81 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Apples Collected
+width-sheet: 800px
+task: observe images, write answer
+language: en
+
+
+{
+    "task": "To practice counting and addition skills by calculating the total number of apples Pedro has collected.",
+    "layout": "The activity consists of a description explaining that Pedro has already collected 8 apples and wants to know how many apples he will have if he adds 4 and 6 apples to his basket.",
+    "answer": {
+      "A": "To answer correctly, the student needs to add 4 apples to 8 apples. The correct answer is 12.",
+      "B": "To answer correctly, the student needs to add 6 apples to 8 apples. The correct answer is 14."
+    }
+  }
+
+  <html>
+  <head>
+    <style>
+      .container { 
+        width: 800px; 
+        border: solid 1px; 
+        padding: 10px; 
+        text-align: center; 
+        font-family: Arial, sans-serif; 
+      }
+      .question-container { 
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between; 
+        margin-bottom: 10px; 
+      }
+      .answer-box { 
+        width: 150px; 
+        height: 30px; 
+        border: 1px solid black; 
+        text-align: center; 
+        font-size: 16px; 
+      }
+      img { 
+        width: 120px; 
+        height: 70px; 
+        margin: 10px; 
+      }
+      .activity p { 
+        font-size: 18px; 
+        margin-bottom: 20px; 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="activity">
+        <p exp="Activity description explaining the scenario where Pedro is calculating the number of apples he has collected.">
+          Pedro has already collected 8 apples. He wants to know how many apples he will have if he adds 4 apples to his basket. Additionally, he wants to know how many apples he will have if he adds 6 apples to his basket.
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center;" exp="Div used to center the images of apples.">
+        <img src="" alt="8 apples" exp="Image showing 8 apples, which is the number of apples Pedro has already collected." />
+        <img src="" alt="12 apples" exp="Image showing 12 apples, which represents adding 4 apples." />
+        <img src="" alt="14 apples" exp="Image showing 14 apples, which represents adding 6 apples." />
+      </div>
+
+      <div class="question-container" exp="Question asking the student to calculate the total apples if Pedro adds 4 apples.">
+        <p exp="Question asking how many apples Pedro will have if he adds 4 apples to 8 apples.">
+          <b>A)</b> How many apples will Pedro have if he adds 4 apples to 8 apples?
+        </p>
+        <div class="answer-box" exp="Box where the student writes the result of adding 4 to 8. The correct answer is 12."></div>
+      </div>
+
+      <div class="question-container" exp="Question asking the student to calculate the total apples if Pedro adds 6 apples.">
+        <p exp="Question asking how many apples Pedro will have if he adds 6 apples to 8 apples.">
+          <b>B)</b> How many apples will Pedro have if he adds 6 apples to 8 apples?
+        </p>
+        <div class="answer-box" exp="Box where the student writes the result of adding 6 to 8. The correct answer is 14."></div>
+      </div>
+    </div>
+  </body>
+</html>

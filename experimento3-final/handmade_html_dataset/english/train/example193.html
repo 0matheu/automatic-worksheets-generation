@@ -1,0 +1,64 @@
+level: 2nd year fundamental
+learning_goals: addition, counting
+theme: jungle and bananas
+sheet_width: 600px
+task: observe image, write answer
+language: en
+
+{
+  "task":"The objective of this activity is for the student to count and add the number of bananas Mango collects in the jungle.",
+  "layout":"The activity is structured with a scenario description at the top, followed by an illustration representing the story context. Below the description and image, there are three questions prompting the student to solve simple addition problems and write the correct answers in the provided boxes.",
+  "answer":{
+    "A": "To correctly answer this question, the student must add 6 bananas Mango found with 1 more he picked up (6 + 1 = 7). The correct answer is 7.",
+    "B": "To correctly answer this question, the student must add 3 bananas from one tree with 2 more from another tree (3 + 2 = 5). The correct answer is 5.",
+    "C": "To correctly answer this question, the student must add another set of 3 bananas with 3 more (3 + 3 = 6). The correct answer is 6."
+  }
+}
+
+
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px; padding: 10px; text-align: left;"
+      exp="This div acts as the main container for the activity. It sets a fixed width of 600px with padding for spacing inside."
+    >
+      <div class="activity" style="width: 600px;">
+        <p
+          exp="This paragraph provides a clear description of the task. The student needs to solve the sums and match them with the correct answers."
+        >
+          Mango the monkey is gathering bananas in the jungle. He needs to count and add the bananas he finds. Solve each addition problem and write the correct answers in the provided boxes.
+        </p>
+
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+          <img src="" alt="Illustration of Mango the monkey counting bananas in the jungle" style="width: 300px; height: auto;"
+            exp="An image showing Mango the monkey surrounded by bananas and trees, helping students visualize the counting and addition task." />
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 15px;">
+          <div style="display: flex; align-items: center;">
+            <p style="margin-right: 10px;">A) Mango found 6 bananas and then picked up 1 more. How many bananas does he have now?</p>
+            <div style="width: 50px; height: 30px; border: 1px solid black; text-align: center;"
+              exp="Box where the student writes the total number of bananas. The correct answer is 7."
+            ></div>
+          </div>
+
+          <div style="display: flex; align-items: center;">
+            <p style="margin-right: 10px;">B) Mango spotted 3 bananas on one tree and 2 more on another tree. How many bananas are there in total?</p>
+            <div style="width: 50px; height: 30px; border: 1px solid black; text-align: center;"
+              exp="Box where the student writes the total number of bananas. The correct answer is 5."
+            ></div>
+          </div>
+
+          <div style="display: flex; align-items: center;">
+            <p style="margin-right: 10px;">C) Mango found another set of 3 bananas and then 3 more. How many bananas does he have in this group?</p>
+            <div style="width: 50px; height: 30px; border: 1px solid black; text-align: center;"
+              exp="Box where the student writes the total number of bananas. The correct answer is 6."
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

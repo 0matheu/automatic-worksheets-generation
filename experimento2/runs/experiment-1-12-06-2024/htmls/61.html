@@ -1,0 +1,41 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of glasses of milk and cookies in the image and calculating the total sum.",
+  "layout": "The HTML elements are organized with a div containing the sheet width, followed by a div containing the question description, an image of a cafeteria, and three paragraphs containing the questions. The image is centered in the div using flexbox, and the questions are listed below the image.",
+  "answer": "To correctly answer this activity, the student will have to: \n1) Count the number of glasses of milk (5) and the number of cookies (7) in the image and calculate the sum: 5 + 7 = 12. \n2) Identify the correct answer to the addition: 9 + 3 = 12. \n3) Add 8 to the smallest number to get 20: 12 + 8 = 20."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of the question the student will have to answer"
+        >
+          Observe the image below of a cafeteria and answer the questions:
+        </p>
+        <div
+          style="display: flex; justify-content: center"
+          exp="div used to center the image in the question"
+        >
+          <img
+            alt="image in a coloring book style of a cafeteria with 5 empty glasses on a tray, and also 7 cookies on another tray"
+            style="width: 600px; height: 300px"
+            exp="image that the student will have to count the number of glasses of milk and also the cookies, and finally add the two quantities"
+          />
+        </div>
+        <p>What is the sum of the glasses of milk with the cookies?</p>
+        <p>Which sum is correct?</p>
+        <p>What should be added to the smallest number to be equal to 20?</p>
+      </div>
+    </div>
+  </body>
+</html>
+```

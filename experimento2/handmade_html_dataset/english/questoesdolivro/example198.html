@@ -1,0 +1,65 @@
+level: 2nd year fundamental
+learning_goals: addition
+theme:counting drink packs
+sheet_width: 600px
+task: observe image, write answer
+language: en
+
+{
+  "task": "The objective of this activity is for the student to calculate the total number of drink packs on the shelf after adding the remaining ones.",
+  "layout": "The activity is structured with a scenario description at the top, followed by an illustration representing the problem. Below the image, there is a section for writing the final answer.",
+  "answer": "To correctly answer this activity, the student must add the existing drink packs to the additional 11  packs and write the total number in the answer box. The correct answer is 19 packs."
+}
+
+<html>
+  <head>
+    <style>
+      .container {
+        width: 600px;
+        border: solid 1px;
+        padding: 10px;
+        text-align: left;
+        background-color: white;
+      }
+      .activity {
+        width: 600px;
+      }
+      .question-box {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      .answer-box {
+        width: 100px;
+        height: 30px;
+        border: 1px solid black;
+        text-align: center;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" exp="This div acts as the main container for the activity. It sets a fixed width of 600px with padding for spacing inside.">
+      <div class="activity">
+        <p exp="This paragraph provides a clear description of the task. The student needs to calculate how many drink packs are on the shelf after Emma adds more.">
+          Emma is organizing drink packs on the shelf. She already placed 8 drink packs on the shelf and now she is adding 11 more. How many drink packs will be on the shelf in total?
+        </p>
+
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+          <img
+            src=""
+            alt="Illustration of Emma organizing drink packs on a shelf. A speech bubble asks how many drink packs there will be after adding two more."
+            style="width: 400px; height: auto;"
+            exp="This image visually represents the scenario where Emma adds 11 more drink packs to the 8 already placed on the shelf."
+          />
+        </div>
+
+        <div class="question-box">
+          <p>Write in the box below the total number of beverage containers after adding the remaining eleven </p>
+          <div class="answer-box" exp="Box where the student writes '19' as the total number of drink packs."></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+  

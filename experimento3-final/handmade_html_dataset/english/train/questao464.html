@@ -1,0 +1,93 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: STEM Camp
+width-sheet: 800px
+task: observe table, write answer
+language: en
+
+
+{
+  "task": "To practice counting and addition skills by calculating the total number of students in STEM camp groups.",
+  "layout": "The activity consists of a description at the top about the number of boys and girls in the Robotics and Coding groups. Below, there is a table showing the enrollments. The student will answer questions by adding values from the table.",
+  "answer": {
+    "A": "To answer correctly, the student must add the number of boys and girls in the Robotics group (10 + 15). Correct answer: 25 students.",
+    "B": "To answer correctly, the student must add the number of boys and girls in the Coding group (8 + 7). Correct answer: 15 students.",
+    "C": "To answer correctly, the student must add the total number of students in both groups (10 + 15 + 8 + 7). Correct answer: 40 students."
+  }
+}
+
+<html>
+<head>
+    <style>
+        .container {
+            width: 800px;
+            border: solid 1px;
+            padding: 10px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #6aa5db;
+            color: white;
+        }
+        .question-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .answer-box {
+            width: 100px;
+            height: 30px;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="activity">
+      <p exp="Eduardo is attending a STEM Camp with Robotics and Coding activities.">
+        Eduardo is participating in the STEM Camp. The table below shows how many boys and girls are in the Robotics and Coding groups.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Centered image showing students in the Robotics and Coding activities.">
+      <img 
+        src="" 
+        alt="Illustration showing Robotics and Coding groups. Robotics has 10 boys and 15 girls, Coding has 8 boys and 7 girls."
+        style="width: 600px; height: 300px"
+        exp="Image showing students participating in robotics and coding activities in the STEM camp."
+      />
+    </div>
+
+    <table exp="Table showing the number of boys and girls in each group.">
+        <tr><th>Group</th><th>Boys</th><th>Girls</th></tr>
+        <tr><td>Robotics</td><td>10</td><td>15</td></tr>
+        <tr><td>Coding</td><td>8</td><td>7</td></tr>
+    </table>
+
+    <div class="question-container">
+        <p><b>A)</b> How many students are there in the Robotics group?</p>
+        <div class="answer-box" exp="Box where the student writes the total for Robotics group. Correct: 25."></div>
+    </div>
+    <div class="question-container">
+        <p><b>B)</b> How many students are there in the Coding group?</p>
+        <div class="answer-box" exp="Box where the student writes the total for Coding group. Correct: 15."></div>
+    </div>
+    <div class="question-container">
+        <p><b>C)</b> What is the total number of students in the STEM Camp?</p>
+        <div class="answer-box" exp="Box where the student writes the grand total. Correct: 40."></div>
+    </div>
+  </div>
+</body>
+</html>

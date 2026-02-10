@@ -1,0 +1,95 @@
+```json
+{
+  "task": "The student will have to add the number of dogs that entered the circus with the number of dogs that were already in, understanding the concept of addition.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph that explains the task, and the bottom section contains a 2x2 grid with four images: an image of a circus tent, an image of 7 dogs entering the circus, an image of 5 dogs in the circus, and an image of 3 dogs also entering the circus. The images are placed in a specific layout to facilitate the student's understanding of the problem.",
+  "answer": "To answer this question correctly, the student needs to observe the images and identify the number of dogs in each and the operation that needs to be performed. The student needs to add the number of dogs that entered the circus (7 + 3) to the number of dogs that were already in the circus (5) to get the total number of dogs. The correct answer is 15 dogs."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing four images in a 2-line and 2-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 300px 300px;
+      grid-template-areas:
+        "img1 img2"
+        "img3 img4";
+    }
+
+    /* class used to place the first image of the dogs entering the circus in the first row and the second column */
+    .img1 {
+      grid-area: img2;
+    }
+
+    /* class used to place the second image of the dogs in the circus in the first row and the first column */
+    .img2 {
+      grid-area: img3;
+    }
+
+    /* class used to place the third image of the dogs also entering the circus in the second row and the first column */
+    .img3 {
+      grid-area: img1;
+    }
+
+    /* class used to place the fourth image of the circus tent in the second row and the second column */
+    .img4 {
+      grid-area: img4;
+    }
+
+    /* class used to give the size for the images of the activity */
+    img {
+      width: 390px;
+      height: 240px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the images below. Seven dogs are entering the circus, are you ready for the show? Add the number of dogs that entered the circus with the number of dogs that were already in, and write the result.
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="image of 7 dogs entering a circus tent"
+              exp="image that the student will have to identify that there are 7 dogs entering the circus tent, and that he will have to add the quantity of dogs in this image with the quantity of dogs in the image in the img2 and also with the img3"
+            />
+          </div>
+
+          <div class="img2">
+            <img
+              alt="image of 5 dogs inside a circus tent"
+              exp="image that the student will have to identify that there are 5 dogs inside the circus tent, and that he will have to add the quantity of dogs in this image with the quantity of dogs in the img1 and also with the img3"
+            />
+          </div>
+
+          <div class="img3">
+            <img
+              alt="image of 3 dogs also entering the same circus tent"
+              exp="image that the student will have to identify that there are 3 more dogs entering the same circus tent, and that he will have to add the quantity of dogs in this image with the quantity of dogs in the img2 and also with the img1"
+            />
+          </div>
+
+          <div class="img4">
+            <img
+              alt="image of an empty circus tent with the door open, receiving dogs"
+              exp="image that the student will have to identify that it is an empty circus tent, and that will have to be used to add the quantity of dogs in the other 3 images"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

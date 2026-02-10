@@ -1,0 +1,91 @@
+```json
+{
+  "task": "To practice counting and basic addition skills by counting the number of cacti and camels in two images and then calculating the total sum.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph that explains the task, and the bottom section contains a 2x2 grid layout with four cells. The first cell contains an image of 7 cacti in a desert, the second cell contains a plus sign, the third cell contains an image of 3 camels in a desert, and the fourth cell is an equal sign. The images are placed in a grid layout to facilitate counting and addition.",
+  "answer": "To answer correctly, the student needs to count the number of cacti in the first image (7) and the number of camels in the second image (3), add them together to get 10, and write the result in the fourth cell. The student needs to observe the images, count the elements, and perform a simple addition operation to get the correct answer."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing two images in a 2x2 layout, with a plus sign and an equal sign */
+    .container {
+      display: grid;
+      grid-template-columns: 350px 350px;
+      grid-template-rows: 350px 350px;
+      grid-template-areas:
+        "img1 img2"
+        "equal img2";
+    }
+
+    /* class used to place the first image of the cacti in the first cell of the first column */
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the image of the camels in the first cell of the second column */
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to place the image of the equal sign in the second cell of the first column */
+    .equal {
+      grid-area: equal;
+      margin-top: 150px;
+    }
+
+    /* class used to adjust the size of the equal sign image */
+    .equal img {
+      width: 150px;
+      height: 150px;
+    }
+
+    /* class used to adjust the size of the cacti and camel images */
+    img {
+      width: 350px;
+      height: 350px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Count the cacti and the camels in the figures below, add them, and write the result.
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="image in a coloring book style of 7 cacti in a desert landscape"
+              exp="image that the student will have to observe and count the 7 cacti present"
+            />
+          </div>
+
+          <div class="img2">
+            <img
+              alt="image in a coloring book style of 3 camels in a desert landscape"
+              exp="image that the student will have to observe and count the 3 camels present"
+            />
+          </div>
+
+          <div class="equal">
+            <img
+              src=""
+              alt="image of an equal sign in children's painting style"
+              exp="image that is just for the student to perform the sum and write the result"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

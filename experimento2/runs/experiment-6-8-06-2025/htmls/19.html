@@ -1,0 +1,84 @@
+```json
+{
+  "task": "The objective of the question is for the student to learn to count and perform basic addition by observing images and drawing the result.",
+  "layout": "The question is divided into a 2-line and 4-column grid. The first row contains the images of 3 dinosaurs, and the second row is empty. The images are placed in the first row across 3 columns. There is an image of a dinosaur in the first, second, and third columns of the first row. The images are placed in a specific layout to facilitate counting and drawing the sum.",
+  "answer": "To answer this question correctly, the student needs to observe the 3 dinosaur images and count the number of eggs in each image. Then, the student needs to add up the total number of eggs to get the correct answer. The student needs to draw the number of eggs represented by the sum of the 3 dinosaur images. The correct answer is 11 (2 eggs in the first image, 4 in the second, and 5 in the third)."
+}
+```
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three images in a 2-line and 4-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 200px 200px 200px;
+      grid-template-rows: 200px 200px;
+      grid-template-areas:
+        "img1 img2 img3"
+        "empty empty empty empty";
+    }
+
+    /* class used to place the first image of the dinosaurs in the first row and the first column*/
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the second image of the dinosaurs in the first row and the second column*/
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to place the third image of the dinosaurs in the first row and the third column*/
+    .img3 {
+      grid-area: img3;
+    }
+
+    /* class used to adjust the size of the images in the activity */
+    img {
+      width: 190px;
+      height: 190px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the images below and draw how many eggs in total all the dinosaurs are hatching.
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="Image in a children's drawing style of a dinosaur with 2 eggs in a nest in the style of a transparent bubble"
+              exp="image in which the student will have to observe that there are 2 eggs in the nest and draw 2 more"
+            />
+          </div>
+
+          <div class="img2">
+            <img
+              alt="Image in a children's drawing style of a dinosaur with 4 eggs in a nest in the style of a transparent bubble"
+              exp="image in which the student will have to observe that there are 4 eggs in the nest and not add any more"
+            />
+          </div>
+
+          <div class="img3">
+            <img
+              alt="Image in a children's drawing style of a dinosaur with 5 eggs in a nest in the style of a transparent bubble"
+              exp="image in which the student will have to observe that there are 5 eggs in the nest and not add any more"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

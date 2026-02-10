@@ -1,0 +1,58 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Stars in the Sky
+width-sheet: 800px
+task: observe images, write answer
+language: en
+
+
+
+{
+    "task": "To practice counting and addition skills by calculating the total number of stars in the sky.",
+    "layout": "The activity consists of a description explaining that there are already 10 stars visible in the sky and wants to know how many stars there will be if 5 and 8 more stars appear.",
+    "answer": {
+      "A": "To answer correctly, the student needs to add 5 stars to 10 stars. The correct answer is 15.",
+      "B": "To answer correctly, the student needs to add 8 stars to 10 stars. The correct answer is 18."
+    }
+  }
+
+  <html>
+  <head>
+    <style>
+      .container { width: 800px; border: solid 1px; padding: 10px; text-align: center; font-family: Arial, sans-serif; }
+      .question-container { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+      .answer-box { width: 150px; height: 30px; border: 1px solid black; text-align: center; font-size: 16px; }
+      img { width: 120px; height: 70px; margin: 10px; }
+      .activity p { font-size: 18px; margin-bottom: 20px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="activity">
+        <p exp="Activity description explaining the scenario where stars are appearing in the sky.">
+          There are already 10 stars visible in the sky. The observer wants to know how many stars there will be if 5 more stars appear. Additionally, they want to know how many stars there will be if 8 more stars appear.
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center;" exp="Div used to center the images of stars.">
+        <img src="" alt="10 stars" exp="Image showing 10 stars, which is the number of stars already visible in the sky." />
+        <img src="" alt="15 stars" exp="Image showing 15 stars, which represents adding 5 stars." />
+        <img src="" alt="18 stars" exp="Image showing 18 stars, which represents adding 8 stars." />
+      </div>
+
+      <div class="question-container" exp="Question asking the student to calculate the total stars if 5 more appear.">
+        <p exp="Question asking how many stars there will be if 5 more appear in the sky.">
+          <b>A)</b> How many stars will there be if 5 more appear in the sky?
+        </p>
+        <div class="answer-box" exp="Box where the student writes the result of adding 5 to 10. The correct answer is 15."></div>
+      </div>
+
+      <div class="question-container" exp="Question asking the student to calculate the total stars if 8 more appear.">
+        <p exp="Question asking how many stars there will be if 8 more appear in the sky.">
+          <b>B)</b> How many stars will there be if 8 more appear in the sky?
+        </p>
+        <div class="answer-box" exp="Box where the student writes the result of adding 8 to 10. The correct answer is 18."></div>
+      </div>
+    </div>
+  </body>
+</html>

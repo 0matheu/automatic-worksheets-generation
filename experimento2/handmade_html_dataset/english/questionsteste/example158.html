@@ -1,0 +1,72 @@
+level: 2nd year of fundamental
+learning_goals: addition, counting
+theme: apple orchard
+sheet_width: 600px
+task: observe images, write answer
+language: en
+
+{
+  "task": "To practice counting and addition skills by counting apples on a tree and adding a specific number to the count, then illustrating the new total.",
+  "layout": "The activity consists of a 1-line layout organized into two columns, with two images placed side by side. The first image shows a tree with apples, and the second image is an empty tree for the student to illustrate the new total after addition.",
+  "answer": "To correctly answer this activity, the student needs to count the apples on the first tree (7 apples), then add 5 more apples to the count (7 + 5 = 12). The student should illustrate 12 apples on the second tree."
+}
+
+  
+<html>
+  <head></head>
+  <style>
+   
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px;
+      grid-template-rows: 300px;
+      grid-template-areas:
+        "tree1 tree2";
+    }
+
+    .tree1 {
+      grid-area: tree1;
+    }
+
+    .tree2 {
+      grid-area: tree2;
+    }
+
+    img {
+      width: 280px;
+      height: 280px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px; padding: 10px;"
+      exp="This container sets the main layout for the activity and organizes the images side by side."
+    >
+      <div class="activity" style="width: 600px;">
+        <p
+          exp="This paragraph provides the activity description, instructing the student to count the apples and add more to the count."
+        >
+          Observe the apple tree in the image. Count the apples, add 5 more to the count, and illustrate the new total in the second image.
+        </p>
+
+        <div class="container">
+          <div class="tree1" exp="Div containing the first image of the apple tree with apples.">
+            <img
+              src=""
+              alt="Image in children's drawing style of an apple tree containing 7 apples."
+              exp="Illustration where the student observes and counts 7 apples on the tree."
+            />
+          </div>
+
+          <div class="tree2" exp="Div containing the second image of an empty apple tree.">
+            <img
+              src=""
+              alt="Image in children's drawing style of an apple tree without any apples."
+              exp="Illustration where the student will draw 12 apples after adding 7 + 5."
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

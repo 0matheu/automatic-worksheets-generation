@@ -1,0 +1,48 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Ships at the Port
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+  "task": "At the city's port, 42 ships arrived in the morning and 39 more in the afternoon. How many ships docked at the port that day?",
+  "layout": "Includes a picture of a busy harbor with ships, and a square box below the image where students write the total.",
+  "answer": "To solve this, the student must add 42 and 39. The total number of ships is 81. Correct answer: 81."
+}
+
+<html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: solid 1px;" 
+         exp="Main layout container used to frame the activity in a clean and organized way.">
+
+      <p exp="Problem prompt asking the student to add the number of ships arriving in the morning and afternoon.">
+        At the city's port, 42 ships arrived in the morning and 39 more in the afternoon. How many ships docked at the port that day?
+      </p>
+
+      <div style="display: flex; justify-content: center;" 
+           exp="Centers the image showing the maritime setting.">
+        <img 
+          src="" 
+          alt="Port scene with cargo ships and cranes in operation." 
+          style="width: 600px; height: 350px;" 
+          exp="The picture shows a harbor with ships, cranes, and containers, creating a real-world scenario of ship arrival management."
+        />
+      </div>
+
+      <p style="text-align: center; margin-top: 20px;" 
+         exp="Instruction for the student to place their sum in the box below.">
+        Write the sum here:
+      </p>
+
+      <div style="display: flex; justify-content: center;">
+        <div style="width: 100px; height: 100px; border: 1px solid black;" 
+             exp="Space to write the final sum: 42 + 39 = 81.">
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

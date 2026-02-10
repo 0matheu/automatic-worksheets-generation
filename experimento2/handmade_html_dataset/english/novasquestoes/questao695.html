@@ -1,0 +1,125 @@
+level: 2nd year of fundamental
+learning_goals: addition, counting
+theme: Fruit Basket
+width-sheet: 800px
+task: observe images, write answer
+language: en
+
+
+{
+  "task": "The student will learn to count and add fruits by observing the basket image and connecting it to the shelf image that has the most fruits. Then, they must add the quantity from the basket and the selected shelf and write the total in the answer box.",
+  "layout": "The layout includes a 2-row grid. At the top center is an image of a fruit basket containing 6 fruits. Below it, three shelf images are displayed side-by-side, each holding a different quantity of fruits (3, 5, and 2). The student must identify the shelf with the most fruits and visually match it with the basket. Below the shelves, a centered 100px by 100px square answer box is provided for the student to write the sum.",
+  "answer": "To solve this, the student should: 1) Count the number of fruits in the basket (6 fruits); 2) Identify the shelf with the most fruits (5 fruits); 3) Add these values (6 + 5 = 11); 4) Write the total (11) in the square answer box below the shelves. This activity helps reinforce basic addition and comparison skills."
+}
+  
+
+<html>
+  <head></head>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 280px 200px 150px;
+      gap: 10px;
+      justify-items: center;
+      align-items: center;
+      width: 800px;
+      margin: auto;
+    }
+
+    .basket {
+      grid-column: 1 / span 3;
+      text-align: center;
+    }
+
+    .basket img {
+      width: 250px;
+      height: 180px;
+      border: 1px solid;
+      object-fit: contain;
+    }
+
+    .shelf {
+      width: 200px;
+      height: 150px;
+      border: 1px solid black;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .shelf img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .answer-container {
+      grid-column: 2 / 3;
+      text-align: center;
+    }
+
+    .answer-box {
+      width: 100px;
+      height: 100px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 24px;
+    }
+  </style>
+
+  <body>
+    <div style="width: 800px; margin: auto; border: 1px solid black; padding: 20px;">
+      <p style="text-align: center;" exp="Instruction that guides the student through the task.">
+        Look at the fruit basket at the top. Count how many fruits are inside. Then look at the shelves below. Find the shelf with the most fruits and add both numbers. Write the total in the box.
+      </p>
+
+      <div class="container">
+        <div class="basket" exp="Div containing the fruit basket image, centered in the top row.">
+          <img
+            src=""
+            alt="Wicker basket with 6 colorful fruits (apples, bananas, oranges)"
+            exp="This image shows a fruit basket containing 6 fruits. The student must count them and use this number for the addition."
+          />
+        </div>
+
+        <div class="shelf" exp="Shelf A with 3 fruits.">
+          <img
+            src=""
+            alt="Shelf with 3 fruits (2 bananas and 1 orange)"
+            exp="Image representing Shelf A. It contains only 3 fruits, which is not the correct choice."
+          />
+        </div>
+
+        <div class="shelf" exp="Shelf B with 5 fruits. This is the correct one to use.">
+          <img
+            src=""
+            alt="Shelf with 5 fruits (3 apples, 2 pears)"
+            exp="Shelf B image with 5 fruits. When added to the basket's 6, the total is 11. This is the correct shelf to use."
+          />
+        </div>
+
+        <div class="shelf" exp="Shelf C with 2 fruits.">
+          <img
+            src=""
+            alt="Shelf with 2 fruits (1 banana, 1 apple)"
+            exp="Shelf C has the fewest fruits and is not the correct option."
+          />
+        </div>
+
+        <div class="answer-container" exp="Container that includes the prompt and the answer box.">
+          <p exp="Reminder for the student to add and write the answer.">
+            Write the total number of fruits (basket + fullest shelf):
+          </p>
+          <div class="answer-box" exp="Box where student should write the answer. Correct answer is 11."></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

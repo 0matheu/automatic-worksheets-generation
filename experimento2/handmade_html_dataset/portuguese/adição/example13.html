@@ -1,0 +1,108 @@
+nivel: 2 ano fundamental 
+assunto: adição, contagem 
+tematica: números
+largura-folha: 600px 
+layout: equações, colunas
+
+Nessa questão será praticado o princípio da adição. A questão consiste de
+uma equação de soma, sendo 23 + 9, que o aluno deverá resolver, e procurar o
+resultado correto nas opções fornecidas pela questão, sendo elas, 31, 32 e 33.
+As opções são organizadas em duas colunas, sendo a primeira com a equação, e a
+segunda com as opções. O aluno deverá resolver 23 + 9 = 32, sendo 32, ele deve
+ligar com a opção 32.
+
+<html>
+  <head></head>
+  <style>
+    /* classe que é utilizada para organizar a equação e as opções para o ligar com a resposta correta */
+    .container {
+      display: grid;
+      grid-template-columns: 200px 200px;
+      grid-template-rows: 150px 150px 150px;
+      grid-template-areas:
+        "vazio1 n1"
+        "soma n2"
+        "vazio2 n3";
+    }
+
+    /* classe que é utilizada para estilizar o texto das equações */
+    .container p {
+      font-size: larger;
+      font-weight: bolder;
+    }
+
+    /* classe que é utilizada para posicionar a equação no layout da atividade, sendo na segunda célula da primeira coluna */
+    .soma {
+      grid-area: soma;
+    }
+
+    /* classe que é utilizada para posicionar a equação no layout da atividade, sendo na primeira célula da segunda coluna */
+    .n1 {
+      grid-area: n1;
+    }
+
+    /* classe que é utilizada para posicionar a equação no layout da atividade, sendo na segunda célula da segunda coluna */
+    .n2 {
+      grid-area: n2;
+    }
+
+    /* classe que é utilizada para posicionar a equação no layout da atividade, sendo na terceira célula da segunda coluna */
+    .n3 {
+      grid-area: n3;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe a soma abaixo e ligue com o numeral que representa o resultado
+          correto da soma.
+        </p>
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <div class="container">
+            <div class="soma">
+              <p
+                exp="Equação que o aluno terá que resolver e procurar o resultado nas opções n1 n2 e n3"
+              >
+                23 + 9
+              </p>
+            </div>
+
+            <div class="n1">
+              <p
+                exp="Primeira opção de resposta que o aluno deverá procurar, o resultado está errado"
+              >
+                31
+              </p>
+            </div>
+
+            <div class="n2">
+              <p
+                exp="Segunda opção de resposta que o aluno deverá procurar, o resultado está correto"
+              >
+                32
+              </p>
+            </div>
+
+            <div class="n3">
+              <p
+                exp="Terceira opção de resposta que o aluno deverá procurar, o resultado está errado"
+              >
+                33
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Books on a Shelf
+width-sheet: 800px
+task: observe images, write answer
+language: en
+
+{
+   
+    "task": "To practice counting and addition skills by calculating the total number of books Ana has on her shelf.",
+    "layout": "The activity consists of a description explaining that Ana has already placed 7 books on the shelf and wants to know how many books she will have if she adds 3 and 5 books to the shelf.",
+    "answer": {
+      "A": "To answer correctly, the student needs to add 3 books to 7 books. The correct answer is 10.",
+      "B": "To answer correctly, the student needs to add 5 books to 7 books. The correct answer is 12."
+    }
+  }
+
+  <html>
+  <head>
+    <style>
+      .container { 
+        width: 800px; 
+        border: solid 1px; 
+        padding: 10px; 
+        text-align: center; 
+        font-family: Arial, sans-serif; 
+      }
+      .question-container { 
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between; 
+        margin-bottom: 10px; 
+      }
+      .answer-box { 
+        width: 150px; 
+        height: 30px; 
+        border: 1px solid black; 
+        text-align: center; 
+        font-size: 16px; 
+      }
+      img { 
+        width: 120px; 
+        height: 70px; 
+        margin: 10px; 
+      }
+      .activity p { 
+        font-size: 18px; 
+        margin-bottom: 20px; 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="activity">
+        <p exp="Activity description explaining the scenario where Ana is calculating the number of books on her shelf.">
+          Ana has already placed 7 books on her shelf. She wants to know how many books she will have if she adds 3 books to the shelf. Additionally, she wants to know how many books she will have if she adds 5 books to the shelf.
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center;" exp="Div used to center the images of books.">
+        <img src="" alt="7 books" exp="Image showing 7 books, which is the number of books Ana has already placed on the shelf." />
+        <img src="" alt="10 books" exp="Image showing 10 books, which represents adding 3 books." />
+        <img src="" alt="12 books" exp="Image showing 12 books, which represents adding 5 books." />
+      </div>
+
+      <div class="question-container" exp="Question asking the student to calculate the total books if Ana adds 3 books.">
+        <p exp="Question asking how many books Ana will have if she adds 3 books to 7 books.">
+          <b>A)</b> How many books will Ana have if she adds 3 books to 7 books?
+        </p>
+        <div class="answer-box" exp="Box where the student writes the result of adding 3 to 7. The correct answer is 10."></div>
+      </div>
+
+      <div class="question-container" exp="Question asking the student to calculate the total books if Ana adds 5 books.">
+        <p exp="Question asking how many books Ana will have if she adds 5 books to 7 books.">
+          <b>B)</b> How many books will Ana have if she adds 5 books to 7 books?
+        </p>
+        <div class="answer-box" exp="Box where the student writes the result of adding 5 to 7. The correct answer is 12."></div>
+      </div>
+    </div>
+  </body>
+</html>
+

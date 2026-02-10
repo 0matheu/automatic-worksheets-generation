@@ -1,0 +1,95 @@
+nivel: 2º ano fundamental
+assunto: adição, contagem
+tematica: material escolar
+largura-folha: 850px
+layout: duas imagens, linhas e colunas
+
+
+Essa questão pratica os conceitos de contagem e adição.
+A questão consiste de duas imagens, uma contendo 5 
+lapis e outra contendo 3 borrachas, o dever do aluno e efetuar
+a soma da quantidade de borrachas com lapis, sendo 5 + 3 = 8.
+
+<html>
+  <head></head>
+
+  <style>
+    /* classe utilizada para organizar o layout da pagina, que consiste de duas imagens, um sinal de mais, um sinal de igual e um espaço para o aluno escrever o resultado*/
+    .container {
+      display: grid;
+      grid-template-columns: 150px 150px 150px 150px 150px;
+      grid-template-rows: 150px;
+      grid-template-areas:
+        "img1 mais img2 igual result"
+    }
+
+    /* classe utilizada para posicionar a imagem de 5 lapis, posicionada na primeira célula da primeira coluna */
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* classe utilizada para posicionar a imagem de 3 borrachas, posicionada na primeira célula da terceira coluna */
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* classe utilizada para posicionar o sinal de igual, posicionado na primeira célula da quarta coluna */
+    .igual {
+      grid-area: igual;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* classe utilizada para posicionar o sinal de mais, posicionado na primeira célula da segunda coluna */
+    .mais {
+      grid-area: mais;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* classe utilizada para posicionar uma caixa que servirá para o aluno escrever o resultado da soma, sendo localizada na primeira célula da quinta coluna */
+    .result {
+      grid-area: result;
+      border: solid 1px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 850px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Conte a quantidade de lapis e de borrachas das imagens abaixo e escreva a soma:
+        </p>
+
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="imagem no estilo de desenho de pintar infantil de 5 lapis separados"
+              exp="imagem que o aluno terá que observar e contar quantos lapis estão presentes"
+            />
+          </div>
+
+          <div class="mais" exp="sinal de mais que representa a soma da quantidades"><p>+</p></div>
+
+          <div class="img2">
+            <img 
+              alt="imagem no estilo de desenho de pintar infantil de 3 borrachas separadas"
+              exp="imagem que o aluno terá que observar e contar quantas borrachas estão presentes"
+            />
+          </div>
+
+          <div class="igual" exp="sinal de igual que representa o resultado da soma"><p>=</p></div>
+
+          <div class="result" exp="caixa que servirá para o aluno escrever o resultado da soma"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

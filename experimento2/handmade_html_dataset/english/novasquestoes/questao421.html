@@ -1,0 +1,69 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: School Book Reading
+width-sheet: 800px
+
+task: observe images, write answer
+language: en
+
+{ "task": "To practice counting and addition skills by adding up the number of pages in the books a student read and answering questions about the total pages.", "layout": "The activity consists of a description explaining that the student needs to add the number of pages of the books they read to find the total number of pages.", "answer": { "A": "To answer correctly, the student needs to add the number of pages in the books (120 pages, 80 pages, and 150 pages). The correct answer is 350 pages.", "B": "To answer correctly, the student needs to write down the total number of pages. The correct answer is 350 pages." } }
+
+
+<html>
+  <head>
+    <style>
+      .container {
+        width: 800px;
+        border: solid 1px;
+        padding: 10px;
+        text-align: center;
+      }
+      .question-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+      .answer-box {
+        width: 150px;
+        height: 30px;
+        border: 1px solid black;
+        text-align: center;
+      }
+      img {
+        width: 120px;
+        height: 70px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="activity">
+        <p exp="Activity description explaining the books read by the student.">
+          A student read the following number of pages from their books:
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center;" exp="Div used to center the images of books.">
+        <img src="" alt="Image of a book with 120 pages" exp="Image of a book with 120 pages." />
+        <img src="" alt="Image of a book with 80 pages" exp="Image of a book with 80 pages." />
+        <img src="" alt="Image of a book with 150 pages" exp="Image of a book with 150 pages." />
+      </div>
+
+      <div class="question-container" exp="Question asking the student to calculate the total number of pages read.">
+        <p exp="Question asking how many pages the student read in total.">
+          <b>A)</b> How many pages did the student read in total?
+        </p>
+        <div class="answer-box" exp="Box for the student to write the total number of pages."></div>
+      </div>
+
+      <div class="question-container" exp="Question asking the student to calculate the pages of the second book.">
+        <p exp="Question asking how many pages were there in the second book.">
+          <b>B)</b> How many pages were there in the second book?
+        </p>
+        <div class="answer-box" exp="Box for the student to write the number of pages of the second book."></div>
+      </div>
+    </div>
+  </body>
+</html>

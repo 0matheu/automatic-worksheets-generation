@@ -1,0 +1,10 @@
+{
+    "level": "2\u00ba ano do ensino fundamental",
+    "learning goals": "divis\u00e3o",
+    "theme": "Acampamento na Floresta",
+    "width-sheet": "800px",
+    "task": "observe images, link objects",
+    "language": "pt-br",
+    "temperature": 0.7,
+    "model": "ft:gpt-4.1-2025-04-14:ufcg::CikEQZns"
+}

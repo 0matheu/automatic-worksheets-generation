@@ -1,0 +1,101 @@
+level: 2nd year of fundamental
+learning_goals: addition, counting
+theme: animals
+sheet_width: 600px
+task: solve the equations, write answer
+language: en
+
+{
+  "task": "Perform addition operations and match the results to the corresponding images of animals.",
+  "layout": "The activity is divided into a 3-line and 2-column layout. The left column contains three equations, and the right column contains three images of animals. Each equation is aligned with its corresponding image.",
+  "answer": {
+    "equation1": "6 + 4 = 10 (match with the image of 10 birds)",
+    "equation2": "3 + 5 = 8 (match with the image of 8 rabbits)",
+    "equation3": "7 + 6 = 13 (match with the image of 13 turtles)"
+  }
+}
+
+
+<html>
+  <head></head>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px;
+      grid-template-rows: 200px 200px 200px;
+      grid-template-areas:
+        "equation1 img1"
+        "equation2 img2"
+        "equation3 img3";
+    }
+
+    .equation1 {
+      grid-area: equation1;
+    }
+    .equation2 {
+      grid-area: equation2;
+    }
+    .equation3 {
+      grid-area: equation3;
+    }
+
+    .img1 {
+      grid-area: img1;
+    }
+    .img2 {
+      grid-area: img2;
+    }
+    .img3 {
+      grid-area: img3;
+    }
+
+    img {
+      width: 180px;
+      height: 180px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px; padding: 10px;"
+      exp="Container for the activity layout with a fixed width of 600px."
+    >
+      <div class="activity" style="width: 600px;">
+        <p
+          exp="Instructions for the student to perform addition and match results to images."
+        >
+          Perform the addition in each equation and match the result to the image with the corresponding number of animals.
+        </p>
+
+        <div class="container">
+          <p class="equation1" exp="Equation for the student to solve (6 + 4).">6 + 4</p>
+          <p class="equation2" exp="Equation for the student to solve (3 + 5).">3 + 5</p>
+          <p class="equation3" exp="Equation for the student to solve (7 + 6).">7 + 6</p>
+
+          <div class="img1" exp="Image of 10 birds for the student to match with equation 6 + 4 = 10.">
+            <img
+              src=""
+              alt="Image of 10 birds flying in the sky. In a cartoon style"
+              exp="Illustration of 10 birds, corresponding to the result of the first equation."
+            />
+          </div>
+
+          <div class="img2" exp="Image of 8 rabbits for the student to match with equation 3 + 5 = 8.">
+            <img
+              src=""
+              alt="Image of 8 rabbits playing in the grass. In a cartoon style""
+              exp="Illustration of 8 rabbits, corresponding to the result of the second equation."
+            />
+          </div>
+
+          <div class="img3" exp="Image of 13 turtles for the student to match with equation 7 + 6 = 13.">
+            <img
+              src=""
+              alt="Image of 13 turtles near a pond. In a cartoon style""
+              exp="Illustration of 13 turtles, corresponding to the result of the third equation."
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

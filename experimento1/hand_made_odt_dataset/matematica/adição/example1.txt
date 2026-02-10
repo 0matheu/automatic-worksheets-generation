@@ -1,0 +1,1 @@
+Nessa questão será trabalhada a adição. O aluno terá que contar a quantidade de maçãs de cada um dos lados e efetuar a soma, e escrever o numeral que é o resultado da soma ao lado do sinal de igual.

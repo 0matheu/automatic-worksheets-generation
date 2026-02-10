@@ -1,0 +1,50 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: buying clothes
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+  "task": "To practice counting and basic addition skills by calculating the total cost of clothes Lucas wants to buy, reinforcing students' ability to count and perform simple arithmetic operations.",
+  "layout": "The activity consists of a description of the scenario at the top, providing the necessary context. Below the description, a centered image illustrates the items Lucas wants to buy in a clothing store. Finally, a question is presented asking students to determine the total cost of the items by adding their prices together.",
+  "answer": "To answer correctly, the student needs to count the price of the first clothing item (55 reais) and the price of the second clothing item (45 reais), and then add them together to get the total cost of the clothes. The correct answer is 100 reais. The student must perform the calculation and record the result in the corresponding answer box."
+}
+
+<html>
+  <head>
+    <style>
+      .answer-box {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="width: 800px; border: solid 1px" exp="div containing the sheet width, which in this case is 800px">
+      <div class="activity" style="width: 800px">
+        <p exp="Activity description, containing the explanation of what the student will have to do to answer the activity correctly">
+          Lucas has money to spend and wants to buy a sweater that costs 55 reais and a shorts that costs 45 reais.
+        </p>
+        <p><b>a.</b> How much do both clothing items cost together?</p>
+      </div>
+
+      <div style="display: flex; justify-content: center" exp="div used to center the image in the activity">
+        <img
+          src=""
+          alt="Illustration showing Lucas choosing a sweater that costs 55 reais and a shorts that costs 45 reais in a clothing store."
+          style="width: 600px; height: 300px"
+          exp="Image where the student will have to observe the clothes chosen by Lucas and add their prices together: 55 + 45 = 100."
+        />
+      </div>
+
+      <p exp="description of where the student will write the answer" style="text-align: center;">
+        Write in the box below the total cost of the clothes:
+      </p>
+      <div style="display: flex; justify-content: center;" exp="div used to center the answer box">
+        <div class="answer-box" exp="Box where the student writes the total cost of the clothes. The correct answer is 100."></div>
+      </div>
+    </div>
+  </body>
+</html>

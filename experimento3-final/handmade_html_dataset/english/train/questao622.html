@@ -1,0 +1,59 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Fruits
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+    "task": "To help students develop addition skills using a real-life shopping scenario. Ariel buys apples and bananas, and the student must calculate the total fruits.",
+    "layout": "An image centered on the page shows 6 apples and 8 bananas in a basket. Two questions are placed below with side-by-side answer boxes.",
+    "answer": {
+      "A": {
+        "instruction": "Add the number of apples and bananas: 6 + 8 = 14.",
+        "correct_answer": "14"
+      },
+      "B": {
+        "instruction": "Add 3 more fruits to the previous total: 14 + 3 = 17.",
+        "correct_answer": "17"
+      }
+    }
+  }
+
+  
+  <html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: solid 1px; padding: 10px;">
+      <div class="activity">
+        <p exp="Ariel is buying fruits. He picked some apples and bananas at the market.">
+          Ariel went to the fruit market. He picked 6 apples and 8 bananas to take home. The image below shows the fruits in his basket.
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Centered image showing apples and bananas.">
+        <img 
+          src="" 
+          alt="Illustration showing 6 apples and 8 bananas in a basket."
+          style="width: 600px; height: 300px"
+          exp="Image with fruits: 6 apples on the left and 8 bananas on the right."
+        />
+      </div>
+
+      <p exp="Instruction asking the student to add the fruits.">
+        Look at the fruits in Ariel's basket and answer the questions:
+      </p>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question asking for the total number of fruits."><b>A)</b> How many fruits did Ariel buy in total?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box where the student should write '14'."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question asking the total if he buys 3 more oranges."><b>B)</b> If Ariel buys 3 more oranges, how many fruits will he have in total?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box where the student should write '17'."></div>
+      </div>
+    </div>
+  </body>
+</html>

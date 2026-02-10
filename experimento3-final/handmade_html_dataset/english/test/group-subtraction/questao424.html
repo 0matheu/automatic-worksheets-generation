@@ -1,0 +1,57 @@
+level: 2nd year of fundamental
+learning goals: counting, addition
+theme: Elevator Floor Calculation
+width-sheet: 800px
+task: observe images, write answer
+language: en
+
+
+{
+    "task": "To practice counting and addition skills by calculating floor numbers when adding floors to Murilo's destination.",
+    "layout": "The activity consists of a description explaining that Murilo needs to go to the 9th floor and also wants to know what the floor number will be when adding 2 and 4 floors to his destination.",
+    "answer": {
+      "A": "To answer correctly, the student needs to add 2 to the 9th floor. The correct answer is 11.",
+      "B": "To answer correctly, the student needs to add 4 to the 9th floor. The correct answer is 13."
+    }
+  }
+ 
+  
+<html>
+  <head>
+    <style>
+      .container { width: 800px; border: solid 1px; padding: 10px; text-align: center; }
+      .question-container { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+      .answer-box { width: 150px; height: 30px; border: 1px solid black; text-align: center; }
+      img { width: 120px; height: 70px; margin: 10px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="activity">
+        <p exp="Descrição da atividade explicando o cenário onde Murilo precisa calcular os andares somando andares ao seu destino.">
+          Murilo está em um elevador e precisa ir para o 9º andar. O número no botão que ele precisa apertar é 9. Murilo também quer saber qual seria o número do botão se ele somar 2 andares ao seu destino. Além disso, ele quer saber qual seria o número do botão se ele somar 4 andares ao seu destino.
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center;" exp="Div usada para centralizar as imagens dos botões do elevador.">
+        <img src="" alt="Botão de elevador com o número 9" exp="Botão de elevador mostrando o número 9, que é o destino de Murilo." />
+        <img src="" alt="Botão de elevador com o número 11" exp="Botão de elevador mostrando o número 11, que representa somar 2 andares." />
+        <img src="" alt="Botão de elevador com o número 13" exp="Botão de elevador mostrando o número 13, que representa somar 4 andares." />
+      </div>
+
+      <div class="question-container" exp="Pergunta pedindo ao estudante qual seria o destino de Murilo se ele somasse 2 andares.">
+        <p exp="Pergunta sobre qual andar Murilo iria se somasse 2 andares ao 9º andar.">
+          <b>A)</b> Qual andar Murilo iria se somasse 2 andares ao 9º andar?
+        </p>
+        <div class="answer-box" exp="Caixa onde o estudante escreve o resultado de 9 + 2. A resposta correta é 11."></div>
+      </div>
+
+      <div class="question-container" exp="Pergunta pedindo ao estudante qual seria o destino de Murilo se ele somasse 4 andares.">
+        <p exp="Pergunta sobre qual andar Murilo iria se somasse 4 andares ao 9º andar.">
+          <b>B)</b> Qual andar Murilo iria se somasse 4 andares ao 9º andar?
+        </p>
+        <div class="answer-box" exp="Caixa onde o estudante escreve o resultado de 9 + 4. A resposta correta é 13."></div>
+      </div>
+    </div>
+  </body>
+</html>

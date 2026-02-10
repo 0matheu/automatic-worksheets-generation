@@ -1,0 +1,67 @@
+level: 2nd year of fundamental  
+learning_goals: counting, addition
+theme:  Concert Ticket Purchase
+width-sheet: 800px  
+task: observe image, write answer
+language: en
+
+
+{
+  
+    "task": "To practice counting and basic addition skills by calculating the total amount spent on concert tickets.",
+    "layout": "The activity consists of a description explaining that the student bought 2 tickets for a concert, one costing 40 reais and another costing 50 reais. The student will calculate the total amount spent on tickets.",
+    "answer": {
+        "A": "To answer correctly, the student needs to add the prices of the two tickets (40 + 50). The correct answer is 90 reais."
+    }
+}
+
+<html>
+    <head>
+        <style>
+            .container {
+                width: 800px;
+                border: solid 1px;
+                padding: 10px;
+                text-align: center;
+            }
+            .question-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+            .answer-box {
+                width: 150px;
+                height: 30px;
+                border: 1px solid black;
+                text-align: center;
+            }
+            img {
+                width: 120px;
+                height: 120px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="activity">
+                <p exp="Activity description explaining the concert ticket purchase scenario.">
+                    A student bought two tickets for a concert, one costing 40 reais and the other 50 reais. 
+                    How much did the student spend in total on the tickets?
+                </p>
+            </div>
+
+            <div style="display: flex; justify-content: center;">
+                <img src="" alt="Image of concert tickets costing 40 reais and 50 reais." exp="Images of the concert tickets purchased by the student"/>
+            </div>
+
+            <div class="question-container">
+                <p exp="Question asking the total amount spent on concert tickets.">
+                    <b>A)</b> What is the total amount spent on the two concert tickets?
+                </p>
+                <div class="answer-box" exp="Box where the student writes the total amount spent. The correct answer is 90 reais."></div>
+            </div>
+        </div>
+    </body>
+</html>

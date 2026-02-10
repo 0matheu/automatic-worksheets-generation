@@ -1,0 +1,66 @@
+level: 2nd year of fundamental
+learning_goals: Counting
+theme: Ice Cream Customers
+width-sheet: 800px
+task: observe images, write answer
+language: en
+
+
+{
+  "task": "To help the student practice counting by observing two different moments at an ice cream stand. This task reinforces the student's ability to count and compare quantities from different points in time.",
+  "layout": "The layout features two images of an ice cream stand at different moments, side by side. Below each image, there are questions prompting the student to count how many children are in line at each moment. The images are designed to visually support the counting task, and the questions guide the student to make comparisons. The answer boxes are small and positioned directly below each question to provide a clear and simple space for the student to write their answers.",
+  "answer": "For Moment 1, the student must count the 8 children in line and write the number 8 in the box. For Moment 2, the student must count the 5 children and write the number 5. This exercise helps the student practice counting and reinforces the concept of comparing different quantities."
+}
+
+
+
+
+<html>
+  <head></head>
+  <body>
+
+    <!-- 1. Counting Ice Cream Customers -->
+    <div style="width: 800px; border: solid 1px; padding: 16px; margin-bottom: 40px;"
+         exp="Container that holds the full activity for question 1. It keeps all elements organized and spaced.">
+
+      <p exp="Introduction to the context. Children are asked to compare the number of people at an ice cream stand in two different moments.">
+        There is an ice cream stand in the park. Look at the number of people in line in the morning and then in the afternoon.
+      </p>
+
+      <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 20px;"
+           exp="Displays the two comparison images side by side for visual observation and counting.">
+
+        <div>
+          <img src="" alt="Ice cream stand with several children in line in the morning" style="width: 350px; height: 250px;"
+               exp="Shows the ice cream stand in the morning, with a few children visibly in line. Helps with visual counting for part A." />
+          <p style="text-align: center;" exp="Caption indicating the time of day for the first image.">Morning</p>
+        </div>
+
+        <div>
+          <img src="" alt="Ice cream stand with more children in line in the afternoon" style="width: 350px; height: 250px;"
+               exp="Shows the same stand in the afternoon, now with a larger group in line. Used for visual counting in part B." />
+          <p style="text-align: center;" exp="Caption indicating the time of day for the second image.">Afternoon</p>
+        </div>
+
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;"
+           exp="Question A and its answer box are laid out in a horizontal line for a side-by-side visual experience.">
+        <p exp="Question A asks the student to count the children in the first image (morning)."><b>A)</b> How many people were in line in the morning?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;"
+             exp="Box for writing the number of children observed in the morning image. Expected to write a digit between 1–20 depending on the image."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between; align-items: center;"
+           exp="Question B and its answer box are also aligned side-by-side for consistent visual design.">
+        <p exp="Question B asks for the count of children in the afternoon image."><b>B)</b> How many people were in line in the afternoon?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;"
+             exp="Box for writing the number of children observed in the afternoon image. The number should reflect the visual count in the second image."></div>
+      </div>
+
+    </div>
+
+   
+
+  </body>
+</html>

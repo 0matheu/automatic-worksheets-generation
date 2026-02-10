@@ -1,0 +1,118 @@
+level: 2nd year of fundamental  
+learning_goals: counting, comparison  
+theme: Music Album Preferences  
+width-sheet: 800px  
+task: observe table, write answer  
+language: en
+
+{
+    "task": "To practice counting and comparison skills by analyzing the number of votes for music albums and answering questions about the most popular album and total votes.",
+    "layout": "The activity consists of a description of the scenario at the top, where the student will read the table with votes for different music albums, and then answer the related questions.",
+    "answer": {
+        "A": "To answer correctly, the student needs to identify the albums listed in the table. The correct answer is 'Rock Album, Pop Album, Jazz Album, Classical Album'.",
+        "B": "To answer correctly, the student needs to count how many votes the Pop Album received. The correct answer is 15 votes.",
+        "C": "To answer correctly, the student needs to count how many votes the Jazz Album received. The correct answer is 10 votes.",
+        "D": "To answer correctly, the student needs to add the total number of votes for all albums. The correct answer is 50 votes."
+    }
+}
+
+<html>
+    <head>
+        <style>
+            .container {
+                width: 800px;
+                border: solid 1px;
+                padding: 10px;
+                text-align: center;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: center;
+            }
+            th {
+                background-color: #6aa5db;
+                color: white;
+            }
+            .question-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+            .answer-box {
+                width: 100px;
+                height: 30px;
+                border: 1px solid black;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+      <div class="container">
+        
+        <div class="activity">
+          <p exp="Activity description explaining the voting scenario for music albums.">
+            Students voted for their favorite music albums. The votes were recorded as follows:
+          </p>
+        </div>
+
+        <table exp="Table displaying the music album votes.">
+            <tr>
+                <th>Album</th>
+                <th>Votes</th>
+            </tr>
+            <tr>
+                <td>Rock Album</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Pop Album</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Jazz Album</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Classical Album</td>
+                <td>13</td>
+            </tr>
+        </table>
+
+        <div class="question-container">
+            <p exp="Question asking for the albums listed in the table.">
+                <b>A)</b> What albums are listed in the table?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the albums listed. The correct answer is 'Rock Album, Pop Album, Jazz Album, Classical Album'."></div>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for the number of votes the Pop Album received.">
+                <b>B)</b> How many votes did the Pop Album receive?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the number of votes the Pop Album received. The correct answer is 15."></div>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for the number of votes the Jazz Album received.">
+                <b>C)</b> How many votes did the Jazz Album receive?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the number of votes the Jazz Album received. The correct answer is 10."></div>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for the total number of votes received.">
+                <b>D)</b> How many votes were received in total?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the total number of votes. The correct answer is 50 votes."></div>
+        </div>
+        
+      </div>
+    </body>
+</html>

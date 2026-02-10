@@ -1,0 +1,50 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Monkeys in the Jungle
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+    "task": "In the jungle, 15 monkeys were playing on the trees yesterday, and 20 more joined them today.",
+    "layout": "This activity presents a jungle where monkeys are playing on the trees. The image shows monkeys having fun swinging on branches. The student will add the number of monkeys playing to find the total.",
+    "answer": {
+      "Question": "To answer correctly, the student must add the 15 monkeys from yesterday and the 20 that joined today. The correct answer is 35 monkeys."
+    }
+  }
+  
+
+
+<html>
+<head></head>
+<body>
+  <div style="width: 800px; border: solid 1px black; padding: 10px;" exp="Main container that holds all elements of the jungle monkey counting activity.">
+
+    <div class="activity">
+      <p exp="Narrative presenting the playful context of monkeys in the jungle to engage the student in a counting challenge.">
+        In the jungle, 15 monkeys were playing on the trees yesterday, and 20 more joined them today.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin: 20px 0;" exp="Wrapper to center the jungle image and provide visual context for the story.">
+      <img 
+        src="" 
+        alt="Illustration of monkeys swinging on jungle trees." 
+        style="width: 600px; height: 300px;"
+        exp="Colorful illustration showing monkeys hanging and playing on tree branches with a bright jungle background, helping children visualize the scenario."
+      />
+    </div>
+
+    <p style="text-align: center;" exp="Instruction prompting the student to solve the addition and write the total number of monkeys.">
+      How many monkeys were playing in total? Write your answer in the box below:
+    </p>
+
+    <div style="display: flex; justify-content: center;" exp="Div used to align the answer box centrally for better accessibility.">
+      <div style="width: 100px; height: 100px; border: 1px solid black;" 
+           exp="Empty box where the student writes their answer. Expected result: 35 monkeys.">
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

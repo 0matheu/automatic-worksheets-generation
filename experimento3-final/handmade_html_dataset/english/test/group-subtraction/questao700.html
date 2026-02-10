@@ -1,0 +1,125 @@
+level: 2nd year of fundamental
+learning goals: addition, counting
+theme: school backpack
+width-sheet: 800px
+task: observe images, link items
+language: en
+
+{
+  "task": "Look at the backpack image and match it with the locker that has the most items. Then, add the items together and write the total.",
+  "exp": "The backpack has 3 notebooks. There are three locker images: Locker A has 4, Locker B has 6, and Locker C has 2. The student must pick Locker B (6 notebooks) and add 3 + 6 = 9. They should write the number 9 in the box.",
+  "layout": "The layout shows a backpack at the top, and three lockers side by side below it. Each locker has a different number of notebooks. The large answer box is centered below all the images.",
+  "answer": "The correct response is 9. The student must count the notebooks in the backpack and add them to the locker with the most (3 + 6)."
+}
+  
+
+<html>
+  <head></head>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 280px 200px 150px;
+      gap: 10px;
+      justify-items: center;
+      align-items: center;
+      width: 800px;
+      margin: auto;
+    }
+
+    .backpack {
+      grid-column: 1 / span 3;
+      text-align: center;
+    }
+
+    .backpack img {
+      width: 250px;
+      height: 180px;
+      border: 1px solid;
+      object-fit: contain;
+    }
+
+    .locker {
+      width: 200px;
+      height: 150px;
+      border: 1px solid black;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .locker img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .answer-container {
+      grid-column: 2 / 3;
+      text-align: center;
+    }
+
+    .answer-box {
+      width: 100px;
+      height: 100px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 24px;
+    }
+  </style>
+
+  <body>
+    <div style="width: 800px; margin: auto; border: 1px solid black; padding: 20px;">
+      <p style="text-align: center;" exp="Instrução que explica ao aluno o que observar e fazer.">
+        Observe a imagem da mochila. Conte o número de cadernos dentro. Depois, combine com o armário que tem mais cadernos. Some as duas quantidades e escreva o total no quadro abaixo.
+      </p>
+
+      <div class="container">
+        <div class="backpack" exp="Esta div contém a imagem da mochila. Está centralizada na linha superior.">
+          <img
+            src=""
+            alt="Mochila em estilo desenho animado com 3 cadernos coloridos saindo"
+            exp="Esta imagem mostra uma mochila de estudante com 3 cadernos visíveis. O aluno deve contar esses cadernos."
+          />
+        </div>
+
+        <div class="locker" exp="Imagem do Armário A, que contém 4 cadernos. O aluno deve observar e comparar.">
+          <img
+            src=""
+            alt="Armário com 4 cadernos em uma prateleira"
+            exp="Imagem representando o Armário A. Contém 4 cadernos empilhados."
+          />
+        </div>
+
+        <div class="locker" exp="Imagem do Armário B, que contém 6 cadernos. Este é o correto para combinar.">
+          <img
+            src=""
+            alt="Armário com 6 cadernos"
+            exp="Imagem representando o Armário B. Contém 6 cadernos e deve ser combinado com a mochila."
+          />
+        </div>
+
+        <div class="locker" exp="Imagem do Armário C, com 2 cadernos.">
+          <img
+            src=""
+            alt="Armário com 2 cadernos"
+            exp="Imagem representando o Armário C. Tem a menor quantidade de cadernos."
+          />
+        </div>
+
+        <div class="answer-container" exp="Esta seção contém as instruções e o quadro de resposta.">
+          <p exp="O aluno é lembrado de realizar a soma e escrever o total no quadro.">
+            Escreva o número total de cadernos (mochila + armário com mais cadernos):
+          </p>
+          <div class="answer-box" exp="Quadro onde o aluno escreverá a resposta (deve ser 9)."></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

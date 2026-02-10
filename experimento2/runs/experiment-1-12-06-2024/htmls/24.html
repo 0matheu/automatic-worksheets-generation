@@ -1,0 +1,87 @@
+```json
+{
+  "task": "The student will practice counting and basic addition skills by connecting the correct number of cups of coffee and additional sugar sachets to the image that represents the total sum.",
+  "layout": "The HTML elements are organized with a div containing the sheet width, followed by a div containing the question description, and a grid container with three columns and one row. The grid container contains five items: an empty space, an image of coffee cups, a plus sign, an image of sugar sachets, and a drawing area. The items are positioned using CSS grid template areas.",
+  "answer": "To answer correctly, the student needs to observe the image of coffee cups (3 cups) and the image of sugar sachets (2 sachets), add the two quantities together to get 5, and then connect the 5 coffee cups with the sugar sachets. The student can also draw 5 coffee cups in the provided area to represent the sum."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to draw the activity layout, which in this case consists of a drawing area for the student to connect the images */
+    .container {
+      display: grid;
+      grid-template-columns: 250px 250px 250px;
+      grid-template-rows: 300px;
+      grid-template-areas:
+        "empty1 coffee cups"
+        "sugar cups drawing"
+        "empty2 cups drawing";
+    }
+
+    /* class used to position the image of coffee cups in the first row and the first column*/
+    .coffee {
+      grid-area: coffee;
+    }
+
+    /* class used to position the image of sugar sachets in the second row and the first column*/
+    .sugar {
+      grid-area: sugar;
+    }
+
+    /* class used to position the image in which the student will have to draw the quantity of coffee cups present in the image, in the second row and the third column*/
+    .drawing {
+      grid-area: drawing;
+      border: 1px solid;
+    }
+
+    /* class used to adjust the size of the images in the activity */
+    img {
+      width: 230px;
+      height: 230px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the image and connect the quantity of coffee cups with the
+          additional sugar sachets that represent the sum.
+        </p>
+
+        <div class="container">
+          <div class="empty1"></div>
+
+          <div class="coffee">
+            <img
+              alt="image in a children's painting style containing 3 coffee cups on a serving tray"
+              exp="image in which the student will have to observe that there are 3 coffee cups and connect with the image with the sugar sachets"
+            />
+          </div>
+
+          <div class="sugar">
+            <img
+              alt="image in a children's painting style containing 2 sugar sachets, also on a tray"
+              exp="image in which the student will have to observe that there are 2 sugar sachets and connect with the image of the coffee cups"
+            />
+          </div>
+
+          <div class="drawing">
+            <p
+              exp="area in which the student will have to draw the quantity of cups of coffee present in the image, and also the one of the main additions of the activity"
+            ></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

@@ -1,0 +1,50 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Wildlife Expedition
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+    "task": "To practice counting and basic addition skills by calculating the total number of animals Lucas observed during his wildlife expedition.",
+    "layout": "The activity consists of a description where Lucas is observing different animals during his expedition. Below is an image showing the animals and their numbers. The student will answer questions based on the observations.",
+    "answer": {
+      "A": "To answer correctly, the student needs to add the number of lions (3) and giraffes (2). The correct answer is 5 animals.",
+      "B": "To answer correctly, the student needs to add the number of lions (3) and zebras (4). The correct answer is 7 animals."
+    }
+  }
+
+  
+  <!DOCTYPE html>
+<html>
+<head></head>
+<body>
+  <div style="width: 800px; border: solid 1px; padding: 10px;">
+    <div class="activity">
+      <p exp="Lucas is observing wildlife during his expedition. The animals he observed are shown in the image.">
+        Lucas is in the wild observing animals. Below is an image showing the animals and the number of each type he saw.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image showing Lucas’s wildlife expedition.">
+      <img 
+        src="" 
+        alt="Illustration showing lions, giraffes, and zebras Lucas observed on his expedition."
+        style="width: 600px; height: 300px"
+        exp="Image showing the animals Lucas observed and their numbers."
+      />
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question asking for the total number of lions and giraffes."><b>A)</b> What is the total number of lions and giraffes Lucas observed?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total number of lions and giraffes. Correct: 5."></div>
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question asking for the total number of lions and zebras."><b>B)</b> What is the total number of lions and zebras Lucas observed?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total number of lions and zebras. Correct: 7."></div>
+    </div>
+  </div>
+</body>
+</html>

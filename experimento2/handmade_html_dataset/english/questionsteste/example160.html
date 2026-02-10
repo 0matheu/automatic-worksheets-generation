@@ -1,0 +1,73 @@
+level: 2nd year fundamental
+learning_goals: addition, counting
+theme: fruit salad
+sheet_width: 600px
+task: observe image, write answer
+language: en
+
+{
+  "task": "To practice counting and basic addition skills by observing an image and counting the number of banana and apple slices, learning to count and perform simple arithmetic operations.",
+  "layout": "The layout is divided into four main sections. At the top, there is a paragraph explaining the task with clear instructions. Below this, a centered image of a bowl of fruit salad is displayed. Following the image, there are three paragraphs posing questions about the number of banana slices and apple slices in the salad.",
+  "answer": "To answer correctly, the student needs to observe the image and count the number of banana slices (10) and write this number in the first answer box for question A. Then, the student must count the number of apple slices (4) and write it in the second answer box for question B. Finally, the student needs to add the number of banana and apple slices (10 + 4) and write the total sum (14) in the third answer box for question C. Each answer must be written in the corresponding box."
+}
+
+  
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="Container with the main activity layout, with a fixed width of 600px."
+    >
+      <div class="activity" style="width: 600px">
+        <p
+          exp="Activity description explaining the task for the student to complete."
+        >
+          Observe the image of the fruit salad and answer the questions:
+        </p>
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="Div used to center the image of the fruit salad in the activity."
+        >
+          <img
+            src=""
+            alt="Image of a bowl of fruit salad containing 10 slices of banana and 4 slices of apple."
+            style="width: 400px; height: 400px"
+            exp="Image where the student counts banana and apple slices."
+          />
+        </div>
+
+        <div style="display: flex; align-items: center; justify-content: flex-start; margin-bottom: 10px;">
+          <p exp="Question asking the student to count how many banana slices are present" style="margin-right: 10px;">
+            A) How many banana slices are in the fruit salad?
+          </p>
+          <div
+            style="width: 100px; height: 40px; border: 1px solid black;"
+            exp="Box for the student to write the number of banana slices. The correct answer is 10."
+          ></div>
+        </div>
+
+        <div style="display: flex; align-items: center; justify-content: flex-start; margin-bottom: 10px;">
+          <p exp="Question asking the student to count how many apple slices are present" style="margin-right: 10px;">
+            B) How many apple slices are in the fruit salad?
+          </p>
+          <div
+            style="width: 100px; height: 40px; border: 1px solid black;"
+            exp="Box for the student to write the number of apple slices. The correct answer is 4."
+          ></div>
+        </div>
+
+        <div style="display: flex; align-items: center; justify-content: flex-start;">
+          <p exp="Question asking for the sum of banana and apple slices" style="margin-right: 10px;">
+            C) How many slices are there in total? Add the banana and apple slices.
+          </p>
+          <div
+            style="width: 100px; height: 40px; border: 1px solid black;"
+            exp="Box for the student to write the total number of slices. The correct answer is 14."
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+```json
+{
+  "task": "Addition of numbers by identifying the correct numeral representation in an image.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph describing the task, and the bottom section contains a 2x2 grid with four images. The grid is organized with two rows and two columns, with one image in each cell.",
+  "answer": "To answer correctly, the student needs to identify which image represents the sum of the two numbers and circle it. The correct image is the third one, which shows a blackboard with the sum 24."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing four images in a 2x2 grid */
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 300px 300px;
+      grid-template-areas:
+        "n1 n2"
+        "n3 n4";
+    }
+
+    /* class used to place the image of the first addition in the first cell of the first column */
+    .n1 {
+      grid-area: n1;
+    }
+
+    /* class used to place the image of the second addition in the first cell of the second column */
+    .n2 {
+      grid-area: n2;
+    }
+
+    /* class used to place the image that the student will have to identify in the third cell of the first column */
+    .n3 {
+      grid-area: n3;
+    }
+
+    /* class used to place the image of the fourth addition in the fourth cell of the second column */
+    .n4 {
+      grid-area: n4;
+    }
+
+    /* class used to adjust the size of the images in the activity */
+    img {
+      width: 360px;
+      height: 240px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the images below, which represent additions, and identify the image that has the correct numeral representation of the sum and circle it.
+        </p>
+
+        <div class="container">
+          <div class="n1">
+            <img
+              alt="Image in a coloring book style of a page with the sum 13 + 7"
+              exp="image that the student will have to identify that the sum is 13 + 7 and that the result is 20, being the image n3 the correct one"
+            />
+          </div>
+
+          <div class="n2">
+            <img
+              alt="Image in a coloring book style of a page with the sum 15 + 9"
+              exp="image that the student will have to identify that the sum is 15 + 9 and that the result is 24, being the image n3 the correct one"
+            />
+          </div>
+
+          <div class="n3">
+            <img"
+              alt="Image in a coloring book style of a page with the sum 13 + 11"
+              exp="image that the student will have to identify that the sum is 13 + 11 and that the result is 24, being the image n3 the correct one"
+            />
+          </div>
+
+          <div class="n4">
+            <img
+              alt="Image in a coloring book style of a page with the sum 5 + 3"
+              exp="image that the student will have to identify that the sum is 5 + 3 and that the result is 8, being the image n3 the correct one"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

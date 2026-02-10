@@ -1,0 +1,110 @@
+```json
+{
+  "task": "The student will learn to add quantities by matching the correct image to the sum.",
+  "layout": "The HTML elements are organized with a div containing the sheet width, followed by a div containing the question description, and then a grid container with three columns and two rows. The grid container contains an image of a cafeteria, three sum images, and three result images, placed in a specific layout to facilitate matching.",
+  "answer": "To answer correctly, the student needs to calculate the total quantity for each sum image and match it with the correct result image. For example, for the sum image 2 + 3, the student needs to add 2 and 3 to get 5, and then match it with the image that has 5 balls. The correct matches are: sum1 with res3, sum2 with res1, and sum3 with res2."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three images in a specific pattern for the student to match the sum image with the image that has the correct quantity */
+    .container {
+      display: grid;
+      grid-template-columns: 250px 250px 250px;
+      grid-template-rows: 200px 200px;
+      grid-template-areas:
+        "cafe1 cafe2 cafe3"
+        "res1 res2 res3";
+    }
+
+    /* class used to place the image of the cafeteria in the first, adjusting it to the left */
+    .cafe {
+      grid-area: cafe1;
+      margin-left: 50px;
+    }
+
+    /* class used to place the second image in the first row and second column */
+    .cafe2 {
+      grid-area: cafe2;
+    }
+
+    /* class used to place the third image in the first row and third column */
+    .cafe3 {
+      grid-area: cafe3;
+    }
+
+    /* class used to place the first image of the sums in the second row and first column */
+    .sum1 {
+      grid-area: res1;
+    }
+
+    /* class used to place the second image of the sums in the second row and second column */
+    .sum2 {
+      grid-area: res2;
+    }
+
+    /* class used to place the third image of the sums in the second row and third column */
+    .sum3 {
+      grid-area: res3;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of the question that the student will have to answer"
+        >
+          Observe the image of the cafeteria and the sum images, and match each sum with the image that has the correct quantity.
+        </p>
+
+        <div class="container">
+          <div class="cafe">
+            <img
+              src=""
+              alt="image in a coloring book style of a children's painting of a cafeteria with 10 trays, being 5 trays with balls, and 5 trays without balls"
+              style="width: 300px; height: 200px"
+              exp="image that the student will have to look at and identify how many balls are present in the trays, being 5"
+            />
+          </div>
+
+          <div class="sums">
+            <div class="sum1">
+              <img
+                src=""
+                alt="image in children's painting style of 5 trays with balls in a cafeteria scenario"
+                style="width: 200px; height: 200px"
+                exp="image that the student will have to look at and identify how many trays are present, being 5"
+              />
+            </div>
+
+            <div class="sum2">
+              <img
+                src=""
+                alt="image in children's painting style of 3 trays with balls in a cafeteria scenario"
+                style="width: 200px; height: 200px"
+                exp="image that the student will have to look at and identify how many trays are present, being 3"
+              />
+            </div>
+
+            <div class="sum3">
+              <img
+                src=""
+                alt="image in children's painting style of 4 trays with balls in a cafeteria scenario"
+                style="width: 200px; height: 200px"
+                exp="image that the student will have to look at and identify how many trays are present, being 4"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

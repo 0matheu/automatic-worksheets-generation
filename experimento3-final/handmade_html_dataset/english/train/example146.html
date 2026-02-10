@@ -1,0 +1,53 @@
+level: 2nd year fundamental
+learning_goals: addition, logical reasoning, problem-solving
+theme: daycare enrollment
+sheet_width: 600px
+task: observe image, write answer
+language: en
+
+
+{
+  "task": "The objective of this activity is for the student to calculate the total number of babies enrolled in a daycare by adding the number of babies already enrolled with the number of new enrollments.",
+  "layout": "The activity is organized with a scenario description at the top, followed by an illustration of a daycare and babies playing. Below the image, a question prompts the student to calculate the total number of babies enrolled.",
+  "answer": "To correctly answer this activity, the student will add the initial number of babies enrolled (45) and the new enrollments (12). The correct answer is '57 babies.'"
+}
+
+  
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px; padding: 10px;"
+      exp="This div acts as the main container for the activity. It sets a fixed width of 600px and uses padding for spacing inside the container."
+    >
+      <div class="activity" style="width: 600px;">
+        <p
+          exp="This paragraph provides a clear description of what the student is required to do. In this case, they need to calculate the total number of babies enrolled in the daycare by adding the numbers provided."
+        >
+          A daycare currently has 45 babies enrolled. Today, 12 more babies were
+          enrolled. How many babies are now enrolled in total?
+        </p>
+
+        <div
+          style="display: flex; justify-content: center; margin-bottom: 20px;"
+          exp="This div contains the main image and ensures it is centered within the activity layout."
+        >
+          <img
+            src=""
+            alt="Illustration of a daycare with babies playing."
+            style="width: 400px; height: auto;"
+            exp="This image visually represents the daycare scenario described in the task and helps contextualize the problem."
+          />
+        </div>
+
+        <div style="display: flex; align-items: center; margin-top: 10px;">
+          <p style="margin-right: 10px;">How many babies are now enrolled in the daycare?</p>
+          <div
+            style="width: 100px; height: 30px; border: 1px solid black;"
+            exp="Box where the student writes the total number of babies enrolled in the daycare. The correct answer is '57.'"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

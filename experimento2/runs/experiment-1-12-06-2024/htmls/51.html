@@ -1,0 +1,98 @@
+```json
+{
+  "task": "To practice basic addition skills by counting the total number of flowers Maria and her mother have and drawing the correct number of flowers in their garden.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph that explains the task, and the bottom section contains a 2x3 grid with four images: an image of Maria and her mother with flowers, and three images of flower gardens. The grid is laid out as follows: the Maria and her mother image spans the first two columns of the first row, and the three garden images are placed in the three columns of the second row.",
+  "answer": "To answer this question correctly, the student needs to: 1) count the number of flowers in the Maria and her mother image (5 flowers Maria received as a gift), 2) count the number of flowers in the garden image (7 flowers), 3) add the two numbers together to find the total number of flowers (5 + 7 = 12), and 4) draw 12 flowers in the garden image. The correct answer is 12."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three images in a 2-line and 3-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 380px 380px 380px;
+      grid-template-rows: 300px 200px;
+      grid-template-areas:
+        "img1 img1 img2"
+        "img3 img4 img5";
+    }
+
+    /* class used to place the image of Maria and her mother in the first row and the first two columns */
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the image of the garden in the second row and the first column */
+    .img2 {
+      grid-area: img3;
+    }
+
+    /* class used to place the image of the garden in the second row and the second column */
+    .img3 {
+      grid-area: img4;
+    }
+
+    /* class used to place the image of the garden in the second row and the third column */
+    .img4 {
+      grid-area: img5;
+    }
+
+    /* class used to set the size of the images in the activity */
+    img {
+      width: 370px;
+      height: 190px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Maria received 5 flowers as a gift and also has the flower vase with
+          5 flowers, and her mother gave her the flowers in the image, how many
+          flowers in total did Maria have? Draw all the flowers in Maria's
+          garden.
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="image in a coloring book style of a child with an adult, and a vase with 5 flowers, also receiving 5 other flowers"
+              exp="image where the student will have to count the total of flowers, being 10 and 5, summing 15 flowers in total"
+            />
+          </div>
+
+          <div class="img2">
+            <img
+              alt="image in a coloring book style of a garden with 5 flowers"
+              exp="image in which the student will have to count the 5 flowers"
+            />
+          </div>
+
+          <div class="img3">
+            <img
+              alt="image in a coloring book style of a garden with 2 flowers"
+              exp="image in which the student will have to count the 2 flowers"
+            />
+          </div>
+
+          <div class="img4">
+            <img
+              alt="image in a coloring book style of a garden with 3 flowers"
+              exp="image in which the student will have to count the 3 flowers"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

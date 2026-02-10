@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head></head>
+  <style>
+    /* Classe que será usada para organizar as imagens do Leo e do aquário, além da operação de adição */
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px;
+      grid-template-rows: 300px 300px;
+      grid-template-areas:
+        "leo aquarium"
+        "sum sum";
+    }
+
+    /* Classe usada para posicionar a imagem do Leo, na primeira linha e primeira coluna */
+    .leo {
+      grid-area: leo;
+    }
+
+    /* Classe usada para posicionar a imagem do aquário, na primeira linha e segunda coluna */
+    .aquarium {
+      grid-area: aquarium;
+    }
+
+    /* Classe usada para posicionar a imagem da soma das adições, na segunda linha e primeira coluna */
+    .sum {
+      grid-area: sum;
+      text-align: center;
+      font-size: larger;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="Div contendo a largura da folha, que neste caso é de 600px."
+    >
+      <div class="activity" style="width: 600px">
+        <p
+          exp="Descrição da atividade, contendo a explicação do que o aluno precisará fazer para responder corretamente."
+        >
+          Leo, o leão, está nadando debaixo d'água e vê 7 peixes. Leo também está
+          passando por um aquário que contém 5 peixes. Conte o número total de
+          peixes que Leo está vendo debaixo d'água.
+        </p>
+
+        <div class="container">
+          <div
+            class="leo"
+            exp="Div usada para ajustar a imagem do Leo na primeira linha e primeira coluna."
+          >
+            <img
+              src=""
+              alt="Imagem de Leo, o leão, nadando debaixo d'água, com um balão de fala dizendo 'Eu vejo 7 peixes'."
+              style="width: 300px; height: 300px"
+              exp="Imagem na qual o aluno deve observar que Leo vê 7 peixes."
+            />
+          </div>
+
+          <div
+            class="aquarium"
+            exp="Div usada para ajustar a imagem do aquário na primeira linha e segunda coluna."
+          >
+            <img
+              src=""
+              alt="Imagem de um aquário contendo 5 peixes, com um espaço vazio para adicionar mais 7 peixes."
+              style="width: 300px; height: 300px"
+              exp="Imagem na qual o aluno deve contar 5 peixes e adicionar mais 7."
+            />
+          </div>
+
+          <p
+            class="sum"
+            exp="Parágrafo usado para que o aluno realize a soma dos peixes na visão do Leo e no aquário."
+          >
+            Realize a soma dos peixes que Leo vê e dos peixes no aquário e escreva o resultado:
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

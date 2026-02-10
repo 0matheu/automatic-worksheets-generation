@@ -1,0 +1,114 @@
+level: 2nd year of fundamental  
+learning_goals: counting, comparison  
+theme: Sports Team Voting  
+width-sheet: 800px  
+task: observe table, write answer  
+language: en
+
+{
+    "task": "To practice counting and comparison skills by analyzing the number of votes for different sports teams and answering questions about the most popular team and total votes.",
+    "layout": "The activity consists of a description at the top, where the student will read the table with votes for different sports teams, and then answer the related questions.",
+    "answer": {
+        "A": "To answer correctly, the student needs to identify the teams listed in the table. The correct answer is 'Football Team, Basketball Team, Volleyball Team'.",
+        "B": "To answer correctly, the student needs to count how many votes the Football Team received. The correct answer is 20 votes.",
+        "C": "To answer correctly, the student needs to count how many votes the Basketball Team received. The correct answer is 15 votes.",
+        "D": "To answer correctly, the student needs to add the total number of votes for all teams. The correct answer is 55 votes."
+    }
+}
+
+<html>
+    <head>
+        <style>
+            .container {
+                width: 800px;
+                border: solid 1px;
+                padding: 10px;
+                text-align: center;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: center;
+            }
+            th {
+                background-color: #6aa5db;
+                color: white;
+            }
+            .question-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+            .answer-box {
+                width: 100px;
+                height: 30px;
+                border: 1px solid black;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+      <div class="container">
+        
+        <div class="activity">
+          <p exp="Activity description explaining the scenario where students voted for their favorite sports teams.">
+            A group of students voted for their favorite sports teams. The results are recorded below in the table:
+          </p>
+        </div>
+
+        <table exp="Table displaying the sports team votes.">
+            <tr>
+                <th>Team</th>
+                <th>Votes</th>
+            </tr>
+            <tr>
+                <td>Football Team</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Basketball Team</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Volleyball Team</td>
+                <td>20</td>
+            </tr>
+        </table>
+
+        <div class="question-container">
+            <p exp="Question asking for the teams listed in the table.">
+                <b>A)</b> What teams are listed in the table?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the teams listed. The correct answer is 'Football Team, Basketball Team, Volleyball Team'."></div>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for the number of votes the Football Team received.">
+                <b>B)</b> How many votes did the Football Team receive?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the number of votes the Football Team received. The correct answer is 20."></div>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for the number of votes the Basketball Team received.">
+                <b>C)</b> How many votes did the Basketball Team receive?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the number of votes the Basketball Team received. The correct answer is 15."></div>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for the total number of votes received.">
+                <b>D)</b> How many votes were received in total?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the total number of votes. The correct answer is 55 votes."></div>
+        </div>
+        
+      </div>
+    </body>
+</html>

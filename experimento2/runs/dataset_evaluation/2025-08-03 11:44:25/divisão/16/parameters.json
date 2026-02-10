@@ -1,0 +1,12 @@
+{
+    "level": "2nd year of fundamental",
+    "learning goals": "division",
+    "theme": {
+        "en": "Camp Forest",
+        "pt": "Acampamento na Floresta"
+    },
+    "width-sheet": "800px",
+    "task": "observe image, write answer",
+    "temperature": 0.5,
+    "model": "ft:gpt-4.1-mini-2025-04-14:ufcg::C0Df7nCh"
+}

@@ -1,0 +1,55 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Buying Puzzle Games
+width-sheet: 800px
+task: observe text, write answer
+language: en
+
+{
+    "task": "To develop counting and basic addition skills by calculating the total cost of two puzzles purchased by Marta.",
+    "layout": "The activity consists of a description of the scenario at the top, providing necessary context. Below the description, the student will read the problem and answer the question about the total cost in the provided answer box.",
+    "answer": "To answer correctly, the student needs to multiply the price of one puzzle (32 reais) by 2. The correct answer is 64 reais."
+}
+
+<html>
+    <head></head>
+    <style>
+        .question-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        .answer-box {
+            width: 80px;
+            height: 30px;
+            border: 1px solid black;
+            text-align: center;
+            margin-left: 10px;
+        }
+    </style>
+    </head>
+    <body>
+      <div
+        style="width: 800px; border: solid 1px; padding: 10px;"
+        exp="div containing the sheet width, which in this case is 800px"
+      >
+        <div class="activity">
+          <p
+            exp="Activity description, containing the explanation of what the student will have to do to answer the activity correctly"
+          >
+            Marta bought two puzzles for her children. Each puzzle cost 32 reais.
+          </p>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking students to calculate the total amount Marta spent.">
+                <b>A)</b> How much did Marta pay for the two puzzles?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the total amount spent. The correct answer is 64 reais."></div> reais.
+        </div>
+
+      </div>
+    </body>
+</html>

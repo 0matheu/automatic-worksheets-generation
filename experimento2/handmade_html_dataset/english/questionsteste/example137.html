@@ -1,0 +1,64 @@
+level: 2nd year fundamental
+learning_goals: counting, addition, logical reasoning
+theme: Robots and Gears
+sheet_width: 600px
+task: observe image, write answer
+language: en
+
+
+{
+  "task": "The objective of this activity is for the student to count the number of robots and gears in the image and calculate the total number of items.",
+  "layout": "The activity is organized with a description at the top introducing the robot theme. Below this, a centered image displays robots and gears as visual references. Following the image, there are three questions asking the student to count the robots, count the gears, and calculate the total, with blank boxes for answers next to each question.",
+  "answer": "To correctly answer this activity, the student needs to: 1) count the number of robots (4), 2) count the number of gears (6), and 3) write the total number of items (10), which is the sum of robots and gears."
+}
+
+  
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px; padding: 10px;"
+      exp="This container sets the layout for the activity with a fixed width and spacing."
+    >
+      <div class="activity" style="width: 600px">
+        <p exp="Initial description of the activity">
+          Robots and gears are working together! Observe the image below and answer the questions:
+        </p>
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+          <img
+            src=""
+            alt="Image showing 4 robots and 6 gears. In a coloring book style."
+            style="width: 400px; height: auto;"
+            exp="Image showing robots and gears for the student to count and calculate the total."
+          />
+        </div>
+
+        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+          <p style="margin-right: 10px;">A) How many robots are there?</p>
+          <div
+            style="width: 50px; height: 30px; border: 1px solid black;"
+            exp="Box for the student to write the number of robots (4)."
+          ></div>
+        </div>
+
+        <div style="display: flex; align-items: center; margin-bottom: 10px;">
+          <p style="margin-right: 10px;">B) How many gears are there?</p>
+          <div
+            style="width: 50px; height: 30px; border: 1px solid black;"
+            exp="Box for the student to write the number of gears (6)."
+          ></div>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; margin-bottom: 10px;">
+          <p style="margin-right: 10px;">
+            C) What is the total number of robots and gears together?
+          </p>
+          <div
+            style="width: 50px; height: 30px; border: 1px solid black; margin-left: 10px;"
+            exp="Box for the student to write the total number of items (10)."
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

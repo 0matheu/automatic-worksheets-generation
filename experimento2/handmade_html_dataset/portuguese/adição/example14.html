@@ -1,0 +1,112 @@
+nivel: 2 ano fundamental 
+assunto: adição, contagem 
+tematica: mãos
+largura-folha: 800px 
+layout: duas imagens, colunas e linhas
+
+Nessa questão serão praticado os princípios da adição e contagem. 
+A questão consiste duas imagens de mãos com
+dedos levantados, a primeira mão tem 3 dedos levantados, e a segunda tem 4 dedos
+levantados. O aluno deverá somar a quantidade de dedos levantados em ambas as
+mãos e escrever o resultado na caixa apropriada. A disposição das imagens e
+simbolos está em 5 colunas e 1 linha, sendo: mão 1, sinal de mais, mão 2, sinal
+de igual, caixa para escrever o resultado. O aluno deverá contar as quantidades
+de dedos levantados e somar, sendo 3 + 4 = 7 e escrever na caixa apropriada.
+
+<html>
+  <head></head>
+  <style>
+    /* classe que é utilizada para organizar as imagens das mãos, sinal de igual e da caixa que o aluno terá que completasr*/
+    .container {
+      display: grid;
+      grid-template-columns: 150px 150px 150px 150px 150px;
+      grid-template-rows: 150px;
+      grid-template-areas: "mao1 sinalmais mao2 sinaligual caixa";
+    }
+
+    /* classe que é utilizada para posicionar a imagem da primeira mão, sendo na primeira celula da primeira coluna */
+    .mao1 {
+      grid-area: mao1;
+      border: solid 1px;
+    }
+
+    /* classe que é utilizada para posicionar a imagem da segunda mão, sendo na primeira celula da teceira coluna */
+    .mao2 {
+      grid-area: mao2;
+      border: solid 1px;
+    }
+
+    /* classe que é utilizada para posicionar o sinal de mais entre as imagens das mãos, sendo na primeira celula da segunda coluna */
+    .sinalmais {
+      grid-area: sinalmais;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* classe que é utilizada para posicionar o sinal de igual, depois da segunda imagem de mão, na primeira celula da quarta coluna */
+    .sinaligual {
+      grid-area: sinaligual;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* classe que é utilizada para posicionar a caixa que o aluno terá que escrever o resultado da soma */
+    .caixa {
+      grid-area: caixa;
+      border: solid 1px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 800px"
+    >
+      <div class="questao" style="width: 800px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe as imagens abaixo e escreva a soma da quantidades de dedos
+          levantados nas duas questões.
+        </p>
+
+        <div class="container">
+          <div class="mao1">
+            <img
+              alt="Imagem de uma mão, no estilo de desenho de pintar infatil, com 3 dedos levantados"
+              exp="Imagem que o aluno terá que contar quantos dedos estão levantados, sendo 3"
+            />
+          </div>
+
+          <div class="sinalmais">
+            <p
+              exp="Sinal que representa a soma dos dedos das imagens mao1 e mao2"
+            >
+              +
+            </p>
+          </div>
+
+          <div class="mao2">
+            <img
+              alt="Imagem de uma mão, no estilo de desenho de pintar infatil, com 4 dedos levantados"
+              exp="Imagem que o aluno terá que contar quantos dedos estão levantados, sendo 4"
+            />
+          </div>
+
+          <div class="sinaligual">
+            <p
+              exp="Sinal que representa o resultado da soma das imagens mao1 e mao2"
+            >
+              =
+            </p>
+          </div>
+
+          <div
+            class="caixa"
+            exp="Caixa na qual o aluno deverá escrever a soma de dedos levantados das imagens mao1 e mao2"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

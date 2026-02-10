@@ -1,0 +1,86 @@
+```json
+{
+  "task": "To practice basic addition skills by counting and adding the number of pieces of fruit Maria and her friends ate at the cafeteria.",
+  "layout": "The HTML elements are organized with a div containing the sheet width, followed by a div containing the question description, and then a grid container with three columns and one row. The grid container contains three items: an image of Maria and her friends at the cafeteria, a plus sign, and a numerical equation. The items are positioned and styled using CSS grid template areas.",
+  "answer": "To answer correctly, the student needs to observe the image and count the number of fruit pieces Maria and her friends have already eaten (5). The student needs to understand that the image shows 5 fruit pieces, and Maria and her 2 friends have already eaten them. The student needs to add the 5 fruit pieces to the 3 new pieces and get 8. The student needs to write the equation 5 + 3 = 8 to get the correct answer."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three columns and one row, with a specific size for the image column */
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 200px;
+      grid-template-areas:
+        "img1 plusSign num"
+    }
+
+    /* class used to place the image of the activity in the first row and the first column, being a large image */
+    .img1 {
+      grid-area: img1;
+      width: 300px;
+      height: 200px;
+    }
+
+    /* class used to center the image in the middle of the box */
+    .center {
+      display: flex;
+      justify-content: center;
+    }
+
+    /* class used to add the plus sign in the image, being in the first row and the second column */
+    .plusSign {
+      grid-area: plusSign;
+      font-size: 100px;
+    }
+
+    /* class used to add the equation in the image, being in the first row and the third column */
+    .num {
+      grid-area: num;
+      font-size: 50px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    /* class used to adjust the size of the plus sign */
+    .plusSign {
+      font-size: 100px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the image below. Maria and her 2 friends are at the cafeteria, and the image shows the number of fruit pieces they have already eaten. Add the number of new pieces to the ones they have already eaten.
+        </p>
+
+        <div class="container">
+          <div class="img1" exp="div that will be used to adjust the image of the activity to be in the center left">
+            <img
+              class="center"
+              src=""
+              alt="Image in a coloring book style of 5 fruit pieces on a plate, being painted by 3 children"
+              style="width: 250px; height: 150px"
+              exp="image that the student will have to count the quantity of fruit, being 5, and also identify that there are children in the image, to add 5 to 3"
+            />
+          </div>
+
+          <p class="plusSign" exp="p that will be used to place a plus sign in the center of the image, indicating that the student will have to add the quantities"><p>
+
+          <p class="num" exp="p that will be used to place the sum of the operation on the right side of the image"><p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

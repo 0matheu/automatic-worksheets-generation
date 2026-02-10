@@ -1,0 +1,117 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of balls the clown initially had, the number of balls he received, and calculating the total number of balls.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph that explains the task, and the bottom section contains a 2x2 grid with four cells. The first cell contains an image of a clown with 3 balls, the second cell is empty, the third cell contains an image of 2 balls, and the fourth cell is empty. The images of the balls are placed next to the clown image and the empty space, and are also connected by lines to the clown image, indicating that the balls are being given to the clown.",
+  "answer": "To answer correctly, the student needs to: 1) identify that the clown initially had 3 balls, 2) identify that he received 2 more balls, and 3) calculate the total number of balls by adding the two quantities together. The correct answer is 5 balls."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class used to describe the layout of the activity, in this case containing two images in a 1x3 layout, being the first image in the first cell and the second image in the third cell, with a link between the two images */
+    .container {
+      display: grid;
+      grid-template-columns: 300px 200px;
+      grid-template-rows: 200px 200px;
+      grid-template-areas:
+        "clown1 empty1"
+        "clown2 empty2";
+    }
+
+    /* class used to position the clown image in the first cell of the first column */
+    .clown1 {
+      grid-area: clown1;
+    }
+
+    /* class used to position the image of the balls next to the clown in the first cell of the second column */
+    .balls1 {
+      margin-left: 50px;
+      grid-area: balls1;
+    }
+
+    /* class used to position the image of the balls in the second cell of the first column */
+    .clown2 {
+      grid-area: clown2;
+    }
+
+    /* class used to position the image of the balls in the fourth cell of the first column */
+    .balls2 {
+      margin-left: 50px;
+      grid-area: balls2;
+    }
+
+    /* class used to adjust the size of the balls images */
+    .balls1, .balls2 {
+      width: 150px;
+      height: 150px;
+    }
+
+    /* class used to adjust the size of the clown image */
+    .clown1, .clown2 {
+      width: 300px;
+      height: 400px;
+    }
+
+    /* class used to adjust the position of the images in the activity */
+    .clown1, .clown2, .balls1, .balls2 {
+      margin-top: 50px;
+      margin-right: 50px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          A clown is in the circus with 3 balls, and he receives more 2, draw in the images below the number of balls the clown initially had and the total number of balls after the reception.
+        </p>
+
+        <div class="container">
+          <div class="clown1">
+            <img
+              src=""
+              alt="Image in a coloring book style of a clown in a circus, with 3 balls in his hand"
+              class="clown1"
+              exp="Image that the student will have to draw 3 more balls in the clown image"
+            />
+          </div>
+
+          <div class="balls1">
+            <img
+              src=""
+              alt="Image in a coloring book style of 3 balls"
+              class="balls1"
+              exp="Image that the student will have to draw 3 balls, being an image that will be connected to the clown image"
+            />
+          </div>
+
+          <div class="clown2">
+            <img
+              src=""
+              alt="Image in a coloring book style of a clown with 3 balls"
+              class="clown2"
+              exp="Image that the student will have to draw the clown, and also draw 2 more balls in the image"
+            />
+          </div>
+
+          <div class="balls2">
+            <img
+              src=""
+              alt="Image in a coloring book style of 3 balls"
+              class="balls2"
+              exp="Image that the student will have to draw 3 balls, being an image that will be connected to the clown image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

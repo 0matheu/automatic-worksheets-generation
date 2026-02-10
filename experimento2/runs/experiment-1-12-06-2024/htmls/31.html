@@ -1,0 +1,96 @@
+```json
+{
+  "task": "To practice basic addition skills by counting the total number of flowers Maria and her mother have and drawing the correct number of flowers in their garden.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph that explains the task, and the bottom section contains a 2x2 grid with three images: an image of Maria and her mother with flowers, an image of a flower garden, and an image of additional flowers. The images are placed in a specific layout to facilitate counting and drawing.",
+  "images": [
+    {
+      "description": "An image of Maria and her mother holding flowers in a transparent vase."
+    },
+    {
+      "description": "An image of a flower garden with 5 flowers."
+    },
+    {
+      "description": "A pile of 7 flowers."
+    }
+  ],
+  "question": "Maria and her mother have an initial set of flowers and also received an additional batch. Can you help Maria and her mother by counting the total number of flowers they have and drawing all the flowers in the garden? Then, write the sum of the initial flowers and the additional flowers."
+}
+```
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three images in a 2-line and 2-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 400px 400px;
+      grid-template-areas:
+        "img1 img2"
+        "img1 img3";
+    }
+
+    /* class used to place the image in the first row and the first column*/
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the image in the second row and the first column*/
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to place the image in the third row and the second column*/
+    .img3 {
+      grid-area: img3;
+    }
+
+    /* class used to give the size for the images*/
+    img {
+      width: 380px;
+      height: 380px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+        Maria and her mother have an initial set of flowers and also received an additional batch. Can you help Maria and her mother by counting the total number of flowers they have and drawing all the flowers in the garden? Then, write the sum of the initial flowers and the additional flowers.
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              class="img1"
+              alt="image in a coloring book style of Maria and her mother holding a transparent vase with 3 flowers"
+              exp="image in which the student will have to count the 3 flowers present"
+            />
+          </div>
+
+          <div class="img2">
+            <img
+              class="img2"
+              alt="image in a coloring book style of a flower garden containing 5 flowers"
+              exp="image in which the student will have to count the 5 flowers present and draw the 3 flowers of the transparent vase"
+            />
+          </div>
+
+          <div class="img3">
+            <img
+              class="img3"
+              alt="image in a coloring book style of a pile of flowers containing 7 flowers"
+              exp="image in which the student will have to count the 7 flowers present and draw all the flowers in the flower garden image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

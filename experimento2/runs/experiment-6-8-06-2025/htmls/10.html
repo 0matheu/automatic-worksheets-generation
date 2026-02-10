@@ -1,0 +1,71 @@
+```json
+{
+  "task": "To practice basic addition skills by counting the number of camels and oasis in two images and calculating the total sum.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph describing the task. The middle section contains a 2x2 grid with four cells. The first cell contains an image of 7 camels in the desert, the second cell is empty, the third cell contains an image of 3 oases in the desert, and the fourth cell is empty. The images are placed in a specific layout to facilitate counting and addition.",
+  "answer": "To answer this question correctly, the student needs to: 1) count the number of camels in the first image (7), 2) count the number of oases in the second image (3), 3) add the two numbers together to get the total sum (7 + 3 = 10). The correct answer is 10."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing two images in a 2x2 grid*/
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 400px 400px;
+      grid-template-areas:
+        "img1 img2"
+        "img3 img4";
+    }
+
+    /* class used to place the first image of the camels in the first row and the first column*/
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the second image of the oases in the third row and the first column*/
+    .img3 {
+      grid-area: img3;
+    }
+
+    /* class used to adjust the size of the images*/
+    img {
+      width: 380px;
+      height: 380px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Count the total number of elements in the images below and write the sum.
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="image in a coloring book style of 7 stylized camels in a desert scenario"
+              exp="image in which the student will have to count the number of camels present, being 7"
+            />
+          </div>
+
+          <div class="img3">
+            <img
+              alt="image in a coloring book style containing 3 oases in a desert scenario"
+              exp="image in which the student will have to count the number of oases present, being 3"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

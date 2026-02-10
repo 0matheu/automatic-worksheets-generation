@@ -1,0 +1,46 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of cakes and glasses of milk in the image and calculating the total sum."
+  "layout": "The HTML elements are organized with a div containing the sheet width, followed by a div containing the question description, three paragraphs containing the questions, and an image of a cafeteria with cakes and glasses of milk. The image is centered in the div using flexbox."
+  "question": "How many cakes are there in the image?"
+  "question2": "How many glasses of milk are there in the image?"
+  "question3": "What is the sum of cakes and glasses of milk?"
+  "image": "An image of a child in a cafeteria with 5 cakes on the table, and 4 glasses of milk. The image is a drawing, containing the elements described."
+  "answer": "To correctly answer this activity, the student will have to: 1) count the number of cakes in the image (5), 2) count the number of glasses of milk in the image (4), and 3) add the two numbers together to find the total sum. The correct answers are: A) 5 cakes, B) 4 glasses of milk, and C) 9 (5 cakes + 4 glasses of milk)."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of the question the student will have to answer"
+        >
+          Observe the image and answer the questions:
+        </p>
+        <p>How many cakes are there in the image?</p>
+        <p>How many glasses of milk are there in the image?</p>
+        <p>What is the sum of cakes and glasses of milk?</p>
+        <div
+          style="display: flex; justify-content: center"
+          exp="div used to center the image in the question"
+        >
+          <img
+            src=""
+            alt="Image in a coloring book style of a child in a cafeteria, with a total of 5 cakes on the table, and also 4 glasses of milk."
+            style="width: 600px; height: 400px"
+            exp="Image that the student will have to count the number of cakes and glasses of milk, and also add the quantity of cakes with the glasses of milk"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

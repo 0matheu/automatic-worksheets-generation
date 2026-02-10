@@ -1,0 +1,441 @@
+
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2 ano fundamental
+assunto: adição
+tematica: lanches
+largura-folha: 700px
+layout: única imagem<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Essa questão pratica o principio da adição, e consiste de uma imagem de
+lanches, contendo 3 criança, cada uma com um pichel, e ao todo são 3 piches.
+A tarefa do aluno é, ao ver a imagem, responder quantos piches estão presentes, sendo
+3. A segunda pergunta é quantas crianças estão presentes na imagem, sendo 3.
+Para responder corretamente o aluno deve, ao ver a imagem, contabilizar quantos
+piches estão presentes, sendo 3, e também quantas crianças estão presentes, sendo
+também 3.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 700px; border: solid 1px"
+      exp="div contendo a largura da página, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 700px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe a imagem abaixo e responda as questões:
+        </p>
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <img
+            src=""
+            alt="imagem de um menino com um pichel, e também dois meninos com piches também"
+            style="width: 500px; height: 300px"
+            exp="imagem que o aluno terá que observar e contar quantos piches estão presentes"
+          />
+        </div>
+
+        <p exp="primeira questão que o aluno terá que responder">A) Quantos piches estão presentes na imagem?</p>
+        <p exp="segunda questão que o aluno terá que responder">B) Quantas crianças estão presentes na imagem?</p>
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2 ano fundamental
+assunto: adição
+tematica: lanches
+largura-folha: 700px
+layout: duas imagens, linhas e colunas<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão serão praticado os principios da adição. O aluno terá que
+esterificar que imagem tem mais pedidos de palo, sendo 3 em uma e 4 na outra, 
+então a imagem com 4 palitos deve ser selecionada.
+
+<html>
+  <head></head>
+  <style>
+   .container {
+      display: grid;
+      grid-template-columns: 300px 400px;
+      grid-template-rows: 200px 200px;
+      grid-template-areas:
+        "img1 mais, img1 igual"
+        "soma1, soma2";
+    }
+
+   .img1 {
+      grid-area: img1 mais;
+    }
+
+   .img2 {
+      grid-area: img1 igual;
+    }
+
+   .mais {
+      grid-area: mais;
+      display: flex;
+      justify-content: center;
+    }
+
+   .igual {
+      grid-area: igual;
+      display: flex;
+      justify-content: center;
+    }
+
+   .soma1 {
+      grid-area: soma1;
+    }
+
+   .soma2 {
+      grid-area: soma2;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 700px; border: solid 1px"
+      exp="div contendo a largura da página, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 700px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe as imagens abaixo. A primeira imagem tem 3 palitos, e a segunda tem 4 palitos. Qual a imagem que tem mais palitos?
+        </p>
+
+        <div class="container">
+          <div class="img1 mais">
+            <img
+              class="img1"
+              alt="Imagem no estilo de desenho em pintar de 3 palitos de madeira"
+              exp="Imagem que o aluno terá que observar e contar quantos palitos tem"
+            />
+          </div>
+
+          <div class="img2 igual">
+            <img
+              class="img2"
+              alt="Imagem no estilo de desenho em pintar de 4 palitos de madeira"
+              exp="Imagem que o aluno terá que observar e contar quantos palitos tem"
+            />
+          </div>
+        </div>
+
+        <p
+          exp="Questão onde o aluno terá que comparar as imagens e escrever qual delas tem mais palitos"
+        >
+          a) Qual das imagens tem mais palitos?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: carrinhos
+largura-folha: 600px
+layout: única imagem<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão será trabalhado o principio da soma de dois números e
+uma imagem será mostrada contendo vários carrinhos, sendo 3 vermelhos, 2
+brancos e 1 amarelo. O aluno terá que somar a quantidade de carrinhos
+brancos com os vermelhos e escrever a resposta na parte inferior da imagem.
+E também deverá desenhar uma imagem de uma criança com uma expressão de
+felicidade, e também com uma das imagens de carrinhos, sendo 3 escolher.
+A questão terá 2 partes: a primeira será describir a imagem dos carrinhos
+e também a quantidade de cada cor; a segunda será desenhar a imagem da
+criança com a expressão de felicidade e também com um dos carrinhos dungeones.
+
+Essas são as características da questão:
+parte A: imagem contendo 3 carrinhos vermelhos, 2 brancos e 1 amarelo, 
+e também uma quantidade sendo lida; 
+parte B: desenhar uma imagem de uma criança com uma expressão de
+felicidade e também com um dos carrinhos dungeones, sendo 3 escolher.
+E também deverá ser escrita na parte inferior a quantidade de carrinhos
+brancos com os vermelhos.
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: carrinhos
+largura-folha: 600px
+layout: três imagens<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão será praticado o principio da adição.
+A questão consiste de 3 imagens: 
+imagem 1 contém 2 carrinhos, cada um contendo 3 bolinhas 
+imagem 2 contém 1 carrinho que contém 3 bolinhas 
+imagem 3 contém 1 carrinho que contém 2 bolinhas 
+E serão pedidos para o aluno:
+A) Somar o número de bolinhas em cada carrinho 
+B) Escrever a soma total de bolinhas em todos os carrinhos
+
+Essas atividades ajudarão o aluno a praticar a contagem e a adição.
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: fundo do mar
+largura-folha: 600px
+layout: única imagem<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão serão praticados o princípio da soma e
+adição, e também será utilizada a representação visual, sendo
+uma imagem de um fundo do mar, contendo também 3 crocodilos, sendo
+um com 2 bocados, outro com 4 e o terceiro com 5; o desafio consiste
+em somar a quantidade de bocados dos 3 crocodilos e escrever o resultado na
+imagem, sendo 2+4+5 = 11.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a largura da página, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe a imagem e escreva a soma dos bocados dos 3
+          crocodilos.
+        </p>
+      </div>
+
+      <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <img
+            src=""
+            alt="imagem de um fundo do mar, com 3 crocodilos, um com 2 bocados, outro com 4 e o terceiro com 5 bocados"
+            style="width: 500px; height: 300px"
+            exp="imagem na qual o aluno terá que contar a quantidade de bocados dos 3 crocodilos e escrever o resultado"
+          />
+        </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: fundo do mar
+largura-folha: 600px
+layout: três imagens<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão serão praticados o conceito de soma e adição. O
+participante terá que, ao estilo de desenho de pintar no fundo, colorir as imagens
+presentadas e escrever a soma e adição correto das questões propostas.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a largura da página, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o participante terá que fazer para responder corretamenta a questão"
+        >
+          Observe as imagens abaixo e colorie com o vermelho a soma e com o azul a adição correta das seguintas questões:
+        </p>
+      </div>
+
+      <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <img
+            src=""
+            alt="imagem inteiros, um sendo 20 e outro sendo 30, ambos em estilo de desenho de pintar no fundo"
+            style="width: 400px; height: 200px"
+            exp="imagem inteiros, um sendo a soma de 20 + 30 e outro sendo a adição de 20 + 30, ambos em estilo de desenho de pintar no fundo"
+          />
+        </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: subtração
+tematica: fogos de artifício
+largura-folha: 800px
+layout: única imagem<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão será trabalhado o conceito de subtração. A questão consiste de
+uma imagem, contendo um número e uma imagem de fogos de artifício, e
+pergunta se a resposta resultante da subtração de 10 com 9, é maior que a imagem.
+O aluno terá que contraster a quantidade de fogueira com o resultado da subtração,
+e escrever verdadeiro se a quantidade de fogueira é maior, e falso caso contrário.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div contendo a largura da página, que nesse caso é 800px"
+    >
+      <div class="questao" style="width: 800px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe a imagem e escreva verdadeiro se a quantidade de fogueira é maior que o resultado da subtração de 10 com 9, e false caso contrário.
+        </p>
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <img
+            src=""
+            alt="Imagem no estilo em de pintar de uma quantidade de fogueira"
+            style="width: 600px; height: 200px"
+            exp="Imagem que o aluno terá que observar e comparar com o resultado da subtração, sendo verdadeiro se a quantidade de fogueira for maior, e false caso contrário"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: subtração
+tematica: fogos de artifício
+largura-folha: 800px
+layout: três imagens<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Essa questão pratica os principios da subtração.
+A questão consiste de três imagens: duas com fogos de
+artifício e uma com uma criança com uma quantidade de doces
+e sendo pego por uma criança, representando a quantidade de doces
+de antes dos pegos e a criança pegando um doces, representando a quantidade
+de doces de depois dos pegos. O aluno terá que resolver a questão
+encontrando a resposta correta, sendo 4 a quantidade de doces
+que o aluno deve pegar para que a quantidade de doces
+de antes, seja igual a quantidade de doces que ele pega.
+
+<html>
+  <head></head>
+  <style>
+   .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 600px;
+      grid-template-areas:
+        "img1 vazio img2"
+        "img1 vazio1 vazio2 img2";
+    }
+
+   .img1 {
+      grid-area: img1;
+    }
+
+   .img2 {
+      grid-area: img2;
+    }
+
+   .vazio1 {
+      grid-area: vazio1;
+      width: 150px;
+      height: 500px;
+    }
+
+   .vazio2 {
+      grid-area: vazio2;
+      width: 150px;
+      height: 500px;
+    }
+  </style>
+</head>
+<body>
+  <div
+    class="container"
+    style="width: 800px; border: solid 1px"
+  >
+    <div class="questao" style="width: 800px">
+      <p
+        ><span
+          class="importancia"
+          style="font-size: 20px; position: relative"
+          >2º ano fundamental</span
+        >A questão abaixo, responda com verdade ou falso.</p
+      >
+    </div>
+
+    <div class="questao" style="width: 800px">
+      <p
+        ><span
+          class="questao"
+          style="font-size: 20px"
+          >A) Qual a quantidade de doces que o criança pega, se ela tem 5 doces
+          e pede para a criança pegar doces até ficar satisfeita?</span
+        ></p
+      >
+    </div>
+
+    <div class="img1">
+      <img
+        id="img1"
+        alt="img1: A imagem representa uma criança com uma quantidade de doces"
+        style="width: 400px; height: 400px"
+        />
+    </div>
+
+    <div class="img2">
+      <img
+        id="img2"
+        alt="img2: A imagem representa a criança pego uma quantidade de doces do pai"
+        style="width: 400px; height: 400px"
+        />
+    </div>
+
+    <div class="vazio1" id="vazio1"></div>
+    <div class="vazio2" id="vazio2"></div>
+  </div>
+</body>
+</html>```

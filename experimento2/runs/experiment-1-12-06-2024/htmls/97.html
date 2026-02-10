@@ -1,0 +1,43 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of cacti in the initial image and calculating the total number of cacti after a new cactus is added.",
+  "layout": "The HTML elements are organized with a div containing the sheet width, followed by a div containing the question description, an image of the initial cacti, and two paragraphs containing the questions. The image is centered in the div using flexbox, and the questions are listed below the image.",
+  "answer": "To answer correctly, the student needs to: 1) count the number of cacti in the initial image (5 cacti), 2) add 1 cactus to the initial 5 cacti to get 6 cacti, and 3) write the results in the spaces provided. The correct answers are: A) 5, and B) 6."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the image below and answer the questions:
+        </p>
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div used to center the image in the question"
+        >
+          <img
+            src=""
+            alt="Image in a coloring book style of 5 cacti in the desert"
+            style="width: 600px; height: 300px"
+            exp="Image that the student will have to count the cacti to answer the question"
+          />
+        </div>
+
+        <p>A) How many cacti are present in the image?</p>
+        <p>B) What is the total number of cacti after a new cactus is added to the image?</p>
+      </div>
+    </div>
+  </body>
+</html>
+```

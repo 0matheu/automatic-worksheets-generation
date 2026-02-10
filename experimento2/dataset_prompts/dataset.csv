@@ -1,0 +1,2120 @@
+file,text
+handmade_html_dataset/matemática/adição/example28.html,"<s>
+[INST]
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: 
+tematica: sorvete
+largura-folha: 600px
+layout: única imagem
+[/INST]
+
+Essa questão pratica os principios da adição e contagem.
+A questão consiste de uma imagem de uma criança com um sorvete em bolas
+contendo 9 bolas em pilha, sendo 4 de morango  e 5 de menta. 
+O aluno terá que contar quantas bolas de morango estão presentes, sendo 4.
+Terá que contar também quantas bolas de menta estão presentes, sendo 5.
+E também escrever a soma de todas sendo 4 + 5 = 9
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style=""width: 600px; border: solid 1px""
+      exp=""div contendo a largura da folha, que nesse caso é 600px""
+    >
+      <div class=""questao"" style=""width: 600px"">
+        <p
+          exp=""Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão""
+        >
+          Observe a imagem de Vinicius e seu sorvete e responda as questões:
+        </p>
+
+        <div
+          style=""display: flex; justify-content: center""
+          exp=""div utilizada para centralizar a imagem na questão""
+        >
+          <img
+            src=""""
+            alt=""Imagem colorida no estilo de desenho infantil de uma criança com um sorvete de bolinhas em forma de pilha, contendo 9 bolas, sendo 4 de morango e 5 de menta""
+            style=""width: 400px; height: 400px""
+            exp=""Imagem que o aluno terá que contar as bolas de morango e de menta""
+          />
+        </div>
+
+        <p exp=""questão que pede que o aluno conte quantas bolas de morango estão presentes"">A) Quantas bolas de morango estão presentes?</p>
+        <p exp=""questão que pede que o aluno conte quantas bolas de menta estão presentes"">B) Quantas bolas de menta estão presentes?</p>
+        <p exp=""questão que pede pela soma de bolas de sorvete de morango e de menta"">C) Quantas bolas tem ao todo? Some a quantidade de bolas de morango e de menta.</p>
+      </div>
+    </div>
+  </body>
+</html>
+</s>"
+handmade_html_dataset/matemática/adição/example23.html,"<s>
+[INST]
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: contagem, adição
+tematica: bolhas de sabão
+largura-folha: 600px
+layout: única imagem
+[/INST]
+
+Essa questão pratica os conceitos de adição e contagem.
+A questão consiste de uma images de uma imagem de uma criança
+soprando bolinhas de sabão. Na imagem tem 7 bolhas grandes e 5 bolhas
+pequenas. A tarefa do aluno é:
+A) contar quantas bolhas pequenas estão presentes? sendo 5
+B) contar quantas bolhas brandes estão presentes? sendo 7
+C) Somar a quantidade de bolhas pequenas e bolhas grandes? sendo 5 + 7 = 12
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style=""width: 600px; border: solid 1px""
+      exp=""div contendo a largura da folha, que nesse caso é 600px""
+    >
+      <div class=""questao"" style=""width: 600px"">
+        <p
+          exp=""Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão""
+        >
+          Observe a imagem de uma criança soprando bolhas de sabão e responda as perguntas:
+        </p>
+      </div>
+
+      <div
+          style=""display: flex; justify-content: center""
+          exp=""div utilizada para centralizar a imagem na questão""
+        >
+          <img
+            src=""""
+            alt=""Imagem no estilo de desenho de pintar infantil de uma criança soprando bolhas de sabão, sendo 5 bolhas pequenas e 7 bolhas grandes""
+            style=""width: 500px; height: 300px""
+            exp=""Imagem que o aluno terá que contar a quantidade de bolhas pequenas e bolhas grandes""
+          />
+      </div>
+
+      <p exp=""questão que pede para o aluno contar quantas bolhas pequenas estão presentes"">A) Quantas bolhas pequenas estão presentes na imagem?</p>
+      <p exp=""questão que pede para o aluno contar quantas bolhas grandes estão presentes"">B) Quantas bolhas grandes estão presentes na imagem?</p>
+      <p exp=""questão que pergunta qual a soma de bolhas pequenas e bolhas grandes"">C) Qual a soma de bolhas pequenas e bolhas grandes?</p>
+    </div>
+  </body>
+</html>
+</s>"
+handmade_html_dataset/matemática/adição/example3.html,"<s>
+[INST]
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental 
+assunto: adição 
+tematica: frutas 
+largura-folha: 600px
+layout: única imagem
+[/INST]
+
+Essa questão exercita os princípio da adição. A questão consiste de uma imagem
+com vários itens, sendo 4 abacaxis, 3 maçãs, e 2 carrinhos. Ela pede que o aluno
+some todas as frutas presentes. Para resolve-la, o aluno terá que contar quantas
+frutas estão presentes na imagem. Ele deverá ignorar os carrinhos, pois não são
+frutas. Na imagem estão presentes 4 abacaxis e 3 maçãs. Ele deverá soma-las, sendo
+4 + 3, resultado em 7.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style=""width: 600px; border: solid 1px""
+      exp=""div contendo a largura da página, que nesse caso é 600px""
+    >
+      <div class=""questao"">
+        <p
+          exp=""Descrição da questão. Contém a explicação da questão o aluno terá que responder""
+        >
+          Faça a soma das frutas abaixo:
+        </p>
+        <div
+          style=""display: flex; justify-content: center""
+          exp=""div utilizada para centralizar a imagem na questão""
+        >
+          <img
+            src=""""
+            alt=""imagem contendo 4 abacaxis, 3 maçãs e 2 carrinhos em forma de desenho""
+            style=""width: 500px; height: 200px""
+            exp=""imagem que o aluno terá que identificar as frutas, fazer a contagem da quantidade de abacaxis, e também de maçãs, e ao final somá-las""
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+</s>"
+handmade_html_dataset/matemática/adição/example30.html,"<s>
+[INST]
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2 ano fundamental 
+assunto: adição, contagem 
+tematica: brinquedos
+largura-folha: 600px 
+layout: várias imagens, ligar imagens
+[/INST]
+
+Nessa questão serão trabalhados os princípios da adição e
+contagem. Essa questão consiste de 4 imagens, a primeira consiste dee uma criança
+no estilo de desenho de pintar infantil com 3 bolinhas de gude
+na mão; também estão presentes 3 imagens de bolinhas de gude contendo 
+3 bolinhas na primera, 4 na segunda e 2 na terceira. 
+O objetivo da questão é o aluno ligar a imagem da criança
+com a imagem que tem mais bolinhas de gude, e em seguida efetuar
+a soma das bolinhas que ele já tem com as bolinhas da segunda imagem,
+sendo a resposta correta 3 + 4 = 7.
+
+<html>
+  <head></head>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px;
+      grid-template-rows: 200px 200px 200px;
+      grid-template-areas:
+        ""vazio1 bolinhas1""
+        ""crianca bolinhas2""
+        ""vazio2 bolinhas3"";
+    }
+
+    .crianca {
+      grid-area: crianca;
+      width: 250px;
+      height: 300px;
+      border: 1px solid;
+    }
+
+    .bolinhas {
+      margin-left: 100px;
+    }
+
+    .bolinhas1 {
+      grid-area: bolinhas1;
+      width: 120px;
+      height: 120px;
+      border: 1px solid;
+    }
+
+    .bolinhas2 {
+      grid-area: bolinhas2;
+      width: 120px;
+      height: 120px;
+      border: 1px solid;
+    }
+
+    .bolinhas3 {
+      grid-area: bolinhas3;
+      width: 120px;
+      height: 120px;
+      border: 1px solid;
+    }
+  </style>
+  <body>
+    <div
+      style=""width: 600px; border: solid 1px""
+      exp=""div contendo a largura da folha, que nesse caso é 600px""
+    >
+      <div class=""questao"" style=""width: 600px"">
+        <p
+          exp=""Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão""
+        >
+          Observe as imagens abaixo. Manoel tem 3 bolinhas de gude e está a procura de mais.
+          Ligue Manoel com a imagem que tem mais bolinhas de gude, em seguida escreva a soma 
+          das bolinhas que Manoel já tem com as bolinhas que ele conseguiu.
+        </p>
+
+        <div class=""container"">
+          <div class=""vazio1""></div>
+
+          <div class=""crianca"" exp=""div que será utilizada para ajustar a imagem do crianca para ficar no centro a esquerda"">
+            <img
+              src=""""
+              alt=""Imagem, no estilo de desenho de pintar, de uma criança com 3 bolinhas de gude na mão""
+              exp=""Imagem na qual o aluno terá que ligar com a imagem com mais bolinhas de gude e efetuar a soma""
+            />
+          </div>
+
+          <div class=""bolinhas1 bolinhas"" exp=""div que será usada para ajustar a imagem1 das bolinhas no canto superor direito"">
+            <img
+              src=""""
+              alt=""imagem no estilo de desenho de pintar contendo 3 bolinhas de gude""
+              exp=""imagem na qual o aluno terá que contar a quantidade de bolinhas e tentar identificar se tem a maior quantidade de bolinhas. Essa imagem tem 3 bolinhas, a que tem a maior quantidade é a segunda, que tem 4 bolinhas""
+            />
+          </div>
+
+          <div class=""bolinhas2 bolinhas"" exp=""div que será utilizada para a imagem2 das bolinhas ficar ajustada no centro a direita"">
+            <img
+              src=""""
+              alt=""imagem no estilo de desenho de pintar contendo 4 bolinhas de gude""
+              exp=""imagem na qual o aluno terá que contar a quantidade de bolinhas e tentar identificar se nessa imagem tem a maior quantidade de bolinhas. Essa é a imagem com mais bolinhas""
+            />
+          </div>
+
+          <div class=""bolinhas3 bolinhas"" exp=""div quer será utilizada para a imagem3 ficar ajustada no canto inferior direito da imagem"">
+            <img
+              src=""""
+              alt=""imagem no estilo de desenho de pintar contendo 2 bolinhas de gude""
+              exp=""imagem na qual o aluno terá que contar a quantidade de bolinhas e tentar identificar se tem a maior quantidade de bolinhas. Essa imagem tem 2 bolinhas, a que tem a maior quantidade é a segunda, que tem 4 bolinhas""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+</s>"
+handmade_html_dataset/matemática/adição/example9.html,"<s>
+[INST]
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental 
+assunto: adição 
+tematica: animais 
+largura-folha: 800px
+layout: duas imagens
+[/INST]
+
+Nessa questão serão trabalhados os princípio da adição e contagem. A questão
+consiste de duas imagens, uma contendo 4 leões, e outra contendo 3 zebras, é
+pedido para que o aluno conte quantos leões estão presentes na imagem, e
+escrever o resultado na caixa apropriada, bem como para as zebras. Ao final ele
+terá que somar a quantidade de zebras e leões. O aluno terá que contar a
+quantidade de leões presentes na imagem, sendo 4, e também a quantidade de
+zebras, sendo 3. Escrever o resultado da contagem nas caixas abaixo das imagens.
+E, ao final, o aluno deverá somar 4 com 3, resultando em 7, e também escrever a
+soma na caixa.
+
+<html>
+  <head></head>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 100px 100px 100px 100px;
+      grid-template-rows: 100px 100px;
+      grid-template-areas:
+        ""leoes vazio1 zebras vazio2 vazio3""
+        ""caixa1 mais caixa2 igual caixa3"";
+    }
+
+    .leoes {
+      grid-area: leoes;
+      width: 100px;
+      height: 100px;
+    }
+
+    .zebras {
+      grid-area: zebras;
+      width: 100px;
+      height: 100px;
+    }
+
+    .animais {
+      width: 100px;
+      height: 100px;
+    }
+
+    .caixa {
+      width: 90px;
+      height: 90px;
+      border: 1px solid;
+      margin: 10px;
+    }
+
+    .caixa1 {
+      grid-area: caixa1;
+    }
+
+    .caixa2 {
+      grid-area: caixa2;
+    }
+
+    .caixa3 {
+      grid-area: caixa3;
+    }
+
+    .mais {
+      grid-area: mais;
+      display: flex;
+      justify-content: center;
+    }
+
+    .mais img {
+      margin-top: 10px;
+      width: 50px;
+      height: 50px;
+    }
+
+    img {
+      margin-left: 10px;
+    }
+
+    .igual {
+      margin-left: 10px;
+      grid-area: igual;
+    }
+
+    .igual img {
+      margin-top: 10px;
+      width: 50px;
+      height: 50px;
+    }
+  </style>
+  <body>
+    <div
+      style=""width: 800px; border: solid 1px""
+      exp=""div contendo a largura da folha, que nesse caso é 800px""
+    >
+      <div class=""questao"" style=""width: 800px"">
+        <p
+          exp=""Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão""
+        >
+          Observe as imagens, conte a quantidade de leões e zebras e escreva nas
+          caixas abaixo. Depois some a quantidade de ambos e escreva na terceira
+          caixa.
+        </p>
+
+        <div class=""container"">
+          <div class=""leoes"">
+            <img
+              class=""animais""
+              id = ""img_leoes""
+              src=""""
+              alt=""imagem em estilo de desenho de pintar de 4 leões""
+              exp=""imagem em que o aluno terá que contar a quantidade de leões""
+            />
+          </div>
+
+          <div class=""zebras"">
+            <img
+              class=""animais""
+              src=""""
+              id = ""img_zebras""
+              alt=""imagem em estilo de desenho de pintar de 3 zebras""
+              exp=""imagem em que o aluno terá que contar a quantidade de zebras""
+            />
+          </div>
+
+          <div
+            class=""caixa caixa1""
+            exp=""caixa vazia na qual o aluno terá que escrever a quantidade de leões representadas na imagem com id img_leoes""
+          ></div>
+
+          <div class=""mais"">
+            <img
+              src=""""
+              alt=""imagem de um sinal de mais""
+              exp=""imagem que sinalizará uma soma""
+            />
+          </div>
+
+          <div
+            class=""caixa caixa2""
+            exp=""caixa vazia na qual o aluno terá que escrever a quantidade de zebras representadas na imagem com id img_zebras""
+          ></div>
+
+          <div class=""igual"">
+            <img
+              src=""""
+              alt=""imagem de um sinal de igual""
+              exp=""imagem que sinalizará a igualdade da soma""
+            />
+          </div>
+
+          <div
+            class=""caixa caixa3""
+            exp=""caixa vazia na qual o aluno terá que escrever o resultado da soma da quantidade de leões e zebras""
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+</s>"
+handmade_html_dataset/matemática/adição/example13.html,"<s>
+[INST]
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2 ano fundamental 
+assunto: adição, contagem 
+tematica: números
+largura-folha: 600px 
+layout: equações, colunas
+[/INST]
+
+Nessa questão será praticado o princípio da adição. A questão consiste de
+uma equação de soma, sendo 23 + 9, que o aluno deverá resolver, e procurar o
+resultado correto nas opções fornecidas pela questão, sendo elas, 31, 32 e 33.
+As opções são organizadas em duas colunas, sendo a primeira com a equação, e a
+segunda com as opções. O aluno deverá resolver 23 + 9 = 32, sendo 32, ele deve
+ligar com a opção 32.
+
+<html>
+  <head></head>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 200px 200px;
+      grid-template-rows: 150px 150px 150px;
+      grid-template-areas:
+        ""vazio1 n1""
+        ""soma n2""
+        ""vazio2 n3"";
+    }
+
+    .container p {
+      font-size: larger;
+      font-weight: bolder;
+    }
+
+    .soma {
+      grid-area: soma;
+    }
+
+    .n1 {
+      grid-area: n1;
+    }
+
+    .n2 {
+      grid-area: n2;
+    }
+
+    .n3 {
+      grid-area: n3;
+    }
+  </style>
+  <body>
+    <div
+      style=""width: 600px; border: solid 1px""
+      exp=""div contendo a largura da folha, que nesse caso é 600px""
+    >
+      <div class=""questao"" style=""width: 600px"">
+        <p
+          exp=""Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão""
+        >
+          Observe a soma abaixo e ligue com o numeral que representa o resultado
+          correto da soma.
+        </p>
+
+        <div
+          style=""display: flex; justify-content: center""
+          exp=""div utilizada para centralizar a imagem na questão""
+        >
+          <div class=""container"">
+            <div class=""soma"">
+              <p
+                exp=""Equação que o aluno terá que resolver e procurar o resultado nas opções n1 n2 e n3""
+              >
+                23 + 9
+              </p>
+            </div>
+
+            <div class=""n1"">
+              <p
+                exp=""Primeira opção de resposta que o aluno deverá procurar, o resultado está errado""
+              >
+                31
+              </p>
+            </div>
+
+            <div class=""n2"">
+              <p
+                exp=""Segunda opção de resposta que o aluno deverá procurar, o resultado está correto""
+              >
+                32
+              </p>
+            </div>
+
+            <div class=""n3"">
+              <p
+                exp=""Terceira opção de resposta que o aluno deverá procurar, o resultado está errado""
+              >
+                33
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+</s>"
+handmade_html_dataset/matemática/adição/example10.html,"<s>
+[INST]
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2 ano fundamental
+assunto: adição
+tematica: frutas  
+largura-folha: 700px
+layout: única imagem
+[/INST]
+
+Nessa questão será praticado o principio da adição.
+A questão consiste de uma imagem contendo uma banca de frutas,
+nessa banca tem 3 abacaxis, 4 mamões, 9 pêras, 7 cajus e 5 melões.
+Também estão presentes as seguintes perguntas sobre a imagem:
+qual a soma de abacaxis + cajus, sendo 4 + 7 = 10. Qual a soma
+de melões + mamões, sendo 4 + 5 = 9. Qual a soma de pêras com abacaxis,
+sendo 9 + 3 = 12. O aluno deverá escrever as somas das questões.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style=""width: 700px; border: solid 1px""
+      exp=""div contendo a largura da folha, que nesse caso é 600px""
+    >
+      <div class=""questao"" style=""width: 700px"">
+        <p
+          exp=""Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão""
+        >
+          Observe a imagem abaixo de uma banca de frutas e responda as questões:
+        </p>
+
+
+        <div
+          style=""display: flex; justify-content: center""
+          exp=""div utilizada para centralizar a imagem na questão""
+        >
+          <img
+            src=""""
+            alt=""Imagem no estilo de desenho de pintar de uma banca de frutas, contendo em cada compartimento: 3 abacaxis, 4 mamões, 9 pêras, 7 cajus e 5 melões""
+            style=""width: 600px; height: 300px""
+            exp=""Imagem que o aluno terá que interpretar e efetuar as somas pedidas nas questões.""
+          />
+        </div>
+
+        <p>Qual a soma de abacaxis e cajus?</p>
+        <p>Qual a soma de melões e mamões?</p>
+        <p>Qual a soma de pêras e abacaxis?</p>
+      </div>
+    </div>
+  </body>
+</html>
+</s>"
+handmade_html_dataset/matemática/adição/example29.html,"<s>
+[INST]
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição, contagem
+tematica: frutas
+largura-folha: 850px
+layout: duas imagens, linhas e colunas
+[/INST]
+
+
+Essa questão pratica os conceitos de contagem e adição.
+A questão consiste de duas imagens, uma contendo um cacho de bananas 
+contendo 6 bananas e outra contendo 4 maçãs, o dever do aluno e efetuar
+a soma da quantidade de bananas com maçãs, sendo 6 + 4 = 10.
+
+<html>
+  <head></head>
+
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 150px 150px 150px 150px 150px;
+      grid-template-rows: 150px;
+      grid-template-areas:
+        ""img1 mais img2 igual result""
+    }
+
+    .img1 {
+      grid-area: img1;
+    }
+
+    .img2 {
+      grid-area: img2;
+    }
+
+    .igual {
+      grid-area: igual;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .mais {
+      grid-area: mais;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .result {
+      grid-area: result;
+      border: solid 1px;
+    }
+  </style>
+  <body>
+    <div
+      style=""width: 850px; border: solid 1px""
+      exp=""div contendo a largura da folha, que nesse caso é 600px""
+    >
+      <div class=""questao"" style=""width: 600px"">
+        <p
+          exp=""Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão""
+        >
+          Conte a quantidade de bananas, e também a quantidade de maçãs na imagem abaixo, efetue a soma e escreva o resultado.
+        </p>
+
+
+        <div class=""container"">
+          <div class=""img1"">
+            <img
+              alt=""imagem no estilo de desenho de pintar em infantil com um cacho de bananas contendo 6 bananas.""
+              exp=""imagem que o aluno terá que observar e contar quantas bananas estão presentes""
+            />
+          </div>
+
+          <div class=""mais"" exp=""sinal de mais que representa a soma da quantidades""><p>+</p></div>
+
+          <div class=""img2"">
+            <img 
+              alt=""imagem no estilo de desenho de pintar intanfil contendo 4 maçãs em uma cesta""
+              exp=""imagem que oaluno terá que observar e contar quantas maçãs estão presentes no cesto.""
+            />
+          </div>
+
+          <div class=""igual"" exp=""sinal de igual que representa o resultado da soma""><p>=</p></div>
+
+          <div class=""result"" exp=""caixa que servirá para o aluno escrever o resultado da soma""></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+</s>"
+handmade_html_dataset/matemática/adição/example21.html,"<s>
+[INST]
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: contagem, adição
+tematica: doces
+largura-folha: 800px
+layout: única imagem
+[/INST]
+
+Nessa questão serão praticados os princípios da contagem e adição.
+A questão consiste de uma imagem na qual tem uma criança com uma bandeja
+contendo 8 brigadeiros e está recebendo de presente mais 9 brigadeiros de
+presente. O aluno terá que contar quantos brigadeiros a criança já tem, 
+e quantos ela está recebendo e efeturar a adição, sendo 8 + 9 = 17.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style=""width: 800px; border: solid 1px""
+      exp=""div contendo a largura da folha, que nesse caso é 800px""
+    >
+      <div class=""questao"" style=""width: 800px"">
+        <p
+          exp=""Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão""
+        >
+          José tem a quantidade de brigadeiros da imagem, e está ganhando mais. Conte na imagem
+          quantos brigadeiros José tem, e quantos ele ganhou e escreva quantos ele ficou ao todo.
+        </p>
+      </div>
+
+
+      <div
+          style=""display: flex; justify-content: center""
+          exp=""div utilizada para centralizar a imagem na questão""
+        >
+          <img
+            src=""""
+            alt=""Imagem no estilo de pintar infantil de criança com uma bandeja contendo 8 brigadeiros, e também uma pessoa adulta entregando outra bandeja com 9 brigadeiros para a criança""
+            style=""width: 600px; height: 300px""
+            exp=""Imagem na qual o aluno terá que contar quantos brigadeiros a criança já tem e somar com os brigadeiros que ele está recebendo, sendo como resposta 8 + 9 = 17""
+          />
+      </div>
+    </div>
+  </body>
+</html>
+</s>"
+handmade_html_dataset/matemática/adição/example11.html,"<s>
+[INST]
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2 ano fundamental 
+assunto: adição, contagem 
+tematica: piratas
+largura-folha: 600px 
+layout: várias imagens, ligar imagens
+[/INST]
+
+Nessa questão serão trabalhados os princípios da adição e
+contagem. Essa questão consiste de uma imagem de um pirata, que já tem 15 moedas
+de ouro, e mais três imagens de moedas, em cada uma contendo 10, 7 e 11 moedas,
+respectivamente. O aluno terá que ligar o pirata com a imagem que tem a maior
+quantidade de moedas, e também escrever a soma das moedas que ele já tem, com a
+quantidade da imagem que tem mais moedas, sendo 15 + 11 = 26 moedas de ouro.
+
+<html>
+  <head></head>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px;
+      grid-template-rows: 200px 200px 200px;
+      grid-template-areas:
+        ""vazio1 moedas1""
+        ""pirata moedas2""
+        ""vazio2 moedas3"";
+    }
+
+    .pirata {
+      grid-area: pirata;
+      width: 250px;
+      height: 300px;
+      border: 1px solid;
+    }
+
+    .moedas {
+      margin-left: 100px;
+    }
+
+    .moedas1 {
+      grid-area: moedas1;
+      width: 120px;
+      height: 120px;
+      border: 1px solid;
+    }
+
+    .moedas2 {
+      grid-area: moedas2;
+      width: 120px;
+      height: 120px;
+      border: 1px solid;
+    }
+
+    .moedas3 {
+      grid-area: moedas3;
+      width: 120px;
+      height: 120px;
+      border: 1px solid;
+    }
+  </style>
+  <body>
+    <div
+      style=""width: 600px; border: solid 1px""
+      exp=""div contendo a largura da folha, que nesse caso é 600px""
+    >
+      <div class=""questao"" style=""width: 600px"">
+        <p
+          exp=""Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão""
+        >
+          Observe as imagens abaixo. O pirata tem 15 moedas de ouro e está a
+          procura de mais moedas, ligue o pirata com a imagem que tem mais
+          moedas de ouro. A seguir escreva a soma das moedas de ouro que o
+          pirata já tinha, com as novas moedas que ele conseguiu.
+        </p>
+
+        <div class=""container"">
+          <div class=""vazio1""></div>
+
+          <div class=""pirata"" exp=""div que será utilizada para ajustar a imagem do pirata para ficar no centro a esquerda"">
+            <img
+              src=""""
+              alt=""Imagem, no estilo de desenho de pintar, de um pirata com 15 moedas de ouro na mão.""
+              exp=""Imagem na qual o aluno terá que ligar com a imagem com mais moedas de ouro e efeturar a soma""
+            />
+          </div>
+
+          <div class=""moedas1 moedas"" exp=""div que será usada para ajustar a imagem1 das moedas no canto superor direito"">
+            <img
+              src=""""
+              alt=""imagem no estilo de desenho de pintar contendo 10 moedas de ouro""
+              exp=""imagem na qual o aluno terá que contar a quantidade de moedas e tentar identificar se tem a maior quantidade de moedas. Essa imagem tem 10 moedas, a que tem a maior quantidade é a terceira, que tem 11""
+            />
+          </div>
+
+          <div class=""moedas2 moedas"" exp=""div que será utilizada para a imagem2 das moedas ficar ajustada no centro a direita"">
+            <img
+              src=""""
+              alt=""imagem no estilo de desenho de pintar contendo 7 moedas de ouro""
+              exp=""imagem na qual o aluno terá que contar a quantidade de moedas e tentar identificar se nessa imagem tem a maior quantidade de moedas. Essa imagem tem 7 moedas, a imagem com a maior quantidade de moedas é a terceira, com 11.""
+            />
+          </div>
+
+          <div class=""moedas3 moedas"" exp=""div quer será utilizada para a imagem3 ficar ajustada no canto inferior direito da imagem"">
+            <img
+              src=""""
+              alt=""imagem no estilo de desenho de pintar contendo 11 moedas de ouro""
+              exp=""imagem na qual o aluno terá que contar a quantidade de moedas e identificar que nessa imagem tem a maior quantidade de moedas, sendo 11 e ligar com a imagem do pirata""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+</s>"
+handmade_html_dataset/matemática/adição/example16.html,"<s>
+[INST]
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano do fundamental
+assunto: adição 
+tematica: números, mar
+largura-folha: 600px 
+layout: única imagem
+[/INST]
+
+
+Nessa questão será praticado o princípio da adição, e
+também da identificação de números, sendos primos. A questão consiste
+de uma imagem, contendo os números 2,5,6,9,13,15,17 com cada número
+estando dentro de uma bolha, dentro do mar. Dada essa imagem, o aluno 
+terá que responder a pergunta:
+Qual a soma dos números primos presentes na imagem?
+Para responder corretamente o aluno terá que:
+Somar todos os números primos presentes na imagem, e escrever a soma, sendo: 2 + 5 + 13 + 17 = 37.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style=""width: 600px; border: solid 1px""
+      exp=""div contendo a largura da folha, que nesse caso é 600px""
+    >
+      <div class=""questao"" style=""width: 600px"">
+        <p
+          exp=""Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão""
+        >
+          Observe a imagem abaixo, identifique os números primos, e escreva abaixo a soma de todos.
+        </p>
+
+        <div
+          style=""display: flex; justify-content: center""
+          exp=""div utilizada para centralizar a imagem na questão""
+        >
+          <img
+            src=""""
+            alt=""imagem, em estilo de figura de pintar, dos númerais 2,5,6,9,13,15,17, sendo todos dentro de bolhas, e com a aparência que estão no fundo do mar, com peixinhos em volta""
+            style=""width: 400px; height: 200px""
+            exp=""imagem que o aluno terá que observar e identificar quais numerais são primos, e soma-los""
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+</s>"
+handmade_html_dataset/matemática/adição/example15.html,"<s>
+[INST]
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano do fundamental
+assunto: adição tematica: números, samba
+largura-folha: 600px 
+layout: única imagem
+[/INST]
+
+
+Nessa questão será praticado o princípio da adição, e
+também da identificação de números, sendo pares e impares. A questão consiste
+de uma imagem, contendo os números 1,2,3,4,5,6,7,8, estilizados com a temática
+do carnaval. dada essa imagem, o aluno terá que responder as seguintes
+perguntas: 
+A) qual a soma dos números pares? 
+B) qual a soma dos números impares?
+Para responder corretamente o aluno terá que: 
+Para a questão A, ele deve somar os números: 2+4+6+8 = 20, sendo 20 o resultado correto. 
+Para a questão B, ele deve somar os números: 1+3+5+7 = 16, sendo 16 o resultado correto.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style=""width: 600px; border: solid 1px""
+      exp=""div contendo a largura da folha, que nesse caso é 600px""
+    >
+      <div class=""questao"" style=""width: 600px"">
+        <p
+          exp=""Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão""
+        >
+          Observe a imagem abaixo, e responda as questões:
+        </p>
+
+        <div
+          style=""display: flex; justify-content: center""
+          exp=""div utilizada para centralizar a imagem na questão""
+        >
+          <img
+            src=""""
+            alt=""imagem, em estilo de figura de pintar, dos númerais 1,2,3,4,5,6,7,8 estilizados com a temática de carnaval""
+            style=""width: 400px; height: 200px""
+            exp=""imagem que o aluno terá que observar e identificar quais numerais são pares, e quais são impares e somar.""
+          />
+        </div>
+
+      <p>A) qual a soma dos números pares?</p>
+      <p>B) qual a soma dos números impares?</p>
+      </div>
+    </div>
+  </body>
+</html>
+</s>"
+handmade_html_dataset/matemática/adição/example26.html,"<s>
+[INST]
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição, contagem
+tematica: material escolar
+largura-folha: 850px
+layout: duas imagens, linhas e colunas
+[/INST]
+
+
+Essa questão pratica os conceitos de contagem e adição.
+A questão consiste de duas imagens, uma contendo 5 
+lapis e outra contendo 3 borrachas, o dever do aluno e efetuar
+a soma da quantidade de borrachas com lapis, sendo 5 + 3 = 8.
+
+<html>
+  <head></head>
+
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 150px 150px 150px 150px 150px;
+      grid-template-rows: 150px;
+      grid-template-areas:
+        ""img1 mais img2 igual result""
+    }
+
+    .img1 {
+      grid-area: img1;
+    }
+
+    .img2 {
+      grid-area: img2;
+    }
+
+    .igual {
+      grid-area: igual;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .mais {
+      grid-area: mais;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .result {
+      grid-area: result;
+      border: solid 1px;
+    }
+  </style>
+  <body>
+    <div
+      style=""width: 850px; border: solid 1px""
+      exp=""div contendo a largura da folha, que nesse caso é 600px""
+    >
+      <div class=""questao"" style=""width: 600px"">
+        <p
+          exp=""Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão""
+        >
+          Conte a quantidade de lapis e de borrachas das imagens abaixo e escreva a soma:
+        </p>
+
+
+        <div class=""container"">
+          <div class=""img1"">
+            <img
+              alt=""imagem no estilo de desenho de pintar infantil de 5 lapis separados""
+              exp=""imagem que o aluno terá que observar e contar quantos lapis estão presentes""
+            />
+          </div>
+
+          <div class=""mais"" exp=""sinal de mais que representa a soma da quantidades""><p>+</p></div>
+
+          <div class=""img2"">
+            <img 
+              alt=""imagem no estilo de desenho de pintar infantil de 3 borrachas separadas""
+              exp=""imagem que o aluno terá que observar e contar quantas borrachas estão presentes""
+            />
+          </div>
+
+          <div class=""igual"" exp=""sinal de igual que representa o resultado da soma""><p>=</p></div>
+
+          <div class=""result"" exp=""caixa que servirá para o aluno escrever o resultado da soma""></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+</s>"
+handmade_html_dataset/matemática/adição/example14.html,"<s>
+[INST]
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2 ano fundamental 
+assunto: adição, contagem 
+tematica: mãos
+largura-folha: 800px 
+layout: duas imagens, colunas e linhas
+[/INST]
+
+Nessa questão serão praticado os princípios da adição e contagem. 
+A questão consiste duas imagens de mãos com
+dedos levantados, a primeira mão tem 3 dedos levantados, e a segunda tem 4 dedos
+levantados. O aluno deverá somar a quantidade de dedos levantados em ambas as
+mãos e escrever o resultado na caixa apropriada. A disposição das imagens e
+simbolos está em 5 colunas e 1 linha, sendo: mão 1, sinal de mais, mão 2, sinal
+de igual, caixa para escrever o resultado. O aluno deverá contar as quantidades
+de dedos levantados e somar, sendo 3 + 4 = 7 e escrever na caixa apropriada.
+
+<html>
+  <head></head>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 150px 150px 150px 150px 150px;
+      grid-template-rows: 150px;
+      grid-template-areas: ""mao1 sinalmais mao2 sinaligual caixa"";
+    }
+
+    .mao1 {
+      grid-area: mao1;
+      border: solid 1px;
+    }
+
+    .mao2 {
+      grid-area: mao2;
+      border: solid 1px;
+    }
+
+    .sinalmais {
+      grid-area: sinalmais;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .sinaligual {
+      grid-area: sinaligual;
+      display: flex;
+      justify-content: center;
+    }
+
+    .caixa {
+      grid-area: caixa;
+      border: solid 1px;
+    }
+  </style>
+  <body>
+    <div
+      style=""width: 800px; border: solid 1px""
+      exp=""div contendo a largura da folha, que nesse caso é 800px""
+    >
+      <div class=""questao"" style=""width: 800px"">
+        <p
+          exp=""Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão""
+        >
+          Observe as imagens abaixo e escreva a soma da quantidades de dedos
+          levantados nas duas questões.
+        </p>
+
+        <div class=""container"">
+          <div class=""mao1"">
+            <img
+              alt=""Imagem de uma mão, no estilo de desenho de pintar infatil, com 3 dedos levantados""
+              exp=""Imagem que o aluno terá que contar quantos dedos estão levantados, sendo 3""
+            />
+          </div>
+
+          <div class=""sinalmais"">
+            <p
+              exp=""Sinal que representa a soma dos dedos das imagens mao1 e mao2""
+            >
+              +
+            </p>
+          </div>
+
+          <div class=""mao2"">
+            <img
+              alt=""Imagem de uma mão, no estilo de desenho de pintar infatil, com 4 dedos levantados""
+              exp=""Imagem que o aluno terá que contar quantos dedos estão levantados, sendo 4""
+            />
+          </div>
+
+          <div class=""sinaligual"">
+            <p
+              exp=""Sinal que representa o resultado da soma das imagens mao1 e mao2""
+            >
+              =
+            </p>
+          </div>
+
+          <div
+            class=""caixa""
+            exp=""Caixa na qual o aluno deverá escrever a soma de dedos levantados das imagens mao1 e mao2""
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+</s>"
+handmade_html_dataset/matemática/adição/example8.html,"<s>
+[INST]
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental 
+assunto: adição 
+tematica: brinquedos 
+largura-folha: 600px 
+layout: única imagem
+[/INST]
+
+Nessa questão será praticado o principio da soma e contagem. A questão
+consiste de em uma imagem com 10 carrinhos, para pintar. E com o enunciado
+sinalizando que um menino já tem dois carrinhos e ganhou mais 3, e pedindo para
+que ele pinte na imagem quantos carrinhos ele ficou ao todo. O aluno terá que
+efetuar a soma de 2 com 3, resultando em 5, e pintar 5 carrinhos na imagem.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style=""width: 600px; border: solid 1px""
+      exp=""div contendo a largura da página, que nesse caso é 600px""
+    >
+      <div class=""questao"" style=""width: 600px"">
+        <p
+          exp=""Descrição da questão. Contém a explicação da questão o aluno terá que responder""
+        >
+          Antônio tem 2 carrinhos e ganhou mais 3, pinte na figura abaixo
+          quantos carrinhos Antônio ficou.
+        </p>
+        <div style=""display: flex; justify-content: center"">
+          <img
+            src=""""
+            alt=""Imagem, no estido de desenho de colorir, de 10 carrinhos""
+            style=""width: 400px; height: 200px""
+            exp=""Imagem que o aluno terá que contar quantos carrinhos estão presentes e pintar a quantidade correta""
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+</s>"
+handmade_html_dataset/matemática/adição/example25.html,"<s>
+[INST]
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: contagem
+tematica: doces
+largura-folha: 600px
+layout: única imagem
+[/INST]
+
+Essa questão pratica os principios da contagem e adição.
+A quesão consiste de uma imagem de um pote de doces, contendo
+3 pirulitos e 5 balas.
+O aluno terá que contar quantas balas estão presentes, sendo 5.
+Terá também que contar quantos pirulitos estão presentes, sendo 3,
+e por fim deverá somar 5 + 3 = 8 que resultará em 8 doces no total.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style=""width: 600px; border: solid 1px""
+      exp=""div contendo a largura da folha, que nesse caso é 600px""
+    >
+      <div class=""questao"" style=""width: 600px"">
+        <p
+          exp=""Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão""
+        >
+          Observe a imagem e responda as questões:
+        </p>
+
+
+        <div
+          style=""display: flex; justify-content: center""
+          exp=""div utilizada para centralizar a imagem na questão""
+        >
+          <img
+            src=""""
+            alt=""Imagem de um pote de vidro transparente, com 5 balas e 3 pirulitos""
+            style=""width: 450px; height: 250px""
+            exp=""Imagem que o aluno terá que contar quantas balas e quantos pirulitos estão presentes""
+          />
+      </div>
+
+      <p exp=""questão que indaga quantas balas estão presentes no pote"">A) Quantas balas estão presentes dentro do pote?</p>
+      <p exp=""questão que indaga quantos pirulitos estão presentes"">B) Quantos pirulitos estão presentes dentro do pote?</p>
+      <p exp=""questão que indaga quantos doces tem ao todo dentro do "">C) Qual a soma de pirulitos com balas?</p>
+    </div>
+  </body>
+</html>
+</s>"
+handmade_html_dataset/matemática/adição/example4.html,"<s>
+[INST]
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental 
+assunto: adição 
+tematica: tabela 
+largura-folha: 600px
+layout: tabela
+[/INST]
+
+
+Nessa questão serão praticados os princípios da adição. A questão consiste de
+uma tabela, na qual estão presentes várias equações de soma, sendo 4 + 5, 15 + 8
+e 8 + 23. Para resolver o aluno terá que efeturar as somas pedidas e escrever o
+resultado depois do sinal de igual. Os resultados esperados são 4 + 5 = 9. 15 +
+8 = 23 e 8 + 23 = 31.
+
+<html>
+  <head></head>
+  <body>
+    <div style=""width: 600px; border: solid 1px"">
+      <div
+        class=""questao""
+        style=""width: 600px""
+        exp=""div contendo a largura da folha, que nesse caso é 600px""
+      >
+        <p
+          exp=""Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão""
+        >
+          Observe a tabela abaixo e faça a soma dos números e escreva o
+          resultado
+        </p>
+        <table
+          style=""display: flex; justify-content: center""
+          exp=""tabela que vai conter as somas a serem efetuadas""
+        >
+          <tr
+            exp=""Cabeçalho tabela, onde tem duas colunas, uma sinalizando a coluna com as equações e outra a dos resultados""
+          >
+            <th>Soma</th>
+            <th>Resultado</th>
+          </tr>
+          <tr>
+            <th
+              exp=""Soma que terá que ser efetuada pelo aluno, e deverá escrever o resultado depois do sinal de  =""
+            >
+              4 + 5 =
+            </th>
+          </tr>
+          <tr>
+            <th
+              exp=""Soma que terá que ser efetuada pelo aluno, e deverá escrever o resultado depois do sinal de  =""
+            >
+              15 + 8 =
+            </th>
+          </tr>
+          <tr>
+            <th
+              exp=""Soma que terá que ser efetuada pelo aluno, e deverá escrever o resultado depois do sinal de  =""
+            >
+              8 + 23 =
+            </th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
+</s>"
+handmade_html_dataset/matemática/adição/example1.html,"<s>
+[INST]
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental 
+assunto: adição, raciocíno lógico 
+tematica: mercado
+largura-folha: 600px
+layout: única imagem
+[/INST]
+
+Nessa questão será trabalhado o princípio da adição. A
+questão consiste de uma imagem de uma balança, contendo 12kg de um dos lados, e
+5kg de outro. Para responder a questão o aluno terá que observar a imagem,
+identificar que de um lado da balança tem 12kg e do outro tem 5kg; ao final ele
+terá que calcular que para que a balança esteja em equilibrio terá que ser
+adicionado 7kg do lado que tem 5kg, sendo 7 + 5 = 12.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style=""width: 600px; border: solid 1px""
+      exp=""div contendo a largura da folha, que nesse caso é 600px""
+    >
+      <div class=""questao"" style=""width: 600px"">
+        <p
+          exp=""Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão""
+        >
+          Observe a imagem e calcule quanto peso terá que ser colocado na
+          balança para que ambos os lados tenham o mesmo peso.
+        </p>
+        <div
+          style=""display: flex; justify-content: center""
+          exp=""div utilizada para centralizar a imagem na questão""
+        >
+          <img
+            src=""""
+            alt=""imagem do desenho de uma balança em que um dos lados tem pesos representado 12 kg e do outro tem pesos representando 5 kg""
+            style=""width: 400px; height: 200px""
+            exp=""imagem onde o aluno terá que observar o peso de cada lado da balança e ele terá que constatar que para obter o equilibrio terá que ser adicionado 7kg do lado mais leve. a imagem contém 400px por 200px para que ela seja uma imagem central""
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+</s>"
+handmade_html_dataset/matemática/adição/example7.html,"<s>
+[INST]
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental 
+assunto: adição 
+tematica: são joão 
+largura-folha: 600px 
+layout: única imagem
+[/INST]
+
+Nessa questão serão praticados os princípios da contagem e adição. A
+questão consiste de uma imagem, contendo 5 espigas de milho, e também 3 balões
+de são joão; então são feitas perguntas, sendo elas: quantas espigas estão
+presentes? quantos balões estão presentes? qual a soma dos balões com as
+espigas?. O aluno terá que contar a quantidade de espigas de milho, sendo 5,
+para a questão A. De balões, sendo 3, para a questão B. E efetuar a soma de
+espigas e balões, sendo 8 como resultado para a questão C.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style=""width: 600px; border: solid 1px""
+      exp=""div contendo a largura da página, que nesse caso é 600px""
+    >
+      <div class=""questao"" style=""width: 600px"">
+        <p exp=""Descrição inicial da questão"">
+          Observe a imagem abaixo e responda as seguintes questões:
+        </p>
+        <div style=""display: flex; justify-content: center"">
+          <img
+            src=""""
+            alt=""Imagem no estilo de desenho de colorir contendo 5 espigas de milho e 3 balões de são joão""
+            style=""width: 400px; height: 200px""
+            exp=""imagem que o aluno terá que identificar quantas espigas de milho estão presentes, sendo 5; e também balões de são joão, sendo 3""
+          />
+        </div>
+        <p exp=""Primeira questão sobre a imagem"">
+          A) Quantas espigas de milho estão presentes?
+        </p>
+        <p exp=""Segunda questão sobre a imagem"">
+          B) Quantos balões estão presentes?
+        </p>
+        <p exp=""Terceira questão sobre a imagem"">
+          C) Qual a soma dos balões com as espigas?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+</s>"
+handmade_html_dataset/matemática/adição/example27.html,"<s>
+[INST]
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição, contagem
+tematica: peixes
+largura-folha: 800px
+layout: única imagem
+[/INST]
+
+Essa atividade explorará os conceitos de adição e contagem de forma prática e visual. 
+o Aluno verá uma imagem de um aquário vazio e receberá a seguinte pergunta: 
+""João tem inicialmente 4 peixes e ganha mais 3, quantos peixes terá ao todo?"" 
+O objetivo será desenhar todos os peixes no aquário vazio para representar o total.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style=""width: 800px; border: solid 1px""
+      exp=""div contendo a largura da folha, que nesse caso é 800px""
+    >
+      <div class=""questao"" style=""width: 800px"">
+        <p
+          exp=""Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão""
+        >
+          João tem inicialmente 4 peixinhos e ganha mais 3, quantos peixinhos terá ao todo? Desenhe na imagem abaixo todos os peixinhos.
+        </p>
+
+
+        <div
+          style=""display: flex; justify-content: center""
+          exp=""div utilizada para centralizar a imagem na questão""
+        >
+          <img
+            src=""""
+            alt=""Imagem no estilo de desenho de pintar de um aquario transparente com decorações no fundo, porém sem peixes dentro""
+            style=""width: 600px; height: 400px""
+            exp=""Imagem que o aluno terá que desenhar a quantidade de peixes que representa a soma dos peixes que ele já tinha, os peixes que ele ganhou""
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+</s>"
+handmade_html_dataset/matemática/adição/example18.html,"<s>
+[INST]
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental 
+assunto: adição 
+tematica: números 
+largura-folha: 800px
+layout: linhas e colunas
+[/INST]
+
+
+Nessa questão serão praticados os principios da adição. A questão consiste de
+equações em disposição de linhas e colunas, com um valor faltando para completa-las. 
+As questões são as seguintes:
+7 + _ = 9 e _ + 6 = 11.
+Para responder corretamente o aluno deve entender que, para
+o resultado da soma de um número com 7 ser igual 9, a resposta deve ser 2, pois 7 + 2 = 9. 
+A segunda questão o número que é somado com 6 para resultar em 11 deve ser 5, pois 6 + 5 = 11.
+
+<html>
+  <head></head>
+
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 160px 160px 160px 160px 160px;
+      grid-template-rows: 150px 150px;
+      grid-template-areas:
+        ""nu1 m1 nu2 ig1 r1""
+        ""nu3 m2 nu4 ig2 r2"";
+      margin: 5px;
+    }
+
+    .center {
+      display: flex;
+      justify-content: center;
+      font-size: 40px;
+    }
+
+    .m1 {
+      grid-area: m1;
+    }
+
+    .m2 {
+      grid-area: m2;
+    }
+
+    .ig1 {
+      grid-area: ig1;
+    }
+
+    .ig2 {
+      grid-area: ig2;
+    }
+
+    .nu1 {
+      grid-area: nu1;
+    }
+
+    .nu2 {
+      grid-area: nu2;
+    }
+
+    .nu3 { 
+      grid-area: nu3;
+    }
+
+    .nu4 {
+      grid-area: nu4;
+    }
+
+    .r1 {
+      grid-area: r1;
+    }
+
+    .r2 {
+      grid-area: r2;
+    }
+
+    .box {
+      border: 1px solid;
+    }
+  </style>
+  <body>
+    <div
+      style=""width: 800px; border: solid 1px""
+      exp=""div contendo a largura da folha, que nesse caso é 800px""
+    >
+      <div class=""questao"" style=""width: 800px"">
+        <p
+          exp=""Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão""
+        >
+          Observe as equações abaixo e preencha os quadrados com os valores que
+          completam corretamente.
+        </p>
+
+        <div class=""container"">
+          <div class=""nu1 center"" exp=""número que o aluno deverá somar com 2 para resultar em 9""><p>7</p></div>
+
+          <div class=""nu4 center"" exp=""número que o aluno deverá somar com 5 para resultar em 11""><p>6</p></div>
+
+          <div class=""m1 center"" exp=""sinal que representa a soma de 7 com 2""><p>+</p></div>
+
+          <div class=""m2 center"" exp=""sinal que representa a soma de 5 com 6""><p>+</p></div>
+
+          <div class=""ig1 center"" exp=""sinal que representa a igualdade de 7 + 2 = 9""><p>=</p></div>
+
+          <div class=""ig2 center"" exp=""sinal que representa a igualdade de 5 + 6 = 11""><p>=</p></div>
+
+          <div class=""r1 center"" exp = ""número que representa a soma de 7 + 2""><p>9</p></div>
+
+          <div class=""r2 center"" exp = ""número que representa a soma de 5 + 6""><p>11</p></div>
+
+          <div class=""n2 box"" exp=""caixa que representa o espaço para o aluno preencher 2, que representa a resposta para a soma de 7 + 2 = 9""></div>
+
+          <div class=""n3 box"" exp=""caixa que representa o espaço para o aluno preencher 5, que representa a resposta para a soma de 5 + 6 = 11""></div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+</s>"
+handmade_html_dataset/matemática/contagem/example17.html,"<s>
+[INST]
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: contagem
+tematica: fauna e flora
+largura-folha: 800px
+layout: três imagens, ligar imagens
+[/INST]
+
+Nessa questão será praticado o principio da contagem.
+A questão consiste de 3 imagens: A primeira imagem
+contém 5 micos leão dourado, A segunda contém 3
+flores de girassol, A terceira contém 4 sabiás.
+O aluno terá que ligar a imagem com o número que
+representa a quantidade de animais ou plantas que 
+está representada nas imagens.
+
+<html>
+  <head></head>
+
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 300px 400px 100px;
+      grid-template-rows: 200px 200px 200px;
+      grid-template-areas:
+        ""img1 vazio1 n1""
+        ""img2 vazio2 n2""
+        ""img3 vazio3 n3""
+    }
+
+    .img1{
+      grid-area: img1;
+    }
+
+    .img2{
+      grid-area: img2;
+    }
+
+    .img3{
+      grid-area: img3;
+    }
+
+    .n1 {
+      grid-area: n1;
+      font-size: 30px;
+    }
+
+    .n2 {
+      grid-area: n2;
+      font-size: 30px;
+    }
+
+    .n3 {
+      grid-area: n3;
+      font-size: 30px;
+    }
+
+  </style>
+  <body>
+    <div
+      style=""width: 800px; border: solid 1px""
+      exp=""div contendo a largura da folha, que nesse caso é 800px""
+    >
+      <div class=""questao"" style=""width: 800px"">
+        <p
+          exp=""Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamente a questão""
+        > 
+          Observe as imagens abaixo e ligue com o númeral que representa corretamente a quantidade de animais ou plantas presentes.
+        </p>
+        
+        <div class=""container"">
+          <div class=""img1"">
+            <img
+              alt=""Imagem no estilo de desenho de pintar, de 5 micos leão dourado pendurados em uma árvore""
+              exp=""Imagem que o aluno terá que contar quantos micos leão dourado estão presentes e ligar com o número n2""
+            />
+          </div>
+
+          <div class=""img2"">
+            <img
+              alt=""Imagem no estilo de desenho de pintar, de 3 flores de girassol em um campo""
+              exp=""Imagem que o aluno terá que contar quantas flores de girassol estão presentes e ligar com o número n3""
+            />
+          </div>
+
+          <div class=""img3"">
+            <img
+              alt=""Imagem no estilo de desenho de pintar, de 4 sabiás voando no céu""
+              exp=""Imagem que o aluno terá que contar quantas sabiás estão presentes e ligar com o número n1""
+            />
+          </div>
+
+          <div class=""n1"">
+            <p
+              exp=""Número representa a contagem da img3, que o aluno terá que ligar""
+            >
+              4
+            </p>
+          </div>
+
+          <div class=""n2"">
+            <p
+              exp=""Número representa a contagem da img1, que o aluno terá que ligar""
+            >
+              5
+            </p>
+          </div>
+
+          <div class=""n3"">
+            <p
+              exp=""Número representa a contagem da img2, que o aluno terá que ligar""
+            >
+              3
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+</s>"
+handmade_html_dataset/matemática/contagem/example12.html,"<s>
+[INST]
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental 
+assunto: contagem. adição 
+tematica: fauna, animais
+largura-folha: 600px 
+layout: única imagem
+[/INST]
+
+Nessa questão será trabalhado os princípios da contagem a
+adição. A questão consiste de uma imagem com 7 pássaros repousando em um fio
+elétrico, e mais 4 pássaros voando. A questão pede que o aluno some a quantidade
+de pássaros que estão em repouso, com os que estão voando, sendo 7 em repouso e
+mais 4 voando, a resposta correta é 7 + 4 = 11.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style=""width: 600px; border: solid 1px""
+      exp=""div contendo a largura da folha, que nesse caso é 600px""
+    >
+      <div class=""questao"" style=""width: 600px"">
+        <p
+          exp=""Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão""
+        >
+          Observe a imagem abaixo e responda as questões:
+        </p>
+
+        <div
+          style=""display: flex; justify-content: center""
+          exp=""div utilizada para centralizar a imagem na questão""
+        >
+          <img
+            src=""""
+            alt=""imagem no estilo de desenho de pintar de 7 pássaros descansando em um fio, e também 4 pássaros voando""
+            style=""width: 400px; height: 200px""
+            exp=""imagem na qual o aluno terá que contar a quantidade de pássaros que estão descansando, e também os pássaros que estão voando, e ao final somar as duas quantidades""
+          />
+        </div>
+
+        <p>A) Quantos pássaros estão descansando?</p>
+        <p>B) Quantos pássaros estão voando?</p>
+        <p>C) Qual a soma de todos os pássaros?</p>
+      </div>
+    </div>
+  </body>
+</html>
+</s>"
+handmade_html_dataset/matemática/contagem/example24.html,"<s>
+[INST]
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: contagem
+tematica: mar
+largura-folha: 600px
+layout: única imagem
+[/INST]
+
+Essa questão pratica os principios da contagem.
+A questão consiste de uma imagem do mar contendo
+6 barcos, e o aluno terá que contar quantos barcos estão
+presentes na imagem.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style=""width: 600px; border: solid 1px""
+      exp=""div contendo a largura da folha, que nesse caso é 600px""
+    >
+      <div class=""questao"" style=""width: 600px"">
+        <p
+          exp=""Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão""
+        >
+          Observe a imagem e conte quantos barcos estão presentes, e escreva.
+        </p>
+
+
+        <div
+          style=""display: flex; justify-content: center""
+          exp=""div utilizada para centralizar a imagem na questão""
+        >
+          <img
+            src=""""
+            alt=""Imagem no estilo de desenho colorido com 6 barcos no mar com uma praia na parte inferior da imagem""
+            style=""width: 500px; height: 300px""
+            exp=""Imagem que o aluno terá que observar e contar a quantidade de barcos para responder a atividade""
+          />
+      </div>
+    </div>
+  </body>
+</html>
+</s>"
+handmade_html_dataset/matemática/contagem/example5.html,"<s>
+[INST]
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental 
+assunto: contagem 
+tematica: fauna e flora
+largura-folha: 600px 
+layout: única imagem
+[/INST]
+
+Nessa questão serão praticados o princípio da contagem. A
+questão consiste de uma imagem que estão presentes 8 sapos, sendo 3 na lagoa e
+mais 5 chegando. O enunciado pede que o aluno some quantos sapos estão presentes
+na lagoa, com a quantidade que está chegando Para responder corretamente o aluno
+terá que contar quantos sapos estão presentes na imagem, sendo 8.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style=""width: 600px; border: solid 1px""
+      exp=""div contendo a largura da página, que nesse caso é 600px""
+    >
+      <div class=""questao"" style=""width: 600px"">
+        <p
+          exp=""Descrição da questão. Contém a explicação da questão o aluno terá que responder""
+        >
+          Em uma lagoa tinham 3 sapinhos, e chegaram também a quantidade de
+          sapinhos representados na figura, quantos sapinhos tem agora ao todo?
+        </p>
+        <div style=""display: flex; justify-content: center"">
+          <img
+            src=""""
+            alt=""Imagem em estido de desenho de uma lagoa com 3 sapos, e a caminho da lagoa estão vindo mais 5.""
+            style=""width: 500px; height: 300px""
+            exp=""Imagem que o aluno terá que identificar quantos sapinhos estão presentes e realizar a contagem""
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+</s>"
+handmade_html_dataset/matemática/contagem/example20.html,"<s>
+[INST]
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: contagem
+tematica: animais 
+largura-folha: 800px
+layout: única imagem
+[/INST]
+
+
+Nessa questão será praticado o princípio da contagem.
+A questão consiste de uma centopéia com 10 patas, no estilo de
+desenho de pintar infantil. A tarefa do aluno é desenhar sapatos
+em todos as patas da centopéia. Em seguida ele deve contar quantos
+pares de sapatos são necessários. sendo 5 a resposta, pois cada
+par de sapatos consiste de 2 sapatos.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style=""width: 800px; border: solid 1px""
+      exp=""div contendo a largura da folha, que nesse caso é 800px""
+    >
+      <div class=""questao"" style=""width: 800px"">
+        <p
+          exp=""Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão""
+        >
+          Observe a imagem da centopéia abaixo e desenhe sapatos em cada pata. Em seguida conte quantos pares
+          de sapatos são necessários para calçar a centopéia.
+        </p>
+      </div>
+
+      <div
+          style=""display: flex; justify-content: center""
+          exp=""div utilizada para centralizar a imagem na questão""
+        >
+          <img
+            src=""""
+            alt=""Imagem de uma centopéia com 10 patas no estilo de desenho de pintar infantil""
+            style=""width: 600px; height: 300px""
+            exp=""Imagem na qual o aluno terá que desenhar sapatos em todos os pés da centopéia, e contar quantos pares de sapatos são necessários.""
+          />
+        </div>
+    </div>
+  </body>
+</html>
+</s>"
+handmade_html_dataset/matemática/contagem/example19.html,"<s>
+[INST]
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: contagem
+tematica: anversário 
+largura-folha: 800px
+layout: única imagem
+[/INST]
+
+
+Nessa questão será praticado o princípio da contagem.
+A questão consiste de uma imagem contendo um bolo de aniversário
+e o aluno terá que desenhar em cima dele a quantidade de velas
+que representa a idade dele. Por exemplo, se a idade do aluno
+for 8 anos, ele deverá dsenhar 8 velas de aniversário em cima
+do bolo.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style=""width: 800px; border: solid 1px""
+      exp=""div contendo a largura da folha, que nesse caso é 800px""
+    >
+      <div class=""questao"" style=""width: 800px"">
+        <p
+          exp=""Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão""
+        >
+          Este é o seu bolo de aniversário. Desenhe nele a quantidade de velas que corresponde à sua idade.
+        </p>
+      </div>
+
+      <div
+          style=""display: flex; justify-content: center""
+          exp=""div utilizada para centralizar a imagem na questão""
+        >
+          <img
+            src=""""
+            alt=""Imagem de um bolo de aniversário no estilo de desenho de colorir para crianças""
+            style=""width: 600px; height: 300px""
+            exp=""Imagem que o aluno terá que desenhar a quantidade de velas que corresponde à sua idade""
+          />
+        </div>
+    </div>
+  </body>
+</html>
+</s>"
+handmade_html_dataset/matemática/contagem/example22.html,"<s>
+[INST]
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: parque de diversões
+largura-folha: 600px
+layout: tabela, linhas e colunas
+[/INST]
+
+Nessa questão será praticado o principio da adição.
+A questão consiste de uma tabela contendo os preços
+dos brinquedos de um parque de diversões, sendo:
+roda gigante: 10 reais
+carrinho bate-bate: 13 reais
+carrossel: 7 reais
+gangorra: 5 reais
+Será pedido para que o aluno efetue adições para calcular
+o gasto se ele utilizar determinados brinquedos, sendo:
+A) roda gigante + carrinho bate-bate = 10 + 13 = 23
+B) gangorra + carrossel = 5 + 7
+C) roda gigante + carrinho bate-bate + carrossel + gangorra = 10 + 13 + 7 + 5 = 35
+
+
+<html>
+  <head></head>
+
+  <style>
+    table, th, td {
+      border: 1px solid black;
+    }
+  </style>
+  <body>
+    <div
+      style=""width: 600px; border: solid 1px""
+      exp=""div contendo a largura da folha, que nesse caso é 600px""
+    >
+      <div class=""questao"" style=""width: 600px"">
+        <p
+          exp=""Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão""
+        >
+          Felipe foi a o parque e viu a tabela de preços dos brinquedos, que está abaixo. Observe a tabela e responda as questões
+      </p>
+      </div>
+
+      <div
+          style=""display: flex; justify-content: center""
+          exp=""div utilizada para centralizar a imagem na questão""
+        >
+        <table exp=""Tabela que contém o preço de cada atração do parque de diversões"">
+          <tr exp=""Preço da roda gigante"">
+            <th>Roda gigante</th>
+            <th>10 reais</th>
+          </tr>
+
+          <tr exp=""Preço do carrinho bate-bate""> 
+            <th>Carrinho bate-bate</th>
+            <th>13 reais</th>
+          </tr>
+
+          <tr exp=""Preço do carrossel"">
+            <th>Carrossel</th>
+            <th>7 reais</th>
+          </tr>
+
+          <tr exp=""Preço da gangorra"">
+            <th>Gangorra</th>
+            <th>5 reais</th>
+          </tr>
+        </table>
+      </div>
+      
+      <p exp=""Questão que o aluno terá que somar o preço da roda gigante e do carrinho bate-bate"">A) Quanto Felipe gastaria brincando na Roda gigante e no Carrinho bate-bate?</p>
+      <p exp=""Questão que o aluno terá que somar o preço da gangorra e do carrossel"">B) Quanto Felipe gastaria brincando na Gangorra e no Carrossel?</p>
+      <p exp=""Questão que o aluno terá que somar o preço de todos os brinquedos"">C) Quanto Felipe gastaria brincando em todos os brinquedos?</p>
+    </div>
+
+  </body>
+</html>
+</s>"
+handmade_html_dataset/matemática/contagem/example6.html,"<s>
+[INST]
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental 
+assunto: contagem 
+tematica: doces 
+largura-folha: 600px
+layout: única imagem
+[/INST]
+
+Nessa questão será trabalhado o principio da contagem. A questão consiste na
+imagem de uma menina com 5 pirulitos e ganhando mais 4, e pergunta quantos
+pirulitos ela ficou ao todo. Para resolver a questão o aluno terá que contar
+quantos pirulitos estão presentes na imagem Maria irá receber, resultando em 9
+pirulitos.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style=""width: 600px; border: solid 1px""
+      exp=""div contendo a largura da folha, que nesse caso é 600px""
+    >
+      <div class=""questao"" style=""width: 600px"">
+        <p
+          exp=""Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão""
+        >
+          Maria tem 5 pirulitos e ganhou mais a quantidade representada na
+          imagem com quantos pirulitos Maria ficou?
+        </p>
+        <div
+          style=""display: flex; justify-content: center""
+          exp=""div utilizada para centralizar a imagem na questão""
+        >
+          <img
+            src=""""
+            alt=""Imagem em estilo de desenho de uma menina com 5 pirulitos e ganhando de presente mais 4""
+            style=""width: 500px; height: 300px""
+            exp=""Imagem na qual o aluno terá que contar quantos pirulitos estão presentes na imagem, sendo 9""
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+</s>"
+handmade_html_dataset/matemática/contagem/example2.html,"<s>
+[INST]
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental 
+assunto: contagem tematica: frutas 
+largura-folha: 600px
+layout: única imagem
+[/INST]
+
+Nessa questão o aluno terá que exercitar os princípios da contagem. A
+questão consiste de uma imagem que contém 6 maçãs, e enunciado pede para o aluno
+desenhar maçãs até completar 10. Para resolver corretamente ele terá observar a
+imagem, contar que já estão presentes 6 maçãs, e desenhar mais 4 maçãs,
+totalizando 10.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style=""width: 600px; border: solid 1px""
+      exp=""div contendo a largura da página, que nesse caso é 600px""
+    >
+      <div class=""questao"" style=""width: 600px"">
+        <p
+          exp=""Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão""
+        >
+          Observe a imagem e desenhe maçãs até completar 10.
+        </p>
+        <div
+          style=""display: flex; justify-content: center""
+          exp=""div utilizada para centralizar a imagem na questão""
+        >
+          <img
+            alt=""imagem do desenho uma macieira contendo 6 maçãs""
+            style=""width: 500px; height: 200px""
+            exp=""imagem contendo 6 maçãs, onde o aluno terá que que contar as 6 maçãs presentes. A imagem contém 500px por 200px para que ela seja uma imagem central no resultado final""
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+</s>"

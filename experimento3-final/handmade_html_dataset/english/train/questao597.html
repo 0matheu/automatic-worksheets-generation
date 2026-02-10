@@ -1,0 +1,63 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Fruit Market
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+
+{
+"task": "Observe the fruit stand and answer the questions based on the quantities.",
+"layout": "The activity presents a colorful fruit stand with baskets of different fruits and their quantities. The image supports the student in identifying and adding quantities from the fruit stand.",
+"answer": {
+  "A": "The student should add the apples (25) and bananas (15). The correct answer is 40.",
+  "B": "The student should add the oranges (30) and watermelons (10). The correct answer is 40.",
+  "C": "The student should add all the fruits together: apples (25), bananas (15), oranges (30), and watermelons (10). The correct answer is 80."
+}
+}
+
+<html>
+<head></head>
+<body>
+  <div style="width: 800px; border: solid 1px black; padding: 10px;" exp="Main container for the Fruit Market activity.">
+
+    <div class="activity">
+      <p exp="Description of the activity inviting the student to look at fruits and answer questions about their quantities.">
+        Observe the fruit stand and answer the questions below based on the number of fruits.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the fruit market image.">
+      <img 
+        src=""
+        alt="Illustration of a vibrant fruit market with labeled baskets: one with 25 red apples, another with 15 yellow bananas, a third with 30 oranges, and a fourth with 10 large green watermelons. A striped canopy shades the stand, and a cheerful vendor is smiling behind the counter."
+        style="width: 600px; height: 300px;"
+        exp="Detailed image of a cheerful fruit market scene. On the stand are four wooden baskets, each filled with a different fruit. The first basket has red apples with a '25' label, the second has yellow bananas labeled '15', the third holds bright oranges labeled '30', and the fourth shows large green watermelons with a '10' label. There's a striped red-and-white canopy above the stand and a friendly vendor in an apron."
+      />
+    </div>
+
+    <p style="text-align: center;" exp="Instruction for the student to answer the questions based on the image.">
+      Answer the following questions by adding the number of fruits:
+    </p>
+
+    <div style="padding: 10px 30px;">
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question A asking to add the number of apples and bananas."><b>A)</b> How many fruits are there in total if we add apples and bananas?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Answer box for question A. Correct answer: 40."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question B asking to add the number of oranges and watermelons."><b>B)</b> How many fruits are there in total if we add oranges and watermelons?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Answer box for question B. Correct answer: 40."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question C asking to add all the fruits together."><b>C)</b> How many fruits are there in total when we add all of them together?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Answer box for question C. Correct answer: 80."></div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+    "level": "2nd year of fundamental",
+    "learning goals": "addition",
+    "theme": {
+        "en": "Circus",
+        "pt": "Circo"
+    },
+    "width-sheet": "800px",
+    "task": "observe image, draw answer",
+    "language": "pt",
+    "temperature": 0.5,
+    "model": "ft:gpt-4.1-mini-2025-04-14:ufcg::C0UvUMGP"
+}

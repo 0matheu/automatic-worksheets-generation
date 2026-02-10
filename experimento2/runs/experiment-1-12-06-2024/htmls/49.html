@@ -1,0 +1,39 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of new flowers Maria planted and calculating the total number of sunflowers.",
+  "layout": "The HTML elements are organized with a div containing the sheet width, followed by a div containing the question description, an image of Maria's sunflowers, and three paragraphs containing the questions. The image is centered in the div using flexbox, and the questions are listed below the image.",
+  "answer": "To correctly answer this activity, the student will have to: 1) count the number of sunflowers Maria originally had (7), 2) count the number of new sunflowers and add them to the original count (4 + 7 = 11), and 3) write the total number of sunflowers. The correct answers are: A) 7, B) 4, and C) 11."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of the question the student will have to answer"
+        >
+          Maria has 7 sunflowers in her garden, and received a gift of sunflowers and also planted the seeds she received. Counting the new flowers, how many sunflowers did Maria end up with? 
+        </p>
+        <div style="display: flex; justify-content: center">
+          <img
+            src=""
+            alt="image in a coloring book style of a child with 7 sunflowers in a garden"
+            style="width: 600px; height: 400px"
+            exp="image that the student will have to count the 7 sunflowers present"
+          />
+        </div>
+        <p>A) How many sunflowers did Maria originally have?</p>
+        <p>B) How many new sunflowers did Maria get?</p>
+        <p>C) What is the sum of the two quantities?</p>
+      </div>
+    </div>
+  </body>
+</html>
+```

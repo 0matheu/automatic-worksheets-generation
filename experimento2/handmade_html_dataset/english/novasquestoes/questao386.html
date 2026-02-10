@@ -1,0 +1,105 @@
+level: 2nd year of fundamental  
+learning_goals: counting, addition  
+theme: Pets
+width-sheet: 800px  
+task: observe text, write answer
+language: en
+
+
+{
+    "task": "To practice counting and comparison skills by analyzing the number of votes for different pets and answering questions.",
+    "layout": "The activity consists of a description at the top, where the student will read the table with votes for pets, and then answer related questions.",
+    "answer": {
+      "A": "The correct answer is 'Dog, Cat, Rabbit, Turtle'.",
+      "B": "The correct answer is 15 votes.",
+      "C": "The correct answer is 7 votes.",
+      "D": "The correct answer is 47 votes."
+    }
+  }
+
+  
+  <html>
+<head>
+  <style>
+    .container {
+      width: 800px;
+      border: solid 1px;
+      padding: 10px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #f0a36c;
+      color: white;
+    }
+    .question-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .answer-box {
+      width: 100px;
+      height: 30px;
+      border: 1px solid black;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" exp="Main container for the pet voting activity.">
+
+    <div class="activity" exp="Description and instructions for the activity.">
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Centered illustration of the pet voting theme.">
+        <img src="" alt="Children voting for their favorite pets" exp="Colorful drawing showing kids placing votes for pets: dogs, cats, rabbits, turtles." style="width: 300px; height: 150px;" />
+      </div>
+
+      <p exp="Scenario introduction explaining that students voted for their favorite pets.">
+        Favorite Pets Voted by Students. The results of the vote are shown below:
+      </p>
+    </div>
+
+    <table exp="Table displaying the number of votes each pet received.">
+      <tr>
+        <th exp="Header for the pet name.">Pet</th>
+        <th exp="Header for vote count.">Votes</th>
+      </tr>
+      <tr><td exp="Pet option: Dog.">Dog</td><td exp="Number of votes for dog: 15.">15</td></tr>
+      <tr><td exp="Pet option: Cat.">Cat</td><td exp="Number of votes for cat: 13.">13</td></tr>
+      <tr><td exp="Pet option: Rabbit.">Rabbit</td><td exp="Number of votes for rabbit: 7.">7</td></tr>
+      <tr><td exp="Pet option: Turtle.">Turtle</td><td exp="Number of votes for turtle: 12.">12</td></tr>
+    </table>
+
+    <div class="question-container" exp="Question about listing all pets.">
+      <p><b>A)</b> What pets are listed in the table?</p>
+      <div class="answer-box" exp="Answer should be: Dog, Cat, Rabbit, Turtle."></div>
+    </div>
+
+    <div class="question-container" exp="Question about the first pet's votes.">
+      <p><b>B)</b> How many votes did the first pet receive?</p>
+      <div class="answer-box" exp="Answer should be: 15."></div>
+    </div>
+
+    <div class="question-container" exp="Question about the third pet's votes.">
+      <p><b>C)</b> How many votes did the third pet receive?</p>
+      <div class="answer-box" exp="Answer should be: 7."></div>
+    </div>
+
+    <div class="question-container" exp="Question about the total number of votes.">
+      <p><b>D)</b> How many votes were received in total?</p>
+      <div class="answer-box" exp="Answer should be: 47."></div>
+    </div>
+
+  </div>
+</body>
+</html>

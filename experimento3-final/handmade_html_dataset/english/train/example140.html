@@ -1,0 +1,110 @@
+level: 2nd year fundamental
+learning_goals: addition, counting, problem-solving
+theme: ages
+sheet_width: 800px
+task: observe images, write answer
+language: en
+
+{
+  "task": "To calculate the combined age of two siblings by adding their ages and writing the total.",
+  "layout": "The activity consists of a single line layout organized into three columns, with three images placed side by side. The first image shows the older sibling with their age written, the second image shows the younger sibling with their age written, and the third image features both siblings together with no age displayed.",
+  "answer": "To answer correctly, the student needs to identify the age of the older sibling (12 years) in the first image and the age of the younger sibling (8 years) in the second image. The student should then calculate the sum of these ages (12 + 8 = 20 years) and write the total age (20 years) in the answer box below the instruction: 'Write in the box below the total age of the two siblings.'"
+}
+  
+
+<html>
+  <head>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 250px 250px 250px;
+        grid-template-rows: 300px;
+        grid-template-areas:
+          "sibling1 sibling2 combined";
+      }
+
+      .sibling1 {
+        grid-area: sibling1;
+      }
+
+      .sibling2 {
+        grid-area: sibling2;
+      }
+
+      .combined {
+        grid-area: combined;
+      }
+
+      .container div {
+        margin-left: 20px;
+      }
+
+      img {
+        width: 230px;
+        height: 240px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px; padding: 10px;"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="activity" style="width: 800px">
+        <p
+          exp="Activity description, explaining the task of adding ages and calculating the total."
+        >
+          Observe the images below. Determine the age of the older sibling and the younger sibling. Then calculate the combined age of both siblings and record your answer in the third image.
+        </p>
+
+        <div class="container" exp="div that arranges the images in a row layout for clear comparison.">
+          <div
+            class="sibling1"
+            exp="div containing the image of the older sibling with their age displayed."
+          >
+            <img
+              src=""
+              alt="Image showing the older sibling with an age label of 12 years."
+              exp="This image depicts the older sibling with their age displayed as 12 years."
+            />
+          </div>
+
+          <div
+            class="sibling2"
+            exp="div containing the image of the younger sibling with their age displayed."
+          >
+            <img
+              src=""
+              alt="Image showing the younger sibling with an age label of 8 years."
+              exp="This image depicts the younger sibling with their age displayed as 8 years."
+            />
+          </div>
+
+          <div
+            class="combined"
+            exp="div containing the image of both siblings together with no age displayed."
+          >
+            <img
+              src=""
+              alt="Image showing both siblings together without any age label."
+              exp="This image shows both siblings together. The student must calculate and write the total combined age in this section."
+            />
+          </div>
+        </div>
+
+        <p
+          exp="Instruction for the student to write the calculated total age."
+          style="text-align: center; margin-top: 20px;"
+        >
+          Write in the box below the total age of the two siblings:
+        </p>
+        <div style="display: flex; justify-content: center;" exp="div used to center the answer box.">
+          <div
+            style="width: 100px; height: 100px; border: 1px solid black;"
+            exp="This box is used for the student to write the calculated total age. The correct answer is 20 years."
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

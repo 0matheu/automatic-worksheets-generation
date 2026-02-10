@@ -1,0 +1,47 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Gardening Tools
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+  "task": "To practice counting and basic addition skills by calculating the total cost of gardening tools Roberto is buying.",
+  "layout": "The activity consists of a description where Roberto is buying gardening tools. Below is an image showing the prices of the tools. The student will answer questions based on the prices.",
+  "answer": {
+    "A": "To answer correctly, the student needs to add the price of the watering can (15 reais) and the shovel (20 reais). The correct answer is 35 reais.",
+    "B": "To answer correctly, the student needs to add the price of the rake (18 reais) and the watering can (15 reais). The correct answer is 33 reais."
+  }
+}
+
+<html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: solid 1px; padding: 10px;">
+      <div class="activity">
+        <p exp="Roberto is buying gardening tools. The prices of the tools are shown in the image.">
+          Roberto is buying tools for his garden. Below is an image showing the prices of the tools he needs.
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image showing Roberto’s gardening tools.">
+        <img 
+          src="" 
+          alt="Illustration showing Roberto’s gardening tools: watering can, shovel, and rake."
+          style="width: 600px; height: 300px"
+          exp="Image showing the gardening tools and their prices."
+        />
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question asking for the total cost of the watering can and the shovel."><b>A)</b> What is the total cost of the watering can and the shovel?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total cost of the watering can and shovel. Correct: 35."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question asking for the total cost of the rake and the watering can."><b>B)</b> What is the total cost of the rake and the watering can?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total cost of the rake and watering can. Correct: 33."></div>
+      </div>
+    </div>
+  </body>
+</html>

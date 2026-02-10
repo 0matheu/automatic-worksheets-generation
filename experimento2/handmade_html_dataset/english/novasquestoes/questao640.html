@@ -1,0 +1,47 @@
+level: 2nd year of fundamental
+learning_goals: addition, counting
+theme: Toy Cars in a Garage
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+    "task": "There are 5 toy cars in the garage. Then, 3 more toy cars are added. The student needs to find the total number of cars in the garage and the difference.",
+    "layout": "The layout includes an image of a garage with toy cars, showing the initial 5 cars and the 3 cars being added. The task requires students to use addition to find the total and subtraction to find the difference.",
+    "answer": {
+      "A": "The student should add 5 + 3 to get 8. There are 8 toy cars in the garage now.",
+      "B": "The garage has 3 more toy cars now. This is found by subtracting the initial 5 from the total 8."
+    }
+  }
+
+  
+  <html>
+<head></head>
+<body>
+  <div style="width: 750px; border: solid 1px; padding: 10px;">
+    <p exp="In this scenario, the student needs to determine how many toy cars are in the garage after adding some. The addition equation helps students practice adding quantities to find a total.">
+      There are 5 toy cars in the garage. Then, 3 more toy cars are added. How many toy cars are in the garage now?
+    </p>
+
+    <img src="toy-cars.png" style="display: block; margin: 10px auto; width: 300px;" 
+         exp="The image shows a garage with 5 toy cars inside. 3 more toy cars are being added. This visual helps students relate the numbers to real-life objects and understand how addition works." />
+
+    <div class="question-container" style="display: flex; justify-content: space-between; margin-top: 20px;">
+      <p exp="This question encourages the student to identify the missing number in the addition equation 5 + ? = 8. The student will use addition to solve the problem.">
+        <b>A)</b> How many toy cars are in the garage now?
+      </p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" 
+           exp="Expected answer: 8. The student adds 5 + 3 to determine the total number of toy cars. This reinforces the concept of addition and finding the total after adding more items."></div>
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between; margin-top: 10px;">
+      <p exp="This question helps the student practice comparison between quantities.">
+        <b>B)</b> How many more toy cars does the garage have than before?
+      </p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" 
+           exp="Expected answer: 3. The student finds how many more toy cars were added by subtracting the initial number (5) from the total (8). This reinforces subtraction as the reverse of addition."></div>
+    </div>
+  </div>
+</body>
+</html>

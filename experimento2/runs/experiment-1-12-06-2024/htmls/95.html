@@ -1,0 +1,149 @@
+```json
+{
+  "task": "The student will learn to count and add objects, understanding that addition involves calculating the total sum of elements.",
+  "layout": "The question is divided into a 2-line and 3-column grid. The first row contains three cells, each with an image of a clown juggling balls. The second row also has three cells, with an empty space in the first cell, an image of a child looking at the clown in the second cell, and an empty space in the third cell. The images are placed in a specific layout to facilitate counting and addition.",
+  "answer": "To answer correctly, the student needs to observe the images of the clown juggling balls, count the number of balls in each image (3, 2, and 5), and then add them up to get the total sum (3 + 2 + 5 = 10). The correct answer is 10."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three images in a 2-line and 3-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 300px 300px;
+      grid-template-areas:
+        "img1 img2 img3"
+        "empty1 child empty2";
+    }
+
+    /* class used to place the first image of the clown juggling balls in the first row and first column*/
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the second image of the clown juggling balls in the first row and second column*/
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to place the third image of the clown juggling balls in the first row and third column*/
+    .img3 {
+      grid-area: img3;
+    }
+
+    /* class used to place the image of the child in the second row and second column*/
+    .child {
+      margin: 50px;
+      grid-area: child;
+      width: 200px;
+      height: 200px;
+    }
+
+    /* class used to adjust the image of the child to the left*/
+    .child img {
+      margin-left: 50px;
+    }
+
+    /* class used to adjust the image of the child to the right*/
+    img {
+      margin-right: 50px;
+    }
+
+    /* class used to give the images the correct size*/
+    img {
+      width: 200px;
+      height: 200px;
+    }
+
+    /* class used to adjust the images of the activity in the final layout */
+    .sizelanding img {
+      width: 230px;
+      height: 230px;
+    }
+
+    /* class used to give the images the space between them */
+    .sizelanding {
+      margin: 40px;
+    }
+
+    /* class used to place the images in the correct position */
+    .sizelanding {
+      display: grid;
+      grid-template-columns: 240px 240px 240px;
+      grid-template-rows: 240px 240px;
+      grid-template-areas:
+        "empty1 empty2 empty3"
+        "img1 img2 img3";
+    }
+
+    /* class used to place the first image of the activity in the first row and first column*/
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the second image of the activity in the first row and second column*/
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to place the third image of the activity in the first row and third column*/
+    .img3 {
+      grid-area: img3;
+    }
+
+    /* class used to adjust the image of the child to the left*/
+    .child {
+      margin-left: 50px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="container">
+        <div class="img1" exp="div used to adjust the first image of the activity to the left">
+          <img
+            class="sizelanding"
+            src=""
+            alt="img1"
+            exp="empty image that in the final version will be in the first cell of the first column, being the image that the students will have to draw the balls, being nessesary to be an image in a coloring book style"
+          />
+        </div>
+
+        <div class="img2" exp="div used to adjust the second image of the activity to the left">
+          <img
+            class="sizelanding"
+            src=""
+            alt="img2"
+            exp="empty image that in the final version will be in the second cell of the first column, being the image that the students will have to draw the balls, being nessesary to be an image in a coloring book style"
+          />
+        </div>
+
+        <div class="img3" exp="div used to adjust the third image of the activity to the left">
+          <img
+            class="sizelanding"
+            src=""
+            alt="img3"
+            exp="empty image that in the final version will be in the third cell of the first column, being the image that the students will have to draw the balls, being nessesary to be an image in a coloring book style"
+          />
+        </div>
+
+        <div class="child" exp="div that will be used to adjust the image of the child to the center left">
+          <img
+            class=""
+            src=""
+            alt="image in the style of a coloring book of a child looking at a clown in a circus presentation with 3 images in the image, and the child is in the center of all the images"
+            exp="image that the students will have to look at the 3 images and draw in the image how many balls are in each of the 3 images and then add up the quantity of balls of all the images, the image is in a coloring book style, being 3 children's images together in a single image, containing the image of the child in the center, and 3 images of the clown in the circus in the background"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

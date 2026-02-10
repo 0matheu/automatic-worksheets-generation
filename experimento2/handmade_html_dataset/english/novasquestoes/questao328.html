@@ -1,0 +1,69 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition, comparison
+theme: Monthly Expenses
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+    "task": "To practice counting, addition, and comparison skills by analyzing a list of household expenses and answering questions about the highest expense and total spending.",
+    "layout": "The activity consists of a description of the scenario at the top, providing the necessary context. Below the description, a centered image illustrates a notepad with recorded expenses. The student will answer questions based on the image, with answer boxes positioned as close as possible to each question.",
+    "answer": {
+        "A": "To answer correctly, the student needs to compare the expenses and identify the highest one. The correct answer is 'Electricity: 131 reais'.",
+        "B": "To answer correctly, the student needs to add up all the expenses (131 + 102 + 110) to get the total amount spent. The correct answer is 343 reais."
+    }
+}
+
+<html>
+    <head></head>
+    <style>
+        .question-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        .answer-box {
+            width: 60px;
+            height: 30px;
+            border: 1px solid black;
+            text-align: center;
+            margin-left: 10px;
+        }
+    </style>
+    </head>
+    <body>
+      <div style="width: 800px; border: solid 1px; padding: 10px;" exp="Main container for the activity">
+        
+        <div class="activity">
+          <p exp="Activity description explaining what the student must do">
+            Mario recorded some of his expenses for the month of April in his notebook. Observe the records and answer the following questions.
+          </p>
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image in the activity">
+            <img src="" 
+                 alt="Illustration of a notepad with expenses listed: Electricity: 131 reais, Internet: 102 reais, 
+                 Water: 110 reais."
+                 style="width: 600px; height: 300px"
+                 exp="Image where students must analyze and compare the expenses recorded in a notepad." />
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking which expense is the highest">
+                <b>A)</b> Which of these expenses was the highest?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the highest expense. The correct answer is 'Electricity: 131 reais'."></div>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for the total expense">
+                <b>B)</b> What is the total amount spent on these expenses?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the total amount spent. The correct answer is 343 reais."></div>
+        </div>
+        
+      </div>
+    </body>
+</html>

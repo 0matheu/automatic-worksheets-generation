@@ -1,0 +1,71 @@
+```json
+{
+  "task": "To practice basic addition skills by counting the total number of cacti and camels in two images and calculating the sum.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph describing the task. The middle section contains a 2x1 grid with two images: one image of a desert with 5 cacti, and another image of a desert with 3 camels. The images are placed in a specific layout to facilitate counting and addition.",
+  "answer": "To answer this question correctly, the student needs to: 1) count the number of cacti in the first image (5), 2) count the number of camels in the second image (3), and 3) add the two numbers together to find the total. The correct answer is: 5 cacti + 3 camels = 8. The student needs to understand that the question is asking for the total number of desert plants (cacti) and animals (camels) in the two images, and perform a simple addition operation to get the correct answer."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing two images in a 2-line and 1-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 400px 400px;
+      grid-template-areas:
+        "img1 img1"
+        "img2 img2";
+    }
+
+    /* class used to place the first image of the cacti in the first row and the first column*/
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the second image of the camels in the second row and the first column*/
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to adjust the size of the images in the activity */
+    img {
+      width: 380px;
+      height: 380px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the images below and write the sum of all the cacti and camels.
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="image in a coloring book style of a desert containing 5 cacti"
+              exp="image in which the student will have to count the cacti to answer the question"
+            />
+          </div>
+
+          <div class="img2">
+            <img
+              alt="image in a coloring book style of a desert containing 3 camels"
+              exp="image in which the student will have to count the camels to answer the question"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

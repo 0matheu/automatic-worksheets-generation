@@ -1,0 +1,1453 @@
+file,prompt,response,text
+example8.odt,"Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da subtração de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+","[{""text"": ""Maria tem 5 pirulitos, e  a quantidade de que está representada na figura , com quantos pirulitos maria ficou?""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.588cm"", ""height"": ""3.062cm"", ""x"": ""5.653cm"", ""y"": ""4.688cm""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.588cm"", ""height"": ""3.062cm"", ""x"": ""8.696cm"", ""y"": ""5.375cm""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.588cm"", ""height"": ""3.062cm"", ""x"": ""11.47cm"", ""y"": ""7.545cm""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.588cm"", ""height"": ""3.062cm"", ""x"": ""6.447cm"", ""y"": ""9.027cm""}]","<s>[INST] Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da subtração de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+
+[/INST]
+[{""text"": ""Maria tem 5 pirulitos, e  a quantidade de que está representada na figura , com quantos pirulitos maria ficou?""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.588cm"", ""height"": ""3.062cm"", ""x"": ""5.653cm"", ""y"": ""4.688cm""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.588cm"", ""height"": ""3.062cm"", ""x"": ""8.696cm"", ""y"": ""5.375cm""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.588cm"", ""height"": ""3.062cm"", ""x"": ""11.47cm"", ""y"": ""7.545cm""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.588cm"", ""height"": ""3.062cm"", ""x"": ""6.447cm"", ""y"": ""9.027cm""}]
+
+Nessa questão serão praticados os principios da contagem e da subtração. O aluno terá que contar quantos pirulitos estão presentes na imagem e subtrair de 5, sendo 4 pirulitos na imagem, o resultado da questão será 1.
+</s>"
+example5.odt,"Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da subtração de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+","[{""text"": ""Teresa tem 7 pirulitos e deu 3 para arcelo, pinte a quantidade de  que sobraram:""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.196cm"", ""height"": ""2.305cm"", ""x"": ""5.822cm"", ""y"": ""8.974cm""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.196cm"", ""height"": ""2.305cm"", ""x"": ""6.112cm"", ""y"": ""4.953cm""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.196cm"", ""height"": ""2.305cm"", ""x"": ""8.759cm"", ""y"": ""5.746cm""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.196cm"", ""height"": ""2.305cm"", ""x"": ""11.48cm"", ""y"": ""4.556cm""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.196cm"", ""height"": ""2.305cm"", ""x"": ""9.421cm"", ""y"": ""9.424cm""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.196cm"", ""height"": ""2.305cm"", ""x"": ""14.31cm"", ""y"": ""5.958cm""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.196cm"", ""height"": ""2.305cm"", ""x"": ""12.81cm"", ""y"": ""9.530cm""}]","<s>[INST] Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da subtração de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+
+[/INST]
+[{""text"": ""Teresa tem 7 pirulitos e deu 3 para arcelo, pinte a quantidade de  que sobraram:""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.196cm"", ""height"": ""2.305cm"", ""x"": ""5.822cm"", ""y"": ""8.974cm""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.196cm"", ""height"": ""2.305cm"", ""x"": ""6.112cm"", ""y"": ""4.953cm""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.196cm"", ""height"": ""2.305cm"", ""x"": ""8.759cm"", ""y"": ""5.746cm""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.196cm"", ""height"": ""2.305cm"", ""x"": ""11.48cm"", ""y"": ""4.556cm""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.196cm"", ""height"": ""2.305cm"", ""x"": ""9.421cm"", ""y"": ""9.424cm""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.196cm"", ""height"": ""2.305cm"", ""x"": ""14.31cm"", ""y"": ""5.958cm""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.196cm"", ""height"": ""2.305cm"", ""x"": ""12.81cm"", ""y"": ""9.530cm""}]
+
+Nessa questão serão praticados os principios da subtração. Nessa questão o aluno terá que subtrair 3 de 7 e pintar 4 pirulitos.
+</s>"
+example7.odt,"Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da subtração de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+","[{""text"": ""Qual a soma dos números  abaixo ?""}, {""image"": ""numero_1_preto_branco.png"", ""width"": ""2.461cm"", ""height"": ""1.967cm"", ""x"": ""4.3cm"", ""y"": ""4.423cm""}, {""image"": ""numero_3_preto_branco.png"", ""width"": ""2.496cm"", ""height"": ""2.734cm"", ""x"": ""12.74cm"", ""y"": ""9.669cm""}, {""image"": ""numero_4_preto_branco.png"", ""width"": ""2.237cm"", ""height"": ""2.237cm"", ""x"": ""12.69cm"", ""y"": ""5.852cm""}, {""image"": ""numero_5_preto_branco.png"", ""width"": ""2.655cm"", ""height"": ""2.655cm"", ""x"": ""8.427cm"", ""y"": ""5.429cm""}, {""image"": ""numero_6_preto_branco.png"", ""width"": ""1.924cm"", ""height"": ""2.092cm"", ""x"": ""16.06cm"", ""y"": ""5.323cm""}, {""image"": ""numero_7_preto_branco.png"", ""width"": ""2.189cm"", ""height"": ""2.919cm"", ""x"": ""5.826cm"", ""y"": ""8.629cm""}]","<s>[INST] Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da subtração de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+
+[/INST]
+[{""text"": ""Qual a soma dos números  abaixo ?""}, {""image"": ""numero_1_preto_branco.png"", ""width"": ""2.461cm"", ""height"": ""1.967cm"", ""x"": ""4.3cm"", ""y"": ""4.423cm""}, {""image"": ""numero_3_preto_branco.png"", ""width"": ""2.496cm"", ""height"": ""2.734cm"", ""x"": ""12.74cm"", ""y"": ""9.669cm""}, {""image"": ""numero_4_preto_branco.png"", ""width"": ""2.237cm"", ""height"": ""2.237cm"", ""x"": ""12.69cm"", ""y"": ""5.852cm""}, {""image"": ""numero_5_preto_branco.png"", ""width"": ""2.655cm"", ""height"": ""2.655cm"", ""x"": ""8.427cm"", ""y"": ""5.429cm""}, {""image"": ""numero_6_preto_branco.png"", ""width"": ""1.924cm"", ""height"": ""2.092cm"", ""x"": ""16.06cm"", ""y"": ""5.323cm""}, {""image"": ""numero_7_preto_branco.png"", ""width"": ""2.189cm"", ""height"": ""2.919cm"", ""x"": ""5.826cm"", ""y"": ""8.629cm""}]
+
+Nessa questão o aluno vai praticar os principios da soma e da subtração. Ele terá que identificar todos os números primos, soma-los, tendo como resposta 15, e subtratir de 7, tendo como resultado 8.
+</s>"
+example2.odt,"Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da subtração de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+","[{""text"": ""Faça a  dos conjuntos e ligue com o numeral correto:""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""2.428cm"", ""y"": ""4.212cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""2.693cm"", ""y"": ""6.936cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""11.13cm"", ""y"": ""4.953cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""5.286cm"", ""y"": ""7.359cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""5.445cm"", ""y"": ""4.926cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""2.296cm"", ""y"": ""10.77cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""3.196cm"", ""y"": ""13.26cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""9.122cm"", ""y"": ""11.59cm""}, {""image"": ""sinal_menos.png"", ""width"": ""1.693cm"", ""height"": ""1.693cm"", ""x"": ""8.219cm"", ""y"": ""5.455cm""}, {""image"": ""sinal_menos.png"", ""width"": ""1.693cm"", ""height"": ""1.693cm"", ""x"": ""5.838cm"", ""y"": ""11.09cm""}, {""image"": ""numero_3_preto_branco.png"", ""width"": ""1.983cm"", ""height"": ""2.171cm"", ""x"": ""17.79cm"", ""y"": ""12.16cm""}, {""image"": ""numero_1_preto_branco.png"", ""width"": ""1.977cm"", ""height"": ""1.582cm"", ""x"": ""18.07cm"", ""y"": ""5.231cm""}]","<s>[INST] Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da subtração de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+
+[/INST]
+[{""text"": ""Faça a  dos conjuntos e ligue com o numeral correto:""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""2.428cm"", ""y"": ""4.212cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""2.693cm"", ""y"": ""6.936cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""11.13cm"", ""y"": ""4.953cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""5.286cm"", ""y"": ""7.359cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""5.445cm"", ""y"": ""4.926cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""2.296cm"", ""y"": ""10.77cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""3.196cm"", ""y"": ""13.26cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""9.122cm"", ""y"": ""11.59cm""}, {""image"": ""sinal_menos.png"", ""width"": ""1.693cm"", ""height"": ""1.693cm"", ""x"": ""8.219cm"", ""y"": ""5.455cm""}, {""image"": ""sinal_menos.png"", ""width"": ""1.693cm"", ""height"": ""1.693cm"", ""x"": ""5.838cm"", ""y"": ""11.09cm""}, {""image"": ""numero_3_preto_branco.png"", ""width"": ""1.983cm"", ""height"": ""2.171cm"", ""x"": ""17.79cm"", ""y"": ""12.16cm""}, {""image"": ""numero_1_preto_branco.png"", ""width"": ""1.977cm"", ""height"": ""1.582cm"", ""x"": ""18.07cm"", ""y"": ""5.231cm""}]
+
+Nessa questão serão praticados os principios da subtração. O aluno terá que contar a quantidade de abacaxis de cada lado da operação e efetuar a subtração, e ligar com o numeral correto, sendo na primeira operação 4 - 1, e tendo que ligar com o numeral 3.
+</s>"
+example9.odt,"Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da subtração de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+","[{""text"": ""Subtraia os valores dos lados dos dados e escreva o resultado ao lado do sinal de igual.""}, {""image"": ""dado_6.png"", ""width"": ""2.411cm"", ""height"": ""2.427cm"", ""x"": ""4.095cm"", ""y"": ""4.767cm""}, {""image"": ""dado_2.png"", ""width"": ""2.66cm"", ""height"": ""2.678cm"", ""x"": ""4.005cm"", ""y"": ""7.598cm""}, {""image"": ""sinal_menos.png"", ""width"": ""1.72cm"", ""height"": ""1.72cm"", ""x"": ""7.334cm"", ""y"": ""6.672cm""}, {""image"": ""dado_5.png"", ""width"": ""2.57cm"", ""height"": ""2.586cm"", ""x"": ""9.703cm"", ""y"": ""6.223cm""}, {""image"": ""sinal_igual.png"", ""width"": ""3.768cm"", ""height"": ""1.979cm"", ""x"": ""12.94cm"", ""y"": ""6.402cm""}]","<s>[INST] Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da subtração de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+
+[/INST]
+[{""text"": ""Subtraia os valores dos lados dos dados e escreva o resultado ao lado do sinal de igual.""}, {""image"": ""dado_6.png"", ""width"": ""2.411cm"", ""height"": ""2.427cm"", ""x"": ""4.095cm"", ""y"": ""4.767cm""}, {""image"": ""dado_2.png"", ""width"": ""2.66cm"", ""height"": ""2.678cm"", ""x"": ""4.005cm"", ""y"": ""7.598cm""}, {""image"": ""sinal_menos.png"", ""width"": ""1.72cm"", ""height"": ""1.72cm"", ""x"": ""7.334cm"", ""y"": ""6.672cm""}, {""image"": ""dado_5.png"", ""width"": ""2.57cm"", ""height"": ""2.586cm"", ""x"": ""9.703cm"", ""y"": ""6.223cm""}, {""image"": ""sinal_igual.png"", ""width"": ""3.768cm"", ""height"": ""1.979cm"", ""x"": ""12.94cm"", ""y"": ""6.402cm""}]
+
+Nessa questão será praticado os principios da subtração. O aluno terá que contar os lados dos dados e subtrair, sendo 6 e 2 de um lado da operação e 5 do outro, sendo como resultado final 3.
+</s>"
+example4.odt,"Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da subtração de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+","[{""text"": ""Observe as figuras e responda as seguintes questões:""}, {""text"": ""Quantas maçãs tem na figura?""}, {""text"": ""Quantos abacaxis tem na figura?""}, {""text"": ""?""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.612cm"", ""height"": ""1.718cm"", ""x"": ""4.744cm"", ""y"": ""6.423cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.612cm"", ""height"": ""1.718cm"", ""x"": ""8.315cm"", ""y"": ""7.693cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.612cm"", ""height"": ""1.718cm"", ""x"": ""5.803cm"", ""y"": ""10.73cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""2.3cm"", ""height"": ""2.3cm"", ""x"": ""11.01cm"", ""y"": ""9.239cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.612cm"", ""height"": ""1.718cm"", ""x"": ""2.76cm"", ""y"": ""8.672cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""2.3cm"", ""height"": ""2.3cm"", ""x"": ""12.25cm"", ""y"": ""6.185cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""2.3cm"", ""height"": ""2.3cm"", ""x"": ""14.66cm"", ""y"": ""10.12cm""}]","<s>[INST] Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da subtração de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+
+[/INST]
+[{""text"": ""Observe as figuras e responda as seguintes questões:""}, {""text"": ""Quantas maçãs tem na figura?""}, {""text"": ""Quantos abacaxis tem na figura?""}, {""text"": ""?""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.612cm"", ""height"": ""1.718cm"", ""x"": ""4.744cm"", ""y"": ""6.423cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.612cm"", ""height"": ""1.718cm"", ""x"": ""8.315cm"", ""y"": ""7.693cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.612cm"", ""height"": ""1.718cm"", ""x"": ""5.803cm"", ""y"": ""10.73cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""2.3cm"", ""height"": ""2.3cm"", ""x"": ""11.01cm"", ""y"": ""9.239cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.612cm"", ""height"": ""1.718cm"", ""x"": ""2.76cm"", ""y"": ""8.672cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""2.3cm"", ""height"": ""2.3cm"", ""x"": ""12.25cm"", ""y"": ""6.185cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""2.3cm"", ""height"": ""2.3cm"", ""x"": ""14.66cm"", ""y"": ""10.12cm""}]
+
+Nessa questão serão praticados os principios da subtração. Para isso o aluno terá que contar quantas maçãs tem na imagem, sendo 4, quantos abacaxis tem na image, sendo 3 e subtrair a quantidade abacaxis da quantidade maçãs, sendo 1 como resultado.
+</s>"
+example1.odt,"Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da subtração de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+","[{""text"": ""Faça a  dos conjuntos e escreva o resultado:""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""4.909cm"", ""y"": ""4.661cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""2.871cm"", ""y"": ""6.752cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""5.544cm"", ""y"": ""6.99cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""10.83cm"", ""y"": ""5.72cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""9.989cm"", ""y"": ""7.810cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""4.73cm"", ""y"": ""11.43cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""2.686cm"", ""y"": ""13.30cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""11.20cm"", ""y"": ""11.03cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""9.83cm"", ""y"": ""13.10cm""}, {""image"": ""sinal_igual.png"", ""width"": ""2.505cm"", ""height"": ""1.316cm"", ""x"": ""13.13cm"", ""y"": ""6.064cm""}, {""image"": ""sinal_igual.png"", ""width"": ""2.505cm"", ""height"": ""1.316cm"", ""x"": ""13.39cm"", ""y"": ""12.07cm""}, {""image"": ""sinal_menos.png"", ""width"": ""1.803cm"", ""height"": ""1.803cm"", ""x"": ""7.741cm"", ""y"": ""6.064cm""}, {""image"": ""sinal_menos.png"", ""width"": ""1.803cm"", ""height"": ""1.803cm"", ""x"": ""7.186cm"", ""y"": ""11.80cm""}]","<s>[INST] Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da subtração de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+
+[/INST]
+[{""text"": ""Faça a  dos conjuntos e escreva o resultado:""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""4.909cm"", ""y"": ""4.661cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""2.871cm"", ""y"": ""6.752cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""5.544cm"", ""y"": ""6.99cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""10.83cm"", ""y"": ""5.72cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""9.989cm"", ""y"": ""7.810cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""4.73cm"", ""y"": ""11.43cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""2.686cm"", ""y"": ""13.30cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""11.20cm"", ""y"": ""11.03cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""9.83cm"", ""y"": ""13.10cm""}, {""image"": ""sinal_igual.png"", ""width"": ""2.505cm"", ""height"": ""1.316cm"", ""x"": ""13.13cm"", ""y"": ""6.064cm""}, {""image"": ""sinal_igual.png"", ""width"": ""2.505cm"", ""height"": ""1.316cm"", ""x"": ""13.39cm"", ""y"": ""12.07cm""}, {""image"": ""sinal_menos.png"", ""width"": ""1.803cm"", ""height"": ""1.803cm"", ""x"": ""7.741cm"", ""y"": ""6.064cm""}, {""image"": ""sinal_menos.png"", ""width"": ""1.803cm"", ""height"": ""1.803cm"", ""x"": ""7.186cm"", ""y"": ""11.80cm""}]
+
+Nessa questão serão praticados os princípios da subtração. O aluno terá que contar a quantidade maçãs que estão presentes de cada lado da operação e escrever o numeral correto do lado do sinal de igual, sendo 1 com resposta para o primeiro exemplo.
+</s>"
+example3.odt,"Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da subtração de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+","[{""text"": ""Escreva os números que faltam para completar as :""}, {""image"": ""sinal_igual.png"", ""width"": ""2.734cm"", ""height"": ""1.436cm"", ""x"": ""13.99cm"", ""y"": ""6.117cm""}, {""image"": ""sinal_igual.png"", ""width"": ""2.734cm"", ""height"": ""1.436cm"", ""x"": ""14.04cm"", ""y"": ""10.56cm""}, {""image"": ""sinal_igual.png"", ""width"": ""2.734cm"", ""height"": ""1.436cm"", ""x"": ""14.02cm"", ""y"": ""15.00cm""}, {""image"": ""numero_5_preto_branco.png"", ""width"": ""2.983cm"", ""height"": ""2.983cm"", ""x"": ""17.54cm"", ""y"": ""5.244cm""}, {""image"": ""numero_4_preto_branco.png"", ""width"": ""2.762cm"", ""height"": ""2.762cm"", ""x"": ""18.47cm"", ""y"": ""14.74cm""}, {""image"": ""sinal_menos.png"", ""width"": ""1.743cm"", ""height"": ""1.743cm"", ""x"": ""6.131cm"", ""y"": ""5.72cm""}, {""image"": ""sinal_menos.png"", ""width"": ""1.743cm"", ""height"": ""1.743cm"", ""x"": ""5.999cm"", ""y"": ""10.37cm""}, {""image"": ""sinal_menos.png"", ""width"": ""1.743cm"", ""height"": ""1.743cm"", ""x"": ""6.077cm"", ""y"": ""14.92cm""}, {""image"": ""numero_3_preto_branco.png"", ""width"": ""2.612cm"", ""height"": ""2.863cm"", ""x"": ""17.90cm"", ""y"": ""10.00cm""}]","<s>[INST] Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da subtração de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+
+[/INST]
+[{""text"": ""Escreva os números que faltam para completar as :""}, {""image"": ""sinal_igual.png"", ""width"": ""2.734cm"", ""height"": ""1.436cm"", ""x"": ""13.99cm"", ""y"": ""6.117cm""}, {""image"": ""sinal_igual.png"", ""width"": ""2.734cm"", ""height"": ""1.436cm"", ""x"": ""14.04cm"", ""y"": ""10.56cm""}, {""image"": ""sinal_igual.png"", ""width"": ""2.734cm"", ""height"": ""1.436cm"", ""x"": ""14.02cm"", ""y"": ""15.00cm""}, {""image"": ""numero_5_preto_branco.png"", ""width"": ""2.983cm"", ""height"": ""2.983cm"", ""x"": ""17.54cm"", ""y"": ""5.244cm""}, {""image"": ""numero_4_preto_branco.png"", ""width"": ""2.762cm"", ""height"": ""2.762cm"", ""x"": ""18.47cm"", ""y"": ""14.74cm""}, {""image"": ""sinal_menos.png"", ""width"": ""1.743cm"", ""height"": ""1.743cm"", ""x"": ""6.131cm"", ""y"": ""5.72cm""}, {""image"": ""sinal_menos.png"", ""width"": ""1.743cm"", ""height"": ""1.743cm"", ""x"": ""5.999cm"", ""y"": ""10.37cm""}, {""image"": ""sinal_menos.png"", ""width"": ""1.743cm"", ""height"": ""1.743cm"", ""x"": ""6.077cm"", ""y"": ""14.92cm""}, {""image"": ""numero_3_preto_branco.png"", ""width"": ""2.612cm"", ""height"": ""2.863cm"", ""x"": ""17.90cm"", ""y"": ""10.00cm""}]
+
+Nessa questão serão exercitados os principios da subtração. O aluno terá que resolver a equação adicionando 2 números a cada operação de forma que toda a operação esteja correta, na primeira questão 11 - 6 resultaria em 5, uma solução correta.
+</s>"
+example10.odt,"Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da subtração de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+","[{""text"": ""Em um cacho de uvas tem 9 uvas, se joana comer 7, quantas irão sobrar? Pinte na imagem abaixo quantas imagens irão sobrar.""}, {""image"": ""10000001000002000000020026C19A98A21BA55B.png"", ""width"": ""8.539cm"", ""height"": ""8.539cm"", ""x"": ""6.914cm"", ""y"": ""4.635cm""}]","<s>[INST] Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da subtração de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+
+[/INST]
+[{""text"": ""Em um cacho de uvas tem 9 uvas, se joana comer 7, quantas irão sobrar? Pinte na imagem abaixo quantas imagens irão sobrar.""}, {""image"": ""10000001000002000000020026C19A98A21BA55B.png"", ""width"": ""8.539cm"", ""height"": ""8.539cm"", ""x"": ""6.914cm"", ""y"": ""4.635cm""}]
+
+Nessa questão serão praticados os principios da subtração. O aluno terá que que pintar na imagem presente o resultados da subtração de 9 e 7, ou seja, terá que pintar 2 uvas.
+</s>"
+example6.odt,"Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da subtração de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+","[{""text"": ""Márcio tem 5 balões de são joão, se ele soltar 2, com quantos ele fica? Pinte a quantidade de balões abaixo:""}, {""image"": ""balao_sao_joao_preto_branco.png"", ""width"": ""1.903cm"", ""height"": ""3.149cm"", ""x"": ""4.699cm"", ""y"": ""8.187cm""}, {""image"": ""balao_sao_joao_preto_branco.png"", ""width"": ""1.903cm"", ""height"": ""3.149cm"", ""x"": ""7.9cm"", ""y"": ""5.145cm""}, {""image"": ""balao_sao_joao_preto_branco.png"", ""width"": ""1.903cm"", ""height"": ""3.149cm"", ""x"": ""9.805cm"", ""y"": ""9.59cm""}, {""image"": ""balao_sao_joao_preto_branco.png"", ""width"": ""1.903cm"", ""height"": ""3.149cm"", ""x"": ""12.00cm"", ""y"": ""4.748cm""}, {""image"": ""balao_sao_joao_preto_branco.png"", ""width"": ""1.903cm"", ""height"": ""3.149cm"", ""x"": ""14.51cm"", ""y"": ""8.32cm""}]","<s>[INST] Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da subtração de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+
+[/INST]
+[{""text"": ""Márcio tem 5 balões de são joão, se ele soltar 2, com quantos ele fica? Pinte a quantidade de balões abaixo:""}, {""image"": ""balao_sao_joao_preto_branco.png"", ""width"": ""1.903cm"", ""height"": ""3.149cm"", ""x"": ""4.699cm"", ""y"": ""8.187cm""}, {""image"": ""balao_sao_joao_preto_branco.png"", ""width"": ""1.903cm"", ""height"": ""3.149cm"", ""x"": ""7.9cm"", ""y"": ""5.145cm""}, {""image"": ""balao_sao_joao_preto_branco.png"", ""width"": ""1.903cm"", ""height"": ""3.149cm"", ""x"": ""9.805cm"", ""y"": ""9.59cm""}, {""image"": ""balao_sao_joao_preto_branco.png"", ""width"": ""1.903cm"", ""height"": ""3.149cm"", ""x"": ""12.00cm"", ""y"": ""4.748cm""}, {""image"": ""balao_sao_joao_preto_branco.png"", ""width"": ""1.903cm"", ""height"": ""3.149cm"", ""x"": ""14.51cm"", ""y"": ""8.32cm""}]
+
+Nessa questão o aluno praticará os principios da subtração. Ele terá que subtrair 2 de 5 e pintar 3 balões de são joão.
+</s>"
+example8.odt,"Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da adição de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+","[{""text"": ""Maria tem 5 pirulitos, e ganhou mais a quantidade de que está representada na figura, com quantos pirulitos maria ficou?""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.588cm"", ""height"": ""3.062cm"", ""x"": ""5.653cm"", ""y"": ""4.688cm""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.588cm"", ""height"": ""3.062cm"", ""x"": ""8.696cm"", ""y"": ""5.375cm""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.588cm"", ""height"": ""3.062cm"", ""x"": ""11.47cm"", ""y"": ""7.545cm""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.588cm"", ""height"": ""3.062cm"", ""x"": ""6.447cm"", ""y"": ""9.027cm""}]","<s>[INST] Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da adição de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+
+[/INST]
+[{""text"": ""Maria tem 5 pirulitos, e ganhou mais a quantidade de que está representada na figura, com quantos pirulitos maria ficou?""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.588cm"", ""height"": ""3.062cm"", ""x"": ""5.653cm"", ""y"": ""4.688cm""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.588cm"", ""height"": ""3.062cm"", ""x"": ""8.696cm"", ""y"": ""5.375cm""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.588cm"", ""height"": ""3.062cm"", ""x"": ""11.47cm"", ""y"": ""7.545cm""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.588cm"", ""height"": ""3.062cm"", ""x"": ""6.447cm"", ""y"": ""9.027cm""}]
+
+Nessa questão serão praticados os princípios da adição. O aluno terá que contar a quantidade de pirulitos já presentes na imagem e soma-los com 5, resultando em 9, como resposta.
+</s>"
+example5.odt,"Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da adição de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+","[{""text"": ""Qual a soma dos números pares abaixo?""}, {""image"": ""numero_1_preto_branco.png"", ""width"": ""2.461cm"", ""height"": ""1.967cm"", ""x"": ""4.3cm"", ""y"": ""4.423cm""}, {""image"": ""numero_2_preto_branco.png"", ""width"": ""2.205cm"", ""height"": ""2.205cm"", ""x"": ""4.416cm"", ""y"": ""7.493cm""}, {""image"": ""numero_3_preto_branco.png"", ""width"": ""2.496cm"", ""height"": ""2.734cm"", ""x"": ""8.004cm"", ""y"": ""5.72cm""}, {""image"": ""numero_4_preto_branco.png"", ""width"": ""2.237cm"", ""height"": ""2.237cm"", ""x"": ""12.61cm"", ""y"": ""4.0cm""}, {""image"": ""numero_5_preto_branco.png"", ""width"": ""2.655cm"", ""height"": ""2.655cm"", ""x"": ""11.86cm"", ""y"": ""7.016cm""}, {""image"": ""numero_6_preto_branco.png"", ""width"": ""1.924cm"", ""height"": ""2.092cm"", ""x"": ""15.13cm"", ""y"": ""5.614cm""}, {""image"": ""numero_7_preto_branco.png"", ""width"": ""2.189cm"", ""height"": ""2.919cm"", ""x"": ""8.100cm"", ""y"": ""8.948cm""}]","<s>[INST] Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da adição de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+
+[/INST]
+[{""text"": ""Qual a soma dos números pares abaixo?""}, {""image"": ""numero_1_preto_branco.png"", ""width"": ""2.461cm"", ""height"": ""1.967cm"", ""x"": ""4.3cm"", ""y"": ""4.423cm""}, {""image"": ""numero_2_preto_branco.png"", ""width"": ""2.205cm"", ""height"": ""2.205cm"", ""x"": ""4.416cm"", ""y"": ""7.493cm""}, {""image"": ""numero_3_preto_branco.png"", ""width"": ""2.496cm"", ""height"": ""2.734cm"", ""x"": ""8.004cm"", ""y"": ""5.72cm""}, {""image"": ""numero_4_preto_branco.png"", ""width"": ""2.237cm"", ""height"": ""2.237cm"", ""x"": ""12.61cm"", ""y"": ""4.0cm""}, {""image"": ""numero_5_preto_branco.png"", ""width"": ""2.655cm"", ""height"": ""2.655cm"", ""x"": ""11.86cm"", ""y"": ""7.016cm""}, {""image"": ""numero_6_preto_branco.png"", ""width"": ""1.924cm"", ""height"": ""2.092cm"", ""x"": ""15.13cm"", ""y"": ""5.614cm""}, {""image"": ""numero_7_preto_branco.png"", ""width"": ""2.189cm"", ""height"": ""2.919cm"", ""x"": ""8.100cm"", ""y"": ""8.948cm""}]
+
+Nessa questão será exercitada os principios da soma. O aluno terá que identificar dentre os números na questão quais são pares, e soma-los, sendo a resposta 12.
+</s>"
+example7.odt,"Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da adição de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+","[{""text"": ""Qual a soma dos números  abaixo?""}, {""image"": ""numero_1_preto_branco.png"", ""width"": ""2.461cm"", ""height"": ""1.967cm"", ""x"": ""4.3cm"", ""y"": ""4.423cm""}, {""image"": ""numero_2_preto_branco.png"", ""width"": ""2.205cm"", ""height"": ""2.205cm"", ""x"": ""4.416cm"", ""y"": ""7.493cm""}, {""image"": ""numero_3_preto_branco.png"", ""width"": ""2.496cm"", ""height"": ""2.734cm"", ""x"": ""8.004cm"", ""y"": ""5.72cm""}, {""image"": ""numero_4_preto_branco.png"", ""width"": ""2.237cm"", ""height"": ""2.237cm"", ""x"": ""12.61cm"", ""y"": ""4.0cm""}, {""image"": ""numero_5_preto_branco.png"", ""width"": ""2.655cm"", ""height"": ""2.655cm"", ""x"": ""11.86cm"", ""y"": ""7.016cm""}, {""image"": ""numero_6_preto_branco.png"", ""width"": ""1.924cm"", ""height"": ""2.092cm"", ""x"": ""15.13cm"", ""y"": ""5.614cm""}, {""image"": ""numero_7_preto_branco.png"", ""width"": ""2.189cm"", ""height"": ""2.919cm"", ""x"": ""8.100cm"", ""y"": ""8.948cm""}]","<s>[INST] Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da adição de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+
+[/INST]
+[{""text"": ""Qual a soma dos números  abaixo?""}, {""image"": ""numero_1_preto_branco.png"", ""width"": ""2.461cm"", ""height"": ""1.967cm"", ""x"": ""4.3cm"", ""y"": ""4.423cm""}, {""image"": ""numero_2_preto_branco.png"", ""width"": ""2.205cm"", ""height"": ""2.205cm"", ""x"": ""4.416cm"", ""y"": ""7.493cm""}, {""image"": ""numero_3_preto_branco.png"", ""width"": ""2.496cm"", ""height"": ""2.734cm"", ""x"": ""8.004cm"", ""y"": ""5.72cm""}, {""image"": ""numero_4_preto_branco.png"", ""width"": ""2.237cm"", ""height"": ""2.237cm"", ""x"": ""12.61cm"", ""y"": ""4.0cm""}, {""image"": ""numero_5_preto_branco.png"", ""width"": ""2.655cm"", ""height"": ""2.655cm"", ""x"": ""11.86cm"", ""y"": ""7.016cm""}, {""image"": ""numero_6_preto_branco.png"", ""width"": ""1.924cm"", ""height"": ""2.092cm"", ""x"": ""15.13cm"", ""y"": ""5.614cm""}, {""image"": ""numero_7_preto_branco.png"", ""width"": ""2.189cm"", ""height"": ""2.919cm"", ""x"": ""8.100cm"", ""y"": ""8.948cm""}]
+
+Nessa questão será exercitada os principios da soma. O aluno terá que identificar dentre os números na questão quais são primo, e soma-los, sendo a resposta 17.
+</s>"
+example2.odt,"Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da adição de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+","[{""text"": ""Faça a soma dos conjuntos e ligue com o numeral correto:""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""2.428cm"", ""y"": ""4.212cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""2.693cm"", ""y"": ""6.936cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""10.15cm"", ""y"": ""4.37cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""11.21cm"", ""y"": ""6.858cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""9.122cm"", ""y"": ""6.936cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""2.296cm"", ""y"": ""10.77cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""3.804cm"", ""y"": ""13.68cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""9.122cm"", ""y"": ""11.59cm""}, {""image"": ""sinal_mais.png"", ""width"": ""1.935cm"", ""height"": ""1.078cm"", ""x"": ""5.612cm"", ""y"": ""5.852cm""}, {""image"": ""sinal_mais.png"", ""width"": ""1.935cm"", ""height"": ""1.078cm"", ""x"": ""5.48cm"", ""y"": ""11.75cm""}, {""image"": ""numero_5_preto_branco.png"", ""width"": ""2.506cm"", ""height"": ""2.506cm"", ""x"": ""17.75cm"", ""y"": ""11.83cm""}, {""image"": ""numero_3_preto_branco.png"", ""width"": ""2.24cm"", ""height"": ""2.454cm"", ""x"": ""18.00cm"", ""y"": ""5.27cm""}]","<s>[INST] Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da adição de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+
+[/INST]
+[{""text"": ""Faça a soma dos conjuntos e ligue com o numeral correto:""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""2.428cm"", ""y"": ""4.212cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""2.693cm"", ""y"": ""6.936cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""10.15cm"", ""y"": ""4.37cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""11.21cm"", ""y"": ""6.858cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""9.122cm"", ""y"": ""6.936cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""2.296cm"", ""y"": ""10.77cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""3.804cm"", ""y"": ""13.68cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""1.607cm"", ""height"": ""1.607cm"", ""x"": ""9.122cm"", ""y"": ""11.59cm""}, {""image"": ""sinal_mais.png"", ""width"": ""1.935cm"", ""height"": ""1.078cm"", ""x"": ""5.612cm"", ""y"": ""5.852cm""}, {""image"": ""sinal_mais.png"", ""width"": ""1.935cm"", ""height"": ""1.078cm"", ""x"": ""5.48cm"", ""y"": ""11.75cm""}, {""image"": ""numero_5_preto_branco.png"", ""width"": ""2.506cm"", ""height"": ""2.506cm"", ""x"": ""17.75cm"", ""y"": ""11.83cm""}, {""image"": ""numero_3_preto_branco.png"", ""width"": ""2.24cm"", ""height"": ""2.454cm"", ""x"": ""18.00cm"", ""y"": ""5.27cm""}]
+
+Nessa questão o aluno terá que contar a quantidade de abacaxis e efetuar a soma, com o resultado terá que ligar com o numeral que representa a soma correta.
+</s>"
+example11.odt,"Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da adição de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+","[{""text"": ""Pinte 5 maçãs da figura abaixo.""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.884cm"", ""height"": ""2.006cm"", ""x"": ""5.611cm"", ""y"": ""4.265cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.884cm"", ""height"": ""2.006cm"", ""x"": ""6.963cm"", ""y"": ""7.625cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.884cm"", ""height"": ""2.006cm"", ""x"": ""8.759cm"", ""y"": ""4.582cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.884cm"", ""height"": ""2.006cm"", ""x"": ""9.765cm"", ""y"": ""7.334cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.884cm"", ""height"": ""2.006cm"", ""x"": ""4.208cm"", ""y"": ""6.884cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.884cm"", ""height"": ""2.006cm"", ""x"": ""11.37cm"", ""y"": ""4.0cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.884cm"", ""height"": ""2.006cm"", ""x"": ""12.46cm"", ""y"": ""6.858cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.884cm"", ""height"": ""2.006cm"", ""x"": ""14.39cm"", ""y"": ""4.344cm""}]","<s>[INST] Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da adição de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+
+[/INST]
+[{""text"": ""Pinte 5 maçãs da figura abaixo.""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.884cm"", ""height"": ""2.006cm"", ""x"": ""5.611cm"", ""y"": ""4.265cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.884cm"", ""height"": ""2.006cm"", ""x"": ""6.963cm"", ""y"": ""7.625cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.884cm"", ""height"": ""2.006cm"", ""x"": ""8.759cm"", ""y"": ""4.582cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.884cm"", ""height"": ""2.006cm"", ""x"": ""9.765cm"", ""y"": ""7.334cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.884cm"", ""height"": ""2.006cm"", ""x"": ""4.208cm"", ""y"": ""6.884cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.884cm"", ""height"": ""2.006cm"", ""x"": ""11.37cm"", ""y"": ""4.0cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.884cm"", ""height"": ""2.006cm"", ""x"": ""12.46cm"", ""y"": ""6.858cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.884cm"", ""height"": ""2.006cm"", ""x"": ""14.39cm"", ""y"": ""4.344cm""}]
+
+Nessa questão serão exercitados os principios da adição. Ele terá que contar 5 maçãs e pinta-las.
+</s>"
+example9.odt,"Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da adição de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+","[{""text"": ""Observe a figura abaixo e desenhe pirulitos até completar 10""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.52cm"", ""height"": ""2.93cm"", ""x"": ""4.351cm"", ""y"": ""4.407cm""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.52cm"", ""height"": ""2.93cm"", ""x"": ""7.632cm"", ""y"": ""4.222cm""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.52cm"", ""height"": ""2.93cm"", ""x"": ""5.701cm"", ""y"": ""7.768cm""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.52cm"", ""height"": ""2.93cm"", ""x"": ""11.04cm"", ""y"": ""4.143cm""}]","<s>[INST] Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da adição de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+
+[/INST]
+[{""text"": ""Observe a figura abaixo e desenhe pirulitos até completar 10""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.52cm"", ""height"": ""2.93cm"", ""x"": ""4.351cm"", ""y"": ""4.407cm""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.52cm"", ""height"": ""2.93cm"", ""x"": ""7.632cm"", ""y"": ""4.222cm""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.52cm"", ""height"": ""2.93cm"", ""x"": ""5.701cm"", ""y"": ""7.768cm""}, {""image"": ""pirulito_preto_branco.png"", ""width"": ""1.52cm"", ""height"": ""2.93cm"", ""x"": ""11.04cm"", ""y"": ""4.143cm""}]
+
+Nessa questão será praticado os principios da adição. O aluno terá que contar quantos pirulitos já estão presentes na image, e desenhar até completar 10, sendo necessáio desenhar mais 6 pirulitos
+</s>"
+example4.odt,"Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da adição de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+","[{""text"": ""Observe as figuras e responda as seguintes questões:""}, {""text"": ""Quantas maçãs tem na figura?""}, {""text"": ""Quantos abacaxis tem na figura?""}, {""text"": ""Quantas frutas tem ao total?""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.612cm"", ""height"": ""1.718cm"", ""x"": ""4.744cm"", ""y"": ""6.423cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.612cm"", ""height"": ""1.718cm"", ""x"": ""5.327cm"", ""y"": ""9.493cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.612cm"", ""height"": ""1.718cm"", ""x"": ""7.946cm"", ""y"": ""7.402cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.612cm"", ""height"": ""1.718cm"", ""x"": ""2.522cm"", ""y"": ""6.82cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""2.3cm"", ""height"": ""2.3cm"", ""x"": ""10.43cm"", ""y"": ""9.503cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.612cm"", ""height"": ""1.718cm"", ""x"": ""2.575cm"", ""y"": ""9.783cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""2.3cm"", ""height"": ""2.3cm"", ""x"": ""11.30cm"", ""y"": ""6.185cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""2.3cm"", ""height"": ""2.3cm"", ""x"": ""13.68cm"", ""y"": ""8.805cm""}]","<s>[INST] Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da adição de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+
+[/INST]
+[{""text"": ""Observe as figuras e responda as seguintes questões:""}, {""text"": ""Quantas maçãs tem na figura?""}, {""text"": ""Quantos abacaxis tem na figura?""}, {""text"": ""Quantas frutas tem ao total?""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.612cm"", ""height"": ""1.718cm"", ""x"": ""4.744cm"", ""y"": ""6.423cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.612cm"", ""height"": ""1.718cm"", ""x"": ""5.327cm"", ""y"": ""9.493cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.612cm"", ""height"": ""1.718cm"", ""x"": ""7.946cm"", ""y"": ""7.402cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.612cm"", ""height"": ""1.718cm"", ""x"": ""2.522cm"", ""y"": ""6.82cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""2.3cm"", ""height"": ""2.3cm"", ""x"": ""10.43cm"", ""y"": ""9.503cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.612cm"", ""height"": ""1.718cm"", ""x"": ""2.575cm"", ""y"": ""9.783cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""2.3cm"", ""height"": ""2.3cm"", ""x"": ""11.30cm"", ""y"": ""6.185cm""}, {""image"": ""abacaxi_preto_branco.png"", ""width"": ""2.3cm"", ""height"": ""2.3cm"", ""x"": ""13.68cm"", ""y"": ""8.805cm""}]
+
+Nessa questão será praticado os principios da adição. Nessa questão ele terá que contar a quantidade maçãs que tem na figura, que são 5, e também de abacaxis, que são 3, e por fim contar a quantidade de frutas, e sendo maçãs e abacaxis frutas a resposta correta é 8.
+</s>"
+example12.odt,"Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da adição de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+","[{""text"": ""Desenhe os lados que faltam do dado:""}, {""image"": ""dado_6.png"", ""width"": ""2.332cm"", ""height"": ""2.348cm"", ""x"": ""17.69cm"", ""y"": ""5.402cm""}, {""image"": ""dado_2.png"", ""width"": ""2.096cm"", ""height"": ""2.11cm"", ""x"": ""4.005cm"", ""y"": ""5.508cm""}, {""image"": ""dado_4.png"", ""width"": ""2.422cm"", ""height"": ""2.438cm"", ""x"": ""10.37cm"", ""y"": ""5.296cm""}]","<s>[INST] Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da adição de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+
+[/INST]
+[{""text"": ""Desenhe os lados que faltam do dado:""}, {""image"": ""dado_6.png"", ""width"": ""2.332cm"", ""height"": ""2.348cm"", ""x"": ""17.69cm"", ""y"": ""5.402cm""}, {""image"": ""dado_2.png"", ""width"": ""2.096cm"", ""height"": ""2.11cm"", ""x"": ""4.005cm"", ""y"": ""5.508cm""}, {""image"": ""dado_4.png"", ""width"": ""2.422cm"", ""height"": ""2.438cm"", ""x"": ""10.37cm"", ""y"": ""5.296cm""}]
+
+Nessa questão serão praticados os principios da adição. Para resolve-la ele precisará entender quais os lados do dado já estão presentes na imagem e desenhar também os lados que tem 1,2 e 5.
+</s>"
+example1.odt,"Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da adição de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+","[{""text"": ""Faça a adição dos conjuntos e escreva o resultado:""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""4.67cm"", ""y"": ""4.661cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""3.109cm"", ""y"": ""7.096cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""5.544cm"", ""y"": ""7.519cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""10.14cm"", ""y"": ""4.9cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""10.65cm"", ""y"": ""7.625cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""3.407cm"", ""y"": ""11.62cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""4.406cm"", ""y"": ""13.62cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""10.30cm"", ""y"": ""11.32cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""10.67cm"", ""y"": ""13.39cm""}, {""image"": ""sinal_mais.png"", ""width"": ""2.549cm"", ""height"": ""1.418cm"", ""x"": ""7.343cm"", ""y"": ""6.327cm""}, {""image"": ""sinal_mais.png"", ""width"": ""2.549cm"", ""height"": ""1.418cm"", ""x"": ""6.628cm"", ""y"": ""12.17cm""}, {""image"": ""sinal_igual.png"", ""width"": ""2.505cm"", ""height"": ""1.316cm"", ""x"": ""13.13cm"", ""y"": ""6.064cm""}, {""image"": ""sinal_igual.png"", ""width"": ""2.505cm"", ""height"": ""1.316cm"", ""x"": ""13.39cm"", ""y"": ""12.07cm""}]","<s>[INST] Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da adição de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+
+[/INST]
+[{""text"": ""Faça a adição dos conjuntos e escreva o resultado:""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""4.67cm"", ""y"": ""4.661cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""3.109cm"", ""y"": ""7.096cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""5.544cm"", ""y"": ""7.519cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""10.14cm"", ""y"": ""4.9cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""10.65cm"", ""y"": ""7.625cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""3.407cm"", ""y"": ""11.62cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""4.406cm"", ""y"": ""13.62cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""10.30cm"", ""y"": ""11.32cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""1.438cm"", ""height"": ""1.531cm"", ""x"": ""10.67cm"", ""y"": ""13.39cm""}, {""image"": ""sinal_mais.png"", ""width"": ""2.549cm"", ""height"": ""1.418cm"", ""x"": ""7.343cm"", ""y"": ""6.327cm""}, {""image"": ""sinal_mais.png"", ""width"": ""2.549cm"", ""height"": ""1.418cm"", ""x"": ""6.628cm"", ""y"": ""12.17cm""}, {""image"": ""sinal_igual.png"", ""width"": ""2.505cm"", ""height"": ""1.316cm"", ""x"": ""13.13cm"", ""y"": ""6.064cm""}, {""image"": ""sinal_igual.png"", ""width"": ""2.505cm"", ""height"": ""1.316cm"", ""x"": ""13.39cm"", ""y"": ""12.07cm""}]
+
+Nessa questão será trabalhada a adição. O aluno terá que contar a quantidade de maçãs de cada um dos lados e efetuar a soma, e escrever o numeral que é o resultado da soma ao lado do sinal de igual.
+</s>"
+example3.odt,"Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da adição de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+","[{""text"": ""Escreva os números que faltam para completar as somas:""}, {""image"": ""sinal_mais.png"", ""width"": ""2.307cm"", ""height"": ""1.284cm"", ""x"": ""7.105cm"", ""y"": ""6.17cm""}, {""image"": ""sinal_mais.png"", ""width"": ""2.307cm"", ""height"": ""1.284cm"", ""x"": ""7.131cm"", ""y"": ""10.69cm""}, {""image"": ""sinal_mais.png"", ""width"": ""2.307cm"", ""height"": ""1.284cm"", ""x"": ""7.105cm"", ""y"": ""15.13cm""}, {""image"": ""sinal_igual.png"", ""width"": ""2.734cm"", ""height"": ""1.436cm"", ""x"": ""13.99cm"", ""y"": ""6.117cm""}, {""image"": ""sinal_igual.png"", ""width"": ""2.734cm"", ""height"": ""1.436cm"", ""x"": ""14.04cm"", ""y"": ""10.56cm""}, {""image"": ""sinal_igual.png"", ""width"": ""2.734cm"", ""height"": ""1.436cm"", ""x"": ""14.02cm"", ""y"": ""15.00cm""}, {""image"": ""numero_8_preto_branco.png"", ""width"": ""2.187cm"", ""height"": ""3.565cm"", ""x"": ""18.45cm"", ""y"": ""5.032cm""}, {""image"": ""numero_5_preto_branco.png"", ""width"": ""2.983cm"", ""height"": ""2.983cm"", ""x"": ""18.22cm"", ""y"": ""10.19cm""}, {""image"": ""numero_4_preto_branco.png"", ""width"": ""2.762cm"", ""height"": ""2.762cm"", ""x"": ""18.47cm"", ""y"": ""14.74cm""}]","<s>[INST] Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da adição de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+
+[/INST]
+[{""text"": ""Escreva os números que faltam para completar as somas:""}, {""image"": ""sinal_mais.png"", ""width"": ""2.307cm"", ""height"": ""1.284cm"", ""x"": ""7.105cm"", ""y"": ""6.17cm""}, {""image"": ""sinal_mais.png"", ""width"": ""2.307cm"", ""height"": ""1.284cm"", ""x"": ""7.131cm"", ""y"": ""10.69cm""}, {""image"": ""sinal_mais.png"", ""width"": ""2.307cm"", ""height"": ""1.284cm"", ""x"": ""7.105cm"", ""y"": ""15.13cm""}, {""image"": ""sinal_igual.png"", ""width"": ""2.734cm"", ""height"": ""1.436cm"", ""x"": ""13.99cm"", ""y"": ""6.117cm""}, {""image"": ""sinal_igual.png"", ""width"": ""2.734cm"", ""height"": ""1.436cm"", ""x"": ""14.04cm"", ""y"": ""10.56cm""}, {""image"": ""sinal_igual.png"", ""width"": ""2.734cm"", ""height"": ""1.436cm"", ""x"": ""14.02cm"", ""y"": ""15.00cm""}, {""image"": ""numero_8_preto_branco.png"", ""width"": ""2.187cm"", ""height"": ""3.565cm"", ""x"": ""18.45cm"", ""y"": ""5.032cm""}, {""image"": ""numero_5_preto_branco.png"", ""width"": ""2.983cm"", ""height"": ""2.983cm"", ""x"": ""18.22cm"", ""y"": ""10.19cm""}, {""image"": ""numero_4_preto_branco.png"", ""width"": ""2.762cm"", ""height"": ""2.762cm"", ""x"": ""18.47cm"", ""y"": ""14.74cm""}]
+
+Nessa questão aluno praticará os princípios da adição. Essa questão consiste de ele considerar dois número que completem a soma de maneira correta, por exemplo: 10 - 2 = 8 seria uma resposta correta para o primeiro exemplo.
+</s>"
+example10.odt,"Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da adição de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+","[{""text"": ""João quer fazer uma torta de maçã, para isso ele precisa de 7 maçãs, mas ele tem a quantidade de maçãs mostrada na imagem. Desenhe maçãs até completar as maçãs necessárias para João fazer sua torta.""}, {""image"": ""maca_preto_branco.png"", ""width"": ""2.036cm"", ""height"": ""2.168cm"", ""x"": ""4.653cm"", ""y"": ""5.323cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""2.036cm"", ""height"": ""2.168cm"", ""x"": ""6.452cm"", ""y"": ""8.524cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""2.036cm"", ""height"": ""2.168cm"", ""x"": ""8.992cm"", ""y"": ""5.402cm""}]","<s>[INST] Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da adição de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+
+[/INST]
+[{""text"": ""João quer fazer uma torta de maçã, para isso ele precisa de 7 maçãs, mas ele tem a quantidade de maçãs mostrada na imagem. Desenhe maçãs até completar as maçãs necessárias para João fazer sua torta.""}, {""image"": ""maca_preto_branco.png"", ""width"": ""2.036cm"", ""height"": ""2.168cm"", ""x"": ""4.653cm"", ""y"": ""5.323cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""2.036cm"", ""height"": ""2.168cm"", ""x"": ""6.452cm"", ""y"": ""8.524cm""}, {""image"": ""maca_preto_branco.png"", ""width"": ""2.036cm"", ""height"": ""2.168cm"", ""x"": ""8.992cm"", ""y"": ""5.402cm""}]
+
+Nessa questão serão praticados os principios da adição. Para o aluno resolve-la será necessário contar a quantidade de maçãs que já estão presentes na figura e desenhar maçãs até completar 10, sendo necessário desenhar mais 7 maçãs.
+</s>"
+example6.odt,"Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da adição de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+","[{""text"": ""Qual a soma dos números  abaixo?""}, {""image"": ""numero_1_preto_branco.png"", ""width"": ""2.461cm"", ""height"": ""1.967cm"", ""x"": ""4.3cm"", ""y"": ""4.423cm""}, {""image"": ""numero_2_preto_branco.png"", ""width"": ""2.205cm"", ""height"": ""2.205cm"", ""x"": ""4.416cm"", ""y"": ""7.493cm""}, {""image"": ""numero_3_preto_branco.png"", ""width"": ""2.496cm"", ""height"": ""2.734cm"", ""x"": ""8.004cm"", ""y"": ""5.72cm""}, {""image"": ""numero_4_preto_branco.png"", ""width"": ""2.237cm"", ""height"": ""2.237cm"", ""x"": ""12.61cm"", ""y"": ""4.0cm""}, {""image"": ""numero_5_preto_branco.png"", ""width"": ""2.655cm"", ""height"": ""2.655cm"", ""x"": ""11.86cm"", ""y"": ""7.016cm""}, {""image"": ""numero_6_preto_branco.png"", ""width"": ""1.924cm"", ""height"": ""2.092cm"", ""x"": ""15.13cm"", ""y"": ""5.614cm""}, {""image"": ""numero_7_preto_branco.png"", ""width"": ""2.189cm"", ""height"": ""2.919cm"", ""x"": ""8.100cm"", ""y"": ""8.948cm""}]","<s>[INST] Gere uma questão de matematica em formato JSON que ajude crianças do 
+ensino fundamental os principios da adição de maneira lúdica e criativa.
+Utilize uma ou mais das seguintes imagens:
+
+numero_6_preto_branco.png :: figura do número 6 em preto e branco
+numero_9_preto_branco.png :: figura do número 9 em preto e branco
+boneca.png :: imagem de uma boneca preto e branco
+numero_8_preto_branco.png :: figura do número 8 em preto e branco
+numero_5_preto_branco.png :: figura do número 5 em preto e branco
+abacaxi_preto_branco.png :: figura de um abacaxi em preto e branco
+numero_4_preto_branco.png :: figura do número 4 em preto e branco
+sinal_mais.png :: imagem de um sinal de mais
+dado_5.png :: imagem de um dado mostrando o lado com número 5
+carrinho.png :: imagem de um carro de brinquedo em preto e branco
+dado_2.png :: imagem de um dado mostrando o lado com número 2
+numero_1_preto_branco.png :: figura do número 1 em preto e branco
+numero_2_preto_branco.png :: figura do número 2 em preto e branco
+numero_7_preto_branco.png :: figura do número 7 em preto e branco
+sinal_igual.png :: imagem de um sinal de igual
+maca_preto_branco.png :: figura de uma maçã em preto e branco
+dado_4.png :: imagem de um dado mostrando o lado com número 4
+dado_1.png :: imagem de um dado mostrando o lado com número 1
+dado_3.png :: imagem de um dado mostrando o lado com número 3
+dado_6.png :: imagem de um dado mostrando o lado com número 6
+numero_3_preto_branco.png :: figura do número 3 em preto e branco
+pirulito_preto_branco.png :: imagem de um pirulito preto e branco
+balao_sao_joao_preto_branco.png :: imagem de um balão de são joão em preto e branco
+sinal_menos.png :: figura de um sinal de menos
+menino-preto-branco.png :: imagem de menino em preto e branco
+cacho_de_uva_preto_branco.png :: imagem de cacho de uvas em preto e branco
+
+[/INST]
+[{""text"": ""Qual a soma dos números  abaixo?""}, {""image"": ""numero_1_preto_branco.png"", ""width"": ""2.461cm"", ""height"": ""1.967cm"", ""x"": ""4.3cm"", ""y"": ""4.423cm""}, {""image"": ""numero_2_preto_branco.png"", ""width"": ""2.205cm"", ""height"": ""2.205cm"", ""x"": ""4.416cm"", ""y"": ""7.493cm""}, {""image"": ""numero_3_preto_branco.png"", ""width"": ""2.496cm"", ""height"": ""2.734cm"", ""x"": ""8.004cm"", ""y"": ""5.72cm""}, {""image"": ""numero_4_preto_branco.png"", ""width"": ""2.237cm"", ""height"": ""2.237cm"", ""x"": ""12.61cm"", ""y"": ""4.0cm""}, {""image"": ""numero_5_preto_branco.png"", ""width"": ""2.655cm"", ""height"": ""2.655cm"", ""x"": ""11.86cm"", ""y"": ""7.016cm""}, {""image"": ""numero_6_preto_branco.png"", ""width"": ""1.924cm"", ""height"": ""2.092cm"", ""x"": ""15.13cm"", ""y"": ""5.614cm""}, {""image"": ""numero_7_preto_branco.png"", ""width"": ""2.189cm"", ""height"": ""2.919cm"", ""x"": ""8.100cm"", ""y"": ""8.948cm""}]
+
+Nessa questão será exercitada os principios da soma. O aluno terá que identificar dentre os números na questão quais são impares, e soma-los, sendo a resposta 16.
+</s>"

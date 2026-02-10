@@ -1,0 +1,80 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Bottle Caps
+width-sheet: 800px
+task: observe images, write answer
+language: en
+
+{
+  "task": "To practice counting and addition skills by calculating the total number of bottle caps Maria has collected.",
+  "layout": "The activity shows Maria collecting bottle caps. She already had 25 and received 38 more. The student should observe the images and calculate how many caps she has now.",
+  "answer": {
+    "To answer correctly, the student must add 25 (the bottle caps Maria already had) and 38 (the caps she received). 25 + 38 equals 63. The student should write the number 63 inside the answer box."
+  }
+}
+
+<html>
+<head>
+  <style>
+    .container {
+      width: 800px;
+      border: solid 1px;
+      padding: 10px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .activity p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 200px;
+      height: auto;
+      margin: 10px;
+    }
+
+    .answer-area {
+      margin-top: 30px;
+    }
+
+    .answer-box {
+      width: 100px;
+      height: 100px;
+      border: 2px solid black;
+      margin: 10px auto;
+      font-size: 28px;
+      text-align: center;
+      line-height: 100px;
+    }
+
+    .answer-instruction {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="activity">
+      <p exp="Activity description explaining the scenario where Maria is collecting bottle caps.">
+        Maria is collecting bottle caps for a school project. She already had 25 bottle caps when she received 38 more from a friend. How many bottle caps does Maria have now?
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center;" exp="Visual representation of the amounts mentioned in the problem.">
+      <img src="" alt="25 bottle caps" exp="Image showing 25 bottle caps that Maria already had." />
+      <img src="" alt="38 bottle caps" exp="Image showing 38 bottle caps received from a friend." />
+      <img src="" alt="63 bottle caps" exp="Image showing 63 bottle caps, which is the total after adding." />
+    </div>
+
+    <div class="answer-area" exp="Area with the question and answer box, centered on the sheet.">
+      <p class="answer-instruction" exp="Instruction asking how many caps Maria has in total after the addition.">
+        How many bottle caps does Maria have now?
+      </p>
+      <div class="answer-box" exp="Box where the student should write the result of 25 + 38. The correct answer is 63."></div>
+    </div>
+  </div>
+</body>
+</html>

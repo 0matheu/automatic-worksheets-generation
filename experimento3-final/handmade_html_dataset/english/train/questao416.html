@@ -1,0 +1,65 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Store Inventory
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+    "task": "To practice counting and addition skills by distributing a total number of items into equal parts and adding them up.",
+    "layout": "The activity consists of a description explaining that the student needs to distribute 60 packs of t-shirts into 3 shelves equally. The student will calculate how many packs will be placed in each shelf.",
+    "answer": {
+        "A": "To answer correctly, the student needs to divide 60 by 3. The correct answer is 20 packs per shelf."
+    }
+}
+
+  
+<html>
+    <head>
+        <style>
+            .container {
+                width: 800px;
+                border: solid 1px;
+                padding: 10px;
+                text-align: center;
+            }
+            .question-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+            .answer-box {
+                width: 150px;
+                height: 30px;
+                border: 1px solid black;
+                text-align: center;
+            }
+            img {
+                width: 120px;
+                height: 120px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="activity">
+                <p exp="Activity description explaining the store inventory scenario.">
+                    A store received 60 packs of t-shirts to be organized into 3 shelves. How many packs should be placed on each shelf?
+                </p>
+            </div>
+
+            <div style="display: flex; justify-content: center;">
+                <img src="" alt="Illustration of 3 shelves with space for t-shirt packs." exp="Images of shelves where t-shirt packs will be distributed."/>
+            </div>
+
+            <div class="question-container">
+                <p exp="Question asking how many packs of t-shirts should be placed in each shelf.">
+                    <b>A)</b> How many packs of t-shirts should be placed in each shelf?
+                </p>
+                <div class="answer-box" exp="Box where the student writes the number of packs per shelf. The correct answer is 20 packs."></div>
+            </div>
+        </div>
+    </body>
+</html>

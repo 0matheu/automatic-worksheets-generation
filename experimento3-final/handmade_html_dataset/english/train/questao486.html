@@ -1,0 +1,47 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Movie Night
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+  "task": "To practice counting and basic addition skills by calculating the total number of movie tickets Gustavo bought for the movie night.",
+  "layout": "The activity consists of a description where Gustavo is buying movie tickets. Below is an image showing the number of tickets he purchased for his friends and family.",
+  "answer": {
+    "A": "To answer correctly, the student needs to add the number of tickets for friends (4) and the number of tickets for family (3). The correct answer is 7 tickets.",
+    "B": "To answer correctly, the student needs to add the total number of tickets (4 for friends + 3 for family + 2 for neighbors). The correct answer is 9 tickets."
+  }
+}
+
+<html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: solid 1px; padding: 10px;">
+      <div class="activity">
+        <p exp="Gustavo is buying movie tickets. The number of tickets for friends and family is shown in the image.">
+          Gustavo is purchasing movie tickets for the movie night. Below is an image showing the number of tickets he bought.
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image showing Gustavo’s movie tickets.">
+        <img 
+          src="" 
+          alt="Illustration showing Gustavo’s movie tickets, including tickets for friends, family, and neighbors."
+          style="width: 600px; height: 300px"
+          exp="Image showing the movie tickets and their quantities."
+        />
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question asking for the total number of tickets for friends and family."><b>A)</b> How many tickets did Gustavo buy for friends and family?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total number of tickets for friends and family. Correct: 7."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question asking for the total number of tickets Gustavo bought."><b>B)</b> What is the total number of tickets Gustavo bought?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total number of tickets. Correct: 9."></div>
+      </div>
+    </div>
+  </body>
+</html>

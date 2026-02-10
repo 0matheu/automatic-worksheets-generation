@@ -1,0 +1,71 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: candies
+sheet_width: 800px
+task: observe image, write answer
+language: en
+
+{
+  "task": "To practice counting and basic addition by observing the number of candies in two bowls and calculating the total.",
+  "layout": "The activity is organized with a description at the top, followed by an image of two bowls with candies. Below the image, three elaborated questions prompt the student to count and calculate the total, with answer boxes placed next to each question.",
+  "answer": {
+    "A": "The student should count the candies in the first bowl and answer '6'.",
+    "B": "The student should count the candies in the second bowl and answer '7'.",
+    "C": "The student should calculate the total number of candies and answer '13'."
+  }
+}
+
+  
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px; padding: 10px;"
+      exp="This container organizes the activity layout, themed around candies."
+    >
+      <div class="activity">
+        <p
+          exp="This paragraph provides instructions for the student to count and add the number of candies."
+        >
+          Count the candies in the two bowls, then calculate how many candies there are in total.
+        </p>
+
+        <div
+          style="display: flex; justify-content: center; margin-bottom: 20px;"
+          exp="This section contains an image of two bowls with candies for counting."
+        >
+          <img
+            src=""
+            alt="Image of two bowls, one containing 6 candies and the other 7 candies."
+            style="width: 400px; height: auto;"
+            exp="Image showing 6 candies in one bowl and 7 candies in another. The student must count and add them."
+          />
+        </div>
+
+        <div style="margin-top: 20px;">
+          <p style="display: flex; align-items: center; margin-bottom: 10px;">
+            A) How many candies are in the first bowl?
+            <span
+              style="display: inline-block; border: 1px solid black; width: 100px; height: 30px; margin-left: 10px;"
+              exp="Box for the student to write the number of candies in the first bowl. The correct answer is '6'."
+            ></span>
+          </p>
+          <p style="display: flex; align-items: center; margin-bottom: 10px;">
+            B) How many candies are in the second bowl?
+            <span
+              style="display: inline-block; border: 1px solid black; width: 100px; height: 30px; margin-left: 10px;"
+              exp="Box for the student to write the number of candies in the second bowl. The correct answer is '7'."
+            ></span>
+          </p>
+          <p style="display: flex; align-items: center; margin-bottom: 10px;">
+            C) What is the total number of candies?
+            <span
+              style="display: inline-block; border: 1px solid black; width: 100px; height: 30px; margin-left: 10px;"
+              exp="Box for the student to write the total number of candies. The correct answer is '13'."
+            ></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

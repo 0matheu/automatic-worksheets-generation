@@ -1,0 +1,92 @@
+level: 2nd year of fundamental
+learning_goals: counting
+theme: Toys in the Box
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+  "task": "To help students apply addition skills by counting and summing up toys in a toy box scenario involving dolls, cars, and additional toys.",
+  "layout": "The visual shows 5 dolls and 10 cars in a box. Below, there are two clearly structured questions with answer boxes to the right.",
+  "answer": {
+    "A": {
+      "To answer this question, you need to add the number of dolls and the number of toy cars. There are 5 dolls and 10 toy cars. First, count the dolls: 5 dolls. Then, count the cars: 10 cars. Now, add the two numbers together: 5 + 10 = 15. So, the total number of toys Ana has is 15.",
+      "correct_answer": 15
+    },
+    "B": {
+      "For this question, we need to add 4 more toys (balls) to the total number of toys Ana already has. From the previous question, we know Ana has 15 toys. Now, add 4 more toys (balls): 15 + 4 = 19. So, after adding the balls, Ana will have 19 toys in total.",
+      "correct_answer": 19
+    }
+  }
+}
+
+<html>
+  <head>
+    <style>
+      .container {
+        width: 800px;
+        border: solid 1px;
+        padding: 10px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+      .activity p {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      .question-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+      }
+      .answer-box {
+        width: 100px;
+        height: 40px;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 16px;
+      }
+      img {
+        width: 600px;
+        height: 300px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="activity">
+        <p exp="Ana is organizing her toy box. She counted how many dolls and cars she has.">
+          Ana is organizing her toy box. She counted 5 dolls and 10 toy cars. The image below shows all her toys neatly placed.
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Centered image showing dolls and toy cars.">
+        <img 
+          src="" 
+          alt="Illustration showing 5 dolls and 10 toy cars inside a toy box."
+          style="width: 600px; height: 300px"
+          exp="Image representing 5 dolls on the left and 10 toy cars on the right, all inside a toy box."
+        />
+      </div>
+
+      <p exp="Instruction for the student to calculate total toys.">
+        Look at the toys and complete the answers below:
+      </p>
+
+      <!-- Question A -->
+      <div class="question-container" exp="Question asking the total number of toys.">
+        <p exp="Question asking how many toys Ana has in total."><b>A)</b> How many toys does Ana have in total?</p>
+        <div class="answer-box" exp="Box where the student should write '15' as the correct answer. 5 dolls + 10 cars = 15 toys."></div>
+        <p exp="Detailed explanation of the question. To answer this question, you need to add the 5 dolls and the 10 cars. First, count the dolls: 5 dolls. Then, count the cars: 10 cars. Add 5 + 10 = 15. The total number of toys Ana has is 15."></p>
+      </div>
+
+      <!-- Question B -->
+      <div class="question-container" exp="Question asking for the new total if Ana adds 4 more balls.">
+        <p exp="Question asking how many toys Ana will have after adding 4 more balls."><b>B)</b> If she adds 4 more balls to the box, how many toys will she have?</p>
+        <div class="answer-box" exp="Box where the student should write '19' as the correct answer. 15 toys + 4 balls = 19 toys."></div>
+        <p exp="Detailed explanation for the new total. Start with the 15 toys that Ana already has. Then, add 4 more toys (balls). 15 + 4 = 19. So, after adding the balls, Ana will have 19 toys in total."></p>
+      </div>
+    </div>
+  </body>
+</html>

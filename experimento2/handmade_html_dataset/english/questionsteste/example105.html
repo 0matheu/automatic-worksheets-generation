@@ -1,0 +1,55 @@
+level: 2nd year fundamental,
+learning_goals: addition, logical reasoning, problem-solving,
+theme: food and quantities,
+sheet_width: 600px,
+task: observe image, write answer
+language: en
+
+{
+  "task": "The objective of this activity is for the student to calculate the total number of sandwiches eaten by three boys based on the given quantities.",
+  "layout": "The activity is organized with a scenario description at the top, followed by an illustration that visually represents the sandwiches eaten by the boys. Below the description and image, there is a section for the student to calculate and input their answer in a box.",
+  "image_explanation": "The illustration shows Bruno with 2 cheese sandwiches and Pedro and Tiago sharing 5 ham sandwiches, visually representing the problem for better understanding.",
+  "answer": "To correctly answer this activity, the student will add the sandwiches eaten by Bruno (2 sandwiches) to the sandwiches eaten by Pedro and Tiago together (5 sandwiches). The calculation is 2 + 5 = 7. The correct answer is '7 sandwiches.'"
+}
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px; padding: 10px;"
+      exp="This div acts as the main container for the activity. It sets a fixed width of 600px and uses padding for spacing inside the container."
+    >
+      <div class="activity" style="width: 100%;">
+        <p
+          exp="This paragraph provides a clear and concise description of the task. It explains that the student needs to calculate the total number of sandwiches eaten by Bruno, Pedro, and Tiago."
+        >
+          Bruno ate 2 cheese sandwiches. Pedro and Tiago together ate 5 ham
+          sandwiches. How many sandwiches did the boys eat in total?
+        </p>
+
+        <div
+          style="display: flex; justify-content: center; margin-bottom: 20px;"
+          exp="This div uses flexbox to horizontally center the image of the activity."
+        >
+          <img
+            src=""
+            alt="Illustration of Bruno, Pedro, and Tiago with their sandwiches. In a coloring book style"
+            style="width: 400px; height: auto;"
+            exp="A image showing Bruno with 2 cheese sandwiches and Pedro and Tiago sharing 5 ham sandwiches."
+          />
+        </div>
+
+        <p
+          style="text-align: center; margin-bottom: 10px;"
+          exp="Instruction asking the student to write their answer below."
+        >
+          Write the total number of sandwiches in the box below:
+        </p>
+        <div
+          style="width: 100px; height: 50px; border: 1px solid black; margin: 0 auto;"
+          exp="Box where the student writes the total number of sandwiches eaten. The correct answer is '7 sandwiches.'"
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>

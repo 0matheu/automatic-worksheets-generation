@@ -1,0 +1,123 @@
+level: 2nd year of fundamental 
+learning goals: addition, counting 
+theme: cars
+width-sheet: 900px 
+task: observe images, draw answer, write answer
+language: en
+
+{
+  "task": "Connect the images of the cars to the parking lot, then add up all the cars and write the result.",
+  "layout": "The activity is organized into two main sections. The top section contains a paragraph that describes the task, providing clear instructions for the students. Below this, the middle section features a 2x3 grid layout where the first row consists of three images of cars, while the second row contains one image of a parking lot.",
+  "answer": "To answer this activity correctly, the student needs to: 1) count the number of cars in each image (3, 2, and 5), 2) connect each image of cars to the parking lot by drawing lines, and 3) add up all the cars (3 + 2 + 5 = 10). The answer (10) must be written in the answer box located below the instruction text: 'Write in the box below the total number of cars after connecting them to the parking lot."
+}
+
+
+<html>
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three images in a 2-line and 3-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 300px 300px;
+      grid-template-areas:
+        "img1 img2 img3"
+        "parking parking parking";
+    }
+
+    /* class used to place the first image of the cars in the first row and first column*/
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the second image of the cars in the first row and second column*/
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to place the third image of the cars in the first row and third column*/
+    .img3 {
+      grid-area: img3;
+    }
+
+    /* class used to place the image of the parking lot on the second row and in the middle of all columns*/
+    .parking {
+      margin-top: 50px;
+      margin-left: 250px;
+      grid-area: parking;
+    }
+
+    /* class used to adjust the size of the cars images */
+    .carsizes {
+      width: 240px;
+      height: 240px;
+    }
+
+    /* class used to adjust the size of the parking log image*/
+    .parkingsize {
+      width: 400px;
+      height: 240px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 900px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 900px"
+    >
+      <div class="activity" style="width: 900px">
+        <p
+          exp="Activity description, containing the explanation of what the student will have to do to answer the activity correctly"
+        >
+        Connect the images of the cars to the parking lot, then add up all the cars and write the result.
+        </p>
+
+        <div class="container">
+          <div class="img1" exp="div used to adjust the image of the cars on the first row and the first column">
+            <img
+              class="carsizes"
+              src=""
+              alt="children's painting style image with 3 cars on an expressway"
+              exp="image in which the student will have to observe that there are 3 cars and draw a road to the parking lot"
+            />
+          </div>
+
+          <div class="img2" exp="div used to adjust the image of the cars on the first row and the second column">
+            <img
+              class="carsizes"
+              src=""
+              alt="children's painting style image with 2 cars on an expressway"
+              exp="image in which the student will have to observe that there are 2 cars and draw a road to the parking lot"
+            />
+          </div>
+
+          <div class="img3" exp="div used to adjust the image of the cars on the first row and the third column">
+            <img
+              class="carsizes"
+              src=""
+              alt="children's painting style image with 5 cars on an expressway"
+              exp="image in which the student will have to observe that there are 5 cars and draw a road to the parking lot"
+            />
+          </div>
+
+          <div class="parking" exp="div used to adjust the image of the parking on the second row and the middle of first, second and third column">
+            <img
+              class="parkingsize"
+              src=""
+              alt="image of an empty parking lot in children's drawing style"
+              exp="image that the student will have to draw a road to the cars"
+            />
+          </div>
+        </div>
+        <p exp="description of where the student will write the answer" style="text-align: center; margin-top: 20px;">
+          Write in the box below the total number of cars after connecting them to the parking lot:
+        </p>
+        <div style="display: flex; justify-content: center;" exp="div used to center the answer box">
+          <div
+            style="width: 100px; height: 100px; border: 1px solid black;"
+            exp="box used by the student to write the answer, in that case 10"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

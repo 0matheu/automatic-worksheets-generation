@@ -1,0 +1,93 @@
+```json
+{
+  "task": "To practice basic addition skills by counting the number of items of each type in the tray and calculating the total sum.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph that explains the task, and the bottom section contains a centered grid layout with five columns and one row. The grid layout contains six elements: an image of a tray of food, four paragraph elements containing the counts of different items in the tray, and one paragraph element containing the total sum. The image is placed in the center left cell of the grid, and the paragraph elements are placed in the four cells to the right of the image. The elements are styled with a border and margin to create a clear layout.",
+  "answer": "To answer this question, the student needs to look at the image of the tray, count the number of fruits, sandwiches, candies, and milks present, and then calculate the total sum by adding all the quantities together. The correct answers are: A) 5 fruits, B) 2 sandwiches, C) 8 candies, and D) 3 milks. The sum of all the items is 18."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing five elements in a row and one in a column, with an image in the first cell of the first column, and paragraphs in the other cells of the first, second, third, and fourth columns */
+    .container {
+      display: grid;
+      grid-template-columns: 200px 200px 200px 200px;
+      grid-template-rows: 200px;
+      grid-template-areas:
+        "img1 p1 p2 p3"
+    }
+
+    /* class used to position the image of the tray in the activity layout, being in the first cell of the first column */
+    .img1 {
+      grid-area: img1;
+      width: 200px;
+      height: 200px;
+    }
+
+    /* class used to position the paragraph that will contain the count of fruits in the tray, in the first cell of the second column */
+    .p1 {
+      grid-area: p1;
+    }
+
+    /* class used to position the paragraph that will contain the count of sandwiches in the tray, in the second cell of the second column */
+    .p2 {
+      grid-area: p2;
+    }
+
+    /* class used to position the paragraph that will contain the count of candies in the tray, in the third cell of the second column */
+    .p3 {
+      grid-area: p3;
+    }
+
+    /* class used to position the paragraph that will contain the count of milks in the tray, in the fourth cell of the second column */
+    .p4 {
+      grid-area: p4;
+    }
+
+    /* class used to center the image in the cell */
+    .center {
+      display: flex;
+      justify-content: center;
+    }
+
+    /* class used to put a border on the image and the paragraphs */
+    .border {
+      border: solid;
+    }
+
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid; display: flex; justify-content: center"
+    >
+      <div class="question" style="width: 800px">
+        <div class="description">
+          <p>
+            Observe the image of the tray, count how many units of each item
+            are present, and then calculate the sum of all the items.
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="img1 center" exp="div containing the image that will be in the center left of the page, being 1 cell wide and 1 cell high">
+            <img
+              src=""
+              alt="image in a coloring book style of a tray containing, in separate compartments: 5 fruits, 2 sandwiches, 8 candies, and 3 glasses of milk"
+              style="width: 200px; height: 200px"
+              exp="image that the student will have to look at, identify the quantity of each item, and add them up"
+            />
+          </div>
+
+          <p class="p1 border" exp="p that will contain the count of fruits in the tray"><p>
+          <p class="p2 border" exp="p that will contain the count of sandwiches in the tray"><p>
+          <p class="p3 border" exp="p that will contain the count of candies in the tray"><p>
+          <p class="p4 border" exp="p that will contain the count of milks in the tray"><p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

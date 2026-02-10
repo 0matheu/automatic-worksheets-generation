@@ -1,0 +1,48 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Charity Fundraising
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+  "task": "To practice counting and basic addition skills by calculating the total donations Alice received for the charity event.",
+  "layout": "The activity consists of a description where Alice is collecting donations for a charity event. Below is an image showing the donation amounts. The student will answer questions based on the donations.",
+  "answer": {
+    "A": "To answer correctly, the student needs to add the donation of 50 reais and the donation of 30 reais. The correct answer is 80 reais.",
+    "B": "To answer correctly, the student needs to add the donation of 50 reais and the donation of 70 reais. The correct answer is 120 reais."
+  }
+}
+
+  
+<html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: solid 1px; padding: 10px;">
+      <div class="activity">
+        <p exp="Alice is collecting donations for a charity event. The donation amounts are shown in the image.">
+          Alice is raising funds for a charity event. Below is an image showing the donations received from different people.
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image showing the donations Alice received.">
+        <img 
+          src="" 
+          alt="Illustration showing Alice’s charity donations: 50 reais, 30 reais, and 70 reais."
+          style="width: 600px; height: 300px"
+          exp="Image showing the donation amounts for Alice's charity event."
+        />
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question asking for the total donation from the first two donors."><b>A)</b> What is the total donation from the first two donors?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total donation from the first two donors. Correct: 80."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question asking for the total donation from the first and third donors."><b>B)</b> What is the total donation from the first and third donors?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total donation from the first and third donors. Correct: 120."></div>
+      </div>
+    </div>
+  </body>
+</html>

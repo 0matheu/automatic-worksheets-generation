@@ -1,0 +1,79 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Marbles
+width-sheet: 800px
+task: observe images, write answer
+language: en
+
+{
+  "task": "To practice counting and addition skills by calculating the total number of marbles Sofia has collected.",
+  "layout": "The activity consists of a description explaining that Sofia already had 18 marbles and received 24 more from a friend. The student needs to calculate how many marbles she has now.",
+  "answer": {
+    "To answer correctly, the student needs to add 18 marbles to 24 marbles. The correct answer is 42."
+  }
+}
+<html>
+<head>
+  <style>
+    .container { 
+      width: 800px; 
+      border: solid 1px; 
+      padding: 10px; 
+      text-align: center; 
+      font-family: Arial, sans-serif; 
+    }
+
+    .activity p { 
+      font-size: 18px; 
+      margin-bottom: 20px; 
+    }
+
+    img { 
+      width: 200px; 
+      height: auto; 
+      margin: 10px; 
+    }
+
+    .answer-area { 
+      margin-top: 30px; 
+    }
+
+    .answer-box { 
+      width: 100px; 
+      height: 100px; 
+      border: 2px solid black; 
+      margin: 10px auto; 
+      font-size: 28px; 
+      text-align: center; 
+      line-height: 100px; 
+    }
+
+    .answer-instruction { 
+      font-size: 18px; 
+      margin-bottom: 5px; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="activity">
+      <p exp="Activity description explaining the scenario where Sofia is collecting marbles.">
+        Sofia is collecting marbles for a game. She already had 18 marbles when she received 24 more from a friend. How many marbles does Sofia have now?
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center;" exp="Div used to center the images of marbles.">
+      <img src="" alt="18 marbles" exp="Image showing 18 marbles, which is the number of marbles Sofia already had." />
+      <img src="" alt="24 marbles" exp="Image showing 24 marbles, which represents the marbles she received from her friend." />
+      <img src="" alt="42 marbles" exp="Image showing 42 marbles, which represents the total number of marbles after adding." />
+    </div>
+
+    <div class="answer-area" exp="Area containing the question and answer box.">
+      <p class="answer-instruction" exp="Instruction telling the student what to do.">
+         How many marbles does Sofia have now?
+      </p>
+      <div class="answer-box" exp="Box where the student writes the result of adding 18 to 24. The correct answer is 42."></div>
+    </div>
+  </div>
+</body>
+</html>

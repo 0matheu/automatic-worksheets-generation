@@ -1,0 +1,44 @@
+```json
+{
+  "task": "To practice counting and basic addition skills by counting the number of clowns arriving and the number of clowns already in the circus, and then calculating the total number of clowns.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph that explains the task, and the bottom section contains a centered 2x2 grid. The grid has four cells, with the first row containing an image of a circus, and the second row containing three empty cells. The image of the circus is placed in the center left of the grid.",
+  "answer": "To answer this question correctly, the student needs to: 1) count the number of clowns in the circus image (5 clowns are present), 2) count the number of clowns in the new group of clowns (3 clowns), and 3) add the two numbers together to find the total. The correct answer is 8 clowns (5 clowns in the circus image, and 3 new clowns)."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          In the image, there are 5 clowns in a circus, and a new group of clowns is arriving, also with 5 clowns. How many clowns are there in total? Add the clowns in the circus to the clowns in the new group.
+        </p>
+
+        <div
+          style="display: grid; grid-template-columns: 400px 400px; grid-template-rows: 400px 400px"
+          exp="div that contains the image, being organized in a 2x2 grid"
+        >
+          <div
+            style="grid-column: 1 / 2; grid-row: 1 / 2"
+            exp="div that is used to position the image of the circus in the first row and the first column"
+          >
+            <img
+              alt="image in a coloring book style of a circus containing 5 clowns"
+              style="width: 400px; height: 400px"
+              exp="image that the student will have to count the number of clowns, being 5 in this case, the image is 400px by 400px to be a centered image in the final result"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

@@ -1,0 +1,90 @@
+```json
+{
+  "task": "To practice counting and basic addition skills by counting the number of clowns in two images and then calculating the total sum.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph that explains the task, and the bottom section contains a 2x2 grid with three circus images and an empty space. The grid is organized using a container with two rows and two columns, and the images are placed in the first and second columns of the first row, and the third image is placed in the first column of the second row. An empty div is also placed in the second column of the second row.",
+  "answer": "To answer this question correctly, the student needs to: 1) count the number of clowns in the first image (4 clowns), 2) count the number of clowns in the second image (3 clowns), 3) add the two quantities together to find the total sum (4 + 3 = 7), and 4) write the correct answer (7) in the empty space provided."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three images in a 2x2 grid */
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 400px 400px;
+      grid-template-areas:
+        "img1 img2"
+        "img3 empty";
+    }
+
+    /* class used to position the first image of the clowns in the first row and the first column */
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to position the second image of the clowns in the first row and the second column */
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to position the third image of the clowns in the second row and the first column */
+    .img3 {
+      grid-area: img3;
+    }
+
+    /* class used to position an empty space in the second row and the second column, this space is used to the student fill in with the answer */
+    .empty {
+      grid-area: empty;
+    }
+
+    /* class used to adjust the size of the clowns images */
+    img {
+      width: 380px;
+      height: 380px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Count the total number of clowns in the circus below and write the answer.
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="Image in a coloring book style of 4 clowns in a circus parade"
+              exp="Image in which the student will have to count the clowns, being 4 clowns in the image"
+            ></img>
+          </div>
+
+          <div class="img2">
+            <img
+              alt="Image in a coloring book style of 3 clowns in a circus parade"
+              exp="Image in which the student will have to count the clowns, being 3 clowns in the image"
+            ></img>
+          </div>
+
+          <div class="img3">
+            <img
+              alt="Image in a coloring book style of a clown in a circus parade"
+              exp="Image in which the student will have to count the clowns, being 1 clown in the image"
+            ></img>
+          </div>
+
+          <div class="empty"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

@@ -1,0 +1,77 @@
+level: 2nd year fundamental
+learning_goals: addition
+theme: counting colored counter
+sheet_width": 600px
+task: observe image, write answer
+language: en
+
+{   
+  "task": "The objective of this activity is for the student to calculate the total number of counters Charles has by adding the given values together.",
+  "layout": "The activity is structured with a scenario description at the top, followed by an illustration representing the problem. Below the image, there is a section for writing the final answer.",
+  "answer": "To correctly answer this activity, the student must count all the counters. Charles has 35 red counters and 42 blue counters, resulting in a total of 77 counters. The student should write '77' in the answer box."
+}
+  
+<html>
+  <head>
+    <style>
+      .container {
+        width: 600px;
+        border: solid 1px;
+        padding: 10px;
+        text-align: left;
+        background-color: white;
+      }
+      .activity {
+        width: 600px;
+      }
+      .question {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        margin-top: 10px;
+      }
+      .box {
+        width: 80px;  
+        height: 80px;
+        border: solid 1px;
+        margin-top: 10px; 
+      }
+    </style>
+  </head>
+  <body>
+    <div 
+      class="container"
+      exp="This div acts as the main container for the activity. It sets a fixed width of 600px with padding for spacing inside and a white background."
+    >
+      <div class="activity">
+        <p
+          exp="This paragraph provides a clear description of the task. The student needs to count the total number of counters Charles has."
+        >
+          Charles is preparing for a big board game and has organized his colored counters.
+          He has 35 red counters and 42 blue counters. How many counters does Charles have in total?
+        </p>
+
+        <div 
+          style="display: flex; justify-content: center; margin-bottom: 20px;"
+          exp="This section contains an illustration related to the problem to make the activity more engaging for the student."
+        >
+          <img 
+            src="" 
+            alt="Illustration of Charles organizing red and blue counters on a table." 
+            style="width: 400px; height: auto;"
+            exp="An image showing Charles organizing red and blue counters on a table, representing the numbers students need to count and add."
+          />
+        </div>
+
+        <div class="question">
+          <p exp="Final question prompting the student to write the total number of counters.">Write the total number of counters Charles has:</p>
+          <div 
+            class="box"
+            exp="Box where the student writes the total number of counters. The correct answer is 77."
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+  

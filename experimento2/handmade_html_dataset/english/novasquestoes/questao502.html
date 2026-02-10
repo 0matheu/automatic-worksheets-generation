@@ -1,0 +1,47 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Car Rental
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+    "task": "To practice counting and basic addition skills by calculating the total cost of renting a car for João.",
+    "layout": "The activity consists of a description where João is renting a car. Below is an image showing the prices of the rental for different days. The student will answer questions based on the prices.",
+    "answer": {
+      "A": "To answer correctly, the student needs to add the cost of the car rental for 3 days (30 reais/day) and the additional fee for the GPS (15 reais). The correct answer is 105 reais.",
+      "B": "To answer correctly, the student needs to add the cost of the car rental for 5 days (30 reais/day) and the additional fee for the insurance (50 reais). The correct answer is 200 reais."
+    }
+  }
+
+<html>
+<head></head>
+<body>
+  <div style="width: 800px; border: solid 1px; padding: 10px;">
+    <div class="activity">
+      <p exp="João is renting a car. The prices for the rental are shown in the image.">
+        João is renting a car for his vacation. Below is an image showing the rental prices and additional fees.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image showing João’s car rental.">
+      <img 
+        src="" 
+        alt="Illustration showing João’s car rental, including the price per day and additional fees."
+        style="width: 600px; height: 300px"
+        exp="Image showing the rental costs and additional fees."
+      />
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question asking for the total cost of the 3-day rental with the GPS fee."><b>A)</b> What is the total cost of the 3-day rental with the GPS fee?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total cost of the 3-day rental with the GPS. Correct: 105."></div>
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question asking for the total cost of the 5-day rental with the insurance fee."><b>B)</b> What is the total cost of the 5-day rental with the insurance fee?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total cost of the 5-day rental with the insurance. Correct: 200."></div>
+    </div>
+  </div>
+</body>
+</html>

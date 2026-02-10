@@ -1,0 +1,57 @@
+level: 1st year fundamental
+learning_goals: counting, logical reasoning
+theme: animals
+sheet_width: 600px
+task: observe image, write answer
+language: en
+
+
+
+{
+  "task": "The objective of this activity is for the student to count the number of sheep shown in the image and write the correct number in the answer box.",
+  "layout": "The activity is organized with a description at the top, followed by an illustration of sheep. Below the image, a question prompts the student to count the sheep and input the total number in the answer box.",
+  "answer": "To correctly answer this activity, the student will count all the sheep in the image. The correct answer is '4 sheep.'"
+}
+
+  
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px; padding: 10px; text-align: center;"
+      exp="This div acts as the main container for the activity. It sets a fixed width of 600px with padding for spacing inside and centers the content."
+    >
+      <div class="activity" style="width: 100%;">
+        <p
+          exp="This paragraph provides a clear description of the task. The student needs to count the sheep in the image and write the total number in the box."
+        >
+          How many sheep are there in the frame? Count and write the total below.
+        </p>
+
+        <div
+          style="display: flex; justify-content: center; margin-bottom: 20px;"
+          exp="This section contains an illustration related to the problem to make the activity more engaging for the student."
+        >
+          <img
+            src=""
+            alt="Illustration of four sheep, in a coloring book style"
+            style="width: 300px; height: auto;"
+            exp="This image visually represents the four sheep the student needs to count."
+          />
+        </div>
+
+        <div
+          style="text-align: left; margin-bottom: 20px;"
+          exp="This section provides instructions for writing the total number of sheep."
+        >
+          <p> Write the total number of sheep in the box bellow:</p>
+        </div>
+
+        <div
+          style="width: 100px; height: 50px; border: 1px solid black; margin: 0 auto;"
+          exp="This box is where the student writes the total number of sheep. The correct answer is '4.'"
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+```json
+{
+  "task": "The student will learn to count and add by identifying the number of musicians in the initial band and the number of musicians that joined, and then calculating the total number of musicians.",
+  "layout": "The HTML elements are organized with a div containing the sheet width, followed by a div containing the question description, three images of the initial band, the new musicians, and the result, and finally a paragraph explaining the task.",
+  "answer": "To answer correctly, the student needs to: 1) count the number of musicians in the initial band (5), 2) count the number of new musicians (3), 3) add the two numbers together to find the total, and 4) write the correct answer (8) in the third image."
+}
+```
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the images below. A band with 5 musicians, the band receives 3 more musicians, and finally, the band performs with the total number of musicians. Add up the musicians in the band with the new musicians and write the result.
+        </p>
+
+        <div
+          style="display: flex; justify-content: space-around"
+          exp="div used to organize the images in the question, containing three images of a band in a line, being the first of the band with 5 musicians, the second of 3 new musicians, and the third of the band with the total of musicians"
+        >
+          <img
+            src=""
+            alt="image in a coloring book style of a band with 5 musicians playing"
+            style="width: 250px; height: 200px"
+            exp="image where the student will have to count how many musicians are present, being 5 in this case"
+          />
+
+          <img
+            src=""
+            alt="image in a coloring book style of 3 musicians, also in a child's drawing style, coming towards the band"
+            style="width: 250px; height: 200px"
+            exp="image where the student will have to count how many new musicians are present and add to the quantity of the first image, being 3 new musicians"
+          />
+
+          <img
+            src=""
+            alt="image in a coloring book style of a band with 8 musicians playing"
+            style="width: 250px; height: 200px"
+            exp="image that the student will have to observe the quantity of musicians and write the sum of the initial musicians with the new ones. The image contains 8 musicians, being the correct answer"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

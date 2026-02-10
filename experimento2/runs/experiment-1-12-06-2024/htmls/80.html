@@ -1,0 +1,87 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of cacti and camels in each image and connecting them to the corresponding numerical expressions.",
+  "layout": "The question is divided into a 2-line and 3-column layout. The first row contains an image of 3 cacti in the desert, and the second row contains an image of 2 camels in the desert. The first column contains the equation '2 + 3 =' connected to the image of the cacti, the second column is empty, and the third column contains the equation '2 + 2 =' connected to the image of the camels.",
+  "answer": "To answer correctly, the student needs to: 1) identify the number of cacti in the image (3), 2) identify the corresponding equation (2 + 3), and 3) solve the equation (5). The correct answer is 5. For the second equation, the student needs to: 1) identify the number of camels in the image (2), 2) identify the corresponding equation (2 + 2), and 3) solve the equation (4). The correct answers are 5 and 4."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing two images in a 2-line and 3-column layout, in addition to the equations connected to the images */
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 300px 300px;
+      grid-template-areas:
+        "img1 eq1 ."
+        "img2 eq2 .";
+    }
+
+    /* class used to place the image of the cacti in the first row and the first column */
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the image of the camels in the second row and the first column */
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to place the equation that is connected to the image of the cacti, in the first row and the second column */
+    .eq1 {
+      grid-area: eq1;
+      font-size: 25px;
+    }
+
+    /* class used to place the equation that is connected to the image of the camels, in the second row and the second column */
+    .eq2 {
+      grid-area: eq2;
+      font-size: 25px;
+    }
+
+    /* class used to adjust the size of the images in the activity */
+    img {
+      width: 290px;
+      height: 290px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the images below and connect them to the numerical expressions that represent the sum of all the elements present in the image.
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="image in a coloring book style of 3 cacti in the desert"
+              exp="image that the student will have to count the cacti to be able to connect to the equation that represents the sum"
+            />
+          </div>
+
+          <div class="img2">
+            <img
+              alt="image in a coloring book style of 2 camels in the desert"
+              exp="image that the student will have to count the camels to be able to connect to the equation that represents the sum"
+            />
+          </div>
+
+          <p class="eq1" exp="numerical expression that the student will have to connect with the image of the cacti">2 + 3 =</p>
+
+          <p class="eq2" exp="numerical expression that the student will have to connect with the image of the camels">2 + 2 =</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

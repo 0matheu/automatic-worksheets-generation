@@ -1,0 +1,68 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Fruit Basket
+width-sheet: 800px
+
+task: observe images, write answer
+language: en
+
+{ "task": "To practice counting and addition skills by adding the total amount of fruits in a basket and answering questions about the number of each fruit.", "layout": "The activity consists of a description explaining that the student needs to add up the number of apples, bananas, and oranges in a basket to calculate the total number of fruits.", "answer": { "A": "To answer correctly, the student needs to add the number of apples (15 apples), bananas (8 bananas), and oranges (10 oranges). The correct answer is 33 fruits.", "B": "To answer correctly, the student needs to write down the total number of fruits. The correct answer is 33 fruits." } }
+
+<html>
+  <head>
+    <style>
+      .container {
+        width: 800px;
+        border: solid 1px;
+        padding: 10px;
+        text-align: center;
+      }
+      .question-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+      .answer-box {
+        width: 150px;
+        height: 30px;
+        border: 1px solid black;
+        text-align: center;
+      }
+      img {
+        width: 120px;
+        height: 70px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="activity">
+        <p exp="Activity description explaining the total number of fruits in the basket.">
+          A basket contains the following number of fruits:
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center;" exp="Div used to center the images of fruits in the basket.">
+        <img src="" alt="Image of 15 apples" exp="Image of 15 apples in the basket." />
+        <img src="" alt="Image of 8 bananas" exp="Image of 8 bananas in the basket." />
+        <img src="" alt="Image of 10 oranges" exp="Image of 10 oranges in the basket." />
+      </div>
+
+      <div class="question-container" exp="Question asking the student how many fruits are in the basket.">
+        <p exp="Question asking how many fruits are in the basket.">
+          <b>A)</b> How many fruits are in the basket?
+        </p>
+        <div class="answer-box" exp="Box for the student to write the total number of fruits in the basket."></div>
+      </div>
+
+      <div class="question-container" exp="Question asking the student how many bananas are in the basket.">
+        <p exp="Question asking how many bananas are in the basket.">
+          <b>B)</b> How many bananas are in the basket?
+        </p>
+        <div class="answer-box" exp="Box for the student to write the number of bananas in the basket."></div>
+      </div>
+    </div>
+  </body>
+</html>

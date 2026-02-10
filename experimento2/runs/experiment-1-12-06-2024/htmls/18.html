@@ -1,0 +1,108 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of Triceratops and Stegosauruses in the image and calculating the total sum.",
+  "layout": "The HTML elements are organized with a div containing the page width, followed by a div containing the question description, and two grid containers. The first grid container contains three images of Triceratops, and the second grid container contains two images of Stegosauruses. The images are placed in a specific layout to facilitate counting and addition.",
+  "answer": "To answer correctly, the student needs to: 1) count the number of Triceratops in the three images (3, 2, and 4), 2) add them up (3 + 2 + 4 = 9), 3) count the number of Stegosauruses in the two images (2 and 3), and 4) add them up (2 + 3 = 5). The student needs to observe the images, count the dinosaurs, and perform a simple addition operation to get the correct answers: 9 for the Triceratops and 5 for the Stegosauruses."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three images in a row */
+    .container {
+      display: grid;
+      grid-template-columns: 250px 250px 250px;
+      grid-template-rows: 250px 250px;
+      grid-template-areas:
+        "img1 img2 img3"
+        "img4 img5 img3";
+    }
+
+    /* class used to place the first image of the triceratops in the first row and first column*/
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the second image of the triceratops in the second row and second column*/
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to place the third image of the triceratops in the third row and third column*/
+    .img3 {
+      grid-area: img3;
+    }
+
+    /* class used to place the first image of the stegosaurus in the first row and third column*/
+    .img4 {
+      grid-area: img4;
+    }
+
+    /* class used to place the second image of the stegosaurus in the second row and third column*/
+    .img5 {
+      grid-area: img5;
+    }
+
+    /* class used to give the size for the images of the activity*/
+    img {
+      width: 240px;
+      height: 240px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question">
+        <p
+          exp="Question description. Contains the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the images below and write the sum of all the Triceratops
+          and the sum of all the Stegosauruses.
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="image in a children's drawing style containing 3 triceratops in a meadow"
+              exp="image that the student will have to observe and count how many triceratops are present, being 3"
+            />
+          </div>
+
+          <div class="img2">
+            <img
+              alt="image in a children's drawing style containing 2 triceratops in a meadow"
+              exp="image that the student will have to observe and count how many triceratops are present, being 2"
+            />
+          </div>
+
+          <div class="img3">
+            <img
+              alt="image in a children's drawing style containing 4 triceratops in a meadow"
+              exp="image that the student will have to observe and count how many triceratops are present, being 4"
+            />
+          </div>
+
+          <div class="img4">
+            <img
+              alt="image in a children's drawing style containing 2 stegosauruses in a meadow"
+              exp="image that the student will have to observe and count how many stegosauruses are present, being 2"
+            />
+          </div>
+
+          <div class="img5">
+            <img
+              alt="image in a children's drawing style containing 3 stegosauruses in a meadow"
+              exp="image that the student will have to observe and count how many stegosauruses are present, being 3"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

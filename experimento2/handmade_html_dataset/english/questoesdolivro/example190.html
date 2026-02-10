@@ -1,0 +1,86 @@
+level: 2nd year fundamental
+learning_goals: addition, counting
+theme: apple counting
+sheet_width: 600px
+task: observe equation, write answer
+language: en
+
+{ 
+  "task":"The objective of this activity is for the student to calculate the total number of apples Ana bought by adding the given values together",
+  "layout":"The activity is structured with a scenario description at the top, followed by a grid layout where the equation is positioned in one cell and response options are placed in three other cells for matching.",
+  "answer":"To correctly answer this activity, the student must solve the equation (18 + 25) and match it with the correct numeral among the options. The student should match it to '43'."
+}
+
+
+
+
+<html>
+  <head>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 150px 150px 150px;
+        grid-template-areas:
+          "empty1 n1"
+          "sum n2"
+          "empty2 n3";
+      }
+
+      .container p {
+        font-size: larger;
+        font-weight: bolder;
+      }
+
+      .sum {
+        grid-area: sum;
+      }
+
+      .n1 {
+        grid-area: n1;
+      }
+
+      .n2 {
+        grid-area: n2;
+      }
+
+      .n3 {
+        grid-area: n3;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px; padding: 10px; text-align: left;"
+      exp="This div acts as the main container for the activity. It sets a fixed width of 600px with padding for spacing inside."
+    >
+      <div class="activity" style="width: 600px;">
+        <p
+          exp="This paragraph provides a clear description of the task. The student needs to match the number of apples to the correct total."
+        >
+          Ana went to the market and bought two baskets of apples. The first basket contained 18 apples, and the second basket contained 25 apples. Match the sum of apples with the correct result below.
+        </p>
+
+        <div style="display: flex; justify-content: center;">
+          <div class="container">
+            <div class="sum">
+              <p exp="Equation that the student must solve and find the result in the options n1, n2, and n3">18 + 25</p>
+            </div>
+
+            <div class="n1">
+              <p exp="First response option that the student must find, the result is incorrect">40</p>
+            </div>
+
+            <div class="n2">
+              <p exp="Second response option that the student must find, the result is correct">43</p>
+            </div>
+
+            <div class="n3">
+              <p exp="Third response option that the student must find, the result is incorrect">45</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

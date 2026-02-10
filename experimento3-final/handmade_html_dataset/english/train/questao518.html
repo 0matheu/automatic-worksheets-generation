@@ -1,0 +1,61 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Olivia's Bakery
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+    "task": "To practice counting and basic addition skills by calculating the total cost of bakery items Olivia is buying.",
+    "layout": "The activity consists of a description where Olivia is buying bakery items. Below is an image showing the prices of the items. The student will answer questions based on the prices.",
+    "answer": {
+      "A": "To answer correctly, the student needs to add the prices of the loaf of bread (15 reais) and the croissant (10 reais). The correct answer is 25 reais.",
+      "B": "To answer correctly, the student needs to add the price of the croissant (10 reais) and the muffin (20 reais). The correct answer is 30 reais.",
+      "C": "To answer correctly, the student needs to add the price of the loaf of bread (15 reais) and the muffin (13 reais). The correct answer is 28 reais.",
+      "D": "To answer correctly, the student needs to add the prices of all three items: the loaf of bread (15 reais), the croissant (10 reais), and the muffin (20 reais). The correct answer is 45 reais."
+    }
+  }
+  
+
+<html>
+<head></head>
+<body>
+  <div style="width: 800px; border: solid 1px; padding: 10px;">
+    <div class="activity">
+      <p exp="Olivia is buying baked goods at the bakery. The prices of the goods are shown in the image.">
+        Olivia is shopping for treats at the bakery. Below is an image showing the prices of the delicious bakery items she wants to buy.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image showing Olivia’s bakery items.">
+      <img 
+        src="" 
+        alt="Illustration showing Olivia’s bakery items, including a loaf of bread, a croissant, and a muffin."
+        style="width: 600px; height: 300px"
+        exp="Image showing the bakery items and their prices."
+      />
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question asking for the total cost of the loaf of bread and the croissant."><b>A)</b> What is the total cost of the loaf of bread and the croissant?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total cost of the loaf of bread and croissant. Correct: 25."></div>
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question asking for the total cost of the croissant and the muffin."><b>B)</b> What is the total cost of the croissant and the muffin?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total cost of the croissant and muffin. Correct: 30."></div>
+    </div>
+    
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question asking for the total cost of the loaf of bread and the muffin."><b>C)</b> What is the total cost of the loaf of bread and the muffin?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total cost of the loaf of bread and muffin. Correct: 28."></div>
+    </div>
+    
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question asking for the total cost of all three bakery items."><b>D)</b> What is the total cost of the loaf of bread, croissant, and muffin?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total cost of all three items. Correct: 45."></div>
+    </div>
+  </div>
+</body>
+</html>

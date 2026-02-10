@@ -1,0 +1,84 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme:  Minutes Spent Reading
+width-sheet: 800px
+task: observe images, write answer
+language: en
+
+
+{
+  "task": "To practice addition and counting by calculating the total number of minutes Lucas has read in a day.",
+  "layout": "This activity features a short story about a boy named Lucas who has already read for 20 minutes. The child must determine how many minutes Lucas will have read in total after adding 10 more minutes, and then 15 more minutes. The page includes an illustrative image of clocks displaying these time intervals, along with two sub-questions and answer boxes.",
+  "answer": {
+    "A": "To answer correctly, the student must perform the addition 20 + 10. Lucas has already read for 20 minutes and reads 10 more. 20 plus 10 equals 30. The student should write 30 in the answer box.",
+    "B": "To answer correctly, the student must perform the addition 20 + 15. Lucas has already read for 20 minutes and reads 15 more. 20 plus 15 equals 35. The student should write 35 in the answer box."
+  }
+}
+
+<html>
+<head>
+  <style>
+    .container { 
+      width: 800px; 
+      border: solid 1px; 
+      padding: 10px; 
+      text-align: center; 
+      font-family: Arial, sans-serif; 
+    }
+    .question-container { 
+      display: flex; 
+      align-items: center; 
+      justify-content: space-between; 
+      margin-bottom: 10px; 
+    }
+    .answer-box { 
+      width: 150px; 
+      height: 30px; 
+      border: 1px solid black; 
+      text-align: center; 
+      font-size: 16px; 
+    }
+    img { 
+      width: 120px; 
+      height: 70px; 
+      margin: 10px; 
+    }
+    .activity p { 
+      font-size: 18px; 
+      margin-bottom: 20px; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="activity">
+      <p exp="Text that sets the context of the activity, explaining that Lucas is adding time to his reading session.">
+        Lucas has already read for 20 minutes. He wants to know how many minutes he will have spent reading if he adds 10 more minutes. Then, he wonders how many minutes he will have spent if he adds 15 more minutes.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center;" exp="Visual support with images of timers or clocks helping the student visualize the amounts.">
+      <img src="" alt="Analog clock showing 20 minutes of reading time" 
+        exp="Image of a round clock showing 20 minutes passed. This represents the time Lucas has already spent reading." />
+      <img src="" alt="Analog clock showing 30 minutes of reading time" 
+        exp="Image of a round clock showing 30 minutes, which is the result of adding 10 minutes to the 20 minutes Lucas had already read." />
+      <img src="" alt="Analog clock showing 35 minutes of reading time" 
+        exp="Image of a round clock showing 35 minutes, representing the result of adding 15 more minutes to the initial 20 minutes." />
+    </div>
+
+    <div class="question-container" exp="First addition question based on the initial 20 minutes and adding 10 more.">
+      <p exp="Asks the student to calculate how many minutes Lucas will have read if he adds 10 to the initial 20.">
+        <b>A)</b> How many minutes will Lucas have read in total if he adds 10 minutes to his 20 minutes?
+      </p>
+      <div class="answer-box" exp="Blank box for the student to write the result of 20 + 10. Expected answer: 30."></div>
+    </div>
+
+    <div class="question-container" exp="Second addition question based on the initial 20 minutes and adding 15 more.">
+      <p exp="Asks the student to calculate how many minutes Lucas will have read if he adds 15 to the initial 20.">
+        <b>B)</b> How many minutes will Lucas have read in total if he adds 15 minutes to his 20 minutes?
+      </p>
+      <div class="answer-box" exp="Blank box for the student to write the result of 20 + 15. Expected answer: 35."></div>
+    </div>
+  </div>
+</body>
+</html>

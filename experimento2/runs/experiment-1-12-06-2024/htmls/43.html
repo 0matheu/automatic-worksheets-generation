@@ -1,0 +1,70 @@
+```json
+{
+  "task": "To practice basic addition skills by counting and adding the number of juice boxes and sandwiches in two images and writing the result.",
+  "layout": "The question is divided into three main sections. The top section contains a paragraph describing the task. The middle section contains a 2x1 grid with two images: one image of a lunch tray with 3 juice boxes and 2 sandwiches, and another image of a lunch tray with 2 juice boxes and 3 sandwiches. The images are placed side by side in the grid. The bottom section contains a paragraph that asks the student to count the total number of juice boxes and sandwiches in both trays and write the result.",
+  "answer": "To answer this question correctly, the student needs to observe the two images and count the number of juice boxes and sandwiches in each. Then, the student needs to add the two quantities together to find the total. The correct answer is 8 (3 juice boxes + 2 sandwiches) + 5 (2 juice boxes + 3 sandwiches) = 8 + 5 = 13. The student needs to write the result (13) to complete the question."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing two images in a 2-line and 1-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 400px;
+      grid-template-areas:
+        "img1 img2";
+    }
+
+    /* class used to place the image of the juice boxes and sandwiches in the first row and the first column */
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the image of the juice boxes and sandwiches in the first row and the second column */
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to adjust the size of the images in the activity */
+    img {
+      width: 380px;
+      height: 380px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+        Felipe and Maria are in the school cafeteria and have the trays below. Count the total number of juice boxes and sandwiches in both trays and write the result.
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="image in a coloring book style of a tray containing 3 juice boxes and 2 sandwiches"
+              exp="image that the student will have to observe, count the number of juice boxes and sandwiches, and add them"
+            />
+          </div>
+
+          <div class="img2">
+            <img
+              alt="image in a coloring book style of a tray containing 2 juice boxes and 3 sandwiches"
+              exp="image that the student will have to observe, count the number of juice boxes and sandwiches, and add them"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

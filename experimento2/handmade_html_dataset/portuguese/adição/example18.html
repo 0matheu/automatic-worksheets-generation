@@ -1,0 +1,131 @@
+nivel: 2º ano fundamental 
+assunto: adição 
+tematica: números 
+largura-folha: 800px
+layout: linhas e colunas
+
+
+Nessa questão serão praticados os principios da adição. A questão consiste de
+equações em disposição de linhas e colunas, com um valor faltando para completa-las. 
+As questões são as seguintes:
+7 + _ = 9 e _ + 6 = 11.
+Para responder corretamente o aluno deve entender que, para
+o resultado da soma de um número com 7 ser igual 9, a resposta deve ser 2, pois 7 + 2 = 9. 
+A segunda questão o número que é somado com 6 para resultar em 11 deve ser 5, pois 6 + 5 = 11.
+
+<html>
+  <head></head>
+
+  <style>
+    /* classe que é utilizada para organizar as equações no layout da atividade */
+    .container {
+      display: grid;
+      grid-template-columns: 160px 160px 160px 160px 160px;
+      grid-template-rows: 150px 150px;
+      grid-template-areas:
+        "nu1 m1 nu2 ig1 r1"
+        "nu3 m2 nu4 ig2 r2";
+      margin: 5px;
+    }
+
+    /* classe que é utilizada para centralizar os números no layout da atividade  */
+    .center {
+      display: flex;
+      justify-content: center;
+      font-size: 40px;
+    }
+
+    /* classe utilizada para centralizar o sinal de mais na atividade, na primeira célula da segunda coluna*/
+    .m1 {
+      grid-area: m1;
+    }
+
+    /* classe utilizada para posicionar o sinal de mais na atividade, na primeira célula da segunda coluna */
+    .m2 {
+      grid-area: m2;
+    }
+
+    /* classe utilizada para posicionar o sinal de igual na atividade, na primeira célula da quarta coluna */
+    .ig1 {
+      grid-area: ig1;
+    }
+
+    /* classe utilizada para posicionar o sinal de igual na atividade, na segunda célula da quarta coluna */
+    .ig2 {
+      grid-area: ig2;
+    }
+
+    /* classe utilizada para posicionar o número 7 na primeira célula da primeira coluna */
+    .nu1 {
+      grid-area: nu1;
+    }
+
+    /* classe utilizada para posicionar a caixa que o aluno terá que preencher com 2 para responder, na primeira celula da terceira coluna */
+    .nu2 {
+      grid-area: nu2;
+    }
+
+    /* classe utilizada pra posicionar a caixa que o aluno terá que preencher com 5 para responder, na segunda célula da primeira coluna*/
+    .nu3 { 
+      grid-area: nu3;
+    }
+
+    /* classe utilizada para posicionar o número 6 na segunda célula da terceira coluna*/
+    .nu4 {
+      grid-area: nu4;
+    }
+
+    /* classe utilizada para posicionar o número 9 representando o resultado da soma na primeira célula da quinta coluna*/
+    .r1 {
+      grid-area: r1;
+    }
+
+    /* classe utilizada para posicionar o número 11 representando o resultado da soma na segunda célula da quinta coluna*/
+    .r2 {
+      grid-area: r2;
+    }
+
+    /* classe utilizada para colocar borda nas caixas que representarão as respostas dos alunos */
+    .box {
+      border: 1px solid;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 800px"
+    >
+      <div class="questao" style="width: 800px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe as equações abaixo e preencha os quadrados com os valores que
+          completam corretamente.
+        </p>
+
+        <div class="container">
+          <div class="nu1 center" exp="número que o aluno deverá somar com 2 para resultar em 9"><p>7</p></div>
+
+          <div class="nu4 center" exp="número que o aluno deverá somar com 5 para resultar em 11"><p>6</p></div>
+
+          <div class="m1 center" exp="sinal que representa a soma de 7 com 2"><p>+</p></div>
+
+          <div class="m2 center" exp="sinal que representa a soma de 5 com 6"><p>+</p></div>
+
+          <div class="ig1 center" exp="sinal que representa a igualdade de 7 + 2 = 9"><p>=</p></div>
+
+          <div class="ig2 center" exp="sinal que representa a igualdade de 5 + 6 = 11"><p>=</p></div>
+
+          <div class="r1 center" exp = "número que representa a soma de 7 + 2"><p>9</p></div>
+
+          <div class="r2 center" exp = "número que representa a soma de 5 + 6"><p>11</p></div>
+
+          <div class="n2 box" exp="caixa que representa o espaço para o aluno preencher 2, que representa a resposta para a soma de 7 + 2 = 9"></div>
+
+          <div class="n3 box" exp="caixa que representa o espaço para o aluno preencher 5, que representa a resposta para a soma de 5 + 6 = 11"></div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

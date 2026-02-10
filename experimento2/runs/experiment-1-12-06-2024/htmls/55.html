@@ -1,0 +1,95 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of balls the clown had originally and the number he received, and then calculating the total sum.",
+  "layout": "The question is divided into three main sections. The top section contains a paragraph that explains the task, followed by a middle section that contains an image of a clown juggling balls, and a bottom section that contains three paragraphs. The image is placed in the middle section and is centered horizontally. The paragraphs are placed in the bottom section and provide the questions that the student needs to answer.",
+  "answer": "To answer correctly, the student needs to: 1) identify the number of balls the clown had originally (4), 2) identify the number of additional balls the clown received (7), and 3) calculate the total sum by adding the two numbers together (4 + 7 = 11). The correct answers are: A) 4, B) 7, and C) 11."
+}
+```
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three main sections: top, middle, and bottom, with a total of one image and three paragraphs */
+    .container {
+      display: grid;
+      grid-template-columns: 800px;
+      grid-template-rows: 200px 300px 200px;
+      grid-template-areas:
+        "top"
+        "middle"
+        "bottom";
+    }
+
+    /* class used to position the image in the middle of the page, between the paragraphs */
+    .middle {
+      grid-area: middle;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* class used to position the image in the middle of the page, between the paragraphs */
+    img {
+      width: 600px;
+      height: 300px;
+    }
+
+    /* class used to position the paragraphs that contain the questions the student will have to answer */
+    p {
+      margin-left: 50px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="container">
+        <div
+          style="width: 800px"
+          exp="div used to adjust the sheet width, which in this case is 800px"
+        >
+          <div class="top">
+            <p
+              exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+            >
+              A clown is juggling balls and initially had 4, and received the
+              quantity represented in the image, how many balls does the clown
+              have in total now?
+            </p>
+          </div>
+
+          <div class="middle">
+            <img
+              alt="Image of a clown in a circus juggling 4 balls, and receiving 7 more balls"
+              exp="Image that the student will have to interpret, identifying that the clown initially had 4 balls, and received 7 more"
+            />
+          </div>
+
+          <div class="bottom">
+            <p
+              exp="First question the student will have to answer, asking how many balls the clown had initially"
+            >
+              A) How many balls did the clown have initially?
+            </p>
+
+            <p
+              exp="Second question the student will have to answer, asking how many additional balls the clown received"
+            >
+              B) How many additional balls did the clown receive?
+            </p>
+
+            <p
+              exp="Third question the student will have to answer, asking for the sum of the balls the clown had initially, and the balls he received"
+            >
+              C) What is the sum of all the balls the clown had?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

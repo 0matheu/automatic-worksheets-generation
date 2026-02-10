@@ -1,0 +1,48 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Comic Book Painting
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+  "task": "To practice counting and addition, the student must calculate how many comic strips in total Ana painted in her book.",
+  "layout": "The activity presents a scenario where Ana is painting comic strips in her storybook. An image shows Ana with a paintbrush and colorful paint, working on a comic strip. The student will use the numbers in the story to solve the problem.",
+  "answer": {
+    "Question": "To answer correctly, the student must add the comic strips Ana painted yesterday (12) and the ones she painted today (18). The correct answer is 30 comic strips."
+  }
+}
+
+<html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: solid 1px black; padding: 10px;" exp="Main container for the comic book painting activity.">
+      
+      <div class="activity">
+        <p exp="Description of Ana painting comic strips in her book.">
+          Ana is painting comic strips in her storybook. She painted 12 comic strips yesterday and 18 more today.
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin: 20px 0;" exp="Div used to center the comic book painting image.">
+        <img 
+          src="" 
+          alt="Illustration of Ana painting a comic strip with a paintbrush and vibrant colors."
+          style="width: 600px; height: 300px;"
+          exp="Illustration of Ana with a paintbrush, painting colorful comic strips in her storybook."
+        />
+      </div>
+
+      <p style="text-align: center;" exp="Instruction for the student to write their answer.">
+        How many comic strips did Ana paint in total? Write your answer in the box below:
+      </p>
+
+      <div style="display: flex; justify-content: center;" exp="Div used to center the answer box.">
+        <div style="width: 100px; height: 100px; border: 1px solid black;" 
+            exp="Box where the student writes the total number of comic strips. The correct answer is 30.">
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

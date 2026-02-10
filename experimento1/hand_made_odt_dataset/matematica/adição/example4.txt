@@ -1,0 +1,1 @@
+Nessa questão será praticado os principios da adição. Nessa questão ele terá que contar a quantidade maçãs que tem na figura, que são 5, e também de abacaxis, que são 3, e por fim contar a quantidade de frutas, e sendo maçãs e abacaxis frutas a resposta correta é 8.

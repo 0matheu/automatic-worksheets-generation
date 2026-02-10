@@ -1,0 +1,129 @@
+level: 2nd year of fundamental 
+learning goals: addition 
+theme: numbers 
+width-sheet: 800px
+task: observe equations, write answer
+language: en
+
+
+{
+  "task": "To fill in the missing numbers to complete the equations, learning to add single-digit numbers to get a result.",
+  "layout": "The layout is organized in a grid consisting of two rows and five columns. In the top row, the equation 7 + _ = 9 is presented, with the numbers 7, 9, and the plus sign centered in their respective cells. The bottom row contains the equation 6 + _ = 11, with the numbers 6, 11, and the plus sign also centered in their cells. The boxes for students to fill in their answers are positioned in the third column of each row, providing a clear and structured format for responding to the equations",
+  "answer": "To answer correctly, the student needs to fill in the boxes with the correct numbers. For the top row, the student needs to add 2 to 7 to get 9, so the correct answer is 2. For the bottom row, the student needs to add 5 to 6 to get 11, so the correct answer is 5."
+}
+<html>
+  <head></head>
+
+  <style>
+    /* class used to organize the equations in the activity layout */
+    .container {
+      display: grid;
+      grid-template-columns: 160px 160px 160px 160px 160px;
+      grid-template-rows: 150px 150px;
+      grid-template-areas:
+        "nu1 m1 nu2 ig1 r1"
+        "nu3 m2 nu4 ig2 r2";
+      margin: 5px;
+    }
+
+    /* class used to center the numbers in the activity layout  */
+    .center {
+      display: flex;
+      justify-content: center;
+      font-size: 40px;
+    }
+
+    /* class used to center the plus sign in the activity, in the first cell of the second column*/
+    .m1 {
+      grid-area: m1;
+    }
+
+    /* class used to position the plus sign in the activity, in the first cell of the second column */
+    .m2 {
+      grid-area: m2;
+    }
+
+    /* class used to position the equal sign in the activity, in the first cell of the fourth column */
+    .ig1 {
+      grid-area: ig1;
+    }
+
+    /* class used to position the equal sign in the activity, in the second cell of the fourth column */
+    .ig2 {
+      grid-area: ig2;
+    }
+
+    /* class used to position the number 7 in the first cell of the first column */
+    .nu1 {
+      grid-area: nu1;
+    }
+
+    /* class used to position the box that the student will have to fill with 2 to answer, in the first cell of the third column */
+    .nu2 {
+      grid-area: nu2;
+    }
+
+    /* class used to position the box that the student will have to fill with 5 to answer, in the second cell of the first column*/
+    .nu3 { 
+      grid-area: nu3;
+    }
+
+    /* class used to position the number 6 in the second cell of the third column*/
+    .nu4 {
+      grid-area: nu4;
+    }
+
+    /* class used to position the number 9 representing the result of the sum in the first cell of the fifth column*/
+    .r1 {
+      grid-area: r1;
+    }
+
+    /* class used to position the number 11 representing the result of the sum in the second cell of the fifth column*/
+    .r2 {
+      grid-area: r2;
+    }
+
+    /* class used to put a border on the boxes that will represent the students' answers */
+    .box {
+      border: 1px solid;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="activity" style="width: 800px">
+        <p
+          exp="Activity description, containing the explanation of what the student will have to do to answer the activity correctly"
+        >
+          Observe the equations below and fill in the squares with the values that
+          complete them correctly.
+        </p>
+
+        <div class="container">
+          <div class="nu1 center" exp="number that the student will have to add 2 to result in 9"><p>7</p></div>
+
+          <div class="nu4 center" exp="number that the student will have to add 5 to result in 11"><p>6</p></div>
+
+          <div class="m1 center" exp="sign that represents the sum of 7 with 2"><p>+</p></div>
+
+          <div class="m2 center" exp="sign that represents the sum of 5 with 6"><p>+</p></div>
+
+          <div class="ig1 center" exp="sign that represents the equality of 7 + 2 = 9"><p>=</p></div>
+
+          <div class="ig2 center" exp="sign that represents the equality of 5 + 6 = 11"><p>=</p></div>
+
+          <div class="r1 center" exp = "number that represents the sum of 7 + 2"><p>9</p></div>
+
+          <div class="r2 center" exp = "number that represents the sum of 5 + 6"><p>11</p></div>
+
+          <div class="n2 box" exp="box that represents the space for the student to fill in 2, which represents the answer for the sum of 7 + 2 = 9"></div>
+
+          <div class="n3 box" exp="box that represents the space for the student to fill in 5, which represents the answer for the sum of 5 + 6 = 11"></div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+level: 2nd year of fundamental  
+learning_goals: counting, addition  
+theme: Book Club Enrollment  
+width-sheet: 800px  
+task: observe table, write answer  
+language: en
+
+{
+    "task": "To practice counting and addition skills by calculating the total number of members in different book clubs.",
+    "layout": "The activity consists of a description at the top, where the student will read about the number of boys and girls in different book clubs. Below that, there is a table showing the number of boys and girls in each club. The student will then answer questions based on the data, performing addition operations.",
+    "answer": {
+        "A": "To answer correctly, the student needs to add the number of boys and girls in the Fantasy Book Club (8 boys + 7 girls). The correct answer is 15 students in the Fantasy Book Club.",
+        "B": "To answer correctly, the student needs to add the number of boys and girls in the Science Fiction Book Club (6 boys + 9 girls). The correct answer is 15 students in the Science Fiction Book Club.",
+        "C": "To answer correctly, the student needs to add the total number of boys and girls in both clubs (8 + 7 boys + 6 + 9 girls). The correct answer is 30 students in total."
+    }
+}
+
+<html>
+    <head>
+        <style>
+            .container {
+                width: 800px;
+                border: solid 1px;
+                padding: 10px;
+                text-align: center;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: center;
+            }
+            th {
+                background-color: #6aa5db;
+                color: white;
+            }
+            .question-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+            .answer-box {
+                width: 100px;
+                height: 30px;
+                border: 1px solid black;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+      <div class="container">
+        
+        <div class="activity">
+          <p exp="Activity description about the enrollment of boys and girls in two book clubs. The student will answer based on the table below.">
+            In a school, there are two book clubs: Fantasy and Science Fiction. Below is the table showing the number of boys and girls in each club. Answer the questions based on the data.
+          </p>
+        </div>
+
+        <table exp="Table showing the number of boys and girls in each book club.">
+            <tr>
+                <th>Club</th>
+                <th>Boys</th>
+                <th>Girls</th>
+            </tr>
+            <tr>
+                <td>Fantasy Book Club</td>
+                <td>8</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Science Fiction Book Club</td>
+                <td>6</td>
+                <td>9</td>
+            </tr>
+        </table>
+
+        <div class="question-container">
+            <p exp="Question asking for the total number of students in the Fantasy Book Club.">
+                <b>A)</b> How many students are there in the Fantasy Book Club?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the total number of students in the Fantasy Book Club. The correct answer is 15."></div>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for the total number of students in the Science Fiction Book Club.">
+                <b>B)</b> How many students are there in the Science Fiction Book Club?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the total number of students in the Science Fiction Book Club. The correct answer is 15."></div>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for the total number of students in both book clubs.">
+                <b>C)</b> What is the total number of students in both book clubs?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the total number of students in both book clubs. The correct answer is 30."></div>
+        </div>
+        
+      </div>
+    </body>
+</html>

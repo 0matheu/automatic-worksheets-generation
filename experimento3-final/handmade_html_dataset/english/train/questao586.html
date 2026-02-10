@@ -1,0 +1,45 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Pastries in the Pastry Shop
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+  "task": "To practice addition and counting through a real-life scenario where the student helps in a pastry shop by calculating the total number of pastéis being produced.",
+  "layout": "This activity includes a description of the pastry shop producing pastéis, an image of the pastry shop with some pastéis already prepared, and a space for the student to enter the total number of pastéis produced.",
+  "answer": "The student must add the 8 pastéis already made and the 4 new ones that are being prepared. The correct answer is 12 pastéis, and the student should write this number in the answer box."
+}
+
+<html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: solid 1px;" 
+        exp="Main container that sets the consistent layout for the activity, ensuring all components are visually grouped.">
+
+      <p exp="Problem description introducing the task of helping in a pastry shop and counting the pastéis being made.">
+        The pastry shop has already prepared 8 pastéis. They are making 4 more. How many pastéis will there be in total? 
+      </p>
+
+      <div style="display: flex; justify-content: center;" 
+          exp="This div element centers the image horizontally on the page.">
+        <img 
+          src=""
+          alt="Pastry shop with some pastéis on the counter, and more being prepared in the kitchen." 
+          style="width: 600px; height: 400px;" 
+          exp="Image of a pastry shop with a counter displaying the pastéis. There are 8 pastéis visible, and space in the kitchen shows more being made. The student should count them and add the number of new pastéis being prepared." />
+      </div>
+
+      <p exp="Instruction encouraging the student to use the image and count the total number of pastéis, both already prepared and still being made.">
+        Look at the pastéis on the counter and the ones being prepared. How many pastéis are there in total? Write the total amount below.
+      </p>
+
+      <div style="display: flex; justify-content: center;" 
+          exp="Centered box where the student will write their answer. The correct answer is 12 pastéis, which is the result of adding 8 pastéis already made and 4 being prepared.">
+        <div style="width: 100px; height: 100px; border: 1px solid black;" 
+            exp="This box is for the student to write the total number of pastéis produced. The expected answer is 12." />
+      </div>
+    </div>
+  </body>
+</html>

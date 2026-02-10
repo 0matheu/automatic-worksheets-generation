@@ -1,0 +1,50 @@
+level: 2nd year of fundamental
+learning_goals: Counting
+theme: Grocery Store Baskets
+width-sheet: 800px
+task: observe images, write answer
+language: en
+
+
+{
+  "task": "To develop counting skills by observing and comparing the number of grocery baskets in two different sections of a store.",
+  "layout": "Two side-by-side images show baskets in different store sections. Each image is labeled. Below the images, questions A and B ask students to count the baskets in each section and write the number in boxes aligned to the right.",
+  "answer": "The student must count the baskets in each image separately. They write the number of baskets from Section A in the first answer box and from Section B in the second. This activity strengthens visual recognition and comparison of grouped objects."
+}
+
+
+<html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: 1px solid black; padding: 16px;" exp="Main container for layout and alignment.">
+
+      <p exp="Introduces a scenario involving grocery baskets in two different sections of the store.">
+        Look at the grocery store. Count how many baskets are in section A and section B.
+      </p>
+
+      <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 16px;" exp="Displays two images for comparison: section A and section B.">
+        <div>
+          <img src="" alt="Section A of a grocery store with some baskets." style="width: 350px; height: 250px;" exp="Image showing baskets in section A for the student to count.">
+          <p style="text-align: center;" exp="Label for the first image.">Section A</p>
+        </div>
+        <div>
+          <img src="" alt="Section B of a grocery store with more baskets." style="width: 350px; height: 250px;" exp="Image showing baskets in section B for the student to count.">
+          <p style="text-align: center;" exp="Label for the second image.">Section B</p>
+        </div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Asks student to count and write the number of baskets in Section A."><b>A)</b> How many baskets are there in Section A?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Answer box for Section A."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Asks student to count and write the number of baskets in Section B."><b>B)</b> How many baskets are there in Section B?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Answer box for Section B."></div>
+      </div>
+
+    </div>
+  </body>
+</html>
+
+

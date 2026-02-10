@@ -1,0 +1,1 @@
+Nessa questão aluno praticará os princípios da adição. Essa questão consiste de ele considerar dois número que completem a soma de maneira correta, por exemplo: 10 - 2 = 8 seria uma resposta correta para o primeiro exemplo.

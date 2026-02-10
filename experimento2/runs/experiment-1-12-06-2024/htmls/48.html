@@ -1,0 +1,105 @@
+```json
+{
+  "task": "The student will learn to count and add by connecting the image with the correct number of instruments and then calculating the total sum.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph that explains the task, and the bottom section contains a 2x2 grid with three images and one empty cell. The three images are of a music band with 3, 4, and 5 musicians, and an image of a blackboard with an addition operation. The goal is to connect the blackboard image with the image that has the most musicians, and then fill in the correct numbers to complete the addition.",
+  "answer": "To answer this question correctly, the student needs to: 1) identify the image with the most musicians (5), 2) connect it with the blackboard image, 3) write the corresponding numbers on the blackboard (5 + 4), and 4) calculate the sum (9). The correct answer is 9."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three images in a 2-line and 2-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 400px 400px;
+      grid-template-areas:
+        "img1 img2"
+        "empty img3";
+    }
+
+    /* class used to place the first image of the band in the first row and the first column*/
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the second image of the band in the second row and the first column*/
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to place the third image of the band in the second row and the second column*/
+    .img3 {
+      grid-area: img3;
+    }
+
+    /* class used to adjust the size of the images in the activity */
+    img {
+      width: 380px;
+      height: 380px;
+    }
+
+    /* class used to adjust the size of the images in the activity */
+    p {
+      width: 780px;
+    }
+
+    /* class used to centralize the image of the blackboard in the first row and the second column */
+    .empty {
+      margin-top: 50px;
+      margin-left: 230px;
+      grid-area: empty;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the images below. Connect the image with the most musicians to the image of the blackboard, then write the numbers of the image on the blackboard and calculate the sum.
+        </p>
+
+        <div class="container">
+          <div class="line1">
+            <div class="img1">
+              <img
+                alt="image in a coloring book style of a children's painting of a band with 3 musicians"
+                exp="image that the student will have to count how many musicians are present, being 3, and try to connect it with the image of the blackboard"
+              />
+            </div>
+
+            <div class="img2">
+              <img
+                alt="image in a coloring book style of a children's painting of a band with 4 musicians"
+                exp="image that the student will have to count how many musicians are present, being 4, and try to connect it with the image of the blackboard"
+              />
+            </div>
+          </div>
+
+          <div class="img3">
+            <img
+              alt="image in a coloring book style of a children's painting of a band with 5 musicians"
+              exp="image that the student will have to count how many musicians are present, being 5, and try to connect it with the image of the blackboard"
+            />
+          </div>
+
+          <div class="empty">
+            <img
+              src=""
+              alt="empty image in a coloring book style for the student to connect with the image with the most musicians, and then write the numbers of the image on the blackboard and calculate the sum"
+              style="width: 380px; height: 380px"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

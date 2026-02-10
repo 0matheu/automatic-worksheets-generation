@@ -1,0 +1,110 @@
+The html below contains a question for elementary school students. Your task is to extract the following information:
+
+task: the objective of the question, what the student will learn by answering.
+layout: a detailed description of how each html elements are organized in the layout of the question, explain where the elements are placed.
+answer: what the student will have to do to correctly answer that activity, add the answer and all the infos needed to answer the question
+
+return a json with only text relative to the informations
+
+html of the activity:
+
+<html>
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three images in a 2-line and 3-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 300px 300px;
+      grid-template-areas:
+        "img1 img2 img3"
+        "farm farm farm";
+    }
+
+    /* class used to place the first image of the cows in the first row and first column*/
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the second image of the bees in the first row and second column*/
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to place the third image of the chickens in the first row and third column*/
+    .img3 {
+      grid-area: img3;
+    }
+
+    /* class used to place the image of the farm on the second row and in the middle of all columns*/
+    .farm {
+      margin-top: 50px;
+      margin-left: 250px;
+      grid-area: farm;
+    }
+
+    /* class used to adjust the size of the animals images */
+    .animalssize{
+      width: 240px;
+      height: 240px;
+    }
+
+    /* class used to adjust the size of the farm image*/
+    .farmsize {
+      width: 400px;
+      height: 240px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 900px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 900px"
+    >
+      <div class="question" style="width: 900px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+        Look at the images below, connect the two images that contain animals of the same species, and write how many animals are in the sum of the two images.
+        </p>
+
+        <div class="container">
+          <div class="img1" exp="div used to adjust the image of the cows on the first row and the first column">
+            <img
+              class="animalssize"
+              src=""
+              alt="image of 3 cows in a corral, in children's painting style"
+              exp="image that the student will have to identify that there are cows in the image, and connect it with the image of the farm"
+            />
+          </div>
+
+          <div class="img2" exp="div used to adjust the image of the bees on the first row and the second column">
+            <img
+              class="animalssize"
+              src=""
+              alt="Children's painting style image of 4 bees flying over flowers"
+              exp="image that the student will have to identify that they are bees, and not connect it with the image of the corral"
+            />
+          </div>
+
+          <div class="img3" exp="div used to adjust the image of the chickens on the first row and the third column">
+            <img
+              class="animalssize"
+              src=""
+              alt="image on childish a painting style image of 5 chickens in a yard"
+              exp="image that the student will have to identify that they are chickens, and not connect it with the image of the corral"
+            />
+          </div>
+
+          <div class="farm" exp="div used to adjust the image of the farm on the second row and the middle of first, second and third column">
+            <img
+              class="farmsize"
+              src=""
+              alt="image of a corral containing 4 cows in children's drawing style on a farm"
+              exp="image that the student will have to identify that has 4 cows, and connect it with the other image that also has cows"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

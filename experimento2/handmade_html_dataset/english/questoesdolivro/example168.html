@@ -1,0 +1,47 @@
+level: 2nd year fundamental
+learning_goals: counting 
+theme: fruit weights
+sheet_width: 600px
+task: observe image, write answer
+language: en
+
+{
+  "task": "Observe the weight of the three fruits in the image and identify the heaviest one by circling it.",
+  "layout": "The activity is structured with a description at the top explaining the task. Below the description, an image displays three fruits with labeled weights. The student must observe and determine which fruit is the heaviest.",
+  "answer": "To correctly answer this activity, the student should identify and circle the fruit labeled as 12 kilograms, as it is the heaviest."
+}
+
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px; padding: 10px;"
+      exp="This div acts as the main container for the activity. It sets a fixed width of 600px and uses padding for spacing inside the container."
+    >
+      <div class="activity" style="width: 100%;">
+        <p
+          exp="This paragraph provides a clear and concise description of the task. It explains that the student needs to observe the weights of three fruits and identify the heaviest one."
+        >
+          Observe the weight of the three fruits below and circle the heaviest fruit.
+        </p>
+
+        <div
+          style="display: flex; justify-content: center; margin-bottom: 20px;"
+          exp="This div uses flexbox to horizontally center the image of the activity."
+        >
+          <img
+            src=""
+            alt="Illustration of three fruits with different weights labeled. The first fruit weighs 5 kilograms, the second 8 kilograms, and the third 12 kilograms."
+            style="width: 400px; height: auto;"
+            exp="This image displays three fruits, each with a weight label. The first fruit weighs 5 kilograms, the second 8 kilograms, and the third 12 kilograms. The purpose is to prompt students to compare and circle the heaviest fruit."
+          />
+        </div>
+
+        <p exp="instruction text" style="text-align: center;">
+          Compare the weights and circle the heaviest fruit (12 kilograms).
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

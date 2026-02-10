@@ -1,0 +1,58 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Toy Store
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+"task": "Observe the toys and their prices. Answer the questions.",
+  "layout": "The activity presents an image displaying various toys with their respective prices. Students are prompted to calculate the total cost of specific combinations of toys.",
+  "answer": {
+    "A": "Add the price of the toy car ($30) and the doll ($45). The correct answer is $75.",
+    "B": "Add the price of the puzzle ($20) and the board game ($50). The correct answer is $70.",
+    "C": "Add the prices of the toy car ($30), the doll ($45), and the board game ($50). The correct answer is $125."
+  }
+}
+<html>
+<head></head>
+<body>
+  <div style="width: 800px; border: solid 1px black; padding: 10px;" exp="Main container for the Toy Store activity.">
+    <div class="activity">
+      <p exp="Description of the activity involving toys and their prices.">
+        Observe the toys and their prices. Answer the questions below.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin: 20px 0;" exp="Centered image displaying toys with prices.">
+      <img 
+        src="" 
+        alt="Illustration of a toy store display featuring a red toy car priced at $30, a blonde-haired doll in a pink dress priced at $45, a colorful puzzle box priced at $20, and a board game box with dice and tokens priced at $50. Each toy has a visible price tag."
+        style="width: 600px; height: 300px;"
+        exp="Detailed illustration showing a red toy car with a $30 price tag, a blonde-haired doll in a pink dress with a $45 price tag, a colorful puzzle box labeled $20, and a board game box featuring dice and tokens labeled $50. All toys are neatly arranged on shelves with clearly visible price tags."
+      />
+    </div>
+
+    <p style="text-align: center;" exp="Instruction for the student to answer the questions.">
+      Answer the following questions:
+    </p>
+
+    <div style="padding: 10px 30px;">
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question A asking for the total cost of the toy car and the doll."><b>A)</b> What is the total cost of the toy car and the doll?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Answer box for question A. Correct answer: $75."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question B asking for the total cost of the puzzle and the board game."><b>B)</b> What is the total cost of the puzzle and the board game?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Answer box for question B. Correct answer: $70."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question C asking for the total cost of the toy car, the doll, and the board game."><b>C)</b> What is the total cost of the toy car, the doll, and the board game?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Answer box for question C. Correct answer: $125."></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

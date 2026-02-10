@@ -1,0 +1,64 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition, comparison
+theme: Zoo
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+    "task": "To practice counting, addition, and comparison skills by analyzing the number of visitors in the zoo and answering questions about the most attended area and the total number of visitors.",
+    "layout": "The activity consists of a description of the scenario at the top, providing the necessary context. Below the description, a centered image illustrates different areas of the zoo and their number of visitors. The student will answer questions based on the image, with answer boxes positioned close to each question.",
+    "answer": {
+      "A": "The student needs to observe the number of visitors and select the one with the most. Correct answer: 'Elephant Enclosure: 300 visitors'.",
+      "B": "Sum of all visitors: 300 + 210 + 160 = 670."
+    }
+  }
+
+<html>
+<head>
+  <style>
+    .question-container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      margin-bottom: 5px;
+    }
+    .answer-box {
+      width: 60px;
+      height: 30px;
+      border: 1px solid black;
+      text-align: center;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div style="width: 800px; border: solid 1px; padding: 10px;" exp="Main container for the activity">
+
+    <div class="activity">
+      <p exp="Activity description explaining what the student must do">
+        Caio and their classmates visited the zoo. Observe the number of visitors in each area and answer the questions below.
+      </p>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image in the activity">
+      <img src=""
+           alt="Illustration of the zoo showing an Elephant Enclosure (300 visitors), a Monkey Habitat (210 visitors), a Reptile House (160 visitors)."
+           style="width: 600px; height: 300px"
+           exp="Image showing the different attractions in the zoo with the number of visitors to each area." />
+    </div>
+
+    <div class="question-container">
+      <p exp="Question asking which area had the most visitors"><b>A)</b> Which of these had the most visitors?</p>
+      <div class="answer-box" exp="Box where the student writes the most visited area. The correct answer is 'Elephant Enclosure: 300 visitors'."></div>
+    </div>
+
+    <div class="question-container">
+      <p exp="Question asking for the total number of visitors"><b>B)</b> What is the total number of visitors in all three areas?</p>
+      <div class="answer-box" exp="Box where the student writes the total number of visitors. The correct answer is 670."></div>
+    </div>
+
+  </div>
+</body>
+</html>

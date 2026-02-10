@@ -1,0 +1,47 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Easter Egg Production in Confectionery
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+    "task": "To practice addition and counting through a real-life scenario where the student helps a chocolatier by calculating the total number of Easter eggs produced.",
+    "layout": "The activity includes a description of the chocolatier making Easter eggs, an image of the workshop with some Easter eggs already finished, and a space for the student to write the total number of Easter eggs produced.",
+    "answer": "The student needs to add the 6 Easter eggs already completed and the 4 new eggs that are in the process of being made. The correct answer is 10 Easter eggs, and the student should write this number in the answer box."
+  }
+
+  <html>
+<head></head>
+<body>
+  <div style="width: 800px; border: solid 1px;" 
+       exp="Main container to ensure the correct layout, keeping all elements well-aligned and consistent.">
+
+    <p exp="Problem description introducing the task of helping a chocolatier by counting the total Easter eggs being made.">
+      The chocolatier has already finished making 6 Easter eggs, and she is currently making 4 more. 
+      How many Easter eggs will there be in total?
+    </p>
+
+    <div style="display: flex; justify-content: center;" 
+         exp="This div centers the image to help the student focus on the visual representation of the problem.">
+      <img 
+        src=""
+        alt="A chocolatier's workshop with Easter eggs on the table and more being made in the background."
+        style="width: 600px; height: 400px;" 
+        exp="Image of a chocolatier's workshop with some finished Easter eggs on the counter. The student needs to add the 4 eggs being made to the 6 that are already completed." />
+    </div>
+
+    <p exp="This paragraph encourages the student to look at the image and perform the addition, using the number of finished and in-progress eggs.">
+      Look at the Easter eggs already completed on the counter, and count the ones still being made in the background. 
+      Add them together to find the total number of Easter eggs. Write the total number in the space provided.
+    </p>
+
+    <div style="display: flex; justify-content: center;" 
+         exp="Centered box for the student to enter their answer. The correct total is 10 Easter eggs, which is the sum of 6 eggs already finished and 4 eggs being made.">
+      <div style="width: 100px; height: 100px; border: 1px solid black;" 
+           exp="Answer box where the student will write the total number of Easter eggs produced. The expected answer is 10." />
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+level: 2nd year of fundamental
+learning_goals: addition, counting
+theme: toy cars
+width-sheet: 600px
+task: observe images, link items, write answer
+language: en
+
+
+
+{
+    "task": "The objective of this activity is for the student to observe the given images and connect those that represent the number of toy cars Joaquim initially had and received. Then, they must count and write the total number of toy cars in the provided answer box. This exercise helps students practice identification, counting, and basic addition skills.",
+    "layout": "The activity is structured with a two-row layout. The first row contains three images: Joaquim’s initial toy cars, the toy cars he received, and a distractor image. The second row features a final image representing the total toy cars Joaquim has. The student must connect matching toy car images and count their total.",
+    "answer": "To correctly answer this activity, the student needs to: 1) Identify the correct images representing Joaquim’s toy cars before and after receiving more, 2) Connect those images with the final image representing the total toy cars, 3) Count the total number of toy cars (5 + 4 = 9), and 4) Write the final count in the answer box."
+  }
+  
+<html>
+  <head>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 200px 200px;
+        grid-template-areas:
+          "img1 img2 img3"
+          "result result result";
+      }
+
+      .img1 { grid-area: img1; }
+      .img2 { grid-area: img2; }
+      .img3 { grid-area: img3; }
+      .result { grid-area: result; margin-top: 20px; text-align: center; }
+      .img-size { width: 180px; height: 180px; }
+      .answer-box { width: 100px; height: 50px; border: 1px solid black; text-align: center; margin: 20px auto; }
+    </style>
+  </head>
+  <body>
+    <div style="width: 600px; border: solid 1px; padding: 10px; text-align: left;">
+      <div class="activity">
+        <p>Look at the images below, connect the two images that show Joaquim’s toy cars before and after receiving more, and write the total number in the box below.</p>
+
+        <div class="container">
+          <div class="img1">
+            <img class="img-size" src="" alt="Image of 5 toy cars Joaquim initially had" />
+          </div>
+          <div class="img2">
+            <img class="img-size" src="" alt="Image of 4 toy cars Joaquim received" />
+          </div>
+          <div class="img3">
+            <img class="img-size" src="" alt="Image of a different type of toy" />
+          </div>
+          <div class="result">
+            <img class="img-size" src="" alt="Image of the total 9 toy cars Joaquim has now" />
+          </div>
+        </div>
+        
+        <p
+        exp="description of where the student will write the answer"
+        style="text-align: center; margin-top: 20px;"
+      >
+      Write the total number of toy cars Joaquim has now in the box below
+      </p>
+      <div style="display: flex; justify-content: center;" exp="div used to center the answer box">
+        <div
+          style="width: 100px; height: 100px; border: 1px solid black;"
+          exp="box used by the student to write the answer, in that case 7"
+        ></div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
+  

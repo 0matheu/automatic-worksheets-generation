@@ -1,0 +1,95 @@
+nivel: 2º ano fundamental
+assunto: adição, contagem
+tematica: frutas
+largura-folha: 850px
+layout: duas imagens, linhas e colunas
+
+
+Essa questão pratica os conceitos de contagem e adição.
+A questão consiste de duas imagens, uma contendo um cacho de bananas 
+contendo 6 bananas e outra contendo 4 maçãs, o dever do aluno e efetuar
+a soma da quantidade de bananas com maçãs, sendo 6 + 4 = 10.
+
+<html>
+  <head></head>
+
+  <style>
+    /* classe que será utilizada para organizar o layout da atividade, ela consiste de umas imagens, um sinal de mais, um sinal de igual e um espaço para o resultado*/
+    .container {
+      display: grid;
+      grid-template-columns: 150px 150px 150px 150px 150px;
+      grid-template-rows: 150px;
+      grid-template-areas:
+        "img1 mais img2 igual result"
+    }
+
+    /* classe que será utilizada para  posicionar a imagem 1 na primeira celula da primeira coluna */
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* classe que será utilizada para posicionar a imagem 2 na primeira celula da terceira coluna */
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* classe que será utilizada para posicionar o sinal de igual na primeira celula da quarta coluna */
+    .igual {
+      grid-area: igual;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* classe que será utilizada para posicionar o sinal de mais na primeira celula da segunda coluna */
+    .mais {
+      grid-area: mais;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* classe que será utilizada para posicionar e desenhar uma caixa para o aluno escrever a resposta */
+    .result {
+      grid-area: result;
+      border: solid 1px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 850px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Conte a quantidade de bananas, e também a quantidade de maçãs na imagem abaixo, efetue a soma e escreva o resultado.
+        </p>
+
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="imagem no estilo de desenho de pintar em infantil com um cacho de bananas contendo 6 bananas."
+              exp="imagem que o aluno terá que observar e contar quantas bananas estão presentes"
+            />
+          </div>
+
+          <div class="mais" exp="sinal de mais que representa a soma da quantidades"><p>+</p></div>
+
+          <div class="img2">
+            <img 
+              alt="imagem no estilo de desenho de pintar intanfil contendo 4 maçãs em uma cesta"
+              exp="imagem que oaluno terá que observar e contar quantas maçãs estão presentes no cesto."
+            />
+          </div>
+
+          <div class="igual" exp="sinal de igual que representa o resultado da soma"><p>=</p></div>
+
+          <div class="result" exp="caixa que servirá para o aluno escrever o resultado da soma"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

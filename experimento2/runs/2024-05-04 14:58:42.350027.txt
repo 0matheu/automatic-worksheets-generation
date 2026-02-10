@@ -1,0 +1,472 @@
+
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2 ano fundamental
+assunto: adição
+tematica: lanches
+largura-folha: 700px
+layout: única imagem<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Essa questão consiste de uma única imagem, que representa um exemplo de
+adição de dois números, sendo 3 + 2 = 5, em forma de números escritos em
+sinos, sendo 3 em pares de palitos, e 2 em pares de lanches. O aluno terá que
+encontrar a soma dos dois números, sendo 3 + 2 = 5.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 700px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 700px"
+    >
+      <div class="questao" style="width: 700px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe a imagem abaixo e escreva a soma de 3 + 2.
+        </p>
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <img
+            src=""
+            alt="Imagem no estilo de desenho de pintar de 2 pares de lanches, e 3 pares de palitos"
+            style="width: 500px; height: 300px"
+            exp="Imagem que o aluno terá que observar e identificar a quantidade de pares de lanches e de palitos, sendo 2 + 3 = 5"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2 ano fundamental
+assunto: adição
+tematica: lanches
+largura-folha: 700px
+layout: duas imagens, linhas e colunas<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão será trabalhado o principio da adição.
+A questão consiste de duas imagens, uma contendo 3 lanches e outra
+contendo 5 balas. O aluno terá que ligar a imagem do sinal de verão
+com a do balaio, e também ligar a imagem do sinal de inverno
+com a do lanche, sendo o objetivo efetuar a soma de 3 com 5, que é 8.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 700px; border: solid 1px"
+      exp="div contendo a largura da página, que nesse caso é 700px"
+    >
+      <div class="questao" style="width: 700px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe as imagens abaixo e efetue as somas:
+        </p>
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem no resultado"
+        >
+          <img
+            class="img1"
+            src=""
+            alt="imagem no estilo de desenho de pintar de 3 lanches"
+            exp="imagem que o aluno terá que contar quantos lanches estão presentes, sendo 3"
+          />
+        </div>
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem no resultado"
+        >
+          <img
+            class="img2"
+            src=""
+            alt="imagem no estilo de desenho de pintar de 5 balas"
+            exp="imagem que o aluno terá que contar quantas balas estão presentes, sendo 5"
+          />
+        </div>
+
+        <p
+          exp="questão que explica para o aluno que imagem deve ser ligada com a imagem do sinal de verão, e também qual imagem deve ser ligada com a imagem do sinal de inverno"
+        >
+          a) Observe a imagem do sinal de verão e conte quantas lanches estão presentes. Em seguida efetue a soma de 3 com 5, e escreva qual a soma resultante. Ligue a imagem do sinal de verão com a imagem do balaio e também ligue a imagem do sinal de inverno com a imagem dos lanches.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: carrinhos
+largura-folha: 600px
+layout: única imagem<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Essa questão pratica o conceito de adição e contagem.
+A questão consiste de uma imagem de uma carrinha, cheia de
+bolinhas, e de um carrinhista tentando carregar a carrinha.
+E também de uma tabela, contendo os valores:
+A: 6 bolinhas
+B: 9 bolinhas
+C: 5 bolinhas
+D: 4 bolinhas
+
+O objetivo da questão é que o aluno pratique a soma de 6 + 9 = 15, sendo
+que ele terá que contar a quantidade de bolinhas na imagem, 
+e escrever o resultado na caixa que ele está, sendo que na caixa
+A estariam presentes 6 bolinhas, e na caixa B, 9 bolinhas, sendo que
+ele teria que somar a quantidade de bolinhas, e escrever o resultado
+na caixa D, que teria 4 + 5 = 9 bolinhas.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 600px"
+    >
+      <div class="questao">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe a imagem de um carrinhista tentando carregar uma
+          carrinha, e conte quantas bolinhas estão presentes nas caixas A, B e
+          C. Depois some as bolinhas presentes nas caixas D.
+        </p>
+      </div>
+
+      <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+        <img
+          src=""
+          alt="Imagem em estilo de desenho de colorir de uma carrinha, com bolinhas dentro, sendo que a caixa A tem 6 bolinhas, a caixa B tem 9 bolinhas e a caixa C tem 5 bolinhas"
+          style="width: 400px; height: 200px"
+          exp="Imagem que o aluno terá que observar e contar as bolinhas de cada caixa"
+        />
+      </div>
+
+      <div class="resposta">
+        <p>A: 6 bolinhas</p>
+        <p>B: 9 bolinhas</p>
+        <p>C: 5 bolinhas</p>
+        <p>D: 4 + 5 = 9 bolinhas</p>
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: carrinhos
+largura-folha: 600px
+layout: três imagens<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Essa questão consiste de três imagens, sendo elas:
+imagem 1: uma carrinha de brinquedo com espaço para colocar um carrinho;
+imagem 2: uma imagem de um carrinho de brinquedo, parecendo mais pesado que a imagem 1;
+imagem 3: a soma de 2 + 3 = 5, escrita em números, mas com a imagem sendo que está sendo devorada por uma aranha.
+
+A tarefa do aluno é:
+A primeira imagem é uma carrinha, o que representa? E também a segunda imagem, qual é o seu significado? 
+As imagens devem ser organizadas para que o aluno devore o carrinho, sendo devorado pela aranha, qual a explicação para isso?
+
+Espera-se que o aluno demonstre a comprenção dos conceitos de adição e também da prática de devorar um carrinho, sendo este o carrinho mais pesado, e também que o carrinha original seja a mais leve.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a largura da página, que nesse caso é 600px"
+    >
+      <div class="questao">
+        <p>
+          <span
+            exp="span que representa o número de questões, e também a largura da faixa dos espaços das imagens, que nesse caso é 400px"
+          >
+          1. A primeira imagem representa o que?
+        </span>
+        </p>
+
+        <p>
+          <span
+            exp="span que representa o número de questões, e também a largura da faixa das imagens, que nesse caso é 400px"
+          >
+          2. A segunda imagem representa o que?
+        </span>
+        </p>
+
+        <p>
+          <span
+            exp="span que representa o número de questões, e também a largura da faixa das imagens, que nesse caso é 400px"
+          >
+          3. A imagem em que o aluno deve devorar o carrinho, qual a explicação para isso?
+        </span>
+        </p>
+      </div>
+
+      <div exp="div que contenha as imagens do aluno">
+        <img
+          class="img"
+          alt="Imagem do carrinho, com espaço para o aluno colocar outro carrinho, e também uma imagem de carrinho, parecendo mais pesado que a primeira imagem do carrinho"
+          exp="imagem do carrinho, com espaço para o aluno colocar outro carrinho, e também uma imagem de carrinho, parecendo mais pesado que a primeira imagem do carrinho"
+        />
+        <img
+          class="img"
+          alt="Imagem na qual está sendo devorada pela aranha a imagem do carrinha mais leve"
+          exp="imagem na qual está sendo devorada pela aranha a imagem do carrinha mais leve"
+        />
+        <img
+          class="img"
+          alt="Imagem na qual o aluno deve devorar o carrinho mais pesado, e também a imagem do carrinho mais leve"
+          exp="imagem na qual o aluno deve devorar o carrinho mais pesado"
+        />
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: fundo do mar
+largura-folha: 600px
+layout: única imagem<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Essa questão consiste de uma atividade pratica, onde o aluno terá que
+identificar qual a soma certa de dois números, sendo 5 + 6 = 11, e
+efetuar uma adição, sendo 5 + 6 = 11, a resposta será uma imagem
+de uma flor de 11 pétalos, sendo 5 + 6 = 11, e também será uma questão
+em estilo de imagem, onde o aluno deverá identificar qual a flor com mais
+pétalos, sendo 5, e tem a aparência de um caracol, e a segunda flor tem
+a aparência de uma flor de 6 pétalos, sendo 6, e o aluno deverá identificar
+qual a soma de 5 e 6, sendo 11, e efetuar a adição, sendo 5 + 6 = 11.
+A resposta será uma imagem de uma flor de 11 pétalos.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe as imagens abaixo e responda as questões:
+        </p>
+
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <img
+            src=""
+            alt="imagem do caracol e da flor de 6 pétalos"
+            style="width: 400px; height: 200px"
+            exp="imagem que o aluno terá que identificar qual tem mais pétalos, sendo 6"
+          />
+          <img
+            src=""
+            alt="imagem da flor de 5 pétalos"
+            style="width: 400px; height: 200px"
+            exp="imagem que o aluno terá que identificar qual tem menos pétalos, sendo 5"
+          />
+        </div>
+
+      <p exp="questão que o aluno terá que responder, sendo qual a flor tem mais pétalos">A qual das flores representa a soma de 5 + 6?</p>
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: fundo do mar
+largura-folha: 600px
+layout: três imagens<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Essa questão consiste de três imagens, sendo elas:
+imagem 1: uma vasilha contendo 5 pedras e uma criança
+imagem 2: uma vasilha contendo 8 conchas e uma criança
+imagem 3: uma vasilha contendo 3 moedas e uma criança
+
+O objetivo da questão é que o aluno pratique a adição, sendo que:
+a) a primeira imagem contém 5 pedras, e o aluno terá que acrescentar 8 conchas, resultando em 5 + 8 = 13, e em seguida deverá desenhar 13 moedas.
+b) a segunda imagem contém 8 conchas, e o aluno terá que remover 5 pedras, resultando em 8 - 5 = 3, e em seguida deverá desenhar 3 moedas.
+c) a terceira imagem contém 3 moedas, e o aluno terá que acrescentar 5 pedras e 8 conchas, resultando em 3 + 5 = 8, e em seguida deverá desenhar 8 conchas.
+
+O objetivo da questão é que o aluno pratique a adição, sendo que ele terá que:
+resolver a soma de pedras e conchas, e desenhar a quantidade resultante de moedas.
+Essa questão é dividida em 3 partes, sendo elas:
+A) Soma de 5 pedras com 8 conchas, resultando em 5 + 8 = 13.
+B) Soma de 8 conchas com 5 pedras, resultando em 8 - 5 = 3.
+C) Soma de 3 moedas com 5 pedras e 8 conchas, resultando em 3 + 5 = 8.
+
+O aluno terá que resolver as somas e desenhar a quantidade resultante de moedas. Essa questão é
+dividida em 3 partes, sendo elas: a imagem 1, contendo 5 pedras e uma criança, a imagem 2
+contendo 8 conchas e uma criança, e a imagem 3 contendo 3 moedas e uma criança. O
+aluno terá que:
+1. Acarcar 5 pedras com 8 conchas, resultando em 13 moedas e desenhá-las.
+2. Remover 5 pedras com 8 conchas, resultando em 3 moedas e desenhá-las.
+3. Acarcar 5 pedras com 8 conchas, resultando em 3 moedas, e desenhá-las. Essa questão
+busca desenvolver as habilidades de contagem e adição do aluno. Ele terá que
+resolver a soma de pedras e conchas, e desenhar a quantidade resultante de
+moedas. A questão consiste de imagens, sendo elas:
+A) imagem 1, contendo 5 pedras e uma criança. Essa imagem representa 5
+pedras, e o aluno terá que acrescentar 8 conchas com essas pedras, resultando
+em 5 + 8 = 13 moedas, e desenhá-las.
+B) imagem 2, contendo 8 conchas e uma criança. Essa imagem representa 8
+conchas, e o aluno terá que remover 5 pedras com essas conchas, resultando
+em 8 - 5 = 3 moedas, e desenhá-las.
+C) imagem 3, contendo 3 moedas e uma criança. Essa imagem representa 3 moedas, e o aluno terá que desenhá-las. Essa imagem representa 3 moedas.
+
+A) A imagem 1, contendo 5 pedras e uma criança. Essa imagem representa 5 pedras, e o aluno terá que acarca. Essa imagem representa 5 pedras, e o aluno terá que soma de 5 pedras, e desenhada. Essa imagem representa 5 pedrinho, e desenhada, contendo a imagem 2, que a segunda imagem 2 contendo 8 conchas, e desenhada, contendo a imagem representa 3 moedaladas, contadora
+A) imagem representa 3 moed no aluno ter a imagem representa 3 moedas</nivel da imagem representa a representa a imagem representa o aluno ter boa fic mais 
+A) 
+nivel mais
+Gn várias, pedor temor tems seguint no aluno ter váldida que representa a imagem representa após atual diretas sendo uma ativada inicial
+   largada que representa também também são 
+nivel também atual são tenta 
+nivel também é também utilizadas também utilizadas largadas são internacional das mais largadas n 
+nivel de mais largadas são largadas largadas também está boa em lignagem em vá mais larg internacional utilizadas em vá mais larg não utilizado em vá mais 
+nivel mais também com papel utiliz geral também largada também em vá também inicial vá mais largere vá também largere vá mais fic mais também vá n mais que utiliz em também vá em também em fundido também que utiliz mais também são largere também largere são que utiliz mais fic mais também fic efere vá mais também expiral são largere dentro também em fic larg foss
+ fic utilizeração utiliz mais fic também em fic mais vá mais
+cinal também em fere em mais larg em que que fic mais f que em que mais f em larg é mais em vá mais também f vá mais largada que mais também c larg mais também pare c vá largere ir largere vá em vá mais que mais fic mais 
+s
+larg que vá que são também que que mais também fic fic tem em que 
+nivel também são também vá mais também em 
+nivel com também que mais tem vá mais também f ter também que também em vá mais também mais que mais que mais também vá que também em mais também em em f em também também em também fic n também mais também em também também em
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: subtração
+tematica: fogos de artifício
+largura-folha: 800px
+layout: única imagem<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Essa questão consiste de uma imagem de um foguinho de artifício
+contendo 50 bolas e sendo pego, e ao lado tem uma criança
+fazendo uma equação de subtração de 20 + 10 = 30, e está
+sendo pego, e está saindo. A tarefa do aluno é explicar por
+qual razão está sendo pego, e está saindo.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div contendo a largura da página, que nesse caso é 800px"
+    >
+      <div class="questao" style="width: 800px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe a imagem e responda as questões:
+        </p>
+
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <img
+            src=""
+            alt="imagem de um foguinho de artifício, contendo 50 bolas, e ao lado tem uma criança fazendo uma equação de subtração de 20 + 10 = 30, e está sendo pego, e está saindo"
+            style="width: 600px; height: 400px"
+            exp="imagem que o aluno terá que observar e responder as questões"
+          />
+        </div>
+
+
+        <p exp="questão que pede para o aluno descrier qual a razão pela criança está sendo pega, e está saindo da imagem do foguinho de artifício">a) Qual razão está sendo pega e está saindo da imagem do foguinho de artifício?</p>
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: subtração
+tematica: fogos de artifício
+largura-folha: 800px
+layout: três imagens<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Essa questão pratica os principios da subtração, sendo
+a primeira imagem a soma de 5 + 7 = 12, sendo o resultado da
+segunda imagem, sendo 10 - 8 = 2, sendo o resultado da terceira
+imagem, e por fim o aluno terá que efetuar a subtração de 12 - 2 = 10.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div contendo a largura da página, que nesse caso é 800px"
+    >
+      <div class="questao" style="width: 800px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe as imagens abaixo e responda as questões:
+        </p>
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem no resultado"
+        >
+          <img
+            src=""
+            alt="imagem no estilo de desenho de pintar de um foguete em lançamento"
+            style="width: 500px; height: 300px"
+            exp="imagem que o aluno terá que contar quantos pares de números estão presentes, sendo 5 + 7 = 12, e também 10 - 8 = 2, e ao final terá que efetuar a subtração de 12 - 2 = 10"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

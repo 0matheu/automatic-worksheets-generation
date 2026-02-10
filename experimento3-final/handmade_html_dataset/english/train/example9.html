@@ -1,0 +1,172 @@
+level: 2nd year fundamental 
+learning goals: addition, counting
+theme: animals 
+width-sheet: 800px 
+task: observe images, write answers
+language: en
+
+{
+  "task": "The student will learn to count, perform basic addition, and understand the concept of equality by identifying the number of lions and zebras in the images and calculating the total sum.",
+  "layout": "the activity is organized with a description at the top that establishes the context for the task. Below this description, there is a grid layout consisting of two rows and five columns. In the first row, an image of a lion is positioned next to an empty space, followed by an image of a zebra and two additional empty spaces. This arrangement allows students to visually identify the animals while leaving space for interaction. The second row includes designated boxes for counting the lions and zebras, accompanied by a plus sign and an equal sign, leading to a box for the total sum.",
+  "answer": "To correctly answer this activity, the student will have to: 1) count the number of lions in the image (4), 2) count the number of zebras in the image (3), 3) add the two numbers together to find the total sum (4 + 3 = 7), and 4) write the correct answers in the corresponding boxes. The correct answers are: box1 = 4, box2 = 3, and box3 = 7."
+}
+
+<html>
+  <head></head>
+  <style>
+    /* container for organizing the lion and zebra images in the activity layout, being two rows and five columns */
+    .container {
+      display: grid;
+      grid-template-columns: 100px 100px 100px 100px;
+      grid-template-rows: 100px 100px;
+      grid-template-areas:
+        "lions empty1 zebras empty2 empty3"
+        "box1 plus box2 equal box3";
+    }
+
+    /* class that will be used to position the lion image in the first cell of the first column */
+    .lions {
+      grid-area: lions;
+      width: 100px;
+      height: 100px;
+    }
+
+    /* class that will be used to position the zebra image in the first cell of the third column */
+    .zebras {
+      grid-area: zebras;
+      width: 100px;
+      height: 100px;
+    }
+
+    /* class that will be used to adjust the size of the zebra and lion images */
+    .animals {
+      width: 100px;
+      height: 100px;
+    }
+
+    /* class that will be used to draw boxes that the students will have to fill in to answer the activities */
+    .box {
+      width: 90px;
+      height: 90px;
+      border: 1px solid;
+      margin: 10px;
+    }
+
+    /* class that will be used to position the boxes that the students will fill in, in the second cell of the first column */
+    .box1 {
+      grid-area: box1;
+    }
+
+    /* class that will be used to position the boxes that the students will fill in, in the second cell of the third column */
+    .box2 {
+      grid-area: box2;
+    }
+
+    /* class that will be used to position the boxes that the students will fill in, in the second cell of the fifth column */
+    .box3 {
+      grid-area: box3;
+    }
+
+    /* class that will be used to position the image of a plus sign in the second cell of the third column */
+    .plus {
+      grid-area: plus;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* class that will be used to size and center the plus sign image */
+    .plus img {
+      margin-top: 10px;
+      width: 50px;
+      height: 50px;
+    }
+
+    /* class that will be used to size and center the plus sign image */
+    img {
+      margin-left: 10px;
+    }
+
+    /* class that will be used to position the image of an equal sign in the second cell of the fourth column */
+    .equal {
+      margin-left: 10px;
+      grid-area: equal;
+    }
+
+    /* class that will be used to size and center the equal sign image */
+    .equal img {
+      margin-top: 10px;
+      width: 50px;
+      height: 50px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the page width, which in this case is 800px"
+    >
+      <div class="activity" style="width: 800px">
+        <p
+          exp="Activity description, containing the explanation of what the student will have to do to answer the activity correctly"
+        >
+          Observe the images, count the quantity of lions and zebras and write in
+          the boxes below. Then add the quantity of both and write in the third box.
+        </p>
+
+        <div class="container">
+          <div class="lions">
+            <img
+              class="animals"
+              id = "img_lions"
+              src=""
+              alt="image in a coloring book style of 4 lions in a savannah scenario"
+              exp="image in which the student will have to count the quantity of lions"
+            />
+          </div>
+
+          <div class="zebras">
+            <img
+              class="animals"
+              src=""
+              id = "img_zebras"
+              alt="image in a coloring book style of 3 zebras in a savannah scenario"
+              exp="image in which the student will have to count the quantity of zebras"
+            />
+          </div>
+
+          <div
+            class="box box1"
+            exp="empty box in which the student will have to write the quantity of lions represented in the image with id img_lions"
+          ></div>
+
+          <div class="plus">
+            <img
+              src=""
+              alt="image of a plus sign"
+              exp="image that will signal a sum"
+            />
+          </div>
+
+          <div
+            class="box box2"
+            exp="empty box in which the student will have to write the quantity of zebras represented in the image with id img_zebras"
+          ></div>
+
+          <div class="equal">
+            <img
+              src=""
+              alt="image of an equal sign"
+              exp="image that will signal the equality of the sum"
+            />
+          </div>
+
+          <div
+            class="box box3"
+            exp="empty box in which the student will have to write the result of the sum of the quantity of lions and zebras"
+          ></div>
+        </div>
+
+        
+      </div>
+    </div>
+  </body>
+</html>

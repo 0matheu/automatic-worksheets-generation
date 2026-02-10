@@ -1,0 +1,105 @@
+level: 2nd year of fundamental  
+learning_goals: counting, addition  
+theme: Music Class Enrollment  
+width-sheet: 800px  
+task: observe table, write answer  
+language: en
+
+{
+    "task": "To practice counting and addition skills by calculating the total number of students in the music class.",
+    "layout": "The activity consists of a description at the top, where the student will read about the number of boys and girls enrolled in the music class. Below that, there is a table showing the number of boys and girls in each class. The student will then answer questions based on the data, performing addition operations.",
+    "answer": {
+        "A": "To answer correctly, the student needs to add the number of boys and girls in the classical music class (12 boys + 9 girls). The correct answer is 21 students in classical music class.",
+        "B": "To answer correctly, the student needs to add the number of boys and girls in the rock music class (8 boys + 12 girls). The correct answer is 20 students in the rock music class.",
+        "C": "To answer correctly, the student needs to add the total number of students in both classes (12 + 9 boys + 8 + 12 girls). The correct answer is 41 students in total."
+    }
+}
+
+<html>
+    <head>
+        <style>
+            .container {
+                width: 800px;
+                border: solid 1px;
+                padding: 10px;
+                text-align: center;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: center;
+            }
+            th {
+                background-color: #6aa5db;
+                color: white;
+            }
+            .question-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+            .answer-box {
+                width: 100px;
+                height: 30px;
+                border: 1px solid black;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+      <div class="container">
+        
+        <div class="activity">
+          <p exp="Activity description about the enrollment of boys and girls in two music classes. The student will answer based on the table below.">
+            In a school, there are two music classes: Classical and Rock. Below is the table showing the number of boys and girls in each class. Answer the questions based on the data.
+          </p>
+        </div>
+
+        <table exp="Table showing the number of boys and girls in each music class.">
+            <tr>
+                <th>Class</th>
+                <th>Boys</th>
+                <th>Girls</th>
+            </tr>
+            <tr>
+                <td>Classical Music</td>
+                <td>12</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>Rock Music</td>
+                <td>8</td>
+                <td>12</td>
+            </tr>
+        </table>
+
+        <div class="question-container">
+            <p exp="Question asking for the total number of students in the Classical Music class.">
+                <b>A)</b> How many students are there in the Classical Music class?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the total number of students in the Classical Music class. The correct answer is 21."></div>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for the total number of students in the Rock Music class.">
+                <b>B)</b> How many students are there in the Rock Music class?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the total number of students in the Rock Music class. The correct answer is 20."></div>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for the total number of students in both music classes.">
+                <b>C)</b> What is the total number of students in both music classes?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the total number of students in both music classes. The correct answer is 41."></div>
+        </div>
+        
+      </div>
+    </body>
+</html>

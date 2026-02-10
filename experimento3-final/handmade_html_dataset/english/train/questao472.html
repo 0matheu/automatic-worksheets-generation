@@ -1,0 +1,82 @@
+level: 2nd year of fundamental
+learning_goals: counting, comparison
+theme: Ice Cream
+width-sheet: 800px
+task: observe table, write answer
+language: en
+
+{
+    "task": "To practice counting and comparison skills by analyzing the number of votes for different ice cream and answering questions.",
+    "layout": "The activity consists of a description at the top, where the student will read the table with votes for ice cream, and then answer related questions.",
+    "answer": {
+        "A": "The correct answer is 'Vanilla, Chocolate, Strawberry, Mint'.",
+        "B": "The correct answer is 16 votes.",
+        "C": "The correct answer is 14 votes.",
+        "D": "The correct answer is 50 votes."
+    }
+}
+
+
+<html>
+<head>
+    <style>
+        .container {
+          width: 800px;
+          border: solid 1px;
+          padding: 10px;
+          text-align: center;
+        }
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-bottom: 20px;
+        }
+        th, td {
+          border: 1px solid black;
+          padding: 8px;
+          text-align: center;
+        }
+        th {
+          background-color: #6aa5db;
+          color: white;
+        }
+        .question-container {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 10px;
+        }
+        .answer-box {
+          width: 100px;
+          height: 30px;
+          border: 1px solid black;
+          text-align: center;
+        }
+      </style>
+</head>
+<body>
+  <div class="container" exp="Main container for the activity">
+    <div class="activity" exp="Container with the activity description and instructions.">
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the illustration image for the activity.">
+        <img src="" alt="Illustration of ice cream voting" exp="Image showing different ice cream flavors for voting." style="width: 300px; height: 150px;" />
+      </div>
+      <p exp="Activity description explaining the voting scenario for ice cream.">
+        Favorite Ice Cream Flavors. The votes were recorded as follows:
+      </p>
+    </div>
+
+    <table exp="Table displaying the votes.">
+      <tr><th exp="Column header for item name.">Item</th><th exp="Column header for number of votes.">Votes</th></tr>
+      <tr><td exp="Table cell with content.">Vanilla</td><td exp="Table cell with content.">13</td></tr>
+      <tr><td exp="Table cell with content.">Chocolate</td><td exp="Table cell with content.">16</td></tr>
+      <tr><td exp="Table cell with content.">Strawberry</td><td exp="Table cell with content.">14</td></tr>
+      <tr><td exp="Table cell with content.">Mint</td><td exp="Table cell with content.">7</td></tr>
+    </table>
+
+    <div class="question-container"><p exp="Question asking for the items listed in the table."><b>A)</b> What items are listed in the table?</p><div class="answer-box" exp="Box where the student writes the listed items. The correct answer is: Vanilla, Chocolate, Strawberry, Mint."></div></div>
+    <div class="question-container"><p exp="Question asking for the number of votes the second item received."><b>B)</b> How many votes did the second item receive?</p><div class="answer-box" exp="Box where the student writes the number of votes. The correct answer is: 16."></div></div>
+    <div class="question-container"><p exp="Question asking for the number of votes the third item received."><b>C)</b> How many votes did the third item receive?</p><div class="answer-box" exp="Box where the student writes the number of votes. The correct answer is: 14."></div></div>
+    <div class="question-container"><p exp="Question asking for the total number of votes received."><b>D)</b> How many votes were received in total?</p><div class="answer-box" exp="Box where the student writes the total number of votes. The correct answer is: 50."></div></div>
+  </div>
+</body>
+</html>

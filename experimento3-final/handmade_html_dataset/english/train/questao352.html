@@ -1,0 +1,46 @@
+level: 2nd year of fundamental  
+learning_goals: counting, addition  
+theme: Soccer Tournament Teams  
+width-sheet: 800px  
+task: observe text, write answer
+language: en
+
+{
+    "task": "To practice counting and basic addition skills by determining the total number of players in two soccer teams based on the given numbers.",
+    "layout": "The activity consists of a description at the top, where the student will read about the number of players in the two teams and perform simple addition.",
+    "answer": {
+        "A": "To answer correctly, the student needs to add the number of players in the Blue Team (8 players) and the Red Team (7 players). The correct answer is 15 players.",
+        "B": "To answer correctly, the student needs to identify which team has more players. The correct answer is the Blue Team with 8 players."
+    }
+}
+
+<html>
+    <head></head>
+    <body>
+      <div style="width: 800px; border: solid 1px; padding: 10px;">
+        <div class="activity">
+          <p exp="Activity description about the number of players in the two teams. The Blue Team has 8 players, and the Red Team has 7 players.">
+            In a soccer tournament, the Blue Team has 8 players and the Red Team has 7 players.
+          </p>
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Image of both teams on the field">
+            <img src="soccer_teams_image.jpg" 
+                 alt="Illustration of two soccer teams, the Blue Team and Red Team, with players on the field."
+                 style="width: 600px; height: 300px"
+                 exp="Image where students need to count the total players and answer the questions." />
+        </div>
+
+        <div class="question-container" style="display: flex; justify-content: space-between;">
+            <p exp="Question asking for the total number of players in the two teams."><b>A)</b> How many players are there in total in both teams?</p>
+            <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box where the student writes the total number of players. The correct answer is 15."></div>
+        </div>
+
+        <div class="question-container" style="display: flex; justify-content: space-between;">
+            <p exp="Question asking which team has more players."><b>B)</b> Which team has more players?</p>
+            <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box where the student writes the team with more players. The correct answer is Blue Team."></div>
+        </div>
+        
+      </div>
+    </body>
+</html>

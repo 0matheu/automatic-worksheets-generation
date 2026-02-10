@@ -1,0 +1,799 @@
+
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2 ano fundamental
+assunto: adição
+tematica: lanches
+largura-folha: 700px
+layout: única imagem<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Essa questão pratica o principio da lei de Bacon, que explica que a
+adição de dois números é mais fácil de ser feita mentalmente se o segundo
+número for a soma dos primos, até ele, e então 1. A questão consiste de uma
+imagem de uma criança ateendendo uma criança que tem uma bola de
+pitch, e também está sendo oferecida uma lanche. O objetivo da questão é 
+efetuar a adição de 1 + 1, que é o primiero que é todo, e então 1, 
+que é o deus. A questão também trabalha o principio da lei de Bacon, 
+que explica que a adição de dois números é mais fácil de ser feita 
+mentalmente se o segundo número for a soma dos primos, até ele, e então 1.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 700px; border: solid 1px"
+      exp="div contendo a largura da página, que nesse caso é 700px"
+    >
+      <div class="questao" style="width: 700px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe a imagem abaixo de uma criança que está recebendo uma
+          bola de pitch da criança "A" e também está sendo oferecida uma
+          lanche pela criança "B". Escreva a soma de "Deus" e "Pai", sendo "Deus" = 1 e "Pai" = os primos até ele, e então 1.
+        </p>
+
+        <div
+          exp="div que contém a imagem que o aluno terá que observar e identificar a bola de pitch sendo entregue por uma criança, e também uma criança sendo oferecida uma lanche por outra"
+        >
+          <img
+            src=""
+            alt="Imagem no estilo de desenho de pintar de children, de uma criança entregando uma bola de pitch para outra criança, e também uma criança sendo oferecida uma lanche por outra criança, em estilo simples e colorido"
+            style="width: 600px; display: flex"
+            exp="Imagem que o aluno terá que observar, desenhar e identificar as actividades realizadas pelas crianças"
+          />
+        </div>
+
+        <p exp="questão que pede para o aluno desenhar a soma de 'Deus' e 'Pai'">Escreva a soma de "Deus" e "Pai", sendo "Deus" = 1 e "Pai" = os primos até ele, e então 1.</p>
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2 ano fundamental
+assunto: adição
+tematica: lanches
+largura-folha: 700px
+layout: duas imagens, linhas e colunas<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão serão trabalhados os princípios da adição. A questão consiste de
+duas imagens, a primeira contendo 5 lanches, e a segunda contendo 3 lanches. As
+questões consiste de:
+A) Será pedido ao aluno que some as lanches da primeira imagem com as da
+segunda imagem. As imagens serão semelhantes, porém o aluno terá que some as
+imagens para saber que ele terá 8 lanches.
+
+<html>
+  <head></head>
+  <style>
+   .container {
+      display: grid;
+      grid-template-columns: 100px 100px 100px 100px;
+      grid-template-rows: 100px 100px;
+      grid-template-areas:
+        "lh1 v1 lh2 v2 lh3 v3 lh4 v4 lh5 v5"
+        "lh6 v6";
+    }
+
+   .lanches,.vazio {
+      margin: 10px;
+    }
+
+   .lanches {
+      display: flex;
+      justify-content: center;
+      font-size: 50px;
+      font-weight: bold;
+    }
+
+   .vazio {
+      display: flex;
+      justify-content: center;
+    }
+
+   .vazio img {
+      width: 100px;
+      height: 100px;
+    }
+
+    img.lh1, img.lh2, img.lh3, img.lh4, img.lh5 {
+      width: 100px;
+      height: 100px;
+    }
+
+    img.lh1 {
+      width: 100px;
+      height: 100px;
+    }
+
+    img.v1 {
+      width: 100px;
+      height: 100px;
+    }
+
+    img.v2 {
+      width: 100px;
+      height: 100px;
+    }
+
+    img.v3 {
+      width: 100px;
+      height: 100px;
+    }
+
+    img.v4 {
+      width: 100px;
+      height: 100px;
+    }
+
+    img.v5 {
+      width: 100px;
+      height: 100px;
+    }
+
+    img.lh6 {
+      width: 100px;
+      height: 100px;
+    }
+
+    img.v6 {
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 700px; display: flex; justify-content: center"
+      exp="div contendo a largura da página, que nesse caso é 700px, e valor de largura, que é 700px"
+    >
+      <div class="questao" exp="div contendo a questão">
+        <p
+          exp="questão que é explicada qual a soma das imagens do lanche A com as do lanche B terá resultado em 8 lanches no final"
+        >
+          A questão abaixo consiste de imagens de lanches. Soma o número de lanches da figura A com a figura B. Desenhe em cada campo vazio uma imagem de um lanche que represente a soma.
+        </p>
+
+        <div class="container">
+          <div class="lh1 v1">
+            <img
+              class="lanches"
+              exp="img que representa um dos lanches da questão. Lamentablemente o aluno terá que desenhar essa img para representar a quantidade de lanches da questão A"
+            />
+          </div>
+
+          <div class="lh2 v2">
+            <img
+              class="vazio"
+              exp="div onde será colocado a imagem viana que representa a quantidade de lanches da questão B"
+            />
+          </div>
+
+          <div class="lh3 v3">
+            <img
+              class="lanches"
+              exp="img que representa a quantidade de lanches da questão C"
+            />
+          </div>
+
+          <div class="v4">
+            <img
+              class="imagem"
+              exp="imagem que representa a quantidade de lanches V4"
+            />
+          </div>
+
+          <div class="v5">
+            <img
+              class="imagem"
+              exp="imagem que representa a quantidade de lanches V5">
+            </div>
+          </div>
+            <img
+              class="imagem viana que representa uma imagem que representa a quantidade de lanches A que representa um sinal
+              exp="imagem"
+            </div
+          </div>
+    <img
+          </div>
+    <img
+              </responsament ficagem tem atual direto foxidix
+  </k
+    </id
+  </inform f
+  </qual vá larga
+  </largeur
+  </esper
+  </riv
+  mais informações aqui
+            esper
+  efectual está em outras esper mais apresent
+  </task
+  aqui
+  </esper
+  ####
+  Antworten
+        </
+  ### efect f
+  efect  agora experião eleg cal larg fossil f vá larg escol larg f os mais bem larg  agora cal larg muito uma mais vá larg fossil larg larg 
+    outra c 
+  além larg vá fossil larg foss larg foe eleg larg larg s mais s mais foss  mais s em mais s esper larg mais vá larg fossil cal mais atual mais tentere mais s mais c mais s mais mais sen th ere aqui são larg mais cal mais cal mais larg mais cal mais fle larg fle s mais s fos f f vá larg f larg mais em mais s mais s mais f s mais que mais f em que mais g mais s mais s mais s mais f mais s mais s mais f mais f mais vá larg s larg e em larg mais mais mais mais s mais s mais s mais ze que mais ze c mais s mais s 
+    larg f
+    larg mais s mais s mais vá mais s f fic mais larg mais fic
+ 
+ 
+ 
+ mais ex f ex 
+  ex mais 
+ 
+  fic ex 
+ mais ex 
+  ex mais ex 
+    larg f ex f mais f f f fle mais f mais f f f s f f f f s v em mais f 
+  e e mais
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: carrinhos
+largura-folha: 600px
+layout: única imagem<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão será gerada uma questão em HTML com a largura de
+600px, na formato de única imagem, sendo uma imagem do tipo em
+estudar, onde o aluno terá que efectuar operações paraibir que a soma
+das partes de um carrinho for maior que 5 é maior que 5. A questão estará
+espessa de la questão <html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a largura da página, que nesse caso é 600px"
+    >
+      <div class="questao" exp="div contendo a descrição da questão">
+        Faça a soma dos pedaços do carrinho abaixo e escreva se a soma é
+        maior que 5. Explique.
+      </div>
+
+      <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <img
+            src=""
+            alt="Imagem no estilo de desenho de pintar de um carrinho de echarrete sendo desfeito, sendo mostrado as peças sendo separadas e guardadas em caixotas"
+            style="width: 500px; height: 300px"
+            exp="Imagem que o aluno terá que observar e contar as peças do carrinho, sendo: 3 pedaços de echarrete, 4 caixotas, e também de fim, que é 5. Observe se a soma das peças é maior que 5 e explique."
+          />
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: carrinhos
+largura-folha: 600px
+layout: três imagens<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão serão trabalhados os conceitos da adição e soma
+de números. A questão consiste de três imagens, a primeira contendo
+o número 10, uma carrinha contendo 4 carrinhos, e mais a soma 4 + 5 =
+que será 9. O objetivo da questão é que o aluno soma a quantidade
+de carrinhos com a quantidade de carrinhos que ele terá após
+comer uma carrinha cheia de 5 carrinhos, resultando em 4 + 5 = 9
+imagem mostrará também a imagem da soma correto sendo 9 e também a imagem
+estipulada com a soma errada sendo 4.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo o tamanho máximo da página, que nesse caso é 600px"
+    >
+      <div class="questao" exp="div contendo a descrição da questão">
+        <p
+          exp="Descrição da questão, informando que o aluno terá as imagens A e B, e deverá compará-las e escrever onde fica a soma correta do mais"
+        >
+          Observe as imagens A e B abaixo. Escreva onde fica a soma do
+          número of carrinhos que ele terá quando come ele a carrinha, com 4
+          carrinhos, com a quantidade de carrinhos que ele terá ao consumir  a
+          carrinha.
+        </p>
+
+        <div
+          exp="div contendo o tamanho da imagem, que nesse caso são imagens de imagem small para o aluno poder ver claramente as imagens"
+        >
+          <p>A</p>
+          <img
+            src=""
+            alt="Imagem small do número 10, contendo 10 carrinhos)"
+            style="width: 100px"
+            exp="Imagem contendo 4 carrinhos, num número que o aluno deverá somar"
+          />
+          <p>B</p>
+          <img
+            src=""
+            alt="Imagem small da carrinha cheia de 5 carrinhos)"
+            style="width: 100px"
+            exp="Imagem contendo 5 carrinhos na carrinha, que ao ser consumida terá 4 carrinhos"
+          />
+        </div>
+
+        <p exp="Descrição da questão, informando que o aluno deverá comparar as imagens A e B, e escrever onde ficará a soma">Observe as imagens A e B. Escreva onde ficará a soma do número de carrinhos que ele terá quando consumir a carrinha com 5 carrinhos, com a quantidade de carrinhos que tem, que é 4.</p>
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: fundo do mar
+largura-folha: 600px
+layout: única imagem<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Essa questão pratica o principio da lei de Arieu que o aluno
+efetivamententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententententent
+
+ </entententententententententententententententententententent
+entent
+ent
+ent
+ent
+antent
+ententententententent
+    </id
+  ####
+    </s
+  ####
+ 
+  </inform
+  ####
+  </como
+  </responsaled
+  ####
+  ####
+  </esper
+  ####
+  >
+  </cter atualmente
+  </ctica
+  >
+  ####
+  ####
+  ####
+  </tur</esper
+  </nbsp
+  </nbsp </  
+ </ 
+  ####
+  ####
+  ####
+  ####
+  ####</tem fosh larg 
+  meno fosh 186 fetal  fundamental f 
+  
+larg
+ativ
+  
+ ionic
+como
+ 대의 larg fossil larg foss f
+   larg fossil fasc
+antanamo são vá larg fetal mais larg f fundamental larg foss e mais atual larg mais larg foss mais larg mais larg mais larg 2 manos cient
+  
+   
+como s
+    institutional
+  
+   
+oreal mais larg fossil fossil fetal fos fossil fossil
+  
+
+
+
+ 
+tent
+   
+ent
+ent
+ iral maisiral mais tent
+
+
+
+ 
+
+
+
+ententententententententent
+ent
+  ententententent
+
+  ionic
+ 
+
+ quee
+ quee
+ ionic
+ erek
+   
+
+n
+
+
+
+
+
+
+
+
+
+ 
+ fic
+ 
+ 
+  
+
+
+
+
+
+  
+
+ 
+  
+ 
+ 
+ 
+
+ 
+
+
+
+
+ 
+  
+
+
+
+
+
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+ 
+  &
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: fundo do mar
+largura-folha: 600px
+layout: três imagens<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Nessa questão serão trabalhados os conceitos da adição e
+soma. A questão consiste de três imagens: duas imagens contendo
+animais que estão a sumar, e uma imagem contendo socos, que
+representam os tempos. O objetivo da questão é de que o aluno
+identifique em qual imagem o animal estará, após soma-rios dos
+socos, e escrever a resposta.
+
+<html>
+  <head></head>
+  <style>
+   .container {
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 300px 300px 300px;
+      grid-template-points =
+        "top-left 300px 300px"
+        "top-center 300px  top"
+        "top-right 300px 300px"
+        "left 300px 300px"
+        "center 300px 300px"
+        "right 300px 300px"
+        "bottom-left 300px 300px"
+        "bottom-center 300px  bottom"
+        "bottom-right 300px 300px";
+      grid-template-areas =
+        "top-left top-center top-right"
+        "left center bottom"
+        "right bottom-left bottom-center bottom-right";
+    }
+
+   .imagem {
+      width: 300px;
+      height: 300px;
+      border: 1px solid;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 600px; height: 600px"
+      exp="div contendo a largura total da página, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe as imagens abaixo. Elabore em qual animal estará a
+          soma dos socos, e desenhe.
+        </p>
+
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <div class="container">
+            <div class="imagem top-left">
+              <img
+                src=""
+                alt="Imagem no estilo de desenho de pintar de animais estacionados na areia, esperando que o sinal pedisse que sumassem os socos, e então irem procurar animal estarius na direção da qual estivessem agora. A imagem representa 5 animais: uma baleia, um tubarão, um golfinho, uma orca e um cachalote."
+                />
+            </div>
+
+            <div class="imagem top-center">
+              <img
+                src=""
+                alt="Imagem no estilo de desenho de pintar de 15 socos"
+              />
+            </div>
+
+            <div class="imagem top-right">
+              <img
+                src=""
+                alt="Imagem no estilo de desenho de pintar de animais que estão a sumar, e então irão procurar o animal estarius na direção da qual estivessem agora."
+              />
+            </div>
+
+            <div class="imagem center left">
+              <img
+                src=""
+                alt="Imagem no estilo de desenho de pintar de animais esperando que a soma dos socos seja maior que a soma dos socos, e então irão procurar o animal estarius na direção oposta."
+              />
+            </div>
+
+            <div class="imagem center right">
+              <img
+                src=""
+                alt="Imagem no estilo de desenho de pintar de animais que estão a somar, e então irão procurar o animal estarius na direita."
+              />
+            </div>
+          </div class="imagem bottom-left">
+            <img
+              />
+          </div>
+
+          <div class="imagem bottom-right">
+            <img
+              />
+          </div>
+
+          <img
+              src=""
+              />
+            </div>
+          </div>
+    </div>
+    </div>
+  </div>
+  </div>
+    </div>
+    </div>
+    </div>
+    </img
+              src=""
+              />
+            </img
+              />
+            </img>
+              />
+            </img
+              />
+            </img
+              />
+              </img>
+              </img
+              </img
+              />
+            </span
+              />
+            </img
+              />
+    </img
+              </id>
+    </id>
+    </id>
+  </como >
+  </tentaul
+  </certo atual utilizanela</responsaled
+  </衣
+  </ágeuillez atual utilização internacional está
+  </ İs atual estad atual utilizadas espaço são apresent S internacional está
+  </esper
+  ></alom atual utilizável
+  </oyer foss
+           </alom atual n larg  manos fó esper flavors com mais larg mais larg mais larg mais larg
+.inflate além cal 
+alom atual subject s mais larg mais larg espaço larg mais larg
+ oord larg mais larg mais larg fossil larg larg larg foss larg vá larg larg f mais larg mais larg só larg mais larg mais larg larg larg mais larg mais foss larg mais larg mais larg mais larg mais são mais aqui são mais só mais sinal mais são mais int int c mais larg vá larg são mais são seu vá larg fos f
+  larg mais larg larg só mais larg mais mais mais mais mais fic mais f mais larg ue S
+quee mais larg são larg larg mais larg vá larg
+    larg mais fic mais larg são vá larg mais larg larg mais larg larg mais larg mais larg vá larg larg só larg larg vá largere larg ue larg
+    largere larg mais mais
+    larg mais larg com mais larg larg fic mais fian fle mais vá mais 
+ 
+ 
+ 
+ 
+ 
+  ex ex 
+ 
+  s
+  s
+  
+  e
+   
+  s
+   
+   mais s
+    f
+   /f
+   vá fic fossil fossil mais fic fic mais s
+  s
+  mais e
+
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: subtração
+tematica: fogos de artifício
+largura-folha: 800px
+layout: única imagem<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Essa é a questão que foi gerada com os parâmetros especificados:
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; display: flex; flex-direction: column"
+      exp="div contendo o largura da página"
+    >
+      <div class="questao" exp="div que contiene a questão">
+        <p
+          exp="parágrafo contendo a descrição da questão. Contém a explicação do que o aluno terá que fazer"
+        >
+          Maria tem 10 bolinhas e lê delas em 5 segundos. Maria ficou com...
+        </p>
+
+        <p exp="parágrafo que contém a enunciado da imagem">
+          Faça um balão em figura de bolinha, e escreva "Maria" nele. Depois faça um...
+        </p>
+      </div>
+
+      <div exp="div que contém a imagem que o aluno terá que fazer observação" class="div-imagem">
+        <img
+          src=""
+          alt="Imagem no estilo de desenho de pintar de uma bolinha de fogo em estilo de desenho de artifício de fogos, com uma bolinha em forma de balão em figura de bolinha, e Maria nele."
+          exp="Imagem que o aluno terá que observar e descrever a bolinha de fogo e o balão em figura de bolinha e Maria nele"
+        />
+      </div>
+    </div>
+  </body>
+</html>
+---------------------------------------------------------------------------------------------------------------
+<|start_header_id|>system<|end_header_id|>
+
+You are an assistant who helps a teacher create activities to help students learn<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: subtração
+tematica: fogos de artifício
+largura-folha: 800px
+layout: três imagens<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Essa é a questão que vai ser gerada:
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 800px"
+      exp="div contendo a largura da página, que nesse caso é 800px"
+    >
+      <div class="questao" exp="div contendo o título da questão">
+        <p
+          exp="parágrafo contendo o título da questão, que nesse caso é uma frase describindo o que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe as imagens abaixo e responda as questões:
+        </p>
+
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <p
+            exp="parágrafo contendo a legenda da questão, que nesse caso é 'qual a soma de x + y, para que ofstadecida seja maior a segunda imagem?'"
+          >
+            Qual a soma de x + y, para que a soma das lâminas ofstadecidas seja maior a segunda imagem?
+          </p>
+        </div>
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <img
+            src=""
+            alt="Primeira imagem, um retângulo verde dividido em x com 4 lâminas ofstadecidas no lado esquerdo e 4 no lado direito, sendo duas lâminas de ofstadecidas em cada lado do retângulo, e duas sendo apenas a ponta"
+            style="width: 400px; height: 400px"
+            exp="imagem, que o aluno terá que identificar qual a soma de lâminas ofstadecidas é maior, sendo como está dividida, então deverá ser ao centro"
+          />
+          <img
+            src=""
+            alt="Segunda imagem, um retângulo vermelho dividido em y com 4 lâminas ofstadecidas"
+            style="width: 400px; height: 400px"
+            exp="segunda imagem, que o aluno terá que identificar qual a soma das lâminas ofstadecidas é maior, sendo como está dividida"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

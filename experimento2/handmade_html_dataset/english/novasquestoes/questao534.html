@@ -1,0 +1,55 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Supermarket Checkout
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+  "task": "Add the prices of the items in the cart to find out the total cost.",
+  "layout": "This activity shows a supermarket checkout with various items. The student will add the prices of the items to find the total.",
+  "answer": {
+    "A": "To answer correctly, the student needs to add the price of the apples (15) and the bananas (20). The correct answer is 35.",
+    "B": "To answer correctly, the student needs to add the price of the apples (15) and the orange juice (25). The correct answer is 40.",
+    "C": "To answer correctly, the student needs to add all the items in the cart: 15 + 20 + 25. The correct answer is 60."
+  }
+}
+
+
+<html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: solid 1px black; padding: 10px;">
+      <div class="activity">
+        <p exp="This is a supermarket checkout activity. The student will add prices to find the total cost.">
+          Pedro is shopping for groceries. The prices of the items are shown in the image. Add them to find the total cost.
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+        <img 
+          src=""
+          alt="Illustration of a supermarket checkout counter with apples, bananas, and orange juice."
+          style="width: 600px; height: 300px;"
+          exp="The image shows various items like apples (15 reais), bananas (20 reais), and orange juice (25 reais) at the checkout counter."
+        />
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p><b>A)</b> What is the total cost of the apples and the bananas?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total cost of apples and bananas. Correct answer: 35."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p><b>B)</b> What is the total cost of the apples and the orange juice?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total cost of apples and orange juice. Correct answer: 40."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p><b>C)</b> What is the total cost of all the items in the cart?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total cost of all items. Correct answer: 60."></div>
+      </div>
+    </div>
+  </body>
+</html>

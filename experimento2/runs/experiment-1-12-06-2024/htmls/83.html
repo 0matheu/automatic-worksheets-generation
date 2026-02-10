@@ -1,0 +1,82 @@
+```json
+{
+  "task": "The student will learn to count and add up the total number of cakes and juice boxes in the images and perform the addition operation.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph that explains the task, and the bottom section contains a 2x2 grid with four images. The first row of the grid contains two images of cakes, and the second row contains an image of a pile of coins and an image of juice boxes. The images are placed in a specific layout to facilitate counting and addition.",
+  "answer": "To answer correctly, the student needs to: 1) count the number of cakes in the first image (4 cakes), 2) count the number of cakes in the second image (2 cakes), 3) add up the total number of cakes (4 + 2 = 6), 4) count the number of juice boxes in the third image (3 boxes), and 5) add the number of juice boxes to the total number of cakes (6 cakes + 3 juice boxes = 9). The correct answer is 9."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the images below. Count the total number of cakes and juice
+          boxes, and write the sum.
+        </p>
+
+        <div
+          style="display: grid; grid-template-columns: 400px 400px; grid-template-rows: 300px 300px; grid-template-areas: 'img1 img2' 'img3 img4'"
+          exp="div containing the images, which are arranged in a grid with two rows and two columns"
+        >
+          <div
+            style="grid-area: img1"
+            exp="div that will be used to adjust the image of the cakes in the first row and the first column"
+          >
+            <img
+              src=""
+              alt="image in a colored drawing style of 4 birthday cakes on a table"
+              style="width: 400px; height: 300px"
+              exp="image that the student will have to count the 4 cakes"
+            />
+          </div>
+
+          <div
+            style="grid-area: img2"
+            exp="div that will be used to adjust the image of the cakes in the second row and the first column"
+          >
+            <img
+              src=""
+              alt="image in a colored drawing style of 2 birthday cakes on a table"
+              style="width: 400px; height: 300px"
+              exp="image that the student will have to count the 2 cakes"
+            />
+          </div>
+
+          <div
+            style="grid-area: img3"
+            exp="div that will be used to adjust the image of the juice boxes in the third row and the second column"
+          >
+            <img
+              src=""
+              alt="image in a colored drawing style of 3 stacks of juice boxes"
+              style="width: 400px; height: 300px"
+              exp="image that the student will have to count the how many juice boxes are present in the 3 stacks"
+            />
+          </div>
+
+          <div
+            style="grid-area: img4"
+            exp="div that will be used to adjust the image of the pile of coins in the fourth row and the second column"
+          >
+            <img
+              src=""
+              alt="image in a colored drawing style of a pile of coins, with 10 coins"
+              style="width: 400px; height: 300px"
+              exp="image that the student will have to count the how many coins are present"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

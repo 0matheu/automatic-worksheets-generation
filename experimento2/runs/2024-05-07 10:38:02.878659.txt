@@ -1,0 +1,3199 @@
+
+---------------------------------------------------------------------------------------------------------------
+<s>[INST]
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2 ano fundamental
+assunto: adição
+tematica: lanches
+largura-folha: 700px
+layout: única imagem
+[/INST]
+
+Essa questão exercita os princípio da adição.
+A questão consiste de uma imagem de um pote de
+lanches, contendo 6 cebolas, 4 pimentões e 3
+batatas. O aluno terá que desenhar em cima da
+imagem, quantas cebolas estão presentes? e também
+terá que desenhar quantos pimentões estão
+presentes? e também quantas batatas estão
+presentes?
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 700px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe a imagem de um pote de lanches e desenhe:
+        </p>
+
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <img
+            src=""
+            alt="Imagem de um pote de cebolas, pimentões e batatas, contendo 6 cebolas, 4 pimentões e 3 batatas"
+            style="width: 500px; height: 300px"
+            exp="Imagem que o aluno terá que desenhar quantas cebolas estão presentes? e também terá que desenhar quantos pimentões estão presentes? e também quantas batatas estão presentes?"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------
+<s>[INST]
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2 ano fundamental
+assunto: adição
+tematica: lanches
+largura-folha: 700px
+layout: duas imagens, linhas e colunas
+[/INST]
+
+
+Nessa questão serão praticados os princípios da adição.
+A questão consiste de duas imagens, uma contendo
+30 pães de milho e outra contendo 25 brigadeiros.
+O aluno terá que desenhar uma imagem de um lanche
+com a quantidade de pães de milho que foi requestada,
+sendo ela 30 pães de milho. Também terá que desenhar
+outro lanche com a quantidade de brigadeiros que foi
+requestada, sendo 25 brigadeiros. Ao final ele terá que
+escriver o som da quantidade de pães de milho com a
+quantidade de brigadeiros, sendo 30 + 25 = 55.
+
+<html>
+  <head></head>
+  <style>
+    /* classe que será utilizada para descrever o layout da atividade, nesse caso contém duas imagens, uma para o lanche de pães de milho e outra para o lanche de brigadeiros, além de um sinal de mais para representar a soma dos valores */
+   .container {
+      display: grid;
+      grid-template-columns: 300px 300px;
+      grid-template-rows: 200px 200px 200px;
+      grid-template-areas:
+        "vazio1 pães"
+        "brigadeiros plus";
+    }
+
+    /* classe utilizada para ajustar o tamanho da imagem, na questão é utilizada para o lanche de pães de milho, e para o lanche de brigadeiros, para que as imagens consigam ser visualizadas no layout da atividade */
+   .img {
+      width: 150px;
+      height: 150px;
+    }
+
+    /* classe utilizada para posicionar a imagem no layout da atividade, na questão é utilizada para o lanche de pães de milho, e para o lanche de brigadeiros */
+   .img.pães {
+      grid-area: pães;
+    }
+
+    /* classe utilizada para posicionar a imagem no layout da atividade, na questão é utilizada para o lanche de brigadeiros */
+   .img.brigadeiros {
+      grid-area: brigadeiros;
+    }
+
+    /* classe utilizada para posicionar o sinal de mais na layout da atividade, sendo na primeira célula da segunda coluna */
+   .plus {
+      grid-area: plus;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 700px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 700px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe as imagens abaixo e desenhe um lanche que represente
+          a quantidade de pães de milho, e também desenhe um lanche que
+          represente a quantidade de brigadeiros. A seguir escreva o
+          som da quantidades.
+        </p>
+
+        <div class="container">
+          <div class="img pães">
+            <img
+              alt="Imagem no estilo de desenho de pintar de um lanche com 30 pães de milho"
+              exp="Imagem que o aluno terá que desenhar a quantidade de pães de milho que foi requestada, sendo 30 pães de milho"
+            />
+          </div>
+
+          <div class="img brigadeiros">
+            <img
+              alt="Imagem no estilo de desenho de pintar de um lanche com 25 brigadeiros"
+              exp="Imagem que o aluno terá que desenhar a quantidade de brigadeiros que foi requestada, sendo 25 brigadeiros"
+            />
+          </div>
+
+          <div class="plus">
+            <span>30 + 25</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+Nessa questão o aluno terá que desenhar duas imagens, uma para o lanche de pães de milho e outra para o lanche de brigadeiros. Ao final ele terá que escrever o som da quantidades, sendo 30 + 25 = 55. O aluno terá que observar as imagens e desenhar as quantidades requestadas.
+---------------------------------------------------------------------------------------------------------------
+<s>[INST]
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: carrinhos
+largura-folha: 600px
+layout: única imagem
+[/INST]
+
+Nessa questão serão praticados os princípios da adição.
+A questão consiste de uma imagem de uma fileira de carrinhos,
+nessa questão o aluno terá que desenhar mais 3 carrinhos
+para completar a fileira, sendo 2 tematica com a same cor,
+e um que seja diferente, sendo o resultado da soma de 2
+pares de carrinhos, sendo 2 x 3 = 6.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe a imagem abaixo e desenhe mais 3 carrinhos na mesma fileira.
+        </p>
+
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <img
+            src=""
+            alt="Imagem de uma fileira de carrinhos, sendo 2 carrinhos de cor homemis, e 3 de cor diferente"
+            style="width: 500px; height: 300px"
+            exp="Imagem que o aluno terá que desenhar mais 3 carrinhos a partir da imagem fornecida"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+<style>
+ .questao {
+    width: 600px;
+  }
+
+ .questao p {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+ .questao img {
+    width: 500px;
+    height: 300px;
+  }
+</style>
+
+Nessa questão o aluno terá que desenhar mais 3 carrinhos para completar a fileira, sendo 2 temática com a same cor, e um que seja diferente. Para responder corretamenta a questão o aluno terá que desenhar 3 carrinhos que representem a soma de 2 pares de carrinhos, sendo 2 x 3 = 6.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------
+<s>[INST]
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: carrinhos
+largura-folha: 600px
+layout: três imagens
+[/INST]
+
+Nessa questão serão praticados os princípios da adição.
+A questão consiste de 3 imagens de carrinhos, e
+pares de sinal de + para representar a equação.
+O aluno terá que somar as imagens, sendo 3 carrinhos,
+e deverá responder 3, sendo a soma correta.
+
+<html>
+  <head></head>
+
+  <style>
+    /* classe que será utilizada para descrever o layout da atividade, nesse caso contém tres imagens, uma para a soma da quantidade de carrinhos que tem»
+   .container {
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 200px 200px 200px;
+      grid-template-areas:
+        "vazio1 sinal1"
+        "vazio2 sinal2"
+        "vazio3 sinal3";
+    }
+
+    /* classe que será utilizada para ajustar o tamanho da imagem, sendo nesse caso 200px para a largura da imagem */
+   .img {
+      width: 200px;
+      height: 200px;
+    }
+
+    /* classe que será utilizada para centralizar as imagens no layout da atividade */
+   .img.central {
+      margin: 100px;
+    }
+
+    /* classe que será utilizada para desenhar o sinal de + para representar a soma das imagens */
+   .sinal {
+      display: flex;
+      justify-content: center;
+      font-size: 50px;
+      border-bottom: 1px solid;
+    }
+
+    /* classe que será utilizada para desenhar a quantidade de carrinhos que tem uma equação, sendo 3 */
+   .vazio1,
+   .vazio2,
+   .vazio3 {
+      grid-area: vazio1;
+    }
+
+    /* classe que será utilizada para desenhar o sinal de + para representar a soma das imagens */
+   .sinal2 {
+      display: flex;
+      justify-content: center;
+      font-size: 50px;
+      border-bottom: 1px solid;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe as imagens abaixo e escreva a soma da quantidades de carrinhos.
+        </p>
+
+
+        <div class="container">
+          <div class="img central" exp="Imagem que representa um carrinho, nesse caso tem 3 imagens">
+            <p>
+              <b>Soma essas imagens:</b>
+            </p>
+            <div class="sinal">
+              <p>+ + +</p>
+            </div>
+          </div>
+
+          <div class="img central" exp="Imagem que representa um carrinho, nesse caso tem 3 imagens">
+            <p>
+              <b>Soma essas imagens:</b>
+            </p>
+            <div class="sinal">
+              <p>+ + +</p>
+            </div>
+          </div>
+
+          <div class="img central" exp="Imagem que representa um carrinho, nesse caso tem 3 imagens">
+            <p>
+              <b>Soma essas imagens:</b>
+            </p>
+            <div class="sinal">
+              <p>+ + +</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>
+
+Nessa questão o aluno terá que observar as imagens abaixo e escrever a soma da quantidades de carrinhos, sendo 3. A questão utiliza o sinal de + para representar a equação.
+---------------------------------------------------------------------------------------------------------------
+<s>[INST]
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: fundo do mar
+largura-folha: 600px
+layout: única imagem
+[/INST]
+
+Essa questão exercita os princípio da adição.
+A questão consiste de uma imagem do fundo do mar,
+na imagem tem duas ligas de janelas, uma com 3 mãos de pintar
+e outra com 5 mãos de pintar. O aluno terá que somar a quantidade
+de mãos de pintar, sendo 3 + 5 = 8.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe a imagem abaixo e soma as quantidades.
+        </p>
+
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <img
+            src=""
+            alt="Imagem no estilo de desenho de pintar de duas ligas de janelas, uma com 3 mãos de pintar e outra com 5 mãos de pintar"
+            style="width: 400px; height: 200px"
+            exp="Imagem que o aluno terá que observar e somar as quantidades de mãos de pintar"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------
+<s>[INST]
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: adição
+tematica: fundo do mar
+largura-folha: 600px
+layout: três imagens
+[/INST]
+
+Nessa questão serão praticados os princípios da adição.
+A questão consiste de 3 imagens, a primeira contendo
+o número 5, a segunda o número 3 e a terceira
+o número 2. O aluno terá que adicionar o número
+5 com o número 3, resultando em 8. E também adicionar
+o número 2 com o número 8, resultando em 10.
+
+<html>
+  <head></head>
+
+  <style>
+    /* classe que será utilizada para descrever o layout da atividade, nesse caso contém tres imagens */
+   .container {
+      display: grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 200px 200px 200px;
+      grid-template-areas:
+        "vazio1 num4"
+        "img2 num3"
+        "vazio2";
+    }
+
+    /* classe que será utilizada para ajustar o tamanho da imagem e a posição da imagem no layout da atividade, sendo nesse caso a imagem 2 */
+   .num {
+      font-size: 70px;
+      margin: 10px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 600px"
+    >
+      <div class="questao" style="width: 600px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe as imagens abaixo e adicione os númerais representados nas imagens.
+        </p>
+
+
+        <div class="container">
+          <div
+            area="vazio1"
+            exp="div utilizada para ajustar o tamanho da imagem e a posição da imagem no layout da atividade, sendo nesse caso a imagem 2"
+          />
+
+          <div
+            area="num4"
+            exp="div que contém o número que o aluno terá que somar com o número 5 para obter a resposta correta"
+          >
+            <img
+              alt="Imagem no estilo de desenho de pintar, de um número 2"
+              area="img2"
+              exp="Imagem que o aluno terá que adicionar o número 2 com o número 5, resultando em 10"
+            />
+
+          </div>
+
+          <div
+            area="num3"
+            exp="div que contém o número que o aluno terá que somar com o número 5 para obter a resposta correta, sendo nesse caso o número 8"
+          >
+            <img
+              alt="Imagem no estilo de desenho de pintar, de um número 3"
+              area="img3"
+            />
+          </div>
+
+          <div
+            area="vazio2"
+            exp="div utilizada para ajustar o tamanho da imagem e a posição da imagem no layout da atividade, sendo nesse caso a imagem 2"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+Nessa questão o aluno terá que adicionar o número 2 com o número 5, resultando em 10. E também adicionar o número 3 com o número 8, resultando em 11. Para responder corretamenta a questão o aluno terá que efetuar as somas abaixo:
+
+8 + 2 = 10
+3 + 5 = 11
+
+No final terá que escrever as somas acima.
+
+A atividade consiste de três imagens, sendo duas contendo os númerais 2 e 5, e uma outra que contém o número 3. O aluno terá que adicionar o número 2 com o número 5, resultando em 10. E também adicionar o número 3 com o número 8, resultando em 11. Para responder corretementa a questão o aluno terá que efetuar as somas abaixo:
+
+8 + 2 = 10
+3 + 5 = 11
+
+No final terá que escrever as somas acima.
+---------------------------------------------------------------------------------------------------------------
+<s>[INST]
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: subtração
+tematica: fogos de artifício
+largura-folha: 800px
+layout: única imagem
+[/INST]
+
+Nessa questão serão praticados os princípios da subtração
+e também da adição. A questão consiste de uma imagem de um
+fogo de artifício, contendo 12 bombas. O aluno terá que
+desenhar em papel 9 bombas, sendo 6 de mais que a imagem
+principal. Para resolver corretamente a questão o aluno
+terá que observar a imagem principal, e observar que
+cada bomba tem 3 braças de largura, e também observar
+que ele já tem 6 bombas, então ele ficará sem mais
+bombas, sendo 6 bombas a menos que a imagem principal
+Parte da resposta está na imagem, consista de 6 bombas,
+mais uma que representa a quantidade de bombas que o
+aluno terá que desenhar, sendo 5 bombas.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 800px"
+    >
+      <div class="questao" style="width: 800px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe a imagem abaixo de um fogo de artifício e responda as seguintes questões:
+        </p>
+
+        <div
+          style="display: flex; justify-content: center"
+          exp="div utilizada para centralizar a imagem na questão"
+        >
+          <img
+            src=""
+            alt="Imagem no estilo de desenho de pintar de um fogo de artifício, contendo 12 bombas"
+            style="width: 600px; height: 300px"
+            exp="Imagem que o aluno terá que observar e descrever quantas bombas estão presentes, e também desenhar 6 bombas"
+          />
+        </div>
+
+        <p>Desenhe em papel quantas bombas ficaram after a questão que representa 6 bombas menos que a imagem original.</p>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+Nessa questão o aluno terá que observar a imagem de um fogo de artifício e descrever quantas bombas estão presentes. Ele também terá que desenhar em papel quantas bombas ficaram after a questão, sendo 6 bombas. A questão é baseada na lógica da subtração, pois o aluno terá que observar a imagem e constatar que ele já tem 6 bombas, então ele ficará sem mais bombas, sendo 6 bombas a menos que a imagem original.
+
+A questão também envolve a lógica da adição, pois o aluno terá que contar quantas bombas estão presentes na imagem, sendo 12.
+
+<div
+  style="width: 600px; height: 300px"
+  exp="div utilizada para centralizar a imagem na questão"
+>
+  <img
+    src=""
+    alt="Imagem no estilo de desenho de pintar de um fogo de artifício, contendo 12 bombas"
+    style="width: 600px; height: 300px"
+  />
+</div>
+
+
+
+<p>Desenhe em papel quantas bombas ficaram after a questão que representa 6 bombas menos que a imagem original.</p>
+
+<p
+  style="display: flex; justify-content: center"
+  exp="p utilizada para centralizar a imagem na questão e a quantidade de bombas que o aluno terá que desenhar, sendo 5 bombas"
+>
+  <img
+    src=""
+    alt="Imagem que representa 5 bombas, sendo 5 menos que a imagem principal, que o aluno terá que desenhar"
+    style="width: 300px; height: 300px"
+  />
+</p>
+
+Nessa questão o aluno terá que observar a imagem de um fogo de artifício e descrever quantas bombas estão presentes. Ele também terá que desenhar em papel quantas bombas ficaram after a questão, sendo 6 bombas. A questão é baseada na lógica da subtração, pois o aluno terá que observar a imagem e constatar que ele já tem 6 bombas, então ele ficará sem mais bombas, sendo 6 bombas a menos que a imagem original.
+
+A questão também envolve a lógica da adição, pois o aluno terá que contar quantas bombas estão presentes na imagem, sendo 12.
+
+<div
+  style="width: 600px; height: 300px"
+  exp="div utilizada para centralizar a imagem na questão"
+>
+  <img
+    src=""
+    alt="Imagem no estilo de desenho de pintar de um fogo de artifício, contendo 12 bombas"
+    style="width: 600px; height: 300px"
+  />
+</div>
+
+<p>Desenhe em papel quantas bombas ficaram after a questão que
+---------------------------------------------------------------------------------------------------------------
+<s>[INST]
+
+Gere uma questão em HTML com os seguintes parâmetros:
+nivel: 2º ano fundamental
+assunto: subtração
+tematica: fogos de artifício
+largura-folha: 800px
+layout: três imagens
+[/INST]
+
+Nessa questão serão praticados os princípios da subtração
+e também da adição. A questão consiste de três imagens,
+a primeira consiste de uma piada que contém 8 bombons,
+e mais 5 que estão pendurados. Para resolver a questão
+o aluno terá que observar que para que a piada
+tenha a mesma quantidade de bombons que a imagem
+sendo representada, ele terá que descregar 5 bombons
+da imagem, sendo 4 na parte esquerda e 1 na parte
+direita.
+
+<html>
+  <head></head>
+  <style>
+    /* classe que será utilizada para descrever as imagens, no layout da atividade será uma imagem em cada ano e meio*/
+   .container {
+      display: grid;
+      grid-template-columns: 150px 150px 150px 150px;
+      grid-template-rows: 200px;
+      grid-template-areas:
+        "vazio1 bombons1"
+        "vazio2 bombons2"
+        "vazio3 bombons3";
+    }
+
+    /* classe que será utilizada para ajustar as imagens no layout da atividade, sendo uma imagem em cada uma das blocos centrais das atividades */
+   .center {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    /* classe que será utilizada para desenhar uma piada, sendo a piada que terá que ser descrepida para a resolução da questão */
+   .piada {
+      width: 150px;
+      height: 150px;
+      border: solid 1px;
+    }
+
+    /* classe que será utilizada para desenhar 5 bombons, sendo 4 na parte esquerda e 1 na parte direita do desenho */
+   .bomboons {
+      width: 120px;
+      height: 120px;
+      border: solid 1px;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    /* classe que será utilizada para desenhar 4 bombons, sendo na parte esquerda do desenho */
+   .bomboesquerda {
+      width: 60px;
+      height: 60px;
+      border: solid 1px;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* classe que será utilizada para desenhar um bombo na parte direita do desenho */
+   .bombofrente {
+      width: 60px;
+      height: 60px;
+      border: solid 1px;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 800px"
+    >
+      <div class="questao" style="width: 800px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe a piada abaixo e descreva quantos bombons tem. E after
+          desenhar os bombons, desenhe também os bombons que estão pendurados
+          nas bolhas.
+        </p>
+
+
+        <div class="container">
+          <div class="vazio1" style="width: 120px; height: 120px"></div>
+
+          <div class="piada" style="width: 120px; height: 120px">
+            <div class="bomboons">
+              <div class="bomboesquerda"></div>
+              <div class="bombofrente"></div>
+            </div>
+          </div>
+
+          <div class="vazio2" style="width: 120px; height: 120px"></div>
+
+          <div class="vazio3" style="width: 120px; height: 120px"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+Nessa questão o aluno terá que observar a quantidade de bombons que estão presentes na piada abaixo e descrever quantos bombons estão presentes. A quantidade de bombons que estão presentes é 8, sendo 4 na parte esquerda e 1 na parte direita do desenho.
+
+<div
+  style="width: 800px; border: solid 1px"
+  exp="div contendo a largura da folha, que nesse caso é 800px"
+>
+  <div class="questao" style="width: 800px">
+    <p
+      exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+    >
+      Observe a piada abaixo e descreta quantos bombons tem. E after
+      desenhar os bombons, desenhe também os bombons que estão pendurados

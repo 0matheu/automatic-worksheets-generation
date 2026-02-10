@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      width: 800px;
+      margin: auto;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .item img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      border: 1px solid #000;
+    }
+
+    .answer-section {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .answer-box {
+      width: 100px;
+      height: 100px;
+      border: 2px solid black;
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px auto 0 auto;
+    }
+  </style>
+
+  <body>
+    <div style="width: 800px; margin: auto; border: 1px solid black; padding: 20px;">
+      <p style="text-align: center;" exp="Instrução para o aluno explicando como resolver o problema.">
+        Lara trouxe frutas para um piquenique em dias diferentes. Relacione as cestas de frutas com os dias corretos de acordo com a quantidade de frutas. Depois, some as frutas de segunda-feira e quarta-feira e escreva o total abaixo.
+      </p>
+
+      <div class="container">
+        <div class="column" exp="Coluna da esquerda mostrando as cestas de frutas com quantidades.">
+          <div class="item" exp="Cesta com 2 frutas.">
+            <img src="" alt="Cesta com 2 bananas" exp="Uma cesta de piquenique cheia com exatamente 2 bananas." />
+            <span>Cesta A</span>
+          </div>
+          <div class="item" exp="Cesta com 6 frutas.">
+            <img src="" alt="Cesta com 6 maçãs" exp="Uma cesta contendo 6 maçãs vermelhas brilhantes." />
+            <span>Cesta B</span>
+          </div>
+          <div class="item" exp="Cesta com 4 frutas.">
+            <img src="" alt="Cesta com 4 peras" exp="Uma pequena cesta cheia com 4 peras verdes." />
+            <span>Cesta C</span>
+          </div>
+        </div>
+
+        <div class="column" exp="Coluna da direita com os dias da semana.">
+          <div class="item" exp="Segunda-feira, que corresponde à Cesta A com 5 frutas.">
+            <span>Segunda-feira</span>
+            <img src="" alt="Ícone de sol e nuvem para segunda-feira" exp="Símbolo representando a segunda-feira." />
+          </div>
+          <div class="item" exp="Quarta-feira, que corresponde à Cesta B com 6 frutas.">
+            <span>Quarta-feira</span>
+            <img src="" alt="Ícone de clima nublado para quarta-feira" exp="Símbolo representando a quarta-feira." />
+          </div>
+          <div class="item" exp="Sexta-feira, que corresponde à Cesta C com 4 frutas.">
+            <span>Sexta-feira</span>
+            <img src="" alt="Ícone de sol para sexta-feira" exp="Símbolo representando a sexta-feira." />
+          </div>
+        </div>
+      </div>
+
+      <div class="answer-section" exp="Seção de resposta onde o aluno escreverá o resultado da adição.">
+        <p exp="Instrução lembrando ao aluno quais valores somar.">
+          Some as frutas de segunda-feira e quarta-feira. Escreva o número total de frutas aqui:
+        </p>
+        <div class="answer-box" exp="Caixa de resposta onde o aluno deve escrever 5 + 6 = 11."></div>
+      </div>
+    </div>
+  </body>
+</html>

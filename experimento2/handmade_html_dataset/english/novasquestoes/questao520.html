@@ -1,0 +1,47 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme: Bike Shop
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+  "task": "To practice counting and basic addition skills by calculating the total cost of bikes and accessories Carla is buying.",
+  "layout": "The activity consists of a description where Carla is buying a bike and accessories for her hobby. Below is an image showing the prices of the bike and accessories. The student will answer questions based on the prices.",
+  "answer": {
+    "A": "To answer correctly, the student needs to add the price of the bike (250 reais) and the helmet (50 reais). The correct answer is 300 reais.",
+    "B": "To answer correctly, the student needs to add the price of the bike (250 reais) and the bike lock (20 reais). The correct answer is 270 reais."
+  }
+}
+
+<html>
+  <head></head>
+  <body>
+    <div style="width: 800px; border: solid 1px; padding: 10px;">
+      <div class="activity">
+        <p exp="Carla is shopping for a new bike and accessories. The prices are shown in the image.">
+          Carla is excited to buy a new bike and accessories. Below is an image showing the prices of the bike and some accessories.
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image showing Carla’s bike and accessories.">
+        <img 
+          src="" 
+          alt="Illustration showing Carla’s bike, helmet, and bike lock with their respective prices."
+          style="width: 600px; height: 300px"
+          exp="Image showing the bike and accessories with their prices."
+        />
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question asking for the total cost of the bike and the helmet."><b>A)</b> What is the total cost of the bike and the helmet?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total cost of the bike and helmet. Correct: 300."></div>
+      </div>
+
+      <div class="question-container" style="display: flex; justify-content: space-between;">
+        <p exp="Question asking for the total cost of the bike and the bike lock."><b>B)</b> What is the total cost of the bike and the bike lock?</p>
+        <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box for the total cost of the bike and bike lock. Correct: 270."></div>
+      </div>
+    </div>
+  </body>
+</html>

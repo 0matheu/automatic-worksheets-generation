@@ -1,0 +1,10 @@
+{
+    "level": "2\u00ba ano do ensino fundamental",
+    "learning goals": "subtra\u00e7\u00e3o",
+    "theme": "Rob\u00f4s e circuitos",
+    "width-sheet": "800px",
+    "task": "observe images, write answer",
+    "language": "pt-br",
+    "temperature": 0.7,
+    "model": "ft:gpt-4.1-2025-04-14:ufcg::CikEQZns"
+}

@@ -1,0 +1,53 @@
+level: 2nd year of fundamental
+learning_goals: addition
+theme: Construction Site
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+    "task": "To help students practice counting and addition using visual cues from a construction site setting.",
+    "layout": "The activity presents a construction site with different tools and safety equipment shown in the image. Students use the visual information to calculate quantities.",
+    "answer": {
+      "A": "To answer correctly, the student needs to add the number of hammers (5) and screwdrivers (7). The correct total is 12.",
+      "B": "To answer correctly, the student should add the number of helmets (8) and vests (4). The correct total is 12.",
+      "C": "To answer correctly, the student must add the number of wheelbarrows (6) and shovels (3). The correct total is 9."
+    }
+  }
+  
+
+<html>
+<head></head>
+<body>
+  <div style="width: 800px; border: solid 1px; padding: 10px;">
+    <p exp="Text setting up the construction site context with tools and equipment.">
+      At the construction site, workers use many tools and wear safety equipment. Check the image to see how many there are.
+    </p>
+
+    <div style="display: flex; justify-content: center; margin: 20px 0;" exp="Div for centered image of construction site.">
+      <img 
+        src="" 
+        alt="Construction site with hammers (5), screwdrivers (7), helmets (8), vests (4), wheelbarrows (6), and shovels (3)."
+        style="width: 600px; height: 300px;"
+        exp="Image shows various labeled items on a construction site: hammers, screwdrivers, helmets, vests, wheelbarrows, and shovels, with clear numbers."
+      />
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question asking for sum of hammers and screwdrivers."><b>A)</b> How many hammers and screwdrivers are there?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Answer box for A (Correct: 12)."></div>
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question asking for sum of helmets and vests."><b>B)</b> How many helmets and vests in total?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Answer box for B (Correct: 12)."></div>
+    </div>
+
+    <div class="question-container" style="display: flex; justify-content: space-between;">
+      <p exp="Question asking for sum of wheelbarrows and shovels."><b>C)</b> What’s the sum of wheelbarrows and shovels?</p>
+      <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Answer box for C (Correct: 9)."></div>
+    </div>
+  </div>
+</body>
+</html>

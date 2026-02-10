@@ -1,0 +1,103 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by identifying the number of eggs each dinosaur has and connecting them to the image of the nest, and then calculating the total number of eggs the dinosaur had.",
+  "layout": "The question is divided into three main sections. The top section contains a paragraph that explains the task. The middle section contains a 2x3 grid with images of three dinosaurs in the first column and an image of a nest in the second column. The images are placed in a specific layout to facilitate counting and connection. The bottom section contains another paragraph that asks a question about the total number of eggs.",
+  "answer": "To answer correctly, the student needs to: 1) count the number of eggs in each dinosaur's pile (3, 5, and 2), 2) connect the dinosaur image to the nest image, and 3) add up the total number of eggs (3 + 5 + 2 = 10). The correct answer is 10 eggs."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three images in a 2-line and 3-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 400px 400px;
+      grid-template-areas:
+        "img1 nest"
+        "img2 nest"
+        "img3 nest";
+    }
+
+    /* class used to place the image of the first dinosaur in the first row and the first column*/
+    .img1 {
+      grid-area: img1;
+    }
+
+    /* class used to place the image of the second dinosaur in the second row and the first column*/
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to place the image of the third dinosaur in the third row and the first column*/
+    .img3 {
+      grid-area: img3;
+    }
+
+    /* class used to place the image of the nest in all rows and the second column*/
+    .nest {
+      grid-area: nest;
+    }
+
+    /* class used to adjust the size of the images in the activity */
+    img {
+      width: 360px;
+      height: 360px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+        Observe the images, connect them to the nest, and then add up all the eggs.
+        </p>
+
+        <div class="container">
+          <div class="img1">
+            <img
+              alt="image in a coloring book style of a dinosaur with a pile of 3 eggs"
+              exp="image that the student will have to count how many eggs are present, being 3, and connect it to the image of the nest"
+            />
+          </div>
+
+          <div class="img2">
+            <img
+              alt="image in a coloring book style of a dinosaur with a pile of 5 eggs"
+              exp="image that the student will have to count how many eggs are present, being 5, and connect it to the image of the nest"
+            />
+          </div>
+
+          <div class="img3">
+            <img
+              alt="image in a coloring book style of a dinosaur with a pile of 2 eggs"
+              exp="image that the student will have to count how many eggs are present, being 2, and connect it to the image of the nest"
+            />
+          </div>
+
+          <div class="nest">
+            <img
+              src=""
+              alt="image in a coloring book style of a nest without any eggs, being the image that the students will have to connect with the images of the dinosaurs"
+              exp="image that the students will have to connect with the images of the dinosaurs"
+            />
+          </div>
+        </div>
+
+        <p
+          exp="Question that the student will have to add the total number of eggs of the three images. The correct answer is 10 (3 eggs of the first image + 5 eggs of the second image + 2 eggs of the third image)"
+        >
+        What is the sum of all the eggs?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+```

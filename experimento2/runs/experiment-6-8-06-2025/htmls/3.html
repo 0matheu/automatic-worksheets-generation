@@ -1,0 +1,107 @@
+```json
+{
+  "task": "To practice basic addition skills by counting the number of juice boxes and sandwiches in two images and calculating the total sum.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph describing the task, and the bottom section contains a 2x2 grid with three images: an image of 4 juice boxes, an image of 3 sandwiches, and an empty image. The grid is organized as follows:",
+  "images": [
+    {
+      "src": "juice_boxes_image",
+      "alt": "Image in children's painting style containing 4 juice boxes on a tray",
+      "exp": "Image in which the student will have to count the number of juice boxes and draw the 4 boxes in the corresponding image."
+    },
+    {
+      "src": "sandwiches_image",
+      "alt": "Image in children's painting style containing 3 sandwiches on a tray",
+      "exp": "Image in which the student will have to count the number of sandwiches and draw the 3 sandwiches in the image."
+    },
+    {
+      "src": "empty_tray_image",
+      "alt": "Image in children's drawing style of an empty tray",
+      "exp": "Image in which the student will have to draw the number of juice boxes and sandwiches represented in the other two images."
+    }
+  ],
+  "answer": "To answer this question correctly, the student will have to: 1) count the number of juice boxes in the first image (4), 2) count the number of sandwiches in the second image (3), and 3) add the two numbers together to find the total sum. The correct answer is 7. The student will then need to draw 7 items (juice boxes and/or sandwiches) in the third image to represent the total sum."
+}
+```
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing three images in a 2-line and 2-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 400px 400px;
+      grid-template-areas:
+        "juice_boxes_image sandwiches_image"
+        "juice_boxes_image empty_tray_image";
+    }
+
+    /* class used to place the image of the juice boxes in the first row and the first column*/
+    .juice_boxes_image {
+      grid-area: juice_boxes_image;
+    }
+
+    /* class used to place the image of the sandwiches in the first row and the second column*/
+    .sandwiches_image {
+      grid-area: sandwiches_image;
+    }
+
+    /* class used to place the image of the empty tray on the second row and the first column*/
+    .empty_tray_image {
+      grid-area: empty_tray_image;
+    }
+
+    /* class used to adjust the size of the images in the activity */
+    img {
+      width: 390px;
+      height: 390px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+        Felipe is at the school cafeteria and sees the trays below. Count how many juice boxes and how many sandwiches are present in each image, add the quantities, and draw the total on a new tray.
+        </p>
+
+        <div class="container">
+          <div class="juice_boxes_image">
+            <img
+              class=""
+              src=""
+              alt=""
+              exp="Image in which the student will have to count the number of juice boxes and draw the 4 boxes"
+            />
+          </div>
+
+          <div class="sandwiches_image">
+            <img
+              class=""
+              src=""
+              alt=""
+              exp="Image in which the student will have to count the number of sandwiches and draw the 3 sandwiches"
+            />
+          </div>
+
+          <div class="empty_tray_image">
+            <img
+              class=""
+              src=""
+              alt=""
+              exp="Image in which the student will have to draw the quantity of sandwiches and juice boxes present in the other two images, being 7 in this case"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

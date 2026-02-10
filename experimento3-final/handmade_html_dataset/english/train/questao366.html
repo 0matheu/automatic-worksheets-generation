@@ -1,0 +1,46 @@
+level: 2nd year of fundamental  
+learning_goals: counting, addition  
+theme: Sports Equipment Purchase  
+width-sheet: 800px  
+task: observe text, write answer
+language: en
+
+{
+    "task": "To practice counting and addition skills by calculating the total amount spent on sports equipment.",
+    "layout": "The activity consists of a description at the top, where the student will read about the purchase of basketballs and soccer balls and calculate the total spent.",
+    "answer": {
+        "A": "To answer correctly, the student needs to add the price of the basketballs (100 reais) and soccer balls (50 reais). The correct answer is 150 reais.",
+        "B": "To answer correctly, the student needs to calculate how much was spent on basketballs. The correct answer is 100 reais."
+    }
+}
+
+<html>
+    <head></head>
+    <body>
+      <div style="width: 800px; border: solid 1px; padding: 10px;">
+        <div class="activity">
+          <p exp="Activity description about purchasing basketballs and soccer balls. The student bought 2 basketballs for 100 reais and 3 soccer balls for 50 reais.">
+            The school bought 2 basketballs for 100 reais and 3 soccer balls for 50 reais. How much was spent in total for the equipment?
+          </p>
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Image showing both types of sports balls for sale with prices labeled.">
+            <img src="sports_equipment.jpg" 
+                 alt="Illustration of basketballs and soccer balls with price labels of 100 reais and 50 reais."
+                 style="width: 600px; height: 300px"
+                 exp="Image where students can see the prices and calculate the total spent on the equipment." />
+        </div>
+
+        <div class="question-container" style="display: flex; justify-content: space-between;">
+            <p exp="Question asking for the total amount spent on both basketballs and soccer balls."><b>A)</b> How much was spent on the sports equipment in total?</p>
+            <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box where the student writes the total amount spent. The correct answer is 150 reais."></div>
+        </div>
+
+        <div class="question-container" style="display: flex; justify-content: space-between;">
+            <p exp="Question asking how much was spent on basketballs."><b>B)</b> How much was spent on basketballs?</p>
+            <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box where the student writes the amount spent on basketballs. The correct answer is 100 reais."></div>
+        </div>
+        
+      </div>
+    </body>
+</html>

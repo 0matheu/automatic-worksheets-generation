@@ -1,0 +1,79 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition
+theme:  Building Blocks
+width-sheet: 800px
+task: observe images, write answer
+language: en
+
+{
+"task": "Observe the image and write the total number of blocks Sofia used.",
+  "layout": "The activity presents Sofia who has already built part of her tower using 12 blocks. She wants to calculate how many blocks she will have if she adds 6 more blocks, and then if she adds 8 more blocks.",
+  "answer": {
+    "A": "To answer question A, the student needs to add 6 blocks to the 12 blocks Sofia already used. 12 + 6 = 18. So the correct answer is 18.",
+    "B": "To answer question B, the student needs to add 8 blocks to the 12 blocks already used. 12 + 8 = 20. So the correct answer is 20."
+  }
+}
+<html>
+  <head>
+    <style>
+      .container {
+        width: 800px;
+        border: solid 1px;
+        padding: 10px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+      .question-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+      .answer-box {
+        width: 150px;
+        height: 30px;
+        border: 1px solid black;
+        text-align: center;
+        font-size: 16px;
+      }
+      img {
+        width: 120px;
+        height: 70px;
+        margin: 10px;
+      }
+      .activity p {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="activity">
+        <p exp="Activity description presenting a real-life situation where Sofia wants to know the total number of blocks used in her tower.">
+          Sofia has already used 12 blocks to build her tower. She is curious to find out how many blocks she will have used if she adds 6 more blocks. Then, she also wants to know the total if she adds 8 more blocks.
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center;" exp="Images visually representing the blocks used and added in each case.">
+        <img src="" alt="12 blocks" exp="Illustration showing 12 blocks, representing what Sofia has built so far." />
+        <img src="" alt="18 blocks" exp="Illustration showing a taller tower with 18 blocks, after adding 6 more blocks." />
+        <img src="" alt="20 blocks" exp="Illustration showing a taller tower with 20 blocks, after adding 8 more blocks." />
+      </div>
+
+      <div class="question-container" exp="Subquestion A prompting the student to add 6 to 12.">
+        <p exp="Text explaining the first scenario: Sofia adds 6 blocks to 12.">
+          <b>A)</b> How many blocks will Sofia have used if she adds 6 blocks to 12 blocks?
+        </p>
+        <div class="answer-box" exp="Answer box for the student to write the sum 12 + 6. Correct answer: 18."></div>
+      </div>
+
+      <div class="question-container" exp="Subquestion B prompting the student to add 8 to 12.">
+        <p exp="Text explaining the second scenario: Sofia adds 8 blocks to 12.">
+          <b>B)</b> How many blocks will Sofia have used if she adds 8 blocks to 12 blocks?
+        </p>
+        <div class="answer-box" exp="Answer box for the student to write the sum 12 + 8. Correct answer: 20."></div>
+      </div>
+    </div>
+  </body>
+</html>

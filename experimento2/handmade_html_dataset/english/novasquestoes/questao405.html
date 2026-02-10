@@ -1,0 +1,114 @@
+level: 2nd year of fundamental
+learning_goals: counting, comparison
+theme: Favorite Ice Cream Flavors
+width-sheet: 800px
+task: observe table, write answer  
+language: en
+
+{
+    "task": "To practice counting and comparison skills by analyzing the votes for different ice cream flavors and answering questions about the most voted flavor and total votes.",
+    "layout": "The activity consists of a description at the top, where the student will read the table with votes for different ice cream flavors and then answer the related questions.",
+    "answer": {
+        "A": "To answer correctly, the student needs to identify the flavors listed in the table. The correct answer is 'Vanilla, Chocolate, Strawberry'.",
+        "B": "To answer correctly, the student needs to count how many votes Vanilla received. The correct answer is 13 votes.",
+        "C": "To answer correctly, the student needs to count how many votes Chocolate received. The correct answer is 7 votes.",
+        "D": "To answer correctly, the student needs to add the total number of votes for all flavors. The correct answer is 35 votes."
+    }
+}
+
+<html>
+    <head>
+        <style>
+            .container {
+                width: 800px;
+                border: solid 1px;
+                padding: 10px;
+                text-align: center;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: center;
+            }
+            th {
+                background-color: #6aa5db;
+                color: white;
+            }
+            .question-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+            .answer-box {
+                width: 100px;
+                height: 30px;
+                border: 1px solid black;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+      <div class="container">
+        
+        <div class="activity">
+          <p exp="Activity description explaining the scenario where students voted for their favorite ice cream flavors.">
+            A group of students voted for their favorite ice cream flavors. The results are recorded below in the table:
+          </p>
+        </div>
+
+        <table exp="Table displaying the ice cream flavor votes.">
+            <tr>
+                <th>Flavor</th>
+                <th>Votes</th>
+            </tr>
+            <tr>
+                <td>Vanilla</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>Chocolate</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Strawberry</td>
+                <td>15</td>
+            </tr>
+        </table>
+
+        <div class="question-container">
+            <p exp="Question asking for the flavors listed in the table.">
+                <b>A)</b> What flavors are listed in the table?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the flavors listed. The correct answer is 'Vanilla, Chocolate, Strawberry'."></div>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for the number of votes Vanilla received.">
+                <b>B)</b> How many votes did Vanilla receive?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the number of votes Vanilla received. The correct answer is 13."></div>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for the number of votes Chocolate received.">
+                <b>C)</b> How many votes did Chocolate receive?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the number of votes Chocolate received. The correct answer is 7."></div>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for the total number of votes received.">
+                <b>D)</b> How many votes were received in total?
+            </p>
+            <div class="answer-box" exp="Box where the student writes the total number of votes. The correct answer is 35 votes."></div>
+        </div>
+        
+      </div>
+    </body>
+</html>

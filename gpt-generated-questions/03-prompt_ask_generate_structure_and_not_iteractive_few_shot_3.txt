@@ -1,0 +1,323 @@
+Generate the structure of a school activity to help students learn.
+The activity should contain a layout structure where texts, images, tables or any other element that can help students' learning are positioned. 
+These elements should be arranged in such a way that they are consistent with the proposed question. For example: if the question asks the student to link images, the images should be separated in such a way that it is possible for the student to link them.
+The structure of the activity should be specified using the HTML language, and the CSS language to position text, images, tables, or any element present in the activity.
+If the activity contains images, add a description of the image in the “alt” attribute. This description should be consistent with the activity specification and provide all the information necessary for the student to be able to answer the activity.
+Also add an explanation for the elements used in the activity, in a new “exp” attribute. This attribute should be specified within the HTML tags and will explain the purpose of that structure in the activity. 
+When it is necessary to use CSS, add an explanation in the form of comments above the class. This CSS is used to organize the layout of the activity so that it is creative and fun for the student.
+Generate a textual description of the activity, then generate the HTML structure containing the layout. This description should contain an explanation of the structure, i.e. how the elements are organized. As well as a detailed description of the activity, and the student's expected response.
+Do not generate iteractive HTML, this activitie is intended to be resolved with a pen and paper.
+
+
+For this activity use as example the follow activities:
+
+level: 2nd year fundamental
+subject: addition, logical reasoning 
+theme: market
+sheet width: 600px
+layout: single image 
+
+In this question, the principle of
+addition will be worked on. The question consists of an image of a scale,
+containing 12kg on one side and 5kg on the other. To answer the question, the
+student will have to observe the image, identify that one side of the scale has
+12kg and the other has 5kg; finally, they will have to calculate that to balance
+the scale, 7kg must be added to the side with 5kg, being 7 + 5 = 12.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 600px"
+    >
+      <div class="question" style="width: 600px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the image and calculate how much weight needs to be placed on
+          the scale for both sides to have the same weight.
+        </p>
+        <div
+          style="display: flex; justify-content: center"
+          exp="div used to center the image in the question"
+        >
+          <img
+            src=""
+            alt="image of a scale drawing with one side having weights representing 12 kg and the other side having weights representing 5 kg"
+            style="width: 400px; height: 200px"
+            exp="image where the student will have to observe the weight of each side of the scale and conclude that to achieve balance, 7kg must be added to the lighter side. The image is 400px by 200px to be a centered image"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+level: 2nd year fundamental 
+subject: addition 
+theme: St. John's 
+width-sheet: 600px 
+layout: single image
+
+In this question, the principles of counting and addition will be practiced. The
+question consists of an image, containing 5 ears of corn, and also 3 St. John's balloons;
+then questions are asked, being: how many ears of corn are present? how many balloons are present?
+what is the sum of the balloons with the ears of corn?. The student will have to count the quantity of ears of corn, being 5, for question A.
+Of balloons, being 3, for question B. And perform the sum of ears of corn and balloons, being 8 as the result for question C.
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div containing the page width, which in this case is 600px"
+    >
+      <div class="question" style="width: 600px">
+        <p exp="Initial description of the question">
+          Observe the image below and answer the following questions:
+        </p>
+        <div style="display: flex; justify-content: center">
+          <img
+            src=""
+            alt="Image in a coloring book style containing 5 ears of corn and 3 St. John's balloons"
+            style="width: 400px; height: 200px"
+            exp="Image that the student will have to identify how many ears of corn are present, being 5; and also St. John's balloons, being 3"
+          />
+        </div>
+        <p exp="First question about the image">
+          A) How many ears of corn are present?
+        </p>
+        <p exp="Second question about the image">
+          B) How many balloons are present?
+        </p>
+        <p exp="Third question about the image">
+          C) What is the sum of the balloons with the ears of corn?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+
+level: 2nd year fundamental 
+subject: addition 
+theme: animals 
+width-sheet: 800px 
+layout: two images
+
+In this question, the principles of addition and counting will be worked on. The
+question consists of two images, one containing 4 lions, and another containing 3
+zebras, and it is asked for the student to count how many lions are present in the
+image, and write the result in the appropriate box, as well as for the zebras. At
+the end, they will have to add the quantity of zebras and lions. The student will
+have to count the quantity of lions present in the image, being 4, and also the
+quantity of zebras, being 3. Write the result of the count in the boxes below the
+images. And, at the end, the student will have to add 4 with 3, resulting in 7, and
+also write the sum in the box.
+
+<html>
+  <head></head>
+  <style>
+    /* container for organizing the lion and zebra images in the activity layout, being two rows and five columns */
+    .container {
+      display: grid;
+      grid-template-columns: 100px 100px 100px 100px;
+      grid-template-rows: 100px 100px;
+      grid-template-areas:
+        "lions empty1 zebras empty2 empty3"
+        "box1 plus box2 equal box3";
+    }
+
+    /* class that will be used to position the lion image in the first cell of the first column */
+    .lions {
+      grid-area: lions;
+      width: 100px;
+      height: 100px;
+    }
+
+    /* class that will be used to position the zebra image in the first cell of the third column */
+    .zebras {
+      grid-area: zebras;
+      width: 100px;
+      height: 100px;
+    }
+
+    /* class that will be used to adjust the size of the zebra and lion images */
+    .animals {
+      width: 100px;
+      height: 100px;
+    }
+
+    /* class that will be used to draw boxes that the students will have to fill in to answer the activities */
+    .box {
+      width: 90px;
+      height: 90px;
+      border: 1px solid;
+      margin: 10px;
+    }
+
+    /* class that will be used to position the boxes that the students will fill in, in the second cell of the first column */
+    .box1 {
+      grid-area: box1;
+    }
+
+    /* class that will be used to position the boxes that the students will fill in, in the second cell of the third column */
+    .box2 {
+      grid-area: box2;
+    }
+
+    /* class that will be used to position the boxes that the students will fill in, in the second cell of the fifth column */
+    .box3 {
+      grid-area: box3;
+    }
+
+    /* class that will be used to position the image of a plus sign in the second cell of the third column */
+    .plus {
+      grid-area: plus;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* class that will be used to size and center the plus sign image */
+    .plus img {
+      margin-top: 10px;
+      width: 50px;
+      height: 50px;
+    }
+
+    /* class that will be used to size and center the plus sign image */
+    img {
+      margin-left: 10px;
+    }
+
+    /* class that will be used to position the image of an equal sign in the second cell of the fourth column */
+    .equal {
+      margin-left: 10px;
+      grid-area: equal;
+    }
+
+    /* class that will be used to size and center the equal sign image */
+    .equal img {
+      margin-top: 10px;
+      width: 50px;
+      height: 50px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the page width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the images, count the quantity of lions and zebras and write in
+          the boxes below. Then add the quantity of both and write in the third box.
+        </p>
+
+        <div class="container">
+          <div class="lions">
+            <img
+              class="animals"
+              id = "img_lions"
+              src=""
+              alt="image in a coloring book style of 4 lions in a savannah scenario"
+              exp="image in which the student will have to count the quantity of lions"
+            />
+          </div>
+
+          <div class="zebras">
+            <img
+              class="animals"
+              src=""
+              id = "img_zebras"
+              alt="image in a coloring book style of 3 zebras in a savannah scenario"
+              exp="image in which the student will have to count the quantity of zebras"
+            />
+          </div>
+
+          <div
+            class="box box1"
+            exp="empty box in which the student will have to write the quantity of lions represented in the image with id img_lions"
+          ></div>
+
+          <div class="plus">
+            <img
+              src=""
+              alt="image of a plus sign"
+              exp="image that will signal a sum"
+            />
+          </div>
+
+          <div
+            class="box box2"
+            exp="empty box in which the student will have to write the quantity of zebras represented in the image with id img_zebras"
+          ></div>
+
+          <div class="equal">
+            <img
+              src=""
+              alt="image of an equal sign"
+              exp="image that will signal the equality of the sum"
+            />
+          </div>
+
+          <div
+            class="box box3"
+            exp="empty box in which the student will have to write the result of the sum of the quantity of lions and zebras"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+To generate a new activity use the following parameters:
+
+level: 2nd year fundamental
+subject: addition, logical reasoning 
+theme: toy cars
+sheet width: 600px
+layout: single image 
+
+Stick to the following rules:
+
+Don't add anything outside the textual description and the HMTL of the activity.
+Generate an activity that is creative and helps the student learn in a playful way, using the parameters specified above.
+
+
+------------------------------------------------------------
+
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 600px"
+    >
+      <div class="question" style="width: 600px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the image and calculate how many toy cars need to be added to the group with fewer cars so that both groups have the same number of toy cars.
+        </p>
+        <div
+          style="display: flex; justify-content: center"
+          exp="div used to center the image in the question"
+        >
+          <img
+            src=""
+            alt="Image of a toy car collection showing one group with 8 cars and another group with 5 cars."
+            style="width: 400px; height: 200px"
+            exp="image where the student will have to observe the number of toy cars in each group and conclude that to make the groups equal, 3 cars must be added to the group with 5 cars. The image is 400px by 200px to be a centered image"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

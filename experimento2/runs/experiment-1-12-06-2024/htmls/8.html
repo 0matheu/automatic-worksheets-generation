@@ -1,0 +1,86 @@
+```json
+{
+  "task": "The student will learn to count and perform basic addition by connecting the image of the children with more musical notes to the image of the musical scale, and then calculating the total number of notes and drawing them on the scale.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph that explains the task, and the bottom section contains a 2x2 grid with four cells. The first row of the grid contains an empty cell and an image of children playing with musical notes. The second row of the grid contains an image of a musical scale, and an empty cell. The two images are placed in a specific layout to facilitate comparison and connection.",
+  "answer": "To answer this question correctly, the student needs to: 1) identify the image with more musical notes (4 children's image), 2) connect it to the image of the musical scale, 3) count the number of notes in the linked image (4), 4) add the number of existing notes on the scale to the linked image (2 + 4), and 5) draw the new total number of notes (6) on the scale."
+}
+```
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing four main elements, being two images in a 2-line and 1-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 400px 400px;
+      grid-template-areas:
+        "empty1 empty1"
+        "childrenscales img2"
+    }
+
+    /* class used to place the image of the children in the first row and the first column*/
+    .childrenscales {
+      grid-area: childrenscales;
+    }
+
+    /* class used to place the image in the second row and the first column */
+    .img2 {
+      grid-area: img2;
+    }
+
+    /* class used to adjust the size of the image of the children, being 400px by 400px */
+    .childrenscales img {
+      width: 400px;
+      height: 400px;
+    }
+
+    /* class used to adjust the image of the musical scale to the left */
+    .img2 {
+      margin-left: 50px;
+    }
+
+    /* class used to adjust the size of the image of the musical scale */
+    .img2 img {
+      width: 300px;
+      height: 400px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question" style="width: 800px">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+          Observe the image and connect the one with more musical notes to the
+          musical scale. Then, count the total number of musical notes
+          (including the notes already present on the scale) and draw the
+          quantity of notes you found.
+        </p>
+
+        <div class="container">
+          <div class="childrenscales">
+            <img
+              src=""
+              alt="image in a coloring book style of 4 children playing in a park, with 9 musical notes floating in the air"
+              exp="image that the student will have to identify that has more musical notes, being 9 in this image and 2 in the image of the scale"
+            />
+          </div>
+
+          <div class="img2">
+            <img
+              src=""
+              alt="image of a coloring book style musical scale with 2 musical notes"
+              exp="image that the student will have to identify that has 2 musical notes, and try to connect to the other image that has 9 notes"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

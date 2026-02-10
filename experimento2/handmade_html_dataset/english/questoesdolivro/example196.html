@@ -1,0 +1,70 @@
+level: 2nd year fundamental
+learning_goals: addition
+theme: New Year's Eve party 
+sheet_width: 600px
+task: observe items, calculate total price, write answer
+language: en
+
+
+
+  {
+    "task": "The objective of this activity is for the student to calculate the total cost of different items for a New Year's Eve party by adding their values together.",
+    "layout": "The activity is structured with a description at the top, followed by an illustration of different party items with their respective prices in reais. Below the image, there are three addition problems where students must sum up the costs and write their answers in the boxes provided.",
+    "answer": {
+      "A": "To correctly answer this question, the student must add R$30 from the decorations with R$20 from the party favors (30 + 20 = 50). The correct answer is 50 reais.",
+      "B": "To correctly answer this question, the student must add R$40 from the food with R$35 from the drinks (40 + 35 = 75). The correct answer is 75 reais.",
+      "C": "To correctly answer this question, the student must add R$60 from the fireworks with R$45 from the music setup (60 + 45 = 105). The correct answer is 105 reais."
+    }
+  }
+  
+
+
+
+
+<html>
+  <head></head>
+  <body>
+    <div
+      style="width: 600px; border: solid 1px; padding: 10px; text-align: left;"
+      exp="This div acts as the main container for the activity. It sets a fixed width of 600px with padding for spacing inside."
+    >
+      <div class="activity" style="width: 600px;">
+        <p
+          exp="This paragraph provides a clear description of the task. The student needs to calculate the total cost of New Year's Eve party items by adding their values."
+        >
+          Marina is organizing a New Year's Eve party and needs to calculate the total cost of different items for the celebration. She has listed several items she plans to buy. Calculate the total cost of each pair of items and write the answer in the box provided.
+        </p>
+
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+          <img src="" alt="Illustration of various New Year's Eve party items such as decorations, food, drinks, and gifts, each labeled with its respective price in reais. The items are arranged in an organized layout to help students visualize the calculation needed."
+            style="width: 400px; height: auto;"
+            exp="An image displaying different New Year's Eve party items with price tags in reais, where students must sum the values and find the total cost. The items include decorations, food, drinks, and small gifts."
+          />
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 15px;">
+          <div style="display: flex; align-items: center;">
+            <p style="margin-right: 10px;">A) How much do the decorations (R$30) and party favors (R$20) cost together?</p>
+            <div style="width: 50px; height: 30px; border: 1px solid black; text-align: center;"
+              exp="Box where the student writes the total cost. The correct answer is 50."
+            ></div>
+          </div>
+
+          <div style="display: flex; align-items: center;">
+            <p style="margin-right: 10px;">B) How much do the food (R$40) and drinks (R$35) cost together?</p>
+            <div style="width: 50px; height: 30px; border: 1px solid black; text-align: center;"
+              exp="Box where the student writes the total cost. The correct answer is 75 reais."
+            ></div>
+          </div>
+
+          <div style="display: flex; align-items: center;">
+            <p style="margin-right: 10px;">C) How much do the fireworks (R$60) and music setup (R$45) cost together?</p>
+            <div style="width: 50px; height: 30px; border: 1px solid black; text-align: center;"
+              exp="Box where the student writes the total cost. The correct answer is 105 reais."
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

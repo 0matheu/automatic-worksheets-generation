@@ -1,0 +1,68 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition, comparison
+theme: Supermarket Sales Report
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+    "task": "To practice counting, addition, and comparison skills by analyzing a supermarket sales report and answering questions about the most sold product and total items sold.",
+    "layout": "The activity consists of a description of the scenario at the top, providing the necessary context. Below the description, a centered image illustrates a supermarket sales report showing the number of items sold. The student will answer questions based on the image, with answer boxes positioned as close as possible to each question.",
+    "answer": {
+        "A": "To answer correctly, the student needs to compare the sales numbers and identify the most sold product. The correct answer is 'Milk: 430 units'.",
+        "B": "To answer correctly, the student needs to add up all sales (430 + 370 + 290) to get the total. The correct answer is 1,090 units."
+    }
+}
+
+<html>
+    <head>
+        <style>
+            .question-container {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                width: 100%;
+                margin-bottom: 5px;
+            }
+            .answer-box {
+                width: 80px;
+                height: 25px;
+                border: 1px solid black;
+                text-align: center;
+                margin-left: 15px;
+            }
+        </style>
+    </head>
+    <body>
+      <div style="width: 800px; border: solid 1px; padding: 10px;" exp="Main container for the activity">
+        
+        <div class="activity">
+          <p exp="Activity description explaining what the student must do">
+            A supermarket recorded its sales for the day. Look at the sales report and answer the questions.
+          </p>
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image in the activity">
+            <img src="" 
+                 alt="Illustration of a supermarket sales report displaying: Milk (430 units), Bread (370 units), and Rice (290 units)."
+                 style="width: 600px; height: 300px"
+                 exp="Image where students need to compare product sales and calculate the total sold." />
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking which product was the most sold">
+                <b>A)</b> Which product was sold the most?
+                <div class="answer-box" exp="Box where the student writes the most sold product. The correct answer is 'Milk: 430 units'."></div>
+            </p>
+        </div>
+
+        <div class="question-container">
+            <p exp="Question asking for the total number of products sold">
+                <b>B)</b> How many items were sold in total?
+                <div class="answer-box" exp="Box where the student writes the total number of sold items. The correct answer is 1,090."></div>
+            </p>
+        </div>
+        
+      </div>
+    </body>
+</html>

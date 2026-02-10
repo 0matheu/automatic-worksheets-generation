@@ -1,0 +1,174 @@
+nivel: 2º ano fundamental 
+assunto: adição 
+tematica: animais 
+largura-folha: 800px
+layout: duas imagens
+
+Nessa questão serão trabalhados os princípio da adição e contagem. A questão
+consiste de duas imagens, uma contendo 4 leões, e outra contendo 3 zebras, é
+pedido para que o aluno conte quantos leões estão presentes na imagem, e
+escrever o resultado na caixa apropriada, bem como para as zebras. Ao final ele
+terá que somar a quantidade de zebras e leões. O aluno terá que contar a
+quantidade de leões presentes na imagem, sendo 4, e também a quantidade de
+zebras, sendo 3. Escrever o resultado da contagem nas caixas abaixo das imagens.
+E, ao final, o aluno deverá somar 4 com 3, resultando em 7, e também escrever a
+soma na caixa.
+
+<html>
+  <head></head>
+  <style>
+    /* container para a organização das imagens de leões e zebras no layout da atividade, sendo duas linhas e cinco colunas */
+    .container {
+      display: grid;
+      grid-template-columns: 100px 100px 100px 100px;
+      grid-template-rows: 100px 100px;
+      grid-template-areas:
+        "leoes vazio1 zebras vazio2 vazio3"
+        "caixa1 mais caixa2 igual caixa3";
+    }
+
+    /* classe que será usada para posicionar a imagem dos leões na primeira célula da primeira coluna */
+    .leoes {
+      grid-area: leoes;
+      width: 100px;
+      height: 100px;
+    }
+
+    /* classe que será usada para posicionar a imagem das zebras na primeira célula da terceira coluna */
+    .zebras {
+      grid-area: zebras;
+      width: 100px;
+      height: 100px;
+    }
+
+    /* classe que será usada para ajustar o tamanho das imagens das zebras e dos leões */
+    .animais {
+      width: 100px;
+      height: 100px;
+    }
+
+    /* classe que será utilizada para desenhar caixas que os alunos terão que preencher para responder as atividades*/
+    .caixa {
+      width: 90px;
+      height: 90px;
+      border: 1px solid;
+      margin: 10px;
+    }
+
+    /* classe que será usada para posicionar as caixas que os alunos irão preencher, na segunda célula da primeira coluna */
+    .caixa1 {
+      grid-area: caixa1;
+    }
+
+    /* classe que será usada para posicionar as caixas que os alunos irão preencher, na  segunda célula da terceira coluna */
+    .caixa2 {
+      grid-area: caixa2;
+    }
+
+    /* classe que será usada para posicionar as caixas que os alunos irão preencher, na  segunda célula da quinta coluna*/
+    .caixa3 {
+      grid-area: caixa3;
+    }
+
+    /* classe que será usada para posicionar a imagem de um sinal de mais na segunda célula da terceira coluna */
+    .mais {
+      grid-area: mais;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* classe que será usada para dimensionar e centralizar a imagem de mais */
+    .mais img {
+      margin-top: 10px;
+      width: 50px;
+      height: 50px;
+    }
+
+    /* classe que será usada para dimensionar e centralizar a imagem de mais */
+    img {
+      margin-left: 10px;
+    }
+
+    /* classe que será usada para posicionar a imagem de um sinal de igual na segunda célula da quarta coluna */
+    .igual {
+      margin-left: 10px;
+      grid-area: igual;
+    }
+
+    /* classe que será usada para dimensionar e centralizar a imagem igual */
+    .igual img {
+      margin-top: 10px;
+      width: 50px;
+      height: 50px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div contendo a largura da folha, que nesse caso é 800px"
+    >
+      <div class="questao" style="width: 800px">
+        <p
+          exp="Descrição da questão, contendo a explicação do que o aluno terá que fazer para responder corretamenta a questão"
+        >
+          Observe as imagens, conte a quantidade de leões e zebras e escreva nas
+          caixas abaixo. Depois some a quantidade de ambos e escreva na terceira
+          caixa.
+        </p>
+
+        <div class="container">
+          <div class="leoes">
+            <img
+              class="animais"
+              id = "img_leoes"
+              src=""
+              alt="imagem em estilo de desenho de pintar de 4 leões em um cenário de savana"
+              exp="imagem em que o aluno terá que contar a quantidade de leões"
+            />
+          </div>
+
+          <div class="zebras">
+            <img
+              class="animais"
+              src=""
+              id = "img_zebras"
+              alt="imagem em estilo de desenho de pintar de 3 zebras em um cenário de savana"
+              exp="imagem em que o aluno terá que contar a quantidade de zebras"
+            />
+          </div>
+
+          <div
+            class="caixa caixa1"
+            exp="caixa vazia na qual o aluno terá que escrever a quantidade de leões representadas na imagem com id img_leoes"
+          ></div>
+
+          <div class="mais">
+            <img
+              src=""
+              alt="imagem de um sinal de mais"
+              exp="imagem que sinalizará uma soma"
+            />
+          </div>
+
+          <div
+            class="caixa caixa2"
+            exp="caixa vazia na qual o aluno terá que escrever a quantidade de zebras representadas na imagem com id img_zebras"
+          ></div>
+
+          <div class="igual">
+            <img
+              src=""
+              alt="imagem de um sinal de igual"
+              exp="imagem que sinalizará a igualdade da soma"
+            />
+          </div>
+
+          <div
+            class="caixa caixa3"
+            exp="caixa vazia na qual o aluno terá que escrever o resultado da soma da quantidade de leões e zebras"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

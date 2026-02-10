@@ -1,0 +1,98 @@
+```json
+{
+  "task": "To practice basic addition skills by counting and adding the number of glasses of milk and cookies Maria and her friends want, learning to count and perform simple arithmetic operations.",
+  "layout": "The question is divided into two main sections. The top section contains a paragraph that explains the task, and the bottom section contains a centered 2x2 grid with four images: Maria, glasses of milk, cookies, and Maria's friends. The images are placed in a specific layout to facilitate counting and addition.",
+  "question": "Maria is having a snack at the school cafeteria and wants to know if there are enough glasses of milk and cookies for her and her friends. Can you help Maria by counting how many glasses of milk and how many cookies they want, and then by adding the quantities? Finally, write the result as an addition operation."
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+  <style>
+    /* class that will be used to describe the layout of the activity, in this case containing four images in a 2-line and 2-column layout */
+    .container {
+      display: grid;
+      grid-template-columns: 400px 400px;
+      grid-template-rows: 400px 400px;
+      grid-template-areas:
+        "maria_img cookies_img"
+        "milk_img friends_img";
+    }
+
+    /* class used to place the image of maria in the first row and the first column*/
+    .maria_img {
+      grid-area: maria_img;
+    }
+
+    /* class used to place the image of glasses of milk in the second row and the first column*/
+    .milk_img {
+      grid-area: milk_img;
+    }
+
+    /* class used to place the image of cookies in the first row and the second column*/
+    .cookies_img {
+      grid-area: cookies_img;
+    }
+
+    /* class used to place the image of maria's friends in the second row and the second column*/
+    .friends_img {
+      grid-area: friends_img;
+    }
+
+    /* class used to adjust the size of the images in the activity */
+    img {
+      width: 380px;
+      height: 380px;
+    }
+  </style>
+  <body>
+    <div
+      style="width: 800px; border: solid 1px"
+      exp="div containing the sheet width, which in this case is 800px"
+    >
+      <div class="question">
+        <p
+          exp="Question description, containing the explanation of what the student will have to do to answer the question correctly"
+        >
+        Maria is having a snack at the school cafeteria and wants to know if there are enough glasses of milk and cookies for her and her friends. Can you help Maria by counting how many glasses of milk and how many cookies they want, and then by adding the quantities? Finally, write the result as an addition operation.
+        </p>
+
+        <div
+          class="container"
+          exp="div used to adjust the images of the question in the described layout, containing four images, being one of maria, glasses of milk, cookies, and her friends at the cafeteria"
+        >
+          <div class="maria_img">
+            <img
+              alt="image in a coloring book style of a girl in a school cafeteria, with a transparent background"
+              exp="image that the student will have to observe and count how many glasses of milk are on the tray"
+            />
+          </div>
+
+          <div class="milk_img">
+            <img
+              alt="image in a coloring book style of a tray with 5 glasses of milk, in a school cafeteria, with a transparent background"
+              exp="image that the student will have to observe and identify that there are 5 glasses of milk on the tray"
+            />
+          </div>
+
+          <div class="cookies_img">
+            <img
+              alt="image in a coloring book style of a tray with 4 stacks of cookies, also in a school cafeteria, with a transparent background"
+              exp="image that the student will have to observe and identify that there are 4 stacks of cookies on the tray"
+            />
+          </div>
+
+          <div class="friends_img">
+            <img
+              alt="image in a coloring book style of 3 children, in a school cafeteria, also with a transparent background"
+              exp="image that the student will have to observe and identify that there are 3 children in the image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```

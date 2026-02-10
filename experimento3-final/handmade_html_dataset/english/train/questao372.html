@@ -1,0 +1,46 @@
+level: 2nd year of fundamental  
+learning_goals: counting, addition  
+theme: Sports Competition Results  
+width-sheet: 800px  
+task: observe text, write answer
+language: en
+
+{
+    "task": "To practice counting and addition skills by determining the total number of points earned by two teams in a sports competition.",
+    "layout": "The activity consists of a description at the top, where the student will add the points scored by both teams in the competition and answer a series of questions.",
+    "answer": {
+        "A": "To answer correctly, the student needs to add the points scored by Team A (35 points) and Team B (40 points). The correct answer is 75 points.",
+        "B": "To answer correctly, the student needs to calculate how many points Team A scored. The correct answer is 35 points."
+    }
+}
+
+<html>
+    <head></head>
+    <body>
+      <div style="width: 800px; border: solid 1px; padding: 10px;">
+        <div class="activity">
+          <p exp="Activity description about the sports competition scores. Team A scored 35 points and Team B scored 40 points.">
+            In a sports competition, Team A scored 35 points and Team B scored 40 points.
+          </p>
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Image of both teams competing with scores visible on a scoreboard.">
+            <img src="sports_competition.jpg" 
+                 alt="Illustration of two sports teams with scores of 35 and 40 on a scoreboard."
+                 style="width: 600px; height: 300px"
+                 exp="Image showing the competition results and the scores for both teams." />
+        </div>
+
+        <div class="question-container" style="display: flex; justify-content: space-between;">
+            <p exp="Question asking for the total points scored by both teams."><b>A)</b> What is the total number of points scored by both teams?</p>
+            <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box where the student writes the total points scored. The correct answer is 75."></div>
+        </div>
+
+        <div class="question-container" style="display: flex; justify-content: space-between;">
+            <p exp="Question asking how many points Team A scored."><b>B)</b> How many points did Team A score?</p>
+            <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box where the student writes the points scored by Team A. The correct answer is 35."></div>
+        </div>
+        
+      </div>
+    </body>
+</html>

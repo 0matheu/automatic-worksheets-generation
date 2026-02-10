@@ -1,0 +1,44 @@
+level: 2nd year of fundamental  
+learning_goals: counting, addition  
+theme: Planting Seeds  
+width-sheet: 800px  
+task: observe text, write answer
+language: en
+
+{
+    "task": "To practice counting and basic addition skills by determining how many seeds were planted by the students, based on the given numbers.",
+    "layout": "The activity consists of a description at the top, where the student will read and calculate how many seeds were planted, based on the given numbers.",
+    "answer": {
+        "A": "To answer correctly, the student needs to add 18 to 22, the number of seeds planted by the boys, to determine how many seeds the girls planted. The correct answer is 40 seeds.",
+        "B": "To answer correctly, the student needs to add the number of seeds planted by the boys (22) to the number of seeds planted by the girls (40) to find the total number of seeds planted. The correct answer is 62 seeds."
+    }
+}
+
+<html>
+    <head></head>
+    <body>
+      <div style="width: 800px; border: solid 1px; padding: 10px;">
+        <div class="activity">
+          <p exp="Activity description, explaining how many seeds were planted by the boys and girls during a gardening project.">
+            The students planted seeds in the garden. The boys planted a total of 22 seeds. 
+            The girls planted 18 more seeds than the boys.
+          </p>
+        </div>
+
+        <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image in the activity">
+            <img src="planting_seeds_image.png" alt="Illustration of a garden with students planting seeds." style="width: 600px; height: 300px" exp="Image showing students planting seeds in the garden.">
+        </div>
+
+        <div class="question-container" style="display: flex; justify-content: space-between;">
+            <p exp="Question asking for the number of seeds planted by the girls."><b>A)</b> How many seeds did the girls plant?</p>
+            <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box where the student writes the number of seeds the girls planted. The correct answer is 40."></div>
+        </div>
+
+        <div class="question-container" style="display: flex; justify-content: space-between;">
+            <p exp="Question asking for the total number of seeds planted."><b>B)</b> How many seeds, in total, did the students plant?</p>
+            <div style="width: 100px; height: 40px; border: 1px solid black;" exp="Box where the student writes the total number of seeds planted. The correct answer is 62."></div>
+        </div>
+        
+      </div>
+    </body>
+</html>

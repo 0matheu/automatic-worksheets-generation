@@ -1,0 +1,64 @@
+level: 2nd year of fundamental
+learning_goals: counting, addition, comparison
+theme: Children's Fair
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+{
+  "task": "To practice counting, addition, and comparison skills by analyzing the number of visitors in the children's fair and answering questions about the most attended area and the total number of visitors.",
+  "layout": "The activity consists of a description of the scenario at the top, providing the necessary context. Below the description, a centered image illustrates different areas of the children's fair and their number of visitors. The student will answer questions based on the image, with answer boxes positioned close to each question.",
+  "answer": {
+    "A": "By comparing the attendance, the correct answer is 'Clown Show: 230 visitors'.",
+    "B": "Adding up: 230 + 195 + 170 = 595 visitors."
+  }
+}
+
+<html>
+  <head>
+    <style>
+      .question-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        margin-bottom: 5px;
+      }
+      .answer-box {
+        width: 60px;
+        height: 30px;
+        border: 1px solid black;
+        text-align: center;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="width: 800px; border: solid 1px; padding: 10px;" exp="Main container for the activity">
+
+      <div class="activity">
+        <p exp="Activity description explaining what the student must do">
+          Lívia and their classmates visited the children's fair. Observe the number of visitors in each area and answer the questions below.
+        </p>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin-bottom: 20px;" exp="Div used to center the image in the activity">
+        <img src=""
+            alt="Illustration of the children's fair showing a Clown Show (230 visitors), a Magic Tent (195 visitors), a Petting Zoo (170 visitors)."
+            style="width: 600px; height: 300px"
+            exp="Image showing the different attractions in the fair with the number of visitors to each area." />
+      </div>
+
+      <div class="question-container">
+        <p exp="Question asking which area had the most visitors"><b>A)</b> Which of these had the most visitors?</p>
+        <div class="answer-box" exp="Box where the student writes the most visited area. The correct answer is 'Clown Show: 230 visitors'."></div>
+      </div>
+
+      <div class="question-container">
+        <p exp="Question asking for the total number of visitors"><b>B)</b> What is the total number of visitors in all three areas?</p>
+        <div class="answer-box" exp="Box where the student writes the total number of visitors. The correct answer is 595."></div>
+      </div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+level: 2nd year of fundamental
+learning_goals: addition, counting
+theme: Game
+width-sheet: 800px
+task: observe image, write answer
+language: en
+
+
+{
+  "task": "Add the number of balls placed by Júlia and Pedro into the box. Júlia placed 12 balls, and Pedro placed 9 balls. The student must calculate how many balls are in the box altogether.",
+  "layout": "A centered paragraph explains the situation. Below it, a table shows the number of balls added by Júlia and Pedro. An illustration shows the children with the balls near a box. Then, there's a centered question asking how many balls are in the box now, followed by a 100x100px response box below it, centered on the page.",
+  "answer": "To calculate the total number of balls in the box, the student must add the quantities from Júlia and Pedro: 12 + 9 = 21. So the correct answer is 21."
+}
+
+
+
+<html>
+  <head></head>
+  <body>
+      <div style="width: 750px; border: solid 1px; padding: 10px;">
+
+      <p style="text-align: center;" 
+        exp="This activity turns a probability context into a math addition task. The student is asked to add the number of balls placed by Júlia and Pedro.">
+        Júlia and Pedro are playing a game by drawing colored balls from a box.  
+        The chart below shows how many balls each of them added.
+      </p>
+
+      <table style="margin: 10px auto; border-collapse: collapse;" 
+            exp="This table helps visualize the quantities to be added by each person.">
+        <tr>
+          <th style="border: 1px solid black; padding: 5px;">Player</th>
+          <th style="border: 1px solid black; padding: 5px;">Balls added</th>
+        </tr>
+        <tr>
+          <td style="border: 1px solid black; padding: 5px;">Júlia</td>
+          <td style="border: 1px solid black; padding: 5px;">12 balls</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid black; padding: 5px;">Pedro</td>
+          <td style="border: 1px solid black; padding: 5px;">9 balls</td>
+        </tr>
+      </table>
+
+      <img src=""
+          style="display: block; margin: 10px auto; width: 280px;"
+          alt="An image showing two children, Júlia holding 12 balls and Pedro holding 9 balls near a box labeled 'Game Box'."
+          exp="The image illustrates Júlia holding 12 colored balls and Pedro holding 9 balls, both about to put them into a large box." />
+
+      <p style="text-align: center; margin-top: 20px;" 
+        exp="The question asks the student to add the number of balls added by Júlia and Pedro: 12 + 9.">
+        How many balls are in the box now?
+      </p>
+
+      <div style="width: 100px; height: 100px; border: 1px solid black; margin: 0 auto;"
+          exp="Expected result: 12 + 9 = 21. The student should write 21 inside the box.">
+      </div>
+
+    </div>
+  </body>
+</html>
