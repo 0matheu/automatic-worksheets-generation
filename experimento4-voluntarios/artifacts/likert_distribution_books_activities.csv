@@ -1,4 +1,4 @@
-task,index_question,N,Média,Mediana,Desvio_Padrão
+task,index_question,N,Mean,Median,Std_Dev
 Observar imagem e desenhar resposta,P1,12,4.67,5.0,0.65
 Observar imagem e desenhar resposta,P2,12,4.0,4.0,1.21
 Observar imagem e desenhar resposta,P3,12,4.75,5.0,0.45
