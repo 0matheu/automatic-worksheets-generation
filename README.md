@@ -36,7 +36,7 @@ números da dissertação.**
 ## Conjunto de dados
 
 Construído manualmente para este trabalho, em HTML/CSS, a partir de atividades de livros didáticos
-do 2º ano (ver *Origem do material*, ao final).
+do 2º ano (ver *Licenciamento e origem do material*, ao final).
 
 ```
 experimento3-final/handmade_html_dataset/english/
@@ -106,11 +106,15 @@ Seis voluntários licenciados em Matemática avaliaram 24 atividades cada, em um
 10 perguntas em escala Likert de 5 pontos.
 
 ```
-experimento4-voluntarios/evaluations/<pessoa>/<operação>/<id_atividade>/
+experimento4-voluntarios/evaluations/<avaliador>/<operação>/<id_atividade>/
 ├── form.csv          10 respostas
 ├── parameters.json   parâmetros de geração (temperature = "N/A" ⇒ atividade de livro)
 └── example.png       captura da atividade como apresentada ao avaliador
 ```
+
+Os avaliadores são identificados por pseudônimo: **`A1`–`A3`** compõem o Grupo A e
+**`B1`–`B3`** o Grupo B. Cada grupo avaliou 24 das 48 atividades; as 16 atividades de livro
+foram divididas entre os dois grupos, e por isso aparecem em ambos.
 
 - **48 atividades únicas** — 32 geradas (4 operações × 2 temperaturas × 4 tipos de tarefa) e 16 de livro
 - **3 avaliações por atividade** → 144 registros → **1.440 respostas**, sem dados faltantes
@@ -144,6 +148,14 @@ cd experimento4-voluntarios
 jupyter nbconvert --to notebook --execute --inplace evaluation_statistics.ipynb
 ```
 
+As figuras de distribuição Likert publicadas na dissertação são geradas por um script à parte,
+que lê os mesmos `form.csv` brutos:
+
+```bash
+cd experimento4-voluntarios
+python3 gerar_figuras_dissertacao.py
+```
+
 Dependências: `pandas`, `numpy`, `scipy`, `statsmodels`, `pingouin`, `scikit-posthocs`,
 `seaborn`, `matplotlib >= 3.10.9`.
 
@@ -162,20 +174,22 @@ conferir números** — os resultados publicados já estão salvos nas saídas d
 
 ---
 
-## Origem do material
+## Licenciamento e origem do material
 
-As atividades do conjunto de dados foram **reconstruídas manualmente em HTML/CSS** para este
-trabalho, tomando como referência atividades de livros didáticos de Matemática do 2º ano do Ensino
-Fundamental. As obras usadas como referência estão citadas na dissertação:
+O repositório reúne materiais de naturezas distintas, sob licenças diferentes:
 
-- *Matemática — Ápis* (Editora Ática)
-- *Caderno do Futuro — Matemática*
-- *Bons Amigos — Matemática*
+| Conteúdo | Licença |
+|---|---|
+| Código (notebooks, scripts) | **MIT** — ver `LICENSE` |
+| Base de atividades, gerações e dados de avaliação | **CC BY-NC-SA 4.0** — ver `LICENSE-DADOS` |
 
-O material aqui publicado consiste em reconstruções em marcação, elaboradas para fins de pesquisa
-acadêmica, e não em reprodução do conteúdo editorial original.
+As atividades da base foram **reconstruídas manualmente em HTML/CSS** para esta pesquisa,
+tomando como referência livros didáticos de Matemática do 2º ano (Ápis/Ática, Caderno do
+Futuro/IBEP, Bons Amigos/FTD). Os direitos das obras originais permanecem com seus autores e
+editoras; nenhuma imagem delas é reproduzida aqui. Os detalhes estão em `LICENSE-DADOS`.
 
----
+Os dados de avaliação envolvem participantes de pesquisa, sob aprovação do Comitê de Ética
+(CAAE 88802224.3.0000.5182), e estão pseudonimizados. A reidentificação é vedada.
 
 ## Citação
 

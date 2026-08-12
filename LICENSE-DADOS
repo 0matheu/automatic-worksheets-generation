@@ -1,0 +1,73 @@
+LICENÇA E CONDIÇÕES DE USO DOS DADOS
+
+Aplica-se a:
+
+  - a base de atividades em HTML/CSS
+    (`experimento*/handmade_html_dataset/`, `experimento*/data/`)
+  - as atividades geradas pelo modelo
+    (`experimento3-final/worksheets-generated-evaluation/`)
+  - os dados da avaliação com especialistas
+    (`experimento4-voluntarios/evaluations/`)
+
+Licença: Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0
+Internacional (CC BY-NC-SA 4.0)
+
+  https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt-br
+
+Você pode compartilhar e adaptar este material, desde que atribua o crédito
+devido, não o utilize para fins comerciais e distribua eventuais derivações sob
+a mesma licença.
+
+
+--------------------------------------------------------------------------------
+1. ORIGEM DAS ATIVIDADES E DIREITOS DE TERCEIROS
+--------------------------------------------------------------------------------
+
+As atividades que compõem a base de treinamento foram **reconstruídas
+manualmente em HTML e CSS** para os fins desta pesquisa, tomando como referência
+atividades de livros didáticos de Matemática do 2º ano do Ensino Fundamental e
+de sites educacionais. As obras usadas como referência são:
+
+  - Matemática — Ápis. Luiz Roberto Dante. Ática, 2017.
+  - Caderno do Futuro — Matemática. IBEP, 2013.
+  - Bons Amigos — Matemática. FTD, 2021.
+
+O material aqui publicado consiste em reconstruções em linguagem de marcação,
+elaboradas para fins de pesquisa acadêmica. **Os direitos autorais sobre as
+obras originais permanecem integralmente com seus autores e editoras**, e a
+licença CC BY-NC-SA 4.0 acima cobre exclusivamente a contribuição autoral desta
+pesquisa — a estrutura de representação, as descrições textuais dos elementos
+visuais e as anotações de explicabilidade.
+
+Nenhuma imagem das obras originais é reproduzida neste repositório: os elementos
+visuais existem apenas como descrição textual.
+
+
+--------------------------------------------------------------------------------
+2. DADOS DE PARTICIPANTES DE PESQUISA
+--------------------------------------------------------------------------------
+
+Os dados em `experimento4-voluntarios/evaluations/` foram coletados junto a seis
+profissionais voluntários, em estudo aprovado pelo Comitê de Ética em Pesquisa
+do Hospital Universitário Alcides Carneiro da Universidade Federal de Campina
+Grande (HUAC-UFCG), parecer nº 7.954.053, CAAE 88802224.3.0000.5182. Todos os
+participantes assinaram Termo de Consentimento Livre e Esclarecido.
+
+Os participantes estão identificados exclusivamente por pseudônimos — `A1` a
+`A3` para o Grupo A e `B1` a `B3` para o Grupo B —, correspondentes aos dois
+grupos de avaliação descritos na dissertação. Nenhum dado que permita
+identificação pessoal é publicado.
+
+É **vedada** qualquer tentativa de reidentificação dos participantes, bem como o
+uso destes dados para finalidade distinta da pesquisa científica.
+
+
+--------------------------------------------------------------------------------
+3. COMO CITAR
+--------------------------------------------------------------------------------
+
+Ao utilizar este material, cite a dissertação que o originou:
+
+  SANTOS, Matheus Lisboa Oliveira dos. Além do Texto: Geração Parametrizável de
+  Leiautes Explicáveis para Atividades Escolares. Dissertação (Mestrado em
+  Ciência da Computação) — Universidade Federal de Campina Grande, 2026.
