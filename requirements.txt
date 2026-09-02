@@ -1,0 +1,48 @@
+# Dependências para reproduzir as análises que sustentam a dissertação
+# (experimento3-final e experimento4-voluntarios; ver README.md).
+# Versões com as quais os notebooks foram reexecutados pela última vez
+# (Python 3.14.6, 02/09/2026):  pip install -r requirements.txt
+
+# Análise estatística e figuras
+pandas==3.0.3
+numpy==2.4.6
+scipy==1.18.0
+statsmodels==0.14.6
+pingouin==0.6.1
+scikit-posthocs==0.14.0
+# matplotlib >= 3.10.9 é obrigatório: versões anteriores entram em recursão
+# infinita em Python 3.12+ ao copiar objetos Path, quebrando qualquer gráfico.
+matplotlib==3.11.1
+seaborn==0.13.2
+
+# Geração de atividades e contagem de tokens (requer credencial da OpenAI
+# em .env; o ajuste fino cria um job real com custo — ver README)
+openai==3.3.1
+tiktoken==0.13.0
+python-dotenv==1.2.1
+
+# Renderização das atividades HTML em PNG (requer Chrome/Chromium)
+selenium==4.47.0
+pillow==12.3.0
+
+# Execução dos notebooks
+jupyter==1.1.1
+nbconvert==7.17.1
+ipykernel==6.31.0
+
+# ---------------------------------------------------------------------------
+# Experimentos históricos (experimento1 e experimento2, superados pelo
+# experimento3-final): ajuste fino local de LLaMA 2 13B / LLaMA 3 8B com
+# QLoRA e extração inicial da base. Não são necessários para reproduzir os
+# números da dissertação; descomente apenas se for revisitá-los.
+# torch
+# transformers
+# peft
+# trl
+# bitsandbytes
+# datasets
+# pyarrow
+# PyMuPDF      # import fitz  (experimento1)
+# odfpy        # import odf   (experimento1)
+# xmltodict    #              (experimento1)
+# aspose-words #              (experimento1)

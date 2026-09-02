@@ -156,8 +156,9 @@ cd experimento4-voluntarios
 python3 gerar_figuras_dissertacao.py
 ```
 
-Dependências: `pandas`, `numpy`, `scipy`, `statsmodels`, `pingouin`, `scikit-posthocs`,
-`seaborn`, `matplotlib >= 3.10.9`.
+Dependências: `pip install -r requirements.txt` (na raiz do repositório) instala as versões
+com as quais os notebooks foram reexecutados pela última vez; as dos experimentos históricos
+(1 e 2) ficam comentadas no mesmo arquivo.
 
 > O `matplotlib` precisa ser 3.10.9 ou superior: versões anteriores entram em recursão infinita em
 > Python 3.12+ ao copiar objetos `Path`, quebrando qualquer gráfico.
