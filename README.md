@@ -35,7 +35,8 @@ números da dissertação.**
 
 ## Conjunto de dados
 
-Construído manualmente para este trabalho, em HTML/CSS, a partir de atividades de livros didáticos
+Construído para este trabalho, em HTML/CSS, a partir de atividades de livros didáticos; parte das
+variações foi gerada com apoio do ChatGPT (GPT-4o, março–maio de 2025) e toda atividade foi revisada manualmente
 do 2º ano (ver *Licenciamento e origem do material*, ao final).
 
 ```
@@ -184,7 +185,8 @@ O repositório reúne materiais de naturezas distintas, sob licenças diferentes
 | Código (notebooks, scripts) | **MIT** — ver `LICENSE` |
 | Base de atividades, gerações e dados de avaliação | **CC BY-NC-SA 4.0** — ver `LICENSE-DADOS` |
 
-As atividades da base foram **reconstruídas manualmente em HTML/CSS** para esta pesquisa,
+As atividades da base foram **reconstruídas em HTML/CSS e revisadas manualmente** para esta pesquisa
+(parte das variações foi gerada com apoio do ChatGPT a partir de atividades extraídas),
 tomando como referência livros didáticos de Matemática do 2º ano (Ápis/Ática, Caderno do
 Futuro/IBEP, Bons Amigos/FTD). Os direitos das obras originais permanecem com seus autores e
 editoras; nenhuma imagem delas é reproduzida aqui. Os detalhes estão em `LICENSE-DADOS`.
